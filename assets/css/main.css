@@ -304,6 +304,7 @@ html.dark .icon-wrap-dark  { display: none; }
   height: 640px;
   background: radial-gradient(circle, var(--accent-glow) 0%, transparent 68%);
   pointer-events: none;
+  z-index: -1;
 }
 
 .hero__inner {
@@ -728,6 +729,7 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
     var(--border) 90%,
     transparent);
   pointer-events: none;
+  z-index: 0;
 }
 
 .how-card {
@@ -878,6 +880,7 @@ html.dark .license-cta { background: #001a3a; }
   height: 480px;
   background: radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);
   pointer-events: none;
+  z-index: -1;
 }
 
 .upsell__inner {
