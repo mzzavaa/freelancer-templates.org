@@ -41,6 +41,21 @@
   });
 })();
 
+// Full library toggle
+(function () {
+  const btn = document.getElementById('libToggle');
+  const body = document.getElementById('libBody');
+  if (!btn || !body) return;
+
+  btn.addEventListener('click', function () {
+    const isOpen = !body.hidden;
+    body.hidden = isOpen;
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    const label = btn.querySelector('span');
+    if (label) label.textContent = isOpen ? 'View Full Library' : 'Collapse Library';
+  });
+})();
+
 // Newsletter form intercept
 (function () {
   const form = document.getElementById('nlForm');
