@@ -1,0 +1,581 @@
+{{ define "main" }}
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="/" class="nav__wordmark">freelancer<em>-templates</em></a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#categories" class="nav__link">Categories</a></li>
+        <li><a href="#remotion" class="nav__link">Remotion</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
+          <span class="icon-wrap-light"><i data-lucide="sun"></i></span>
+          <span class="icon-wrap-dark"><i data-lucide="moon"></i></span>
+        </button>
+        <a href="#pricing" class="btn btn--primary btn--sm">Get Templates</a>
+        <button class="nav__hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero__inner">
+
+      <!-- Content -->
+      <div class="hero__content">
+        <div class="hero__badge">
+          <i data-lucide="zap"></i>
+          New: 200+ Remotion video compositions
+        </div>
+
+        <h1 class="hero__title">
+          Templates that make freelancing <span class="hl">look effortless</span>
+        </h1>
+
+        <p class="hero__sub">
+          Document templates, video templates, and Remotion compositions - everything you need to present, pitch, and produce like a pro.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#categories" class="btn btn--primary btn--lg">
+            <i data-lucide="layout-grid"></i>
+            Browse Templates
+          </a>
+          <a href="#remotion" class="btn btn--outline btn--lg">
+            <i data-lucide="video"></i>
+            Explore Remotion Library
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-val">500+</div>
+            <div class="hero__stat-lbl">Templates total</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val">200+</div>
+            <div class="hero__stat-lbl">Remotion compositions</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val">14</div>
+            <div class="hero__stat-lbl">File formats</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual mockup -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="mockup-grid">
+          <div class="mock-card">
+            <div class="mock-card__thumb" style="background: linear-gradient(135deg, #b45309, #f59e0b);"></div>
+            <div class="mock-card__name">Client Contract</div>
+            <div class="mock-card__type">Contracts</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card__thumb" style="background: linear-gradient(135deg, #6d28d9, #ec4899);"></div>
+            <div class="mock-card__name">Project Proposal</div>
+            <div class="mock-card__type">Proposals</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card__thumb" style="background: linear-gradient(135deg, #0c4a6e, #06b6d4);"></div>
+            <div class="mock-card__name">Sprint Review Deck</div>
+            <div class="mock-card__type">Remotion - SaaS</div>
+          </div>
+          <div class="mock-card mock-card--wide">
+            <div class="mock-code">
+              <span class="cc">// Remotion composition</span><br/>
+              <span class="ck">const</span> <span class="ca">MyVideo</span> = () => (<br/>
+              &nbsp;&nbsp;<span class="cp">&lt;AbsoluteFill&gt;</span><br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">&lt;Title text={props.title} /&gt;</span><br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">&lt;LogoReveal color={brand} /&gt;</span><br/>
+              &nbsp;&nbsp;<span class="cp">&lt;/AbsoluteFill&gt;</span><br/>
+              );
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DOCUMENT TEMPLATE CATEGORIES
+     ============================================================ -->
+<section class="section section--alt" id="categories">
+  <div class="container">
+    <div class="section-hd">
+      <div class="eyebrow">Document Templates</div>
+      <h2 class="section-title">Everything a freelancer needs in writing</h2>
+      <p class="section-sub">Professional document templates for every stage of client work - from first contact to final invoice.</p>
+    </div>
+
+    <div class="cat-grid">
+
+      <!-- Contracts -->
+      <div class="cat-card">
+        <div class="cat-card__icon"><i data-lucide="file-signature"></i></div>
+        <h3 class="cat-card__title">Contracts</h3>
+        <p class="cat-card__desc">Protect yourself and your clients with clear, professional agreements.</p>
+        <div class="cat-card__tags">
+          <span class="pill">Client Contract</span>
+          <span class="pill">Subcontractor</span>
+          <span class="pill">NDA</span>
+        </div>
+      </div>
+
+      <!-- Proposals -->
+      <div class="cat-card">
+        <div class="cat-card__icon"><i data-lucide="presentation"></i></div>
+        <h3 class="cat-card__title">Proposals</h3>
+        <p class="cat-card__desc">Win clients with polished proposals that speak their language.</p>
+        <div class="cat-card__tags">
+          <span class="pill">Project Proposal</span>
+          <span class="pill">Retainer</span>
+          <span class="pill">Pitch Deck</span>
+        </div>
+      </div>
+
+      <!-- Invoices -->
+      <div class="cat-card">
+        <div class="cat-card__icon"><i data-lucide="receipt"></i></div>
+        <h3 class="cat-card__title">Invoices</h3>
+        <p class="cat-card__desc">Get paid on time with clean invoices and payment terms that stick.</p>
+        <div class="cat-card__tags">
+          <span class="pill">Invoice Template</span>
+          <span class="pill">Payment Terms</span>
+          <span class="pill">Receipt</span>
+        </div>
+      </div>
+
+      <!-- Email Scripts -->
+      <div class="cat-card">
+        <div class="cat-card__icon"><i data-lucide="mail"></i></div>
+        <h3 class="cat-card__title">Email Scripts</h3>
+        <p class="cat-card__desc">The right words for every awkward client situation, ready to copy.</p>
+        <div class="cat-card__tags">
+          <span class="pill">Onboarding</span>
+          <span class="pill">Late Payment</span>
+          <span class="pill">Scope Creep</span>
+          <span class="pill">Follow-up</span>
+        </div>
+      </div>
+
+      <!-- Project Management -->
+      <div class="cat-card">
+        <div class="cat-card__icon"><i data-lucide="kanban"></i></div>
+        <h3 class="cat-card__title">Project Management</h3>
+        <p class="cat-card__desc">Keep projects on track and clients informed with structured docs.</p>
+        <div class="cat-card__tags">
+          <span class="pill">Project Brief</span>
+          <span class="pill">Status Report</span>
+          <span class="pill">Retrospective</span>
+          <span class="pill">Timeline</span>
+        </div>
+      </div>
+
+      <!-- Notion Templates -->
+      <div class="cat-card">
+        <div class="cat-card__icon"><i data-lucide="layout-dashboard"></i></div>
+        <h3 class="cat-card__title">Notion Templates</h3>
+        <p class="cat-card__desc">Complete Notion systems built for how freelancers actually work.</p>
+        <div class="cat-card__tags">
+          <span class="pill">Freelancer OS</span>
+          <span class="pill">Project Tracker</span>
+          <span class="pill">CRM</span>
+          <span class="pill">Client Portal</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REMOTION VIDEO TEMPLATE LIBRARY
+     ============================================================ -->
+<section class="rmt-section" id="remotion">
+  <div class="container">
+    <div class="section-hd">
+      <div class="eyebrow">Video Template Library</div>
+      <h2 class="section-title">Programmatic video templates built with Remotion</h2>
+      <p class="section-sub">200+ video compositions you can customize with code. Change colors, text, data - render thousands of unique videos from one template.</p>
+    </div>
+
+    <div class="rmt-grid">
+
+      <!-- Freelancer Series -->
+      <div class="rmt-card rmt--amber">
+        <div class="rmt-card__preview">
+          <div class="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="rmt-card__body">
+          <div class="rmt-badge">Freelancer Series</div>
+          <h3 class="rmt-card__title">Client-Facing Video Toolkit</h3>
+          <p class="rmt-card__tpls">Testimonial videos - Project recap reels - Event highlights - Proposal walkthroughs - Explainer animations</p>
+          <div class="rmt-card__foot">
+            <span class="rmt-count"><i data-lucide="layers"></i> 54 templates</span>
+            <span class="rmt-link">Preview all &rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Creator Economy -->
+      <div class="rmt-card rmt--purple">
+        <div class="rmt-card__preview">
+          <div class="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="rmt-card__body">
+          <div class="rmt-badge">Creator Economy</div>
+          <h3 class="rmt-card__title">Audience Growth Compositions</h3>
+          <p class="rmt-card__tpls">Product launch trailers - Tutorial intros &amp; outros - Podcast audiograms - Music visualizers</p>
+          <div class="rmt-card__foot">
+            <span class="rmt-count"><i data-lucide="layers"></i> 48 templates</span>
+            <span class="rmt-link">Preview all &rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SaaS & Business -->
+      <div class="rmt-card rmt--blue">
+        <div class="rmt-card__preview">
+          <div class="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="rmt-card__body">
+          <div class="rmt-badge">SaaS &amp; Business</div>
+          <h3 class="rmt-card__title">Data-Driven Presentations</h3>
+          <p class="rmt-card__tpls">Sprint review decks - Roadmap presentations - QBR summaries - Bug tracker dashboards</p>
+          <div class="rmt-card__foot">
+            <span class="rmt-count"><i data-lucide="layers"></i> 62 templates</span>
+            <span class="rmt-link">Preview all &rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community & Events -->
+      <div class="rmt-card rmt--green">
+        <div class="rmt-card__preview">
+          <div class="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="rmt-card__body">
+          <div class="rmt-badge">Community &amp; Events</div>
+          <h3 class="rmt-card__title">Live &amp; Event Graphics</h3>
+          <p class="rmt-card__tpls">Stream overlays - Countdown timers - Leaderboard animations - Winner announcements</p>
+          <div class="rmt-card__foot">
+            <span class="rmt-count"><i data-lucide="layers"></i> 38 templates</span>
+            <span class="rmt-link">Preview all &rarr;</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Code callout -->
+    <div class="rmt-code-block">
+      <div class="rmt-code-block__header">
+        <span class="dot dot--r"></span>
+        <span class="dot dot--y"></span>
+        <span class="dot dot--g"></span>
+        <span class="rmt-code-block__label">terminal</span>
+      </div>
+      <div class="rmt-code-block__body">
+        <span style="color:#475569"># 1. Install</span><br/>
+        <span style="color:#f59e0b">npm</span> <span style="color:#93c5fd">install</span> remotion @remotion/cli<br/>
+        <br/>
+        <span style="color:#475569"># 2. Edit your composition props</span><br/>
+        <span style="color:#c084fc">import</span> { <span style="color:#f59e0b">TestimonialVideo</span> } <span style="color:#c084fc">from</span> <span style="color:#86efac">'./compositions'</span>;<br/>
+        <span style="color:#c084fc">const</span> <span style="color:#93c5fd">props</span> = { <span style="color:#93c5fd">name</span>: <span style="color:#86efac">"Jane Doe"</span>, <span style="color:#93c5fd">quote</span>: <span style="color:#86efac">"..."</span>, <span style="color:#93c5fd">brand</span>: <span style="color:#f59e0b">"#f59e0b"</span> };<br/>
+        <br/>
+        <span style="color:#475569"># 3a. Render locally with Remotion CLI</span><br/>
+        <span style="color:#f59e0b">npx</span> <span style="color:#93c5fd">remotion render</span> TestimonialVideo <span style="color:#86efac">out/video.mp4</span><br/>
+        <br/>
+        <span style="color:#475569"># 3b. Or render at scale with Remotion Lambda</span><br/>
+        <span style="color:#f59e0b">npx</span> <span style="color:#93c5fd">remotion lambda render</span> TestimonialVideo --props='{"name":"Jane"}'
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-hd section-hd--c">
+      <div class="eyebrow">How It Works</div>
+      <h2 class="section-title">From template to deliverable in minutes</h2>
+      <p class="section-sub">The same simple workflow whether you're filling a contract or rendering a thousand videos.</p>
+    </div>
+
+    <div class="how-grid">
+
+      <div class="how-card">
+        <div class="how-num">1</div>
+        <h3 class="how-card__title">Choose a template</h3>
+        <p class="how-card__desc">Browse by category or search for exactly what you need. Every template is production-ready and built for real freelance work.</p>
+      </div>
+
+      <div class="how-card">
+        <div class="how-num">2</div>
+        <h3 class="how-card__title">Customize with your data</h3>
+        <p class="how-card__desc">Fill in your details - client name, project scope, brand colors. Document templates open in Word, Notion, or Google Docs. Remotion templates accept typed props.</p>
+      </div>
+
+      <div class="how-card">
+        <div class="how-num">3</div>
+        <h3 class="how-card__title">Export or render programmatically</h3>
+        <p class="how-card__desc">Download your document instantly. For video, render locally or at scale with Remotion Lambda - one composition, thousands of unique outputs.</p>
+        <div class="how-code">npm install &amp;&amp; npx remotion render<br/>-- or --<br/>npx remotion lambda render</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="section section--alt" id="pricing">
+  <div class="container">
+    <div class="section-hd section-hd--c">
+      <div class="eyebrow">Pricing</div>
+      <h2 class="section-title">Pay once, own it forever</h2>
+      <p class="section-sub">No subscriptions required to get started. Upgrade when you need more.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- Free -->
+      <div class="p-card">
+        <div class="p-tier">Free</div>
+        <div class="p-price">0</div>
+        <div class="p-period">no credit card needed</div>
+        <div class="p-div"></div>
+        <ul class="p-feats">
+          <li class="p-feat"><i data-lucide="check"></i> 5 document templates</li>
+          <li class="p-feat"><i data-lucide="check"></i> 3 Remotion compositions</li>
+          <li class="p-feat"><i data-lucide="check"></i> Community access</li>
+          <li class="p-feat"><i data-lucide="check"></i> CC-BY-NC-SA license</li>
+        </ul>
+        <a href="#" class="btn btn--outline" style="width: 100%; justify-content: center;">Get started free</a>
+      </div>
+
+      <!-- Pro Pack -->
+      <div class="p-card p-card--feat">
+        <div class="p-badge">Most Popular</div>
+        <div class="p-tier">Pro Pack</div>
+        <div class="p-price"><sup>&euro;</sup>29</div>
+        <div class="p-period">one-time purchase</div>
+        <div class="p-div"></div>
+        <ul class="p-feats">
+          <li class="p-feat"><i data-lucide="check"></i> All document templates</li>
+          <li class="p-feat"><i data-lucide="check"></i> 20 Remotion compositions</li>
+          <li class="p-feat"><i data-lucide="check"></i> Commercial license</li>
+          <li class="p-feat"><i data-lucide="check"></i> Lifetime updates</li>
+        </ul>
+        <a href="#" class="btn btn--primary" style="width: 100%; justify-content: center;">Buy Pro Pack</a>
+      </div>
+
+      <!-- Full Library -->
+      <div class="p-card">
+        <div class="p-tier">Full Library</div>
+        <div class="p-price"><sup>&euro;</sup>5</div>
+        <div class="p-period">per month, cancel anytime</div>
+        <div class="p-div"></div>
+        <ul class="p-feats">
+          <li class="p-feat"><i data-lucide="check"></i> Everything in Pro Pack</li>
+          <li class="p-feat"><i data-lucide="check"></i> All 200+ Remotion compositions</li>
+          <li class="p-feat"><i data-lucide="check"></i> New templates every month</li>
+          <li class="p-feat"><i data-lucide="check"></i> Early access to releases</li>
+        </ul>
+        <a href="#" class="btn btn--outline" style="width: 100%; justify-content: center;">Subscribe</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="p-card">
+        <div class="p-tier">Enterprise</div>
+        <div class="p-price" style="font-size: 28px; font-weight: 800; margin-top: 6px;">Custom</div>
+        <div class="p-period">for teams and agencies</div>
+        <div class="p-div"></div>
+        <ul class="p-feats">
+          <li class="p-feat"><i data-lucide="check"></i> Unlimited team seats</li>
+          <li class="p-feat"><i data-lucide="check"></i> White-label license</li>
+          <li class="p-feat"><i data-lucide="check"></i> Custom Remotion builds</li>
+          <li class="p-feat"><i data-lucide="check"></i> Priority support &amp; SLA</li>
+        </ul>
+        <a href="mailto:hello@freelancer-templates.org" class="btn btn--outline" style="width: 100%; justify-content: center;">Contact us</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OPEN SOURCE NOTE
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="oss-box">
+      <div class="oss-box__left">
+        <div class="oss-icon"><i data-lucide="github"></i></div>
+        <div>
+          <div class="oss-title">Open source community templates</div>
+          <div class="oss-desc">Some of our community templates are open source under CC-BY-NC-SA. Use them, fork them, improve them - and star us on GitHub.</div>
+        </div>
+      </div>
+      <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline" style="flex-shrink: 0;">
+        <i data-lucide="star"></i>
+        Star on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NEWSLETTER
+     ============================================================ -->
+<section class="newsletter" id="newsletter">
+  <div class="container">
+    <div class="nl__inner">
+      <h2 class="nl__title">New templates every month</h2>
+      <p class="nl__sub">Get notified when we drop new document templates, Remotion compositions, and community resources. No spam - just templates.</p>
+      <form class="nl__form" id="nlForm" novalidate>
+        <input
+          class="nl__input"
+          type="email"
+          placeholder="you@freelancer.com"
+          autocomplete="email"
+          required
+          aria-label="Email address"
+        />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+      <p class="nl__note">Join 2,400+ freelancers. Unsubscribe anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+
+      <!-- Brand col -->
+      <div>
+        <div class="footer__wm">freelancer<em>-templates</em></div>
+        <p class="footer__desc">The template marketplace built for independent professionals - documents, video compositions, and everything in between.</p>
+        <div class="footer__socials">
+          <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="footer__soc" aria-label="GitHub">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" class="footer__soc" aria-label="Twitter / X">
+            <i data-lucide="twitter"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer__soc" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Templates col -->
+      <div>
+        <div class="footer__col-title">Templates</div>
+        <ul class="footer__links">
+          <li><a href="#categories" class="footer__lnk">Contracts</a></li>
+          <li><a href="#categories" class="footer__lnk">Proposals</a></li>
+          <li><a href="#categories" class="footer__lnk">Invoices</a></li>
+          <li><a href="#categories" class="footer__lnk">Email Scripts</a></li>
+          <li><a href="#categories" class="footer__lnk">Notion Templates</a></li>
+          <li><a href="#remotion" class="footer__lnk">Remotion Library</a></li>
+        </ul>
+      </div>
+
+      <!-- Ecosystem col -->
+      <div>
+        <div class="footer__col-title">SISY Ecosystem</div>
+        <ul class="footer__links">
+          <li><a href="https://freelancer-automation.com" target="_blank" rel="noopener" class="footer__lnk">freelancer-automation.com</a></li>
+          <li><a href="https://sisy.digital" target="_blank" rel="noopener" class="footer__lnk">sisy.digital</a></li>
+          <li><a href="https://sisy.best" target="_blank" rel="noopener" class="footer__lnk">sisy.best</a></li>
+          <li><a href="https://sisy.space" target="_blank" rel="noopener" class="footer__lnk">sisy.space</a></li>
+        </ul>
+      </div>
+
+      <!-- Company col -->
+      <div>
+        <div class="footer__col-title">Company</div>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__lnk">About</a></li>
+          <li><a href="#pricing" class="footer__lnk">Pricing</a></li>
+          <li><a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="footer__lnk">Open Source</a></li>
+          <li><a href="mailto:hello@freelancer-templates.org" class="footer__lnk">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">&copy; {{ now.Year }} freelancer-templates.org. All rights reserved.</div>
+      <div class="footer__legal">
+        <a href="#" class="footer__ll">Privacy Policy</a>
+        <a href="#" class="footer__ll">Terms of Service</a>
+        <a href="#" class="footer__ll">License</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{ end }}

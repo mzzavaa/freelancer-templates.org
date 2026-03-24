@@ -1,0 +1,17 @@
+baseURL = "https://freelancer-templates.org/"
+languageCode = "en-us"
+title = "freelancer-templates"
+
+[params]
+  description = "Document templates, video templates, and Remotion compositions - everything you need to present, pitch, and produce like a pro."
+  tagline = "Templates that make freelancing look effortless"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+disableKinds = ["taxonomy", "term"]
+
+[build]
+  writeStats = true
