@@ -39,7 +39,8 @@
         "name": "Bold Verdict",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "AffiliateReview-DarkScorecard"
   },
   {
     "slug": "beforeafter",
@@ -81,7 +82,8 @@
         "name": "Warm Metrics Compare",
         "style": "warm"
       }
-    ]
+    ],
+    "primaryId": "BeforeAfter-DarkSplitScreen"
   },
   {
     "slug": "behindthescenes",
@@ -123,7 +125,8 @@
         "name": "Warm Process Flow",
         "style": "warm"
       }
-    ]
+    ],
+    "primaryId": "BehindTheScenes-DarkSceneCards"
   },
   {
     "slug": "casestudy",
@@ -165,7 +168,8 @@
         "name": "Neon Spotlight",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "CaseStudy-NeonSpotlight"
   },
   {
     "slug": "collaboration",
@@ -207,7 +211,8 @@
         "name": "Bold Stats Merge",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "Collaboration-DarkSplitScreen"
   },
   {
     "slug": "countdownhype",
@@ -249,7 +254,8 @@
         "name": "Neon Urgency",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "CountdownHype-NeonTimer"
   },
   {
     "slug": "coursepromo",
@@ -291,7 +297,8 @@
         "name": "Clean Instructor",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "CoursePromo-DarkOverview"
   },
   {
     "slug": "event",
@@ -333,7 +340,8 @@
         "name": "Neon Countdown",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Event-NeonCountdown"
   },
   {
     "slug": "explainer",
@@ -375,7 +383,8 @@
         "name": "Neon Cinematic",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Explainer-NeonCinematic"
   },
   {
     "slug": "faq",
@@ -417,7 +426,8 @@
         "name": "Neon Interview",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Faq-NeonInterview"
   },
   {
     "slug": "fitnessroutine",
@@ -459,7 +469,8 @@
         "name": "Neon Circuit",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "FitnessRoutine-NeonExerciseList"
   },
   {
     "slug": "invoice",
@@ -501,7 +512,8 @@
         "name": "Neon Urgent",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Invoice-NeonUrgent"
   },
   {
     "slug": "listing",
@@ -543,7 +555,8 @@
         "name": "Minimal Comparison",
         "style": "minimal"
       }
-    ]
+    ],
+    "primaryId": "Listing-CleanShowcase"
   },
   {
     "slug": "milestone",
@@ -585,7 +598,8 @@
         "name": "Neon Celebration",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Milestone-NeonCelebration"
   },
   {
     "slug": "musicvisualizer",
@@ -627,7 +641,8 @@
         "name": "Neon Lyrics",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "MusicVisualizer-NeonBars"
   },
   {
     "slug": "newsletterpromo",
@@ -669,7 +684,8 @@
         "name": "Clean Testimonial Blend",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "NewsletterPromo-DarkSubscribeCta"
   },
   {
     "slug": "onboarding",
@@ -711,7 +727,8 @@
         "name": "Neon Creative",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Onboarding-NeonCreative"
   },
   {
     "slug": "podcastaudiogram",
@@ -753,7 +770,8 @@
         "name": "Warm Episode Promo",
         "style": "warm"
       }
-    ]
+    ],
+    "primaryId": "PodcastAudiogram-DarkWaveform"
   },
   {
     "slug": "pollquiz",
@@ -795,7 +813,8 @@
         "name": "Neon Reveal",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "PollQuiz-NeonQuestionCard"
   },
   {
     "slug": "portfolio",
@@ -837,7 +856,8 @@
         "name": "Neon Reel",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Portfolio-NeonReel"
   },
   {
     "slug": "pricing",
@@ -879,7 +899,8 @@
         "name": "Neon Spotlight",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Pricing-NeonSpotlight"
   },
   {
     "slug": "productlaunch",
@@ -921,7 +942,8 @@
         "name": "Bold Countdown",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "ProductLaunch-DarkHeroReveal"
   },
   {
     "slug": "proposal",
@@ -963,7 +985,8 @@
         "name": "Neon Pitch",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Proposal-NeonPitch"
   },
   {
     "slug": "recap",
@@ -1005,7 +1028,8 @@
         "name": "Neon Timeline",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Recap-NeonTimeline"
   },
   {
     "slug": "recipestep",
@@ -1047,7 +1071,8 @@
         "name": "Clean Summary Card",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "RecipeStep-WarmIngredientList"
   },
   {
     "slug": "socialproof",
@@ -1089,7 +1114,8 @@
         "name": "Neon Announcement",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "SocialProof-NeonAnnouncement"
   },
   {
     "slug": "testimonial",
@@ -1131,7 +1157,8 @@
         "name": "Neon Split",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "Testimonial-NeonSplit"
   },
   {
     "slug": "tutorial",
@@ -1173,7 +1200,8 @@
         "name": "Clean Split Demo",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "Tutorial-DarkNumberedSteps"
   },
   {
     "slug": "youtubetuorial",
@@ -1190,7 +1218,8 @@
         "name": "VideoFlow Pipeline",
         "style": "dark"
       }
-    ]
+    ],
+    "primaryId": "YouTubeTutorial-VideoFlowPipeline"
   },
   {
     "slug": "agentdashboard",
@@ -1232,7 +1261,8 @@
         "name": "Matrix Neon",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "AgentDashboard-ControlPanelDark"
   },
   {
     "slug": "bugtracker",
@@ -1274,7 +1304,8 @@
         "name": "Overview Bold",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "BugTracker-SeverityMatrixDark"
   },
   {
     "slug": "bugtriage",
@@ -1316,7 +1347,8 @@
         "name": "Summary Dashboard Bold",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "BugTriage-PriorityColumnsDark"
   },
   {
     "slug": "clientpipeline",
@@ -1358,7 +1390,8 @@
         "name": "Metrics Warm",
         "style": "warm"
       }
-    ]
+    ],
+    "primaryId": "ClientPipeline-FunnelDark"
   },
   {
     "slug": "componentinventory",
@@ -1400,7 +1433,8 @@
         "name": "Inventory List Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "ComponentInventory-ArchitectureGridDark"
   },
   {
     "slug": "conceptpitch",
@@ -1442,7 +1476,8 @@
         "name": "Brief Bold",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "ConceptPitch-ArcDark"
   },
   {
     "slug": "deploymentstatus",
@@ -1484,7 +1519,8 @@
         "name": "Health Dashboard Neon",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "DeploymentStatus-EnvironmentCardsDark"
   },
   {
     "slug": "efforttracking",
@@ -1526,7 +1562,8 @@
         "name": "Breakdown Warm",
         "style": "warm"
       }
-    ]
+    ],
+    "primaryId": "EffortTracking-TeamAllocationDark"
   },
   {
     "slug": "eventvenue",
@@ -1568,7 +1605,8 @@
         "name": "Event Overview Bold",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "EventVenue-ScheduleMapDark"
   },
   {
     "slug": "featureflags",
@@ -1610,7 +1648,8 @@
         "name": "Rollout Tracker Neon",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "FeatureFlags-ExperimentBoardDark"
   },
   {
     "slug": "featureroadmap",
@@ -1652,7 +1691,8 @@
         "name": "Grid Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "FeatureRoadmap-TimelineDark"
   },
   {
     "slug": "integrationstatus",
@@ -1694,7 +1734,8 @@
         "name": "Health Monitor Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "IntegrationStatus-StatusWallDark"
   },
   {
     "slug": "neighborhoodguide",
@@ -1736,7 +1777,8 @@
         "name": "Overview Neon",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "NeighborhoodGuide-ExplorerWarm"
   },
   {
     "slug": "officedirectory",
@@ -1778,7 +1820,8 @@
         "name": "Region Groups Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "OfficeDirectory-WorldViewDark"
   },
   {
     "slug": "pincollection",
@@ -1820,7 +1863,8 @@
         "name": "Category Grid Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "PinCollection-CardGalleryWarm"
   },
   {
     "slug": "platformoverview",
@@ -1862,7 +1906,8 @@
         "name": "Stack Neon",
         "style": "neon"
       }
-    ]
+    ],
+    "primaryId": "PlatformOverview-CommandCenterDark"
   },
   {
     "slug": "projecthealth",
@@ -1904,7 +1949,8 @@
         "name": "Executive Summary Warm",
         "style": "warm"
       }
-    ]
+    ],
+    "primaryId": "ProjectHealth-HealthScorecardDark"
   },
   {
     "slug": "qbrdashboard",
@@ -1946,7 +1992,8 @@
         "name": "Comparison Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "QBRDashboard-ExecutiveDark"
   },
   {
     "slug": "releasenotes",
@@ -1988,7 +2035,8 @@
         "name": "Version Compare Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "ReleaseNotes-ChangelogDark"
   },
   {
     "slug": "sprintdashboard",
@@ -2030,7 +2078,8 @@
         "name": "Burndown Bold",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "SprintDashboard-KanbanDark"
   },
   {
     "slug": "sprintrecap",
@@ -2072,7 +2121,8 @@
         "name": "Team Contributions Bold",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "SprintRecap-ShippedListDark"
   },
   {
     "slug": "storelocator",
@@ -2114,7 +2164,8 @@
         "name": "Directory Minimal",
         "style": "minimal"
       }
-    ]
+    ],
+    "primaryId": "StoreLocator-FinderClean"
   },
   {
     "slug": "thoughtleadership",
@@ -2156,7 +2207,8 @@
         "name": "Keynote Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "ThoughtLeadership-EditorialDark"
   },
   {
     "slug": "travelitinerary",
@@ -2198,7 +2250,8 @@
         "name": "Highlights Bold",
         "style": "bold"
       }
-    ]
+    ],
+    "primaryId": "TravelItinerary-DayByDayWarm"
   },
   {
     "slug": "velocitychart",
@@ -2240,6 +2293,7 @@
         "name": "Summary Clean",
         "style": "clean"
       }
-    ]
+    ],
+    "primaryId": "VelocityChart-BarChartDark"
   }
 ]

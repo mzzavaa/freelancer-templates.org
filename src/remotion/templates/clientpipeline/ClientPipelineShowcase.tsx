@@ -1,0 +1,27 @@
+import React from "react";
+import { ClientPipeline, ClientPipelineSpec } from "./ClientPipeline";
+
+const BASE_SPEC: ClientPipelineSpec = {
+  dashboard_title: "Freelance Automation — Client Pipeline",
+  stages: [
+    { stage_name: "Lead", count: 24, value: 180 },
+    { stage_name: "Proposal", count: 12, value: 95 },
+    { stage_name: "Negotiation", count: 6, value: 72 },
+    { stage_name: "Closed", count: 4, value: 58 },
+  ],
+  total_revenue: 58,
+  conversion_rate: 17,
+  recent_deals: [
+    { client_name: "Linda Mohamed", value: 15, status: "negotiation" },
+    { client_name: "Linda Mohamed", value: 22, status: "proposal" },
+    { client_name: "Mrs Lee G", value: 21, status: "closed" },
+  ],
+  time_period: "Q1 2026",
+};
+
+export const ClientPipelineFunnelDark: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "funnel", theme: "dark" }} />;
+export const ClientPipelineFunnelWarm: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "funnel", theme: "warm" }} />;
+export const ClientPipelinePipelineBoardDark: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "pipeline-board", theme: "dark" }} />;
+export const ClientPipelinePipelineBoardWarm: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "pipeline-board", theme: "warm" }} />;
+export const ClientPipelineMetricsDark: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "metrics", theme: "dark" }} />;
+export const ClientPipelineMetricsWarm: React.FC = () => <ClientPipeline spec={{ ...BASE_SPEC, layout: "metrics", theme: "warm" }} />;

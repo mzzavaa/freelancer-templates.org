@@ -23,6 +23,37 @@
   </div>
 </section>
 
+<!-- ── Live Player Preview ─────────────────────────────────── -->
+<section class="tpl-player-section">
+  <div class="container">
+    <div class="tpl-player-hd">
+      <h2 class="tpl-player-hd__title">Live preview</h2>
+      <div class="tpl-player-hd__actions">
+        <a href="{{ (printf "player/?comp=%s-%s" .Params.camel .Params.primaryVariant) | relURL }}"
+           target="_blank" class="btn btn--outline btn--sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+          Open full player
+        </a>
+        <a href="{{ "player/" | relURL }}" class="btn btn--outline btn--sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          Browse all {{ .Params.variantCount }} variants
+        </a>
+      </div>
+    </div>
+    <div class="tpl-player-frame-wrap">
+      <iframe
+        id="tplPlayerIframe"
+        src="{{ (printf "player/?comp=%s-%s&embed=1" .Params.camel .Params.primaryVariant) | relURL }}"
+        class="tpl-player-frame"
+        allow="autoplay"
+        loading="lazy"
+        title="{{ .Title }} - Live Remotion Preview"
+      ></iframe>
+    </div>
+    <p class="tpl-player-hint">Click a variant below to switch the preview. Use arrow keys in the full player to step through all compositions.</p>
+  </div>
+</section>
+
 <!-- ── All Variants ───────────────────────────────────────────── -->
 <section class="tpl-variants">
   <div class="container">
@@ -228,6 +259,21 @@
 </section>
 
 <script>
+// Update player iframe when a variant card is clicked
+(function() {
+  var iframe = document.getElementById('tplPlayerIframe');
+  if (!iframe) return;
+  document.querySelectorAll('.tpl-var-card').forEach(function(card) {
+    card.addEventListener('click', function(e) {
+      var id = card.dataset.id;
+      if (id && iframe) {
+        var base = iframe.src.split('?')[0];
+        iframe.src = base + '?comp=' + encodeURIComponent(id) + '&embed=1';
+      }
+    });
+  });
+})();
+
 // Video hover on variant cards
 document.querySelectorAll('.tpl-var-card').forEach(function(card) {
   var vid = card.querySelector('video');

@@ -1,0 +1,23 @@
+import React from "react";
+import { FeatureRoadmap, FeatureRoadmapSpec } from "./FeatureRoadmap";
+
+const BASE_SPEC: FeatureRoadmapSpec = {
+  product_name: "Sisy",
+  roadmap_title: "Q1 2026 Feature Roadmap",
+  time_horizon: "Jan – Mar 2026",
+  features: [
+    { name: "Auth Module v2", description: "SSO + MFA support", status: "completed", category: "Security", progress_percent: 100 },
+    { name: "Dashboard Redesign", description: "New composable widget system", status: "in-progress", category: "Frontend", progress_percent: 65 },
+    { name: "API Rate Limiting", description: "Per-tenant throttling", status: "in-progress", category: "Backend", progress_percent: 40 },
+    { name: "Notification System", description: "Real-time push + email digest", status: "upcoming", category: "Backend", progress_percent: 0 },
+    { name: "OTTO Integration", description: "Composable verb pipeline", status: "in-progress", category: "Platform", progress_percent: 55 },
+    { name: "Analytics Dashboard", description: "Usage metrics & insights", status: "upcoming", category: "Frontend", progress_percent: 0 },
+  ],
+};
+
+export const FeatureRoadmapTimelineDark: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "dark" }} />;
+export const FeatureRoadmapTimelineClean: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "timeline", theme: "clean" }} />;
+export const FeatureRoadmapSwimlaneDark: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "dark" }} />;
+export const FeatureRoadmapSwimlaneClean: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "swimlane", theme: "clean" }} />;
+export const FeatureRoadmapGridDark: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "dark" }} />;
+export const FeatureRoadmapGridClean: React.FC = () => <FeatureRoadmap spec={{ ...BASE_SPEC, layout: "grid", theme: "clean" }} />;

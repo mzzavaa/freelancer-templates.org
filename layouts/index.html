@@ -20,8 +20,9 @@
           Open-source templates for <span class="hl">freelancers and communities</span>
         </h1>
 
+        {{ $total := 0 }}{{ range .Site.Data.templates }}{{ $total = add $total .variantCount }}{{ end }}
         <p class="hero__sub">
-          405 Remotion video compositions and document templates - free under CC-BY-NC-SA. Use them, customize them, make them yours.
+          {{ $total }} Remotion video compositions and document templates - free under CC-BY-NC-SA. Use them, customize them, make them yours.
         </p>
 
         <div class="hero__ctas">
@@ -37,11 +38,12 @@
 
         <div class="hero__stats">
           <div class="hero__stat">
-            <div class="hero__stat-val">405</div>
+            {{ $hTotal := 0 }}{{ range .Site.Data.templates }}{{ $hTotal = add $hTotal .variantCount }}{{ end }}
+          <div class="hero__stat-val">{{ $hTotal }}</div>
             <div class="hero__stat-lbl">Video compositions</div>
           </div>
           <div class="hero__stat">
-            <div class="hero__stat-val">61</div>
+            <div class="hero__stat-val">{{ len .Site.Data.templates }}</div>
             <div class="hero__stat-lbl">Template types</div>
           </div>
           <div class="hero__stat">
@@ -249,7 +251,8 @@
     <div class="rmt-see-all">
       <a href="{{ "library/" | relURL }}" class="btn btn--outline rmt-see-all__btn">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-        See all 61 template types - 405 compositions
+        {{ $sTotal := 0 }}{{ range .Site.Data.templates }}{{ $sTotal = add $sTotal .variantCount }}{{ end }}
+        See all {{ len .Site.Data.templates }} template types - {{ $sTotal }} compositions
       </a>
     </div>
 
