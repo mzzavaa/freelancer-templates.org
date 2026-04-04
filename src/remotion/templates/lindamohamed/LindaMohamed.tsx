@@ -256,150 +256,153 @@ export const Folie2AboutMe: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const photoOpacity = fadeIn(frame, 5, 25);
-  const nameSpring = springEntrance(frame, fps, 20, SPRING.default);
-  const bioOpacity = fadeIn(frame, 40, 25);
+  const photoOpacity = fadeIn(frame, 0, 22);
+  const titleSpring = springEntrance(frame, fps, 18, SPRING.default);
+  const expOpacity = fadeIn(frame, 35, 20);
+  const logosOpacity = fadeIn(frame, 60, 20);
+  const bottomOpacity = fadeIn(frame, 50, 20);
 
-  const stats = [
-    { value: "12+", label: "Years\nSoftware" },
-    { value: "6+", label: "Years\nCloud & AI" },
-    { value: "6+", label: "Years\nConsulting" },
+  const expItems: { icon: IconName; text: string }[] = [
+    { icon: "code", text: "Software Development & IT (12+ Years)" },
+    { icon: "cloud", text: "Cloud & AI/ML Experience (6+ Years)" },
+    { icon: "laptop", text: "Enterprise IT Consulting (6+ Years)" },
   ];
+  const companies = ["iTEC", "Drei", "EY", "creative-it", "ebcont", "lindamohamed.com"];
+
+  const BOTTOM_H = 200;
 
   return (
     <AbsoluteFill style={{ backgroundColor: WHITE, fontFamily: FONT }}>
-      {/* Left: Photo area */}
-      <div
-        style={{
-          position: "absolute",
-          left: 0,
-          top: 0,
-          width: "40%",
-          height: "100%",
-          opacity: photoOpacity,
-          overflow: "hidden",
-        }}
-      >
+
+      {/* ── Left: Photo ──────────────────────────────── */}
+      <div style={{
+        position: "absolute", left: 0, top: 0,
+        width: "38%", height: `calc(100% - ${BOTTOM_H}px)`,
+        overflow: "hidden", opacity: photoOpacity,
+      }}>
         <Img
-          src={staticFile("slides/lindamohamed/Folie2.png")}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
-        {/* Green accent strip at right edge */}
-        <div
-          style={{
-            position: "absolute",
-            right: 0,
-            top: 0,
-            width: 4,
-            height: "100%",
-            backgroundColor: GREEN,
-          }}
+          src={staticFile("slides/lindamohamed/linda-portrait.jpg")}
+          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
         />
       </div>
 
-      {/* Right: Content */}
-      <div
-        style={{
-          position: "absolute",
-          left: "42%",
-          top: TOP_SAFE,
-          right: PADDING,
-          bottom: TOP_SAFE,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-        {/* Section label */}
-        <div
-          style={{
-            fontSize: 24,
-            fontWeight: 600,
-            color: GREEN,
-            textTransform: "uppercase" as const,
-            letterSpacing: 2,
-            opacity: nameSpring,
-            marginBottom: 8,
-          }}
-        >
-          About Me
-        </div>
-
-        {/* Name */}
-        <div
-          style={{
-            fontSize: 38,
-            fontWeight: 800,
-            color: TEXT_BLACK,
-            opacity: nameSpring,
-            transform: `translateX(${slideIn(nameSpring, "right", 30)}px)`,
-          }}
-        >
-          Linda Mohamed
-        </div>
-
+      {/* ── Right: Main content ───────────────────────── */}
+      <div style={{
+        position: "absolute",
+        left: "38%", top: 0, right: 0,
+        height: `calc(100% - ${BOTTOM_H}px)`,
+        padding: `${TOP_SAFE}px ${PADDING}px 0 48px`,
+        display: "flex", flexDirection: "column", justifyContent: "center",
+      }}>
         {/* Title */}
-        <div
-          style={{
-            fontSize: 24,
-            fontWeight: 500,
-            color: GREEN,
-            marginTop: 4,
-            opacity: nameSpring,
-          }}
-        >
-          AI & Cloud Consultant
+        <div style={{
+          fontSize: 76, fontWeight: 900, color: TEXT_BLACK,
+          lineHeight: 0.95, letterSpacing: -2,
+          opacity: titleSpring,
+          transform: `translateY(${slideIn(titleSpring, "up", 22)}px)`,
+        }}>
+          HI, I AM LINDA
         </div>
 
-        {/* Bio text */}
-        <div
-          style={{
-            fontSize: 24,
-            fontWeight: 400,
-            color: TEXT_GRAY,
-            lineHeight: 1.6,
-            marginTop: 20,
-            opacity: bioOpacity,
-            maxWidth: 500,
-          }}
-        >
-          Passionate about helping businesses leverage AI and Cloud technologies.
-          Specializing in workshops, consulting, and hands-on implementation
-          from idea to production.
+        {/* Subtitle */}
+        <div style={{
+          fontSize: 24, fontWeight: 400, color: TEXT_MUTED,
+          textTransform: "uppercase" as const, letterSpacing: 1,
+          marginTop: 12, marginBottom: 28,
+          opacity: titleSpring,
+        }}>
+          AI & Cloud Consultant and AWS Hero
         </div>
 
-        {/* Stats row */}
-        <div
-          style={{
-            display: "flex",
-            gap: 16,
-            marginTop: 28,
-          }}
-        >
-          {stats.map((stat, i) => (
-            <StatBadge
-              key={i}
-              value={stat.value}
-              label={stat.label}
-              frame={frame}
-              delay={staggerDelay(i, 60, 20)}
-              fps={fps}
-            />
+        {/* Experience pill */}
+        <div style={{
+          display: "inline-flex", alignSelf: "flex-start",
+          backgroundColor: GREEN, color: WHITE,
+          borderRadius: 20, padding: "6px 20px",
+          fontSize: 24, fontWeight: 700,
+          marginBottom: 18, opacity: expOpacity,
+        }}>
+          Experience
+        </div>
+
+        {/* Experience items */}
+        {expItems.map((item, i) => (
+          <div key={i} style={{
+            display: "flex", alignItems: "center", gap: 14,
+            marginBottom: 12,
+            opacity: fadeIn(frame, 35 + i * 12, 18),
+          }}>
+            <Icon name={item.icon} size={26} color={GREEN} />
+            <div style={{ fontSize: 24, color: TEXT_BLACK }}>{item.text}</div>
+          </div>
+        ))}
+
+        {/* Company logos (text badges - no image assets available) */}
+        <div style={{
+          display: "flex", gap: 10, flexWrap: "wrap" as const,
+          marginTop: 22, opacity: logosOpacity,
+        }}>
+          {companies.map((c, i) => (
+            <div key={i} style={{
+              padding: "5px 12px",
+              border: `1px solid ${CARD_BORDER}`,
+              borderRadius: 6,
+              fontSize: 24, fontWeight: 600, color: TEXT_BLACK,
+              backgroundColor: "#f8f8f8",
+            }}>{c}</div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Bottom bar: full-width, 3 columns ─────────── */}
+      <div style={{
+        position: "absolute", bottom: 0, left: 0, right: 0,
+        height: BOTTOM_H,
+        backgroundColor: "#f0f0ee",
+        display: "flex", alignItems: "stretch",
+        opacity: bottomOpacity,
+      }}>
+        {/* Volunteering */}
+        <div style={{
+          flex: 1, padding: "20px 28px",
+          display: "flex", flexDirection: "column", justifyContent: "center",
+        }}>
+          <div style={{ fontSize: 24, fontWeight: 700, color: GREEN, marginBottom: 8 }}>Volunteering</div>
+          <div style={{ fontSize: 24, color: TEXT_GRAY }}>AWS User Group Leader</div>
+          <div style={{ fontSize: 24, color: TEXT_GRAY }}>Forverein AWS Community DACH</div>
+          <div style={{ fontSize: 24, color: TEXT_GRAY }}>AWS Community HERO</div>
+        </div>
+
+        {/* About Me */}
+        <div style={{
+          flex: 1, padding: "20px 28px",
+          borderLeft: "1px solid rgba(0,0,0,0.1)",
+          display: "flex", flexDirection: "column", justifyContent: "center",
+        }}>
+          <div style={{
+            display: "inline-flex", alignSelf: "flex-start",
+            backgroundColor: GREEN, color: WHITE,
+            borderRadius: 20, padding: "4px 16px",
+            fontSize: 24, fontWeight: 700, marginBottom: 10,
+          }}>About Me</div>
+          {["I love building prototypes.", "I am a process nerd.", "Juggling is my passion."].map((t, i) => (
+            <div key={i} style={{ fontSize: 24, color: TEXT_BLACK, marginBottom: 4 }}>{i + 1}. {t}</div>
           ))}
         </div>
 
-        {/* Volunteering & Education note */}
-        <div
-          style={{
-            fontSize: 24,
-            color: TEXT_MUTED,
-            marginTop: 20,
-            opacity: fadeIn(frame, 120, 20),
-          }}
-        >
-          AWS Community Builder · Volunteer Mentor · MSc Computer Science
+        {/* Education */}
+        <div style={{
+          flex: 1, padding: "20px 28px",
+          borderLeft: "1px solid rgba(0,0,0,0.1)",
+          display: "flex", flexDirection: "column", justifyContent: "center",
+        }}>
+          <div style={{ fontSize: 24, fontWeight: 700, color: GREEN, marginBottom: 8 }}>Education</div>
+          <div style={{ fontSize: 24, fontWeight: 600, color: TEXT_BLACK }}>HTL Pinkafeld</div>
+          <div style={{ fontSize: 24, fontWeight: 600, color: TEXT_BLACK, marginTop: 6 }}>FH Technikum Wien</div>
+          <div style={{ fontSize: 24, color: TEXT_MUTED, marginTop: 4 }}>MSc Computer Science</div>
         </div>
       </div>
+
     </AbsoluteFill>
   );
 };
@@ -745,99 +748,104 @@ export const Folie4CostsPackages: React.FC = () => {
 // Reusable for Folie 15 ("More Information") too
 // ═══════════════════════════════════════════════════════════════
 
+// White-left / photo-right section divider — matches Folie5 and Folie15 layouts
 interface SectionDividerProps {
-  title: string;
-  slideImage: string;
-  subtitle?: string;
+  titleLine1: string;
+  titleLine2?: string;
+  subtitle: string;
+  photo: string; // staticFile path
 }
 
-export const SectionDivider: React.FC<SectionDividerProps> = ({ title, slideImage, subtitle }) => {
+const SectionDivider: React.FC<SectionDividerProps> = ({ titleLine1, titleLine2, subtitle, photo }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const bgScale = interpolate(frame, [0, 150], [1.08, 1], {
-    extrapolateRight: "clamp",
-    extrapolateLeft: "clamp",
-  });
-  const overlayOpacity = fadeIn(frame, 0, 20);
-  const titleSpring = springEntrance(frame, fps, 25, SPRING.gentle);
-  const lineWidth = interpolate(frame, [35, 75], [0, 160], {
-    extrapolateRight: "clamp",
-    extrapolateLeft: "clamp",
-  });
-  const subtitleOpacity = fadeIn(frame, 60, 25);
+  const logoSpring = springEntrance(frame, fps, 8, SPRING.gentle);
+  const titleSpring = springEntrance(frame, fps, 22, SPRING.default);
+  const subtitleOpacity = fadeIn(frame, 45, 22);
+  const photoScale = interpolate(frame, [0, 180], [1.06, 1], { extrapolateRight: "clamp", extrapolateLeft: "clamp" });
+  const photoOpacity = fadeIn(frame, 0, 25);
 
   return (
-    <AbsoluteFill style={{ backgroundColor: TEXT_BLACK, fontFamily: FONT }}>
-      {/* Background photo */}
-      <AbsoluteFill style={{ transform: `scale(${bgScale})` }}>
-        <Img
-          src={staticFile(slideImage)}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
-      </AbsoluteFill>
-
-      {/* Overlay */}
-      <AbsoluteFill
-        style={{
-          background: "linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%)",
-          opacity: overlayOpacity,
-        }}
-      />
-
-      {/* Content */}
-      <AbsoluteFill
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            fontSize: 52,
-            fontWeight: 800,
-            color: WHITE,
-            opacity: titleSpring,
-            transform: `translateY(${slideIn(titleSpring, "up", 25)}px)`,
-            letterSpacing: -1,
-          }}
-        >
-          {title}
+    <AbsoluteFill style={{ backgroundColor: WHITE, fontFamily: FONT }}>
+      {/* Left: White panel ~48% */}
+      <div style={{
+        position: "absolute", left: 0, top: 0,
+        width: "48%", height: "100%",
+        display: "flex", flexDirection: "column",
+        justifyContent: "center",
+        padding: `0 ${PADDING}px`,
+      }}>
+        {/* Infinity logo */}
+        <div style={{ opacity: logoSpring, marginBottom: 32 }}>
+          <InfinityLogo size={64} color={TEXT_BLACK} />
         </div>
-        <div
-          style={{
-            width: lineWidth,
-            height: 3,
-            backgroundColor: GREEN_LIGHT,
-            borderRadius: 2,
-            marginTop: 16,
-          }}
-        />
-        {subtitle && (
-          <div
-            style={{
-              fontSize: 24,
-              color: "rgba(255,255,255,0.7)",
-              marginTop: 16,
-              opacity: subtitleOpacity,
-            }}
-          >
-            {subtitle}
+
+        {/* Title - large bold, matches original PPTX typography */}
+        <div style={{
+          fontSize: 96, fontWeight: 900, color: TEXT_BLACK,
+          lineHeight: 0.88, letterSpacing: -3, textTransform: "uppercase" as const,
+          opacity: titleSpring,
+          transform: `translateY(${slideIn(titleSpring, "up", 24)}px)`,
+        }}>
+          {titleLine1}
+        </div>
+        {titleLine2 && (
+          <div style={{
+            fontSize: 96, fontWeight: 900, color: TEXT_BLACK,
+            lineHeight: 0.88, letterSpacing: -3, textTransform: "uppercase" as const,
+            opacity: titleSpring,
+            transform: `translateY(${slideIn(titleSpring, "up", 24)}px)`,
+            marginBottom: 28,
+          }}>
+            {titleLine2}
           </div>
         )}
-      </AbsoluteFill>
+
+        {/* Subtitle */}
+        <div style={{
+          fontSize: 24, fontWeight: 400, color: TEXT_MUTED,
+          textTransform: "uppercase" as const, letterSpacing: 0.5,
+          lineHeight: 1.4, marginTop: titleLine2 ? 0 : 24,
+          maxWidth: 420, opacity: subtitleOpacity,
+        }}>
+          {subtitle}
+        </div>
+      </div>
+
+      {/* Right: Photo ~52% */}
+      <div style={{
+        position: "absolute", right: 0, top: 0,
+        width: "52%", height: "100%",
+        overflow: "hidden", opacity: photoOpacity,
+      }}>
+        <div style={{ width: "100%", height: "100%", transform: `scale(${photoScale})`, transformOrigin: "center center" }}>
+          <Img
+            src={staticFile(photo)}
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
+          />
+        </div>
+      </div>
     </AbsoluteFill>
   );
 };
 
 export const Folie5Workshops: React.FC = () => (
-  <SectionDivider title="Workshops" slideImage="slides/lindamohamed/Folie5.png" />
+  <SectionDivider
+    titleLine1="WORK-"
+    titleLine2="SHOPS"
+    subtitle="Details about workshop modules, results and next steps"
+    photo="slides/lindamohamed/linda-portrait.jpg"
+  />
 );
 
 export const Folie15MoreInfo: React.FC = () => (
-  <SectionDivider title="More Information" slideImage="slides/lindamohamed/Folie15.png" />
+  <SectionDivider
+    titleLine1="MORE"
+    titleLine2="INFORMATION"
+    subtitle="More about technologies, results, continuous prototyping pipelines and collaboration with customers and partners"
+    photo="slides/lindamohamed/linda-portrait.jpg"
+  />
 );
 
 
@@ -2190,120 +2198,102 @@ export const Folie22ThankYou: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const logoSpring = springEntrance(frame, fps, 10, SPRING.gentle);
-  const titleSpring = springEntrance(frame, fps, 25, SPRING.default);
-  const contactOpacity = fadeIn(frame, 50, 25);
-  const socialOpacity = fadeIn(frame, 80, 25);
+  const logoSpring = springEntrance(frame, fps, 8, SPRING.gentle);
+  const titleSpring = springEntrance(frame, fps, 20, SPRING.default);
+  const contactOpacity = fadeIn(frame, 40, 22);
+  const socialsOpacity = fadeIn(frame, 65, 22);
+  const projectsOpacity = fadeIn(frame, 85, 22);
+  const photoOpacity = fadeIn(frame, 5, 30);
+  const photoScale = interpolate(frame, [0, 180], [1.05, 1], { extrapolateRight: "clamp", extrapolateLeft: "clamp" });
 
   const socials = [
-    { platform: "LinkedIn", handle: "/in/lindamohamed" },
-    { platform: "GitHub", handle: "github.com/lindamohamed" },
-    { platform: "Web", handle: "lindamohamed.dev" },
+    "sessionize.com/linda-mohamed",
+    "linkedin.com/in/linda-mohamed",
+    "youtube.com/@mrs_lee_g",
+    "instagram.com/mrs_lee_g",
+  ];
+  const projects = [
+    "thejugglingcompany.com",
+    "meet-the-aws-community.com",
+    "youtube.com/@womenofcloudcommunity",
   ];
 
   return (
     <AbsoluteFill style={{ backgroundColor: WHITE, fontFamily: FONT }}>
-      {/* Subtle green gradient at bottom */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: 200,
-          background: "linear-gradient(180deg, transparent, rgba(46,125,50,0.04))",
-        }}
-      />
 
-      <AbsoluteFill
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: PADDING,
-        }}
-      >
-        {/* Logo */}
-        <div
-          style={{
-            opacity: logoSpring,
-            transform: `scale(${interpolate(logoSpring, [0, 1], [0.6, 1])})`,
-            marginBottom: 20,
-          }}
-        >
-          <InfinityLogo size={72} color={GREEN} />
+      {/* Left: Content ~55% */}
+      <div style={{
+        position: "absolute", left: 0, top: 0,
+        width: "55%", height: "100%",
+        padding: `${TOP_SAFE}px ${PADDING}px`,
+        display: "flex", flexDirection: "column", justifyContent: "center",
+      }}>
+        {/* Logo row */}
+        <div style={{ display: "flex", gap: 24, alignItems: "center", marginBottom: 28, opacity: logoSpring }}>
+          <InfinityLogo size={48} color={TEXT_BLACK} />
+          <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            <div style={{ fontSize: 24, fontWeight: 600, color: TEXT_BLACK }}>lindamohamed.com</div>
+            <div style={{ fontSize: 24, color: TEXT_MUTED }}>thejugglingcompany.com</div>
+          </div>
         </div>
 
-        {/* Thank you */}
-        <div
-          style={{
-            fontSize: 48,
-            fontWeight: 800,
-            color: TEXT_BLACK,
-            opacity: titleSpring,
-            transform: `translateY(${slideIn(titleSpring, "up", 20)}px)`,
-            marginBottom: 8,
-          }}
-        >
-          Thank You
+        {/* THANK YOU! */}
+        <div style={{
+          fontSize: 96, fontWeight: 900, color: TEXT_BLACK,
+          lineHeight: 0.9, letterSpacing: -3,
+          opacity: titleSpring,
+          transform: `translateY(${slideIn(titleSpring, "up", 20)}px)`,
+          marginBottom: 28,
+        }}>
+          THANK YOU!
         </div>
 
-        {/* Green line */}
-        <div
-          style={{
-            width: interpolate(frame, [35, 65], [0, 120], {
-              extrapolateRight: "clamp",
-              extrapolateLeft: "clamp",
-            }),
-            height: 3,
-            backgroundColor: GREEN,
-            borderRadius: 2,
-            marginBottom: 24,
-          }}
-        />
-
-        {/* Contact info */}
-        <div
-          style={{
-            fontSize: 24,
-            color: TEXT_GRAY,
-            textAlign: "center",
-            opacity: contactOpacity,
-            marginBottom: 24,
-          }}
-        >
-          Linda Mohamed · AI & Cloud Consultant
+        {/* Contact */}
+        <div style={{ opacity: contactOpacity }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+            <Icon name="paper-plane" size={22} color={GREEN} />
+            <div style={{ fontSize: 24, color: TEXT_BLACK }}>hello@lindamohamed.com</div>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 4 }}>
+            <Icon name="globe" size={22} color={GREEN} />
+            <div style={{ fontSize: 24, color: TEXT_BLACK, fontWeight: 600 }}>lindamohamed.com</div>
+            <div style={{ fontSize: 24, color: TEXT_MUTED, fontStyle: "italic" }}>- Website freshly relaunched</div>
+          </div>
         </div>
 
-        {/* Social links */}
-        <div
-          style={{
-            display: "flex",
-            gap: 20,
-            opacity: socialOpacity,
-          }}
-        >
+        {/* Socials */}
+        <div style={{ marginTop: 20, opacity: socialsOpacity }}>
+          <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 8 }}>Socials and more</div>
           {socials.map((s, i) => (
-            <div
-              key={i}
-              style={{
-                padding: "8px 20px",
-                borderRadius: 20,
-                backgroundColor: GREEN_BG,
-                border: `1px solid ${CARD_BORDER}`,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                opacity: fadeIn(frame, staggerDelay(i, 85, 15), 15),
-              }}
-            >
-              <div style={{ fontSize: 24, fontWeight: 700, color: GREEN }}>{s.platform}</div>
-              <div style={{ fontSize: 24, color: TEXT_MUTED, marginTop: 2 }}>{s.handle}</div>
+            <div key={i} style={{ fontSize: 24, color: TEXT_GRAY, marginBottom: 4 }}>{s}</div>
+          ))}
+        </div>
+
+        {/* More projects */}
+        <div style={{ marginTop: 16, opacity: projectsOpacity }}>
+          <div style={{ fontSize: 24, fontWeight: 700, color: TEXT_BLACK, marginBottom: 8 }}>More of my projects</div>
+          {projects.map((p, i) => (
+            <div key={i} style={{ fontSize: 24, color: TEXT_GRAY, marginBottom: 4 }}>
+              {p}{p.includes("womenofcloud") ? " *coming soon" : ""}
             </div>
           ))}
         </div>
-      </AbsoluteFill>
+      </div>
+
+      {/* Right: Photo ~45% */}
+      <div style={{
+        position: "absolute", right: 0, top: 0,
+        width: "45%", height: "100%",
+        overflow: "hidden", opacity: photoOpacity,
+      }}>
+        <div style={{ width: "100%", height: "100%", transform: `scale(${photoScale})`, transformOrigin: "center center" }}>
+          <Img
+            src={staticFile("slides/lindamohamed/linda-speaking.jpg")}
+            style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top" }}
+          />
+        </div>
+      </div>
+
     </AbsoluteFill>
   );
 };

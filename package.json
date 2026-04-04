@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Open-source Remotion video templates for freelancers and communities",
   "scripts": {
-    "studio": "remotion studio src/remotion/index.ts",
-    "render": "remotion render src/remotion/index.ts",
+    "studio": "remotion studio --public-dir src/remotion/public src/remotion/index.ts",
+    "render": "remotion render --public-dir src/remotion/public src/remotion/index.ts",
     "build:player": "cd player && npm run build",
     "install:player": "cd player && npm install"
   },
