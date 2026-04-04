@@ -399,7 +399,7 @@ export const Folie2AboutMe: React.FC = () => {
           <div style={{ fontSize: 24, fontWeight: 700, color: GREEN, marginBottom: 8 }}>Education</div>
           <div style={{ fontSize: 24, fontWeight: 600, color: TEXT_BLACK }}>HTL Pinkafeld</div>
           <div style={{ fontSize: 24, fontWeight: 600, color: TEXT_BLACK, marginTop: 6 }}>FH Technikum Wien</div>
-          <div style={{ fontSize: 24, color: TEXT_MUTED, marginTop: 4 }}>MSc Computer Science</div>
+          <div style={{ fontSize: 24, color: TEXT_MUTED, marginTop: 4 }}>BSc Computer Science</div>
         </div>
       </div>
 
