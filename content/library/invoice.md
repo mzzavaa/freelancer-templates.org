@@ -6,6 +6,7 @@ camel: "Invoice"
 icon: "receipt"
 color: "blue"
 primaryVariant: "NeonUrgent"
+primaryId: "Invoice-NeonUrgent"
 variantCount: 6
 variants:
   - id: "Invoice-DarkProfessional"

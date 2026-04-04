@@ -6,6 +6,7 @@ icon: "link-2"
 camel: "IntegrationStatus"
 variantCount: 6
 primaryVariant: "StatusWallDark"
+primaryId: "IntegrationStatusStatusWallDark"
 variants:
   - id: "IntegrationStatusStatusWallDark"
     name: "Status Wall Dark"

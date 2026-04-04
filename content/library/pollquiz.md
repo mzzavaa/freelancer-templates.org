@@ -6,6 +6,7 @@ camel: "PollQuiz"
 icon: "bar-chart-2"
 color: "purple"
 primaryVariant: "NeonQuestionCard"
+primaryId: "PollQuiz-NeonQuestionCard"
 variantCount: 6
 variants:
   - id: "PollQuiz-DarkQuestionCard"

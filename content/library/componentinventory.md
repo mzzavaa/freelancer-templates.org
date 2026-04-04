@@ -6,6 +6,7 @@ icon: "layers"
 camel: "ComponentInventory"
 variantCount: 6
 primaryVariant: "ArchitectureGridDark"
+primaryId: "ComponentInventoryArchitectureGridDark"
 variants:
   - id: "ComponentInventoryArchitectureGridDark"
     name: "Architecture Grid Dark"

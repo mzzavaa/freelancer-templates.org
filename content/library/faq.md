@@ -6,6 +6,7 @@ camel: "Faq"
 icon: "help-circle"
 color: "orange"
 primaryVariant: "NeonInterview"
+primaryId: "Faq-NeonInterview"
 variantCount: 6
 variants:
   - id: "Faq-DarkAccordion"

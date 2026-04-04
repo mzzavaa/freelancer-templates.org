@@ -6,6 +6,7 @@ camel: "PodcastAudiogram"
 icon: "mic"
 color: "blue"
 primaryVariant: "DarkWaveform"
+primaryId: "PodcastAudiogram-DarkWaveform"
 variantCount: 6
 variants:
   - id: "PodcastAudiogram-DarkWaveform"

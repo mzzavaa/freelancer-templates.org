@@ -6,6 +6,7 @@ icon: "activity"
 camel: "ProjectHealth"
 variantCount: 6
 primaryVariant: "HealthScorecardDark"
+primaryId: "ProjectHealthHealthScorecardDark"
 variants:
   - id: "ProjectHealthHealthScorecardDark"
     name: "Health Scorecard Dark"

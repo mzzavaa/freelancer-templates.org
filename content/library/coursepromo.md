@@ -6,6 +6,7 @@ camel: "CoursePromo"
 icon: "graduation-cap"
 color: "orange"
 primaryVariant: "DarkOverview"
+primaryId: "CoursePromo-DarkOverview"
 variantCount: 6
 variants:
   - id: "CoursePromo-DarkOverview"

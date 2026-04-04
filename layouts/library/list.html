@@ -4,8 +4,8 @@
 <section class="lib-hero">
   <div class="container">
     <div class="eyebrow">Full Library</div>
-    <h1 class="lib-hero__title">169 video compositions, 29 template types</h1>
-    <p class="lib-hero__sub">Every template in 6 style variants — Dark, Clean, Bold, Warm, Minimal, Neon. Hover to preview. Click to see all variants.</p>
+    <h1 class="lib-hero__title">404 compositions, 80 template types</h1>
+    <p class="lib-hero__sub">Every template in multiple style variants. Hover to preview. Click to see all variants and full documentation.</p>
 
     <div class="lib-controls">
       <div class="lib-search-wrap">
@@ -30,20 +30,18 @@
 <section class="lib-section-block" id="showcase">
   <div class="container">
     <div class="lib-section-hd">
-      <h2 class="lib-section-hd__title">Showcase Templates</h2>
-      <span class="lib-section-hd__count">29 types · 169 compositions</span>
+      <h2 class="lib-section-hd__title">All Templates</h2>
+      <span class="lib-section-hd__count">80 types · 404 compositions</span>
     </div>
 
     <div class="lib-grid" id="libGrid">
       {{ range .Site.Pages }}{{ if eq .Section "library" }}{{ if ne .File.ContentBaseName "_index" }}
       <a href="{{ .RelPermalink }}" class="lib-card" data-name="{{ lower .Title }}" data-slug="{{ .Params.slug }}">
         <div class="lib-card__media">
-          <img src="{{ (printf "previews/showcase/%s-%s.png" .Params.camel .Params.primaryVariant) | relURL }}"
+          <img src="{{ (printf "previews/showcase/%s.png" .Params.primaryId) | relURL }}"
                alt="{{ .Title }} preview" class="lib-card__img" loading="lazy">
-          {{ $vidPath := printf "previews/hero/%s-%s.mp4" .Params.camel .Params.primaryVariant }}
-          {{ $vidFile := printf "static/%s" $vidPath }}
           <video class="lib-card__vid" muted loop playsinline preload="none">
-            <source src="{{ $vidPath | relURL }}" type="video/mp4">
+            <source src="{{ (printf "previews/hero/%s.mp4" .Params.primaryId) | relURL }}" type="video/mp4">
           </video>
           <div class="lib-card__count">{{ .Params.variantCount }} variants</div>
         </div>

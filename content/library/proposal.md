@@ -6,6 +6,7 @@ camel: "Proposal"
 icon: "file-text"
 color: "rose"
 primaryVariant: "NeonPitch"
+primaryId: "Proposal-NeonPitch"
 variantCount: 6
 variants:
   - id: "Proposal-DarkExecutive"

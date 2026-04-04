@@ -6,6 +6,7 @@ icon: "globe"
 camel: "OfficeDirectory"
 variantCount: 6
 primaryVariant: "WorldViewDark"
+primaryId: "OfficeDirectoryWorldViewDark"
 variants:
   - id: "OfficeDirectoryWorldViewDark"
     name: "World View Dark"

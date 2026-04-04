@@ -6,6 +6,7 @@ camel: "ProductLaunch"
 icon: "rocket"
 color: "yellow"
 primaryVariant: "DarkHeroReveal"
+primaryId: "ProductLaunch-DarkHeroReveal"
 variantCount: 6
 variants:
   - id: "ProductLaunch-DarkHeroReveal"

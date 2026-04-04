@@ -6,6 +6,7 @@ camel: "Collaboration"
 icon: "users"
 color: "purple"
 primaryVariant: "DarkSplitScreen"
+primaryId: "Collaboration-DarkSplitScreen"
 variantCount: 6
 variants:
   - id: "Collaboration-DarkSplitScreen"

@@ -6,6 +6,7 @@ icon: "bookmark"
 camel: "PinCollection"
 variantCount: 6
 primaryVariant: "CardGalleryWarm"
+primaryId: "PinCollectionCardGalleryWarm"
 variants:
   - id: "PinCollectionCardGalleryWarm"
     name: "Card Gallery Warm"

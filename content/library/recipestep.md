@@ -6,6 +6,7 @@ camel: "RecipeStep"
 icon: "utensils"
 color: "rose"
 primaryVariant: "WarmIngredientList"
+primaryId: "RecipeStep-WarmIngredientList"
 variantCount: 6
 variants:
   - id: "RecipeStep-WarmIngredientList"

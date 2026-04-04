@@ -6,6 +6,7 @@ camel: "AffiliateReview"
 icon: "star"
 color: "blue"
 primaryVariant: "DarkScorecard"
+primaryId: "AffiliateReview-DarkScorecard"
 variantCount: 6
 variants:
   - id: "AffiliateReview-DarkScorecard"

@@ -6,6 +6,7 @@ icon: "lightbulb"
 camel: "ConceptPitch"
 variantCount: 6
 primaryVariant: "ArcDark"
+primaryId: "ConceptPitchArcDark"
 variants:
   - id: "ConceptPitchArcDark"
     name: "Arc Dark"

@@ -6,6 +6,7 @@ icon: "book-open"
 camel: "ThoughtLeadership"
 variantCount: 6
 primaryVariant: "EditorialDark"
+primaryId: "ThoughtLeadershipEditorialDark"
 variants:
   - id: "ThoughtLeadershipEditorialDark"
     name: "Editorial Dark"

@@ -6,6 +6,7 @@ camel: "Portfolio"
 icon: "briefcase"
 color: "rose"
 primaryVariant: "NeonReel"
+primaryId: "Portfolio-NeonReel"
 variantCount: 6
 variants:
   - id: "Portfolio-DarkGallery"

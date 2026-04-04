@@ -6,6 +6,7 @@ camel: "CountdownHype"
 icon: "clock"
 color: "green"
 primaryVariant: "NeonTimer"
+primaryId: "CountdownHype-NeonTimer"
 variantCount: 6
 variants:
   - id: "CountdownHype-DarkTimer"

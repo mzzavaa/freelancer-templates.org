@@ -6,6 +6,7 @@ icon: "git-branch"
 camel: "ClientPipeline"
 variantCount: 6
 primaryVariant: "FunnelDark"
+primaryId: "ClientPipelineFunnelDark"
 variants:
   - id: "ClientPipelineFunnelDark"
     name: "Funnel Dark"

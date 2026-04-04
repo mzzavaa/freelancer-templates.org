@@ -6,6 +6,7 @@ icon: "trending-up"
 camel: "VelocityChart"
 variantCount: 6
 primaryVariant: "BarChartDark"
+primaryId: "VelocityChartBarChartDark"
 variants:
   - id: "VelocityChartBarChartDark"
     name: "Bar Chart Dark"

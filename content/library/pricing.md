@@ -6,6 +6,7 @@ camel: "Pricing"
 icon: "tag"
 color: "indigo"
 primaryVariant: "NeonSpotlight"
+primaryId: "Pricing-NeonSpotlight"
 variantCount: 6
 variants:
   - id: "Pricing-DarkTiers"

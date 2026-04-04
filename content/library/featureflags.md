@@ -6,6 +6,7 @@ icon: "toggle-left"
 camel: "FeatureFlags"
 variantCount: 6
 primaryVariant: "ExperimentBoardDark"
+primaryId: "FeatureFlagsExperimentBoardDark"
 variants:
   - id: "FeatureFlagsExperimentBoardDark"
     name: "Experiment Board Dark"

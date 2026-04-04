@@ -6,6 +6,7 @@ icon: "map-pin"
 camel: "EventVenue"
 variantCount: 6
 primaryVariant: "ScheduleMapDark"
+primaryId: "EventVenueScheduleMapDark"
 variants:
   - id: "EventVenueScheduleMapDark"
     name: "Schedule Map Dark"

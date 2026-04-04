@@ -6,6 +6,7 @@ icon: "pie-chart"
 camel: "QBRDashboard"
 variantCount: 6
 primaryVariant: "ExecutiveDark"
+primaryId: "QBRDashboardExecutiveDark"
 variants:
   - id: "QBRDashboardExecutiveDark"
     name: "Executive Dark"

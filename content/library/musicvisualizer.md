@@ -6,6 +6,7 @@ camel: "MusicVisualizer"
 icon: "music"
 color: "yellow"
 primaryVariant: "NeonBars"
+primaryId: "MusicVisualizer-NeonBars"
 variantCount: 6
 variants:
   - id: "MusicVisualizer-DarkBars"

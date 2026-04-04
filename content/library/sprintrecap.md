@@ -6,6 +6,7 @@ icon: "check-square"
 camel: "SprintRecap"
 variantCount: 6
 primaryVariant: "ShippedListDark"
+primaryId: "SprintRecapShippedListDark"
 variants:
   - id: "SprintRecapShippedListDark"
     name: "Shipped List Dark"

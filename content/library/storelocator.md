@@ -6,6 +6,7 @@ icon: "store"
 camel: "StoreLocator"
 variantCount: 6
 primaryVariant: "FinderClean"
+primaryId: "StoreLocatorFinderClean"
 variants:
   - id: "StoreLocatorFinderClean"
     name: "Finder Clean"

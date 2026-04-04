@@ -6,6 +6,7 @@ icon: "bar-chart-2"
 camel: "EffortTracking"
 variantCount: 6
 primaryVariant: "TeamAllocationDark"
+primaryId: "EffortTrackingTeamAllocationDark"
 variants:
   - id: "EffortTrackingTeamAllocationDark"
     name: "Team Allocation Dark"

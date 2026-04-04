@@ -6,6 +6,7 @@ camel: "Recap"
 icon: "bar-chart"
 color: "green"
 primaryVariant: "NeonTimeline"
+primaryId: "Recap-NeonTimeline"
 variantCount: 6
 variants:
   - id: "Recap-DarkDashboard"

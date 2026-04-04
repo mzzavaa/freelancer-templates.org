@@ -6,6 +6,7 @@ camel: "Milestone"
 icon: "star"
 color: "rose"
 primaryVariant: "NeonCelebration"
+primaryId: "Milestone-NeonCelebration"
 variantCount: 6
 variants:
   - id: "Milestone-DarkCelebration"

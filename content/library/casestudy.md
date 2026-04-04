@@ -6,6 +6,7 @@ camel: "CaseStudy"
 icon: "trending-up"
 color: "orange"
 primaryVariant: "NeonSpotlight"
+primaryId: "CaseStudy-NeonSpotlight"
 variantCount: 6
 variants:
   - id: "CaseStudy-DarkNarrative"

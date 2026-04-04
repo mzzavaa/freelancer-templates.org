@@ -6,6 +6,7 @@ camel: "FitnessRoutine"
 icon: "activity"
 color: "amber"
 primaryVariant: "NeonExerciseList"
+primaryId: "FitnessRoutine-NeonExerciseList"
 variantCount: 6
 variants:
   - id: "FitnessRoutine-BoldExerciseList"

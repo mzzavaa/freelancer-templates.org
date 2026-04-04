@@ -6,6 +6,7 @@ icon: "alert-triangle"
 camel: "BugTriage"
 variantCount: 6
 primaryVariant: "PriorityColumnsDark"
+primaryId: "BugTriagePriorityColumnsDark"
 variants:
   - id: "BugTriagePriorityColumnsDark"
     name: "Priority Columns Dark"

@@ -6,6 +6,7 @@ camel: "Listing"
 icon: "list"
 color: "yellow"
 primaryVariant: "CleanShowcase"
+primaryId: "Listing-CleanShowcase"
 variantCount: 6
 variants:
   - id: "Listing-CleanShowcase"

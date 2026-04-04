@@ -6,6 +6,7 @@ camel: "BeforeAfter"
 icon: "columns"
 color: "indigo"
 primaryVariant: "DarkSplitScreen"
+primaryId: "BeforeAfter-DarkSplitScreen"
 variantCount: 6
 variants:
   - id: "BeforeAfter-DarkSplitScreen"

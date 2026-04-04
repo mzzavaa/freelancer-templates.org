@@ -6,6 +6,7 @@ camel: "BehindTheScenes"
 icon: "camera"
 color: "orange"
 primaryVariant: "DarkSceneCards"
+primaryId: "BehindTheScenes-DarkSceneCards"
 variantCount: 6
 variants:
   - id: "BehindTheScenes-DarkSceneCards"

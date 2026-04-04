@@ -6,6 +6,7 @@ camel: "Tutorial"
 icon: "book-open"
 color: "amber"
 primaryVariant: "DarkNumberedSteps"
+primaryId: "Tutorial-DarkNumberedSteps"
 variantCount: 6
 variants:
   - id: "Tutorial-DarkNumberedSteps"

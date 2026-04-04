@@ -6,6 +6,7 @@ icon: "monitor"
 camel: "PlatformOverview"
 variantCount: 6
 primaryVariant: "CommandCenterDark"
+primaryId: "PlatformOverviewCommandCenterDark"
 variants:
   - id: "PlatformOverviewCommandCenterDark"
     name: "Command Center Dark"

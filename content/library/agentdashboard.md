@@ -6,6 +6,7 @@ icon: "cpu"
 camel: "AgentDashboard"
 variantCount: 6
 primaryVariant: "ControlPanelDark"
+primaryId: "AgentDashboardControlPanelDark"
 variants:
   - id: "AgentDashboardControlPanelDark"
     name: "Control Panel Dark"

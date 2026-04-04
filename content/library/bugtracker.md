@@ -6,6 +6,7 @@ icon: "bug"
 camel: "BugTracker"
 variantCount: 6
 primaryVariant: "SeverityMatrixDark"
+primaryId: "BugTrackerSeverityMatrixDark"
 variants:
   - id: "BugTrackerSeverityMatrixDark"
     name: "Severity Matrix Dark"

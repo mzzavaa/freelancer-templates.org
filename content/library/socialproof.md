@@ -6,6 +6,7 @@ camel: "SocialProof"
 icon: "award"
 color: "amber"
 primaryVariant: "NeonAnnouncement"
+primaryId: "SocialProof-NeonAnnouncement"
 variantCount: 6
 variants:
   - id: "SocialProof-DarkMilestone"

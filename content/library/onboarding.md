@@ -6,6 +6,7 @@ camel: "Onboarding"
 icon: "user-plus"
 color: "purple"
 primaryVariant: "NeonCreative"
+primaryId: "Onboarding-NeonCreative"
 variantCount: 6
 variants:
   - id: "Onboarding-DarkProfessional"

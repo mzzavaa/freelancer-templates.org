@@ -6,6 +6,7 @@ camel: "NewsletterPromo"
 icon: "mail"
 color: "green"
 primaryVariant: "DarkSubscribeCta"
+primaryId: "NewsletterPromo-DarkSubscribeCta"
 variantCount: 6
 variants:
   - id: "NewsletterPromo-DarkSubscribeCta"

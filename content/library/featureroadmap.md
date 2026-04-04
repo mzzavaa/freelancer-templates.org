@@ -6,6 +6,7 @@ icon: "map"
 camel: "FeatureRoadmap"
 variantCount: 6
 primaryVariant: "TimelineDark"
+primaryId: "FeatureRoadmapTimelineDark"
 variants:
   - id: "FeatureRoadmapTimelineDark"
     name: "Timeline Dark"

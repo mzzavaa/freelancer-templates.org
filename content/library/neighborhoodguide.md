@@ -6,6 +6,7 @@ icon: "navigation"
 camel: "NeighborhoodGuide"
 variantCount: 6
 primaryVariant: "ExplorerWarm"
+primaryId: "NeighborhoodGuideExplorerWarm"
 variants:
   - id: "NeighborhoodGuideExplorerWarm"
     name: "Explorer Warm"

@@ -6,6 +6,7 @@ icon: "rocket"
 camel: "DeploymentStatus"
 variantCount: 6
 primaryVariant: "EnvironmentCardsDark"
+primaryId: "DeploymentStatusEnvironmentCardsDark"
 variants:
   - id: "DeploymentStatusEnvironmentCardsDark"
     name: "Environment Cards Dark"

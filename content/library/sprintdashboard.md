@@ -6,6 +6,7 @@ icon: "trello"
 camel: "SprintDashboard"
 variantCount: 6
 primaryVariant: "KanbanDark"
+primaryId: "SprintDashboardKanbanDark"
 variants:
   - id: "SprintDashboardKanbanDark"
     name: "Kanban Dark"

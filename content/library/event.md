@@ -6,6 +6,7 @@ camel: "Event"
 icon: "calendar"
 color: "indigo"
 primaryVariant: "NeonCountdown"
+primaryId: "Event-NeonCountdown"
 variantCount: 6
 variants:
   - id: "Event-DarkHero"

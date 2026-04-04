@@ -6,6 +6,7 @@ camel: "Explainer"
 icon: "lightbulb"
 color: "purple"
 primaryVariant: "NeonCinematic"
+primaryId: "Explainer-NeonCinematic"
 variantCount: 6
 variants:
   - id: "Explainer-DarkCinematic"

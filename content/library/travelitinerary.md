@@ -6,6 +6,7 @@ icon: "compass"
 camel: "TravelItinerary"
 variantCount: 6
 primaryVariant: "DayByDayWarm"
+primaryId: "TravelItineraryDayByDayWarm"
 variants:
   - id: "TravelItineraryDayByDayWarm"
     name: "Day By Day Warm"

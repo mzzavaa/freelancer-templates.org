@@ -6,6 +6,7 @@ icon: "tag"
 camel: "ReleaseNotes"
 variantCount: 6
 primaryVariant: "ChangelogDark"
+primaryId: "ReleaseNotesChangelogDark"
 variants:
   - id: "ReleaseNotesChangelogDark"
     name: "Changelog Dark"

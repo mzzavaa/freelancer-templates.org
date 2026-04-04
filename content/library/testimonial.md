@@ -6,6 +6,7 @@ camel: "Testimonial"
 icon: "message-square"
 color: "amber"
 primaryVariant: "NeonSplit"
+primaryId: "Testimonial-NeonSplit"
 variantCount: 6
 variants:
   - id: "Testimonial-DarkCentered"
