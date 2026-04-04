@@ -220,7 +220,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Social Proof ────────────────────────────────────────────── */}
-    <Folder name="Social Proof">
+    <Folder name="Social-Proof">
       <Composition id="SocialProof-DarkMilestone"     component={SocialProofDarkMilestone}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="SocialProof-CleanAchievement"  component={SocialProofCleanAchievement}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="SocialProof-BoldAnnouncement"  component={SocialProofBoldAnnouncement}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -231,7 +231,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Case Study ──────────────────────────────────────────────── */}
-    <Folder name="Case Study">
+    <Folder name="Case-Study">
       <Composition id="CaseStudy-DarkNarrative"    component={CaseStudyDarkNarrative}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="CaseStudy-CleanComparison"  component={CaseStudyCleanComparison}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="CaseStudy-BoldSpotlight"    component={CaseStudyBoldSpotlight}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -275,7 +275,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Product Launch ──────────────────────────────────────────── */}
-    <Folder name="Product Launch">
+    <Folder name="Product-Launch">
       <Composition id="ProductLaunch-DarkHeroReveal"  component={ProductLaunchDarkHeroReveal}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ProductLaunch-BoldHeroReveal"  component={ProductLaunchBoldHeroReveal}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ProductLaunch-DarkFeatureGrid" component={ProductLaunchDarkFeatureGrid} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -297,7 +297,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Before/After ────────────────────────────────────────────── */}
-    <Folder name="Before/After">
+    <Folder name="Before-After">
       <Composition id="BeforeAfter-DarkSplitScreen"   component={BeforeAfterDarkSplitScreen}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="BeforeAfter-WarmSplitScreen"   component={BeforeAfterWarmSplitScreen}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="BeforeAfter-DarkRevealWipe"    component={BeforeAfterDarkRevealWipe}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -308,7 +308,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Course Promo ────────────────────────────────────────────── */}
-    <Folder name="Course Promo">
+    <Folder name="Course-Promo">
       <Composition id="CoursePromo-DarkOverview"    component={CoursePromoDarkOverview}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="CoursePromo-CleanOverview"   component={CoursePromoCleanOverview}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="CoursePromo-DarkCurriculum"  component={CoursePromoDarkCurriculum}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -319,7 +319,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Countdown Hype ──────────────────────────────────────────── */}
-    <Folder name="Countdown Hype">
+    <Folder name="Countdown-Hype">
       <Composition id="CountdownHype-DarkTimer"   component={CountdownHypeDarkTimer}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="CountdownHype-NeonTimer"   component={CountdownHypeNeonTimer}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="CountdownHype-DarkTeaser"  component={CountdownHypeDarkTeaser}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -330,7 +330,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Affiliate Review ────────────────────────────────────────── */}
-    <Folder name="Affiliate Review">
+    <Folder name="Affiliate-Review">
       <Composition id="AffiliateReview-DarkScorecard"  component={AffiliateReviewDarkScorecard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="AffiliateReview-BoldScorecard"  component={AffiliateReviewBoldScorecard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="AffiliateReview-DarkComparison" component={AffiliateReviewDarkComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -341,7 +341,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Poll Quiz ───────────────────────────────────────────────── */}
-    <Folder name="Poll Quiz">
+    <Folder name="Poll-Quiz">
       <Composition id="PollQuiz-DarkQuestionCard" component={PollQuizDarkQuestionCard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="PollQuiz-NeonQuestionCard" component={PollQuizNeonQuestionCard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="PollQuiz-DarkResultsBar"   component={PollQuizDarkResultsBar}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -352,7 +352,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Newsletter Promo ────────────────────────────────────────── */}
-    <Folder name="Newsletter Promo">
+    <Folder name="Newsletter-Promo">
       <Composition id="NewsletterPromo-DarkSubscribeCta"      component={NewsletterPromoDarkSubscribeCta}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="NewsletterPromo-CleanSubscribeCta"     component={NewsletterPromoCleanSubscribeCta}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="NewsletterPromo-DarkIssuePreview"      component={NewsletterPromoDarkIssuePreview}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -363,7 +363,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Podcast Audiogram ───────────────────────────────────────── */}
-    <Folder name="Podcast Audiogram">
+    <Folder name="Podcast-Audiogram">
       <Composition id="PodcastAudiogram-DarkWaveform"     component={PodcastAudiogramDarkWaveform}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="PodcastAudiogram-WarmWaveform"     component={PodcastAudiogramWarmWaveform}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="PodcastAudiogram-DarkQuoteCard"    component={PodcastAudiogramDarkQuoteCard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -374,7 +374,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Behind the Scenes ───────────────────────────────────────── */}
-    <Folder name="Behind the Scenes">
+    <Folder name="Behind-the-Scenes">
       <Composition id="BehindTheScenes-DarkSceneCards"  component={BehindTheScenesDarkSceneCards}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="BehindTheScenes-WarmSceneCards"  component={BehindTheScenesWarmSceneCards}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="BehindTheScenes-DarkTimeline"    component={BehindTheScenesDarkTimeline}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -385,7 +385,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Recipe Step ─────────────────────────────────────────────── */}
-    <Folder name="Recipe Step">
+    <Folder name="Recipe-Step">
       <Composition id="RecipeStep-WarmIngredientList"  component={RecipeStepWarmIngredientList}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="RecipeStep-CleanIngredientList" component={RecipeStepCleanIngredientList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="RecipeStep-WarmStepSequence"    component={RecipeStepWarmStepSequence}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -407,7 +407,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Fitness Routine ─────────────────────────────────────────── */}
-    <Folder name="Fitness Routine">
+    <Folder name="Fitness-Routine">
       <Composition id="FitnessRoutine-BoldExerciseList" component={FitnessRoutineBoldExerciseList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="FitnessRoutine-NeonExerciseList" component={FitnessRoutineNeonExerciseList} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="FitnessRoutine-BoldTimerFocus"   component={FitnessRoutineBoldTimerFocus}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -418,7 +418,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Music Visualizer ────────────────────────────────────────── */}
-    <Folder name="Music Visualizer">
+    <Folder name="Music-Visualizer">
       <Composition id="MusicVisualizer-DarkBars"   component={MusicVisualizerDarkBars}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="MusicVisualizer-NeonBars"   component={MusicVisualizerNeonBars}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="MusicVisualizer-DarkRadial" component={MusicVisualizerDarkRadial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -440,7 +440,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Sprint Dashboard ────────────────────────────────────────── */}
-    <Folder name="Sprint Dashboard">
+    <Folder name="Sprint-Dashboard">
       <Composition id="SprintDashboard-KanbanDark"   component={SprintDashboardKanbanDark}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="SprintDashboard-KanbanBold"   component={SprintDashboardKanbanBold}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="SprintDashboard-VelocityDark" component={SprintDashboardVelocityDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -451,7 +451,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Feature Roadmap ─────────────────────────────────────────── */}
-    <Folder name="Feature Roadmap">
+    <Folder name="Feature-Roadmap">
       <Composition id="FeatureRoadmap-TimelineDark"  component={FeatureRoadmapTimelineDark}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="FeatureRoadmap-TimelineClean" component={FeatureRoadmapTimelineClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="FeatureRoadmap-SwimlaneDark"  component={FeatureRoadmapSwimlaneDark}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -462,7 +462,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Platform Overview ───────────────────────────────────────── */}
-    <Folder name="Platform Overview">
+    <Folder name="Platform-Overview">
       <Composition id="PlatformOverview-CommandCenterDark" component={PlatformOverviewCommandCenterDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="PlatformOverview-CommandCenterNeon" component={PlatformOverviewCommandCenterNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="PlatformOverview-ModuleGridDark"    component={PlatformOverviewModuleGridDark}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -473,7 +473,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Agent Dashboard ─────────────────────────────────────────── */}
-    <Folder name="Agent Dashboard">
+    <Folder name="Agent-Dashboard">
       <Composition id="AgentDashboard-ControlPanelDark" component={AgentDashboardControlPanelDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="AgentDashboard-ControlPanelNeon" component={AgentDashboardControlPanelNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="AgentDashboard-FlowDark"         component={AgentDashboardFlowDark}         durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -484,7 +484,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Client Pipeline ─────────────────────────────────────────── */}
-    <Folder name="Client Pipeline">
+    <Folder name="Client-Pipeline">
       <Composition id="ClientPipeline-FunnelDark"        component={ClientPipelineFunnelDark}        durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ClientPipeline-FunnelWarm"        component={ClientPipelineFunnelWarm}        durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ClientPipeline-PipelineBoardDark" component={ClientPipelinePipelineBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -495,7 +495,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Integration Status ──────────────────────────────────────── */}
-    <Folder name="Integration Status">
+    <Folder name="Integration-Status">
       <Composition id="IntegrationStatus-StatusWallDark"      component={IntegrationStatusStatusWallDark}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="IntegrationStatus-StatusWallClean"     component={IntegrationStatusStatusWallClean}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="IntegrationStatus-CategoryGroupsDark"  component={IntegrationStatusCategoryGroupsDark}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -506,7 +506,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Bug Tracker ─────────────────────────────────────────────── */}
-    <Folder name="Bug Tracker">
+    <Folder name="Bug-Tracker">
       <Composition id="BugTracker-SeverityMatrixDark" component={BugTrackerSeverityMatrixDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="BugTracker-SeverityMatrixBold" component={BugTrackerSeverityMatrixBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="BugTracker-TriageBoardDark"    component={BugTrackerTriageBoardDark}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -517,7 +517,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Release Notes ───────────────────────────────────────────── */}
-    <Folder name="Release Notes">
+    <Folder name="Release-Notes">
       <Composition id="ReleaseNotes-ChangelogDark"       component={ReleaseNotesChangelogDark}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ReleaseNotes-ChangelogClean"      component={ReleaseNotesChangelogClean}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ReleaseNotes-HighlightsDark"      component={ReleaseNotesHighlightsDark}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -528,7 +528,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Effort Tracking ─────────────────────────────────────────── */}
-    <Folder name="Effort Tracking">
+    <Folder name="Effort-Tracking">
       <Composition id="EffortTracking-TeamAllocationDark" component={EffortTrackingTeamAllocationDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="EffortTracking-TeamAllocationWarm" component={EffortTrackingTeamAllocationWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="EffortTracking-CapacityDark"       component={EffortTrackingCapacityDark}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -539,7 +539,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Pin Collection ──────────────────────────────────────────── */}
-    <Folder name="Pin Collection">
+    <Folder name="Pin-Collection">
       <Composition id="PinCollection-CardGalleryWarm"   component={PinCollectionCardGalleryWarm}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="PinCollection-CardGalleryClean"  component={PinCollectionCardGalleryClean}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="PinCollection-MapListWarm"       component={PinCollectionMapListWarm}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -550,7 +550,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Office Directory ────────────────────────────────────────── */}
-    <Folder name="Office Directory">
+    <Folder name="Office-Directory">
       <Composition id="OfficeDirectory-WorldViewDark"    component={OfficeDirectoryWorldViewDark}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="OfficeDirectory-WorldViewClean"   component={OfficeDirectoryWorldViewClean}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="OfficeDirectory-CardListDark"     component={OfficeDirectoryCardListDark}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -561,7 +561,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Travel Itinerary ────────────────────────────────────────── */}
-    <Folder name="Travel Itinerary">
+    <Folder name="Travel-Itinerary">
       <Composition id="TravelItinerary-DayByDayWarm"      component={TravelItineraryDayByDayWarm}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="TravelItinerary-DayByDayBold"      component={TravelItineraryDayByDayBold}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="TravelItinerary-RouteOverviewWarm" component={TravelItineraryRouteOverviewWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -572,7 +572,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Store Locator ───────────────────────────────────────────── */}
-    <Folder name="Store Locator">
+    <Folder name="Store-Locator">
       <Composition id="StoreLocator-FinderClean"     component={StoreLocatorFinderClean}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="StoreLocator-FinderMinimal"   component={StoreLocatorFinderMinimal}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="StoreLocator-MapPinsClean"    component={StoreLocatorMapPinsClean}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -583,7 +583,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Neighborhood Guide ──────────────────────────────────────── */}
-    <Folder name="Neighborhood Guide">
+    <Folder name="Neighborhood-Guide">
       <Composition id="NeighborhoodGuide-ExplorerWarm"       component={NeighborhoodGuideExplorerWarm}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="NeighborhoodGuide-ExplorerNeon"       component={NeighborhoodGuideExplorerNeon}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="NeighborhoodGuide-HighlightsReelWarm" component={NeighborhoodGuideHighlightsReelWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -594,7 +594,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Event Venue ─────────────────────────────────────────────── */}
-    <Folder name="Event Venue">
+    <Folder name="Event-Venue">
       <Composition id="EventVenue-ScheduleMapDark"   component={EventVenueScheduleMapDark}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="EventVenue-ScheduleMapBold"   component={EventVenueScheduleMapBold}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="EventVenue-VenueCardsDark"    component={EventVenueVenueCardsDark}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -605,7 +605,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Sprint Recap ────────────────────────────────────────────── */}
-    <Folder name="Sprint Recap">
+    <Folder name="Sprint-Recap">
       <Composition id="SprintRecap-ShippedListDark"       component={SprintRecapShippedListDark}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="SprintRecap-ShippedListBold"       component={SprintRecapShippedListBold}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="SprintRecap-HighlightCardsDark"    component={SprintRecapHighlightCardsDark}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -616,7 +616,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Deployment Status ───────────────────────────────────────── */}
-    <Folder name="Deployment Status">
+    <Folder name="Deployment-Status">
       <Composition id="DeploymentStatus-EnvironmentCardsDark" component={DeploymentStatusEnvironmentCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="DeploymentStatus-EnvironmentCardsNeon" component={DeploymentStatusEnvironmentCardsNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="DeploymentStatus-PipelineViewDark"     component={DeploymentStatusPipelineViewDark}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -627,7 +627,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Velocity Chart ──────────────────────────────────────────── */}
-    <Folder name="Velocity Chart">
+    <Folder name="Velocity-Chart">
       <Composition id="VelocityChart-BarChartDark"   component={VelocityChartBarChartDark}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="VelocityChart-BarChartClean"  component={VelocityChartBarChartClean}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="VelocityChart-TrendLineDark"  component={VelocityChartTrendLineDark}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -638,7 +638,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── QBR Dashboard ───────────────────────────────────────────── */}
-    <Folder name="QBR Dashboard">
+    <Folder name="QBR-Dashboard">
       <Composition id="QBRDashboard-ExecutiveDark"    component={QBRDashboardExecutiveDark}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="QBRDashboard-ExecutiveClean"   component={QBRDashboardExecutiveClean}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="QBRDashboard-DetailedDark"     component={QBRDashboardDetailedDark}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -649,7 +649,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Project Health ──────────────────────────────────────────── */}
-    <Folder name="Project Health">
+    <Folder name="Project-Health">
       <Composition id="ProjectHealth-HealthScorecardDark" component={ProjectHealthHealthScorecardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ProjectHealth-HealthScorecardWarm" component={ProjectHealthHealthScorecardWarm} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ProjectHealth-WorkstreamViewDark"  component={ProjectHealthWorkstreamViewDark}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -660,7 +660,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Feature Flags ───────────────────────────────────────────── */}
-    <Folder name="Feature Flags">
+    <Folder name="Feature-Flags">
       <Composition id="FeatureFlags-ExperimentBoardDark" component={FeatureFlagsExperimentBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="FeatureFlags-ExperimentBoardNeon" component={FeatureFlagsExperimentBoardNeon} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="FeatureFlags-ResultsViewDark"     component={FeatureFlagsResultsViewDark}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -671,7 +671,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Bug Triage ──────────────────────────────────────────────── */}
-    <Folder name="Bug Triage">
+    <Folder name="Bug-Triage">
       <Composition id="BugTriage-PriorityColumnsDark"   component={BugTriagePriorityColumnsDark}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="BugTriage-PriorityColumnsBold"   component={BugTriagePriorityColumnsBold}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="BugTriage-TriageListDark"        component={BugTriageTriageListDark}        durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -682,7 +682,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Component Inventory ─────────────────────────────────────── */}
-    <Folder name="Component Inventory">
+    <Folder name="Component-Inventory">
       <Composition id="ComponentInventory-ArchitectureGridDark"  component={ComponentInventoryArchitectureGridDark}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ComponentInventory-ArchitectureGridClean" component={ComponentInventoryArchitectureGridClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ComponentInventory-DependencyMapDark"     component={ComponentInventoryDependencyMapDark}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -693,7 +693,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Concept Pitch ──────────────────────────────────────────── */}
-    <Folder name="Concept Pitch">
+    <Folder name="Concept-Pitch">
       <Composition id="ConceptPitch-ArcDark"   component={ConceptPitchArcDark}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ConceptPitch-ArcBold"   component={ConceptPitchArcBold}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ConceptPitch-BoardDark" component={ConceptPitchBoardDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -704,7 +704,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Thought Leadership ─────────────────────────────────────── */}
-    <Folder name="Thought Leadership">
+    <Folder name="Thought-Leadership">
       <Composition id="ThoughtLeadership-EditorialDark"  component={ThoughtLeadershipEditorialDark}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ThoughtLeadership-EditorialClean" component={ThoughtLeadershipEditorialClean} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ThoughtLeadership-NarrativeDark"  component={ThoughtLeadershipNarrativeDark}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -715,7 +715,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── Linda Mohamed Personal Deck ─────────────────────────────── */}
-    <Folder name="Linda Mohamed Personal Deck">
+    <Folder name="Linda-Mohamed-Personal-Deck">
       <Composition id="LindaMohamed-Cover"          component={Folie1Cover}          durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="LindaMohamed-AboutMe"        component={Folie2AboutMe}        durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="LindaMohamed-WhatIOffer"     component={Folie3WhatIOffer}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
@@ -729,7 +729,7 @@ export const RemotionRoot: React.FC = () => (
 
 
     {/* ── YouTube Tutorial ───────────────────────────────────────── */}
-    <Folder name="YouTube Tutorial">
+    <Folder name="YouTube-Tutorial">
       <Composition id="YouTubeTutorial-VideoFlowPipeline" component={VideoFlowPipelineTutorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
