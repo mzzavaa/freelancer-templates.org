@@ -311,7 +311,7 @@ html.dark .icon-wrap-dark  { display: none; }
 
 .hero__inner {
   display: grid;
-  grid-template-columns: 1fr 480px;
+  grid-template-columns: 1fr 560px;
   gap: 64px;
   align-items: center;
 }
@@ -396,40 +396,43 @@ html.dark .hero__stat-val { color: #e8f0fe; }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--r-md);
-  padding: 18px;
-  box-shadow: var(--sh-md);
-  transition: transform .2s;
-}
-.mock-card:hover { transform: translateY(-2px); }
-
-.mock-card__thumb {
-  aspect-ratio: 16/9;
-  border-radius: var(--r);
-  margin-bottom: 12px;
   overflow: hidden;
+  box-shadow: var(--sh-md);
+  transition: transform .2s, box-shadow .2s;
+  cursor: default;
 }
-.mock-card__thumb--img {
-  background: none;
+.mock-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,.15);
 }
-.mock-card__thumb--img img {
+
+.mock-card__media {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: #0a1628;
+}
+.mock-card__media img,
+.mock-card__media video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+.mock-card__media video {
+  opacity: 0;
+  transition: opacity .25s;
+}
+.mock-card:hover .mock-card__media video {
+  opacity: 1;
+}
 .mock-card__name {
+  padding: 10px 14px;
   font-size: 13px;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 3px;
 }
-.mock-card__type {
-  font-size: 11px;
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.mock-card--wide { grid-column: 1 / -1; }
 
 .mock-code {
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;

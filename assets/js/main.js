@@ -74,6 +74,21 @@
   });
 })();
 
+// Hero card video hover play
+(function () {
+  document.querySelectorAll('.mock-card').forEach(function (card) {
+    var vid = card.querySelector('video');
+    if (!vid) return;
+    card.addEventListener('mouseenter', function () {
+      vid.play().catch(function () {});
+    });
+    card.addEventListener('mouseleave', function () {
+      vid.pause();
+      vid.currentTime = 0;
+    });
+  });
+})();
+
 // Lucide icons - init after DOM ready
 document.addEventListener('DOMContentLoaded', function () {
   if (typeof lucide !== 'undefined') {
