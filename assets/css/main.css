@@ -529,11 +529,12 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
 .rmt-section .eyebrow::before { background: #4a90d9; }
 .rmt-section .section-title { color: #f1f5f9; }
 .rmt-section .section-sub   { color: #94a3b8; }
+.rmt-section .section-hd    { text-align: center; }
 
 .rmt-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
   margin-top: 48px;
 }
 
@@ -556,13 +557,36 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
   justify-content: center;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
 }
 .rmt-card__preview::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,.3));
+  transition: background .2s;
 }
+.rmt-card__preview:hover::after {
+  background: rgba(0,0,0,.55);
+}
+
+.rmt-card__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.rmt-card__overlay svg { width: 15px; height: 15px; }
+.rmt-card__preview:hover .rmt-card__overlay { opacity: 1; }
 
 .bars {
   display: flex;
@@ -607,6 +631,22 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
 .rmt--green .rmt-card__preview { background: linear-gradient(135deg, #064e3b, #14b8a6); }
 .rmt--green .bar { background: #5eead4; }
 .rmt--green .rmt-badge { background: rgba(20,184,166,.15); color: #5eead4; }
+
+.rmt--rose .rmt-card__preview { background: linear-gradient(135deg, #881337, #f43f5e); }
+.rmt--rose .bar { background: #fda4af; }
+.rmt--rose .rmt-badge { background: rgba(244,63,94,.15); color: #fda4af; }
+
+.rmt--orange .rmt-card__preview { background: linear-gradient(135deg, #7c2d12, #f97316); }
+.rmt--orange .bar { background: #fed7aa; }
+.rmt--orange .rmt-badge { background: rgba(249,115,22,.15); color: #fed7aa; }
+
+.rmt--indigo .rmt-card__preview { background: linear-gradient(135deg, #1e1b4b, #6366f1); }
+.rmt--indigo .bar { background: #a5b4fc; }
+.rmt--indigo .rmt-badge { background: rgba(99,102,241,.15); color: #a5b4fc; }
+
+.rmt--yellow .rmt-card__preview { background: linear-gradient(135deg, #713f12, #eab308); }
+.rmt--yellow .bar { background: #fef08a; }
+.rmt--yellow .rmt-badge { background: rgba(234,179,8,.15); color: #fef08a; }
 
 .rmt-card__body { padding: 22px; }
 
@@ -661,17 +701,6 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
   transition: color .15s;
 }
 .rmt-link:hover { color: #4a90d9; }
-
-.rmt-note {
-  margin-top: 24px;
-  padding: 12px 18px;
-  background: rgba(74, 144, 217, .08);
-  border: 1px solid rgba(74, 144, 217, .18);
-  border-radius: var(--r);
-  font-size: 13px;
-  color: #64748b;
-  text-align: center;
-}
 
 /* Remotion code callout */
 .rmt-code-block {
@@ -1075,7 +1104,7 @@ html.dark .footer__soc:hover { color: #001029; }
 
 @media (max-width: 900px) {
   .cat-grid         { grid-template-columns: repeat(2, 1fr); }
-  .rmt-grid         { grid-template-columns: 1fr; }
+  .rmt-grid         { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
