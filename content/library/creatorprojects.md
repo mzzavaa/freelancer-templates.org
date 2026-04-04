@@ -6,7 +6,7 @@ icon: "sparkles"
 camel: ""
 primaryVariant: ""
 primaryId: "TitleScreenCinematic"
-variantCount: 4
+variantCount: 5
 variants:
   - id: "TitleScreenCinematic"
     name: "Title Screen Cinematic"
@@ -19,6 +19,9 @@ variants:
     style: "dark"
   - id: "NextLogo"
     name: "Next.js Logo"
+    style: "dark"
+  - id: "AiConsultantVsEnterpriseAiConsultantWhatSTheDifference"
+    name: "AI Consultant vs Enterprise AI"
     style: "dark"
 layout: library/single
 ---
