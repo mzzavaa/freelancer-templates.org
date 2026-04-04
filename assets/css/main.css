@@ -403,7 +403,7 @@ html.dark .hero__stat-val { color: #e8f0fe; }
 .mock-card:hover { transform: translateY(-2px); }
 
 .mock-card__thumb {
-  height: 72px;
+  aspect-ratio: 16/9;
   border-radius: var(--r);
   margin-bottom: 12px;
   overflow: hidden;
@@ -563,7 +563,7 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
 }
 
 .rmt-card__preview {
-  height: 148px;
+  aspect-ratio: 16/9;
   display: flex;
   align-items: center;
   justify-content: center;
