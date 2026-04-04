@@ -1,0 +1,484 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<!-- Hero -->
+<section class="cz-hero">
+  <div class="container">
+    <div class="eyebrow">Brand Customization</div>
+    <h1 class="cz-hero__title">Make every template yours</h1>
+    <p class="cz-hero__sub">Upload your logo or paste your website URL. We extract your brand colors and apply them across all 54 template types so you can see exactly how your brand will look before you open a single file.</p>
+  </div>
+</section>
+
+<div class="cz-body">
+  <div class="container">
+
+    <!-- Step 1: Brand input -->
+    <section class="cz-step" id="czStep1">
+      <div class="cz-step__hd">
+        <span class="cz-step__num">1</span>
+        <div>
+          <h2 class="cz-step__title">Add your brand</h2>
+          <p class="cz-step__sub">Upload your logo or paste a URL to get started.</p>
+        </div>
+      </div>
+
+      <div class="cz-input-grid">
+
+        <!-- Option A: Upload -->
+        <div class="cz-panel">
+          <div class="cz-panel__tag">Option A</div>
+          <h3 class="cz-panel__title">Upload your logo</h3>
+          <p class="cz-panel__desc">PNG, JPG, or SVG. Works from your camera roll on mobile.</p>
+          <label class="cz-drop" id="czDrop">
+            <input type="file" id="czFile" accept=".png,.jpg,.jpeg,.svg,image/png,image/jpeg,image/svg+xml" class="cz-drop__input" aria-label="Upload logo file">
+            <div class="cz-drop__idle" id="czDropIdle">
+              <svg class="cz-drop__icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <span class="cz-drop__main">Drop your logo here</span>
+              <span class="cz-drop__sub">or click to browse</span>
+            </div>
+            <div class="cz-drop__preview" id="czDropPreview">
+              <img id="czPreviewImg" alt="Uploaded logo" crossorigin="anonymous">
+              <span id="czFileName" class="cz-drop__fname"></span>
+              <span class="cz-drop__change">Click to change</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="cz-divider" aria-hidden="true"><span>or</span></div>
+
+        <!-- Option B: URL -->
+        <div class="cz-panel">
+          <div class="cz-panel__tag">Option B</div>
+          <h3 class="cz-panel__title">Enter your website URL</h3>
+          <p class="cz-panel__desc">We will fetch your site's CSS and extract colors automatically.</p>
+          <div class="cz-url-form">
+            <input type="url" id="czUrl" class="cz-url-input" placeholder="https://yourwebsite.com" autocomplete="url" inputmode="url">
+            <button type="button" class="btn btn--primary" id="czUrlBtn" disabled>Extract</button>
+          </div>
+          <p class="cz-url-notice" id="czUrlNotice" hidden>URL color extraction is coming soon. Upload your logo above for instant results.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Step 2: Color editor (hidden until logo uploaded) -->
+    <section class="cz-step" id="czStep2" hidden>
+      <div class="cz-step__hd">
+        <span class="cz-step__num">2</span>
+        <div>
+          <h2 class="cz-step__title">Your brand colors</h2>
+          <p class="cz-step__sub" id="czColorCount">Dominant colors extracted from your logo.</p>
+        </div>
+      </div>
+
+      <div class="cz-extracted">
+        <p class="cz-extracted__label">Extracted palette</p>
+        <div class="cz-swatches-row" id="czSwatches" role="list" aria-label="Extracted colors from logo"></div>
+      </div>
+
+      <div class="cz-roles-hd">
+        <h3 class="cz-roles-title">Assign to roles</h3>
+        <p class="cz-roles-sub">Click any swatch to edit with the color picker. Colors are auto-assigned by luminance and saturation - darkest becomes text, lightest becomes background, most saturated becomes primary.</p>
+      </div>
+      <div class="cz-roles-grid" id="czRoles">
+
+        <div class="cz-role" data-role="primary">
+          <span class="cz-role__name">Primary</span>
+          <div class="cz-role__wrap" title="Click to edit primary color">
+            <div class="cz-role__swatch" id="czRoleSwatch_primary"></div>
+            <input type="color" class="cz-role__picker" id="czPick_primary" data-role="primary" value="#1a365d" aria-label="Primary brand color">
+          </div>
+          <code class="cz-role__hex" id="czRoleHex_primary">#1a365d</code>
+          <span class="cz-role__var">--brand-primary</span>
+        </div>
+
+        <div class="cz-role" data-role="secondary">
+          <span class="cz-role__name">Secondary</span>
+          <div class="cz-role__wrap" title="Click to edit secondary color">
+            <div class="cz-role__swatch" id="czRoleSwatch_secondary"></div>
+            <input type="color" class="cz-role__picker" id="czPick_secondary" data-role="secondary" value="#2d3748" aria-label="Secondary brand color">
+          </div>
+          <code class="cz-role__hex" id="czRoleHex_secondary">#2d3748</code>
+          <span class="cz-role__var">--brand-secondary</span>
+        </div>
+
+        <div class="cz-role" data-role="accent">
+          <span class="cz-role__name">Accent</span>
+          <div class="cz-role__wrap" title="Click to edit accent color">
+            <div class="cz-role__swatch" id="czRoleSwatch_accent"></div>
+            <input type="color" class="cz-role__picker" id="czPick_accent" data-role="accent" value="#4299e1" aria-label="Accent brand color">
+          </div>
+          <code class="cz-role__hex" id="czRoleHex_accent">#4299e1</code>
+          <span class="cz-role__var">--brand-accent</span>
+        </div>
+
+        <div class="cz-role" data-role="bg">
+          <span class="cz-role__name">Background</span>
+          <div class="cz-role__wrap" title="Click to edit background color">
+            <div class="cz-role__swatch" id="czRoleSwatch_bg"></div>
+            <input type="color" class="cz-role__picker" id="czPick_bg" data-role="bg" value="#f7fafc" aria-label="Background brand color">
+          </div>
+          <code class="cz-role__hex" id="czRoleHex_bg">#f7fafc</code>
+          <span class="cz-role__var">--brand-bg</span>
+        </div>
+
+        <div class="cz-role" data-role="text">
+          <span class="cz-role__name">Text</span>
+          <div class="cz-role__wrap" title="Click to edit text color">
+            <div class="cz-role__swatch" id="czRoleSwatch_text"></div>
+            <input type="color" class="cz-role__picker" id="czPick_text" data-role="text" value="#1a202c" aria-label="Text brand color">
+          </div>
+          <code class="cz-role__hex" id="czRoleHex_text">#1a202c</code>
+          <span class="cz-role__var">--brand-text</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Step 3: Template preview grid -->
+    <section class="cz-step cz-step--preview" id="czStep3">
+      <div class="cz-step__hd">
+        <span class="cz-step__num">3</span>
+        <div>
+          <h2 class="cz-step__title">Template preview</h2>
+          <p class="cz-step__sub" id="czPreviewSub">Upload your logo to see all templates in your brand colors.</p>
+        </div>
+      </div>
+
+      <div class="cz-tpl-grid" id="czPreviewWrapper">
+        {{ range .Site.Data.templates }}
+        <div class="cz-tpl-card" data-slug="{{ .slug }}">
+          <div class="cz-tpl-card__bar"></div>
+          <div class="cz-tpl-card__body">
+            <div class="cz-tpl-card__icon-wrap">
+              <i data-lucide="{{ .icon }}"></i>
+            </div>
+            <h3 class="cz-tpl-card__name">{{ .name }}</h3>
+            <p class="cz-tpl-card__desc">{{ .description }}</p>
+            <div class="cz-tpl-card__dots" aria-hidden="true">
+              <span class="cz-dot cz-dot--primary"></span>
+              <span class="cz-dot cz-dot--accent"></span>
+              <span class="cz-dot cz-dot--secondary"></span>
+            </div>
+          </div>
+          <div class="cz-tpl-card__foot">
+            <span class="cz-tpl-card__count">{{ .variantCount }} variants</span>
+            <a href="{{ (printf "library/%s/" .slug) | relURL }}" class="btn btn--outline btn--sm" target="_blank" rel="noopener" aria-label="View {{ .name }} template">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View
+            </a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+
+    <!-- Step 4: Export -->
+    <section class="cz-step cz-step--export" id="czStep4">
+      <div class="cz-step__hd">
+        <span class="cz-step__num">4</span>
+        <div>
+          <h2 class="cz-step__title">Export CSS variables</h2>
+          <p class="cz-step__sub">Paste these into your project to apply your brand colors everywhere. Works with Remotion themes, CSS files, and any design system.</p>
+        </div>
+      </div>
+
+      <div class="cz-export">
+        <div class="cz-export__code">
+          <div class="cz-export__bar">
+            <span class="cz-export__label">CSS</span>
+          </div>
+          <pre class="cz-export__pre" id="czCssText">:root {
+  --brand-primary:   #1a365d;
+  --brand-secondary: #2d3748;
+  --brand-accent:    #4299e1;
+  --brand-bg:        #f7fafc;
+  --brand-text:      #1a202c;
+}</pre>
+        </div>
+        <div class="cz-export__actions">
+          <button class="btn btn--primary" id="czCopyBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy CSS variables
+          </button>
+          <p class="cz-export__hint">Edit any value above or use the color pickers in Step 2 to update all variables at once.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+{{ partial "site-footer.html" . }}
+
+<script>
+(function () {
+  'use strict';
+
+  var brandColors = {
+    primary:   '#1a365d',
+    secondary: '#2d3748',
+    accent:    '#4299e1',
+    bg:        '#f7fafc',
+    text:      '#1a202c'
+  };
+
+  var CSS_VAR_MAP = {
+    primary:   '--brand-primary',
+    secondary: '--brand-secondary',
+    accent:    '--brand-accent',
+    bg:        '--brand-bg',
+    text:      '--brand-text'
+  };
+
+  // ---- Color math ----
+  function rgbToHex(r, g, b) {
+    return '#' + [r, g, b].map(function (v) {
+      return Math.min(255, Math.max(0, v)).toString(16).padStart(2, '0');
+    }).join('');
+  }
+
+  function hexToRgb(hex) {
+    var m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return m ? { r: parseInt(m[1], 16), g: parseInt(m[2], 16), b: parseInt(m[3], 16) } : { r: 0, g: 0, b: 0 };
+  }
+
+  function relativeLuminance(r, g, b) {
+    var vals = [r, g, b].map(function (v) {
+      v /= 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    return 0.2126 * vals[0] + 0.7152 * vals[1] + 0.0722 * vals[2];
+  }
+
+  function colorSaturation(r, g, b) {
+    var max = Math.max(r, g, b) / 255;
+    var min = Math.min(r, g, b) / 255;
+    return max === 0 ? 0 : (max - min) / max;
+  }
+
+  // ---- Canvas color extraction ----
+  function extractColors(imgEl) {
+    var MAX = 200;
+    var iw = imgEl.naturalWidth || MAX;
+    var ih = imgEl.naturalHeight || MAX;
+    var scale = Math.min(1, MAX / Math.max(iw, ih));
+    var cw = Math.max(1, Math.round(iw * scale));
+    var ch = Math.max(1, Math.round(ih * scale));
+
+    var canvas = document.createElement('canvas');
+    canvas.width = cw;
+    canvas.height = ch;
+    var ctx = canvas.getContext('2d');
+    ctx.drawImage(imgEl, 0, 0, cw, ch);
+
+    var imageData;
+    try {
+      imageData = ctx.getImageData(0, 0, cw, ch);
+    } catch (e) {
+      return [];
+    }
+    var data = imageData.data;
+
+    var map = {};
+    var STEP = 4;
+    var Q = 32;
+
+    for (var i = 0; i < data.length; i += 4 * STEP) {
+      var r = data[i], g = data[i + 1], b = data[i + 2], a = data[i + 3];
+      if (a < 128) continue;
+      if (r > 240 && g > 240 && b > 240) continue;
+      if (r < 20  && g < 20  && b < 20)  continue;
+      var key = (Math.round(r / Q) * Q) + ',' +
+                (Math.round(g / Q) * Q) + ',' +
+                (Math.round(b / Q) * Q);
+      map[key] = (map[key] || 0) + 1;
+    }
+
+    var entries = Object.keys(map).map(function (k) {
+      return { key: k, count: map[k] };
+    });
+    entries.sort(function (a, b) { return b.count - a.count; });
+
+    return entries.slice(0, 6).map(function (e) {
+      var parts = e.key.split(',').map(Number);
+      return rgbToHex(parts[0], parts[1], parts[2]);
+    });
+  }
+
+  // ---- Auto-assign roles by luminance / saturation ----
+  function autoAssign(colors) {
+    var fallbacks = ['#1a365d', '#2d3748', '#4299e1', '#f7fafc', '#1a202c'];
+    if (!colors.length) {
+      return { primary: fallbacks[0], secondary: fallbacks[1], accent: fallbacks[2], bg: fallbacks[3], text: fallbacks[4] };
+    }
+    var rated = colors.map(function (hex) {
+      var c = hexToRgb(hex);
+      return { hex: hex, lv: relativeLuminance(c.r, c.g, c.b), sv: colorSaturation(c.r, c.g, c.b) };
+    });
+    var byLum = rated.slice().sort(function (a, b) { return a.lv - b.lv; });
+    var bySat = rated.slice().sort(function (a, b) { return b.sv - a.sv; });
+    function pick(arr, idx) { return (arr[idx] && arr[idx].hex) || fallbacks[idx]; }
+    return {
+      primary:   pick(bySat, 0),
+      secondary: pick(bySat, 1),
+      accent:    pick(bySat, 2),
+      bg:        (byLum[byLum.length - 1] && byLum[byLum.length - 1].hex) || fallbacks[3],
+      text:      pick(byLum, 0)
+    };
+  }
+
+  // ---- DOM updates ----
+  function el(id) { return document.getElementById(id); }
+
+  function updateRole(role, hex) {
+    brandColors[role] = hex;
+    var swatch = el('czRoleSwatch_' + role);
+    if (swatch) swatch.style.background = hex;
+    var hexEl = el('czRoleHex_' + role);
+    if (hexEl) hexEl.textContent = hex;
+    var picker = el('czPick_' + role);
+    if (picker) picker.value = hex;
+    var wrapper = el('czPreviewWrapper');
+    if (wrapper) wrapper.style.setProperty(CSS_VAR_MAP[role], hex);
+    updateCssOutput();
+  }
+
+  function updateAllRoles(assigned) {
+    Object.keys(assigned).forEach(function (role) { updateRole(role, assigned[role]); });
+  }
+
+  function updateCssOutput() {
+    var out = el('czCssText');
+    if (!out) return;
+    out.textContent =
+      ':root {\n' +
+      '  --brand-primary:   ' + brandColors.primary   + ';\n' +
+      '  --brand-secondary: ' + brandColors.secondary + ';\n' +
+      '  --brand-accent:    ' + brandColors.accent    + ';\n' +
+      '  --brand-bg:        ' + brandColors.bg        + ';\n' +
+      '  --brand-text:      ' + brandColors.text      + ';\n' +
+      '}';
+  }
+
+  function renderSwatches(colors) {
+    var container = el('czSwatches');
+    if (!container) return;
+    container.innerHTML = colors.map(function (hex) {
+      return '<button class="cz-swatch" style="background:' + hex + '" data-hex="' + hex +
+             '" title="' + hex + '" aria-label="Extracted color ' + hex + '" role="listitem"></button>';
+    }).join('');
+    var count = el('czColorCount');
+    if (count) {
+      count.textContent = 'Extracted ' + colors.length + ' dominant color' +
+        (colors.length !== 1 ? 's' : '') + ' from your logo.';
+    }
+  }
+
+  // ---- File processing ----
+  function processFile(file) {
+    if (!file || !file.type.match(/^image\//)) return;
+    var objectUrl = URL.createObjectURL(file);
+    var img = el('czPreviewImg');
+
+    img.onload = function () {
+      el('czDropIdle').style.display = 'none';
+      var preview = el('czDropPreview');
+      preview.style.display = 'flex';
+      el('czFileName').textContent = file.name;
+
+      var colors = extractColors(img);
+      URL.revokeObjectURL(objectUrl);
+
+      var step2 = el('czStep2');
+      step2.hidden = false;
+
+      var sub = el('czPreviewSub');
+      if (sub) sub.textContent = 'All 54 template types shown in your brand colors. Click View to open any template.';
+
+      var assigned = autoAssign(colors.length ? colors : []);
+      renderSwatches(colors.length ? colors : Object.values(assigned).slice(0, 3));
+      updateAllRoles(assigned);
+
+      step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    };
+
+    img.onerror = function () { URL.revokeObjectURL(objectUrl); };
+    img.src = objectUrl;
+  }
+
+  // ---- Drag & drop ----
+  var drop = el('czDrop');
+  var fileInput = el('czFile');
+
+  if (drop) {
+    drop.addEventListener('dragover', function (e) {
+      e.preventDefault();
+      drop.classList.add('is-dragging');
+    });
+    drop.addEventListener('dragleave', function (e) {
+      if (!drop.contains(e.relatedTarget)) drop.classList.remove('is-dragging');
+    });
+    drop.addEventListener('drop', function (e) {
+      e.preventDefault();
+      drop.classList.remove('is-dragging');
+      var file = e.dataTransfer && e.dataTransfer.files[0];
+      if (file) processFile(file);
+    });
+  }
+
+  if (fileInput) {
+    fileInput.addEventListener('change', function () {
+      var file = fileInput.files && fileInput.files[0];
+      if (file) processFile(file);
+    });
+  }
+
+  // ---- Color pickers ----
+  document.querySelectorAll('.cz-role__picker').forEach(function (picker) {
+    picker.addEventListener('input', function () {
+      updateRole(picker.dataset.role, picker.value);
+    });
+  });
+
+  // ---- URL notice ----
+  var urlInput = el('czUrl');
+  var urlNotice = el('czUrlNotice');
+  if (urlInput && urlNotice) {
+    urlInput.addEventListener('input', function () {
+      if (urlInput.value.trim()) urlNotice.hidden = false;
+    });
+  }
+
+  // ---- Copy CSS ----
+  var copyBtn = el('czCopyBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var text = (el('czCssText') && el('czCssText').textContent) || '';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(showCopied);
+      }
+    });
+  }
+
+  function showCopied() {
+    if (!copyBtn) return;
+    var orig = copyBtn.innerHTML;
+    copyBtn.textContent = 'Copied!';
+    setTimeout(function () { copyBtn.innerHTML = orig; }, 2000);
+  }
+
+  // ---- Init ----
+  (function init() {
+    Object.keys(brandColors).forEach(function (role) {
+      var swatch = el('czRoleSwatch_' + role);
+      if (swatch) swatch.style.background = brandColors[role];
+    });
+    updateCssOutput();
+  }());
+
+}());
+</script>
+
+{{ end }}
