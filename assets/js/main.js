@@ -131,9 +131,9 @@
   });
 })();
 
-// Hero card video hover play
+// Video hover play - hero mock cards + featured rmt-cards
 (function () {
-  document.querySelectorAll('.mock-card').forEach(function (card) {
+  document.querySelectorAll('.mock-card, .rmt-card').forEach(function (card) {
     var vid = card.querySelector('video');
     if (!vid) return;
     card.addEventListener('mouseenter', function () {

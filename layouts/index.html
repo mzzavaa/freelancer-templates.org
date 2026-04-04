@@ -21,7 +21,7 @@
         </h1>
 
         <p class="hero__sub">
-          169 Remotion video compositions and document templates - free under CC-BY-NC-SA. Use them, customize them, make them yours.
+          405 Remotion video compositions and document templates - free under CC-BY-NC-SA. Use them, customize them, make them yours.
         </p>
 
         <div class="hero__ctas">
@@ -37,16 +37,16 @@
 
         <div class="hero__stats">
           <div class="hero__stat">
-            <div class="hero__stat-val">169</div>
+            <div class="hero__stat-val">405</div>
             <div class="hero__stat-lbl">Video compositions</div>
           </div>
           <div class="hero__stat">
-            <div class="hero__stat-val">29</div>
+            <div class="hero__stat-val">61</div>
             <div class="hero__stat-lbl">Template types</div>
           </div>
           <div class="hero__stat">
-            <div class="hero__stat-val">6</div>
-            <div class="hero__stat-lbl">Style variants each</div>
+            <div class="hero__stat-val">7</div>
+            <div class="hero__stat-lbl">Style themes each</div>
           </div>
         </div>
       </div>
@@ -211,48 +211,46 @@
      ============================================================ -->
 <section class="rmt-section" id="remotion">
   <div class="container">
-    <div class="section-hd">
+    <div class="section-hd section-hd--c">
       <div class="eyebrow">Video Template Library</div>
       <h2 class="section-title">Programmatic video templates built with Remotion</h2>
-      <p class="section-sub">169 video compositions across 29 template types, each in 6 style variants. Hover to preview. Click to see all variants.</p>
-      <div style="margin-top:20px;"><a href="{{ "library/" | relURL }}" class="btn btn--outline" style="border-color:rgba(74,144,217,.4);color:#4a90d9;"><i data-lucide="grid"></i> Browse full library</a></div>
+      <p class="section-sub">405 compositions across 61 template types, 7 style themes each. Hover to preview.</p>
     </div>
 
     <div class="rmt-grid">
-
-      {{ range .Site.Data.templates }}
-      <a href="{{ (printf "library/%s/" .slug) | relURL }}" class="rmt-card rmt--{{ .color }}">
-        <div class="rmt-card__preview">
-          <img src="{{ (printf "previews/showcase/%s-%s.png" .camel .primaryVariant) | relURL }}" alt="{{ .name }} template preview" class="rmt-card__img">
-          <div class="rmt-card__overlay"><i data-lucide="eye"></i> {{ .variantCount }} variants</div>
-        </div>
-        <div class="rmt-card__body">
-          <div class="rmt-card__icon-row"><i data-lucide="{{ .icon }}"></i></div>
-          <h3 class="rmt-card__title">{{ .name }}</h3>
-          <p class="rmt-card__tpls">{{ .description }}</p>
-          <div class="rmt-card__foot">
-            <span class="rmt-link">View all {{ .variantCount }} variants &rarr;</span>
-          </div>
-        </div>
-      </a>
+      {{ $templates := .Site.Data.templates }}
+      {{ range .Site.Data.featured.slugs }}
+        {{ $slug := . }}
+        {{ range $templates }}
+          {{ if eq .slug $slug }}
+          <a href="{{ (printf "library/%s/" .slug) | relURL }}" class="rmt-card rmt--{{ .color }}">
+            <div class="rmt-card__preview">
+              <img src="{{ (printf "previews/showcase/%s-%s.png" .camel .primaryVariant) | relURL }}" alt="{{ .name }} template preview" class="rmt-card__img">
+              <video class="rmt-card__vid" muted loop playsinline preload="none">
+                <source src="{{ (printf "previews/hero/%s-%s.mp4" .camel .primaryVariant) | relURL }}" type="video/mp4">
+              </video>
+              <div class="rmt-card__overlay"><i data-lucide="eye"></i> {{ .variantCount }} variants</div>
+            </div>
+            <div class="rmt-card__body">
+              <div class="rmt-card__icon-row"><i data-lucide="{{ .icon }}"></i></div>
+              <h3 class="rmt-card__title">{{ .name }}</h3>
+              <p class="rmt-card__tpls">{{ .description }}</p>
+              <div class="rmt-card__foot">
+                <span class="rmt-link">View all {{ .variantCount }} variants &rarr;</span>
+              </div>
+            </div>
+          </a>
+          {{ end }}
+        {{ end }}
       {{ end }}
+    </div>
 
-      <!-- GameDay Stream Overlays - PUBLIC REPO -->
-      <div class="rmt-card rmt--green">
-        <a href="https://github.com/mzzavaa/community-gameday-europe-stream-templates/tree/main/src/compositions" target="_blank" rel="noopener" class="rmt-card__preview" aria-label="View GameDay Stream Overlays on GitHub">
-          <img src="{{ "previews/gameday-stream.png" | relURL }}" alt="GameDay Stream Overlays template preview" class="rmt-card__img">
-          <div class="rmt-card__overlay"><i data-lucide="github"></i> View on GitHub</div>
-        </a>
-        <div class="rmt-card__body">
-          <div class="rmt-card__icon-row"><i data-lucide="monitor"></i></div>
-          <h3 class="rmt-card__title">GameDay Stream Overlays</h3>
-          <p class="rmt-card__tpls">Live score inserts - Countdown overlays - Winner reveals - Leaderboard</p>
-          <div class="rmt-card__foot">
-            <a href="https://github.com/mzzavaa/community-gameday-europe-stream-templates/tree/main/src/compositions" target="_blank" rel="noopener" class="rmt-link">View on GitHub &rarr;</a>
-          </div>
-        </div>
-      </div>
-
+    <!-- See all CTA -->
+    <div class="rmt-see-all">
+      <a href="{{ "library/" | relURL }}" class="btn btn--outline rmt-see-all__btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        See all 61 template types - 405 compositions
+      </a>
     </div>
 
     <!-- Code callout -->
