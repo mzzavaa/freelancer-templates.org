@@ -4,11 +4,55 @@
       <a href="{{ "" | relURL }}" class="nav__wordmark">freelancer<em>-templates</em></a>
 
       <ul class="nav__links" role="list">
-        <li><a href="{{ "library/" | relURL }}" class="nav__link{{ if eq .Section "library" }} nav__link--active{{ end }}">Library</a></li>
-        <li><a href="{{ "" | relURL }}#remotion" class="nav__link">Templates</a></li>
+
+        <!-- Templates mega-menu -->
+        <li class="nav__item nav__item--has-mega">
+          <button class="nav__link nav__link--btn{{ if eq .Section "library" }} nav__link--active{{ end }}" aria-expanded="false" aria-controls="megaMenu">
+            Templates
+            <svg class="nav__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+
+          <div class="mega" id="megaMenu" role="region" aria-label="All templates">
+            <div class="mega__inner container">
+
+              <!-- Search inside mega-menu -->
+              <div class="mega__search-wrap">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" class="mega__search" placeholder="Search templates..." autocomplete="off" id="megaSearch">
+              </div>
+
+              <div class="mega__groups" id="megaGroups">
+                {{ range .Site.Data.navgroups.groups }}
+                <div class="mega__group" data-group="{{ lower .name }}">
+                  <div class="mega__group-hd">
+                    <i data-lucide="{{ .icon }}"></i>
+                    {{ .name }}
+                  </div>
+                  <ul class="mega__list" role="list">
+                    {{ range .templates }}
+                    <li class="mega__item" data-label="{{ lower .label }}">
+                      <a href="{{ (printf "library/%s/" .slug) | relURL }}" class="mega__link">{{ .label }}</a>
+                    </li>
+                    {{ end }}
+                  </ul>
+                </div>
+                {{ end }}
+              </div>
+
+              <div class="mega__footer">
+                <a href="{{ "library/" | relURL }}" class="mega__footer-link">
+                  View full library (61 types · 405 compositions)
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </li>
+
         <li><a href="{{ "use-cases/" | relURL }}" class="nav__link{{ if eq .Section "use-cases" }} nav__link--active{{ end }}">Use Cases</a></li>
         <li><a href="{{ "tips/" | relURL }}" class="nav__link{{ if eq .RelPermalink "/tips/" }} nav__link--active{{ end }}">Design Tips</a></li>
-        <li><a href="{{ "" | relURL }}#license" class="nav__link">License</a></li>
+        <li><a href="{{ "studio/" | relURL }}" class="nav__link{{ if eq .RelPermalink "/studio/" }} nav__link--active{{ end }}">Studio</a></li>
       </ul>
 
       <div class="nav__actions">
@@ -18,7 +62,7 @@
         </button>
         <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
           <i data-lucide="github"></i>
-          View on GitHub
+          GitHub
         </a>
         <button class="nav__hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
           <i data-lucide="menu"></i>

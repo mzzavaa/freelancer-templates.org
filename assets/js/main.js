@@ -41,6 +41,63 @@
   });
 })();
 
+// Mega-menu: open/close + search
+(function () {
+  var item = document.querySelector('.nav__item--has-mega');
+  var trigger = item && item.querySelector('.nav__link--btn');
+  var menu = document.getElementById('megaMenu');
+  var searchInput = document.getElementById('megaSearch');
+  if (!item || !trigger || !menu) return;
+
+  function open() {
+    item.classList.add('is-open');
+    trigger.setAttribute('aria-expanded', 'true');
+    if (searchInput) searchInput.focus();
+  }
+  function close() {
+    item.classList.remove('is-open');
+    trigger.setAttribute('aria-expanded', 'false');
+    if (searchInput) searchInput.value = '';
+    resetSearch();
+  }
+
+  trigger.addEventListener('click', function () {
+    item.classList.contains('is-open') ? close() : open();
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!item.contains(e.target)) close();
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+
+  // Search - filter individual items and hide empty groups
+  function resetSearch() {
+    document.querySelectorAll('.mega__item').forEach(function (el) { el.classList.remove('mega__item--hidden'); });
+    document.querySelectorAll('.mega__group').forEach(function (g) { g.classList.remove('mega__group--hidden'); });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function () {
+      var q = this.value.toLowerCase().trim();
+      if (!q) { resetSearch(); return; }
+      document.querySelectorAll('.mega__group').forEach(function (group) {
+        var hasVisible = false;
+        group.querySelectorAll('.mega__item').forEach(function (item) {
+          var match = (item.dataset.label || '').includes(q);
+          item.classList.toggle('mega__item--hidden', !match);
+          if (match) hasVisible = true;
+        });
+        group.classList.toggle('mega__group--hidden', !hasVisible);
+      });
+    });
+  }
+})();
+
 // Full library toggle
 (function () {
   const btn = document.getElementById('libToggle');

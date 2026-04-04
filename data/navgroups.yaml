@@ -1,0 +1,93 @@
+groups:
+  - name: "Business & Client"
+    icon: "briefcase"
+    templates:
+      - { slug: "recap", label: "Monthly Recap" }
+      - { slug: "casestudy", label: "Case Study" }
+      - { slug: "conceptpitch", label: "Concept Pitch" }
+      - { slug: "proposal", label: "Proposal" }
+      - { slug: "invoice", label: "Invoice" }
+      - { slug: "clientpipeline", label: "Client Pipeline" }
+      - { slug: "qbrdashboard", label: "QBR Dashboard" }
+      - { slug: "projecthealth", label: "Project Health" }
+      - { slug: "milestone", label: "Milestone" }
+
+  - name: "Creator & Content"
+    icon: "video"
+    templates:
+      - { slug: "youtubetuorial", label: "YouTube Tutorial" }
+      - { slug: "tutorial", label: "Tutorial" }
+      - { slug: "behindthescenes", label: "Behind The Scenes" }
+      - { slug: "testimonial", label: "Testimonial" }
+      - { slug: "thoughtleadership", label: "Thought Leadership" }
+      - { slug: "affiliatereview", label: "Affiliate Review" }
+      - { slug: "beforeafter", label: "Before / After" }
+      - { slug: "socialproof", label: "Social Proof" }
+      - { slug: "podcastaudiogram", label: "Podcast Audiogram" }
+
+  - name: "Tech & Analytics"
+    icon: "bar-chart-2"
+    templates:
+      - { slug: "sprintdashboard", label: "Sprint Dashboard" }
+      - { slug: "sprintrecap", label: "Sprint Recap" }
+      - { slug: "velocitychart", label: "Velocity Chart" }
+      - { slug: "bugtracker", label: "Bug Tracker" }
+      - { slug: "bugtriage", label: "Bug Triage" }
+      - { slug: "deploymentstatus", label: "Deployment Status" }
+      - { slug: "featureflags", label: "Feature Flags" }
+      - { slug: "featureroadmap", label: "Feature Roadmap" }
+      - { slug: "integrationstatus", label: "Integration Status" }
+      - { slug: "releasenotes", label: "Release Notes" }
+      - { slug: "componentinventory", label: "Component Inventory" }
+      - { slug: "efforttracking", label: "Effort Tracking" }
+
+  - name: "Marketing & Sales"
+    icon: "trending-up"
+    templates:
+      - { slug: "productlaunch", label: "Product Launch" }
+      - { slug: "coursepromo", label: "Course Promo" }
+      - { slug: "newsletterpromo", label: "Newsletter Promo" }
+      - { slug: "countdownhype", label: "Countdown / Hype" }
+      - { slug: "platformoverview", label: "Platform Overview" }
+      - { slug: "pricing", label: "Pricing" }
+      - { slug: "listing", label: "Listing" }
+      - { slug: "storelocator", label: "Store Locator" }
+
+  - name: "Community & Events"
+    icon: "users"
+    templates:
+      - { slug: "communitygameday", label: "Community Gameday" }
+      - { slug: "gamedaystream", label: "GameDay Stream" }
+      - { slug: "event", label: "Event" }
+      - { slug: "eventvenue", label: "Event Venue" }
+      - { slug: "collaboration", label: "Collaboration" }
+      - { slug: "onboarding", label: "Onboarding" }
+
+  - name: "AI & Explainers"
+    icon: "cpu"
+    templates:
+      - { slug: "aiexplainer", label: "AI Explainer" }
+      - { slug: "agentdashboard", label: "Agent Dashboard" }
+      - { slug: "explainer", label: "Explainer" }
+      - { slug: "faq", label: "FAQ" }
+      - { slug: "pollquiz", label: "Poll / Quiz" }
+
+  - name: "Lifestyle"
+    icon: "sun"
+    templates:
+      - { slug: "recipestep", label: "Recipe Step" }
+      - { slug: "fitnessroutine", label: "Fitness Routine" }
+      - { slug: "travelitinerary", label: "Travel Itinerary" }
+      - { slug: "neighborhoodguide", label: "Neighborhood Guide" }
+      - { slug: "pincollection", label: "Pin Collection" }
+      - { slug: "musicvisualizer", label: "Music Visualizer" }
+      - { slug: "officedirectory", label: "Office Directory" }
+
+  - name: "Portfolio & Brand"
+    icon: "sparkles"
+    templates:
+      - { slug: "lindamohamed", label: "Linda Mohamed" }
+      - { slug: "creatorprojects", label: "Creator Projects" }
+      - { slug: "portfolio", label: "Portfolio" }
+      - { slug: "sims4", label: "Sims 4" }
+      - { slug: "archive", label: "Archive" }

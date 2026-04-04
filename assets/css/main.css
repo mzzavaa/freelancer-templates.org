@@ -290,6 +290,96 @@ html.dark .icon-wrap-dark  { display: none; }
 }
 .nav__hamburger:hover { background: var(--surface-2); }
 
+/* Nav: button-style link (for mega-menu trigger) */
+.nav__link--btn {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: none; border: none; cursor: pointer;
+  font-family: inherit;
+}
+.nav__chevron {
+  transition: transform .2s; flex-shrink: 0;
+}
+.nav__item--has-mega.is-open .nav__chevron { transform: rotate(180deg); }
+
+/* Mega-menu */
+.mega {
+  display: none;
+  position: absolute; top: var(--nav-h); left: 0; right: 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 16px 48px rgba(0,0,0,.18);
+  z-index: 99;
+}
+html.dark .mega { background: #0a1020; }
+.nav__item--has-mega.is-open .mega { display: block; }
+
+.mega__inner {
+  padding: 28px 0 24px;
+}
+.mega__search-wrap {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 8px 14px;
+  margin-bottom: 24px;
+  max-width: 340px;
+}
+.mega__search {
+  background: none; border: none; outline: none;
+  font-size: 13px; color: var(--text);
+  width: 100%; font-family: inherit;
+}
+.mega__search::placeholder { color: var(--text-muted); }
+
+.mega__groups {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 32px;
+}
+.mega__group { padding-bottom: 16px; }
+.mega__group--hidden { display: none; }
+
+.mega__group-hd {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; font-weight: 700; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: .09em;
+  margin-bottom: 8px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.mega__group-hd svg, .mega__group-hd i { width: 13px; height: 13px; }
+
+.mega__list { display: flex; flex-direction: column; gap: 1px; }
+.mega__item--hidden { display: none; }
+
+.mega__link {
+  display: block;
+  font-size: 13px; color: var(--text-muted);
+  padding: 5px 8px; border-radius: 5px;
+  transition: color .12s, background .12s;
+}
+.mega__link:hover { color: var(--text); background: var(--surface-2); }
+
+.mega__footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.mega__footer-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 600; color: var(--accent);
+  transition: opacity .15s;
+}
+.mega__footer-link:hover { opacity: .8; }
+
+/* Mobile: mega collapses into an accordion panel */
+@media (max-width: 900px) {
+  .mega__groups { grid-template-columns: 1fr 1fr; gap: 0 20px; }
+}
+@media (max-width: 600px) {
+  .mega__groups { grid-template-columns: 1fr; }
+}
+
 /* 7. Hero
    ========================================================================== */
 .hero {
@@ -1211,6 +1301,17 @@ html.dark .footer__soc:hover { color: #001029; }
     font-size: 15px;
   }
   html.dark .nav__links--open { background: var(--surface); }
+  /* On mobile, mega-menu becomes a scrollable panel within the open nav */
+  .nav__item--has-mega.is-open .mega {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid var(--border);
+    padding-top: 0;
+  }
+  .mega__inner { padding: 16px 0 8px; }
+  .mega__groups { grid-template-columns: 1fr 1fr; }
+  .mega__footer { display: none; }
   .how-grid         { grid-template-columns: 1fr; }
   .how-grid::before { display: none; }
   .cat-grid         { grid-template-columns: 1fr; }
