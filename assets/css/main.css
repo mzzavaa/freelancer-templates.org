@@ -238,6 +238,7 @@ html.dark .nav { background: rgba(0, 16, 41, .88); }
 .nav__links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2px;
   flex: 1;
 }
