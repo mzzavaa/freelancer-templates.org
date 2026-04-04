@@ -669,6 +669,22 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
 
 .rmt-card__body { padding: 22px; }
 
+.rmt-card__icon-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.rmt-card__icon-row > svg {
+  width: 18px;
+  height: 18px;
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+.rmt-card__icon-row .rmt-badge {
+  margin-bottom: 0;
+}
+
 .rmt-badge {
   display: inline-flex;
   align-items: center;
@@ -720,6 +736,23 @@ html.dark .cat-note { border-color: rgba(74, 144, 217, .20); }
   transition: color .15s;
 }
 .rmt-link:hover { color: #4a90d9; }
+
+.rmt-link--soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #475569;
+  cursor: default;
+}
+.rmt-link--soon svg { width: 11px; height: 11px; }
+
+.rmt-card__overlay--soon {
+  background: rgba(15,23,42,.7);
+  cursor: default;
+}
+.rmt-card__preview { cursor: default; }
 
 /* Remotion code callout */
 .rmt-code-block {
