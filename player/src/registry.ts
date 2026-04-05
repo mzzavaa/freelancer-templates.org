@@ -1,5 +1,5 @@
-// Auto-generated composition registry for freelancer-templates.org
-// All 330+ freelancer template compositions, 1280x720 @ 30fps unless noted.
+// Composition registry for freelancer-templates.org
+// 919 compositions: 53 freelancer templates × 16 themes + gameday (35) + lindamohamed (24+2) + netapp (10) + youtube (2)
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FC = React.FC<any>;
@@ -87,6 +87,18 @@ import {
 import { LindaMohamedDeck } from "@templates/lindamohamed/LindaMohamed";
 
 
+// ── NetApp Video Overlay Compositions ────────────────────────────
+import { NetAppDemo } from "@netapp/NetAppDemo";
+import { VideoAutomationPipeline } from "@netapp/VideoAutomationPipeline";
+import { NetAppExplainerV2 } from "@netapp/NetAppExplainerV2";
+import { NetAppExplainerV3 } from "@netapp/NetAppExplainerV3";
+import { NetAppSimsExplainer } from "@netapp/NetAppSimsExplainer";
+import { NetAppConferenceTravels } from "@netapp/NetAppConferenceTravels";
+import { NetAppDemoShorts } from "@netapp/NetAppDemoShorts";
+import { AIDemoToEnterprise as AIDemoToEnterpriseNetApp } from "@netapp/AIDemoToEnterprise";
+import { PipelineArchitectureDiagram } from "@netapp/PipelineArchitectureDiagram";
+import { PipelineArchitectureDiagramLight } from "@netapp/PipelineArchitectureDiagramLight";
+
 // ── Community GameDay Europe Stream Templates ─────────────────────
 import { Countdown } from "@gameday/compositions/00-preshow/Countdown";
 import { InfoLoop } from "@gameday/compositions/00-preshow/InfoLoop";
@@ -128,6 +140,14 @@ import { SurveyReminder } from "@gameday/compositions/inserts/quest/SurveyRemind
 
 function c(id: string, component: FC, cat: string, dur = 300): CompSpec {
   return { ...STD, id, component, category: cat, durationInFrames: dur };
+}
+// Full-HD helper for 1920x1080 compositions
+function cFHD(id: string, component: FC, cat: string, dur = 300): CompSpec {
+  return { fps: 30, width: 1920, height: 1080, id, component, category: cat, durationInFrames: dur };
+}
+// Portrait helper for 1080x1920 compositions (Shorts)
+function cShort(id: string, component: FC, cat: string, dur = 300): CompSpec {
+  return { fps: 30, width: 1080, height: 1920, id, component, category: cat, durationInFrames: dur };
 }
 
 export const COMPOSITIONS: CompSpec[] = [
@@ -1152,6 +1172,18 @@ export const COMPOSITIONS: CompSpec[] = [
   c("GameDay-StreamHostUpdate",     StreamHostUpdate,     "gameday", 900),
   c("GameDay-LocationShoutout",     LocationShoutout,     "gameday", 900),
   c("GameDay-ImportantReminder",    ImportantReminder,    "gameday", 900),
+
+  // NetApp Video Overlay — long-form AI video production showcase (1920×1080, portrait for Shorts)
+  cFHD("NetApp-DemoArchive",             NetAppDemo,                    "netapp", 4450),
+  cFHD("NetApp-VideoAutomationPipeline", VideoAutomationPipeline,       "netapp", 5460),
+  cFHD("NetApp-ExplainerV2",            NetAppExplainerV2,             "netapp", 25260),
+  cFHD("NetApp-ExplainerV3",            NetAppExplainerV3,             "netapp", 18000),
+  cFHD("NetApp-SimsExplainer",          NetAppSimsExplainer,           "netapp", 16200),
+  cFHD("NetApp-ConferenceTravels",      NetAppConferenceTravels,       "netapp", 18850),
+  cShort("NetApp-DemoShorts",           NetAppDemoShorts,              "netapp", 2700),
+  cFHD("NetApp-AIDemoToEnterprise",     AIDemoToEnterpriseNetApp,      "netapp", 16100),
+  cFHD("NetApp-PipelineDiagramDark",    PipelineArchitectureDiagram,   "netapp", 1),
+  cFHD("NetApp-PipelineDiagramLight",   PipelineArchitectureDiagramLight, "netapp", 1),
 ];
 
 // ── Derived counts (auto-computed from registry) ─────────────────

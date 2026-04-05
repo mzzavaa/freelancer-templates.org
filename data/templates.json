@@ -2621,5 +2621,28 @@
       }
     ],
     "primaryId": "GameDay-MarketingVideo"
+  },
+  {
+    "slug": "netapp",
+    "camel": "NetApp",
+    "name": "NetApp Video Production",
+    "description": "Real AI-generated video productions - explainers, pipeline demos, and architecture diagrams",
+    "icon": "play",
+    "color": "blue",
+    "primaryVariant": "VideoAutomationPipeline",
+    "variantCount": 10,
+    "variants": [
+      { "id": "NetApp-DemoArchive",             "name": "Demo Archive (148s)",            "style": "dark" },
+      { "id": "NetApp-VideoAutomationPipeline", "name": "Video Automation Pipeline",      "style": "dark" },
+      { "id": "NetApp-ExplainerV2",            "name": "Explainer V2 (14min)",           "style": "dark" },
+      { "id": "NetApp-ExplainerV3",            "name": "Documentary V3 (10min)",         "style": "dark" },
+      { "id": "NetApp-SimsExplainer",          "name": "Sims Explainer (9min)",          "style": "dark" },
+      { "id": "NetApp-ConferenceTravels",      "name": "Conference Travels (10min)",     "style": "dark" },
+      { "id": "NetApp-DemoShorts",             "name": "Demo Shorts (90s portrait)",     "style": "dark" },
+      { "id": "NetApp-AIDemoToEnterprise",     "name": "AI Demo to Enterprise (9min)",   "style": "dark" },
+      { "id": "NetApp-PipelineDiagramDark",    "name": "Pipeline Diagram Dark",          "style": "dark" },
+      { "id": "NetApp-PipelineDiagramLight",   "name": "Pipeline Diagram Light",         "style": "light" }
+    ],
+    "primaryId": "NetApp-VideoAutomationPipeline"
   }
 ]
