@@ -16,7 +16,12 @@
 import React from "react";
 import { Tutorial } from "./Tutorial";
 import type { TutorialSpec } from "./Tutorial";
-import { THEME_DARK, THEME_CLEAN } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_CLEAN,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data ─────────────────────────────────────────────────
 const SAMPLE_SPEC: TutorialSpec = {
@@ -41,31 +46,31 @@ const SAMPLE_SPEC_ALT: TutorialSpec = {
 };
 
 // ── Composition: Dark + Numbered Steps ──────────────────────────
-export const TutorialDarkNumberedSteps: React.FC = () => (
-  <Tutorial spec={SAMPLE_SPEC} theme={THEME_DARK} layout="numbered-steps" />
+export const TutorialDarkNumberedSteps: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="numbered-steps" />
 );
 
 // ── Composition: Clean + Numbered Steps ─────────────────────────
-export const TutorialCleanNumberedSteps: React.FC = () => (
-  <Tutorial spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="numbered-steps" />
+export const TutorialCleanNumberedSteps: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="numbered-steps" />
 );
 
 // ── Composition: Dark + Card Sequence ───────────────────────────
-export const TutorialDarkCardSequence: React.FC = () => (
-  <Tutorial spec={SAMPLE_SPEC} theme={THEME_DARK} layout="card-sequence" />
+export const TutorialDarkCardSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="card-sequence" />
 );
 
 // ── Composition: Clean + Card Sequence ──────────────────────────
-export const TutorialCleanCardSequence: React.FC = () => (
-  <Tutorial spec={SAMPLE_SPEC_ALT} theme={THEME_CLEAN} layout="card-sequence" />
+export const TutorialCleanCardSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC_ALT} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="card-sequence" />
 );
 
 // ── Composition: Dark + Split Demo ──────────────────────────────
-export const TutorialDarkSplitDemo: React.FC = () => (
-  <Tutorial spec={SAMPLE_SPEC_ALT} theme={THEME_DARK} layout="split-demo" />
+export const TutorialDarkSplitDemo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC_ALT} theme={applyBrandKit(THEME_DARK, brandKit)} layout="split-demo" />
 );
 
 // ── Composition: Clean + Split Demo ─────────────────────────────
-export const TutorialCleanSplitDemo: React.FC = () => (
-  <Tutorial spec={SAMPLE_SPEC_ALT} theme={THEME_CLEAN} layout="split-demo" />
+export const TutorialCleanSplitDemo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Tutorial spec={SAMPLE_SPEC_ALT} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="split-demo" />
 );

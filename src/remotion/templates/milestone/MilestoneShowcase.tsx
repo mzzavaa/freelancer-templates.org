@@ -20,6 +20,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data: 100 Clients ────────────────────────────────────
@@ -68,26 +70,26 @@ const SAMPLE_ANNIVERSARY: MilestoneSpec = {
 
 // ── Compositions ────────────────────────────────────────────────
 
-export const MilestoneDarkCelebration: React.FC = () => (
-  <Milestone spec={SAMPLE_CLIENTS} theme={THEME_DARK} layout="celebration" bgPattern="grid" />
+export const MilestoneDarkCelebration: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Milestone spec={SAMPLE_CLIENTS} theme={applyBrandKit(THEME_DARK, brandKit)} layout="celebration" bgPattern="grid" />
 );
 
-export const MilestoneCleanJourney: React.FC = () => (
-  <Milestone spec={SAMPLE_ANNIVERSARY} theme={THEME_CLEAN} layout="journey" bgPattern="dots" />
+export const MilestoneCleanJourney: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Milestone spec={SAMPLE_ANNIVERSARY} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="journey" bgPattern="dots" />
 );
 
-export const MilestoneBoldCelebration: React.FC = () => (
-  <Milestone spec={SAMPLE_CLIENTS} theme={THEME_BOLD} layout="celebration" bgPattern="none" />
+export const MilestoneBoldCelebration: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Milestone spec={SAMPLE_CLIENTS} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="celebration" bgPattern="none" />
 );
 
-export const MilestoneWarmGratitude: React.FC = () => (
-  <Milestone spec={SAMPLE_CLIENTS} theme={THEME_WARM} layout="gratitude" bgPattern="hex" />
+export const MilestoneWarmGratitude: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Milestone spec={SAMPLE_CLIENTS} theme={applyBrandKit(THEME_WARM, brandKit)} layout="gratitude" bgPattern="hex" />
 );
 
-export const MilestoneMinimalJourney: React.FC = () => (
-  <Milestone spec={SAMPLE_ANNIVERSARY} theme={THEME_MINIMAL} layout="journey" bgPattern="none" />
+export const MilestoneMinimalJourney: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Milestone spec={SAMPLE_ANNIVERSARY} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="journey" bgPattern="none" />
 );
 
-export const MilestoneNeonCelebration: React.FC = () => (
-  <Milestone spec={SAMPLE_ANNIVERSARY} theme={THEME_NEON} layout="celebration" bgPattern="hex" />
+export const MilestoneNeonCelebration: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Milestone spec={SAMPLE_ANNIVERSARY} theme={applyBrandKit(THEME_NEON, brandKit)} layout="celebration" bgPattern="hex" />
 );

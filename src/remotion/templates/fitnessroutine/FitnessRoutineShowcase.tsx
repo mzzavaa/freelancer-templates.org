@@ -3,7 +3,12 @@
  */
 import React from "react";
 import { FitnessRoutine } from "./FitnessRoutine";
-import { THEME_BOLD, THEME_NEON } from "../_shared/themes";
+import {
+  THEME_BOLD,
+  THEME_NEON,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC = {
   workout_title: "Full Body HIIT Blast",
@@ -18,21 +23,21 @@ const SAMPLE_SPEC = {
   difficulty: "advanced" as const,
 };
 
-export const FitnessRoutineBoldExerciseList: React.FC = () => (
-  <FitnessRoutine spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="exercise-list" />
+export const FitnessRoutineBoldExerciseList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FitnessRoutine spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="exercise-list" />
 );
-export const FitnessRoutineNeonExerciseList: React.FC = () => (
-  <FitnessRoutine spec={SAMPLE_SPEC} theme={THEME_NEON} layout="exercise-list" />
+export const FitnessRoutineNeonExerciseList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FitnessRoutine spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="exercise-list" />
 );
-export const FitnessRoutineBoldTimerFocus: React.FC = () => (
-  <FitnessRoutine spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="timer-focus" />
+export const FitnessRoutineBoldTimerFocus: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FitnessRoutine spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="timer-focus" />
 );
-export const FitnessRoutineNeonTimerFocus: React.FC = () => (
-  <FitnessRoutine spec={SAMPLE_SPEC} theme={THEME_NEON} layout="timer-focus" />
+export const FitnessRoutineNeonTimerFocus: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FitnessRoutine spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="timer-focus" />
 );
-export const FitnessRoutineBoldCircuit: React.FC = () => (
-  <FitnessRoutine spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="circuit" />
+export const FitnessRoutineBoldCircuit: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FitnessRoutine spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="circuit" />
 );
-export const FitnessRoutineNeonCircuit: React.FC = () => (
-  <FitnessRoutine spec={SAMPLE_SPEC} theme={THEME_NEON} layout="circuit" />
+export const FitnessRoutineNeonCircuit: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FitnessRoutine spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="circuit" />
 );

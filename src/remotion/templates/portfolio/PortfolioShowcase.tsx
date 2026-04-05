@@ -20,6 +20,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data: Design & Dev Freelancer ────────────────────────
@@ -93,31 +95,31 @@ const SAMPLE_CLOUD_SPEC: PortfolioSpec = {
 };
 
 // ── Composition: Dark + Gallery ─────────────────────────────────
-export const PortfolioDarkGallery: React.FC = () => (
-  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={THEME_DARK} layout="gallery" bgPattern="grid" />
+export const PortfolioDarkGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="gallery" bgPattern="grid" />
 );
 
 // ── Composition: Clean + Case Study ─────────────────────────────
-export const PortfolioCleanCaseStudy: React.FC = () => (
-  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={THEME_CLEAN} layout="caseStudy" bgPattern="dots" />
+export const PortfolioCleanCaseStudy: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="caseStudy" bgPattern="dots" />
 );
 
 // ── Composition: Bold + Reel ────────────────────────────────────
-export const PortfolioBoldReel: React.FC = () => (
-  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={THEME_BOLD} layout="reel" bgPattern="none" />
+export const PortfolioBoldReel: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="reel" bgPattern="none" />
 );
 
 // ── Composition: Warm + Gallery ─────────────────────────────────
-export const PortfolioWarmGallery: React.FC = () => (
-  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={THEME_WARM} layout="gallery" bgPattern="hex" />
+export const PortfolioWarmGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="gallery" bgPattern="hex" />
 );
 
 // ── Composition: Minimal + Case Study ───────────────────────────
-export const PortfolioMinimalCaseStudy: React.FC = () => (
-  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={THEME_MINIMAL} layout="caseStudy" bgPattern="none" />
+export const PortfolioMinimalCaseStudy: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="caseStudy" bgPattern="none" />
 );
 
 // ── Composition: Neon + Reel ────────────────────────────────────
-export const PortfolioNeonReel: React.FC = () => (
-  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={THEME_NEON} layout="reel" bgPattern="hex" />
+export const PortfolioNeonReel: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="reel" bgPattern="hex" />
 );

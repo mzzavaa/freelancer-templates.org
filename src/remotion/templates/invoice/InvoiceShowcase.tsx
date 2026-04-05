@@ -20,6 +20,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data: Web Design Project (Due) ───────────────────────
@@ -63,31 +65,31 @@ const SAMPLE_OVERDUE_SPEC: InvoiceSpec = {
 };
 
 // ── Composition: Dark + Professional ────────────────────────────
-export const InvoiceDarkProfessional: React.FC = () => (
-  <Invoice spec={SAMPLE_DUE_SPEC} theme={THEME_DARK} layout="professional" bgPattern="grid" />
+export const InvoiceDarkProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="professional" bgPattern="grid" />
 );
 
 // ── Composition: Clean + Professional ───────────────────────────
-export const InvoiceCleanProfessional: React.FC = () => (
-  <Invoice spec={SAMPLE_DUE_SPEC} theme={THEME_CLEAN} layout="professional" bgPattern="dots" />
+export const InvoiceCleanProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="professional" bgPattern="dots" />
 );
 
 // ── Composition: Bold + Urgent ──────────────────────────────────
-export const InvoiceBoldUrgent: React.FC = () => (
-  <Invoice spec={SAMPLE_OVERDUE_SPEC} theme={THEME_BOLD} layout="urgent" bgPattern="none" />
+export const InvoiceBoldUrgent: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_OVERDUE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="urgent" bgPattern="none" />
 );
 
 // ── Composition: Warm + Friendly ────────────────────────────────
-export const InvoiceWarmFriendly: React.FC = () => (
-  <Invoice spec={SAMPLE_DUE_SPEC} theme={THEME_WARM} layout="friendly" bgPattern="hex" />
+export const InvoiceWarmFriendly: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="friendly" bgPattern="hex" />
 );
 
 // ── Composition: Minimal + Professional ─────────────────────────
-export const InvoiceMinimalProfessional: React.FC = () => (
-  <Invoice spec={SAMPLE_DUE_SPEC} theme={THEME_MINIMAL} layout="professional" bgPattern="none" />
+export const InvoiceMinimalProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="professional" bgPattern="none" />
 );
 
 // ── Composition: Neon + Urgent ──────────────────────────────────
-export const InvoiceNeonUrgent: React.FC = () => (
-  <Invoice spec={SAMPLE_OVERDUE_SPEC} theme={THEME_NEON} layout="urgent" bgPattern="hex" />
+export const InvoiceNeonUrgent: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_OVERDUE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="urgent" bgPattern="hex" />
 );

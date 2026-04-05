@@ -20,6 +20,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data ─────────────────────────────────────────────────
@@ -88,31 +90,31 @@ const SAMPLE_SPEC_DESIGN: ProposalSpec = {
 };
 
 // ── Composition: Dark + Executive ───────────────────────────────
-export const ProposalDarkExecutive: React.FC = () => (
-  <Proposal spec={SAMPLE_SPEC} theme={THEME_DARK} layout="executive" bgPattern="grid" />
+export const ProposalDarkExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="executive" bgPattern="grid" />
 );
 
 // ── Composition: Clean + Creative ───────────────────────────────
-export const ProposalCleanCreative: React.FC = () => (
-  <Proposal spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="creative" bgPattern="dots" />
+export const ProposalCleanCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="creative" bgPattern="dots" />
 );
 
 // ── Composition: Bold + Pitch ───────────────────────────────────
-export const ProposalBoldPitch: React.FC = () => (
-  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={THEME_BOLD} layout="pitch" bgPattern="none" />
+export const ProposalBoldPitch: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="pitch" bgPattern="none" />
 );
 
 // ── Composition: Warm + Executive ───────────────────────────────
-export const ProposalWarmExecutive: React.FC = () => (
-  <Proposal spec={SAMPLE_SPEC} theme={THEME_WARM} layout="executive" bgPattern="hex" />
+export const ProposalWarmExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="executive" bgPattern="hex" />
 );
 
 // ── Composition: Minimal + Creative ─────────────────────────────
-export const ProposalMinimalCreative: React.FC = () => (
-  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={THEME_MINIMAL} layout="creative" bgPattern="none" />
+export const ProposalMinimalCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="creative" bgPattern="none" />
 );
 
 // ── Composition: Neon + Pitch ───────────────────────────────────
-export const ProposalNeonPitch: React.FC = () => (
-  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={THEME_NEON} layout="pitch" bgPattern="hex" />
+export const ProposalNeonPitch: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_NEON, brandKit)} layout="pitch" bgPattern="hex" />
 );

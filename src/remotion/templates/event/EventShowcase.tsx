@@ -20,6 +20,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data ─────────────────────────────────────────────────
@@ -59,31 +61,31 @@ const SAMPLE_SPEC_WORKSHOP: EventSpec = {
 };
 
 // ── Composition: Dark + Hero ────────────────────────────────────
-export const EventDarkHero: React.FC = () => (
-  <Event spec={SAMPLE_SPEC} theme={THEME_DARK} layout="hero" bgPattern="grid" />
+export const EventDarkHero: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="hero" bgPattern="grid" />
 );
 
 // ── Composition: Clean + Speakers ───────────────────────────────
-export const EventCleanSpeakers: React.FC = () => (
-  <Event spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="speakers" bgPattern="dots" />
+export const EventCleanSpeakers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="speakers" bgPattern="dots" />
 );
 
 // ── Composition: Bold + Countdown ───────────────────────────────
-export const EventBoldCountdown: React.FC = () => (
-  <Event spec={SAMPLE_SPEC_WORKSHOP} theme={THEME_BOLD} layout="countdown" bgPattern="none" />
+export const EventBoldCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC_WORKSHOP} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="countdown" bgPattern="none" />
 );
 
 // ── Composition: Warm + Hero ────────────────────────────────────
-export const EventWarmHero: React.FC = () => (
-  <Event spec={SAMPLE_SPEC} theme={THEME_WARM} layout="hero" bgPattern="hex" />
+export const EventWarmHero: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="hero" bgPattern="hex" />
 );
 
 // ── Composition: Minimal + Speakers ─────────────────────────────
-export const EventMinimalSpeakers: React.FC = () => (
-  <Event spec={SAMPLE_SPEC} theme={THEME_MINIMAL} layout="speakers" bgPattern="none" />
+export const EventMinimalSpeakers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="speakers" bgPattern="none" />
 );
 
 // ── Composition: Neon + Countdown ───────────────────────────────
-export const EventNeonCountdown: React.FC = () => (
-  <Event spec={SAMPLE_SPEC_WORKSHOP} theme={THEME_NEON} layout="countdown" bgPattern="hex" />
+export const EventNeonCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Event spec={SAMPLE_SPEC_WORKSHOP} theme={applyBrandKit(THEME_NEON, brandKit)} layout="countdown" bgPattern="hex" />
 );

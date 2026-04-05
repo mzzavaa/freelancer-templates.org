@@ -16,7 +16,12 @@
 import React from "react";
 import { CoursePromo } from "./CoursePromo";
 import type { CoursePromoSpec } from "./CoursePromo";
-import { THEME_DARK, THEME_CLEAN } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_CLEAN,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data: Web Development Course ─────────────────────────
 const SAMPLE_SPEC_WEBDEV: CoursePromoSpec = {
@@ -52,31 +57,31 @@ const SAMPLE_SPEC_DATASCIENCE: CoursePromoSpec = {
 };
 
 // ── Composition: Dark + Overview ────────────────────────────────
-export const CoursePromoDarkOverview: React.FC = () => (
-  <CoursePromo spec={SAMPLE_SPEC_WEBDEV} theme={THEME_DARK} layout="overview" />
+export const CoursePromoDarkOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_WEBDEV} theme={applyBrandKit(THEME_DARK, brandKit)} layout="overview" />
 );
 
 // ── Composition: Clean + Overview ───────────────────────────────
-export const CoursePromoCleanOverview: React.FC = () => (
-  <CoursePromo spec={SAMPLE_SPEC_WEBDEV} theme={THEME_CLEAN} layout="overview" />
+export const CoursePromoCleanOverview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_WEBDEV} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="overview" />
 );
 
 // ── Composition: Dark + Curriculum ──────────────────────────────
-export const CoursePromoDarkCurriculum: React.FC = () => (
-  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={THEME_DARK} layout="curriculum" />
+export const CoursePromoDarkCurriculum: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_DARK, brandKit)} layout="curriculum" />
 );
 
 // ── Composition: Clean + Curriculum ─────────────────────────────
-export const CoursePromoCleanCurriculum: React.FC = () => (
-  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={THEME_CLEAN} layout="curriculum" />
+export const CoursePromoCleanCurriculum: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="curriculum" />
 );
 
 // ── Composition: Dark + Instructor ──────────────────────────────
-export const CoursePromoDarkInstructor: React.FC = () => (
-  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={THEME_DARK} layout="instructor" />
+export const CoursePromoDarkInstructor: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_DARK, brandKit)} layout="instructor" />
 );
 
 // ── Composition: Clean + Instructor ─────────────────────────────
-export const CoursePromoCleanInstructor: React.FC = () => (
-  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={THEME_CLEAN} layout="instructor" />
+export const CoursePromoCleanInstructor: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CoursePromo spec={SAMPLE_SPEC_DATASCIENCE} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="instructor" />
 );

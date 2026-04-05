@@ -16,7 +16,12 @@
 import React from "react";
 import { BeforeAfter } from "./BeforeAfter";
 import type { BeforeAfterSpec } from "./BeforeAfter";
-import { THEME_DARK, THEME_WARM } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_WARM,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data: Fitness Transformation ─────────────────────────
 const SAMPLE_SPEC_FITNESS: BeforeAfterSpec = {
@@ -46,31 +51,31 @@ const SAMPLE_SPEC_BUSINESS: BeforeAfterSpec = {
 };
 
 // ── Composition: Dark + Split Screen ────────────────────────────
-export const BeforeAfterDarkSplitScreen: React.FC = () => (
-  <BeforeAfter spec={SAMPLE_SPEC_FITNESS} theme={THEME_DARK} layout="split-screen" />
+export const BeforeAfterDarkSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_FITNESS} theme={applyBrandKit(THEME_DARK, brandKit)} layout="split-screen" />
 );
 
 // ── Composition: Warm + Split Screen ────────────────────────────
-export const BeforeAfterWarmSplitScreen: React.FC = () => (
-  <BeforeAfter spec={SAMPLE_SPEC_FITNESS} theme={THEME_WARM} layout="split-screen" />
+export const BeforeAfterWarmSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_FITNESS} theme={applyBrandKit(THEME_WARM, brandKit)} layout="split-screen" />
 );
 
 // ── Composition: Dark + Reveal Wipe ─────────────────────────────
-export const BeforeAfterDarkRevealWipe: React.FC = () => (
-  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={THEME_DARK} layout="reveal-wipe" />
+export const BeforeAfterDarkRevealWipe: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_DARK, brandKit)} layout="reveal-wipe" />
 );
 
 // ── Composition: Warm + Reveal Wipe ─────────────────────────────
-export const BeforeAfterWarmRevealWipe: React.FC = () => (
-  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={THEME_WARM} layout="reveal-wipe" />
+export const BeforeAfterWarmRevealWipe: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_WARM, brandKit)} layout="reveal-wipe" />
 );
 
 // ── Composition: Dark + Metrics Compare ─────────────────────────
-export const BeforeAfterDarkMetricsCompare: React.FC = () => (
-  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={THEME_DARK} layout="metrics-compare" />
+export const BeforeAfterDarkMetricsCompare: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_DARK, brandKit)} layout="metrics-compare" />
 );
 
 // ── Composition: Warm + Metrics Compare ─────────────────────────
-export const BeforeAfterWarmMetricsCompare: React.FC = () => (
-  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={THEME_WARM} layout="metrics-compare" />
+export const BeforeAfterWarmMetricsCompare: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BeforeAfter spec={SAMPLE_SPEC_BUSINESS} theme={applyBrandKit(THEME_WARM, brandKit)} layout="metrics-compare" />
 );

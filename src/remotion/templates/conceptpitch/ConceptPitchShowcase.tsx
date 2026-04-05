@@ -8,7 +8,12 @@
 import React from "react";
 import { ConceptPitch } from "./ConceptPitch";
 import type { ConceptPitchSpec } from "./ConceptPitch";
-import { THEME_DARK, THEME_BOLD } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_BOLD,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC: ConceptPitchSpec = {
   title: "Journal-to-Capability Gap Agent",
@@ -39,37 +44,37 @@ const BOARD_DURATION = 360; // ~12s for board view
 const BRIEF_DURATION = 270; // max 270 per spec
 
 // ── Arc × Dark ──────────────────────────────────────────────────
-export const ConceptPitchArcDark: React.FC = () => (
-  <ConceptPitch spec={SAMPLE_SPEC} theme={THEME_DARK} layout="arc" />
+export const ConceptPitchArcDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="arc" />
 );
 export const ARC_DARK_DURATION = ARC_DURATION;
 
 // ── Arc × Bold ──────────────────────────────────────────────────
-export const ConceptPitchArcBold: React.FC = () => (
-  <ConceptPitch spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="arc" />
+export const ConceptPitchArcBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="arc" />
 );
 export const ARC_BOLD_DURATION = ARC_DURATION;
 
 // ── Board × Dark ────────────────────────────────────────────────
-export const ConceptPitchBoardDark: React.FC = () => (
-  <ConceptPitch spec={SAMPLE_SPEC} theme={THEME_DARK} layout="board" />
+export const ConceptPitchBoardDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="board" />
 );
 export const BOARD_DARK_DURATION = BOARD_DURATION;
 
 // ── Board × Bold ────────────────────────────────────────────────
-export const ConceptPitchBoardBold: React.FC = () => (
-  <ConceptPitch spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="board" />
+export const ConceptPitchBoardBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="board" />
 );
 export const BOARD_BOLD_DURATION = BOARD_DURATION;
 
 // ── Brief × Dark ────────────────────────────────────────────────
-export const ConceptPitchBriefDark: React.FC = () => (
-  <ConceptPitch spec={SAMPLE_SPEC} theme={THEME_DARK} layout="brief" />
+export const ConceptPitchBriefDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="brief" />
 );
 export const BRIEF_DARK_DURATION = BRIEF_DURATION;
 
 // ── Brief × Bold ────────────────────────────────────────────────
-export const ConceptPitchBriefBold: React.FC = () => (
-  <ConceptPitch spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="brief" />
+export const ConceptPitchBriefBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ConceptPitch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="brief" />
 );
 export const BRIEF_BOLD_DURATION = BRIEF_DURATION;

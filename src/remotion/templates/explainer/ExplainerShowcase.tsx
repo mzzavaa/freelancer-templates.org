@@ -20,6 +20,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data: AI Consulting ──────────────────────────────────
@@ -70,31 +72,31 @@ const SAMPLE_WEB_SPEC: ExplainerSpec = {
 };
 
 // ── Composition: Dark + Cinematic ───────────────────────────────
-export const ExplainerDarkCinematic: React.FC = () => (
-  <Explainer spec={SAMPLE_AI_SPEC} theme={THEME_DARK} layout="cinematic" bgPattern="grid" />
+export const ExplainerDarkCinematic: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="cinematic" bgPattern="grid" />
 );
 
 // ── Composition: Clean + Whiteboard ─────────────────────────────
-export const ExplainerCleanWhiteboard: React.FC = () => (
-  <Explainer spec={SAMPLE_AI_SPEC} theme={THEME_CLEAN} layout="whiteboard" bgPattern="dots" />
+export const ExplainerCleanWhiteboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="whiteboard" bgPattern="dots" />
 );
 
 // ── Composition: Bold + Process ─────────────────────────────────
-export const ExplainerBoldProcess: React.FC = () => (
-  <Explainer spec={SAMPLE_WEB_SPEC} theme={THEME_BOLD} layout="process" bgPattern="none" />
+export const ExplainerBoldProcess: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_WEB_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="process" bgPattern="none" />
 );
 
 // ── Composition: Warm + Whiteboard ──────────────────────────────
-export const ExplainerWarmWhiteboard: React.FC = () => (
-  <Explainer spec={SAMPLE_WEB_SPEC} theme={THEME_WARM} layout="whiteboard" bgPattern="hex" />
+export const ExplainerWarmWhiteboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_WEB_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="whiteboard" bgPattern="hex" />
 );
 
 // ── Composition: Minimal + Process ──────────────────────────────
-export const ExplainerMinimalProcess: React.FC = () => (
-  <Explainer spec={SAMPLE_AI_SPEC} theme={THEME_MINIMAL} layout="process" bgPattern="none" />
+export const ExplainerMinimalProcess: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="process" bgPattern="none" />
 );
 
 // ── Composition: Neon + Cinematic ───────────────────────────────
-export const ExplainerNeonCinematic: React.FC = () => (
-  <Explainer spec={SAMPLE_WEB_SPEC} theme={THEME_NEON} layout="cinematic" bgPattern="hex" />
+export const ExplainerNeonCinematic: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_WEB_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="cinematic" bgPattern="hex" />
 );

@@ -4,7 +4,16 @@
 
 import React from "react";
 import { FAQ, FAQSpec } from "./FAQ";
-import { THEME_DARK, THEME_CLEAN, THEME_BOLD, THEME_WARM, THEME_MINIMAL, THEME_NEON } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_CLEAN,
+  THEME_BOLD,
+  THEME_WARM,
+  THEME_MINIMAL,
+  THEME_NEON,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC: FAQSpec = {
   headline: "Frequently Asked Questions",
@@ -36,26 +45,26 @@ const SAMPLE_SPEC: FAQSpec = {
 };
 
 // Dark + Accordion - classic FAQ stack
-export const FAQDarkAccordion: React.FC = () => (
-  <FAQ spec={SAMPLE_SPEC} theme={THEME_DARK} layout="accordion" />
+export const FAQDarkAccordion: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="accordion" />
 );
 
 // Clean + Cards - professional grid
-export const FAQCleanCards: React.FC = () => (
-  <FAQ spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="cards" />
+export const FAQCleanCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <FAQ spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="cards" />
 );
 
 // Bold + Interview - high-impact split
-export const FAQBoldInterview: React.FC = () => (
+export const FAQBoldInterview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <FAQ spec={{
     ...SAMPLE_SPEC,
     headline: "Got Questions? We've Got Answers.",
     subheadline: undefined,
-  }} theme={THEME_BOLD} layout="interview" />
+  }} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="interview" />
 );
 
 // Warm + Accordion - friendly FAQ
-export const FAQWarmAccordion: React.FC = () => (
+export const FAQWarmAccordion: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <FAQ spec={{
     ...SAMPLE_SPEC,
     headline: "Let's Clear Things Up",
@@ -66,21 +75,21 @@ export const FAQWarmAccordion: React.FC = () => (
       { question: "Do you work with small businesses?", answer: "Yes! In fact, small businesses are my favorite clients. I love helping founders bring their vision to life.", icon: "box" },
       { question: "Can you help with ongoing maintenance?", answer: "I offer monthly retainer packages for ongoing support, updates, and feature additions.", icon: "wrench" },
     ],
-  }} theme={THEME_WARM} layout="accordion" />
+  }} theme={applyBrandKit(THEME_WARM, brandKit)} layout="accordion" />
 );
 
 // Minimal + Cards - understated elegance
-export const FAQMinimalCards: React.FC = () => (
+export const FAQMinimalCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <FAQ spec={{
     ...SAMPLE_SPEC,
     headline: "Common Questions",
     subheadline: undefined,
     ctaText: undefined,
-  }} theme={THEME_MINIMAL} layout="cards" />
+  }} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="cards" />
 );
 
 // Neon + Interview - tech-forward Q&A
-export const FAQNeonInterview: React.FC = () => (
+export const FAQNeonInterview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <FAQ spec={{
     ...SAMPLE_SPEC,
     headline: "The Dev FAQ",
@@ -91,5 +100,5 @@ export const FAQNeonInterview: React.FC = () => (
       { question: "Can you work with our existing codebase?", answer: "Yes - I'll start with a code audit to understand the architecture, then propose improvements alongside new features.", icon: "box" },
       { question: "What about scalability?", answer: "I design for scale from day one. Serverless architectures, auto-scaling groups, and load testing are standard practice.", icon: "trending-up" },
     ],
-  }} theme={THEME_NEON} layout="interview" />
+  }} theme={applyBrandKit(THEME_NEON, brandKit)} layout="interview" />
 );

@@ -16,7 +16,12 @@
 import React from "react";
 import { NewsletterPromo } from "./NewsletterPromo";
 import type { NewsletterPromoSpec } from "./NewsletterPromo";
-import { THEME_DARK, THEME_CLEAN } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_CLEAN,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data: Tech Newsletter ────────────────────────────────
 const SAMPLE_SPEC_TECH: NewsletterPromoSpec = {
@@ -47,31 +52,31 @@ const SAMPLE_SPEC_CREATOR: NewsletterPromoSpec = {
 
 
 // ── Composition: Dark + Subscribe CTA ───────────────────────────
-export const NewsletterPromoDarkSubscribeCta: React.FC = () => (
-  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={THEME_DARK} layout="subscribe-cta" />
+export const NewsletterPromoDarkSubscribeCta: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_DARK, brandKit)} layout="subscribe-cta" />
 );
 
 // ── Composition: Clean + Subscribe CTA ──────────────────────────
-export const NewsletterPromoCleanSubscribeCta: React.FC = () => (
-  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={THEME_CLEAN} layout="subscribe-cta" />
+export const NewsletterPromoCleanSubscribeCta: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="subscribe-cta" />
 );
 
 // ── Composition: Dark + Issue Preview ───────────────────────────
-export const NewsletterPromoDarkIssuePreview: React.FC = () => (
-  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={THEME_DARK} layout="issue-preview" />
+export const NewsletterPromoDarkIssuePreview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_DARK, brandKit)} layout="issue-preview" />
 );
 
 // ── Composition: Clean + Issue Preview ──────────────────────────
-export const NewsletterPromoCleanIssuePreview: React.FC = () => (
-  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={THEME_CLEAN} layout="issue-preview" />
+export const NewsletterPromoCleanIssuePreview: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="issue-preview" />
 );
 
 // ── Composition: Dark + Testimonial Blend ───────────────────────
-export const NewsletterPromoDarkTestimonialBlend: React.FC = () => (
-  <NewsletterPromo spec={SAMPLE_SPEC_CREATOR} theme={THEME_DARK} layout="testimonial-blend" />
+export const NewsletterPromoDarkTestimonialBlend: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_DARK, brandKit)} layout="testimonial-blend" />
 );
 
 // ── Composition: Clean + Testimonial Blend ──────────────────────
-export const NewsletterPromoCleanTestimonialBlend: React.FC = () => (
-  <NewsletterPromo spec={SAMPLE_SPEC_CREATOR} theme={THEME_CLEAN} layout="testimonial-blend" />
+export const NewsletterPromoCleanTestimonialBlend: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <NewsletterPromo spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="testimonial-blend" />
 );

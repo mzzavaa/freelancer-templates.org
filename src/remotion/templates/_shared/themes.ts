@@ -195,25 +195,47 @@ export const THEMES: Record<string, Theme> = {
 // All fields are JSON-serializable. Templates render correctly without a BrandKit.
 export interface BrandKit {
   logoUrl?: string;
-  primaryColor?: string;
-  secondaryColor?: string;
+  primaryColor?: string;   // main brand color - overrides theme.accent
+  accentColor?: string;    // secondary accent  - overrides theme.accentSecondary
+  bgColor?: string;        // background color  - overrides theme.bg
+  textColor?: string;      // body text color   - overrides theme.textPrimary
+  secondaryColor?: string; // reserved for future use
   fontFamily?: string;
-  accentColor?: string;
 }
 
 /**
  * Apply BrandKit overrides to a theme. Returns a new theme with brand colors applied.
  * When brandKit is undefined, returns the original theme unchanged.
+ *
+ * Mapping:
+ *   primaryColor -> accent + accentGradient + cardBorder
+ *   accentColor  -> accentSecondary
+ *   bgColor      -> bg
+ *   textColor    -> textPrimary
  */
 export function applyBrandKit(theme: Theme, brandKit?: BrandKit): Theme {
   if (!brandKit) return theme;
-  return {
-    ...theme,
-    ...(brandKit.accentColor ? { accent: brandKit.accentColor } : {}),
-    ...(brandKit.primaryColor ? { textPrimary: brandKit.primaryColor } : {}),
-    ...(brandKit.secondaryColor ? { cardBg: brandKit.secondaryColor } : {}),
-    ...(brandKit.fontFamily ? { fontFamily: brandKit.fontFamily } : {}),
-  };
+  const result = { ...theme };
+  if (brandKit.primaryColor) {
+    const sec = brandKit.accentColor ?? theme.accentSecondary;
+    result.accent = brandKit.primaryColor;
+    result.accentSecondary = sec;
+    result.accentGradient = `linear-gradient(135deg, ${brandKit.primaryColor}, ${sec})`;
+    result.cardBorder = `${brandKit.primaryColor}40`;
+  }
+  if (brandKit.accentColor) {
+    result.accentSecondary = brandKit.accentColor;
+  }
+  if (brandKit.bgColor) {
+    result.bg = brandKit.bgColor;
+  }
+  if (brandKit.textColor) {
+    result.textPrimary = brandKit.textColor;
+  }
+  if (brandKit.fontFamily) {
+    result.fontFamily = brandKit.fontFamily;
+  }
+  return result;
 }
 
 // ── Platform Hints ──────────────────────────────────────────────

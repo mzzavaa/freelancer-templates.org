@@ -16,7 +16,12 @@
 import React from "react";
 import { ProductLaunch } from "./ProductLaunch";
 import type { ProductLaunchSpec } from "./ProductLaunch";
-import { THEME_DARK, THEME_BOLD } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_BOLD,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data ─────────────────────────────────────────────────
 const SAMPLE_SPEC: ProductLaunchSpec = {
@@ -46,31 +51,31 @@ const SAMPLE_SPEC_MINIMAL: ProductLaunchSpec = {
 };
 
 // ── Composition: Dark + Hero Reveal ─────────────────────────────
-export const ProductLaunchDarkHeroReveal: React.FC = () => (
-  <ProductLaunch spec={SAMPLE_SPEC} theme={THEME_DARK} layout="hero-reveal" />
+export const ProductLaunchDarkHeroReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="hero-reveal" />
 );
 
 // ── Composition: Bold + Hero Reveal ─────────────────────────────
-export const ProductLaunchBoldHeroReveal: React.FC = () => (
-  <ProductLaunch spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="hero-reveal" />
+export const ProductLaunchBoldHeroReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="hero-reveal" />
 );
 
 // ── Composition: Dark + Feature Grid ────────────────────────────
-export const ProductLaunchDarkFeatureGrid: React.FC = () => (
-  <ProductLaunch spec={SAMPLE_SPEC} theme={THEME_DARK} layout="feature-grid" />
+export const ProductLaunchDarkFeatureGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="feature-grid" />
 );
 
 // ── Composition: Bold + Feature Grid ────────────────────────────
-export const ProductLaunchBoldFeatureGrid: React.FC = () => (
-  <ProductLaunch spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="feature-grid" />
+export const ProductLaunchBoldFeatureGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="feature-grid" />
 );
 
 // ── Composition: Dark + Countdown ───────────────────────────────
-export const ProductLaunchDarkCountdown: React.FC = () => (
-  <ProductLaunch spec={SAMPLE_SPEC_MINIMAL} theme={THEME_DARK} layout="countdown" />
+export const ProductLaunchDarkCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC_MINIMAL} theme={applyBrandKit(THEME_DARK, brandKit)} layout="countdown" />
 );
 
 // ── Composition: Bold + Countdown ───────────────────────────────
-export const ProductLaunchBoldCountdown: React.FC = () => (
-  <ProductLaunch spec={SAMPLE_SPEC_MINIMAL} theme={THEME_BOLD} layout="countdown" />
+export const ProductLaunchBoldCountdown: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ProductLaunch spec={SAMPLE_SPEC_MINIMAL} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="countdown" />
 );

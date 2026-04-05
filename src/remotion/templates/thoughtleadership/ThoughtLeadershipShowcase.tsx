@@ -8,7 +8,12 @@
 import React from "react";
 import { ThoughtLeadership, calculateThoughtLeadershipDuration } from "./ThoughtLeadership";
 import type { ThoughtLeadershipSpec } from "./ThoughtLeadership";
-import { THEME_DARK, THEME_CLEAN } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_CLEAN,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC: ThoughtLeadershipSpec = {
   title: "The Migration Panic",
@@ -41,37 +46,37 @@ const SAMPLE_SPEC: ThoughtLeadershipSpec = {
 const SECTIONS_COUNT = SAMPLE_SPEC.sections.length;
 
 // ── Editorial × Dark ────────────────────────────────────────────
-export const ThoughtLeadershipEditorialDark: React.FC = () => (
-  <ThoughtLeadership spec={SAMPLE_SPEC} theme={THEME_DARK} layout="editorial" />
+export const ThoughtLeadershipEditorialDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="editorial" />
 );
 export const EDITORIAL_DARK_DURATION = calculateThoughtLeadershipDuration(SECTIONS_COUNT, "editorial");
 
 // ── Editorial × Clean ───────────────────────────────────────────
-export const ThoughtLeadershipEditorialClean: React.FC = () => (
-  <ThoughtLeadership spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="editorial" />
+export const ThoughtLeadershipEditorialClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="editorial" />
 );
 export const EDITORIAL_CLEAN_DURATION = calculateThoughtLeadershipDuration(SECTIONS_COUNT, "editorial");
 
 // ── Narrative × Dark ────────────────────────────────────────────
-export const ThoughtLeadershipNarrativeDark: React.FC = () => (
-  <ThoughtLeadership spec={SAMPLE_SPEC} theme={THEME_DARK} layout="narrative" />
+export const ThoughtLeadershipNarrativeDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="narrative" />
 );
 export const NARRATIVE_DARK_DURATION = calculateThoughtLeadershipDuration(SECTIONS_COUNT, "narrative");
 
 // ── Narrative × Clean ───────────────────────────────────────────
-export const ThoughtLeadershipNarrativeClean: React.FC = () => (
-  <ThoughtLeadership spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="narrative" />
+export const ThoughtLeadershipNarrativeClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="narrative" />
 );
 export const NARRATIVE_CLEAN_DURATION = calculateThoughtLeadershipDuration(SECTIONS_COUNT, "narrative");
 
 // ── Keynote × Dark ──────────────────────────────────────────────
-export const ThoughtLeadershipKeynoteDark: React.FC = () => (
-  <ThoughtLeadership spec={SAMPLE_SPEC} theme={THEME_DARK} layout="keynote" />
+export const ThoughtLeadershipKeynoteDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="keynote" />
 );
 export const KEYNOTE_DARK_DURATION = calculateThoughtLeadershipDuration(SECTIONS_COUNT, "keynote");
 
 // ── Keynote × Clean ─────────────────────────────────────────────
-export const ThoughtLeadershipKeynoteClean: React.FC = () => (
-  <ThoughtLeadership spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="keynote" />
+export const ThoughtLeadershipKeynoteClean: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ThoughtLeadership spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="keynote" />
 );
 export const KEYNOTE_CLEAN_DURATION = calculateThoughtLeadershipDuration(SECTIONS_COUNT, "keynote");

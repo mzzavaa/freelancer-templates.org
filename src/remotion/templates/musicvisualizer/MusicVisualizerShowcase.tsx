@@ -3,7 +3,12 @@
  */
 import React from "react";
 import { MusicVisualizer } from "./MusicVisualizer";
-import { THEME_DARK, THEME_NEON } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_NEON,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC = {
   track_title: "Neon Horizons",
@@ -19,21 +24,21 @@ const SAMPLE_SPEC = {
   release_date: "2026",
 };
 
-export const MusicVisualizerDarkBars: React.FC = () => (
-  <MusicVisualizer spec={SAMPLE_SPEC} theme={THEME_DARK} layout="bars" />
+export const MusicVisualizerDarkBars: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="bars" />
 );
-export const MusicVisualizerNeonBars: React.FC = () => (
-  <MusicVisualizer spec={SAMPLE_SPEC} theme={THEME_NEON} layout="bars" />
+export const MusicVisualizerNeonBars: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="bars" />
 );
-export const MusicVisualizerDarkRadial: React.FC = () => (
-  <MusicVisualizer spec={SAMPLE_SPEC} theme={THEME_DARK} layout="radial" />
+export const MusicVisualizerDarkRadial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="radial" />
 );
-export const MusicVisualizerNeonRadial: React.FC = () => (
-  <MusicVisualizer spec={SAMPLE_SPEC} theme={THEME_NEON} layout="radial" />
+export const MusicVisualizerNeonRadial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="radial" />
 );
-export const MusicVisualizerDarkLyrics: React.FC = () => (
-  <MusicVisualizer spec={SAMPLE_SPEC} theme={THEME_DARK} layout="lyrics" />
+export const MusicVisualizerDarkLyrics: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="lyrics" />
 );
-export const MusicVisualizerNeonLyrics: React.FC = () => (
-  <MusicVisualizer spec={SAMPLE_SPEC} theme={THEME_NEON} layout="lyrics" />
+export const MusicVisualizerNeonLyrics: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <MusicVisualizer spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="lyrics" />
 );

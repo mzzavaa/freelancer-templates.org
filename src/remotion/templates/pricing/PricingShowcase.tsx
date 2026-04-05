@@ -4,7 +4,16 @@
 
 import React from "react";
 import { Pricing, PricingSpec } from "./Pricing";
-import { THEME_DARK, THEME_CLEAN, THEME_BOLD, THEME_WARM, THEME_MINIMAL, THEME_NEON } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_CLEAN,
+  THEME_BOLD,
+  THEME_WARM,
+  THEME_MINIMAL,
+  THEME_NEON,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC: PricingSpec = {
   headline: "Simple, Transparent Pricing",
@@ -60,26 +69,26 @@ const SAMPLE_SPEC: PricingSpec = {
 };
 
 // Dark + Tiers - classic pricing cards
-export const PricingDarkTiers: React.FC = () => (
-  <Pricing spec={SAMPLE_SPEC} theme={THEME_DARK} layout="tiers" />
+export const PricingDarkTiers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="tiers" />
 );
 
 // Clean + Comparison - professional feature table
-export const PricingCleanComparison: React.FC = () => (
-  <Pricing spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="comparison" />
+export const PricingCleanComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Pricing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="comparison" />
 );
 
 // Bold + Spotlight - featured plan hero
-export const PricingBoldSpotlight: React.FC = () => (
+export const PricingBoldSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Pricing spec={{
     ...SAMPLE_SPEC,
     headline: "The Pro Plan - Built for Serious Growth",
     subheadline: "Everything you need, nothing you don't",
-  }} theme={THEME_BOLD} layout="spotlight" />
+  }} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="spotlight" />
 );
 
 // Warm + Tiers - friendly pricing
-export const PricingWarmTiers: React.FC = () => (
+export const PricingWarmTiers: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Pricing spec={{
     ...SAMPLE_SPEC,
     headline: "Invest in Your Brand",
@@ -89,20 +98,20 @@ export const PricingWarmTiers: React.FC = () => (
       period: "/month",
       price: t.name === "Starter" ? 49 : t.name === "Professional" ? 149 : 399,
     })),
-  }} theme={THEME_WARM} layout="tiers" />
+  }} theme={applyBrandKit(THEME_WARM, brandKit)} layout="tiers" />
 );
 
 // Minimal + Comparison - clean data table
-export const PricingMinimalComparison: React.FC = () => (
+export const PricingMinimalComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Pricing spec={{
     ...SAMPLE_SPEC,
     headline: "Compare Plans",
     subheadline: undefined,
-  }} theme={THEME_MINIMAL} layout="comparison" />
+  }} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="comparison" />
 );
 
 // Neon + Spotlight - tech-forward featured plan
-export const PricingNeonSpotlight: React.FC = () => (
+export const PricingNeonSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Pricing spec={{
     ...SAMPLE_SPEC,
     headline: "Ship Faster with the Pro Plan",
@@ -112,5 +121,5 @@ export const PricingNeonSpotlight: React.FC = () => (
       { ...SAMPLE_SPEC.tiers[1], name: "Team", price: 99, period: "/mo", badge: "Best Value" },
       { ...SAMPLE_SPEC.tiers[2], name: "Scale", price: 299, period: "/mo" },
     ],
-  }} theme={THEME_NEON} layout="spotlight" />
+  }} theme={applyBrandKit(THEME_NEON, brandKit)} layout="spotlight" />
 );

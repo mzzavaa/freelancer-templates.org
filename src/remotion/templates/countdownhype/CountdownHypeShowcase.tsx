@@ -16,7 +16,12 @@
 import React from "react";
 import { CountdownHype } from "./CountdownHype";
 import type { CountdownHypeSpec } from "./CountdownHype";
-import { THEME_DARK, THEME_NEON } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_NEON,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data: Product Launch Countdown ───────────────────────
 const SAMPLE_SPEC_LAUNCH: CountdownHypeSpec = {
@@ -37,31 +42,31 @@ const SAMPLE_SPEC_EVENT: CountdownHypeSpec = {
 };
 
 // ── Composition: Dark + Timer ───────────────────────────────────
-export const CountdownHypeDarkTimer: React.FC = () => (
-  <CountdownHype spec={SAMPLE_SPEC_LAUNCH} theme={THEME_DARK} layout="timer" />
+export const CountdownHypeDarkTimer: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_LAUNCH} theme={applyBrandKit(THEME_DARK, brandKit)} layout="timer" />
 );
 
 // ── Composition: Neon + Timer ───────────────────────────────────
-export const CountdownHypeNeonTimer: React.FC = () => (
-  <CountdownHype spec={SAMPLE_SPEC_LAUNCH} theme={THEME_NEON} layout="timer" />
+export const CountdownHypeNeonTimer: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_LAUNCH} theme={applyBrandKit(THEME_NEON, brandKit)} layout="timer" />
 );
 
 // ── Composition: Dark + Teaser ──────────────────────────────────
-export const CountdownHypeDarkTeaser: React.FC = () => (
-  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={THEME_DARK} layout="teaser" />
+export const CountdownHypeDarkTeaser: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_DARK, brandKit)} layout="teaser" />
 );
 
 // ── Composition: Neon + Teaser ──────────────────────────────────
-export const CountdownHypeNeonTeaser: React.FC = () => (
-  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={THEME_NEON} layout="teaser" />
+export const CountdownHypeNeonTeaser: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_NEON, brandKit)} layout="teaser" />
 );
 
 // ── Composition: Dark + Urgency ─────────────────────────────────
-export const CountdownHypeDarkUrgency: React.FC = () => (
-  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={THEME_DARK} layout="urgency" />
+export const CountdownHypeDarkUrgency: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_DARK, brandKit)} layout="urgency" />
 );
 
 // ── Composition: Neon + Urgency ─────────────────────────────────
-export const CountdownHypeNeonUrgency: React.FC = () => (
-  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={THEME_NEON} layout="urgency" />
+export const CountdownHypeNeonUrgency: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CountdownHype spec={SAMPLE_SPEC_EVENT} theme={applyBrandKit(THEME_NEON, brandKit)} layout="urgency" />
 );

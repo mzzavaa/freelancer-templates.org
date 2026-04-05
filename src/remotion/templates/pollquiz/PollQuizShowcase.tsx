@@ -16,7 +16,12 @@
 import React from "react";
 import { PollQuiz } from "./PollQuiz";
 import type { PollQuizSpec } from "./PollQuiz";
-import { THEME_DARK, THEME_NEON } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_NEON,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data: Programming Language Poll ──────────────────────
 const SAMPLE_SPEC_POLL: PollQuizSpec = {
@@ -42,31 +47,31 @@ const SAMPLE_SPEC_QUIZ: PollQuizSpec = {
 
 
 // ── Composition: Dark + Question Card ───────────────────────────
-export const PollQuizDarkQuestionCard: React.FC = () => (
-  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={THEME_DARK} layout="question-card" />
+export const PollQuizDarkQuestionCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_DARK, brandKit)} layout="question-card" />
 );
 
 // ── Composition: Neon + Question Card ───────────────────────────
-export const PollQuizNeonQuestionCard: React.FC = () => (
-  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={THEME_NEON} layout="question-card" />
+export const PollQuizNeonQuestionCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_NEON, brandKit)} layout="question-card" />
 );
 
 // ── Composition: Dark + Results Bar ─────────────────────────────
-export const PollQuizDarkResultsBar: React.FC = () => (
-  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={THEME_DARK} layout="results-bar" />
+export const PollQuizDarkResultsBar: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_DARK, brandKit)} layout="results-bar" />
 );
 
 // ── Composition: Neon + Results Bar ─────────────────────────────
-export const PollQuizNeonResultsBar: React.FC = () => (
-  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={THEME_NEON} layout="results-bar" />
+export const PollQuizNeonResultsBar: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_POLL} theme={applyBrandKit(THEME_NEON, brandKit)} layout="results-bar" />
 );
 
 // ── Composition: Dark + Reveal ──────────────────────────────────
-export const PollQuizDarkReveal: React.FC = () => (
-  <PollQuiz spec={SAMPLE_SPEC_QUIZ} theme={THEME_DARK} layout="reveal" />
+export const PollQuizDarkReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_QUIZ} theme={applyBrandKit(THEME_DARK, brandKit)} layout="reveal" />
 );
 
 // ── Composition: Neon + Reveal ──────────────────────────────────
-export const PollQuizNeonReveal: React.FC = () => (
-  <PollQuiz spec={SAMPLE_SPEC_QUIZ} theme={THEME_NEON} layout="reveal" />
+export const PollQuizNeonReveal: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PollQuiz spec={SAMPLE_SPEC_QUIZ} theme={applyBrandKit(THEME_NEON, brandKit)} layout="reveal" />
 );

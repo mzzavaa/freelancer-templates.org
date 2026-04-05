@@ -4,7 +4,16 @@
 
 import React from "react";
 import { CaseStudy, CaseStudySpec } from "./CaseStudy";
-import { THEME_DARK, THEME_CLEAN, THEME_BOLD, THEME_WARM, THEME_MINIMAL, THEME_NEON } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_CLEAN,
+  THEME_BOLD,
+  THEME_WARM,
+  THEME_MINIMAL,
+  THEME_NEON,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC: CaseStudySpec = {
   clientName: "TechFlow Inc.",
@@ -29,28 +38,28 @@ const SAMPLE_SPEC: CaseStudySpec = {
 };
 
 // Dark + Narrative - detailed project walkthrough
-export const CaseStudyDarkNarrative: React.FC = () => (
-  <CaseStudy spec={SAMPLE_SPEC} theme={THEME_DARK} layout="narrative" />
+export const CaseStudyDarkNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="narrative" />
 );
 
 // Clean + Comparison - professional before/after
-export const CaseStudyCleanComparison: React.FC = () => (
-  <CaseStudy spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="comparison" />
+export const CaseStudyCleanComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="comparison" />
 );
 
 // Bold + Spotlight - hero stat impact
-export const CaseStudyBoldSpotlight: React.FC = () => (
+export const CaseStudyBoldSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <CaseStudy spec={{
     ...SAMPLE_SPEC,
     clientName: "GrowthLab",
     projectTitle: "AI-Powered Lead Scoring System",
     industry: "Marketing Tech",
     heroStat: { label: "Conversion Rate Increase", value: 340, suffix: "%" },
-  }} theme={THEME_BOLD} layout="spotlight" />
+  }} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="spotlight" />
 );
 
 // Warm + Narrative - friendly storytelling
-export const CaseStudyWarmNarrative: React.FC = () => (
+export const CaseStudyWarmNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <CaseStudy spec={{
     ...SAMPLE_SPEC,
     clientName: "Bloom Studio",
@@ -68,11 +77,11 @@ export const CaseStudyWarmNarrative: React.FC = () => (
       { label: "Organic Leads/mo", before: 0, after: 24, suffix: "", improvement: "New channel" },
       { label: "Client Inquiries", before: 3, after: 15, suffix: "/mo", improvement: "+400%" },
     ],
-  }} theme={THEME_WARM} layout="narrative" />
+  }} theme={applyBrandKit(THEME_WARM, brandKit)} layout="narrative" />
 );
 
 // Minimal + Comparison - clean data presentation
-export const CaseStudyMinimalComparison: React.FC = () => (
+export const CaseStudyMinimalComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <CaseStudy spec={{
     ...SAMPLE_SPEC,
     clientName: "DataPipe",
@@ -83,11 +92,11 @@ export const CaseStudyMinimalComparison: React.FC = () => (
       { label: "Throughput", before: 500, after: 8000, suffix: " req/s", improvement: "+1500%" },
       { label: "Monthly Cost", before: 12, after: 4, suffix: "k", improvement: "-67%" },
     ],
-  }} theme={THEME_MINIMAL} layout="comparison" />
+  }} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="comparison" />
 );
 
 // Neon + Spotlight - tech-forward impact
-export const CaseStudyNeonSpotlight: React.FC = () => (
+export const CaseStudyNeonSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <CaseStudy spec={{
     ...SAMPLE_SPEC,
     clientName: "NeuralOps",
@@ -100,5 +109,5 @@ export const CaseStudyNeonSpotlight: React.FC = () => (
       { label: "Experiments/Week", before: 3, after: 40, suffix: "", improvement: "+1233%" },
     ],
     testimonialQuote: "We went from deploying once a week to multiple times a day. Game changer.",
-  }} theme={THEME_NEON} layout="spotlight" />
+  }} theme={applyBrandKit(THEME_NEON, brandKit)} layout="spotlight" />
 );

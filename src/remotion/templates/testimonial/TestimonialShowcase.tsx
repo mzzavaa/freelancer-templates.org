@@ -24,6 +24,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data ─────────────────────────────────────────────────
@@ -50,31 +52,31 @@ const SAMPLE_SPEC_SHORT: TestimonialSpec = {
 };
 
 // ── Composition: Dark + Centered ────────────────────────────────
-export const TestimonialDarkCentered: React.FC = () => (
-  <Testimonial spec={SAMPLE_SPEC} theme={THEME_DARK} layout="centered" bgPattern="grid" />
+export const TestimonialDarkCentered: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="centered" bgPattern="grid" />
 );
 
 // ── Composition: Clean + Split ──────────────────────────────────
-export const TestimonialCleanSplit: React.FC = () => (
-  <Testimonial spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="split" bgPattern="dots" />
+export const TestimonialCleanSplit: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="split" bgPattern="dots" />
 );
 
 // ── Composition: Bold + Editorial ───────────────────────────────
-export const TestimonialBoldEditorial: React.FC = () => (
-  <Testimonial spec={SAMPLE_SPEC_SHORT} theme={THEME_BOLD} layout="editorial" bgPattern="none" />
+export const TestimonialBoldEditorial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC_SHORT} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="editorial" bgPattern="none" />
 );
 
 // ── Composition: Warm + Centered ────────────────────────────────
-export const TestimonialWarmCentered: React.FC = () => (
-  <Testimonial spec={SAMPLE_SPEC} theme={THEME_WARM} layout="centered" bgPattern="hex" />
+export const TestimonialWarmCentered: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="centered" bgPattern="hex" />
 );
 
 // ── Composition: Minimal + Editorial ────────────────────────────
-export const TestimonialMinimalEditorial: React.FC = () => (
-  <Testimonial spec={SAMPLE_SPEC_SHORT} theme={THEME_MINIMAL} layout="editorial" bgPattern="none" />
+export const TestimonialMinimalEditorial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC_SHORT} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="editorial" bgPattern="none" />
 );
 
 // ── Composition: Neon + Split ───────────────────────────────────
-export const TestimonialNeonSplit: React.FC = () => (
-  <Testimonial spec={SAMPLE_SPEC} theme={THEME_NEON} layout="split" bgPattern="hex" />
+export const TestimonialNeonSplit: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="split" bgPattern="hex" />
 );

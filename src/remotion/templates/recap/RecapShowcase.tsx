@@ -20,6 +20,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data ─────────────────────────────────────────────────
@@ -73,31 +75,31 @@ const SAMPLE_SPEC_SHORT: RecapSpec = {
 };
 
 // ── Composition: Dark + Dashboard ───────────────────────────────
-export const RecapDarkDashboard: React.FC = () => (
-  <Recap spec={SAMPLE_SPEC} theme={THEME_DARK} layout="dashboard" bgPattern="grid" />
+export const RecapDarkDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Recap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="dashboard" bgPattern="grid" />
 );
 
 // ── Composition: Clean + Timeline ───────────────────────────────
-export const RecapCleanTimeline: React.FC = () => (
-  <Recap spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="timeline" bgPattern="dots" />
+export const RecapCleanTimeline: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Recap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="timeline" bgPattern="dots" />
 );
 
 // ── Composition: Bold + Cards ───────────────────────────────────
-export const RecapBoldCards: React.FC = () => (
-  <Recap spec={SAMPLE_SPEC_SHORT} theme={THEME_BOLD} layout="cards" bgPattern="none" />
+export const RecapBoldCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Recap spec={SAMPLE_SPEC_SHORT} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="cards" bgPattern="none" />
 );
 
 // ── Composition: Warm + Dashboard ───────────────────────────────
-export const RecapWarmDashboard: React.FC = () => (
-  <Recap spec={SAMPLE_SPEC} theme={THEME_WARM} layout="dashboard" bgPattern="hex" />
+export const RecapWarmDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Recap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="dashboard" bgPattern="hex" />
 );
 
 // ── Composition: Minimal + Cards ────────────────────────────────
-export const RecapMinimalCards: React.FC = () => (
-  <Recap spec={SAMPLE_SPEC_SHORT} theme={THEME_MINIMAL} layout="cards" bgPattern="none" />
+export const RecapMinimalCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Recap spec={SAMPLE_SPEC_SHORT} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="cards" bgPattern="none" />
 );
 
 // ── Composition: Neon + Timeline ────────────────────────────────
-export const RecapNeonTimeline: React.FC = () => (
-  <Recap spec={SAMPLE_SPEC} theme={THEME_NEON} layout="timeline" bgPattern="hex" />
+export const RecapNeonTimeline: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Recap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="timeline" bgPattern="hex" />
 );

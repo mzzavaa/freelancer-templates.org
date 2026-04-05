@@ -20,6 +20,8 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  BrandKit,
+  applyBrandKit,
 } from "../_shared/themes";
 
 // ── Sample Data: Web Dev Project ────────────────────────────────
@@ -66,31 +68,31 @@ const SAMPLE_AI_SPEC: OnboardingSpec = {
 };
 
 // ── Composition: Dark + Professional ────────────────────────────
-export const OnboardingDarkProfessional: React.FC = () => (
-  <Onboarding spec={SAMPLE_AI_SPEC} theme={THEME_DARK} layout="professional" bgPattern="grid" />
+export const OnboardingDarkProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="professional" bgPattern="grid" />
 );
 
 // ── Composition: Clean + Professional ───────────────────────────
-export const OnboardingCleanProfessional: React.FC = () => (
-  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={THEME_CLEAN} layout="professional" bgPattern="dots" />
+export const OnboardingCleanProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="professional" bgPattern="dots" />
 );
 
 // ── Composition: Bold + Creative ────────────────────────────────
-export const OnboardingBoldCreative: React.FC = () => (
-  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={THEME_BOLD} layout="creative" bgPattern="none" />
+export const OnboardingBoldCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="creative" bgPattern="none" />
 );
 
 // ── Composition: Warm + Friendly ────────────────────────────────
-export const OnboardingWarmFriendly: React.FC = () => (
-  <Onboarding spec={SAMPLE_AI_SPEC} theme={THEME_WARM} layout="friendly" bgPattern="hex" />
+export const OnboardingWarmFriendly: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="friendly" bgPattern="hex" />
 );
 
 // ── Composition: Minimal + Professional ─────────────────────────
-export const OnboardingMinimalProfessional: React.FC = () => (
-  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={THEME_MINIMAL} layout="professional" bgPattern="none" />
+export const OnboardingMinimalProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="professional" bgPattern="none" />
 );
 
 // ── Composition: Neon + Creative ────────────────────────────────
-export const OnboardingNeonCreative: React.FC = () => (
-  <Onboarding spec={SAMPLE_AI_SPEC} theme={THEME_NEON} layout="creative" bgPattern="hex" />
+export const OnboardingNeonCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="creative" bgPattern="hex" />
 );

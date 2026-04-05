@@ -3,7 +3,12 @@
  */
 import React from "react";
 import { Collaboration } from "./Collaboration";
-import { THEME_DARK, THEME_BOLD } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_BOLD,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC = {
   collab_title: "Creative Fusion Project",
@@ -15,21 +20,21 @@ const SAMPLE_SPEC = {
   combined_audience: 770000,
 };
 
-export const CollaborationDarkSplitScreen: React.FC = () => (
-  <Collaboration spec={SAMPLE_SPEC} theme={THEME_DARK} layout="split-screen" />
+export const CollaborationDarkSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="split-screen" />
 );
-export const CollaborationBoldSplitScreen: React.FC = () => (
-  <Collaboration spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="split-screen" />
+export const CollaborationBoldSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="split-screen" />
 );
-export const CollaborationDarkAnnouncement: React.FC = () => (
-  <Collaboration spec={SAMPLE_SPEC} theme={THEME_DARK} layout="announcement" />
+export const CollaborationDarkAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="announcement" />
 );
-export const CollaborationBoldAnnouncement: React.FC = () => (
-  <Collaboration spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="announcement" />
+export const CollaborationBoldAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="announcement" />
 );
-export const CollaborationDarkStatsMerge: React.FC = () => (
-  <Collaboration spec={SAMPLE_SPEC} theme={THEME_DARK} layout="stats-merge" />
+export const CollaborationDarkStatsMerge: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_DARK, brandKit)} layout="stats-merge" />
 );
-export const CollaborationBoldStatsMerge: React.FC = () => (
-  <Collaboration spec={SAMPLE_SPEC} theme={THEME_BOLD} layout="stats-merge" />
+export const CollaborationBoldStatsMerge: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BOLD, brandKit)} layout="stats-merge" />
 );

@@ -3,7 +3,12 @@
  */
 import React from "react";
 import { RecipeStep } from "./RecipeStep";
-import { THEME_WARM, THEME_CLEAN } from "../_shared/themes";
+import {
+  THEME_WARM,
+  THEME_CLEAN,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC = {
   title: "Classic Pasta Carbonara",
@@ -28,21 +33,21 @@ const SAMPLE_SPEC = {
   servings: 4,
 };
 
-export const RecipeStepWarmIngredientList: React.FC = () => (
-  <RecipeStep spec={SAMPLE_SPEC} theme={THEME_WARM} layout="ingredient-list" />
+export const RecipeStepWarmIngredientList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="ingredient-list" />
 );
-export const RecipeStepCleanIngredientList: React.FC = () => (
-  <RecipeStep spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="ingredient-list" />
+export const RecipeStepCleanIngredientList: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="ingredient-list" />
 );
-export const RecipeStepWarmStepSequence: React.FC = () => (
-  <RecipeStep spec={SAMPLE_SPEC} theme={THEME_WARM} layout="step-sequence" />
+export const RecipeStepWarmStepSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="step-sequence" />
 );
-export const RecipeStepCleanStepSequence: React.FC = () => (
-  <RecipeStep spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="step-sequence" />
+export const RecipeStepCleanStepSequence: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="step-sequence" />
 );
-export const RecipeStepWarmSummaryCard: React.FC = () => (
-  <RecipeStep spec={SAMPLE_SPEC} theme={THEME_WARM} layout="summary-card" />
+export const RecipeStepWarmSummaryCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_WARM, brandKit)} layout="summary-card" />
 );
-export const RecipeStepCleanSummaryCard: React.FC = () => (
-  <RecipeStep spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="summary-card" />
+export const RecipeStepCleanSummaryCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <RecipeStep spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="summary-card" />
 );

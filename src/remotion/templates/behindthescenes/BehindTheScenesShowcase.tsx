@@ -16,7 +16,12 @@
 import React from "react";
 import { BehindTheScenes } from "./BehindTheScenes";
 import type { BehindTheScenesSpec } from "./BehindTheScenes";
-import { THEME_DARK, THEME_WARM } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_WARM,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data: Brand Film ─────────────────────────────────────
 const SAMPLE_SPEC_FILM: BehindTheScenesSpec = {
@@ -44,31 +49,31 @@ const SAMPLE_SPEC_PRODUCT: BehindTheScenesSpec = {
 };
 
 // ── Composition: Dark + Scene Cards ─────────────────────────────
-export const BehindTheScenesDarkSceneCards: React.FC = () => (
-  <BehindTheScenes spec={SAMPLE_SPEC_FILM} theme={THEME_DARK} layout="scene-cards" />
+export const BehindTheScenesDarkSceneCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BehindTheScenes spec={SAMPLE_SPEC_FILM} theme={applyBrandKit(THEME_DARK, brandKit)} layout="scene-cards" />
 );
 
 // ── Composition: Warm + Scene Cards ─────────────────────────────
-export const BehindTheScenesWarmSceneCards: React.FC = () => (
-  <BehindTheScenes spec={SAMPLE_SPEC_FILM} theme={THEME_WARM} layout="scene-cards" />
+export const BehindTheScenesWarmSceneCards: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BehindTheScenes spec={SAMPLE_SPEC_FILM} theme={applyBrandKit(THEME_WARM, brandKit)} layout="scene-cards" />
 );
 
 // ── Composition: Dark + Timeline ────────────────────────────────
-export const BehindTheScenesDarkTimeline: React.FC = () => (
-  <BehindTheScenes spec={SAMPLE_SPEC_PRODUCT} theme={THEME_DARK} layout="timeline" />
+export const BehindTheScenesDarkTimeline: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BehindTheScenes spec={SAMPLE_SPEC_PRODUCT} theme={applyBrandKit(THEME_DARK, brandKit)} layout="timeline" />
 );
 
 // ── Composition: Warm + Timeline ────────────────────────────────
-export const BehindTheScenesWarmTimeline: React.FC = () => (
-  <BehindTheScenes spec={SAMPLE_SPEC_PRODUCT} theme={THEME_WARM} layout="timeline" />
+export const BehindTheScenesWarmTimeline: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BehindTheScenes spec={SAMPLE_SPEC_PRODUCT} theme={applyBrandKit(THEME_WARM, brandKit)} layout="timeline" />
 );
 
 // ── Composition: Dark + Process Flow ────────────────────────────
-export const BehindTheScenesDarkProcessFlow: React.FC = () => (
-  <BehindTheScenes spec={SAMPLE_SPEC_FILM} theme={THEME_DARK} layout="process-flow" />
+export const BehindTheScenesDarkProcessFlow: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BehindTheScenes spec={SAMPLE_SPEC_FILM} theme={applyBrandKit(THEME_DARK, brandKit)} layout="process-flow" />
 );
 
 // ── Composition: Warm + Process Flow ────────────────────────────
-export const BehindTheScenesWarmProcessFlow: React.FC = () => (
-  <BehindTheScenes spec={SAMPLE_SPEC_PRODUCT} theme={THEME_WARM} layout="process-flow" />
+export const BehindTheScenesWarmProcessFlow: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <BehindTheScenes spec={SAMPLE_SPEC_PRODUCT} theme={applyBrandKit(THEME_WARM, brandKit)} layout="process-flow" />
 );

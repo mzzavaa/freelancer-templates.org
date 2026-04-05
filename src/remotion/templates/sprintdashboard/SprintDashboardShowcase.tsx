@@ -29,21 +29,21 @@ const BASE_SPEC: SprintDashboardSpec = {
   ],
 };
 
-export const SprintDashboardKanbanDark: React.FC = () => (
+export const SprintDashboardKanbanDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "dark" }} />
 );
-export const SprintDashboardKanbanBold: React.FC = () => (
+export const SprintDashboardKanbanBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <SprintDashboard spec={{ ...BASE_SPEC, layout: "kanban", theme: "bold" }} />
 );
-export const SprintDashboardVelocityDark: React.FC = () => (
+export const SprintDashboardVelocityDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "dark" }} />
 );
-export const SprintDashboardVelocityBold: React.FC = () => (
+export const SprintDashboardVelocityBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <SprintDashboard spec={{ ...BASE_SPEC, layout: "velocity", theme: "bold" }} />
 );
-export const SprintDashboardBurndownDark: React.FC = () => (
+export const SprintDashboardBurndownDark: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "dark" }} />
 );
-export const SprintDashboardBurndownBold: React.FC = () => (
+export const SprintDashboardBurndownBold: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <SprintDashboard spec={{ ...BASE_SPEC, layout: "burndown", theme: "bold" }} />
 );

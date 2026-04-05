@@ -5,6 +5,7 @@ import {
   TOTAL_COMPOSITIONS, TOTAL_TEMPLATE_TYPES,
   type CompSpec,
 } from "./registry";
+import { type BrandKit } from "@templates/_shared/themes";
 
 // ── URL param helpers ─────────────────────────────────────────────
 
@@ -14,6 +15,24 @@ function getCompFromUrl(): string {
 
 function isEmbed(): boolean {
   return new URLSearchParams(window.location.search).get("embed") === "1";
+}
+
+/** Read brand color URL params and return a BrandKit, or undefined if none present.
+ *  Params use bare hex values without the # prefix: brandPrimary=ff0000
+ */
+function getBrandKitFromUrl(): BrandKit | undefined {
+  const params = new URLSearchParams(window.location.search);
+  const primary = params.get("brandPrimary");
+  const accent  = params.get("brandAccent");
+  const bg      = params.get("brandBg");
+  const text    = params.get("brandText");
+  if (!primary && !accent && !bg && !text) return undefined;
+  return {
+    ...(primary ? { primaryColor: `#${primary}` } : {}),
+    ...(accent  ? { accentColor:  `#${accent}`  } : {}),
+    ...(bg      ? { bgColor:      `#${bg}`      } : {}),
+    ...(text    ? { textColor:    `#${text}`    } : {}),
+  };
 }
 
 function setCompInUrl(id: string) {
@@ -39,6 +58,7 @@ export const App: React.FC = () => {
   const embed = isEmbed();
   const initialId = getCompFromUrl();
   const initialComp = COMP_BY_ID[initialId] ?? COMPOSITIONS[0];
+  const brandKit = getBrandKitFromUrl();
 
   const [active, setActive] = useState<CompSpec>(initialComp);
   const [search, setSearch] = useState("");
@@ -76,7 +96,7 @@ export const App: React.FC = () => {
         <Player
           ref={playerRef}
           component={active.component}
-          inputProps={{}}
+          inputProps={{ brandKit }}
           durationInFrames={active.durationInFrames}
           fps={active.fps}
           compositionWidth={active.width}
@@ -168,7 +188,7 @@ export const App: React.FC = () => {
             ref={playerRef}
             key={active.id}
             component={active.component}
-            inputProps={{}}
+            inputProps={{ brandKit }}
             durationInFrames={active.durationInFrames}
             fps={active.fps}
             compositionWidth={active.width}

@@ -3,7 +3,12 @@
  */
 import React from "react";
 import { Listing } from "./Listing";
-import { THEME_CLEAN, THEME_MINIMAL } from "../_shared/themes";
+import {
+  THEME_CLEAN,
+  THEME_MINIMAL,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 const SAMPLE_SPEC = {
   property_title: "Skyline Penthouse Suite",
@@ -19,21 +24,21 @@ const SAMPLE_SPEC = {
   cta: "Book a Viewing",
 };
 
-export const ListingCleanShowcase: React.FC = () => (
-  <Listing spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="showcase" />
+export const ListingCleanShowcase: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Listing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="showcase" />
 );
-export const ListingMinimalShowcase: React.FC = () => (
-  <Listing spec={SAMPLE_SPEC} theme={THEME_MINIMAL} layout="showcase" />
+export const ListingMinimalShowcase: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Listing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="showcase" />
 );
-export const ListingCleanFeatureGrid: React.FC = () => (
-  <Listing spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="feature-grid" />
+export const ListingCleanFeatureGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Listing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="feature-grid" />
 );
-export const ListingMinimalFeatureGrid: React.FC = () => (
-  <Listing spec={SAMPLE_SPEC} theme={THEME_MINIMAL} layout="feature-grid" />
+export const ListingMinimalFeatureGrid: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Listing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="feature-grid" />
 );
-export const ListingCleanComparison: React.FC = () => (
-  <Listing spec={SAMPLE_SPEC} theme={THEME_CLEAN} layout="comparison" />
+export const ListingCleanComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Listing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CLEAN, brandKit)} layout="comparison" />
 );
-export const ListingMinimalComparison: React.FC = () => (
-  <Listing spec={SAMPLE_SPEC} theme={THEME_MINIMAL} layout="comparison" />
+export const ListingMinimalComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Listing spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MINIMAL, brandKit)} layout="comparison" />
 );

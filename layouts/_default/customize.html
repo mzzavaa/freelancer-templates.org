@@ -146,6 +146,14 @@
         </div>
       </div>
 
+      <!-- Live Remotion previews for 8 featured templates -->
+      <div class="cz-featured-section">
+        <p class="cz-featured-title">Live previews - featured templates</p>
+        <div class="cz-featured-grid" id="czFeaturedGrid">
+          <!-- iframes populated by JS -->
+        </div>
+      </div>
+
       <div class="cz-tpl-grid" id="czPreviewWrapper">
         {{ range .Site.Data.templates }}
         <div class="cz-tpl-card" data-slug="{{ .slug }}">
@@ -469,6 +477,90 @@
     setTimeout(function () { copyBtn.innerHTML = orig; }, 2000);
   }
 
+  // ---- Featured live preview iframes ----
+
+  // One composition ID per featured template slug (dark/bold variant for visual impact).
+  var FEATURED_COMPS = [
+    { slug: 'testimonial',     comp: 'Testimonial-DarkCentered',     label: 'Testimonial' },
+    { slug: 'recap',           comp: 'Recap-DarkDashboard',           label: 'Recap' },
+    { slug: 'behindthescenes', comp: 'BehindTheScenes-DarkTimeline',  label: 'Behind the Scenes' },
+    { slug: 'tutorial',        comp: 'Tutorial-DarkNumberedSteps',    label: 'Tutorial' },
+    { slug: 'proposal',        comp: 'Proposal-DarkExecutive',        label: 'Proposal' },
+    { slug: 'event',           comp: 'Event-DarkHero',                label: 'Event' },
+    { slug: 'coursepromo',     comp: 'CoursePromo-DarkOverview',      label: 'Course Promo' },
+    { slug: 'affiliatereview', comp: 'AffiliateReview-DarkScorecard', label: 'Affiliate Review' },
+  ];
+
+  function hexNoHash(hex) {
+    return hex.replace(/^#/, '');
+  }
+
+  function buildIframeSrc(comp) {
+    return '/player/?comp=' + encodeURIComponent(comp) +
+      '&embed=1' +
+      '&brandPrimary=' + hexNoHash(brandColors.primary) +
+      '&brandAccent='  + hexNoHash(brandColors.accent) +
+      '&brandBg='      + hexNoHash(brandColors.bg) +
+      '&brandText='    + hexNoHash(brandColors.text);
+  }
+
+  function buildFeaturedGrid() {
+    var grid = el('czFeaturedGrid');
+    if (!grid) return;
+
+    FEATURED_COMPS.forEach(function (item) {
+      var itemEl = document.createElement('div');
+      itemEl.className = 'cz-featured-item';
+
+      var wrap = document.createElement('div');
+      wrap.className = 'cz-featured-iframe-wrap';
+
+      var iframe = document.createElement('iframe');
+      iframe.className = 'cz-featured-iframe';
+      iframe.dataset.comp = item.comp;
+      iframe.src = buildIframeSrc(item.comp);
+      iframe.title = item.label + ' preview';
+      iframe.loading = 'lazy';
+      iframe.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+      wrap.appendChild(iframe);
+
+      var labelRow = document.createElement('div');
+      labelRow.className = 'cz-featured-label';
+
+      var link = document.createElement('a');
+      link.className = 'cz-featured-name';
+      link.href = '/library/' + item.slug + '/';
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = item.label;
+      labelRow.appendChild(link);
+
+      itemEl.appendChild(wrap);
+      itemEl.appendChild(labelRow);
+      grid.appendChild(itemEl);
+    });
+  }
+
+  var iframeDebounceTimer = null;
+
+  function updateFeaturedIframes() {
+    clearTimeout(iframeDebounceTimer);
+    iframeDebounceTimer = setTimeout(function () {
+      var iframes = document.querySelectorAll('.cz-featured-iframe');
+      iframes.forEach(function (iframe) {
+        var comp = iframe.dataset.comp;
+        if (comp) iframe.src = buildIframeSrc(comp);
+      });
+    }, 300);
+  }
+
+  // Wrap updateRole so iframes refresh on every color change.
+  var _origUpdateRole = updateRole;
+  updateRole = function (role, hex) {
+    _origUpdateRole(role, hex);
+    updateFeaturedIframes();
+  };
+
   // ---- Init ----
   (function init() {
     Object.keys(brandColors).forEach(function (role) {
@@ -476,6 +568,7 @@
       if (swatch) swatch.style.background = brandColors[role];
     });
     updateCssOutput();
+    buildFeaturedGrid();
   }());
 
 }());

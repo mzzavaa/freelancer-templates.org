@@ -16,7 +16,12 @@
 import React from "react";
 import { PodcastAudiogram } from "./PodcastAudiogram";
 import type { PodcastAudiogramSpec } from "./PodcastAudiogram";
-import { THEME_DARK, THEME_WARM } from "../_shared/themes";
+import {
+  THEME_DARK,
+  THEME_WARM,
+  BrandKit,
+  applyBrandKit,
+} from "../_shared/themes";
 
 // ── Sample Data: Tech Podcast ───────────────────────────────────
 const SAMPLE_SPEC_TECH: PodcastAudiogramSpec = {
@@ -37,31 +42,31 @@ const SAMPLE_SPEC_CREATOR: PodcastAudiogramSpec = {
 };
 
 // ── Composition: Dark + Waveform ────────────────────────────────
-export const PodcastAudiogramDarkWaveform: React.FC = () => (
-  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={THEME_DARK} layout="waveform" />
+export const PodcastAudiogramDarkWaveform: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_DARK, brandKit)} layout="waveform" />
 );
 
 // ── Composition: Warm + Waveform ────────────────────────────────
-export const PodcastAudiogramWarmWaveform: React.FC = () => (
-  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={THEME_WARM} layout="waveform" />
+export const PodcastAudiogramWarmWaveform: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_WARM, brandKit)} layout="waveform" />
 );
 
 // ── Composition: Dark + Quote Card ──────────────────────────────
-export const PodcastAudiogramDarkQuoteCard: React.FC = () => (
-  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={THEME_DARK} layout="quote-card" />
+export const PodcastAudiogramDarkQuoteCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_DARK, brandKit)} layout="quote-card" />
 );
 
 // ── Composition: Warm + Quote Card ──────────────────────────────
-export const PodcastAudiogramWarmQuoteCard: React.FC = () => (
-  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={THEME_WARM} layout="quote-card" />
+export const PodcastAudiogramWarmQuoteCard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_WARM, brandKit)} layout="quote-card" />
 );
 
 // ── Composition: Dark + Episode Promo ───────────────────────────
-export const PodcastAudiogramDarkEpisodePromo: React.FC = () => (
-  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={THEME_DARK} layout="episode-promo" />
+export const PodcastAudiogramDarkEpisodePromo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_TECH} theme={applyBrandKit(THEME_DARK, brandKit)} layout="episode-promo" />
 );
 
 // ── Composition: Warm + Episode Promo ───────────────────────────
-export const PodcastAudiogramWarmEpisodePromo: React.FC = () => (
-  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={THEME_WARM} layout="episode-promo" />
+export const PodcastAudiogramWarmEpisodePromo: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <PodcastAudiogram spec={SAMPLE_SPEC_CREATOR} theme={applyBrandKit(THEME_WARM, brandKit)} layout="episode-promo" />
 );
