@@ -11,7 +11,7 @@ set -euo pipefail
 
 ENTRY="src/remotion/index.ts"
 OUT_DIR="static/previews/showcase"
-FRAME=0  # frame to snapshot (0 = first frame)
+FRAME=60  # frame to snapshot (60 = 2s in at 30fps, content is visible for most compositions)
 
 mkdir -p "$OUT_DIR"
 

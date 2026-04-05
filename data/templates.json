@@ -2339,9 +2339,9 @@
     "primaryId": "LindaMohamed-Cover"
   },
   {
-    "slug": "simstheme1",
+    "slug": "aiexplainer",
     "camel": "SimsTheme1",
-    "name": "Sims Theme 1 - AI Explainer",
+    "name": "AI Explainer - Sims Edition",
     "description": "Sims 4 game UI-inspired AI/tech explainer compositions for talks and tutorials",
     "icon": "cpu",
     "color": "teal",
@@ -2380,7 +2380,7 @@
     "primaryId": "SimsTheme1-TitleScreenCinematic"
   },
   {
-    "slug": "gameday",
+    "slug": "communitygameday",
     "camel": "GameDay",
     "name": "Community GameDay Europe",
     "description": "Live stream overlays for AWS Community GameDay Europe events - preshow, gameplay, inserts, closing",

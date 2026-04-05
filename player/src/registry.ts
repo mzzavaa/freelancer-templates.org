@@ -688,8 +688,10 @@ export const COMPOSITIONS: CompSpec[] = [
 export const TOTAL_COMPOSITIONS = COMPOSITIONS.length;
 export const TOTAL_TEMPLATE_TYPES = new Set(COMPOSITIONS.map((c) => c.category)).size;
 
-// Lookup by ID
-export const COMP_BY_ID = Object.fromEntries(COMPOSITIONS.map((c) => [c.id, c]));
+/** Fast lookup: comp ID → CompSpec */
+export const COMP_BY_ID: Record<string, CompSpec> = Object.fromEntries(
+  COMPOSITIONS.map((c) => [c.id, c])
+);
 
-// Get unique categories in order
-export const CATEGORIES = [...new Set(COMPOSITIONS.map((c) => c.category))];
+/** Ordered unique category list (insertion order from COMPOSITIONS) */
+export const CATEGORIES: string[] = [...new Set(COMPOSITIONS.map((c) => c.category))];

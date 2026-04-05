@@ -3213,6 +3213,86 @@ html.dark .footer__soc:hover { color: #001029; }
   max-width: 200px;
 }
 
+/* Save section */
+.cz-step--save { border-top: 1px solid #1e293b; }
+
+.cz-save {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cz-save__link-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cz-save__input {
+  flex: 1;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #94a3b8;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  outline: none;
+  min-width: 0;
+}
+
+.cz-save__hint {
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.cz-save__support {
+  border: 1px solid #1e3a5f;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0f1f38 0%, #0f172a 100%);
+  padding: 20px 24px;
+}
+
+.cz-save__support-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cz-save__support-icon {
+  flex-shrink: 0;
+  color: #f472b6;
+  display: flex;
+}
+
+.cz-save__support-text {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cz-save__support-text strong {
+  font-size: 14px;
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.cz-save__support-text span {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.cz-save__support-btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 /* Nav CTA link */
 .nav__link--cta {
   color: #4a90d9 !important;

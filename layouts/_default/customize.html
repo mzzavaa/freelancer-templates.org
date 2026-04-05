@@ -211,6 +211,43 @@
       </div>
     </section>
 
+    <!-- Step 5: Save your design -->
+    <section class="cz-step cz-step--save" id="czStep5">
+      <div class="cz-step__hd">
+        <span class="cz-step__num">5</span>
+        <div>
+          <h2 class="cz-step__title">Save your design</h2>
+          <p class="cz-step__sub">Your brand colors are encoded in a shareable link. Bookmark it or copy it to come back to your exact setup anytime - no account required.</p>
+        </div>
+      </div>
+
+      <div class="cz-save">
+        <div class="cz-save__link-row">
+          <input type="text" id="czShareLink" class="cz-save__input" readonly aria-label="Shareable link to your brand setup">
+          <button class="btn btn--primary" id="czCopyLink">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            Copy link
+          </button>
+        </div>
+        <p class="cz-save__hint">Paste this link to return to your brand setup. Share it with your team. Works forever - it's just a URL.</p>
+
+        <div class="cz-save__support">
+          <div class="cz-save__support-inner">
+            <div class="cz-save__support-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="cz-save__support-text">
+              <strong>Keep this free for everyone</strong>
+              <span>Templates are free to download, host, and use. If this saves you time, you can support it for 2 EUR/month - optional, no lock-in, cancel anytime.</span>
+            </div>
+            <a href="https://lindamohamed.com/offers/freelancer-templates-support" target="_blank" rel="noopener" class="btn btn--outline cz-save__support-btn">
+              Support for 2 EUR/month
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </div>
 
@@ -605,6 +642,69 @@ var PLAYER_BASE = {{ "player/" | absURL | jsonify }};
     if (livePreviewing) updateTemplateIframes();
   };
 
+  // ---- Share link ----
+  function buildShareUrl() {
+    var url = new URL(window.location.href);
+    url.searchParams.set('brandPrimary',   brandColors.primary.replace('#',''));
+    url.searchParams.set('brandSecondary', brandColors.secondary.replace('#',''));
+    url.searchParams.set('brandAccent',    brandColors.accent.replace('#',''));
+    url.searchParams.set('brandBg',        brandColors.bg.replace('#',''));
+    url.searchParams.set('brandText',      brandColors.text.replace('#',''));
+    return url.toString();
+  }
+
+  function updateShareLink() {
+    var input = el('czShareLink');
+    if (input) input.value = buildShareUrl();
+  }
+
+  function loadColorsFromUrl() {
+    var params = new URLSearchParams(window.location.search);
+    var keys = { brandPrimary: 'primary', brandSecondary: 'secondary', brandAccent: 'accent', brandBg: 'bg', brandText: 'text' };
+    var found = false;
+    Object.keys(keys).forEach(function (param) {
+      var hex = params.get(param);
+      if (hex) { brandColors[keys[param]] = '#' + hex.replace(/[^0-9a-fA-F]/g, '').slice(0,6); found = true; }
+    });
+    if (found) {
+      Object.keys(brandColors).forEach(function (role) {
+        var pick = el('czPick_' + role);
+        if (pick) pick.value = brandColors[role];
+        var swatch = el('czRoleSwatch_' + role);
+        if (swatch) swatch.style.background = brandColors[role];
+        var hexEl = el('czRoleHex_' + role);
+        if (hexEl) hexEl.textContent = brandColors[role];
+      });
+      el('czStep2').hidden = false;
+      el('czStep3').classList.add('is-active');
+      updateCssOutput();
+      buildFeaturedGrid();
+    }
+  }
+
+  var copyLinkBtn = el('czCopyLink');
+  if (copyLinkBtn) {
+    copyLinkBtn.addEventListener('click', function () {
+      var url = buildShareUrl();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () {
+          var origText = copyLinkBtn.dataset.origText || copyLinkBtn.textContent;
+          copyLinkBtn.dataset.origText = origText;
+          copyLinkBtn.textContent = 'Copied!';
+          setTimeout(function () { copyLinkBtn.textContent = origText; }, 2000);
+        });
+      }
+    });
+  }
+
+  // Update share link + URL bar whenever colors change
+  var _origUpdateRole2 = updateRole;
+  updateRole = function (role, hex) {
+    _origUpdateRole2(role, hex);
+    updateShareLink();
+    window.history.replaceState({}, '', buildShareUrl());
+  };
+
   // ---- Init ----
   (function init() {
     Object.keys(brandColors).forEach(function (role) {
@@ -613,6 +713,8 @@ var PLAYER_BASE = {{ "player/" | absURL | jsonify }};
     });
     updateCssOutput();
     buildFeaturedGrid();
+    loadColorsFromUrl();
+    updateShareLink();
   }());
 
 }());

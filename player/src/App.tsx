@@ -116,7 +116,7 @@ export const App: React.FC = () => {
           style={{ width: "100%", aspectRatio: "16/9" }}
           controls
           loop
-          autoPlay={false}
+          autoPlay
         />
       </div>
     );
@@ -223,7 +223,7 @@ export const App: React.FC = () => {
             style={styles.player}
             controls
             loop
-            autoPlay={false}
+            autoPlay
             clickToPlay
           />
         </div>
