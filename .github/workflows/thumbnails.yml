@@ -1,0 +1,62 @@
+name: Generate template thumbnails
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/remotion/templates/**'
+      - 'data/templates.json'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'all = render all compositions, changed = only changed templates'
+        required: false
+        default: 'changed'
+        type: choice
+        options: [all, changed]
+
+permissions:
+  contents: write
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          fetch-depth: 2
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chrome for Remotion
+        run: npx remotion browser ensure
+
+      - name: Generate thumbnails (changed templates)
+        if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'changed')
+        run: bash scripts/generate-thumbnails.sh --changed
+
+      - name: Generate thumbnails (all)
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'all'
+        run: bash scripts/generate-thumbnails.sh
+
+      - name: Commit updated thumbnails
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/previews/showcase/
+          if git diff --staged --quiet; then
+            echo "No thumbnail changes to commit."
+          else
+            COUNT=$(git diff --staged --name-only | wc -l)
+            git commit -m "chore: auto-update ${COUNT} template thumbnails [skip ci]"
+            git push
+          fi

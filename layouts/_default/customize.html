@@ -217,6 +217,7 @@
 {{ partial "site-footer.html" . }}
 
 <script>
+var PLAYER_BASE = {{ "player/" | absURL | jsonify }};
 (function () {
   'use strict';
 
@@ -493,7 +494,7 @@
   }
 
   function buildIframeSrc(comp) {
-    return '/player/?comp=' + encodeURIComponent(comp) +
+    return PLAYER_BASE + '?comp=' + encodeURIComponent(comp) +
       '&embed=1' +
       '&brandPrimary=' + hexNoHash(brandColors.primary) +
       '&brandAccent='  + hexNoHash(brandColors.accent) +

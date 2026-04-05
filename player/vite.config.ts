@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/player/",
+  base: "./",
   build: {
     outDir: path.resolve(__dirname, "../static/player"),
     emptyOutDir: true,
