@@ -51,7 +51,7 @@ const SAMPLE_WEBDEV_SPEC: OnboardingSpec = {
     { name: "Slack", icon: "chat" },
     { name: "Notion", icon: "pencil" },
     { name: "GitHub", icon: "layers" },
-    { name: "Vercel", icon: "▲" },
+    { name: "Vercel", icon: "rocket" },
   ],
   timeline_overview: "8 weeks - Launch by April 15",
 };

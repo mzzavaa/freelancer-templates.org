@@ -41,6 +41,7 @@ import {
 } from "../_shared/animations";
 import { PADDING, TOP_SAFE, TYPE } from "../_shared/layouts";
 import { GlassCard, GradientBadge, BackgroundGrid } from "../_shared/components";
+import { Icon, type IconName } from "../_shared/Icon";
 
 // ── Data Contract ───────────────────────────────────────────────
 
@@ -154,7 +155,7 @@ const ToolChip: React.FC<{
     fontWeight: 600,
     color: theme.textPrimary,
   }}>
-    <span style={{ fontSize: 24 }}>{tool.icon}</span>
+    <Icon name={tool.icon as IconName} size={24} color={theme.accent} />
     {tool.name}
   </div>
 );

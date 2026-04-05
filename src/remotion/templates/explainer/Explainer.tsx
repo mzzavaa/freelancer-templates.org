@@ -40,6 +40,7 @@ import {
 } from "../_shared/animations";
 import { PADDING, TOP_SAFE, TYPE } from "../_shared/layouts";
 import { GlassCard, GradientBadge, BackgroundGrid } from "../_shared/components";
+import { Icon, type IconName } from "../_shared/Icon";
 
 // ── Data Contract ───────────────────────────────────────────────
 
@@ -243,7 +244,7 @@ const WhiteboardLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) =>
                   maxWidth: 360,
                   background: theme.bgSecondary,
                 }}>
-                  <div style={{ fontSize: 24, flexShrink: 0 }}>{pt.icon}</div>
+                  <Icon name={pt.icon as IconName} size={24} color={theme.accent} />
                   <div style={{
                     fontSize: TYPE.body,
                     color: theme.textPrimary,
@@ -459,7 +460,7 @@ const CinematicLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
                   padding: "10px 16px",
                   flex: "1 1 0",
                 }}>
-                  <div style={{ fontSize: 24, flexShrink: 0 }}>{pt.icon}</div>
+                  <Icon name={pt.icon as IconName} size={24} color={theme.accent} />
                   <div style={{
                     fontSize: TYPE.body,
                     color: theme.textPrimary,
@@ -649,7 +650,7 @@ const ProcessLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
                 fontSize: TYPE.body,
                 color: theme.textPrimary,
               }}>
-                <span style={{ fontSize: 24 }}>{pt.icon}</span>
+                <Icon name={pt.icon as IconName} size={24} color={theme.accent} />
                 {pt.text}
               </div>
             );

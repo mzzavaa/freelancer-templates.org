@@ -22,6 +22,7 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
 import type { Theme } from "../_shared/themes";
+import { Icon, type IconName } from "../_shared/Icon";
 import {
   CountUp,
   GlassCard,
@@ -223,7 +224,7 @@ const CelebrationLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) =
                   textAlign: "center" as const,
                   minWidth: 140,
                 }}>
-                  {jp.emoji && <div style={{ fontSize: 24, marginBottom: 4 }}>{jp.emoji}</div>}
+                  {jp.emoji && <div style={{ marginBottom: 4 }}><Icon name={jp.emoji as IconName} size={24} color={theme.accent} /></div>}
                   <div style={{ fontSize: TYPE.cardTitle, fontWeight: 600, color: theme.textPrimary }}>{jp.title}</div>
                   <div style={{ fontSize: TYPE.caption, color: theme.textMuted, marginTop: 2 }}>{jp.date}</div>
                 </GlassCard>
@@ -334,7 +335,7 @@ const JourneyLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
                 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                      {jp.emoji && <span style={{ fontSize: 24 }}>{jp.emoji}</span>}
+                      {jp.emoji && <Icon name={jp.emoji as IconName} size={24} color={theme.accent} />}
                       <span style={{ fontSize: TYPE.cardTitle, fontWeight: 600, color: theme.textPrimary }}>
                         {jp.title}
                       </span>

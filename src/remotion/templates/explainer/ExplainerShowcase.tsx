@@ -40,7 +40,7 @@ const SAMPLE_AI_SPEC: ExplainerSpec = {
   service_name: "AI Automation Consulting",
   tagline: "I help businesses automate repetitive work with custom AI agents and workflows.",
   pain_points: [
-    { icon: "⏰", text: "Teams waste 20+ hours/week on manual tasks" },
+    { icon: "clock", text: "Teams waste 20+ hours/week on manual tasks" },
     { icon: "dollar", text: "Hiring more people doesn't scale" },
     { icon: "refresh", text: "Existing tools don't talk to each other" },
   ],

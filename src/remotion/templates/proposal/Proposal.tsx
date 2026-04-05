@@ -627,7 +627,7 @@ const PitchLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
                 flex: "1 1 auto",
                 minWidth: 200,
               }}>
-                <div style={{ fontSize: 24 }}>{pt.icon}</div>
+                <Icon name={pt.icon as IconName} size={24} color={theme.accent} />
                 <div>
                   <div style={{
                     fontSize: TYPE.cardTitle,

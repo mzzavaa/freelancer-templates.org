@@ -42,6 +42,7 @@ import {
 import type { Theme } from "../_shared/themes";
 import { THEME_DARK, THEME_CLEAN } from "../_shared/themes";
 import { fadeIn, springEntrance, SPRING } from "../_shared/animations";
+import { Icon, type IconName } from "../_shared/Icon";
 import { spring, interpolate } from "remotion";
 
 // ── Data Contract ─────────────────────────────────────────────────────────────
@@ -187,7 +188,7 @@ const ListChapter: React.FC<{ chapter: Chapter; spec: TutorialSpec; theme: Theme
           const color = item.color ?? theme.accent;
           return (
             <div key={i} style={{ opacity, transform: `translateY(${translateY}px)`, background: `${color}12`, border: `1.5px solid ${color}44`, borderRadius: 16, padding: "24px 20px", flex: 1, textAlign: "center" }}>
-              <div style={{ fontSize: 36, marginBottom: 10 }}>{item.icon}</div>
+              <div style={{ marginBottom: 10 }}><Icon name={item.icon as IconName} size={36} color={color} /></div>
               <div style={{ fontSize: 14, fontWeight: 800, color, fontFamily: FONT, marginBottom: 8 }}>{item.title}</div>
               <div style={{ fontSize: 12, color: theme.textMuted, fontFamily: FONT, lineHeight: 1.5 }}>{item.desc}</div>
             </div>
