@@ -9,6 +9,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import { Gamepad2, Home, Star, User } from 'lucide-react';
 import {
   SIMS_COLORS,
   SIMS_FONTS,
@@ -45,9 +46,9 @@ const DEFAULT_MENU_ITEMS = [
 const ACTIVE_MENU_INDEX = 0;
 
 const PROMO_CARDS = [
-  { icon: '🎮', title: 'New Expansion', description: 'Enterprise AI Pack now available' },
-  { icon: '🏠', title: 'Build Challenge', description: 'Design your dream workspace' },
-  { icon: '⭐', title: 'Community Pick', description: 'Top-rated automation templates' },
+  { icon: <Gamepad2 size={24} color={SIMS_COLORS.simsBlueLight} />, title: 'New Expansion', description: 'Enterprise AI Pack now available' },
+  { icon: <Home size={24} color={SIMS_COLORS.plumbobGreen} />, title: 'Build Challenge', description: 'Design your dream workspace' },
+  { icon: <Star size={24} color={SIMS_COLORS.needsYellow} />, title: 'Community Pick', description: 'Top-rated automation templates' },
 ];
 
 const TIMING = {
@@ -116,10 +117,8 @@ export const Sims4MainMenu: React.FC<Sims4MainMenuProps> = ({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: 14,
-            color: '#fff',
           }}>
-            👤
+            <User size={16} color="#fff" />
           </div>
           <span style={{
             fontFamily: SIMS_FONTS.body,
@@ -299,7 +298,7 @@ export const Sims4MainMenu: React.FC<Sims4MainMenuProps> = ({
             >
               <SimsPanel variant="glass" style={{ padding: '14px 16px' }}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
-                  <span style={{ fontSize: 24, lineHeight: 1 }}>{card.icon}</span>
+                  <span style={{ lineHeight: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{card.icon}</span>
                   <div>
                     <div
                       style={{

@@ -10,6 +10,14 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import {
+  Target,
+  Search,
+  PenTool,
+  Shield,
+  Rocket,
+  Hammer,
+} from 'lucide-react';
 import { Plumbob } from '../components/SimsUI';
 import {
   SIMS_COLORS,
@@ -22,7 +30,7 @@ import {
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface CrewAgent {
-  icon: string;
+  icon: React.ReactNode;
   label: string;
   role: string;
   color: string;
@@ -37,17 +45,17 @@ export interface CrewArchitectureDiagramProps {
 // ── Defaults ─────────────────────────────────────────────────────────────────
 
 const DEFAULT_MANAGER: CrewAgent = {
-  icon: '🎯',
+  icon: <Target size={36} color="#fff" />,
   label: 'Orchestrator',
   role: 'Decomposes tasks & delegates',
   color: SIMS_COLORS.simsBlue,
 };
 
 const DEFAULT_WORKERS: CrewAgent[] = [
-  { icon: '🔍', label: 'Researcher', role: 'Gathers context & data', color: SIMS_COLORS.plumbobGreen },
-  { icon: '✍️', label: 'Writer', role: 'Generates content & code', color: SIMS_COLORS.needsYellow },
-  { icon: '🛡️', label: 'Reviewer', role: 'Validates & refines output', color: SIMS_COLORS.needsOrange },
-  { icon: '🚀', label: 'Deployer', role: 'Ships to production', color: SIMS_COLORS.needsPurple },
+  { icon: <Search size={30} color="#fff" />, label: 'Researcher', role: 'Gathers context & data', color: SIMS_COLORS.plumbobGreen },
+  { icon: <PenTool size={30} color="#fff" />, label: 'Writer', role: 'Generates content & code', color: SIMS_COLORS.needsYellow },
+  { icon: <Shield size={30} color="#fff" />, label: 'Reviewer', role: 'Validates & refines output', color: SIMS_COLORS.needsOrange },
+  { icon: <Rocket size={30} color="#fff" />, label: 'Deployer', role: 'Ships to production', color: SIMS_COLORS.needsPurple },
 ];
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -147,7 +155,7 @@ export const CrewArchitectureDiagram: React.FC<CrewArchitectureDiagramProps> = (
           width: 80, height: 80, borderRadius: '50%',
           background: `linear-gradient(135deg, ${manager.color}, ${manager.color}88)`,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          fontSize: 36, boxShadow: `0 0 30px ${manager.color}44`,
+          boxShadow: `0 0 30px ${manager.color}44`,
           border: '3px solid rgba(255,255,255,0.3)',
         }}>
           {manager.icon}
@@ -189,7 +197,7 @@ export const CrewArchitectureDiagram: React.FC<CrewArchitectureDiagramProps> = (
               background: `linear-gradient(135deg, ${worker.color}22, ${worker.color}44)`,
               border: `2px solid ${worker.color}88`,
               display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: 30, boxShadow: `0 0 20px ${worker.color}22`,
+              boxShadow: `0 0 20px ${worker.color}22`,
             }}>
               {worker.icon}
             </div>
@@ -215,14 +223,17 @@ export const CrewArchitectureDiagram: React.FC<CrewArchitectureDiagramProps> = (
         opacity: interpolate(frame, [140, 165], [0, 1], { extrapolateRight: 'clamp', extrapolateLeft: 'clamp' }),
       }}>
         <div style={{
-          display: 'inline-block',
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: 8,
           background: SIMS_COLORS.panelGlass, backdropFilter: 'blur(12px)',
           border: '1px solid rgba(255,255,255,0.15)', borderRadius: SIMS_SIZES.borderRadius.pill,
           padding: '10px 28px',
           fontFamily: SIMS_FONTS.body, fontSize: 14, fontWeight: 600,
           color: SIMS_COLORS.textLight, letterSpacing: 0.5,
         }}>
-          🏗️ Manager → Worker pattern • Each agent has a single responsibility
+          <Hammer size={16} color={SIMS_COLORS.textLight} />
+          <span>Manager → Worker pattern • Each agent has a single responsibility</span>
         </div>
       </div>
 

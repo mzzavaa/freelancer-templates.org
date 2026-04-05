@@ -10,6 +10,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import { HardDrive, MessageSquare, Wrench, Search, PenTool, Shield, RefreshCw } from 'lucide-react';
 import { Plumbob } from '../components/SimsUI';
 import {
   SIMS_COLORS,
@@ -22,7 +23,7 @@ import {
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface CommPattern {
-  icon: string;
+  icon: React.ReactNode;
   label: string;
   description: string;
   pros: string;
@@ -39,7 +40,7 @@ export interface InterAgentCommunicationProps {
 
 const DEFAULT_PATTERNS: CommPattern[] = [
   {
-    icon: '💾',
+    icon: <HardDrive size={20} color={SIMS_COLORS.simsBlueLight} />,
     label: 'Shared Memory',
     description: 'Agents read/write to a common knowledge store',
     pros: 'Simple, persistent',
@@ -47,7 +48,7 @@ const DEFAULT_PATTERNS: CommPattern[] = [
     color: SIMS_COLORS.simsBlueLight,
   },
   {
-    icon: '💬',
+    icon: <MessageSquare size={20} color={SIMS_COLORS.plumbobGreen} />,
     label: 'Message Passing',
     description: 'Agents send structured messages to each other',
     pros: 'Decoupled, traceable',
@@ -55,7 +56,7 @@ const DEFAULT_PATTERNS: CommPattern[] = [
     color: SIMS_COLORS.plumbobGreen,
   },
   {
-    icon: '🔧',
+    icon: <Wrench size={20} color={SIMS_COLORS.needsYellow} />,
     label: 'Tool Handoff',
     description: 'One agent\'s output becomes another\'s tool input',
     pros: 'Type-safe, composable',
@@ -88,9 +89,9 @@ export const InterAgentCommunication: React.FC<InterAgentCommunicationProps> = (
   const centerY = 340;
   const radius = 170;
   const agentPositions = [
-    { x: centerX, y: centerY - radius, icon: '🔍', label: 'Agent A' },
-    { x: centerX - radius * 0.87, y: centerY + radius * 0.5, icon: '✍️', label: 'Agent B' },
-    { x: centerX + radius * 0.87, y: centerY + radius * 0.5, icon: '🛡️', label: 'Agent C' },
+    { x: centerX, y: centerY - radius, icon: <Search size={26} color="#fff" />, label: 'Agent A' },
+    { x: centerX - radius * 0.87, y: centerY + radius * 0.5, icon: <PenTool size={26} color="#fff" />, label: 'Agent B' },
+    { x: centerX + radius * 0.87, y: centerY + radius * 0.5, icon: <Shield size={26} color="#fff" />, label: 'Agent C' },
   ];
 
   // ── Network mesh entrance ──
@@ -166,10 +167,10 @@ export const InterAgentCommunication: React.FC<InterAgentCommunicationProps> = (
         background: SIMS_COLORS.panelGlass, backdropFilter: 'blur(12px)',
         border: '2px solid rgba(255,255,255,0.2)',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
-        fontSize: 22, opacity: meshOpacity,
+        opacity: meshOpacity,
         boxShadow: '0 0 20px rgba(105,240,174,0.15)',
       }}>
-        🔄
+        <RefreshCw size={22} color={SIMS_COLORS.plumbobGreen} />
       </div>
 
       {/* Agent nodes */}
@@ -187,7 +188,7 @@ export const InterAgentCommunication: React.FC<InterAgentCommunicationProps> = (
             background: `linear-gradient(135deg, ${SIMS_COLORS.simsBlue}44, ${SIMS_COLORS.simsBlue}88)`,
             border: '2px solid rgba(255,255,255,0.3)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 26, opacity: nOpacity, transform: `scale(${nScale})`,
+            opacity: nOpacity, transform: `scale(${nScale})`,
             boxShadow: `0 0 20px ${SIMS_COLORS.simsBlue}22`,
           }}>
             {pos.icon}
@@ -217,7 +218,7 @@ export const InterAgentCommunication: React.FC<InterAgentCommunicationProps> = (
               <div style={{
                 display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6,
               }}>
-                <span style={{ fontSize: 20 }}>{pattern.icon}</span>
+                {pattern.icon}
                 <span style={{
                   fontFamily: SIMS_FONTS.display, fontWeight: 700, fontSize: 15,
                   color: pattern.color,

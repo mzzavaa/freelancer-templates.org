@@ -10,6 +10,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import { Brain, Palette, Mic, Clapperboard, FileText, Atom, Volume2, Video, MessageCircle } from 'lucide-react';
 import { Plumbob, SimsPanel, PanelHeader } from '../components/SimsUI';
 import {
   SIMS_COLORS,
@@ -22,7 +23,7 @@ import {
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface CrewMember {
-  icon: string;
+  icon: React.ReactNode;
   name: string;
   role: string;
   tools: string[];
@@ -30,7 +31,7 @@ export interface CrewMember {
 }
 
 export interface PipelineOutput {
-  icon: string;
+  icon: React.ReactNode;
   label: string;
 }
 
@@ -46,28 +47,28 @@ export interface CrewRealWorldExampleProps {
 
 const DEFAULT_MEMBERS: CrewMember[] = [
   {
-    icon: '🧠',
+    icon: <Brain size={24} color={SIMS_COLORS.simsBlueLight} />,
     name: 'Spec Extractor',
     role: 'Parses raw text into a structured VideoSpec',
     tools: ['Claude (Bedrock)', 'JSON Schema'],
     color: SIMS_COLORS.simsBlueLight,
   },
   {
-    icon: '🎨',
+    icon: <Palette size={24} color={SIMS_COLORS.plumbobGreen} />,
     name: 'Composition Generator',
     role: 'Writes animated TSX from the VideoSpec',
     tools: ['Template Engine', 'Remotion API'],
     color: SIMS_COLORS.plumbobGreen,
   },
   {
-    icon: '🎙️',
+    icon: <Mic size={24} color={SIMS_COLORS.needsYellow} />,
     name: 'Voiceover Agent',
     role: 'Generates narration audio from script',
     tools: ['ElevenLabs API', 'Audio Encoder'],
     color: SIMS_COLORS.needsYellow,
   },
   {
-    icon: '🎬',
+    icon: <Clapperboard size={24} color={SIMS_COLORS.needsOrange} />,
     name: 'Render Agent',
     role: 'Renders final MP4 and uploads to S3',
     tools: ['Remotion CLI', 'AWS S3'],
@@ -76,10 +77,10 @@ const DEFAULT_MEMBERS: CrewMember[] = [
 ];
 
 const DEFAULT_OUTPUTS: PipelineOutput[] = [
-  { icon: '📄', label: 'VideoSpec JSON' },
-  { icon: '⚛️', label: 'React TSX' },
-  { icon: '🔊', label: 'MP3 Audio' },
-  { icon: '🎥', label: 'MP4 Video' },
+  { icon: <FileText size={16} color={SIMS_COLORS.textLight} />, label: 'VideoSpec JSON' },
+  { icon: <Atom size={16} color={SIMS_COLORS.textLight} />, label: 'React TSX' },
+  { icon: <Volume2 size={16} color={SIMS_COLORS.textLight} />, label: 'MP3 Audio' },
+  { icon: <Video size={16} color={SIMS_COLORS.textLight} />, label: 'MP4 Video' },
 ];
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -149,8 +150,9 @@ export const CrewRealWorldExample: React.FC<CrewRealWorldExampleProps> = ({
           background: 'rgba(21,101,192,0.2)', border: '1px solid rgba(66,165,245,0.4)',
           borderRadius: SIMS_SIZES.borderRadius.pill, padding: '8px 24px',
           fontFamily: SIMS_FONTS.mono, fontSize: 13, color: SIMS_COLORS.simsBlueLight,
+          display: 'flex', alignItems: 'center', gap: 8,
         }}>
-          💬 {inputLabel}
+          <MessageCircle size={14} color={SIMS_COLORS.simsBlueLight} /> {inputLabel}
         </div>
       </div>
 
@@ -195,7 +197,7 @@ export const CrewRealWorldExample: React.FC<CrewRealWorldExampleProps> = ({
                 background: `linear-gradient(135deg, ${member.color}18, ${member.color}33)`,
                 border: `2px solid ${member.color}55`,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: 24, marginBottom: 10,
+                marginBottom: 10,
               }}>
                 {member.icon}
               </div>
@@ -258,7 +260,7 @@ export const CrewRealWorldExample: React.FC<CrewRealWorldExampleProps> = ({
                 borderRadius: SIMS_SIZES.borderRadius.md,
                 padding: '8px 16px', display: 'flex', alignItems: 'center', gap: 6,
               }}>
-                <span style={{ fontSize: 16 }}>{output.icon}</span>
+                {output.icon}
                 <span style={{
                   fontFamily: SIMS_FONTS.body, fontSize: 12, fontWeight: 600,
                   color: SIMS_COLORS.textLight,

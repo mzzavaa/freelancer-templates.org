@@ -9,6 +9,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import { Zap, HardDrive, User, Search, FileText, Brain } from 'lucide-react';
 import {
   SIMS_COLORS,
   SIMS_FONTS,
@@ -21,14 +22,14 @@ import { CinematicFullScreen } from '../templates/CinematicFullScreen';
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface MemoryType {
-  icon: string;
+  icon: React.ReactNode;
   label: string;
   description: string;
   level: number; // 1–10
 }
 
 export interface EquippedTool {
-  icon: React.ReactNode | string;
+  icon: React.ReactNode;
   label: string;
 }
 
@@ -41,14 +42,14 @@ export interface AgentSkillsMemoryProps {
 // ── Defaults ─────────────────────────────────────────────────────────────────
 
 const DEFAULT_MEMORY_TYPES: MemoryType[] = [
-  { icon: '⚡', label: 'Short-term Memory', description: 'Current conversation context and working state.', level: 7 },
-  { icon: '💾', label: 'Long-term Memory', description: 'Persistent knowledge stored across sessions.', level: 5 },
-  { icon: '👤', label: 'Entity Memory', description: 'Facts about specific people, places, and things.', level: 4 },
+  { icon: <Zap size={16} color={SIMS_COLORS.needsYellow} />, label: 'Short-term Memory', description: 'Current conversation context and working state.', level: 7 },
+  { icon: <HardDrive size={16} color={SIMS_COLORS.simsBlueLight} />, label: 'Long-term Memory', description: 'Persistent knowledge stored across sessions.', level: 5 },
+  { icon: <User size={16} color={SIMS_COLORS.plumbobGreen} />, label: 'Entity Memory', description: 'Facts about specific people, places, and things.', level: 4 },
 ];
 
 const DEFAULT_EQUIPPED_TOOLS: EquippedTool[] = [
-  { icon: '🔍', label: 'SerpAPI' },
-  { icon: '📄', label: 'FileReadTool' },
+  { icon: <Search size={18} color="#fff" />, label: 'SerpAPI' },
+  { icon: <FileText size={18} color="#fff" />, label: 'FileReadTool' },
 ];
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -123,7 +124,7 @@ export const AgentSkillsMemory: React.FC<AgentSkillsMemoryProps> = ({
         }}
       >
         <SimsPanel variant="white" style={{ width: '100%', padding: 0 }}>
-          <PanelHeader title={panelTitle} icon="🧠" />
+          <PanelHeader title={panelTitle} icon={<Brain size={20} color="#fff" />} />
 
           {/* Memory type skill bars */}
           <div style={{ padding: '24px 32px 16px' }}>
@@ -220,8 +221,8 @@ export const AgentSkillsMemory: React.FC<AgentSkillsMemoryProps> = ({
                       boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
                     }}
                   >
-                    <span style={{ fontSize: 22 }}>
-                      {typeof tool.icon === 'string' ? tool.icon : tool.icon}
+                    <span style={{ fontSize: 22, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      {tool.icon}
                     </span>
                     <span
                       style={{

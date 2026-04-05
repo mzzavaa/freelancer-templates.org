@@ -7,6 +7,7 @@ import {
   spring,
   interpolate,
 } from 'remotion';
+import { Scissors, Smile, User, Shirt, Gem } from 'lucide-react';
 import { Plumbob } from './SimsUI';
 import { SIMS_COLORS, SIMS_FONTS, SIMS_SIZES } from '../data/simsTheme';
 
@@ -19,11 +20,11 @@ export const MOOD_COLORS: Record<AvatarMood, string> = {
   angry: SIMS_COLORS.needsRed,
 };
 export const CAS_CATEGORIES = [
-  { icon: '💇', label: 'Hair' },
-  { icon: '😊', label: 'Face' },
-  { icon: '👤', label: 'Body' },
-  { icon: '👕', label: 'Clothing' },
-  { icon: '💍', label: 'Accessories' },
+  { icon: <Scissors size={20} color="#fff" />, label: 'Hair' },
+  { icon: <Smile size={20} color="#fff" />, label: 'Face' },
+  { icon: <User size={20} color="#fff" />, label: 'Body' },
+  { icon: <Shirt size={20} color="#fff" />, label: 'Clothing' },
+  { icon: <Gem size={20} color="#fff" />, label: 'Accessories' },
 ];
 
 export type AvatarMode = 'raw' | 'themed' | 'cas';
@@ -216,7 +217,7 @@ export const AvatarDisplay: React.FC<AvatarDisplayProps> = ({
                   minWidth: 56,
                 }}
               >
-                <span style={{ fontSize: 20, marginBottom: 2 }}>{cat.icon}</span>
+                <span style={{ marginBottom: 2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{cat.icon}</span>
                 {cat.label}
               </div>
             ))}

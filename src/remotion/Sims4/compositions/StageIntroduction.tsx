@@ -14,6 +14,15 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {
+  Globe,
+  Flag,
+  Users,
+  Trophy,
+  Cloud,
+  Monitor,
+  Bot,
+} from 'lucide-react';
+import {
   SIMS_COLORS,
   SIMS_FONTS,
   SIMS_SIZES,
@@ -28,12 +37,12 @@ import { SpeakerIntro } from '../templates';
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface CredentialItem {
-  icon: string;
+  icon: React.ReactNode;
   label: string;
 }
 
 export interface DescriptionItem {
-  icon: string;
+  icon: React.ReactNode;
   text: string;
 }
 
@@ -217,7 +226,7 @@ const FactItem: React.FC<{
 
 /** Hexagonal credential badge */
 const CredentialHex: React.FC<{
-  icon: string;
+  icon: React.ReactNode;
   label: string;
   progress: number;
 }> = ({ icon, label, progress }) => (
@@ -241,7 +250,6 @@ const CredentialHex: React.FC<{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        fontSize: 26,
         border: `1px solid rgba(255,255,255,0.15)`,
       }}
     >
@@ -265,7 +273,7 @@ const CredentialHex: React.FC<{
 
 /** Description row (icon + text) */
 const DescriptionRow: React.FC<{
-  icon: string;
+  icon: React.ReactNode;
   text: string;
   progress: number;
 }> = ({ icon, text, progress }) => {
@@ -283,7 +291,7 @@ const DescriptionRow: React.FC<{
         transform: `translateX(${slideX}px)`,
       }}
     >
-      <span style={{ fontSize: 20, flexShrink: 0 }}>{icon}</span>
+      <span style={{ flexShrink: 0, display: 'flex', alignItems: 'center' }}>{icon}</span>
       <span
         style={{
           fontFamily: SIMS_FONTS.body,
@@ -313,16 +321,16 @@ export const StageIntroduction: React.FC<StageIntroductionProps> = ({
   ],
   factsLabel = 'facts about me',
   credentials = [
-    { icon: '🌐', label: 'Internet Stiftung' },
-    { icon: '🇩🇪', label: 'AWS Community DACH' },
-    { icon: '👥', label: 'User Group Leader' },
-    { icon: '🏆', label: 'AWS Hero' },
+    { icon: <Globe size={26} color={SIMS_COLORS.textLight} />, label: 'Internet Stiftung' },
+    { icon: <Flag size={26} color={SIMS_COLORS.textLight} />, label: 'AWS Community DACH' },
+    { icon: <Users size={26} color={SIMS_COLORS.textLight} />, label: 'User Group Leader' },
+    { icon: <Trophy size={26} color={SIMS_COLORS.textLight} />, label: 'AWS Hero' },
   ],
   credentialsLabel = 'things I do',
   descriptions = [
-    { icon: '☁️', text: 'AWS Community Hero / Cloud & AI Consultant' },
-    { icon: '💻', text: 'Background in Software Development' },
-    { icon: '🤖', text: 'Specialized in Cloud Technologies & AI/ML' },
+    { icon: <Cloud size={20} color={SIMS_COLORS.textLight} />, text: 'AWS Community Hero / Cloud & AI Consultant' },
+    { icon: <Monitor size={20} color={SIMS_COLORS.textLight} />, text: 'Background in Software Development' },
+    { icon: <Bot size={20} color={SIMS_COLORS.textLight} />, text: 'Specialized in Cloud Technologies & AI/ML' },
   ],
   avatarSrc = 'linda_avatar.svg',
   characterSize = 380,

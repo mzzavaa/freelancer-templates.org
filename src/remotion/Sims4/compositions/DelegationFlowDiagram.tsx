@@ -10,6 +10,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import { Puzzle, ClipboardList, Zap, Link } from 'lucide-react';
 import { Plumbob } from '../components/SimsUI';
 import {
   SIMS_COLORS,
@@ -22,7 +23,7 @@ import {
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface PipelineStep {
-  icon: string;
+  icon: React.ReactNode;
   label: string;
   description: string;
   color: string;
@@ -36,10 +37,10 @@ export interface DelegationFlowDiagramProps {
 // ── Defaults ─────────────────────────────────────────────────────────────────
 
 const DEFAULT_STEPS: PipelineStep[] = [
-  { icon: '🧩', label: 'Decompose', description: 'Break complex task into subtasks', color: SIMS_COLORS.simsBlueLight },
-  { icon: '📋', label: 'Assign', description: 'Route each subtask to best agent', color: SIMS_COLORS.plumbobGreen },
-  { icon: '⚡', label: 'Execute', description: 'Agents work in parallel or sequence', color: SIMS_COLORS.needsYellow },
-  { icon: '🔗', label: 'Aggregate', description: 'Combine results into final output', color: SIMS_COLORS.needsOrange },
+  { icon: <Puzzle size={32} color={SIMS_COLORS.simsBlueLight} />, label: 'Decompose', description: 'Break complex task into subtasks', color: SIMS_COLORS.simsBlueLight },
+  { icon: <ClipboardList size={32} color={SIMS_COLORS.plumbobGreen} />, label: 'Assign', description: 'Route each subtask to best agent', color: SIMS_COLORS.plumbobGreen },
+  { icon: <Zap size={32} color={SIMS_COLORS.needsYellow} />, label: 'Execute', description: 'Agents work in parallel or sequence', color: SIMS_COLORS.needsYellow },
+  { icon: <Link size={32} color={SIMS_COLORS.needsOrange} />, label: 'Aggregate', description: 'Combine results into final output', color: SIMS_COLORS.needsOrange },
 ];
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -141,7 +142,7 @@ export const DelegationFlowDiagram: React.FC<DelegationFlowDiagramProps> = ({
                 background: `linear-gradient(135deg, ${step.color}18, ${step.color}33)`,
                 border: `2px solid ${step.color}66`,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: 32, marginBottom: 14,
+                marginBottom: 14,
               }}>
                 {step.icon}
               </div>

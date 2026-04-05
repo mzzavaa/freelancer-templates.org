@@ -12,6 +12,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import { Bot, Brain, Wrench, Rocket } from 'lucide-react';
 import {
   SIMS_COLORS,
   SIMS_FONTS,
@@ -23,7 +24,7 @@ import {
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface ContentCard {
-  icon: React.ReactNode | string;
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
@@ -41,10 +42,10 @@ export interface ImageBackgroundOverlayProps {
 // ── Defaults ─────────────────────────────────────────────────────────────────
 
 const DEFAULT_CARDS: ContentCard[] = [
-  { icon: '🤖', title: 'Foundation Models', description: 'Large language models that understand and generate text.' },
-  { icon: '🧠', title: 'Reasoning Engines', description: 'Chain-of-thought and multi-step problem solving.' },
-  { icon: '🔧', title: 'Tool Integration', description: 'Connecting models to APIs, databases, and services.' },
-  { icon: '🚀', title: 'Autonomous Agents', description: 'Self-directed systems that plan, act, and learn.' },
+  { icon: <Bot size={18} color="#fff" />, title: 'Foundation Models', description: 'Large language models that understand and generate text.' },
+  { icon: <Brain size={18} color="#fff" />, title: 'Reasoning Engines', description: 'Chain-of-thought and multi-step problem solving.' },
+  { icon: <Wrench size={18} color="#fff" />, title: 'Tool Integration', description: 'Connecting models to APIs, databases, and services.' },
+  { icon: <Rocket size={18} color="#fff" />, title: 'Autonomous Agents', description: 'Self-directed systems that plan, act, and learn.' },
 ];
 
 export const ImageBackgroundOverlay: React.FC<ImageBackgroundOverlayProps> = ({
@@ -202,9 +203,7 @@ export const ImageBackgroundOverlay: React.FC<ImageBackgroundOverlayProps> = ({
                       flexShrink: 0,
                     }}
                   >
-                  {typeof card.icon === 'string' ? (
-                    <span style={{ fontSize: 18, color: '#fff' }}>{card.icon}</span>
-                  ) : card.icon}
+                  {card.icon}
                   </div>
                   <div style={{ flex: 1 }}>
                     <div

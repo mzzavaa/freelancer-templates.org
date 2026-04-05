@@ -9,6 +9,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import { MapPin } from "lucide-react";
 import {
   BackgroundLayer,
   HexGridOverlay,
@@ -655,7 +656,7 @@ const FastScroll: React.FC<{ frame: number }> = ({ frame }) => {
                     <div style={{ fontSize: TYPOGRAPHY.caption, lineHeight: 1 }}>{group.flag}</div>
                     <div style={{ fontSize: TYPOGRAPHY.bodySmall, fontWeight: 700, color: "#ffffff", fontFamily: "'Inter', sans-serif", lineHeight: 1.2 }}>{group.name}</div>
                   </div>
-                  <div style={{ fontSize: TYPOGRAPHY.captionSmall, color: "#94a3b8", fontFamily: "'Inter', sans-serif", display: "flex", alignItems: "center", gap: 4, marginLeft: 24 }}>📍 {group.location}</div>
+                  <div style={{ fontSize: TYPOGRAPHY.captionSmall, color: "#94a3b8", fontFamily: "'Inter', sans-serif", display: "flex", alignItems: "center", gap: 4, marginLeft: 24 }}><MapPin size={12} color="#94a3b8" /> {group.location}</div>
                 </div>
                 <div style={{ height: 2, background: `linear-gradient(90deg, transparent, ${accentColor}60, transparent)` }} />
               </div>

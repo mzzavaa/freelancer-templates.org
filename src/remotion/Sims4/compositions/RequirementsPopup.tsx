@@ -10,6 +10,13 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {
+  MapPin,
+  Mic,
+  Pizza,
+  Mail,
+  ClipboardList,
+} from 'lucide-react';
+import {
   SIMS_COLORS,
   SIMS_FONTS,
   SIMS_SPRING,
@@ -22,7 +29,7 @@ import { CinematicFullScreen } from '../templates/CinematicFullScreen';
 // ── Types ────────────────────────────────────────────────────────────────────
 
 export interface RequirementItem {
-  icon: React.ReactNode | string;
+  icon: React.ReactNode;
   label: string;
 }
 
@@ -35,11 +42,11 @@ export interface RequirementsPopupProps {
 // ── Defaults ─────────────────────────────────────────────────────────────────
 
 const DEFAULT_REQUIREMENTS: RequirementItem[] = [
-  { icon: '📍', label: 'Find a venue with AV equipment' },
-  { icon: '🎤', label: 'Book a speaker on AI agents' },
-  { icon: '🍕', label: 'Order food for 50 attendees' },
-  { icon: '📧', label: 'Send invitations via email' },
-  { icon: '📋', label: 'Prepare agenda and slides' },
+  { icon: <MapPin size={22} color={SIMS_COLORS.textLight} />, label: 'Find a venue with AV equipment' },
+  { icon: <Mic size={22} color={SIMS_COLORS.textLight} />, label: 'Book a speaker on AI agents' },
+  { icon: <Pizza size={22} color={SIMS_COLORS.textLight} />, label: 'Order food for 50 attendees' },
+  { icon: <Mail size={22} color={SIMS_COLORS.textLight} />, label: 'Send invitations via email' },
+  { icon: <ClipboardList size={22} color={SIMS_COLORS.textLight} />, label: 'Prepare agenda and slides' },
 ];
 
 // ── Component ────────────────────────────────────────────────────────────────
@@ -150,7 +157,7 @@ export const RequirementsPopup: React.FC<RequirementsPopupProps> = ({
                       height: 36,
                     }}
                   >
-                    {typeof req.icon === 'string' ? req.icon : req.icon}
+                    {req.icon}
                   </div>
                   <span
                     style={{
