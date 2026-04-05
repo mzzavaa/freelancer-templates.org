@@ -1,6 +1,6 @@
 ---
 title: "Case Study"
-description: "Before/after reveals, results animations, and impact metrics"
+description: "Tell client success stories with before/after reveals, animated results metrics, and impact callouts. Converts better than any written case study."
 slug: "casestudy"
 camel: "CaseStudy"
 icon: "trending-up"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Spotlight"
     style: "neon"
 ---
+
+Use when you need to take a client result and make it shareable and persuasive. The key is the numbers - let CountUp do the heavy lifting.
+
+## Use cases
+
+- Client success stories for website or proposals
+- Portfolio showcase with measurable outcomes
+- Sales enablement content for account executives
+- Award submissions that need video supporting material
+
+## What you get
+
+- **Narrative** - story-arc flow: problem, solution, result
+- **Comparison** - side-by-side metric tables
+- **Spotlight** - single result hero stat with supporting context

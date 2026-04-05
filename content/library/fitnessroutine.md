@@ -1,6 +1,6 @@
 ---
 title: "Fitness Routine"
-description: "Circuit timers, exercise sequences, and workout breakdowns"
+description: "Present workouts with animated exercise lists, circuit timer displays, and full-routine breakdowns. Designed for fitness creators, coaches, and wellness brands."
 slug: "fitnessroutine"
 camel: "FitnessRoutine"
 icon: "activity"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Circuit"
     style: "neon"
 ---
+
+Use for workout content on any platform. The timer variant loops well for rest-period overlays during live workouts.
+
+## Use cases
+
+- Workout of the day (WOTD) announcement reels
+- Exercise circuit timer overlays
+- Routine breakdown videos for YouTube
+- Personal training client delivery
+
+## What you get
+
+- **Exercise List** - full routine with reps/sets and animated entrance
+- **Timer Focus** - single-exercise countdown timer display
+- **Circuit** - circuit-style board showing all exercises simultaneously

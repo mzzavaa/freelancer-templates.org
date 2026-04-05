@@ -1,6 +1,6 @@
 ---
 title: "Music Visualizer"
-description: "Audio reactions, lyric videos, and waveform animations"
+description: "Animate audio with waveform bars, radial visualizers, and lyric card displays. Turn podcast clips, music drops, and audio quotes into visual content."
 slug: "musicvisualizer"
 camel: "MusicVisualizer"
 icon: "music"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Lyrics"
     style: "neon"
 ---
+
+Use to give audio content a visual layer for social platforms that auto-play video. The lyric card variant works for motivational audio clips.
+
+## Use cases
+
+- Podcast clip audiograms for social
+- Music preview or drop announcement
+- Lyric video sequences
+- Ambient music or study playlist content
+
+## What you get
+
+- **Bars** - classic waveform bar visualization synced to frame count
+- **Radial** - circular visualizer with rotating bars
+- **Lyrics** - full-screen lyric card with animated text entrance

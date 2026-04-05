@@ -1,6 +1,6 @@
 ---
 title: "Before / After"
-description: "Transformation reveals, comparison sliders, and metrics"
+description: "Show transformations with split-screen reveals, metric comparisons, and animated before/after wipes. Perfect for case studies, redesigns, and results-driven content."
 slug: "beforeafter"
 camel: "BeforeAfter"
 icon: "columns"
@@ -28,3 +28,18 @@ variants:
     name: "Warm Metrics Compare"
     style: "warm"
 ---
+
+Use when the story is the delta - weight loss, design overhaul, revenue growth, code refactor. The visual contrast does the persuasion work.
+
+## Use cases
+
+- Client results and transformation case studies
+- Design before/after (UI redesigns, branding updates)
+- Fitness or health transformation reels
+- Business metric improvement announcements
+
+## What you get
+
+- **Split Screen** - simultaneous side-by-side with animated divider
+- **Reveal Wipe** - cinematic horizontal wipe transition
+- **Metrics Compare** - animated number counters showing before and after values

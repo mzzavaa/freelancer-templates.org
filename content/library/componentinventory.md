@@ -1,6 +1,6 @@
 ---
 title: "Component Inventory"
-description: "Architecture grids, dependency maps, and component inventory lists"
+description: "Document system architecture with animated component grids, dependency maps, and inventory lists. Essential for engineering teams and technical documentation."
 slug: "componentinventory"
 icon: "layers"
 camel: "ComponentInventory"
@@ -28,3 +28,18 @@ variants:
     style: "clean"
 layout: library/single
 ---
+
+Use when you need to explain a system's components to a non-technical audience or document architecture for new team members.
+
+## Use cases
+
+- System architecture presentation videos
+- Technical onboarding for new engineers
+- Architecture review board presentations
+- Technical documentation video supplements
+
+## What you get
+
+- **Architecture Grid** - component cards organized by layer
+- **Dependency Map** - visual graph of component relationships
+- **Inventory List** - scrollable list with component metadata

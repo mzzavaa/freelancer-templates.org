@@ -1,6 +1,6 @@
 ---
 title: "Tutorial"
-description: "Step-by-step guides, demo walkthroughs, and how-to content"
+description: "Teach anything with numbered step sequences, demo walkthroughs, and split-screen tutorial formats. Works for software, skills, and processes."
 slug: "tutorial"
 camel: "Tutorial"
 icon: "book-open"
@@ -28,3 +28,18 @@ variants:
     name: "Clean Split Demo"
     style: "clean"
 ---
+
+Use for YouTube tutorials, course modules, and documentation videos. The numbered steps variant works best for processes with 3-8 steps.
+
+## Use cases
+
+- Software how-to tutorial videos
+- Step-by-step skill teaching content
+- Documentation walkthrough videos
+- Onboarding flow demos
+
+## What you get
+
+- **Numbered Steps** - large step numbers with animated content cards
+- **Card Sequence** - floating cards that enter one at a time
+- **Split Demo** - side-by-side instruction and demo panel

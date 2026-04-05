@@ -19,24 +19,35 @@ A Notion-based CRM built for the way freelancers actually work. Each lead has a 
 
 The pipeline moves from lead to proposal to contract to project - the same Notion workspace that runs the rest of your business. No additional software. No monthly fee. No learning curve.
 
-## Tools and Templates
+## Video Templates from the Library
 
-<div class="uc-tools">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="layout-dashboard"></i></div>
-    <div class="uc-tool__name">Notion Freelancer OS</div>
-    <div class="uc-tool__desc">Complete freelance workspace with CRM, pipeline, project tracker, and client database in one system.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="mail"></i></div>
-    <div class="uc-tool__name">Follow-up Email Scripts</div>
-    <div class="uc-tool__desc">Lead nurture and follow-up email templates for every stage of the pipeline.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="presentation"></i></div>
-    <div class="uc-tool__name">Proposal Templates</div>
-    <div class="uc-tool__desc">Proposal templates that connect directly to your CRM deal data.</div>
-  </a>
+<div class="uc-templates">
+  <div class="uc-template-grid">
+    <a href="/library/clientpipeline/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/ClientPipelineFunnelDark.png" alt="Client Pipeline" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/ClientPipelineFunnelDark.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Client Pipeline</div>
+        <div class="uc-tpl-card__tag">Funnel, board, revenue metrics</div>
+      </div>
+    </a>
+    <a href="/library/proposal/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Proposal-BoldPitch.png" alt="Proposal" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Proposal-BoldPitch.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Proposal</div>
+        <div class="uc-tpl-card__tag">Executive, creative, pitch layouts</div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <div class="uc-further">
@@ -61,8 +72,8 @@ The pipeline moves from lead to proposal to contract to project - the same Notio
 </div>
 
 <div class="uc-cta">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-    <i data-lucide="github"></i>
-    Browse Notion CRM Templates on GitHub
+  <a href="/library/clientpipeline/" class="btn btn--primary btn--lg">Browse Client Pipeline Template</a>
+  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+    <i data-lucide="github"></i> View on GitHub
   </a>
 </div>

@@ -1,6 +1,6 @@
 ---
 title: "Social Proof"
-description: "Achievement badges, metric milestones, and announcement reveals"
+description: "Announce achievements, metrics milestones, and community growth with animated badge reveals, number counters, and announcement sequences. Social proof sells."
 slug: "socialproof"
 camel: "SocialProof"
 icon: "award"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Announcement"
     style: "neon"
 ---
+
+Use immediately after hitting a milestone - the closer to the event, the more authentic it feels.
+
+## Use cases
+
+- Follower/subscriber count milestones
+- Revenue or MRR announcements
+- Award and recognition reveals
+- Press mention and media coverage highlights
+
+## What you get
+
+- **Milestone** - large animated counter with milestone badge
+- **Achievement** - award-style card with description and date
+- **Announcement** - broadcast-style breaking news format

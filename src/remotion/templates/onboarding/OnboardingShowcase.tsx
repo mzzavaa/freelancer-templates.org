@@ -20,6 +20,16 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -95,4 +105,46 @@ export const OnboardingMinimalProfessional: React.FC<{ brandKit?: BrandKit }> = 
 // ── Composition: Neon + Creative ────────────────────────────────
 export const OnboardingNeonCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="creative" bgPattern="hex" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+
+export const OnboardingOceanProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="professional" bgPattern="grid" />
+);
+
+export const OnboardingSunsetCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="creative" bgPattern="none" />
+);
+
+export const OnboardingForestProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="professional" bgPattern="hex" />
+);
+
+export const OnboardingRoseCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="creative" bgPattern="none" />
+);
+
+export const OnboardingGoldProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="professional" bgPattern="hex" />
+);
+
+export const OnboardingMidnightProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="professional" bgPattern="grid" />
+);
+
+export const OnboardingCrimsonCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="creative" bgPattern="none" />
+);
+
+export const OnboardingLavenderFriendly: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="friendly" bgPattern="hex" />
+);
+
+export const OnboardingArcticProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_WEBDEV_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="professional" bgPattern="dots" />
+);
+
+export const OnboardingEspressoFriendly: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Onboarding spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="friendly" bgPattern="hex" />
 );

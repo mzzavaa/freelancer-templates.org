@@ -19,29 +19,47 @@ A single trigger - contract signed - kicks off a structured onboarding sequence.
 
 The client experience is consistent and professional every time. You spend your first interaction doing actual work, not setup.
 
-## Tools and Templates
+## Video Templates from the Library
 
-<div class="uc-tools">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="mail"></i></div>
-    <div class="uc-tool__name">Client Onboarding Email Scripts</div>
-    <div class="uc-tool__desc">Welcome email, kickoff confirmation, and first-week check-in templates.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="layout-dashboard"></i></div>
-    <div class="uc-tool__name">Notion Client Portal</div>
-    <div class="uc-tool__desc">Duplicate-ready Notion workspace with project tracker, asset library, and client comms log.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="file-signature"></i></div>
-    <div class="uc-tool__name">Client Contract Template</div>
-    <div class="uc-tool__desc">Clear, protective contract with scope, payment terms, and IP clauses.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="clipboard-list"></i></div>
-    <div class="uc-tool__name">Project Brief Template</div>
-    <div class="uc-tool__desc">Kickoff brief that captures goals, deliverables, timeline, and success criteria.</div>
-  </a>
+<div class="uc-templates">
+  <div class="uc-template-grid">
+    <a href="/library/onboarding/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Onboarding-DarkProfessional.png" alt="Onboarding" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Onboarding-DarkProfessional.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Client Onboarding</div>
+        <div class="uc-tpl-card__tag">Welcome sequence, process overview, steps</div>
+      </div>
+    </a>
+    <a href="/library/proposal/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Proposal-CleanCreative.png" alt="Project Proposal" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Proposal-CleanCreative.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Project Proposal</div>
+        <div class="uc-tpl-card__tag">Scope, timeline, pricing layouts</div>
+      </div>
+    </a>
+    <a href="/library/milestone/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Milestone-DarkCelebration.png" alt="Milestone" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Milestone-DarkCelebration.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Milestone</div>
+        <div class="uc-tpl-card__tag">Project kickoff and completion celebrations</div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <div class="uc-further">
@@ -66,8 +84,8 @@ The client experience is consistent and professional every time. You spend your 
 </div>
 
 <div class="uc-cta">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-    <i data-lucide="github"></i>
-    Browse Onboarding Templates on GitHub
+  <a href="/library/onboarding/" class="btn btn--primary btn--lg">Browse Onboarding Template</a>
+  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+    <i data-lucide="github"></i> View on GitHub
   </a>
 </div>

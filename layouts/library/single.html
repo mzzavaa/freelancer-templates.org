@@ -23,6 +23,15 @@
   </div>
 </section>
 
+{{ if .Content }}
+<!-- ── About this template ────────────────────────────────────── -->
+<section class="tpl-about-section">
+  <div class="container">
+    <div class="tpl-about-body">{{ .Content }}</div>
+  </div>
+</section>
+{{ end }}
+
 <!-- ── Live Player Preview ─────────────────────────────────── -->
 <section class="tpl-player-section">
   <div class="container">

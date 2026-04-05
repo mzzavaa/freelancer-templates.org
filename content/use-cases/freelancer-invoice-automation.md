@@ -21,24 +21,35 @@ Payment reminders trigger automatically on day 7, day 14, and day 30 after the d
 
 The result is consistent, professional invoices sent on time every time - and a clear paper trail if you ever need it.
 
-## Tools and Templates
+## Video Templates from the Library
 
-<div class="uc-tools">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="receipt"></i></div>
-    <div class="uc-tool__name">Invoice Template</div>
-    <div class="uc-tool__desc">Professional invoice template with payment terms, line items, and VAT support.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="layout-dashboard"></i></div>
-    <div class="uc-tool__name">Notion Freelancer OS</div>
-    <div class="uc-tool__desc">Complete Notion workspace with project tracker, time logs, and client database.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="mail"></i></div>
-    <div class="uc-tool__name">Late Payment Email Scripts</div>
-    <div class="uc-tool__desc">3-step payment reminder sequence - firm, professional, and effective.</div>
-  </a>
+<div class="uc-templates">
+  <div class="uc-template-grid">
+    <a href="/library/invoice/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Invoice-DarkProfessional.png" alt="Invoice" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Invoice-DarkProfessional.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Invoice</div>
+        <div class="uc-tpl-card__tag">Professional, urgent, friendly reminders</div>
+      </div>
+    </a>
+    <a href="/library/milestone/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Milestone-WarmGratitude.png" alt="Milestone" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Milestone-WarmGratitude.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Milestone</div>
+        <div class="uc-tpl-card__tag">Project completion and payment celebrations</div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <div class="uc-further">
@@ -63,8 +74,8 @@ The result is consistent, professional invoices sent on time every time - and a 
 </div>
 
 <div class="uc-cta">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-    <i data-lucide="github"></i>
-    Browse Invoice Templates on GitHub
+  <a href="/library/invoice/" class="btn btn--primary btn--lg">Browse Invoice Template</a>
+  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+    <i data-lucide="github"></i> View on GitHub
   </a>
 </div>

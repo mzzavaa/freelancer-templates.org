@@ -12,6 +12,16 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -107,4 +117,46 @@ export const SocialProofNeonAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({
     ],
     hashtags: ["OpenSource", "DevTools", "Remotion"],
   }} theme={applyBrandKit(THEME_NEON, brandKit)} layout="announcement" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+
+export const SocialProofOceanAchievement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="achievement" />
+);
+
+export const SocialProofSunsetAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="announcement" />
+);
+
+export const SocialProofForestMilestone: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="milestone" />
+);
+
+export const SocialProofRoseAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="announcement" />
+);
+
+export const SocialProofGoldAchievement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="achievement" />
+);
+
+export const SocialProofMidnightAchievement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="achievement" />
+);
+
+export const SocialProofCrimsonAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="announcement" />
+);
+
+export const SocialProofLavenderMilestone: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="milestone" />
+);
+
+export const SocialProofArcticAchievement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="achievement" />
+);
+
+export const SocialProofEspressoMilestone: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <SocialProof spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="milestone" />
 );

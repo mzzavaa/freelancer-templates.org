@@ -43,7 +43,7 @@ import {
 } from "../_shared/animations";
 import { PADDING, TOP_SAFE, TYPE } from "../_shared/layouts";
 import { GlassCard, GradientBadge, BackgroundGrid } from "../_shared/components";
-import { Icon } from "../_shared/Icon";
+import { Icon, IconName } from "../_shared/Icon";
 
 // ── Data Contract ───────────────────────────────────────────────
 
@@ -293,7 +293,7 @@ const ExecutiveLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
                   transform: `translateX(${slideIn(s, "right", 30)}px)`,
                 }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                    <div style={{ fontSize: 24, flexShrink: 0 }}>{pt.icon}</div>
+                    <Icon name={pt.icon as IconName} size={24} color={theme.accent} />
                     <div>
                       <div style={{
                         fontSize: TYPE.cardTitle,
@@ -465,7 +465,7 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
                 textAlign: "center" as const,
                 padding: "20px 16px",
               }}>
-                <div style={{ fontSize: 28, marginBottom: 8 }}>{pt.icon}</div>
+                <div style={{ marginBottom: 8 }}><Icon name={pt.icon as IconName} size={28} color={theme.accent} /></div>
                 <div style={{
                   fontSize: TYPE.cardTitle,
                   fontWeight: 700,

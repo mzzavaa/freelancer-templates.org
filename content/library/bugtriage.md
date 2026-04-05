@@ -1,6 +1,6 @@
 ---
 title: "Bug Triage"
-description: "Priority columns, triage lists, and sprint bug summary dashboards"
+description: "Present bug priority queues with animated priority columns, triage lists, and sprint summary dashboards. Designed for engineering and QA teams."
 slug: "bugtriage"
 icon: "alert-triangle"
 camel: "BugTriage"
@@ -28,3 +28,18 @@ variants:
     style: "bold"
 layout: library/single
 ---
+
+Use in daily standups and sprint planning to make the bug queue visible quickly.
+
+## Use cases
+
+- Daily standup bug queue reviews
+- Sprint planning priority visualizations
+- QA handoff summaries
+- Release candidate readiness checks
+
+## What you get
+
+- **Priority Columns** - P0/P1/P2/P3 columns with animated card stacks
+- **Triage List** - linear list sorted by severity with status badges
+- **Summary Dashboard** - totals and trend line for the sprint

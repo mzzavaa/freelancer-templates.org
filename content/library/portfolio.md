@@ -1,6 +1,6 @@
 ---
 title: "Portfolio"
-description: "Work showcases, project case studies, and gallery reels"
+description: "Showcase your work with animated project galleries, case study narratives, and showreel sequences. Essential for freelancers, agencies, and creative professionals."
 slug: "portfolio"
 camel: "Portfolio"
 icon: "briefcase"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Reel"
     style: "neon"
 ---
+
+Use in proposals, pitch decks, and on your website. The reel variant is designed for 60-second social showcase cuts.
+
+## Use cases
+
+- Client proposal portfolio sections
+- Website hero reel or case study inserts
+- Job application portfolio highlight reel
+- Agency capability deck video slides
+
+## What you get
+
+- **Gallery** - image grid with staggered entrance animations
+- **Case Study** - problem/solution/result narrative flow
+- **Reel** - fast-cut showcase with overlaid project stats

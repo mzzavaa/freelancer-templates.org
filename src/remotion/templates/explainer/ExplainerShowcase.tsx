@@ -20,6 +20,16 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -99,4 +109,46 @@ export const ExplainerMinimalProcess: React.FC<{ brandKit?: BrandKit }> = ({ bra
 // ── Composition: Neon + Cinematic ───────────────────────────────
 export const ExplainerNeonCinematic: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Explainer spec={SAMPLE_WEB_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="cinematic" bgPattern="hex" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+
+export const ExplainerOceanCinematic: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="cinematic" bgPattern="grid" />
+);
+
+export const ExplainerSunsetProcess: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_WEB_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="process" bgPattern="none" />
+);
+
+export const ExplainerForestProcess: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="process" bgPattern="hex" />
+);
+
+export const ExplainerRoseProcess: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_WEB_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="process" bgPattern="none" />
+);
+
+export const ExplainerGoldCinematic: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="cinematic" bgPattern="hex" />
+);
+
+export const ExplainerMidnightWhiteboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="whiteboard" bgPattern="grid" />
+);
+
+export const ExplainerCrimsonProcess: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_WEB_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="process" bgPattern="none" />
+);
+
+export const ExplainerLavenderWhiteboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="whiteboard" bgPattern="hex" />
+);
+
+export const ExplainerArcticWhiteboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_AI_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="whiteboard" bgPattern="dots" />
+);
+
+export const ExplainerEspressoProcess: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Explainer spec={SAMPLE_WEB_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="process" bgPattern="hex" />
 );

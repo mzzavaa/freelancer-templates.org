@@ -1,6 +1,6 @@
 ---
 title: "Integration Status"
-description: "Status walls, category groups, and health monitor dashboards"
+description: "Show integration health with status wall displays, category group views, and live health monitor dashboards. Essential for platform and DevRel teams."
 slug: "integrationstatus"
 icon: "link-2"
 camel: "IntegrationStatus"
@@ -28,3 +28,18 @@ variants:
     style: "clean"
 layout: library/single
 ---
+
+Use in partner reviews, developer documentation, and platform health communications.
+
+## Use cases
+
+- API partner status dashboard videos
+- Integration catalog showcase content
+- Platform health briefings
+- Developer relations status updates
+
+## What you get
+
+- **Status Wall** - all integrations in a grid with status badges
+- **Category Groups** - integrations organized by category
+- **Health Monitor** - real-time-style health indicators per integration

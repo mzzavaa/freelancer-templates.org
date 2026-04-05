@@ -1,6 +1,6 @@
 ---
 title: "Travel Itinerary"
-description: "Day-by-day reveals, route overviews, and travel highlight animations"
+description: "Present travel plans with animated day-by-day reveals, route overview maps, and highlight sequences. For travel creators, trip planners, and destination marketing."
 slug: "travelitinerary"
 icon: "compass"
 camel: "TravelItinerary"
@@ -28,3 +28,18 @@ variants:
     style: "bold"
 layout: library/single
 ---
+
+Use for trip reveal content, itinerary sharing, and destination promotion.
+
+## Use cases
+
+- Travel vlog trip reveal intros
+- Itinerary sharing content for travel blogs
+- Destination marketing sequences
+- Travel agency client itinerary presentations
+
+## What you get
+
+- **Day by Day** - daily schedule cards with location and activity
+- **Route Overview** - map-style route visualization with stops
+- **Highlights** - top moments from the itinerary as featured cards

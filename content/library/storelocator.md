@@ -1,6 +1,6 @@
 ---
 title: "Store Locator"
-description: "Store finder animations, map pin reveals, and directory listings"
+description: "Help customers find your locations with animated store finder displays, map pin reveals, and directory listings. Built for retail, hospitality, and franchise brands."
 slug: "storelocator"
 icon: "store"
 camel: "StoreLocator"
@@ -28,3 +28,18 @@ variants:
     style: "minimal"
 layout: library/single
 ---
+
+Use for multi-location business communications and local SEO content.
+
+## Use cases
+
+- Store grand opening announcement videos
+- Multi-location brand showcase content
+- Franchise location directory animations
+- Retail expansion announcement reels
+
+## What you get
+
+- **Finder** - search interface with animated result display
+- **Map Pins** - map with animated location pin reveals
+- **Directory** - full location list with key info per store

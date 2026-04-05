@@ -20,6 +20,16 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -117,4 +127,46 @@ export const ProposalMinimalCreative: React.FC<{ brandKit?: BrandKit }> = ({ bra
 // ── Composition: Neon + Pitch ───────────────────────────────────
 export const ProposalNeonPitch: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_NEON, brandKit)} layout="pitch" bgPattern="hex" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+
+export const ProposalOceanExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="executive" bgPattern="grid" />
+);
+
+export const ProposalSunsetCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="creative" bgPattern="none" />
+);
+
+export const ProposalForestExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="executive" bgPattern="hex" />
+);
+
+export const ProposalRoseCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="creative" bgPattern="none" />
+);
+
+export const ProposalGoldExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="executive" bgPattern="hex" />
+);
+
+export const ProposalMidnightExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="executive" bgPattern="grid" />
+);
+
+export const ProposalCrimsonPitch: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="pitch" bgPattern="none" />
+);
+
+export const ProposalLavenderCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="creative" bgPattern="hex" />
+);
+
+export const ProposalArcticCreative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC_DESIGN} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="creative" bgPattern="dots" />
+);
+
+export const ProposalEspressoExecutive: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Proposal spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="executive" bgPattern="hex" />
 );

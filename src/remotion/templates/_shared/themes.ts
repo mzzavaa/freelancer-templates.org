@@ -178,9 +178,220 @@ export const THEME_LINDAMOHAMED: Theme = {
   bodyWeight: 400,
 };
 
+// ── Ocean / Teal Professional ────────────────────────────────────
+// Dark navy bg, teal/aqua accents. Tech-forward, trustworthy, calm.
+// Popular with SaaS builders, cloud consultants, dev-tool freelancers.
+export const THEME_OCEAN: Theme = {
+  name: "ocean",
+  bg: "#050f1a",
+  bgSecondary: "rgba(8,145,178,0.06)",
+  bgGlass: "rgba(8,145,178,0.08)",
+  textPrimary: "#e0f7fa",
+  textSecondary: "#67e8f9",
+  textMuted: "#164e63",
+  accent: "#0891b2",
+  accentSecondary: "#06b6d4",
+  accentGradient: "linear-gradient(135deg, #0891b2, #06b6d4)",
+  cardBorder: "rgba(8,145,178,0.25)",
+  cardShadow: "0 4px 24px rgba(8,145,178,0.15)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Sunset / Vibrant Creative ────────────────────────────────────
+// Warm dark bg, hot pink + orange gradient. Energetic, bold, trendy.
+// Dominant preference for content creators, social media managers, marketers.
+export const THEME_SUNSET: Theme = {
+  name: "sunset",
+  bg: "#1a0a0f",
+  bgSecondary: "rgba(244,114,182,0.06)",
+  bgGlass: "rgba(244,114,182,0.08)",
+  textPrimary: "#fff1f5",
+  textSecondary: "#fda4af",
+  textMuted: "#9f1239",
+  accent: "#f472b6",
+  accentSecondary: "#fb923c",
+  accentGradient: "linear-gradient(135deg, #f472b6, #fb923c)",
+  cardBorder: "rgba(244,114,182,0.25)",
+  cardShadow: "0 4px 24px rgba(244,114,182,0.15)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 800,
+  bodyWeight: 400,
+};
+
+// ── Forest / Nature & Growth ─────────────────────────────────────
+// Very dark green base, emerald/lime accents. Grounded, sustainable.
+// Top color for wellness coaches, eco-consultants, health/fitness brands.
+export const THEME_FOREST: Theme = {
+  name: "forest",
+  bg: "#031a06",
+  bgSecondary: "rgba(22,163,74,0.06)",
+  bgGlass: "rgba(22,163,74,0.08)",
+  textPrimary: "#f0fdf4",
+  textSecondary: "#86efac",
+  textMuted: "#166534",
+  accent: "#16a34a",
+  accentSecondary: "#4ade80",
+  accentGradient: "linear-gradient(135deg, #16a34a, #4ade80)",
+  cardBorder: "rgba(22,163,74,0.25)",
+  cardShadow: "0 4px 24px rgba(22,163,74,0.15)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Rose / Bold Design ───────────────────────────────────────────
+// Deep rose bg, crimson/rose accents. Passionate, design-forward, editorial.
+// #1 preference for graphic designers, fashion, and lifestyle freelancers.
+export const THEME_ROSE: Theme = {
+  name: "rose",
+  bg: "#1a050a",
+  bgSecondary: "rgba(225,29,72,0.06)",
+  bgGlass: "rgba(225,29,72,0.08)",
+  textPrimary: "#fff1f2",
+  textSecondary: "#fda4af",
+  textMuted: "#9f1239",
+  accent: "#e11d48",
+  accentSecondary: "#fb7185",
+  accentGradient: "linear-gradient(135deg, #e11d48, #fb7185)",
+  cardBorder: "rgba(225,29,72,0.25)",
+  cardShadow: "0 4px 24px rgba(225,29,72,0.15)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 800,
+  bodyWeight: 400,
+};
+
+// ── Gold / Premium Consulting ────────────────────────────────────
+// Near-black bg, rich amber/gold accents. Luxe positioning, authority.
+// Preferred by executive coaches, strategy consultants, keynote speakers.
+export const THEME_GOLD: Theme = {
+  name: "gold",
+  bg: "#0a0700",
+  bgSecondary: "rgba(217,119,6,0.07)",
+  bgGlass: "rgba(217,119,6,0.09)",
+  textPrimary: "#fffbeb",
+  textSecondary: "#fcd34d",
+  textMuted: "#92400e",
+  accent: "#d97706",
+  accentSecondary: "#fbbf24",
+  accentGradient: "linear-gradient(135deg, #d97706, #fbbf24)",
+  cardBorder: "rgba(217,119,6,0.3)",
+  cardShadow: "0 4px 24px rgba(217,119,6,0.2)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Midnight / Deep Corporate ────────────────────────────────────
+// Navy base, electric blue accents. B2B, finance, legal, enterprise.
+// Highest trust score in corporate & financial services branding studies.
+export const THEME_MIDNIGHT: Theme = {
+  name: "midnight",
+  bg: "#020817",
+  bgSecondary: "rgba(30,64,175,0.08)",
+  bgGlass: "rgba(30,64,175,0.1)",
+  textPrimary: "#f8fafc",
+  textSecondary: "#93c5fd",
+  textMuted: "#1e3a5f",
+  accent: "#3b82f6",
+  accentSecondary: "#60a5fa",
+  accentGradient: "linear-gradient(135deg, #1e40af, #3b82f6)",
+  cardBorder: "rgba(59,130,246,0.2)",
+  cardShadow: "0 4px 24px rgba(30,64,175,0.25)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Crimson / High Impact ────────────────────────────────────────
+// Very dark red bg, crimson + orange accents. Urgency, power, bold.
+// Highest click-through rates on CTAs and sales-focused content.
+export const THEME_CRIMSON: Theme = {
+  name: "crimson",
+  bg: "#1a0000",
+  bgSecondary: "rgba(220,38,38,0.06)",
+  bgGlass: "rgba(220,38,38,0.08)",
+  textPrimary: "#fff1f2",
+  textSecondary: "#fca5a5",
+  textMuted: "#7f1d1d",
+  accent: "#dc2626",
+  accentSecondary: "#f97316",
+  accentGradient: "linear-gradient(135deg, #dc2626, #f97316)",
+  cardBorder: "rgba(220,38,38,0.25)",
+  cardShadow: "0 8px 32px rgba(220,38,38,0.2)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 900,
+  bodyWeight: 500,
+};
+
+// ── Lavender / Soft Creative ─────────────────────────────────────
+// Deep purple bg, soft violet/pink accents. Creative, calm, spiritual.
+// Preferred by life coaches, wellness practitioners, creative consultants.
+export const THEME_LAVENDER: Theme = {
+  name: "lavender",
+  bg: "#0d0414",
+  bgSecondary: "rgba(167,139,250,0.06)",
+  bgGlass: "rgba(167,139,250,0.08)",
+  textPrimary: "#faf5ff",
+  textSecondary: "#d8b4fe",
+  textMuted: "#581c87",
+  accent: "#a78bfa",
+  accentSecondary: "#f0abfc",
+  accentGradient: "linear-gradient(135deg, #7c3aed, #a78bfa)",
+  cardBorder: "rgba(167,139,250,0.2)",
+  cardShadow: "0 4px 24px rgba(124,58,237,0.2)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Arctic / Ice Clean ───────────────────────────────────────────
+// Crisp light bg, sky blue accents. Precise, cool, minimal-professional.
+// Top preference for SaaS founders, technical writers, minimalist brands.
+export const THEME_ARCTIC: Theme = {
+  name: "arctic",
+  bg: "#f0f9ff",
+  bgSecondary: "#e0f2fe",
+  bgGlass: "rgba(14,165,233,0.08)",
+  textPrimary: "#0c4a6e",
+  textSecondary: "#0369a1",
+  textMuted: "#7dd3fc",
+  accent: "#0ea5e9",
+  accentSecondary: "#38bdf8",
+  accentGradient: "linear-gradient(135deg, #0ea5e9, #38bdf8)",
+  cardBorder: "rgba(14,165,233,0.2)",
+  cardShadow: "0 4px 24px rgba(14,165,233,0.1)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Espresso / Warm Personal Brand ──────────────────────────────
+// Warm dark brown bg, caramel/amber accents. Cozy, personal, approachable.
+// Highest engagement for personal brand coaches, lifestyle & food content.
+export const THEME_ESPRESSO: Theme = {
+  name: "espresso",
+  bg: "#0f0a05",
+  bgSecondary: "rgba(146,64,14,0.08)",
+  bgGlass: "rgba(146,64,14,0.1)",
+  textPrimary: "#fef3c7",
+  textSecondary: "#d97706",
+  textMuted: "#78350f",
+  accent: "#b45309",
+  accentSecondary: "#d97706",
+  accentGradient: "linear-gradient(135deg, #92400e, #d97706)",
+  cardBorder: "rgba(180,83,9,0.3)",
+  cardShadow: "0 4px 24px rgba(146,64,14,0.2)",
+  fontFamily: "'Inter', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
 // ── Theme Registry ──────────────────────────────────────────────
 // Use this to look up themes by name string (useful for AgentCore integration)
 export const THEMES: Record<string, Theme> = {
+  // Original 7 hand-crafted themes
   dark: THEME_DARK,
   clean: THEME_CLEAN,
   bold: THEME_BOLD,
@@ -188,6 +399,17 @@ export const THEMES: Record<string, Theme> = {
   minimal: THEME_MINIMAL,
   neon: THEME_NEON,
   lindamohamed: THEME_LINDAMOHAMED,
+  // 10 additional themes (target-group optimised)
+  ocean:     THEME_OCEAN,
+  sunset:    THEME_SUNSET,
+  forest:    THEME_FOREST,
+  rose:      THEME_ROSE,
+  gold:      THEME_GOLD,
+  midnight:  THEME_MIDNIGHT,
+  crimson:   THEME_CRIMSON,
+  lavender:  THEME_LAVENDER,
+  arctic:    THEME_ARCTIC,
+  espresso:  THEME_ESPRESSO,
 };
 
 // ── Brand Kit ───────────────────────────────────────────────────

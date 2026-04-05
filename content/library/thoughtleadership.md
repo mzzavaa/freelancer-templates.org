@@ -1,6 +1,6 @@
 ---
 title: "Thought Leadership"
-description: "Editorial articles, narrative sequences, and keynote-style presentations"
+description: "Establish expertise with editorial article layouts, narrative sequences, and keynote-style presentations. Designed for executives, consultants, and subject-matter experts."
 slug: "thoughtleadership"
 icon: "book-open"
 camel: "ThoughtLeadership"
@@ -28,3 +28,18 @@ variants:
     style: "clean"
 layout: library/single
 ---
+
+Use for content that builds authority rather than selling - long-form takes, opinion pieces, and industry insights.
+
+## Use cases
+
+- LinkedIn thought leadership video essays
+- Conference talk opener or closer sequences
+- Expert opinion piece video formats
+- Industry trend analysis content
+
+## What you get
+
+- **Editorial** - article-style layout with headline, subhead, and key points
+- **Narrative** - story-driven format with chapter transitions
+- **Keynote** - presentation-style with full-screen statement slides

@@ -1,6 +1,6 @@
 ---
 title: "Testimonial"
-description: "Client quote animations, social proof reels, and review highlights"
+description: "Animate client quotes with smooth entrance reveals, social proof reels, and editorial-style review layouts. Turn text testimonials into video content."
 slug: "testimonial"
 camel: "Testimonial"
 icon: "message-square"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Split"
     style: "neon"
 ---
+
+Use in proposals, on sales pages, and as social proof reels. The neon split variant works well for tech product testimonials; warm centered for service-based businesses.
+
+## Use cases
+
+- Client quote videos for website and proposals
+- Testimonial reel for social media ads
+- Case study quote highlights
+- Review screenshot animations
+
+## What you get
+
+- **Centered** - single quote hero with large typography
+- **Split** - quote + author photo side by side
+- **Editorial** - magazine-style quote card with pull quote formatting

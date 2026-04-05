@@ -1,6 +1,6 @@
 ---
 title: "Sprint Recap"
-description: "Shipped list reveals, highlight cards, and team contribution animations"
+description: "Celebrate sprint completions with shipped item lists, highlight cards, and team contribution animations. End every sprint on a high note."
 slug: "sprintrecap"
 icon: "check-square"
 camel: "SprintRecap"
@@ -28,3 +28,18 @@ variants:
     style: "bold"
 layout: library/single
 ---
+
+Use at the end of every sprint as a mini-celebration for the team and a communication tool for stakeholders.
+
+## Use cases
+
+- End-of-sprint shipped items announcement
+- Sprint review video for async stakeholders
+- Team achievement celebration content
+- Release announcement with completed stories
+
+## What you get
+
+- **Shipped List** - animated checklist of completed items
+- **Highlight Cards** - top 3 achievements with descriptions
+- **Team Contributions** - per-person contribution count and highlights

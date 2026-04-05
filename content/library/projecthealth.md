@@ -1,6 +1,6 @@
 ---
 title: "Project Health"
-description: "Health scorecards, workstream views, and executive summaries"
+description: "Report project health with scorecard animations, workstream views, and executive summary layouts. Turn RAG status into a video your stakeholders will actually read."
 slug: "projecthealth"
 icon: "activity"
 camel: "ProjectHealth"
@@ -28,3 +28,18 @@ variants:
     style: "warm"
 layout: library/single
 ---
+
+Use in project steering committees, executive briefings, and weekly status meetings.
+
+## Use cases
+
+- Weekly project status update videos
+- Steering committee health reviews
+- Executive project portfolio briefings
+- Risk and issue status presentations
+
+## What you get
+
+- **Health Scorecard** - RAG status per workstream with trend indicators
+- **Workstream View** - detailed per-workstream progress breakdown
+- **Executive Summary** - condensed 3-metric summary for leadership

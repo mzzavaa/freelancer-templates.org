@@ -19,19 +19,19 @@ const STD = { fps: 30, width: 1280, height: 720, durationInFrames: 300 } as cons
 
 // ── Imports ──────────────────────────────────────────────────────
 
-import { TestimonialDarkCentered, TestimonialCleanSplit, TestimonialBoldEditorial, TestimonialWarmCentered, TestimonialMinimalEditorial, TestimonialNeonSplit } from "@templates/testimonial/TestimonialShowcase";
-import { RecapDarkDashboard, RecapCleanTimeline, RecapBoldCards, RecapWarmDashboard, RecapMinimalCards, RecapNeonTimeline } from "@templates/recap/RecapShowcase";
+import { TestimonialDarkCentered, TestimonialCleanSplit, TestimonialBoldEditorial, TestimonialWarmCentered, TestimonialMinimalEditorial, TestimonialNeonSplit, TestimonialOceanCentered, TestimonialSunsetSplit, TestimonialForestCentered, TestimonialRoseEditorial, TestimonialGoldCentered, TestimonialMidnightCentered, TestimonialCrimsonEditorial, TestimonialLavenderSplit, TestimonialArcticSplit, TestimonialEspressoCentered } from "@templates/testimonial/TestimonialShowcase";
+import { RecapDarkDashboard, RecapCleanTimeline, RecapBoldCards, RecapWarmDashboard, RecapMinimalCards, RecapNeonTimeline, RecapOceanDashboard, RecapSunsetCards, RecapForestTimeline, RecapRoseCards, RecapGoldDashboard, RecapMidnightDashboard, RecapCrimsonCards, RecapLavenderTimeline, RecapArcticTimeline, RecapEspressoDashboard } from "@templates/recap/RecapShowcase";
 import { EventDarkHero, EventCleanSpeakers, EventBoldCountdown, EventWarmHero, EventMinimalSpeakers, EventNeonCountdown } from "@templates/event/EventShowcase";
-import { ProposalDarkExecutive, ProposalCleanCreative, ProposalBoldPitch, ProposalWarmExecutive, ProposalMinimalCreative, ProposalNeonPitch } from "@templates/proposal/ProposalShowcase";
-import { ExplainerDarkCinematic, ExplainerCleanWhiteboard, ExplainerBoldProcess, ExplainerWarmWhiteboard, ExplainerMinimalProcess, ExplainerNeonCinematic } from "@templates/explainer/ExplainerShowcase";
-import { PortfolioDarkGallery, PortfolioCleanCaseStudy, PortfolioBoldReel, PortfolioWarmGallery, PortfolioMinimalCaseStudy, PortfolioNeonReel } from "@templates/portfolio/PortfolioShowcase";
-import { OnboardingDarkProfessional, OnboardingCleanProfessional, OnboardingBoldCreative, OnboardingWarmFriendly, OnboardingMinimalProfessional, OnboardingNeonCreative } from "@templates/onboarding/OnboardingShowcase";
-import { InvoiceDarkProfessional, InvoiceCleanProfessional, InvoiceBoldUrgent, InvoiceWarmFriendly, InvoiceMinimalProfessional, InvoiceNeonUrgent } from "@templates/invoice/InvoiceShowcase";
-import { SocialProofDarkMilestone, SocialProofCleanAchievement, SocialProofBoldAnnouncement, SocialProofWarmMilestone, SocialProofMinimalAchievement, SocialProofNeonAnnouncement } from "@templates/socialproof/SocialProofShowcase";
-import { CaseStudyDarkNarrative, CaseStudyCleanComparison, CaseStudyBoldSpotlight, CaseStudyWarmNarrative, CaseStudyMinimalComparison, CaseStudyNeonSpotlight } from "@templates/casestudy/CaseStudyShowcase";
+import { ProposalDarkExecutive, ProposalCleanCreative, ProposalBoldPitch, ProposalWarmExecutive, ProposalMinimalCreative, ProposalNeonPitch, ProposalOceanExecutive, ProposalSunsetCreative, ProposalForestExecutive, ProposalRoseCreative, ProposalGoldExecutive, ProposalMidnightExecutive, ProposalCrimsonPitch, ProposalLavenderCreative, ProposalArcticCreative, ProposalEspressoExecutive } from "@templates/proposal/ProposalShowcase";
+import { ExplainerDarkCinematic, ExplainerCleanWhiteboard, ExplainerBoldProcess, ExplainerWarmWhiteboard, ExplainerMinimalProcess, ExplainerNeonCinematic, ExplainerOceanCinematic, ExplainerSunsetProcess, ExplainerForestProcess, ExplainerRoseProcess, ExplainerGoldCinematic, ExplainerMidnightWhiteboard, ExplainerCrimsonProcess, ExplainerLavenderWhiteboard, ExplainerArcticWhiteboard, ExplainerEspressoProcess } from "@templates/explainer/ExplainerShowcase";
+import { PortfolioDarkGallery, PortfolioCleanCaseStudy, PortfolioBoldReel, PortfolioWarmGallery, PortfolioMinimalCaseStudy, PortfolioNeonReel, PortfolioOceanCaseStudy, PortfolioSunsetGallery, PortfolioForestCaseStudy, PortfolioRoseGallery, PortfolioGoldCaseStudy, PortfolioMidnightCaseStudy, PortfolioCrimsonReel, PortfolioLavenderGallery, PortfolioArcticCaseStudy, PortfolioEspressoGallery } from "@templates/portfolio/PortfolioShowcase";
+import { OnboardingDarkProfessional, OnboardingCleanProfessional, OnboardingBoldCreative, OnboardingWarmFriendly, OnboardingMinimalProfessional, OnboardingNeonCreative, OnboardingOceanProfessional, OnboardingSunsetCreative, OnboardingForestProfessional, OnboardingRoseCreative, OnboardingGoldProfessional, OnboardingMidnightProfessional, OnboardingCrimsonCreative, OnboardingLavenderFriendly, OnboardingArcticProfessional, OnboardingEspressoFriendly } from "@templates/onboarding/OnboardingShowcase";
+import { InvoiceDarkProfessional, InvoiceCleanProfessional, InvoiceBoldUrgent, InvoiceWarmFriendly, InvoiceMinimalProfessional, InvoiceNeonUrgent, InvoiceOceanProfessional, InvoiceSunsetFriendly, InvoiceForestProfessional, InvoiceRoseFriendly, InvoiceGoldProfessional, InvoiceMidnightProfessional, InvoiceCrimsonUrgent, InvoiceLavenderFriendly, InvoiceArcticProfessional, InvoiceEspressoFriendly } from "@templates/invoice/InvoiceShowcase";
+import { SocialProofDarkMilestone, SocialProofCleanAchievement, SocialProofBoldAnnouncement, SocialProofWarmMilestone, SocialProofMinimalAchievement, SocialProofNeonAnnouncement, SocialProofOceanAchievement, SocialProofSunsetAnnouncement, SocialProofForestMilestone, SocialProofRoseAnnouncement, SocialProofGoldAchievement, SocialProofMidnightAchievement, SocialProofCrimsonAnnouncement, SocialProofLavenderMilestone, SocialProofArcticAchievement, SocialProofEspressoMilestone } from "@templates/socialproof/SocialProofShowcase";
+import { CaseStudyDarkNarrative, CaseStudyCleanComparison, CaseStudyBoldSpotlight, CaseStudyWarmNarrative, CaseStudyMinimalComparison, CaseStudyNeonSpotlight, CaseStudyOceanNarrative, CaseStudySunsetSpotlight, CaseStudyForestNarrative, CaseStudyRoseSpotlight, CaseStudyGoldNarrative, CaseStudyMidnightNarrative, CaseStudyCrimsonSpotlight, CaseStudyLavenderComparison, CaseStudyArcticComparison, CaseStudyEspressoNarrative } from "@templates/casestudy/CaseStudyShowcase";
 import { PricingDarkTiers, PricingCleanComparison, PricingBoldSpotlight, PricingWarmTiers, PricingMinimalComparison, PricingNeonSpotlight } from "@templates/pricing/PricingShowcase";
 import { FAQDarkAccordion, FAQCleanCards, FAQBoldInterview, FAQWarmAccordion, FAQMinimalCards, FAQNeonInterview } from "@templates/faq/FAQShowcase";
-import { MilestoneDarkCelebration, MilestoneCleanJourney, MilestoneBoldCelebration, MilestoneWarmGratitude, MilestoneMinimalJourney, MilestoneNeonCelebration } from "@templates/milestone/MilestoneShowcase";
+import { MilestoneDarkCelebration, MilestoneCleanJourney, MilestoneBoldCelebration, MilestoneWarmGratitude, MilestoneMinimalJourney, MilestoneNeonCelebration, MilestoneOceanJourney, MilestoneSunsetCelebration, MilestoneForestJourney, MilestoneRoseCelebration, MilestoneGoldGratitude, MilestoneMidnightJourney, MilestoneCrimsonCelebration, MilestoneLavenderJourney, MilestoneArcticJourney, MilestoneEspressoGratitude } from "@templates/milestone/MilestoneShowcase";
 import { ProductLaunchDarkHeroReveal, ProductLaunchBoldHeroReveal, ProductLaunchDarkFeatureGrid, ProductLaunchBoldFeatureGrid, ProductLaunchDarkCountdown, ProductLaunchBoldCountdown } from "@templates/productlaunch/ProductLaunchShowcase";
 import { TutorialDarkNumberedSteps, TutorialCleanNumberedSteps, TutorialDarkCardSequence, TutorialCleanCardSequence, TutorialDarkSplitDemo, TutorialCleanSplitDemo } from "@templates/tutorial/TutorialShowcase";
 import { BeforeAfterDarkSplitScreen, BeforeAfterWarmSplitScreen, BeforeAfterDarkRevealWipe, BeforeAfterWarmRevealWipe, BeforeAfterDarkMetricsCompare, BeforeAfterWarmMetricsCompare } from "@templates/beforeafter/BeforeAfterShowcase";
@@ -138,14 +138,34 @@ export const COMPOSITIONS: CompSpec[] = [
   c("Testimonial-WarmCentered",    TestimonialWarmCentered,    "testimonial"),
   c("Testimonial-MinimalEditorial",TestimonialMinimalEditorial,"testimonial"),
   c("Testimonial-NeonSplit",       TestimonialNeonSplit,       "testimonial"),
+  c("Testimonial-OceanCentered",   TestimonialOceanCentered,   "testimonial"),
+  c("Testimonial-SunsetSplit",     TestimonialSunsetSplit,     "testimonial"),
+  c("Testimonial-ForestCentered",  TestimonialForestCentered,  "testimonial"),
+  c("Testimonial-RoseEditorial",   TestimonialRoseEditorial,   "testimonial"),
+  c("Testimonial-GoldCentered",    TestimonialGoldCentered,    "testimonial"),
+  c("Testimonial-MidnightCentered",TestimonialMidnightCentered,"testimonial"),
+  c("Testimonial-CrimsonEditorial",TestimonialCrimsonEditorial,"testimonial"),
+  c("Testimonial-LavenderSplit",   TestimonialLavenderSplit,   "testimonial"),
+  c("Testimonial-ArcticSplit",     TestimonialArcticSplit,     "testimonial"),
+  c("Testimonial-EspressoCentered",TestimonialEspressoCentered,"testimonial"),
 
   // Recap
-  c("Recap-DarkDashboard",  RecapDarkDashboard,  "recap"),
-  c("Recap-CleanTimeline",  RecapCleanTimeline,  "recap"),
-  c("Recap-BoldCards",      RecapBoldCards,      "recap"),
-  c("Recap-WarmDashboard",  RecapWarmDashboard,  "recap"),
-  c("Recap-MinimalCards",   RecapMinimalCards,   "recap"),
-  c("Recap-NeonTimeline",   RecapNeonTimeline,   "recap"),
+  c("Recap-DarkDashboard",   RecapDarkDashboard,   "recap"),
+  c("Recap-CleanTimeline",   RecapCleanTimeline,   "recap"),
+  c("Recap-BoldCards",       RecapBoldCards,       "recap"),
+  c("Recap-WarmDashboard",   RecapWarmDashboard,   "recap"),
+  c("Recap-MinimalCards",    RecapMinimalCards,    "recap"),
+  c("Recap-NeonTimeline",    RecapNeonTimeline,    "recap"),
+  c("Recap-OceanDashboard",  RecapOceanDashboard,  "recap"),
+  c("Recap-SunsetCards",     RecapSunsetCards,     "recap"),
+  c("Recap-ForestTimeline",  RecapForestTimeline,  "recap"),
+  c("Recap-RoseCards",       RecapRoseCards,       "recap"),
+  c("Recap-GoldDashboard",   RecapGoldDashboard,   "recap"),
+  c("Recap-MidnightDashboard",RecapMidnightDashboard,"recap"),
+  c("Recap-CrimsonCards",    RecapCrimsonCards,    "recap"),
+  c("Recap-LavenderTimeline",RecapLavenderTimeline,"recap"),
+  c("Recap-ArcticTimeline",  RecapArcticTimeline,  "recap"),
+  c("Recap-EspressoDashboard",RecapEspressoDashboard,"recap"),
 
   // Event
   c("Event-DarkHero",       EventDarkHero,       "event"),
@@ -156,60 +176,130 @@ export const COMPOSITIONS: CompSpec[] = [
   c("Event-NeonCountdown",  EventNeonCountdown,  "event"),
 
   // Proposal
-  c("Proposal-DarkExecutive",  ProposalDarkExecutive,  "proposal"),
-  c("Proposal-CleanCreative",  ProposalCleanCreative,  "proposal"),
-  c("Proposal-BoldPitch",      ProposalBoldPitch,      "proposal"),
-  c("Proposal-WarmExecutive",  ProposalWarmExecutive,  "proposal"),
-  c("Proposal-MinimalCreative",ProposalMinimalCreative,"proposal"),
-  c("Proposal-NeonPitch",      ProposalNeonPitch,      "proposal"),
+  c("Proposal-DarkExecutive",   ProposalDarkExecutive,   "proposal"),
+  c("Proposal-CleanCreative",   ProposalCleanCreative,   "proposal"),
+  c("Proposal-BoldPitch",       ProposalBoldPitch,       "proposal"),
+  c("Proposal-WarmExecutive",   ProposalWarmExecutive,   "proposal"),
+  c("Proposal-MinimalCreative", ProposalMinimalCreative, "proposal"),
+  c("Proposal-NeonPitch",       ProposalNeonPitch,       "proposal"),
+  c("Proposal-OceanExecutive",  ProposalOceanExecutive,  "proposal"),
+  c("Proposal-SunsetCreative",  ProposalSunsetCreative,  "proposal"),
+  c("Proposal-ForestExecutive", ProposalForestExecutive, "proposal"),
+  c("Proposal-RoseCreative",    ProposalRoseCreative,    "proposal"),
+  c("Proposal-GoldExecutive",   ProposalGoldExecutive,   "proposal"),
+  c("Proposal-MidnightExecutive",ProposalMidnightExecutive,"proposal"),
+  c("Proposal-CrimsonPitch",    ProposalCrimsonPitch,    "proposal"),
+  c("Proposal-LavenderCreative",ProposalLavenderCreative,"proposal"),
+  c("Proposal-ArcticCreative",  ProposalArcticCreative,  "proposal"),
+  c("Proposal-EspressoExecutive",ProposalEspressoExecutive,"proposal"),
 
   // Explainer
-  c("Explainer-DarkCinematic",  ExplainerDarkCinematic,  "explainer"),
-  c("Explainer-CleanWhiteboard",ExplainerCleanWhiteboard,"explainer"),
-  c("Explainer-BoldProcess",    ExplainerBoldProcess,    "explainer"),
-  c("Explainer-WarmWhiteboard", ExplainerWarmWhiteboard, "explainer"),
-  c("Explainer-MinimalProcess", ExplainerMinimalProcess, "explainer"),
-  c("Explainer-NeonCinematic",  ExplainerNeonCinematic,  "explainer"),
+  c("Explainer-DarkCinematic",    ExplainerDarkCinematic,    "explainer"),
+  c("Explainer-CleanWhiteboard",  ExplainerCleanWhiteboard,  "explainer"),
+  c("Explainer-BoldProcess",      ExplainerBoldProcess,      "explainer"),
+  c("Explainer-WarmWhiteboard",   ExplainerWarmWhiteboard,   "explainer"),
+  c("Explainer-MinimalProcess",   ExplainerMinimalProcess,   "explainer"),
+  c("Explainer-NeonCinematic",    ExplainerNeonCinematic,    "explainer"),
+  c("Explainer-OceanCinematic",   ExplainerOceanCinematic,   "explainer"),
+  c("Explainer-SunsetProcess",    ExplainerSunsetProcess,    "explainer"),
+  c("Explainer-ForestProcess",    ExplainerForestProcess,    "explainer"),
+  c("Explainer-RoseProcess",      ExplainerRoseProcess,      "explainer"),
+  c("Explainer-GoldCinematic",    ExplainerGoldCinematic,    "explainer"),
+  c("Explainer-MidnightWhiteboard",ExplainerMidnightWhiteboard,"explainer"),
+  c("Explainer-CrimsonProcess",   ExplainerCrimsonProcess,   "explainer"),
+  c("Explainer-LavenderWhiteboard",ExplainerLavenderWhiteboard,"explainer"),
+  c("Explainer-ArcticWhiteboard", ExplainerArcticWhiteboard, "explainer"),
+  c("Explainer-EspressoProcess",  ExplainerEspressoProcess,  "explainer"),
 
   // Portfolio
-  c("Portfolio-DarkGallery",     PortfolioDarkGallery,     "portfolio"),
-  c("Portfolio-CleanCaseStudy",  PortfolioCleanCaseStudy,  "portfolio"),
-  c("Portfolio-BoldReel",        PortfolioBoldReel,        "portfolio"),
-  c("Portfolio-WarmGallery",     PortfolioWarmGallery,     "portfolio"),
-  c("Portfolio-MinimalCaseStudy",PortfolioMinimalCaseStudy,"portfolio"),
-  c("Portfolio-NeonReel",        PortfolioNeonReel,        "portfolio"),
+  c("Portfolio-DarkGallery",      PortfolioDarkGallery,      "portfolio"),
+  c("Portfolio-CleanCaseStudy",   PortfolioCleanCaseStudy,   "portfolio"),
+  c("Portfolio-BoldReel",         PortfolioBoldReel,         "portfolio"),
+  c("Portfolio-WarmGallery",      PortfolioWarmGallery,      "portfolio"),
+  c("Portfolio-MinimalCaseStudy", PortfolioMinimalCaseStudy, "portfolio"),
+  c("Portfolio-NeonReel",         PortfolioNeonReel,         "portfolio"),
+  c("Portfolio-OceanCaseStudy",   PortfolioOceanCaseStudy,   "portfolio"),
+  c("Portfolio-SunsetGallery",    PortfolioSunsetGallery,    "portfolio"),
+  c("Portfolio-ForestCaseStudy",  PortfolioForestCaseStudy,  "portfolio"),
+  c("Portfolio-RoseGallery",      PortfolioRoseGallery,      "portfolio"),
+  c("Portfolio-GoldCaseStudy",    PortfolioGoldCaseStudy,    "portfolio"),
+  c("Portfolio-MidnightCaseStudy",PortfolioMidnightCaseStudy,"portfolio"),
+  c("Portfolio-CrimsonReel",      PortfolioCrimsonReel,      "portfolio"),
+  c("Portfolio-LavenderGallery",  PortfolioLavenderGallery,  "portfolio"),
+  c("Portfolio-ArcticCaseStudy",  PortfolioArcticCaseStudy,  "portfolio"),
+  c("Portfolio-EspressoGallery",  PortfolioEspressoGallery,  "portfolio"),
 
   // Onboarding
-  c("Onboarding-DarkProfessional",  OnboardingDarkProfessional,  "onboarding"),
-  c("Onboarding-CleanProfessional", OnboardingCleanProfessional, "onboarding"),
-  c("Onboarding-BoldCreative",      OnboardingBoldCreative,      "onboarding"),
-  c("Onboarding-WarmFriendly",      OnboardingWarmFriendly,      "onboarding"),
+  c("Onboarding-DarkProfessional",   OnboardingDarkProfessional,   "onboarding"),
+  c("Onboarding-CleanProfessional",  OnboardingCleanProfessional,  "onboarding"),
+  c("Onboarding-BoldCreative",       OnboardingBoldCreative,       "onboarding"),
+  c("Onboarding-WarmFriendly",       OnboardingWarmFriendly,       "onboarding"),
   c("Onboarding-MinimalProfessional",OnboardingMinimalProfessional,"onboarding"),
-  c("Onboarding-NeonCreative",      OnboardingNeonCreative,      "onboarding"),
+  c("Onboarding-NeonCreative",       OnboardingNeonCreative,       "onboarding"),
+  c("Onboarding-OceanProfessional",  OnboardingOceanProfessional,  "onboarding"),
+  c("Onboarding-SunsetCreative",     OnboardingSunsetCreative,     "onboarding"),
+  c("Onboarding-ForestProfessional", OnboardingForestProfessional, "onboarding"),
+  c("Onboarding-RoseCreative",       OnboardingRoseCreative,       "onboarding"),
+  c("Onboarding-GoldProfessional",   OnboardingGoldProfessional,   "onboarding"),
+  c("Onboarding-MidnightProfessional",OnboardingMidnightProfessional,"onboarding"),
+  c("Onboarding-CrimsonCreative",    OnboardingCrimsonCreative,    "onboarding"),
+  c("Onboarding-LavenderFriendly",   OnboardingLavenderFriendly,   "onboarding"),
+  c("Onboarding-ArcticProfessional", OnboardingArcticProfessional, "onboarding"),
+  c("Onboarding-EspressoFriendly",   OnboardingEspressoFriendly,   "onboarding"),
 
   // Invoice
-  c("Invoice-DarkProfessional",  InvoiceDarkProfessional,  "invoice"),
-  c("Invoice-CleanProfessional", InvoiceCleanProfessional, "invoice"),
-  c("Invoice-BoldUrgent",        InvoiceBoldUrgent,        "invoice"),
-  c("Invoice-WarmFriendly",      InvoiceWarmFriendly,      "invoice"),
+  c("Invoice-DarkProfessional",   InvoiceDarkProfessional,   "invoice"),
+  c("Invoice-CleanProfessional",  InvoiceCleanProfessional,  "invoice"),
+  c("Invoice-BoldUrgent",         InvoiceBoldUrgent,         "invoice"),
+  c("Invoice-WarmFriendly",       InvoiceWarmFriendly,       "invoice"),
   c("Invoice-MinimalProfessional",InvoiceMinimalProfessional,"invoice"),
-  c("Invoice-NeonUrgent",        InvoiceNeonUrgent,        "invoice"),
+  c("Invoice-NeonUrgent",         InvoiceNeonUrgent,         "invoice"),
+  c("Invoice-OceanProfessional",  InvoiceOceanProfessional,  "invoice"),
+  c("Invoice-SunsetFriendly",     InvoiceSunsetFriendly,     "invoice"),
+  c("Invoice-ForestProfessional", InvoiceForestProfessional, "invoice"),
+  c("Invoice-RoseFriendly",       InvoiceRoseFriendly,       "invoice"),
+  c("Invoice-GoldProfessional",   InvoiceGoldProfessional,   "invoice"),
+  c("Invoice-MidnightProfessional",InvoiceMidnightProfessional,"invoice"),
+  c("Invoice-CrimsonUrgent",      InvoiceCrimsonUrgent,      "invoice"),
+  c("Invoice-LavenderFriendly",   InvoiceLavenderFriendly,   "invoice"),
+  c("Invoice-ArcticProfessional", InvoiceArcticProfessional, "invoice"),
+  c("Invoice-EspressoFriendly",   InvoiceEspressoFriendly,   "invoice"),
 
   // Social Proof
-  c("SocialProof-DarkMilestone",    SocialProofDarkMilestone,    "socialproof"),
-  c("SocialProof-CleanAchievement", SocialProofCleanAchievement, "socialproof"),
-  c("SocialProof-BoldAnnouncement", SocialProofBoldAnnouncement, "socialproof"),
-  c("SocialProof-WarmMilestone",    SocialProofWarmMilestone,    "socialproof"),
+  c("SocialProof-DarkMilestone",     SocialProofDarkMilestone,     "socialproof"),
+  c("SocialProof-CleanAchievement",  SocialProofCleanAchievement,  "socialproof"),
+  c("SocialProof-BoldAnnouncement",  SocialProofBoldAnnouncement,  "socialproof"),
+  c("SocialProof-WarmMilestone",     SocialProofWarmMilestone,     "socialproof"),
   c("SocialProof-MinimalAchievement",SocialProofMinimalAchievement,"socialproof"),
-  c("SocialProof-NeonAnnouncement", SocialProofNeonAnnouncement, "socialproof"),
+  c("SocialProof-NeonAnnouncement",  SocialProofNeonAnnouncement,  "socialproof"),
+  c("SocialProof-OceanAchievement",  SocialProofOceanAchievement,  "socialproof"),
+  c("SocialProof-SunsetAnnouncement",SocialProofSunsetAnnouncement,"socialproof"),
+  c("SocialProof-ForestMilestone",   SocialProofForestMilestone,   "socialproof"),
+  c("SocialProof-RoseAnnouncement",  SocialProofRoseAnnouncement,  "socialproof"),
+  c("SocialProof-GoldAchievement",   SocialProofGoldAchievement,   "socialproof"),
+  c("SocialProof-MidnightAchievement",SocialProofMidnightAchievement,"socialproof"),
+  c("SocialProof-CrimsonAnnouncement",SocialProofCrimsonAnnouncement,"socialproof"),
+  c("SocialProof-LavenderMilestone", SocialProofLavenderMilestone, "socialproof"),
+  c("SocialProof-ArcticAchievement", SocialProofArcticAchievement, "socialproof"),
+  c("SocialProof-EspressoMilestone", SocialProofEspressoMilestone, "socialproof"),
 
   // Case Study
-  c("CaseStudy-DarkNarrative",   CaseStudyDarkNarrative,   "casestudy"),
-  c("CaseStudy-CleanComparison", CaseStudyCleanComparison, "casestudy"),
-  c("CaseStudy-BoldSpotlight",   CaseStudyBoldSpotlight,   "casestudy"),
-  c("CaseStudy-WarmNarrative",   CaseStudyWarmNarrative,   "casestudy"),
+  c("CaseStudy-DarkNarrative",    CaseStudyDarkNarrative,    "casestudy"),
+  c("CaseStudy-CleanComparison",  CaseStudyCleanComparison,  "casestudy"),
+  c("CaseStudy-BoldSpotlight",    CaseStudyBoldSpotlight,    "casestudy"),
+  c("CaseStudy-WarmNarrative",    CaseStudyWarmNarrative,    "casestudy"),
   c("CaseStudy-MinimalComparison",CaseStudyMinimalComparison,"casestudy"),
-  c("CaseStudy-NeonSpotlight",   CaseStudyNeonSpotlight,   "casestudy"),
+  c("CaseStudy-NeonSpotlight",    CaseStudyNeonSpotlight,    "casestudy"),
+  c("CaseStudy-OceanNarrative",   CaseStudyOceanNarrative,   "casestudy"),
+  c("CaseStudy-SunsetSpotlight",  CaseStudySunsetSpotlight,  "casestudy"),
+  c("CaseStudy-ForestNarrative",  CaseStudyForestNarrative,  "casestudy"),
+  c("CaseStudy-RoseSpotlight",    CaseStudyRoseSpotlight,    "casestudy"),
+  c("CaseStudy-GoldNarrative",    CaseStudyGoldNarrative,    "casestudy"),
+  c("CaseStudy-MidnightNarrative",CaseStudyMidnightNarrative,"casestudy"),
+  c("CaseStudy-CrimsonSpotlight", CaseStudyCrimsonSpotlight, "casestudy"),
+  c("CaseStudy-LavenderComparison",CaseStudyLavenderComparison,"casestudy"),
+  c("CaseStudy-ArcticComparison", CaseStudyArcticComparison, "casestudy"),
+  c("CaseStudy-EspressoNarrative",CaseStudyEspressoNarrative,"casestudy"),
 
   // Pricing
   c("Pricing-DarkTiers",      PricingDarkTiers,      "pricing"),
@@ -228,12 +318,22 @@ export const COMPOSITIONS: CompSpec[] = [
   c("FAQ-NeonInterview", FAQNeonInterview, "faq"),
 
   // Milestone
-  c("Milestone-DarkCelebration", MilestoneDarkCelebration, "milestone"),
-  c("Milestone-CleanJourney",    MilestoneCleanJourney,    "milestone"),
-  c("Milestone-BoldCelebration", MilestoneBoldCelebration, "milestone"),
-  c("Milestone-WarmGratitude",   MilestoneWarmGratitude,   "milestone"),
-  c("Milestone-MinimalJourney",  MilestoneMinimalJourney,  "milestone"),
-  c("Milestone-NeonCelebration", MilestoneNeonCelebration, "milestone"),
+  c("Milestone-DarkCelebration",  MilestoneDarkCelebration,  "milestone"),
+  c("Milestone-CleanJourney",     MilestoneCleanJourney,     "milestone"),
+  c("Milestone-BoldCelebration",  MilestoneBoldCelebration,  "milestone"),
+  c("Milestone-WarmGratitude",    MilestoneWarmGratitude,    "milestone"),
+  c("Milestone-MinimalJourney",   MilestoneMinimalJourney,   "milestone"),
+  c("Milestone-NeonCelebration",  MilestoneNeonCelebration,  "milestone"),
+  c("Milestone-OceanJourney",     MilestoneOceanJourney,     "milestone"),
+  c("Milestone-SunsetCelebration",MilestoneSunsetCelebration,"milestone"),
+  c("Milestone-ForestJourney",    MilestoneForestJourney,    "milestone"),
+  c("Milestone-RoseCelebration",  MilestoneRoseCelebration,  "milestone"),
+  c("Milestone-GoldGratitude",    MilestoneGoldGratitude,    "milestone"),
+  c("Milestone-MidnightJourney",  MilestoneMidnightJourney,  "milestone"),
+  c("Milestone-CrimsonCelebration",MilestoneCrimsonCelebration,"milestone"),
+  c("Milestone-LavenderJourney",  MilestoneLavenderJourney,  "milestone"),
+  c("Milestone-ArcticJourney",    MilestoneArcticJourney,    "milestone"),
+  c("Milestone-EspressoGratitude",MilestoneEspressoGratitude,"milestone"),
 
   // Product Launch
   c("ProductLaunch-DarkHeroReveal",  ProductLaunchDarkHeroReveal,  "productlaunch"),

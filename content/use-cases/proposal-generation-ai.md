@@ -19,24 +19,47 @@ An AI-assisted proposal system starts from your deal context - the client's indu
 
 You spend 20 minutes reviewing and personalizing, not 2 hours writing. You send more proposals, win more work, and the quality is consistently high.
 
-## Tools and Templates
+## Video Templates from the Library
 
-<div class="uc-tools">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="presentation"></i></div>
-    <div class="uc-tool__name">Project Proposal Template</div>
-    <div class="uc-tool__desc">Structured proposal template covering approach, deliverables, timeline, and pricing.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="refresh-cw"></i></div>
-    <div class="uc-tool__name">Retainer Proposal Template</div>
-    <div class="uc-tool__desc">Ongoing engagement proposal with scope tiers, monthly deliverables, and terms.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="clipboard-list"></i></div>
-    <div class="uc-tool__name">Project Brief Template</div>
-    <div class="uc-tool__desc">Discovery brief to capture the deal context that feeds your proposal.</div>
-  </a>
+<div class="uc-templates">
+  <div class="uc-template-grid">
+    <a href="/library/proposal/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Proposal-DarkExecutive.png" alt="Project Proposal" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Proposal-DarkExecutive.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Project Proposal</div>
+        <div class="uc-tpl-card__tag">6 variants - dark, clean, bold, warm, minimal, neon</div>
+      </div>
+    </a>
+    <a href="/library/casestudy/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/CaseStudy-DarkNarrative.png" alt="Case Study" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/CaseStudy-DarkNarrative.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Case Study</div>
+        <div class="uc-tpl-card__tag">Narrative, comparison, spotlight layouts</div>
+      </div>
+    </a>
+    <a href="/library/beforeafter/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/BeforeAfter-DarkMetricsCompare.png" alt="Before / After" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/BeforeAfter-DarkMetricsCompare.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Before / After</div>
+        <div class="uc-tpl-card__tag">Results, metrics, transformation reveals</div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <div class="uc-further">
@@ -61,8 +84,8 @@ You spend 20 minutes reviewing and personalizing, not 2 hours writing. You send 
 </div>
 
 <div class="uc-cta">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-    <i data-lucide="github"></i>
-    Browse Proposal Templates on GitHub
+  <a href="/library/proposal/" class="btn btn--primary btn--lg">Browse Proposal Template</a>
+  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+    <i data-lucide="github"></i> View on GitHub
   </a>
 </div>

@@ -1,6 +1,6 @@
 ---
 title: "Listing"
-description: "Feature grids, showcase cards, and comparison lists"
+description: "Showcase features, products, or services in clean grid and list formats with animated card reveals and comparison layouts. Versatile for any catalog or inventory content."
 slug: "listing"
 camel: "Listing"
 icon: "list"
@@ -28,3 +28,18 @@ variants:
     name: "Minimal Comparison"
     style: "minimal"
 ---
+
+Use when you have multiple items to present without a clear hierarchy. The comparison layout doubles as a pricing table for simpler offerings.
+
+## Use cases
+
+- Product feature grid showcases
+- Service package listings
+- App or tool roundup videos
+- "What's included" offer summaries
+
+## What you get
+
+- **Showcase** - hero card grid with animated feature items
+- **Feature Grid** - icon + label grid layout for capability lists
+- **Comparison** - side-by-side format for comparing two options

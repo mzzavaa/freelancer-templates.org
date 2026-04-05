@@ -1,6 +1,6 @@
 ---
 title: "Milestone"
-description: "Goal celebrations, anniversary announcements, and journey recaps"
+description: "Celebrate achievements with animated goal completion reveals, anniversary announcements, and journey recaps. Turn any win into shareable content."
 slug: "milestone"
 camel: "Milestone"
 icon: "star"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Celebration"
     style: "neon"
 ---
+
+Use within 24 hours of hitting a milestone. The gratitude variant works for end-of-year wrap content.
+
+## Use cases
+
+- Subscriber/follower milestone announcements
+- Business anniversary celebrations
+- Revenue or metric milestone reveals
+- Team achievement and award announcements
+
+## What you get
+
+- **Celebration** - confetti-style entrance with large milestone number
+- **Journey** - timeline showing the path from start to milestone
+- **Gratitude** - warm thank-you format crediting the audience

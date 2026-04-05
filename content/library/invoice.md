@@ -1,6 +1,6 @@
 ---
 title: "Invoice"
-description: "Payment reminders, invoice summaries, and billing overviews"
+description: "Visualize payment requests with animated invoice summaries, billing overviews, and payment reminder sequences. Useful for freelancer finance content and client comms."
 slug: "invoice"
 camel: "Invoice"
 icon: "receipt"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Urgent"
     style: "neon"
 ---
+
+Use for finance-themed content marketing or client-facing payment communication. Works well with voiceover for YouTube finance creator content.
+
+## Use cases
+
+- "How I invoice my clients" creator content
+- Payment due reminder social posts
+- Billing summary reels for client recaps
+- Freelancer finance education videos
+
+## What you get
+
+- **Professional** - formal invoice layout with line items and total
+- **Friendly** - warmer tone with payment instructions and thank you
+- **Urgent** - deadline-focused payment reminder with due date callout

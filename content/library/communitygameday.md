@@ -1,6 +1,6 @@
 ---
 title: "Community GameDay Europe"
-description: "Live stream overlays for AWS Community GameDay Europe events - preshow, gameplay, inserts, and closing sequences"
+description: "Live stream overlays for AWS Community GameDay Europe events including preshow countdowns, gameplay displays, leaderboards, and closing ceremonies."
 slug: "communitygameday"
 icon: "users"
 camel: "GameDay"
@@ -115,3 +115,13 @@ variants:
     style: "dark"
 layout: library/single
 ---
+
+Purpose-built for AWS Community GameDay Europe live stream production. Not a general-purpose template.
+
+## Compositions
+
+- Preshow: Countdown, InfoLoop
+- Main event: MainEvent, Gameplay
+- Inserts: HalfTime, FinalCountdown, Leaderboard, ScoresCalculating, and 20+ more
+- Closing: ClosingPreRendered, ClosingWinnersTemplate
+- Marketing: MarketingVideo

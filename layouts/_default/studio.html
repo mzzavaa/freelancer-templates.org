@@ -18,6 +18,109 @@
   </div>
 </section>
 
+<!-- ── Output Showcase ────────────────────────────────────────── -->
+<section class="studio-section studio-section--alt">
+  <div class="container">
+    <h2 class="studio-section__hd">What Remotion renders</h2>
+    <p class="studio-section__sub">Every preview below was generated with a single <code>npx remotion render</code> command. Hover to play.</p>
+
+    <div class="studio-video-grid">
+
+      <div class="studio-video-card">
+        <div class="studio-video-card__media">
+          <img src="{{ "previews/showcase/Testimonial-NeonSplit.png" | relURL }}" alt="Testimonial NeonSplit" class="studio-video-card__img" loading="lazy">
+          <video muted loop playsinline preload="none" class="studio-video-card__vid" style="position:absolute;inset:0;">
+            <source src="{{ "previews/hero/Testimonial-NeonSplit.mp4" | relURL }}" type="video/mp4">
+          </video>
+        </div>
+        <div class="studio-video-card__body">
+          <div class="studio-video-card__name">Testimonial - Neon Split</div>
+          <div class="studio-video-card__cmd">npx remotion render Testimonial-NeonSplit</div>
+        </div>
+      </div>
+
+      <div class="studio-video-card">
+        <div class="studio-video-card__media">
+          <img src="{{ "previews/showcase/Proposal-DarkExecutive.png" | relURL }}" alt="Proposal Dark Executive" class="studio-video-card__img" loading="lazy">
+          <video muted loop playsinline preload="none" class="studio-video-card__vid" style="position:absolute;inset:0;">
+            <source src="{{ "previews/hero/Proposal-DarkExecutive.mp4" | relURL }}" type="video/mp4">
+          </video>
+        </div>
+        <div class="studio-video-card__body">
+          <div class="studio-video-card__name">Proposal - Dark Executive</div>
+          <div class="studio-video-card__cmd">npx remotion render Proposal-DarkExecutive</div>
+        </div>
+      </div>
+
+      <div class="studio-video-card">
+        <div class="studio-video-card__media">
+          <img src="{{ "previews/showcase/Event-NeonCountdown.png" | relURL }}" alt="Event Neon Countdown" class="studio-video-card__img" loading="lazy">
+          <video muted loop playsinline preload="none" class="studio-video-card__vid" style="position:absolute;inset:0;">
+            <source src="{{ "previews/hero/Event-NeonCountdown.mp4" | relURL }}" type="video/mp4">
+          </video>
+        </div>
+        <div class="studio-video-card__body">
+          <div class="studio-video-card__name">Event - Neon Countdown</div>
+          <div class="studio-video-card__cmd">npx remotion render Event-NeonCountdown</div>
+        </div>
+      </div>
+
+      <div class="studio-video-card">
+        <div class="studio-video-card__media">
+          <img src="{{ "previews/showcase/Explainer-DarkCinematic.png" | relURL }}" alt="Explainer Dark Cinematic" class="studio-video-card__img" loading="lazy">
+          <video muted loop playsinline preload="none" class="studio-video-card__vid" style="position:absolute;inset:0;">
+            <source src="{{ "previews/hero/Explainer-DarkCinematic.mp4" | relURL }}" type="video/mp4">
+          </video>
+        </div>
+        <div class="studio-video-card__body">
+          <div class="studio-video-card__name">Explainer - Dark Cinematic</div>
+          <div class="studio-video-card__cmd">npx remotion render Explainer-DarkCinematic</div>
+        </div>
+      </div>
+
+      <div class="studio-video-card">
+        <div class="studio-video-card__media">
+          <img src="{{ "previews/showcase/ProductLaunch-DarkHeroReveal.png" | relURL }}" alt="Product Launch Dark Hero Reveal" class="studio-video-card__img" loading="lazy">
+          <video muted loop playsinline preload="none" class="studio-video-card__vid" style="position:absolute;inset:0;">
+            <source src="{{ "previews/hero/ProductLaunch-DarkHeroReveal.mp4" | relURL }}" type="video/mp4">
+          </video>
+        </div>
+        <div class="studio-video-card__body">
+          <div class="studio-video-card__name">Product Launch - Dark Hero Reveal</div>
+          <div class="studio-video-card__cmd">npx remotion render ProductLaunch-DarkHeroReveal</div>
+        </div>
+      </div>
+
+      <div class="studio-video-card">
+        <div class="studio-video-card__media">
+          <img src="{{ "previews/showcase/Recap-NeonTimeline.png" | relURL }}" alt="Recap Neon Timeline" class="studio-video-card__img" loading="lazy">
+          <video muted loop playsinline preload="none" class="studio-video-card__vid" style="position:absolute;inset:0;">
+            <source src="{{ "previews/hero/Recap-NeonTimeline.mp4" | relURL }}" type="video/mp4">
+          </video>
+        </div>
+        <div class="studio-video-card__body">
+          <div class="studio-video-card__name">Recap - Neon Timeline</div>
+          <div class="studio-video-card__cmd">npx remotion render Recap-NeonTimeline</div>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="margin-top:20px;font-size:14px;color:#64748b;">
+      <a href="{{ "library/" | relURL }}" style="color:#4a90d9;text-decoration:none;font-weight:600;">Browse all {{ range .Site.Data.templates }}{{ end }}compositions in the library</a> to find the template that fits your project.
+    </p>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.studio-video-card').forEach(function(card) {
+  var vid = card.querySelector('video');
+  if (!vid) return;
+  card.addEventListener('mouseenter', function() { vid.play().catch(function(){}); });
+  card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
+});
+</script>
+
 <!-- ── Quick Start ─────────────────────────────────────────────── -->
 <section class="studio-section">
   <div class="container">

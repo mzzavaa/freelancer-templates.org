@@ -1,6 +1,6 @@
 ---
 title: "Neighborhood Guide"
-description: "Area explorer maps, highlights reels, and location overviews"
+description: "Explore neighborhoods with animated area maps, highlight reels, and location overview sequences. Built for real estate, relocation, and local content creators."
 slug: "neighborhoodguide"
 icon: "navigation"
 camel: "NeighborhoodGuide"
@@ -28,3 +28,18 @@ variants:
     style: "neon"
 layout: library/single
 ---
+
+Use for real estate listings, city guides, and local content marketing.
+
+## Use cases
+
+- Neighborhood walkthrough videos for real estate
+- City or area guide content
+- Relocation resource videos
+- Local business directory showcases
+
+## What you get
+
+- **Explorer** - interactive-style map with pin reveals
+- **Highlights Reel** - top spots with animated photo cards
+- **Overview** - neighborhood stats and demographic summary

@@ -1,6 +1,6 @@
 ---
 title: "Recap"
-description: "Project wrap-ups, sprint reviews, and milestone summaries"
+description: "Summarize projects, sprints, and milestones with animated dashboard views, timeline cards, and metrics rollups. Turn any project into a shareable win."
 slug: "recap"
 camel: "Recap"
 icon: "bar-chart"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Timeline"
     style: "neon"
 ---
+
+Use at the end of any defined period - a sprint, a quarter, a launch campaign. The dashboard variant works best for data-heavy recaps.
+
+## Use cases
+
+- Sprint review and demo recordings
+- Quarter-end project summary content
+- Campaign performance recap videos
+- Year-in-review content
+
+## What you get
+
+- **Dashboard** - metrics grid with animated counters and status cards
+- **Timeline** - chronological event flow with milestone markers
+- **Cards** - individual achievement cards with staggered entrance

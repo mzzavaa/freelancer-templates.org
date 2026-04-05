@@ -20,6 +20,16 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -92,4 +102,46 @@ export const InvoiceMinimalProfessional: React.FC<{ brandKit?: BrandKit }> = ({ 
 // ── Composition: Neon + Urgent ──────────────────────────────────
 export const InvoiceNeonUrgent: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Invoice spec={SAMPLE_OVERDUE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="urgent" bgPattern="hex" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+
+export const InvoiceOceanProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="professional" bgPattern="grid" />
+);
+
+export const InvoiceSunsetFriendly: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="friendly" bgPattern="none" />
+);
+
+export const InvoiceForestProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="professional" bgPattern="hex" />
+);
+
+export const InvoiceRoseFriendly: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="friendly" bgPattern="none" />
+);
+
+export const InvoiceGoldProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="professional" bgPattern="hex" />
+);
+
+export const InvoiceMidnightProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="professional" bgPattern="grid" />
+);
+
+export const InvoiceCrimsonUrgent: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_OVERDUE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="urgent" bgPattern="none" />
+);
+
+export const InvoiceLavenderFriendly: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="friendly" bgPattern="hex" />
+);
+
+export const InvoiceArcticProfessional: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="professional" bgPattern="dots" />
+);
+
+export const InvoiceEspressoFriendly: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Invoice spec={SAMPLE_DUE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="friendly" bgPattern="hex" />
 );

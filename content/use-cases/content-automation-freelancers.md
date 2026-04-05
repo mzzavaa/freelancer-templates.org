@@ -19,29 +19,59 @@ One piece of content generates many. A blog post becomes a LinkedIn article, a T
 
 Remotion video templates make social video production programmatic. Feed in your content, render branded clips, publish. No video editor required.
 
-## Tools and Templates
+## Video Templates from the Library
 
-<div class="uc-tools">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="layers"></i></div>
-    <div class="uc-tool__name">Social Story Pack - Remotion</div>
-    <div class="uc-tool__desc">Branded short-form video templates for Instagram, TikTok, and LinkedIn Stories.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="megaphone"></i></div>
-    <div class="uc-tool__name">Product Launch Trailer - Remotion</div>
-    <div class="uc-tool__desc">Announcement video template for service launches, offers, and new projects.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="tv"></i></div>
-    <div class="uc-tool__name">Channel Trailer - Remotion</div>
-    <div class="uc-tool__desc">Professional intro video for your YouTube channel or video portfolio.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="mic"></i></div>
-    <div class="uc-tool__name">Podcast Audiogram - Remotion</div>
-    <div class="uc-tool__desc">Audio waveform video template for podcast clips on social media.</div>
-  </a>
+<div class="uc-templates">
+  <div class="uc-template-grid">
+    <a href="/library/testimonial/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Testimonial-NeonSplit.png" alt="Testimonial" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Testimonial-NeonSplit.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Testimonial</div>
+        <div class="uc-tpl-card__tag">Client quotes, social proof reels</div>
+      </div>
+    </a>
+    <a href="/library/podcastaudiogram/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/PodcastAudiogram-DarkWaveform.png" alt="Podcast Audiogram" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/PodcastAudiogram-DarkWaveform.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Podcast Audiogram</div>
+        <div class="uc-tpl-card__tag">Waveform, quote card, episode promo</div>
+      </div>
+    </a>
+    <a href="/library/productlaunch/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/ProductLaunch-DarkHeroReveal.png" alt="Product Launch" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/ProductLaunch-DarkHeroReveal.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Product Launch</div>
+        <div class="uc-tpl-card__tag">Feature reveal, countdown, hero announcement</div>
+      </div>
+    </a>
+    <a href="/library/socialproof/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/SocialProof-DarkMilestone.png" alt="Social Proof" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/SocialProof-DarkMilestone.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Social Proof</div>
+        <div class="uc-tpl-card__tag">Follower milestones, achievement badges</div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <div class="uc-further">
@@ -66,8 +96,8 @@ Remotion video templates make social video production programmatic. Feed in your
 </div>
 
 <div class="uc-cta">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-    <i data-lucide="github"></i>
-    Browse Remotion Social Templates on GitHub
+  <a href="/library/" class="btn btn--primary btn--lg">Browse Template Library</a>
+  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+    <i data-lucide="github"></i> View on GitHub
   </a>
 </div>

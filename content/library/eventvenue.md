@@ -1,6 +1,6 @@
 ---
 title: "Event Venue"
-description: "Schedule maps, venue cards, and event overview animations"
+description: "Showcase event venues and schedules with animated schedule maps, venue card reveals, and event overview presentations. Perfect for event planners and venue marketing."
 slug: "eventvenue"
 icon: "map-pin"
 camel: "EventVenue"
@@ -28,3 +28,18 @@ variants:
     style: "bold"
 layout: library/single
 ---
+
+Use for venue pitches, event promotion, and schedule communication.
+
+## Use cases
+
+- Venue marketing showcase videos
+- Event schedule announcement content
+- Conference room booking promotions
+- Event day schedule overview
+
+## What you get
+
+- **Schedule Map** - venue floor plan with session location callouts
+- **Venue Cards** - individual room/space cards with capacity info
+- **Event Overview** - full event summary with key highlights

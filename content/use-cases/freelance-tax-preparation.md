@@ -19,24 +19,47 @@ The fix is not a better spreadsheet in March. It is a system that captures data 
 
 Your accountant gets organized, categorized data instead of a shoebox of PDFs. You spend an hour reviewing, not a day reconstructing.
 
-## Tools and Templates
+## Video Templates from the Library
 
-<div class="uc-tools">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="layout-dashboard"></i></div>
-    <div class="uc-tool__name">Notion Freelancer OS</div>
-    <div class="uc-tool__desc">Income and expense tracking built into your project workspace - not a separate spreadsheet.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="receipt"></i></div>
-    <div class="uc-tool__name">Invoice Templates</div>
-    <div class="uc-tool__desc">VAT-ready invoice templates that generate the documentation your accountant needs.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="kanban"></i></div>
-    <div class="uc-tool__name">Project Management Templates</div>
-    <div class="uc-tool__desc">Project trackers with billable hours logging for accurate income documentation.</div>
-  </a>
+<div class="uc-templates">
+  <div class="uc-template-grid">
+    <a href="/library/invoice/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Invoice-DarkProfessional.png" alt="Invoice" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Invoice-DarkProfessional.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Invoice</div>
+        <div class="uc-tpl-card__tag">Professional, urgent, friendly reminders</div>
+      </div>
+    </a>
+    <a href="/library/recap/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Recap-DarkDashboard.png" alt="Project Recap" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Recap-DarkDashboard.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Project Recap</div>
+        <div class="uc-tpl-card__tag">Dashboard, timeline, quarterly summary</div>
+      </div>
+    </a>
+    <a href="/library/milestone/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Milestone-WarmGratitude.png" alt="Milestone" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Milestone-WarmGratitude.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Milestone</div>
+        <div class="uc-tpl-card__tag">Revenue goals, payment celebrations</div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <div class="uc-further">
@@ -61,8 +84,8 @@ Your accountant gets organized, categorized data instead of a shoebox of PDFs. Y
 </div>
 
 <div class="uc-cta">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-    <i data-lucide="github"></i>
-    Browse Templates on GitHub
+  <a href="/library/invoice/" class="btn btn--primary btn--lg">Browse Invoice Template</a>
+  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+    <i data-lucide="github"></i> View on GitHub
   </a>
 </div>

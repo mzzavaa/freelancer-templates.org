@@ -1,6 +1,6 @@
 ---
 title: "Behind The Scenes"
-description: "Process walkthroughs, timeline reveals, and scene documentation"
+description: "Document creative process, team workflow, and production stories with timeline reveals and scene-by-scene cards. Great for building audience trust and showing the work."
 slug: "behindthescenes"
 camel: "BehindTheScenes"
 icon: "camera"
@@ -28,3 +28,18 @@ variants:
     name: "Warm Process Flow"
     style: "warm"
 ---
+
+Use when you want to show the process, not just the result. Works for creators, agencies, and teams who want to humanize their brand.
+
+## Use cases
+
+- Studio or office tour videos
+- How a project was made (film, campaign, product)
+- Team introduction and culture content
+- Client onboarding - "here is how we work"
+
+## What you get
+
+- **Scene Cards** - staggered photo/step cards with captions
+- **Timeline** - chronological process flow with milestones
+- **Process Flow** - step-by-step workflow diagram with icons

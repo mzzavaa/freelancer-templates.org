@@ -1,6 +1,6 @@
 ---
 title: "Sprint Dashboard"
-description: "Kanban boards, velocity charts, and burndown animations"
+description: "Visualize sprint progress with Kanban board animations, velocity charts, and burndown views. Show your team's pace and progress in engineering reviews."
 slug: "sprintdashboard"
 icon: "trello"
 camel: "SprintDashboard"
@@ -28,3 +28,18 @@ variants:
     style: "bold"
 layout: library/single
 ---
+
+Use in sprint reviews, retrospectives, and stakeholder update meetings.
+
+## Use cases
+
+- Sprint review Kanban board presentations
+- Velocity tracking content for team retrospectives
+- Burndown chart animations for planning meetings
+- Engineering capacity utilization reports
+
+## What you get
+
+- **Kanban** - animated To Do / In Progress / Done columns
+- **Velocity** - bar chart of story points delivered per sprint
+- **Burndown** - work remaining line chart with ideal line comparison

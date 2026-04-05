@@ -24,6 +24,16 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -79,4 +89,46 @@ export const TestimonialMinimalEditorial: React.FC<{ brandKit?: BrandKit }> = ({
 // ── Composition: Neon + Split ───────────────────────────────────
 export const TestimonialNeonSplit: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="split" bgPattern="hex" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+
+export const TestimonialOceanCentered: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="centered" bgPattern="grid" />
+);
+
+export const TestimonialSunsetSplit: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="split" bgPattern="none" />
+);
+
+export const TestimonialForestCentered: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="centered" bgPattern="hex" />
+);
+
+export const TestimonialRoseEditorial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC_SHORT} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="editorial" bgPattern="none" />
+);
+
+export const TestimonialGoldCentered: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="centered" bgPattern="hex" />
+);
+
+export const TestimonialMidnightCentered: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="centered" bgPattern="grid" />
+);
+
+export const TestimonialCrimsonEditorial: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC_SHORT} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="editorial" bgPattern="none" />
+);
+
+export const TestimonialLavenderSplit: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="split" bgPattern="hex" />
+);
+
+export const TestimonialArcticSplit: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="split" bgPattern="dots" />
+);
+
+export const TestimonialEspressoCentered: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Testimonial spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="centered" bgPattern="hex" />
 );

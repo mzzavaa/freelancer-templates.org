@@ -20,6 +20,16 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -122,4 +132,46 @@ export const PortfolioMinimalCaseStudy: React.FC<{ brandKit?: BrandKit }> = ({ b
 // ── Composition: Neon + Reel ────────────────────────────────────
 export const PortfolioNeonReel: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_NEON, brandKit)} layout="reel" bgPattern="hex" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+
+export const PortfolioOceanCaseStudy: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="caseStudy" bgPattern="grid" />
+);
+
+export const PortfolioSunsetGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="gallery" bgPattern="none" />
+);
+
+export const PortfolioForestCaseStudy: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="caseStudy" bgPattern="hex" />
+);
+
+export const PortfolioRoseGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="gallery" bgPattern="none" />
+);
+
+export const PortfolioGoldCaseStudy: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="caseStudy" bgPattern="hex" />
+);
+
+export const PortfolioMidnightCaseStudy: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="caseStudy" bgPattern="grid" />
+);
+
+export const PortfolioCrimsonReel: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="reel" bgPattern="none" />
+);
+
+export const PortfolioLavenderGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="gallery" bgPattern="hex" />
+);
+
+export const PortfolioArcticCaseStudy: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_CLOUD_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="caseStudy" bgPattern="dots" />
+);
+
+export const PortfolioEspressoGallery: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <Portfolio spec={SAMPLE_DESIGN_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="gallery" bgPattern="hex" />
 );

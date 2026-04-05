@@ -1,6 +1,6 @@
 ---
 title: "Linda Mohamed Deck"
-description: "Personal presentation deck - AI systems, cloud, collaboration, and consulting slides"
+description: "Personal presentation deck for Linda Mohamed - AI systems, cloud architecture, collaboration workshops, and consulting packages."
 slug: "lindamohamed"
 icon: "user"
 camel: "LindaMohamed"
@@ -82,3 +82,9 @@ variants:
     style: "lindamohamed"
 layout: library/single
 ---
+
+Personal slide deck. Not a general-purpose template.
+
+## Slides
+
+- Cover, About Me, What I Offer, Costs & Packages, Workshops, and more

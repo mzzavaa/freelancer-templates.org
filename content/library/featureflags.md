@@ -1,6 +1,6 @@
 ---
 title: "Feature Flags"
-description: "Experiment boards, results views, and rollout trackers"
+description: "Visualize A/B experiments, feature rollouts, and flag status with experiment board animations, results views, and rollout tracker displays."
 slug: "featureflags"
 icon: "toggle-left"
 camel: "FeatureFlags"
@@ -28,3 +28,18 @@ variants:
     style: "neon"
 layout: library/single
 ---
+
+Use in product review meetings to show experiment outcomes and flag health.
+
+## Use cases
+
+- A/B test results presentations
+- Feature rollout status updates
+- Experiment review board content
+- Product analytics summary videos
+
+## What you get
+
+- **Experiment Board** - active experiments with variant assignments
+- **Results View** - metric comparison between control and variant
+- **Rollout Tracker** - percentage rollout progress with status

@@ -19,24 +19,47 @@ At project close, a case study generates from the project data you already captu
 
 For visual work, a Remotion video case study reel takes the same data and produces a short, shareable video - a project recap that works on LinkedIn, in proposals, and on your portfolio site. You build your portfolio while you work, not instead of it.
 
-## Tools and Templates
+## Video Templates from the Library
 
-<div class="uc-tools">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="film"></i></div>
-    <div class="uc-tool__name">Case Study Reel - Remotion</div>
-    <div class="uc-tool__desc">Programmatic video case study template. Input project data, render a shareable reel.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="play-circle"></i></div>
-    <div class="uc-tool__name">Project Recap Reel - Remotion</div>
-    <div class="uc-tool__desc">Short-form project highlight video for LinkedIn and proposal decks.</div>
-  </a>
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="uc-tool">
-    <div class="uc-tool__icon"><i data-lucide="clipboard-list"></i></div>
-    <div class="uc-tool__name">Project Brief Template</div>
-    <div class="uc-tool__desc">Structured brief that captures case study inputs at project start, not end.</div>
-  </a>
+<div class="uc-templates">
+  <div class="uc-template-grid">
+    <a href="/library/casestudy/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/CaseStudy-DarkNarrative.png" alt="Case Study" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/CaseStudy-DarkNarrative.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Case Study</div>
+        <div class="uc-tpl-card__tag">Narrative, comparison, spotlight layouts</div>
+      </div>
+    </a>
+    <a href="/library/portfolio/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Portfolio-DarkGallery.png" alt="Portfolio" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Portfolio-DarkGallery.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Portfolio</div>
+        <div class="uc-tpl-card__tag">Gallery, case study, showreel</div>
+      </div>
+    </a>
+    <a href="/library/recap/" class="uc-tpl-card">
+      <div class="uc-tpl-card__media">
+        <img src="/previews/showcase/Recap-DarkDashboard.png" alt="Project Recap" loading="lazy" class="uc-tpl-card__img">
+        <video class="uc-tpl-card__vid" muted loop playsinline preload="none">
+          <source src="/previews/hero/Recap-DarkDashboard.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="uc-tpl-card__body">
+        <div class="uc-tpl-card__name">Project Recap</div>
+        <div class="uc-tpl-card__tag">Dashboard, timeline, cards</div>
+      </div>
+    </a>
+  </div>
 </div>
 
 <div class="uc-further">
@@ -61,8 +84,8 @@ For visual work, a Remotion video case study reel takes the same data and produc
 </div>
 
 <div class="uc-cta">
-  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
-    <i data-lucide="github"></i>
-    Browse Remotion Video Templates on GitHub
+  <a href="/library/casestudy/" class="btn btn--primary btn--lg">Browse Case Study Template</a>
+  <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+    <i data-lucide="github"></i> View on GitHub
   </a>
 </div>

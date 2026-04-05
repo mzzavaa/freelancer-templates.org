@@ -1,6 +1,6 @@
 ---
 title: "Explainer"
-description: "Product demos, how-it-works guides, and feature breakdowns"
+description: "Break down complex products, services, and concepts with demo flows, step-by-step guides, and feature breakdown animations. Converts website visitors into buyers."
 slug: "explainer"
 camel: "Explainer"
 icon: "lightbulb"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Cinematic"
     style: "neon"
 ---
+
+Use on landing pages, pitch decks, and onboarding flows. The cleaner themes (Clean, Minimal) work best for B2B; Neon and Dark for developer products.
+
+## Use cases
+
+- SaaS product explainer videos
+- How-it-works sections for landing pages
+- Feature announcement walkthroughs
+- Pitch deck video inserts
+
+## What you get
+
+- **Cinematic** - story-driven flow with dramatic transitions
+- **Whiteboard** - clean step-by-step process on light background
+- **Process** - numbered flow diagram with icon-labeled stages

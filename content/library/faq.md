@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: "Common questions, interview formats, and Q&A breakdowns"
+description: "Address objections and questions with animated Q&A cards, accordion reveals, and interview-style question/answer sequences. Reduces support volume."
 slug: "faq"
 camel: "Faq"
 icon: "help-circle"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Interview"
     style: "neon"
 ---
+
+Use on sales pages to handle objections, or as standalone FAQ content. The interview format works well as a short-form social video.
+
+## Use cases
+
+- Sales page FAQ video embeds
+- Onboarding FAQ sequences for new customers
+- Pre-launch objection handling content
+- Support center video FAQs
+
+## What you get
+
+- **Accordion** - questions that expand and collapse with animation
+- **Cards** - grid of Q&A cards entering with stagger
+- **Interview** - conversational format with question/answer alternation

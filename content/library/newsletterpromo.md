@@ -1,6 +1,6 @@
 ---
 title: "Newsletter Promo"
-description: "Issue previews, subscribe CTAs, and testimonial blends"
+description: "Grow email subscribers with issue preview teasers, subscribe CTA sequences, and social proof blends. Built for newsletter creators and content marketers."
 slug: "newsletterpromo"
 camel: "NewsletterPromo"
 icon: "mail"
@@ -28,3 +28,18 @@ variants:
     name: "Clean Testimonial Blend"
     style: "clean"
 ---
+
+Use for subscriber acquisition content or to promote a specific issue. The testimonial blend variant shows social proof alongside the subscribe CTA.
+
+## Use cases
+
+- Newsletter launch announcement videos
+- Issue preview teasers for social media
+- Subscriber milestone celebration content
+- Email list CTA for YouTube outros
+
+## What you get
+
+- **Subscribe CTA** - urgency-driven subscribe prompt with list size counter
+- **Issue Preview** - headline and excerpt preview from the latest issue
+- **Testimonial Blend** - subscriber quotes alongside subscribe button

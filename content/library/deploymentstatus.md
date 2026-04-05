@@ -1,6 +1,6 @@
 ---
 title: "Deployment Status"
-description: "Environment cards, pipeline views, and health dashboards"
+description: "Show deployment and release status with environment card grids, pipeline views, and health monitor dashboards. Built for DevOps and platform engineering teams."
 slug: "deploymentstatus"
 icon: "rocket"
 camel: "DeploymentStatus"
@@ -28,3 +28,18 @@ variants:
     style: "neon"
 layout: library/single
 ---
+
+Use in deployment reviews, incident briefings, and change advisory board meetings.
+
+## Use cases
+
+- Deployment review status presentations
+- Incident briefing environment health displays
+- Change advisory board release reviews
+- Platform health monitoring content
+
+## What you get
+
+- **Environment Cards** - dev/staging/prod cards with health indicators
+- **Pipeline View** - CI/CD pipeline stages with status icons
+- **Health Dashboard** - service health matrix with uptime metrics

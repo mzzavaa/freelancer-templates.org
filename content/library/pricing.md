@@ -1,6 +1,6 @@
 ---
 title: "Pricing"
-description: "Plan comparisons, tier spotlights, and offer reveals"
+description: "Present pricing tiers with animated plan comparison cards, spotlight callouts, and offer reveal sequences. Designed to reduce pricing page drop-off."
 slug: "pricing"
 camel: "Pricing"
 icon: "tag"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Spotlight"
     style: "neon"
 ---
+
+Use on sales calls as a visual aid, or embed on pricing pages to make plans immediately scannable. The spotlight variant highlights your recommended plan.
+
+## Use cases
+
+- SaaS pricing page video explainer
+- Freelancer rate reveal content
+- Agency proposal pricing section
+- Coaching package offer launches
+
+## What you get
+
+- **Tiers** - side-by-side plan cards with feature checklists
+- **Comparison** - feature-by-feature matrix across all tiers
+- **Spotlight** - single recommended plan hero with CTA badge

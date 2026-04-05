@@ -1,6 +1,6 @@
 ---
 title: "YouTube Tutorial"
-description: "Pipeline explainers, tutorial sequences, and how-it-works"
+description: "Specialized tutorial compositions for pipeline explainers and technical walkthroughs. Pre-configured for the VideoFlow pipeline and AI demo sequences."
 slug: "youtubetuorial"
 camel: "YouTubeTutorial"
 icon: "play-circle"
@@ -16,3 +16,11 @@ variants:
     name: "AI Demo to Enterprise"
     style: "dark"
 ---
+
+Use for long-form YouTube tutorial content with complex technical subject matter.
+
+## Use cases
+
+- Technical pipeline explainer videos
+- AI system demonstration walkthroughs
+- Cloud architecture tutorial content

@@ -54,7 +54,14 @@ function formatCompName(id: string): string {
 
 // ── Main App ──────────────────────────────────────────────────────
 
-const THEME_FILTERS = ["all", "dark", "clean", "bold", "warm", "minimal", "neon"] as const;
+const THEME_FILTERS = [
+  "all",
+  // Original 6
+  "dark", "clean", "bold", "warm", "minimal", "neon",
+  // Extended 10
+  "ocean", "sunset", "forest", "rose", "gold",
+  "midnight", "crimson", "lavender", "arctic", "espresso",
+] as const;
 type ThemeFilter = (typeof THEME_FILTERS)[number];
 
 export const App: React.FC = () => {
@@ -74,7 +81,7 @@ export const App: React.FC = () => {
     playerRef.current?.seekTo(0);
   }, []);
 
-  // Keyboard navigation + theme shortcuts (1-8)
+  // Keyboard navigation + theme shortcuts (1-9 for first 9 filters)
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.target instanceof HTMLInputElement) return;

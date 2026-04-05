@@ -11,6 +11,16 @@ import {
   THEME_WARM,
   THEME_MINIMAL,
   THEME_NEON,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -110,4 +120,46 @@ export const CaseStudyNeonSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ bran
     ],
     testimonialQuote: "We went from deploying once a week to multiple times a day. Game changer.",
   }} theme={applyBrandKit(THEME_NEON, brandKit)} layout="spotlight" />
+);
+
+// ── Extended Themes ──────────────────────────────────────────────
+
+export const CaseStudyOceanNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="narrative" />
+);
+
+export const CaseStudySunsetSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="spotlight" />
+);
+
+export const CaseStudyForestNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="narrative" />
+);
+
+export const CaseStudyRoseSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="spotlight" />
+);
+
+export const CaseStudyGoldNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="narrative" />
+);
+
+export const CaseStudyMidnightNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="narrative" />
+);
+
+export const CaseStudyCrimsonSpotlight: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="spotlight" />
+);
+
+export const CaseStudyLavenderComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="comparison" />
+);
+
+export const CaseStudyArcticComparison: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="comparison" />
+);
+
+export const CaseStudyEspressoNarrative: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <CaseStudy spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="narrative" />
 );

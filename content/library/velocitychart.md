@@ -1,6 +1,6 @@
 ---
 title: "Velocity Chart"
-description: "Bar chart animations, trend lines, and sprint velocity summaries"
+description: "Animate engineering velocity with bar chart sequences, trend line animations, and sprint velocity summary cards. Makes delivery metrics visual and shareable."
 slug: "velocitychart"
 icon: "trending-up"
 camel: "VelocityChart"
@@ -28,3 +28,18 @@ variants:
     style: "clean"
 layout: library/single
 ---
+
+Use to communicate delivery pace to leadership and to celebrate team momentum in retrospectives.
+
+## Use cases
+
+- Engineering velocity trend presentations
+- Sprint delivery comparison content
+- Agile team performance summaries
+- Quarterly delivery trend reports
+
+## What you get
+
+- **Bar Chart** - animated per-sprint story point bars
+- **Trend Line** - smooth trend line overlaid on the chart
+- **Summary** - key velocity metrics (avg, best sprint, trend direction)

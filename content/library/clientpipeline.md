@@ -1,6 +1,6 @@
 ---
 title: "Client Pipeline"
-description: "Sales funnel animations, pipeline boards, and revenue metrics"
+description: "Visualize your sales and client pipeline with funnel animations, pipeline board views, and revenue metrics. Turn CRM data into compelling video."
 slug: "clientpipeline"
 icon: "git-branch"
 camel: "ClientPipeline"
@@ -28,3 +28,18 @@ variants:
     style: "warm"
 layout: library/single
 ---
+
+Use in sales meetings and board presentations to show pipeline health at a glance.
+
+## Use cases
+
+- Sales team pipeline reviews
+- Board deck pipeline health slides
+- Client status update videos
+- Revenue forecasting presentations
+
+## What you get
+
+- **Funnel** - animated conversion funnel from lead to closed
+- **Pipeline Board** - Kanban-style stages with deal cards
+- **Metrics** - revenue and conversion rate dashboard

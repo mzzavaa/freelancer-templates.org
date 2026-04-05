@@ -1,6 +1,6 @@
 ---
 title: "Product Launch"
-description: "Feature reveals, countdown teasers, and launch sequences"
+description: "Launch products with dramatic feature reveals, countdown teasers, and hero announcement sequences. Designed to generate pre-launch buzz and day-of excitement."
 slug: "productlaunch"
 camel: "ProductLaunch"
 icon: "rocket"
@@ -28,3 +28,18 @@ variants:
     name: "Bold Countdown"
     style: "bold"
 ---
+
+Use across a multi-day launch sequence: start with teaser, then countdown, then hero reveal on launch day.
+
+## Use cases
+
+- SaaS product launch day announcements
+- Physical product drop reveals
+- App launch hype reels
+- Feature update announcements
+
+## What you get
+
+- **Hero Reveal** - dramatic full-screen product name reveal
+- **Feature Grid** - animated feature highlight cards
+- **Countdown** - launch date countdown with teaser copy

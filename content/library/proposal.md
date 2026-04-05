@@ -1,6 +1,6 @@
 ---
 title: "Project Proposal"
-description: "Scope walkthroughs, timeline visualizations, and pricing animations"
+description: "Present project proposals with scope walkthroughs, timeline animations, and pricing reveals. Win more clients by making your pitch a visual experience."
 slug: "proposal"
 camel: "Proposal"
 icon: "file-text"
@@ -28,3 +28,18 @@ variants:
     name: "Neon Pitch"
     style: "neon"
 ---
+
+Use in client meetings or send as a video proposal before the call. The executive variant is for enterprise; bold pitch for startup clients.
+
+## Use cases
+
+- Freelance project proposal videos
+- Agency pitch presentations
+- Consulting engagement scope walkthroughs
+- Partnership proposal decks
+
+## What you get
+
+- **Executive** - formal scope and timeline with dark professional aesthetic
+- **Creative** - more visual, energetic pitch format
+- **Pitch** - high-impact, fast-moving pitch with metric highlights
