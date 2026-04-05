@@ -22,8 +22,6 @@ export default defineConfig({
       "@remotion/shapes": path.resolve(__dirname, "node_modules/@remotion/shapes"),
       // Templates live at the repo root, not inside player/
       "@templates": path.resolve(__dirname, "../src/remotion/templates"),
-      // Sims4 AI/tech explainer compositions
-      "@sims4": path.resolve(__dirname, "../src/remotion/Sims4"),
       // Community GameDay stream templates
       "@gameday": path.resolve(__dirname, "../src/remotion/GameDay/src"),
     },

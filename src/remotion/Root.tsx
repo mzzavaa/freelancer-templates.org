@@ -22,6 +22,42 @@ import { Folie1Cover, Folie2AboutMe, Folie3WhatIOffer, Folie4CostsPackages } fro
 import { Folie1CoverV2, Folie2AboutMeV2, Folie3WhatIOfferV2, Folie4CostsPackagesV2, Folie5WorkshopsV2 } from "./templates/lindamohamed/LindaMohamedV2";
 // ── YouTube Tutorial ─────────────────────────────────────────────
 import { VideoFlowPipelineTutorial } from "./templates/youtubetuorial/tutorials/VideoFlowPipeline";
+// ── Community GameDay Europe ──────────────────────────────────────
+import { Countdown } from "./GameDay/src/compositions/00-preshow/Countdown";
+import { InfoLoop } from "./GameDay/src/compositions/00-preshow/InfoLoop";
+import { MainEvent } from "./GameDay/src/compositions/01-main-event/MainEvent";
+import { Gameplay } from "./GameDay/src/compositions/02-gameplay/Gameplay";
+import { ClosingPreRendered } from "./GameDay/src/compositions/03-closing/ClosingPreRendered";
+import { ClosingWinnersTemplate } from "./GameDay/src/compositions/03-closing/ClosingWinnersTemplate";
+import { MarketingVideo } from "./GameDay/src/compositions/marketing/MarketingVideo";
+import { QuestsLive } from "./GameDay/src/compositions/inserts/event-flow/QuestsLive";
+import { HalfTime } from "./GameDay/src/compositions/inserts/event-flow/HalfTime";
+import { FinalCountdown } from "./GameDay/src/compositions/inserts/event-flow/FinalCountdown";
+import { GameExtended } from "./GameDay/src/compositions/inserts/event-flow/GameExtended";
+import { LeaderboardHidden } from "./GameDay/src/compositions/inserts/event-flow/LeaderboardHidden";
+import { ScoresCalculating } from "./GameDay/src/compositions/inserts/event-flow/ScoresCalculating";
+import { BreakAnnouncement } from "./GameDay/src/compositions/inserts/event-flow/BreakAnnouncement";
+import { WelcomeBack } from "./GameDay/src/compositions/inserts/event-flow/WelcomeBack";
+import { FirstCompletion } from "./GameDay/src/compositions/inserts/commentary/FirstCompletion";
+import { CloseRace } from "./GameDay/src/compositions/inserts/commentary/CloseRace";
+import { ComebackAlert } from "./GameDay/src/compositions/inserts/commentary/ComebackAlert";
+import { TopTeams } from "./GameDay/src/compositions/inserts/commentary/TopTeams";
+import { CollectiveMilestone } from "./GameDay/src/compositions/inserts/commentary/CollectiveMilestone";
+import { TeamSpotlight } from "./GameDay/src/compositions/inserts/commentary/TeamSpotlight";
+import { QuestFixed } from "./GameDay/src/compositions/inserts/quest/QuestFixed";
+import { QuestBroken } from "./GameDay/src/compositions/inserts/quest/QuestBroken";
+import { QuestUpdate } from "./GameDay/src/compositions/inserts/quest/QuestUpdate";
+import { QuestHint } from "./GameDay/src/compositions/inserts/quest/QuestHint";
+import { NewQuestAvailable } from "./GameDay/src/compositions/inserts/quest/NewQuestAvailable";
+import { SurveyReminder } from "./GameDay/src/compositions/inserts/quest/SurveyReminder";
+import { StreamInterruption } from "./GameDay/src/compositions/inserts/ops/StreamInterruption";
+import { TechnicalIssue } from "./GameDay/src/compositions/inserts/ops/TechnicalIssue";
+import { Leaderboard } from "./GameDay/src/compositions/inserts/ops/Leaderboard";
+import { ScoreCorrection } from "./GameDay/src/compositions/inserts/ops/ScoreCorrection";
+import { GamemastersUpdate } from "./GameDay/src/compositions/inserts/ops/GamemastersUpdate";
+import { StreamHostUpdate } from "./GameDay/src/compositions/inserts/people/StreamHostUpdate";
+import { LocationShoutout } from "./GameDay/src/compositions/inserts/people/LocationShoutout";
+import { ImportantReminder } from "./GameDay/src/compositions/inserts/people/ImportantReminder";
 
 // ── Testimonial ───────────────────────────────────────────────────
 import { TestimonialDarkCentered, TestimonialCleanSplit, TestimonialBoldEditorial, TestimonialWarmCentered, TestimonialMinimalEditorial, TestimonialNeonSplit } from "./templates/testimonial/TestimonialShowcase";
@@ -731,6 +767,46 @@ export const RemotionRoot: React.FC = () => (
     {/* ── YouTube Tutorial ───────────────────────────────────────── */}
     <Folder name="YouTube-Tutorial">
       <Composition id="YouTubeTutorial-VideoFlowPipeline" component={VideoFlowPipelineTutorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    </Folder>
+
+
+    {/* ── Community GameDay Europe ───────────────────────────────── */}
+    <Folder name="GameDay">
+      <Composition id="GameDay-MarketingVideo"        component={MarketingVideo}        durationInFrames={640}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-Countdown"             component={Countdown}             durationInFrames={18000} fps={FPS} width={W} height={H} defaultProps={{ loopIteration: 0 }} />
+      <Composition id="GameDay-InfoLoop"              component={InfoLoop}              durationInFrames={54000} fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-MainEvent"             component={MainEvent}             durationInFrames={54000} fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-Gameplay"              component={Gameplay}              durationInFrames={216000} fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-ClosingPreRendered"    component={ClosingPreRendered}    durationInFrames={4200}  fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-ClosingWinnersTemplate" component={ClosingWinnersTemplate} durationInFrames={9000} fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-QuestsLive"            component={QuestsLive}            durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-HalfTime"              component={HalfTime}              durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-FinalCountdown"        component={FinalCountdown}        durationInFrames={900}   fps={FPS} width={W} height={H} defaultProps={{ minutesRemaining: 15 }} />
+      <Composition id="GameDay-GameExtended"          component={GameExtended}          durationInFrames={900}   fps={FPS} width={W} height={H} defaultProps={{ extraMinutes: 15 }} />
+      <Composition id="GameDay-LeaderboardHidden"     component={LeaderboardHidden}     durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-ScoresCalculating"     component={ScoresCalculating}     durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-BreakAnnouncement"     component={BreakAnnouncement}     durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-WelcomeBack"           component={WelcomeBack}           durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-FirstCompletion"       component={FirstCompletion}       durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-CloseRace"             component={CloseRace}             durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-ComebackAlert"         component={ComebackAlert}         durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-TopTeams"              component={TopTeams}              durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-CollectiveMilestone"   component={CollectiveMilestone}   durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-TeamSpotlight"         component={TeamSpotlight}         durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-QuestFixed"            component={QuestFixed}            durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-QuestBroken"           component={QuestBroken}           durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-QuestUpdate"           component={QuestUpdate}           durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-QuestHint"             component={QuestHint}             durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-NewQuestAvailable"     component={NewQuestAvailable}     durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-SurveyReminder"        component={SurveyReminder}        durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-StreamInterruption"    component={StreamInterruption}    durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-TechnicalIssue"        component={TechnicalIssue}        durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-Leaderboard"           component={Leaderboard}           durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-ScoreCorrection"       component={ScoreCorrection}       durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-GamemastersUpdate"     component={GamemastersUpdate}     durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-StreamHostUpdate"      component={StreamHostUpdate}      durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-LocationShoutout"      component={LocationShoutout}      durationInFrames={900}   fps={FPS} width={W} height={H} />
+      <Composition id="GameDay-ImportantReminder"     component={ImportantReminder}     durationInFrames={900}   fps={FPS} width={W} height={H} />
     </Folder>
 
   </>

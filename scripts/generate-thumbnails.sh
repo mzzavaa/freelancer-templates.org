@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # generate-thumbnails.sh
-# Renders PNG thumbnails for all (or changed) Remotion compositions.
+# Renders PNG thumbnails and 2-second MP4 hover previews for all (or changed) compositions.
 #
 # Usage:
 #   bash scripts/generate-thumbnails.sh           # render all compositions
@@ -10,20 +10,25 @@
 set -euo pipefail
 
 ENTRY="src/remotion/index.ts"
-OUT_DIR="static/previews/showcase"
-FRAME=60  # frame to snapshot (60 = 2s in at 30fps, content is visible for most compositions)
+PNG_DIR="static/previews/showcase"
+MP4_DIR="static/previews/hero"
+FRAME=60        # still snapshot at frame 60 (2s in at 30fps — content visible)
+MP4_FRAMES="0-59"  # 2-second hover preview clip
 
-mkdir -p "$OUT_DIR"
+mkdir -p "$PNG_DIR" "$MP4_DIR"
 
 # Ensure Chrome is available for Remotion
 npx remotion browser ensure --log=error 2>/dev/null || true
 
 render_comp() {
   local id="$1"
-  local out="$OUT_DIR/${id}.png"
   echo "  rendering: $id"
-  npx remotion still "$ENTRY" "$id" "$out" --frame="$FRAME" --overwrite --log=error 2>&1 | tail -1 || \
-    echo "  WARN: failed to render $id"
+  npx remotion still "$ENTRY" "$id" "$PNG_DIR/${id}.png" \
+    --frame="$FRAME" --overwrite --log=error 2>&1 | tail -1 || \
+    echo "  WARN: still failed for $id"
+  npx remotion render "$ENTRY" "$id" "$MP4_DIR/${id}.mp4" \
+    --frames="$MP4_FRAMES" --codec=h264 --overwrite --log=error 2>&1 | tail -1 || \
+    echo "  WARN: render failed for $id"
 }
 
 # ── Single composition mode ──────────────────────────────────────
@@ -34,20 +39,29 @@ fi
 
 # ── Determine which composition IDs to render ───────────────────
 if [[ "${1:-}" == "--changed" ]]; then
-  # Find template slugs that changed since last commit
-  CHANGED_SLUGS=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | \
+  CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null)
+
+  # Slugs from src/remotion/templates/<slug>/
+  CHANGED_SLUGS=$(echo "$CHANGED_FILES" | \
     grep "^src/remotion/templates/" | \
     sed 's|src/remotion/templates/||' | \
     cut -d/ -f1 | sort -u)
 
-  if [[ -z "$CHANGED_SLUGS" ]]; then
+  # Extra slugs for non-templates source dirs (direct mapping)
+  EXTRA_SLUGS=""
+  echo "$CHANGED_FILES" | grep -q "^src/remotion/GameDay/" && EXTRA_SLUGS="$EXTRA_SLUGS communitygameday"
+
+  ALL_SLUGS=$(printf '%s\n%s\n' "$CHANGED_SLUGS" "$EXTRA_SLUGS" | tr ' ' '\n' | grep -v '^$' | sort -u)
+
+  if [[ -z "$ALL_SLUGS" ]]; then
     echo "No template changes detected. Skipping thumbnail generation."
     exit 0
   fi
 
-  echo "Changed slugs: $CHANGED_SLUGS"
+  echo "Changed slugs: $ALL_SLUGS"
   IDS=()
   while IFS= read -r slug; do
+    [[ -z "$slug" ]] && continue
     # Extract variant IDs from data/templates.json for this slug
     # Pass slug as argv[1] to avoid shell injection
     VARIANT_IDS=$(python3 - "$slug" 2>/dev/null <<'PYEOF'
@@ -64,7 +78,7 @@ PYEOF
     while IFS= read -r id; do
       [[ -n "$id" ]] && IDS+=("$id")
     done <<< "$VARIANT_IDS"
-  done <<< "$CHANGED_SLUGS"
+  done <<< "$ALL_SLUGS"
 else
   # Render ALL compositions from data/templates.json
   echo "Rendering thumbnails for all compositions..."
@@ -83,4 +97,4 @@ for id in "${IDS[@]}"; do
   render_comp "$id"
 done
 
-echo "Done. Thumbnails saved to $OUT_DIR/"
+echo "Done. PNGs → $PNG_DIR/  |  MP4s → $MP4_DIR/"

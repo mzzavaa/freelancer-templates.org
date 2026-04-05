@@ -86,35 +86,6 @@ import {
 } from "@templates/lindamohamed/LindaMohamedV2";
 import { LindaMohamedDeck } from "@templates/lindamohamed/LindaMohamed";
 
-// ── Sims4 AI/Tech Explainer Series ───────────────────────────────
-import { ActionQueueBottleneck } from "@sims4/compositions/ActionQueueBottleneck";
-import { AgentSkillsMemory } from "@sims4/compositions/AgentSkillsMemory";
-import { AnatomyDiagram } from "@sims4/compositions/AnatomyDiagram";
-import { AnatomyDiagramV2 } from "@sims4/compositions/AnatomyDiagramV2";
-import { AnatomyDiagramV3 } from "@sims4/compositions/AnatomyDiagramV3";
-import { AnatomyDiagramV4 } from "@sims4/compositions/AnatomyDiagramV4";
-import { CASPanel } from "@sims4/compositions/CASPanel";
-import { CASStorySequence } from "@sims4/compositions/CASStorySequence";
-import { CodeShowcase } from "@sims4/compositions/CodeShowcase";
-import { CognitiveReasoningOptions } from "@sims4/compositions/CognitiveReasoningOptions";
-import { CrewArchitectureDiagram } from "@sims4/compositions/CrewArchitectureDiagram";
-import { CrewRealWorldExample } from "@sims4/compositions/CrewRealWorldExample";
-import { DelegationFlowDiagram } from "@sims4/compositions/DelegationFlowDiagram";
-import { EventSummary } from "@sims4/compositions/EventSummary";
-import { ImageBackgroundOverlay } from "@sims4/compositions/ImageBackgroundOverlay";
-import { InterAgentCommunication } from "@sims4/compositions/InterAgentCommunication";
-import { LoadingScreenDivider } from "@sims4/compositions/LoadingScreenDivider";
-import { OrchestrationStrategy } from "@sims4/compositions/OrchestrationStrategy";
-import { RAGCycleDiagram } from "@sims4/compositions/RAGCycleDiagram";
-import { RequirementsPopup } from "@sims4/compositions/RequirementsPopup";
-import { Sims4MainMenu } from "@sims4/compositions/Sims4MainMenu";
-import { SimsTheme1TitleAndStartGame } from "@sims4/compositions/SimsTheme1TitleAndStartGame";
-import { SimsTheme1TopicShowcase } from "@sims4/compositions/SimsTheme1TopicShowcase";
-import { SkillsPanelShowcase } from "@sims4/compositions/SkillsPanelShowcase";
-import { SourceMaterial } from "@sims4/compositions/SourceMaterial";
-import { StageIntroduction } from "@sims4/compositions/StageIntroduction";
-import { TitleScreenCinematic } from "@sims4/compositions/TitleScreenCinematic";
-import { ToolsInventoryGrid } from "@sims4/compositions/ToolsInventoryGrid";
 
 // ── Community GameDay Europe Stream Templates ─────────────────────
 import { Countdown } from "@gameday/compositions/00-preshow/Countdown";
@@ -613,36 +584,6 @@ export const COMPOSITIONS: CompSpec[] = [
   c("LindaMohamed-ThankYou",         Folie22ThankYouV2,        "lindamohamed", 150),
   c("LindaMohamed-Deck",             LindaMohamedDeck,         "lindamohamed", 3300),
   c("LindaMohamed-DeckV2",           LindaMohamedDeckV2,       "lindamohamed", 3300),
-
-  // Sims4 AI/Tech Explainer Series
-  c("SimsTheme1-TitleScreenCinematic",    TitleScreenCinematic,    "simstheme1"),
-  c("SimsTheme1-CASPanel",               CASPanel,                "simstheme1"),
-  c("SimsTheme1-Sims4MainMenu",          Sims4MainMenu,           "simstheme1"),
-  c("SimsTheme1-CASStorySequence",       CASStorySequence,        "simstheme1", 1800),
-  c("SimsTheme1-StageIntroduction",      StageIntroduction,       "simstheme1"),
-  c("SimsTheme1-TitleAndStartGame",      SimsTheme1TitleAndStartGame, "simstheme1"),
-  c("SimsTheme1-TopicShowcase",          SimsTheme1TopicShowcase, "simstheme1"),
-  c("SimsTheme1-ImageBackgroundOverlay", ImageBackgroundOverlay,  "simstheme1"),
-  c("SimsTheme1-LoadingScreenDivider",   LoadingScreenDivider,    "simstheme1"),
-  c("SimsTheme1-RequirementsPopup",      RequirementsPopup,       "simstheme1"),
-  c("SimsTheme1-SkillsPanelShowcase",    SkillsPanelShowcase,     "simstheme1"),
-  c("SimsTheme1-ActionQueueBottleneck",  ActionQueueBottleneck,   "simstheme1"),
-  c("SimsTheme1-AnatomyDiagram",         AnatomyDiagram,          "simstheme1"),
-  c("SimsTheme1-AnatomyDiagramV2",       AnatomyDiagramV2,        "simstheme1"),
-  c("SimsTheme1-AnatomyDiagramV3",       AnatomyDiagramV3,        "simstheme1"),
-  c("SimsTheme1-AnatomyDiagramV4",       AnatomyDiagramV4,        "simstheme1"),
-  c("SimsTheme1-CognitiveReasoningOptions", CognitiveReasoningOptions, "simstheme1"),
-  c("SimsTheme1-ToolsInventoryGrid",     ToolsInventoryGrid,      "simstheme1"),
-  c("SimsTheme1-AgentSkillsMemory",      AgentSkillsMemory,       "simstheme1"),
-  c("SimsTheme1-OrchestrationStrategy",  OrchestrationStrategy,   "simstheme1"),
-  c("SimsTheme1-RAGCycleDiagram",        RAGCycleDiagram,         "simstheme1"),
-  c("SimsTheme1-CodeShowcase",           CodeShowcase,            "simstheme1"),
-  c("SimsTheme1-EventSummary",           EventSummary,            "simstheme1"),
-  c("SimsTheme1-SourceMaterial",         SourceMaterial,          "simstheme1"),
-  c("SimsTheme1-CrewArchitectureDiagram",CrewArchitectureDiagram, "simstheme1"),
-  c("SimsTheme1-DelegationFlowDiagram",  DelegationFlowDiagram,   "simstheme1"),
-  c("SimsTheme1-InterAgentCommunication",InterAgentCommunication, "simstheme1"),
-  c("SimsTheme1-CrewRealWorldExample",   CrewRealWorldExample,    "simstheme1"),
 
   // Community GameDay Europe - Main sequences
   c("GameDay-Countdown",            Countdown,            "gameday", 18000),
