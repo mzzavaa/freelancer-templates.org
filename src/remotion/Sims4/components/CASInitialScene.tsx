@@ -11,6 +11,7 @@ import {
 } from 'remotion';
 import { SIMS_COLORS, SIMS_FONTS, SIMS_SIZES } from '../data/simsTheme';
 import { SimsCursor } from './SimsUI';
+import { IconMapper } from './IconMapper';
 import {
   ASPIRATIONS,
   SPRING_CONFIG,
@@ -137,7 +138,7 @@ export const CASInitialScene: React.FC<CASInitialSceneProps> = ({
                 fontSize: 20,
               }}
             >
-              {asp.icon}
+              <IconMapper name={asp.icon} size={20} color="#FFFFFF" />
             </div>
           );
         })}

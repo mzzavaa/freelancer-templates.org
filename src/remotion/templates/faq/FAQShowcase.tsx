@@ -22,7 +22,7 @@ const SAMPLE_SPEC: FAQSpec = {
     {
       question: "What's your typical turnaround time?",
       answer: "Most projects are delivered within 2–4 weeks depending on scope. Rush delivery is available for an additional fee.",
-      icon: "⏱️",
+      icon: "clock",
     },
     {
       question: "Do you offer revisions?",

@@ -32,12 +32,12 @@ export interface SceneTiming {
 // ── Data Arrays ─────────────────────────────────────────────
 
 export const TRAITS: TraitData[] = [
-  { icon: '🎨', label: 'Creative', category: 'Emotional' },
-  { icon: '💪', label: 'Ambitious', category: 'Social' },
-  { icon: '📚', label: 'Bookworm', category: 'Lifestyle' },
-  { icon: '🎵', label: 'Music Lover', category: 'Lifestyle' },
-  { icon: '💻', label: 'Tech Savvy', category: 'Social' },
-  { icon: '🌟', label: 'Self-Assured', category: 'Emotional' },
+  { icon: 'palette', label: 'Creative', category: 'Emotional' },
+  { icon: 'trophy', label: 'Ambitious', category: 'Social' },
+  { icon: 'book-open', label: 'Bookworm', category: 'Lifestyle' },
+  { icon: 'music', label: 'Music Lover', category: 'Lifestyle' },
+  { icon: 'laptop', label: 'Tech Savvy', category: 'Social' },
+  { icon: 'star', label: 'Self-Assured', category: 'Emotional' },
 ];
 
 export const SCENARIOS: ScenarioData[] = [
@@ -65,11 +65,11 @@ export const SCENARIOS: ScenarioData[] = [
 ];
 
 export const ASPIRATIONS: AspirationData[] = [
-  { icon: '🏠', label: 'Family' },
-  { icon: '💰', label: 'Fortune' },
-  { icon: '🎨', label: 'Creativity' },
-  { icon: '❤️', label: 'Romance' },
-  { icon: '🧠', label: 'Knowledge' },
+  { icon: 'home', label: 'Family' },
+  { icon: 'coins', label: 'Fortune' },
+  { icon: 'palette', label: 'Creativity' },
+  { icon: 'heart', label: 'Romance' },
+  { icon: 'brain', label: 'Knowledge' },
 ];
 
 // ── Animation Constants ─────────────────────────────────────

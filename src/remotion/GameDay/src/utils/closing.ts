@@ -85,22 +85,22 @@ export interface TeamData {
 // Update these with real winner data before rendering ClosingWinnersTemplate.
 // See TEMPLATE.md for instructions.
 export const PODIUM_TEAMS: TeamData[] = [
-  { name: "Team #1", flag: "🏳️", city: "City A", country: "Country A", score: 4850, logoUrl: null },
-  { name: "Team #2", flag: "🏳️", city: "City B", country: "Country B", score: 4720, logoUrl: null },
-  { name: "Team #3", flag: "🏳️", city: "City C", country: "Country C", score: 4580, logoUrl: null },
-  { name: "Team #4", flag: "🏳️", city: "City D", country: "Country D", score: 4410, logoUrl: null },
-  { name: "Team #5", flag: "🏳️", city: "City E", country: "Country E", score: 4250, logoUrl: null },
-  { name: "Team #6", flag: "🏳️", city: "City F", country: "Country F", score: 4090, logoUrl: null },
+  { name: "Team #1", flag: "[FLAG]", city: "City A", country: "Country A", score: 4850, logoUrl: null },
+  { name: "Team #2", flag: "[FLAG]", city: "City B", country: "Country B", score: 4720, logoUrl: null },
+  { name: "Team #3", flag: "[FLAG]", city: "City C", country: "Country C", score: 4580, logoUrl: null },
+  { name: "Team #4", flag: "[FLAG]", city: "City D", country: "Country D", score: 4410, logoUrl: null },
+  { name: "Team #5", flag: "[FLAG]", city: "City E", country: "Country E", score: 4250, logoUrl: null },
+  { name: "Team #6", flag: "[FLAG]", city: "City F", country: "Country F", score: 4090, logoUrl: null },
 ];
 
 // ── Winning City Teams (Top 6 teams from winning city, descending scores) ──
 export const WINNING_CITY_TEAMS: TeamData[] = [
-  { name: "Team #1", flag: "🏳️", city: "City A", country: "Country A", score: 17320, logoUrl: null },
-  { name: "Team #2", flag: "🏳️", city: "City A", country: "Country A", score: 16890, logoUrl: null },
-  { name: "Team #3", flag: "🏳️", city: "City A", country: "Country A", score: 15740, logoUrl: null },
-  { name: "Team #4", flag: "🏳️", city: "City A", country: "Country A", score: 14200, logoUrl: null },
-  { name: "Team #5", flag: "🏳️", city: "City A", country: "Country A", score: 13650, logoUrl: null },
-  { name: "Team #6", flag: "🏳️", city: "City A", country: "Country A", score: 12980, logoUrl: null },
+  { name: "Team #1", flag: "[FLAG]", city: "City A", country: "Country A", score: 17320, logoUrl: null },
+  { name: "Team #2", flag: "[FLAG]", city: "City A", country: "Country A", score: 16890, logoUrl: null },
+  { name: "Team #3", flag: "[FLAG]", city: "City A", country: "Country A", score: 15740, logoUrl: null },
+  { name: "Team #4", flag: "[FLAG]", city: "City A", country: "Country A", score: 14200, logoUrl: null },
+  { name: "Team #5", flag: "[FLAG]", city: "City A", country: "Country A", score: 13650, logoUrl: null },
+  { name: "Team #6", flag: "[FLAG]", city: "City A", country: "Country A", score: 12980, logoUrl: null },
 ];
 
 // ── Pure Utility Functions ──

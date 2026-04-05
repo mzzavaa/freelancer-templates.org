@@ -12,6 +12,7 @@ import {
 import { SIMS_COLORS, SIMS_FONTS, SIMS_SIZES } from '../data/simsTheme';
 import { SimsPanel } from './SimsUI';
 import { AvatarImage } from './AvatarImage';
+import { IconMapper } from './IconMapper';
 import {
   TRAITS,
   SPRING_CONFIG,
@@ -150,7 +151,7 @@ export const TraitSelectionScene: React.FC<TraitSelectionSceneProps> = ({
                         }}
                       />
                     )}
-                    {trait.icon}
+                    <IconMapper name={trait.icon} size={28} color="#FFFFFF" />
                   </div>
                   {/* Label */}
                   <span
@@ -226,7 +227,7 @@ export const TraitSelectionScene: React.FC<TraitSelectionSceneProps> = ({
                     transform: `translateX(${slideIn}px)`,
                   }}
                 >
-                  <span style={{ fontSize: 20 }}>{trait.icon}</span>
+                  <IconMapper name={trait.icon} size={20} color="#FFFFFF" />
                   <span
                     style={{
                       fontFamily: SIMS_FONTS.body,

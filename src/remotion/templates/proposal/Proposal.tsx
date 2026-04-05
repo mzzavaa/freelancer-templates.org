@@ -43,6 +43,7 @@ import {
 } from "../_shared/animations";
 import { PADDING, TOP_SAFE, TYPE } from "../_shared/layouts";
 import { GlassCard, GradientBadge, BackgroundGrid } from "../_shared/components";
+import { Icon } from "../_shared/Icon";
 
 // ── Data Contract ───────────────────────────────────────────────
 
@@ -326,7 +327,7 @@ const ExecutiveLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
             transform: `translateY(${slideIn(detailS, "down", 20)}px)`,
           }}>
             <GlassCard theme={theme} style={{ flex: 1, padding: "12px 16px" }}>
-              <div style={{ fontSize: TYPE.caption, color: theme.textMuted, marginBottom: 4 }}>⏱ Timeline</div>
+              <div style={{ fontSize: TYPE.caption, color: theme.textMuted, marginBottom: 4 }}><Icon name="clock" size={14} color={theme.textMuted} /> Timeline</div>
               <div style={{ fontSize: TYPE.body, fontWeight: 600, color: theme.textPrimary }}>{spec.timeline}</div>
             </GlassCard>
             <GlassCard theme={theme} style={{ flex: 1, padding: "12px 16px" }}>
@@ -499,8 +500,11 @@ const CreativeLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
           <div style={{
             fontSize: TYPE.body,
             color: theme.textSecondary,
+            display: "flex",
+            alignItems: "center",
+            gap: 4,
           }}>
-            ⏱ {spec.timeline}
+            <Icon name="clock" size={16} color={theme.textSecondary} /> {spec.timeline}
           </div>
           <div style={{
             width: 1,

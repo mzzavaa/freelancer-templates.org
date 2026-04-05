@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#avatarBg)"/>
+  <circle cx="100" cy="75" r="32" fill="#e0e7ff"/>
+  <path d="M100 115 C60 115 35 145 35 175 L35 200 L165 200 L165 175 C165 145 140 115 100 115" fill="#e0e7ff"/>
+</svg>

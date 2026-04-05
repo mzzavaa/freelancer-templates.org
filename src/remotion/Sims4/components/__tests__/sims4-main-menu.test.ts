@@ -31,9 +31,9 @@ const PARTICLE_COUNT = 15;
 const MIN_PARTICLE_COUNT = 12;
 
 const PROMO_CARDS = [
-  { icon: '🎮', title: 'New Expansion', description: 'Enterprise AI Pack now available' },
-  { icon: '🏠', title: 'Build Challenge', description: 'Design your dream workspace' },
-  { icon: '⭐', title: 'Community Pick', description: 'Top-rated automation templates' },
+  { icon: 'gamepad-2', title: 'New Expansion', description: 'Enterprise AI Pack now available' },
+  { icon: 'home', title: 'Build Challenge', description: 'Design your dream workspace' },
+  { icon: 'star', title: 'Community Pick', description: 'Top-rated automation templates' },
 ];
 
 const DEFAULT_CHARACTER_NAME = 'Linda Mohamed';

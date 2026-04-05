@@ -43,6 +43,7 @@ import {
   SplitScreen,
   CaptionItem,
 } from "../_shared/components";
+import { Icon } from "../_shared/Icon";
 
 // ── Data Contract ───────────────────────────────────────────────
 export interface TutorialSpec {
@@ -306,8 +307,11 @@ const CardSequenceLayout: React.FC<{
                   <div style={{
                     fontSize: TYPE.caption, color: theme.textMuted,
                     marginTop: 8,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 4,
                   }}>
-                    ⏱ {step.duration_estimate}
+                    <Icon name="clock" size={12} color={theme.textMuted} /> {step.duration_estimate}
                   </div>
                 )}
               </GlassCard>
@@ -397,8 +401,11 @@ const SplitDemoLayout: React.FC<{
                 <div style={{
                   marginLeft: 44, fontSize: TYPE.caption,
                   color: theme.textMuted, marginTop: 2,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 4,
                 }}>
-                  ⏱ {step.duration_estimate}
+                  <Icon name="clock" size={12} color={theme.textMuted} /> {step.duration_estimate}
                 </div>
               )}
             </div>

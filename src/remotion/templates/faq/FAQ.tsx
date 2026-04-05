@@ -21,6 +21,7 @@ import {
   GradientBadge, GlassCard, BackgroundGrid,
   PADDING, TOP_SAFE, TYPE,
 } from "../_shared";
+import { Icon, IconName } from "../_shared/Icon";
 
 // ── Types ───────────────────────────────────────────────────────
 
@@ -117,7 +118,7 @@ const AccordionLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
                   fontSize: 24, fontWeight: theme.headingWeight,
                   color: theme.accent, flexShrink: 0,
                 }}>
-                  {item.icon || "Q"}
+                  {item.icon ? <Icon name={item.icon as IconName} size={24} color={theme.accent} /> : "Q"}
                 </span>
                 <span style={{ fontSize: TYPE.cardTitle + 1, fontWeight: 600, color: theme.textPrimary }}>
                   {item.question}
@@ -179,7 +180,7 @@ const CardsLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
             }}>
               {/* Icon + Question */}
               <div style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 10 }}>
-                <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon || "?"}</span>
+                <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon ? <Icon name={item.icon as IconName} size={24} color={theme.textPrimary} /> : "?"}</span>
                 <span style={{ fontSize: TYPE.cardTitle, fontWeight: 700, color: theme.textPrimary, lineHeight: 1.3 }}>
                   {item.question}
                 </span>
@@ -249,7 +250,7 @@ const InterviewLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
                 display: "flex", alignItems: "center", gap: 10,
                 transform: `translateX(${slideIn(qS, "left", 30)}px)`,
               }}>
-                <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon || "?"}</span>
+                <span style={{ fontSize: 24, flexShrink: 0 }}>{item.icon ? <Icon name={item.icon as IconName} size={24} color="#ffffff" /> : "?"}</span>
                 <span style={{ fontSize: TYPE.cardTitle, fontWeight: 700, color: "#ffffff", lineHeight: 1.3 }}>
                   {item.question}
                 </span>
