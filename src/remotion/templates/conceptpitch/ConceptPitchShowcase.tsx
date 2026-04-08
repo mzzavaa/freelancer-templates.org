@@ -11,6 +11,16 @@ import type { ConceptPitchSpec } from "./ConceptPitch";
 import {
   THEME_DARK,
   THEME_BOLD,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";

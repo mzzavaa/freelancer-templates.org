@@ -4,8 +4,18 @@
 import React from "react";
 import { RecipeStep } from "./RecipeStep";
 import {
-  THEME_WARM,
   THEME_CLEAN,
+  THEME_WARM,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";

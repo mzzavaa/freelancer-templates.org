@@ -11,6 +11,16 @@ import type { ThoughtLeadershipSpec } from "./ThoughtLeadership";
 import {
   THEME_DARK,
   THEME_CLEAN,
+  THEME_OCEAN,
+  THEME_SUNSET,
+  THEME_FOREST,
+  THEME_ROSE,
+  THEME_GOLD,
+  THEME_MIDNIGHT,
+  THEME_CRIMSON,
+  THEME_LAVENDER,
+  THEME_ARCTIC,
+  THEME_ESPRESSO,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";

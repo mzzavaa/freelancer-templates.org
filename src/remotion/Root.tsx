@@ -435,22 +435,22 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
 
     <Folder name="Event-Venue">
-      <Composition id="Event-Venue-ScheduleMapDark" component={EventVenueScheduleMapDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-ScheduleMapBold" component={EventVenueScheduleMapBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-VenueCardsDark" component={EventVenueVenueCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-VenueCardsBold" component={EventVenueVenueCardsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-EventOverviewDark" component={EventVenueEventOverviewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-EventOverviewBold" component={EventVenueEventOverviewBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-OceanScheduleMap" component={EventVenueOceanScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-SunsetScheduleMap" component={EventVenueSunsetScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-ForestVenueCards" component={EventVenueForestVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-RoseVenueCards" component={EventVenueRoseVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-GoldEventOverview" component={EventVenueGoldEventOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-MidnightEventOverview" component={EventVenueMidnightEventOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-CrimsonScheduleMap" component={EventVenueCrimsonScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-LavenderScheduleMap" component={EventVenueLavenderScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-ArcticVenueCards" component={EventVenueArcticVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
-      <Composition id="Event-Venue-EspressoVenueCards" component={EventVenueEspressoVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-ScheduleMapDark" component={EventVenueScheduleMapDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-ScheduleMapBold" component={EventVenueScheduleMapBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-VenueCardsDark" component={EventVenueVenueCardsDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-VenueCardsBold" component={EventVenueVenueCardsBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-EventOverviewDark" component={EventVenueEventOverviewDark} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-EventOverviewBold" component={EventVenueEventOverviewBold} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-OceanScheduleMap" component={EventVenueOceanScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-SunsetScheduleMap" component={EventVenueSunsetScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-ForestVenueCards" component={EventVenueForestVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-RoseVenueCards" component={EventVenueRoseVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-GoldEventOverview" component={EventVenueGoldEventOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-MidnightEventOverview" component={EventVenueMidnightEventOverview} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-CrimsonScheduleMap" component={EventVenueCrimsonScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-LavenderScheduleMap" component={EventVenueLavenderScheduleMap} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-ArcticVenueCards" component={EventVenueArcticVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="EventVenue-EspressoVenueCards" component={EventVenueEspressoVenueCards} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Explainer">
