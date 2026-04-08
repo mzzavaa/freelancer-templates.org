@@ -24,8 +24,6 @@ export default defineConfig({
       "@templates": path.resolve(__dirname, "../src/remotion/templates"),
       // Community GameDay stream templates
       "@gameday": path.resolve(__dirname, "../src/remotion/GameDay/src"),
-      // NetApp video overlay project
-      "@netapp": path.resolve("/Users/lindamohamed/Documents/01_WORK/LINDA MOHAMED/03_Projects/Claude Project Space/Linda's Projects/netapp-video-overlay/src"),
     },
   },
 });

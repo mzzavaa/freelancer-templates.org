@@ -87,18 +87,6 @@ import {
 import { LindaMohamedDeck } from "@templates/lindamohamed/LindaMohamed";
 
 
-// ── NetApp Video Overlay Compositions ────────────────────────────
-import { NetAppDemo } from "@netapp/NetAppDemo";
-import { VideoAutomationPipeline } from "@netapp/VideoAutomationPipeline";
-import { NetAppExplainerV2 } from "@netapp/NetAppExplainerV2";
-import { NetAppExplainerV3 } from "@netapp/NetAppExplainerV3";
-import { NetAppSimsExplainer } from "@netapp/NetAppSimsExplainer";
-import { NetAppConferenceTravels } from "@netapp/NetAppConferenceTravels";
-import { NetAppDemoShorts } from "@netapp/NetAppDemoShorts";
-import { AIDemoToEnterprise as AIDemoToEnterpriseNetApp } from "@netapp/AIDemoToEnterprise";
-import { PipelineArchitectureDiagram } from "@netapp/PipelineArchitectureDiagram";
-import { PipelineArchitectureDiagramLight } from "@netapp/PipelineArchitectureDiagramLight";
-
 // ── Community GameDay Europe Stream Templates ─────────────────────
 import { Countdown } from "@gameday/compositions/00-preshow/Countdown";
 import { InfoLoop } from "@gameday/compositions/00-preshow/InfoLoop";
@@ -1173,17 +1161,6 @@ export const COMPOSITIONS: CompSpec[] = [
   c("GameDay-LocationShoutout",     LocationShoutout,     "gameday", 900),
   c("GameDay-ImportantReminder",    ImportantReminder,    "gameday", 900),
 
-  // NetApp Video Overlay — long-form AI video production showcase (1920×1080, portrait for Shorts)
-  cFHD("NetApp-DemoArchive",             NetAppDemo,                    "netapp", 4450),
-  cFHD("NetApp-VideoAutomationPipeline", VideoAutomationPipeline,       "netapp", 5460),
-  cFHD("NetApp-ExplainerV2",            NetAppExplainerV2,             "netapp", 25260),
-  cFHD("NetApp-ExplainerV3",            NetAppExplainerV3,             "netapp", 18000),
-  cFHD("NetApp-SimsExplainer",          NetAppSimsExplainer,           "netapp", 16200),
-  cFHD("NetApp-ConferenceTravels",      NetAppConferenceTravels,       "netapp", 18850),
-  cShort("NetApp-DemoShorts",           NetAppDemoShorts,              "netapp", 2700),
-  cFHD("NetApp-AIDemoToEnterprise",     AIDemoToEnterpriseNetApp,      "netapp", 16100),
-  cFHD("NetApp-PipelineDiagramDark",    PipelineArchitectureDiagram,   "netapp", 1),
-  cFHD("NetApp-PipelineDiagramLight",   PipelineArchitectureDiagramLight, "netapp", 1),
 ];
 
 // ── Derived counts (auto-computed from registry) ─────────────────
