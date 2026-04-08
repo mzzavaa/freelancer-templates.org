@@ -40,8 +40,10 @@ jobs:
 
       - name: Resolve composition IDs
         id: ids
+        env:
+          RENDER_MODE: ${{ inputs.mode }}
         run: |
-          if [[ "${{ inputs.mode }}" == "all" ]]; then
+          if [[ "$RENDER_MODE" == "all" ]]; then
             IDS=$(python3 -c "
           import json
           with open('data/templates.json') as f:
@@ -52,25 +54,37 @@ jobs:
           ")
           else
             IDS=$(python3 - <<'PYEOF'
-          import json, subprocess
+          import json, subprocess, os
           changed = subprocess.run(
             ['git', 'diff', '--name-only', 'HEAD~1', 'HEAD'],
             capture_output=True, text=True
           ).stdout.splitlines()
+          root_or_json_changed = any(
+            f in ('src/remotion/Root.tsx', 'data/templates.json')
+            for f in changed
+          )
           slugs = set()
           for f in changed:
             if f.startswith('src/remotion/templates/'):
               slugs.add(f.removeprefix('src/remotion/templates/').split('/')[0])
             if f.startswith('src/remotion/GameDay/'):
               slugs.add('communitygameday')
-          if not slugs:
-            raise SystemExit(0)
           with open('data/templates.json') as f:
             data = json.load(f)
+          ids = []
           for t in data:
-            if t['slug'] in slugs:
-              for v in t.get('variants', []):
-                print(v['id'])
+            for v in t.get('variants', []):
+              vid = v['id']
+              if t['slug'] in slugs:
+                ids.append(vid)
+              elif root_or_json_changed:
+                png = f"static/previews/showcase/{vid}.png"
+                if not os.path.exists(png):
+                  ids.append(vid)
+          if not ids:
+            raise SystemExit(0)
+          for i in ids:
+            print(i)
           PYEOF
             ) || true
           fi

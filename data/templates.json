@@ -38,6 +38,56 @@
         "id": "AffiliateReview-BoldVerdict",
         "name": "Bold Verdict",
         "style": "bold"
+      },
+      {
+        "id": "AffiliateReview-OceanScorecard",
+        "name": "Ocean Scorecard",
+        "style": "ocean"
+      },
+      {
+        "id": "AffiliateReview-SunsetScorecard",
+        "name": "Sunset Scorecard",
+        "style": "sunset"
+      },
+      {
+        "id": "AffiliateReview-ForestComparison",
+        "name": "Forest Comparison",
+        "style": "forest"
+      },
+      {
+        "id": "AffiliateReview-RoseComparison",
+        "name": "Rose Comparison",
+        "style": "rose"
+      },
+      {
+        "id": "AffiliateReview-GoldVerdict",
+        "name": "Gold Verdict",
+        "style": "gold"
+      },
+      {
+        "id": "AffiliateReview-MidnightVerdict",
+        "name": "Midnight Verdict",
+        "style": "midnight"
+      },
+      {
+        "id": "AffiliateReview-CrimsonScorecard",
+        "name": "Crimson Scorecard",
+        "style": "crimson"
+      },
+      {
+        "id": "AffiliateReview-LavenderScorecard",
+        "name": "Lavender Scorecard",
+        "style": "lavender"
+      },
+      {
+        "id": "AffiliateReview-ArcticComparison",
+        "name": "Arctic Comparison",
+        "style": "arctic"
+      },
+      {
+        "id": "AffiliateReview-EspressoComparison",
+        "name": "Espresso Comparison",
+        "style": "espresso"
       }
     ],
     "primaryId": "AffiliateReview-DarkScorecard"
@@ -81,6 +131,56 @@
         "id": "BeforeAfter-WarmMetricsCompare",
         "name": "Warm Metrics Compare",
         "style": "warm"
+      },
+      {
+        "id": "BeforeAfter-OceanSplitScreen",
+        "name": "Ocean Split Screen",
+        "style": "ocean"
+      },
+      {
+        "id": "BeforeAfter-SunsetSplitScreen",
+        "name": "Sunset Split Screen",
+        "style": "sunset"
+      },
+      {
+        "id": "BeforeAfter-ForestRevealWipe",
+        "name": "Forest Reveal Wipe",
+        "style": "forest"
+      },
+      {
+        "id": "BeforeAfter-RoseRevealWipe",
+        "name": "Rose Reveal Wipe",
+        "style": "rose"
+      },
+      {
+        "id": "BeforeAfter-GoldMetricsCompare",
+        "name": "Gold Metrics Compare",
+        "style": "gold"
+      },
+      {
+        "id": "BeforeAfter-MidnightMetricsCompare",
+        "name": "Midnight Metrics Compare",
+        "style": "midnight"
+      },
+      {
+        "id": "BeforeAfter-CrimsonSplitScreen",
+        "name": "Crimson Split Screen",
+        "style": "crimson"
+      },
+      {
+        "id": "BeforeAfter-LavenderSplitScreen",
+        "name": "Lavender Split Screen",
+        "style": "lavender"
+      },
+      {
+        "id": "BeforeAfter-ArcticRevealWipe",
+        "name": "Arctic Reveal Wipe",
+        "style": "arctic"
+      },
+      {
+        "id": "BeforeAfter-EspressoRevealWipe",
+        "name": "Espresso Reveal Wipe",
+        "style": "espresso"
       }
     ],
     "primaryId": "BeforeAfter-DarkSplitScreen"
@@ -124,6 +224,56 @@
         "id": "BehindTheScenes-WarmProcessFlow",
         "name": "Warm Process Flow",
         "style": "warm"
+      },
+      {
+        "id": "BehindTheScenes-OceanSceneCards",
+        "name": "Ocean Scene Cards",
+        "style": "ocean"
+      },
+      {
+        "id": "BehindTheScenes-SunsetSceneCards",
+        "name": "Sunset Scene Cards",
+        "style": "sunset"
+      },
+      {
+        "id": "BehindTheScenes-ForestTimeline",
+        "name": "Forest Timeline",
+        "style": "forest"
+      },
+      {
+        "id": "BehindTheScenes-RoseTimeline",
+        "name": "Rose Timeline",
+        "style": "rose"
+      },
+      {
+        "id": "BehindTheScenes-GoldProcessFlow",
+        "name": "Gold Process Flow",
+        "style": "gold"
+      },
+      {
+        "id": "BehindTheScenes-MidnightProcessFlow",
+        "name": "Midnight Process Flow",
+        "style": "midnight"
+      },
+      {
+        "id": "BehindTheScenes-CrimsonSceneCards",
+        "name": "Crimson Scene Cards",
+        "style": "crimson"
+      },
+      {
+        "id": "BehindTheScenes-LavenderSceneCards",
+        "name": "Lavender Scene Cards",
+        "style": "lavender"
+      },
+      {
+        "id": "BehindTheScenes-ArcticTimeline",
+        "name": "Arctic Timeline",
+        "style": "arctic"
+      },
+      {
+        "id": "BehindTheScenes-EspressoTimeline",
+        "name": "Espresso Timeline",
+        "style": "espresso"
       }
     ],
     "primaryId": "BehindTheScenes-DarkSceneCards"
@@ -167,6 +317,56 @@
         "id": "CaseStudy-NeonSpotlight",
         "name": "Neon Spotlight",
         "style": "neon"
+      },
+      {
+        "id": "-CaseStudyOceanNarrative",
+        "name": "Case Study Ocean Narrative",
+        "style": "ocean"
+      },
+      {
+        "id": "-CaseStudySunsetSpotlight",
+        "name": "Case Study Sunset Spotlight",
+        "style": "sunset"
+      },
+      {
+        "id": "-CaseStudyForestNarrative",
+        "name": "Case Study Forest Narrative",
+        "style": "forest"
+      },
+      {
+        "id": "-CaseStudyRoseSpotlight",
+        "name": "Case Study Rose Spotlight",
+        "style": "rose"
+      },
+      {
+        "id": "-CaseStudyGoldNarrative",
+        "name": "Case Study Gold Narrative",
+        "style": "gold"
+      },
+      {
+        "id": "-CaseStudyMidnightNarrative",
+        "name": "Case Study Midnight Narrative",
+        "style": "midnight"
+      },
+      {
+        "id": "-CaseStudyCrimsonSpotlight",
+        "name": "Case Study Crimson Spotlight",
+        "style": "crimson"
+      },
+      {
+        "id": "-CaseStudyLavenderComparison",
+        "name": "Case Study Lavender Comparison",
+        "style": "lavender"
+      },
+      {
+        "id": "-CaseStudyArcticComparison",
+        "name": "Case Study Arctic Comparison",
+        "style": "arctic"
+      },
+      {
+        "id": "-CaseStudyEspressoNarrative",
+        "name": "Case Study Espresso Narrative",
+        "style": "espresso"
       }
     ],
     "primaryId": "CaseStudy-NeonSpotlight"
@@ -210,6 +410,56 @@
         "id": "Collaboration-BoldStatsMerge",
         "name": "Bold Stats Merge",
         "style": "bold"
+      },
+      {
+        "id": "Collaboration-OceanSplitScreen",
+        "name": "Ocean Split Screen",
+        "style": "ocean"
+      },
+      {
+        "id": "Collaboration-SunsetSplitScreen",
+        "name": "Sunset Split Screen",
+        "style": "sunset"
+      },
+      {
+        "id": "Collaboration-ForestAnnouncement",
+        "name": "Forest Announcement",
+        "style": "forest"
+      },
+      {
+        "id": "Collaboration-RoseAnnouncement",
+        "name": "Rose Announcement",
+        "style": "rose"
+      },
+      {
+        "id": "Collaboration-GoldStatsMerge",
+        "name": "Gold Stats Merge",
+        "style": "gold"
+      },
+      {
+        "id": "Collaboration-MidnightStatsMerge",
+        "name": "Midnight Stats Merge",
+        "style": "midnight"
+      },
+      {
+        "id": "Collaboration-CrimsonSplitScreen",
+        "name": "Crimson Split Screen",
+        "style": "crimson"
+      },
+      {
+        "id": "Collaboration-LavenderSplitScreen",
+        "name": "Lavender Split Screen",
+        "style": "lavender"
+      },
+      {
+        "id": "Collaboration-ArcticAnnouncement",
+        "name": "Arctic Announcement",
+        "style": "arctic"
+      },
+      {
+        "id": "Collaboration-EspressoAnnouncement",
+        "name": "Espresso Announcement",
+        "style": "espresso"
       }
     ],
     "primaryId": "Collaboration-DarkSplitScreen"
@@ -253,6 +503,56 @@
         "id": "CountdownHype-NeonUrgency",
         "name": "Neon Urgency",
         "style": "neon"
+      },
+      {
+        "id": "CountdownHype-OceanTimer",
+        "name": "Ocean Timer",
+        "style": "ocean"
+      },
+      {
+        "id": "CountdownHype-SunsetTimer",
+        "name": "Sunset Timer",
+        "style": "sunset"
+      },
+      {
+        "id": "CountdownHype-ForestTeaser",
+        "name": "Forest Teaser",
+        "style": "forest"
+      },
+      {
+        "id": "CountdownHype-RoseTeaser",
+        "name": "Rose Teaser",
+        "style": "rose"
+      },
+      {
+        "id": "CountdownHype-GoldUrgency",
+        "name": "Gold Urgency",
+        "style": "gold"
+      },
+      {
+        "id": "CountdownHype-MidnightUrgency",
+        "name": "Midnight Urgency",
+        "style": "midnight"
+      },
+      {
+        "id": "CountdownHype-CrimsonTimer",
+        "name": "Crimson Timer",
+        "style": "crimson"
+      },
+      {
+        "id": "CountdownHype-LavenderTimer",
+        "name": "Lavender Timer",
+        "style": "lavender"
+      },
+      {
+        "id": "CountdownHype-ArcticTeaser",
+        "name": "Arctic Teaser",
+        "style": "arctic"
+      },
+      {
+        "id": "CountdownHype-EspressoTeaser",
+        "name": "Espresso Teaser",
+        "style": "espresso"
       }
     ],
     "primaryId": "CountdownHype-NeonTimer"
@@ -296,6 +596,56 @@
         "id": "CoursePromo-CleanInstructor",
         "name": "Clean Instructor",
         "style": "clean"
+      },
+      {
+        "id": "CoursePromo-OceanOverview",
+        "name": "Ocean Overview",
+        "style": "ocean"
+      },
+      {
+        "id": "CoursePromo-SunsetOverview",
+        "name": "Sunset Overview",
+        "style": "sunset"
+      },
+      {
+        "id": "CoursePromo-ForestCurriculum",
+        "name": "Forest Curriculum",
+        "style": "forest"
+      },
+      {
+        "id": "CoursePromo-RoseCurriculum",
+        "name": "Rose Curriculum",
+        "style": "rose"
+      },
+      {
+        "id": "CoursePromo-GoldInstructor",
+        "name": "Gold Instructor",
+        "style": "gold"
+      },
+      {
+        "id": "CoursePromo-MidnightInstructor",
+        "name": "Midnight Instructor",
+        "style": "midnight"
+      },
+      {
+        "id": "CoursePromo-CrimsonOverview",
+        "name": "Crimson Overview",
+        "style": "crimson"
+      },
+      {
+        "id": "CoursePromo-LavenderOverview",
+        "name": "Lavender Overview",
+        "style": "lavender"
+      },
+      {
+        "id": "CoursePromo-ArcticCurriculum",
+        "name": "Arctic Curriculum",
+        "style": "arctic"
+      },
+      {
+        "id": "CoursePromo-EspressoCurriculum",
+        "name": "Espresso Curriculum",
+        "style": "espresso"
       }
     ],
     "primaryId": "CoursePromo-DarkOverview"
@@ -339,6 +689,56 @@
         "id": "Event-NeonCountdown",
         "name": "Neon Countdown",
         "style": "neon"
+      },
+      {
+        "id": "Event-OceanHero",
+        "name": "Ocean Hero",
+        "style": "ocean"
+      },
+      {
+        "id": "Event-SunsetSpeakers",
+        "name": "Sunset Speakers",
+        "style": "sunset"
+      },
+      {
+        "id": "Event-ForestCountdown",
+        "name": "Forest Countdown",
+        "style": "forest"
+      },
+      {
+        "id": "Event-RoseHero",
+        "name": "Rose Hero",
+        "style": "rose"
+      },
+      {
+        "id": "Event-GoldSpeakers",
+        "name": "Gold Speakers",
+        "style": "gold"
+      },
+      {
+        "id": "Event-MidnightCountdown",
+        "name": "Midnight Countdown",
+        "style": "midnight"
+      },
+      {
+        "id": "Event-CrimsonHero",
+        "name": "Crimson Hero",
+        "style": "crimson"
+      },
+      {
+        "id": "Event-LavenderSpeakers",
+        "name": "Lavender Speakers",
+        "style": "lavender"
+      },
+      {
+        "id": "Event-ArcticCountdown",
+        "name": "Arctic Countdown",
+        "style": "arctic"
+      },
+      {
+        "id": "Event-EspressoHero",
+        "name": "Espresso Hero",
+        "style": "espresso"
       }
     ],
     "primaryId": "Event-NeonCountdown"
@@ -382,6 +782,56 @@
         "id": "Explainer-NeonCinematic",
         "name": "Neon Cinematic",
         "style": "neon"
+      },
+      {
+        "id": "Explainer-OceanCinematic",
+        "name": "Ocean Cinematic",
+        "style": "ocean"
+      },
+      {
+        "id": "Explainer-SunsetProcess",
+        "name": "Sunset Process",
+        "style": "sunset"
+      },
+      {
+        "id": "Explainer-ForestProcess",
+        "name": "Forest Process",
+        "style": "forest"
+      },
+      {
+        "id": "Explainer-RoseProcess",
+        "name": "Rose Process",
+        "style": "rose"
+      },
+      {
+        "id": "Explainer-GoldCinematic",
+        "name": "Gold Cinematic",
+        "style": "gold"
+      },
+      {
+        "id": "Explainer-MidnightWhiteboard",
+        "name": "Midnight Whiteboard",
+        "style": "midnight"
+      },
+      {
+        "id": "Explainer-CrimsonProcess",
+        "name": "Crimson Process",
+        "style": "crimson"
+      },
+      {
+        "id": "Explainer-LavenderWhiteboard",
+        "name": "Lavender Whiteboard",
+        "style": "lavender"
+      },
+      {
+        "id": "Explainer-ArcticWhiteboard",
+        "name": "Arctic Whiteboard",
+        "style": "arctic"
+      },
+      {
+        "id": "Explainer-EspressoProcess",
+        "name": "Espresso Process",
+        "style": "espresso"
       }
     ],
     "primaryId": "Explainer-NeonCinematic"
@@ -425,6 +875,56 @@
         "id": "FAQ-NeonInterview",
         "name": "Neon Interview",
         "style": "neon"
+      },
+      {
+        "id": "-FAQOceanAccordion",
+        "name": "FAQOcean Accordion",
+        "style": "ocean"
+      },
+      {
+        "id": "-FAQSunsetCards",
+        "name": "FAQSunset Cards",
+        "style": "sunset"
+      },
+      {
+        "id": "-FAQForestAccordion",
+        "name": "FAQForest Accordion",
+        "style": "forest"
+      },
+      {
+        "id": "-FAQRoseCards",
+        "name": "FAQRose Cards",
+        "style": "rose"
+      },
+      {
+        "id": "-FAQGoldAccordion",
+        "name": "FAQGold Accordion",
+        "style": "gold"
+      },
+      {
+        "id": "-FAQMidnightCards",
+        "name": "FAQMidnight Cards",
+        "style": "midnight"
+      },
+      {
+        "id": "-FAQCrimsonAccordion",
+        "name": "FAQCrimson Accordion",
+        "style": "crimson"
+      },
+      {
+        "id": "-FAQLavenderCards",
+        "name": "FAQLavender Cards",
+        "style": "lavender"
+      },
+      {
+        "id": "-FAQArcticAccordion",
+        "name": "FAQArctic Accordion",
+        "style": "arctic"
+      },
+      {
+        "id": "-FAQEspressoCards",
+        "name": "FAQEspresso Cards",
+        "style": "espresso"
       }
     ],
     "primaryId": "FAQ-NeonInterview"
@@ -468,6 +968,56 @@
         "id": "FitnessRoutine-NeonCircuit",
         "name": "Neon Circuit",
         "style": "neon"
+      },
+      {
+        "id": "FitnessRoutine-OceanExerciseList",
+        "name": "Ocean Exercise List",
+        "style": "ocean"
+      },
+      {
+        "id": "FitnessRoutine-SunsetExerciseList",
+        "name": "Sunset Exercise List",
+        "style": "sunset"
+      },
+      {
+        "id": "FitnessRoutine-ForestTimerFocus",
+        "name": "Forest Timer Focus",
+        "style": "forest"
+      },
+      {
+        "id": "FitnessRoutine-RoseTimerFocus",
+        "name": "Rose Timer Focus",
+        "style": "rose"
+      },
+      {
+        "id": "FitnessRoutine-GoldCircuit",
+        "name": "Gold Circuit",
+        "style": "gold"
+      },
+      {
+        "id": "FitnessRoutine-MidnightCircuit",
+        "name": "Midnight Circuit",
+        "style": "midnight"
+      },
+      {
+        "id": "FitnessRoutine-CrimsonExerciseList",
+        "name": "Crimson Exercise List",
+        "style": "crimson"
+      },
+      {
+        "id": "FitnessRoutine-LavenderExerciseList",
+        "name": "Lavender Exercise List",
+        "style": "lavender"
+      },
+      {
+        "id": "FitnessRoutine-ArcticTimerFocus",
+        "name": "Arctic Timer Focus",
+        "style": "arctic"
+      },
+      {
+        "id": "FitnessRoutine-EspressoTimerFocus",
+        "name": "Espresso Timer Focus",
+        "style": "espresso"
       }
     ],
     "primaryId": "FitnessRoutine-NeonExerciseList"
@@ -511,6 +1061,56 @@
         "id": "Invoice-NeonUrgent",
         "name": "Neon Urgent",
         "style": "neon"
+      },
+      {
+        "id": "Invoice-OceanProfessional",
+        "name": "Ocean Professional",
+        "style": "ocean"
+      },
+      {
+        "id": "Invoice-SunsetFriendly",
+        "name": "Sunset Friendly",
+        "style": "sunset"
+      },
+      {
+        "id": "Invoice-ForestProfessional",
+        "name": "Forest Professional",
+        "style": "forest"
+      },
+      {
+        "id": "Invoice-RoseFriendly",
+        "name": "Rose Friendly",
+        "style": "rose"
+      },
+      {
+        "id": "Invoice-GoldProfessional",
+        "name": "Gold Professional",
+        "style": "gold"
+      },
+      {
+        "id": "Invoice-MidnightProfessional",
+        "name": "Midnight Professional",
+        "style": "midnight"
+      },
+      {
+        "id": "Invoice-CrimsonUrgent",
+        "name": "Crimson Urgent",
+        "style": "crimson"
+      },
+      {
+        "id": "Invoice-LavenderFriendly",
+        "name": "Lavender Friendly",
+        "style": "lavender"
+      },
+      {
+        "id": "Invoice-ArcticProfessional",
+        "name": "Arctic Professional",
+        "style": "arctic"
+      },
+      {
+        "id": "Invoice-EspressoFriendly",
+        "name": "Espresso Friendly",
+        "style": "espresso"
       }
     ],
     "primaryId": "Invoice-NeonUrgent"
@@ -554,6 +1154,56 @@
         "id": "Listing-MinimalComparison",
         "name": "Minimal Comparison",
         "style": "minimal"
+      },
+      {
+        "id": "Listing-OceanShowcase",
+        "name": "Ocean Showcase",
+        "style": "ocean"
+      },
+      {
+        "id": "Listing-SunsetShowcase",
+        "name": "Sunset Showcase",
+        "style": "sunset"
+      },
+      {
+        "id": "Listing-ForestFeatureGrid",
+        "name": "Forest Feature Grid",
+        "style": "forest"
+      },
+      {
+        "id": "Listing-RoseFeatureGrid",
+        "name": "Rose Feature Grid",
+        "style": "rose"
+      },
+      {
+        "id": "Listing-GoldComparison",
+        "name": "Gold Comparison",
+        "style": "gold"
+      },
+      {
+        "id": "Listing-MidnightComparison",
+        "name": "Midnight Comparison",
+        "style": "midnight"
+      },
+      {
+        "id": "Listing-CrimsonShowcase",
+        "name": "Crimson Showcase",
+        "style": "crimson"
+      },
+      {
+        "id": "Listing-LavenderShowcase",
+        "name": "Lavender Showcase",
+        "style": "lavender"
+      },
+      {
+        "id": "Listing-ArcticFeatureGrid",
+        "name": "Arctic Feature Grid",
+        "style": "arctic"
+      },
+      {
+        "id": "Listing-EspressoFeatureGrid",
+        "name": "Espresso Feature Grid",
+        "style": "espresso"
       }
     ],
     "primaryId": "Listing-CleanShowcase"
@@ -597,6 +1247,56 @@
         "id": "Milestone-NeonCelebration",
         "name": "Neon Celebration",
         "style": "neon"
+      },
+      {
+        "id": "Milestone-OceanJourney",
+        "name": "Ocean Journey",
+        "style": "ocean"
+      },
+      {
+        "id": "Milestone-SunsetCelebration",
+        "name": "Sunset Celebration",
+        "style": "sunset"
+      },
+      {
+        "id": "Milestone-ForestJourney",
+        "name": "Forest Journey",
+        "style": "forest"
+      },
+      {
+        "id": "Milestone-RoseCelebration",
+        "name": "Rose Celebration",
+        "style": "rose"
+      },
+      {
+        "id": "Milestone-GoldGratitude",
+        "name": "Gold Gratitude",
+        "style": "gold"
+      },
+      {
+        "id": "Milestone-MidnightJourney",
+        "name": "Midnight Journey",
+        "style": "midnight"
+      },
+      {
+        "id": "Milestone-CrimsonCelebration",
+        "name": "Crimson Celebration",
+        "style": "crimson"
+      },
+      {
+        "id": "Milestone-LavenderJourney",
+        "name": "Lavender Journey",
+        "style": "lavender"
+      },
+      {
+        "id": "Milestone-ArcticJourney",
+        "name": "Arctic Journey",
+        "style": "arctic"
+      },
+      {
+        "id": "Milestone-EspressoGratitude",
+        "name": "Espresso Gratitude",
+        "style": "espresso"
       }
     ],
     "primaryId": "Milestone-NeonCelebration"
@@ -640,6 +1340,56 @@
         "id": "MusicVisualizer-NeonLyrics",
         "name": "Neon Lyrics",
         "style": "neon"
+      },
+      {
+        "id": "MusicVisualizer-OceanBars",
+        "name": "Ocean Bars",
+        "style": "ocean"
+      },
+      {
+        "id": "MusicVisualizer-SunsetBars",
+        "name": "Sunset Bars",
+        "style": "sunset"
+      },
+      {
+        "id": "MusicVisualizer-ForestRadial",
+        "name": "Forest Radial",
+        "style": "forest"
+      },
+      {
+        "id": "MusicVisualizer-RoseRadial",
+        "name": "Rose Radial",
+        "style": "rose"
+      },
+      {
+        "id": "MusicVisualizer-GoldLyrics",
+        "name": "Gold Lyrics",
+        "style": "gold"
+      },
+      {
+        "id": "MusicVisualizer-MidnightLyrics",
+        "name": "Midnight Lyrics",
+        "style": "midnight"
+      },
+      {
+        "id": "MusicVisualizer-CrimsonBars",
+        "name": "Crimson Bars",
+        "style": "crimson"
+      },
+      {
+        "id": "MusicVisualizer-LavenderBars",
+        "name": "Lavender Bars",
+        "style": "lavender"
+      },
+      {
+        "id": "MusicVisualizer-ArcticRadial",
+        "name": "Arctic Radial",
+        "style": "arctic"
+      },
+      {
+        "id": "MusicVisualizer-EspressoRadial",
+        "name": "Espresso Radial",
+        "style": "espresso"
       }
     ],
     "primaryId": "MusicVisualizer-NeonBars"
@@ -683,6 +1433,56 @@
         "id": "NewsletterPromo-CleanTestimonialBlend",
         "name": "Clean Testimonial Blend",
         "style": "clean"
+      },
+      {
+        "id": "NewsletterPromo-OceanSubscribeCta",
+        "name": "Ocean Subscribe Cta",
+        "style": "ocean"
+      },
+      {
+        "id": "NewsletterPromo-SunsetSubscribeCta",
+        "name": "Sunset Subscribe Cta",
+        "style": "sunset"
+      },
+      {
+        "id": "NewsletterPromo-ForestIssuePreview",
+        "name": "Forest Issue Preview",
+        "style": "forest"
+      },
+      {
+        "id": "NewsletterPromo-RoseIssuePreview",
+        "name": "Rose Issue Preview",
+        "style": "rose"
+      },
+      {
+        "id": "NewsletterPromo-GoldTestimonialBlend",
+        "name": "Gold Testimonial Blend",
+        "style": "gold"
+      },
+      {
+        "id": "NewsletterPromo-MidnightTestimonialBlend",
+        "name": "Midnight Testimonial Blend",
+        "style": "midnight"
+      },
+      {
+        "id": "NewsletterPromo-CrimsonSubscribeCta",
+        "name": "Crimson Subscribe Cta",
+        "style": "crimson"
+      },
+      {
+        "id": "NewsletterPromo-LavenderSubscribeCta",
+        "name": "Lavender Subscribe Cta",
+        "style": "lavender"
+      },
+      {
+        "id": "NewsletterPromo-ArcticIssuePreview",
+        "name": "Arctic Issue Preview",
+        "style": "arctic"
+      },
+      {
+        "id": "NewsletterPromo-EspressoIssuePreview",
+        "name": "Espresso Issue Preview",
+        "style": "espresso"
       }
     ],
     "primaryId": "NewsletterPromo-DarkSubscribeCta"
@@ -726,6 +1526,56 @@
         "id": "Onboarding-NeonCreative",
         "name": "Neon Creative",
         "style": "neon"
+      },
+      {
+        "id": "Onboarding-OceanProfessional",
+        "name": "Ocean Professional",
+        "style": "ocean"
+      },
+      {
+        "id": "Onboarding-SunsetCreative",
+        "name": "Sunset Creative",
+        "style": "sunset"
+      },
+      {
+        "id": "Onboarding-ForestProfessional",
+        "name": "Forest Professional",
+        "style": "forest"
+      },
+      {
+        "id": "Onboarding-RoseCreative",
+        "name": "Rose Creative",
+        "style": "rose"
+      },
+      {
+        "id": "Onboarding-GoldProfessional",
+        "name": "Gold Professional",
+        "style": "gold"
+      },
+      {
+        "id": "Onboarding-MidnightProfessional",
+        "name": "Midnight Professional",
+        "style": "midnight"
+      },
+      {
+        "id": "Onboarding-CrimsonCreative",
+        "name": "Crimson Creative",
+        "style": "crimson"
+      },
+      {
+        "id": "Onboarding-LavenderFriendly",
+        "name": "Lavender Friendly",
+        "style": "lavender"
+      },
+      {
+        "id": "Onboarding-ArcticProfessional",
+        "name": "Arctic Professional",
+        "style": "arctic"
+      },
+      {
+        "id": "Onboarding-EspressoFriendly",
+        "name": "Espresso Friendly",
+        "style": "espresso"
       }
     ],
     "primaryId": "Onboarding-NeonCreative"
@@ -769,6 +1619,56 @@
         "id": "PodcastAudiogram-WarmEpisodePromo",
         "name": "Warm Episode Promo",
         "style": "warm"
+      },
+      {
+        "id": "PodcastAudiogram-OceanWaveform",
+        "name": "Ocean Waveform",
+        "style": "ocean"
+      },
+      {
+        "id": "PodcastAudiogram-SunsetWaveform",
+        "name": "Sunset Waveform",
+        "style": "sunset"
+      },
+      {
+        "id": "PodcastAudiogram-ForestQuoteCard",
+        "name": "Forest Quote Card",
+        "style": "forest"
+      },
+      {
+        "id": "PodcastAudiogram-RoseQuoteCard",
+        "name": "Rose Quote Card",
+        "style": "rose"
+      },
+      {
+        "id": "PodcastAudiogram-GoldEpisodePromo",
+        "name": "Gold Episode Promo",
+        "style": "gold"
+      },
+      {
+        "id": "PodcastAudiogram-MidnightEpisodePromo",
+        "name": "Midnight Episode Promo",
+        "style": "midnight"
+      },
+      {
+        "id": "PodcastAudiogram-CrimsonWaveform",
+        "name": "Crimson Waveform",
+        "style": "crimson"
+      },
+      {
+        "id": "PodcastAudiogram-LavenderWaveform",
+        "name": "Lavender Waveform",
+        "style": "lavender"
+      },
+      {
+        "id": "PodcastAudiogram-ArcticQuoteCard",
+        "name": "Arctic Quote Card",
+        "style": "arctic"
+      },
+      {
+        "id": "PodcastAudiogram-EspressoQuoteCard",
+        "name": "Espresso Quote Card",
+        "style": "espresso"
       }
     ],
     "primaryId": "PodcastAudiogram-DarkWaveform"
@@ -812,6 +1712,56 @@
         "id": "PollQuiz-NeonReveal",
         "name": "Neon Reveal",
         "style": "neon"
+      },
+      {
+        "id": "PollQuiz-OceanQuestionCard",
+        "name": "Ocean Question Card",
+        "style": "ocean"
+      },
+      {
+        "id": "PollQuiz-SunsetQuestionCard",
+        "name": "Sunset Question Card",
+        "style": "sunset"
+      },
+      {
+        "id": "PollQuiz-ForestResultsBar",
+        "name": "Forest Results Bar",
+        "style": "forest"
+      },
+      {
+        "id": "PollQuiz-RoseResultsBar",
+        "name": "Rose Results Bar",
+        "style": "rose"
+      },
+      {
+        "id": "PollQuiz-GoldReveal",
+        "name": "Gold Reveal",
+        "style": "gold"
+      },
+      {
+        "id": "PollQuiz-MidnightReveal",
+        "name": "Midnight Reveal",
+        "style": "midnight"
+      },
+      {
+        "id": "PollQuiz-CrimsonQuestionCard",
+        "name": "Crimson Question Card",
+        "style": "crimson"
+      },
+      {
+        "id": "PollQuiz-LavenderQuestionCard",
+        "name": "Lavender Question Card",
+        "style": "lavender"
+      },
+      {
+        "id": "PollQuiz-ArcticResultsBar",
+        "name": "Arctic Results Bar",
+        "style": "arctic"
+      },
+      {
+        "id": "PollQuiz-EspressoResultsBar",
+        "name": "Espresso Results Bar",
+        "style": "espresso"
       }
     ],
     "primaryId": "PollQuiz-NeonQuestionCard"
@@ -855,6 +1805,56 @@
         "id": "Portfolio-NeonReel",
         "name": "Neon Reel",
         "style": "neon"
+      },
+      {
+        "id": "Portfolio-OceanCaseStudy",
+        "name": "Ocean Case Study",
+        "style": "ocean"
+      },
+      {
+        "id": "Portfolio-SunsetGallery",
+        "name": "Sunset Gallery",
+        "style": "sunset"
+      },
+      {
+        "id": "Portfolio-ForestCaseStudy",
+        "name": "Forest Case Study",
+        "style": "forest"
+      },
+      {
+        "id": "Portfolio-RoseGallery",
+        "name": "Rose Gallery",
+        "style": "rose"
+      },
+      {
+        "id": "Portfolio-GoldCaseStudy",
+        "name": "Gold Case Study",
+        "style": "gold"
+      },
+      {
+        "id": "Portfolio-MidnightCaseStudy",
+        "name": "Midnight Case Study",
+        "style": "midnight"
+      },
+      {
+        "id": "Portfolio-CrimsonReel",
+        "name": "Crimson Reel",
+        "style": "crimson"
+      },
+      {
+        "id": "Portfolio-LavenderGallery",
+        "name": "Lavender Gallery",
+        "style": "lavender"
+      },
+      {
+        "id": "Portfolio-ArcticCaseStudy",
+        "name": "Arctic Case Study",
+        "style": "arctic"
+      },
+      {
+        "id": "Portfolio-EspressoGallery",
+        "name": "Espresso Gallery",
+        "style": "espresso"
       }
     ],
     "primaryId": "Portfolio-NeonReel"
@@ -898,6 +1898,56 @@
         "id": "Pricing-NeonSpotlight",
         "name": "Neon Spotlight",
         "style": "neon"
+      },
+      {
+        "id": "-PricingOceanTiers",
+        "name": "Pricing Ocean Tiers",
+        "style": "ocean"
+      },
+      {
+        "id": "-PricingSunsetComparison",
+        "name": "Pricing Sunset Comparison",
+        "style": "sunset"
+      },
+      {
+        "id": "-PricingForestTiers",
+        "name": "Pricing Forest Tiers",
+        "style": "forest"
+      },
+      {
+        "id": "-PricingRoseComparison",
+        "name": "Pricing Rose Comparison",
+        "style": "rose"
+      },
+      {
+        "id": "-PricingGoldTiers",
+        "name": "Pricing Gold Tiers",
+        "style": "gold"
+      },
+      {
+        "id": "-PricingMidnightComparison",
+        "name": "Pricing Midnight Comparison",
+        "style": "midnight"
+      },
+      {
+        "id": "-PricingCrimsonTiers",
+        "name": "Pricing Crimson Tiers",
+        "style": "crimson"
+      },
+      {
+        "id": "-PricingLavenderComparison",
+        "name": "Pricing Lavender Comparison",
+        "style": "lavender"
+      },
+      {
+        "id": "-PricingArcticTiers",
+        "name": "Pricing Arctic Tiers",
+        "style": "arctic"
+      },
+      {
+        "id": "-PricingEspressoComparison",
+        "name": "Pricing Espresso Comparison",
+        "style": "espresso"
       }
     ],
     "primaryId": "Pricing-NeonSpotlight"
@@ -941,6 +1991,56 @@
         "id": "ProductLaunch-BoldCountdown",
         "name": "Bold Countdown",
         "style": "bold"
+      },
+      {
+        "id": "ProductLaunch-OceanHeroReveal",
+        "name": "Ocean Hero Reveal",
+        "style": "ocean"
+      },
+      {
+        "id": "ProductLaunch-SunsetHeroReveal",
+        "name": "Sunset Hero Reveal",
+        "style": "sunset"
+      },
+      {
+        "id": "ProductLaunch-ForestFeatureGrid",
+        "name": "Forest Feature Grid",
+        "style": "forest"
+      },
+      {
+        "id": "ProductLaunch-RoseFeatureGrid",
+        "name": "Rose Feature Grid",
+        "style": "rose"
+      },
+      {
+        "id": "ProductLaunch-GoldCountdown",
+        "name": "Gold Countdown",
+        "style": "gold"
+      },
+      {
+        "id": "ProductLaunch-MidnightCountdown",
+        "name": "Midnight Countdown",
+        "style": "midnight"
+      },
+      {
+        "id": "ProductLaunch-CrimsonHeroReveal",
+        "name": "Crimson Hero Reveal",
+        "style": "crimson"
+      },
+      {
+        "id": "ProductLaunch-LavenderHeroReveal",
+        "name": "Lavender Hero Reveal",
+        "style": "lavender"
+      },
+      {
+        "id": "ProductLaunch-ArcticFeatureGrid",
+        "name": "Arctic Feature Grid",
+        "style": "arctic"
+      },
+      {
+        "id": "ProductLaunch-EspressoFeatureGrid",
+        "name": "Espresso Feature Grid",
+        "style": "espresso"
       }
     ],
     "primaryId": "ProductLaunch-DarkHeroReveal"
@@ -984,6 +2084,56 @@
         "id": "Proposal-NeonPitch",
         "name": "Neon Pitch",
         "style": "neon"
+      },
+      {
+        "id": "Proposal-OceanExecutive",
+        "name": "Ocean Executive",
+        "style": "ocean"
+      },
+      {
+        "id": "Proposal-SunsetCreative",
+        "name": "Sunset Creative",
+        "style": "sunset"
+      },
+      {
+        "id": "Proposal-ForestExecutive",
+        "name": "Forest Executive",
+        "style": "forest"
+      },
+      {
+        "id": "Proposal-RoseCreative",
+        "name": "Rose Creative",
+        "style": "rose"
+      },
+      {
+        "id": "Proposal-GoldExecutive",
+        "name": "Gold Executive",
+        "style": "gold"
+      },
+      {
+        "id": "Proposal-MidnightExecutive",
+        "name": "Midnight Executive",
+        "style": "midnight"
+      },
+      {
+        "id": "Proposal-CrimsonPitch",
+        "name": "Crimson Pitch",
+        "style": "crimson"
+      },
+      {
+        "id": "Proposal-LavenderCreative",
+        "name": "Lavender Creative",
+        "style": "lavender"
+      },
+      {
+        "id": "Proposal-ArcticCreative",
+        "name": "Arctic Creative",
+        "style": "arctic"
+      },
+      {
+        "id": "Proposal-EspressoExecutive",
+        "name": "Espresso Executive",
+        "style": "espresso"
       }
     ],
     "primaryId": "Proposal-NeonPitch"
@@ -1027,6 +2177,56 @@
         "id": "Recap-NeonTimeline",
         "name": "Neon Timeline",
         "style": "neon"
+      },
+      {
+        "id": "Recap-OceanDashboard",
+        "name": "Ocean Dashboard",
+        "style": "ocean"
+      },
+      {
+        "id": "Recap-SunsetCards",
+        "name": "Sunset Cards",
+        "style": "sunset"
+      },
+      {
+        "id": "Recap-ForestTimeline",
+        "name": "Forest Timeline",
+        "style": "forest"
+      },
+      {
+        "id": "Recap-RoseCards",
+        "name": "Rose Cards",
+        "style": "rose"
+      },
+      {
+        "id": "Recap-GoldDashboard",
+        "name": "Gold Dashboard",
+        "style": "gold"
+      },
+      {
+        "id": "Recap-MidnightDashboard",
+        "name": "Midnight Dashboard",
+        "style": "midnight"
+      },
+      {
+        "id": "Recap-CrimsonCards",
+        "name": "Crimson Cards",
+        "style": "crimson"
+      },
+      {
+        "id": "Recap-LavenderTimeline",
+        "name": "Lavender Timeline",
+        "style": "lavender"
+      },
+      {
+        "id": "Recap-ArcticTimeline",
+        "name": "Arctic Timeline",
+        "style": "arctic"
+      },
+      {
+        "id": "Recap-EspressoDashboard",
+        "name": "Espresso Dashboard",
+        "style": "espresso"
       }
     ],
     "primaryId": "Recap-NeonTimeline"
@@ -1070,6 +2270,56 @@
         "id": "RecipeStep-CleanSummaryCard",
         "name": "Clean Summary Card",
         "style": "clean"
+      },
+      {
+        "id": "RecipeStep-OceanIngredientList",
+        "name": "Ocean Ingredient List",
+        "style": "ocean"
+      },
+      {
+        "id": "RecipeStep-SunsetIngredientList",
+        "name": "Sunset Ingredient List",
+        "style": "sunset"
+      },
+      {
+        "id": "RecipeStep-ForestStepSequence",
+        "name": "Forest Step Sequence",
+        "style": "forest"
+      },
+      {
+        "id": "RecipeStep-RoseStepSequence",
+        "name": "Rose Step Sequence",
+        "style": "rose"
+      },
+      {
+        "id": "RecipeStep-GoldSummaryCard",
+        "name": "Gold Summary Card",
+        "style": "gold"
+      },
+      {
+        "id": "RecipeStep-MidnightSummaryCard",
+        "name": "Midnight Summary Card",
+        "style": "midnight"
+      },
+      {
+        "id": "RecipeStep-CrimsonIngredientList",
+        "name": "Crimson Ingredient List",
+        "style": "crimson"
+      },
+      {
+        "id": "RecipeStep-LavenderIngredientList",
+        "name": "Lavender Ingredient List",
+        "style": "lavender"
+      },
+      {
+        "id": "RecipeStep-ArcticStepSequence",
+        "name": "Arctic Step Sequence",
+        "style": "arctic"
+      },
+      {
+        "id": "RecipeStep-EspressoStepSequence",
+        "name": "Espresso Step Sequence",
+        "style": "espresso"
       }
     ],
     "primaryId": "RecipeStep-WarmIngredientList"
@@ -1113,6 +2363,56 @@
         "id": "SocialProof-NeonAnnouncement",
         "name": "Neon Announcement",
         "style": "neon"
+      },
+      {
+        "id": "-SocialProofOceanAchievement",
+        "name": "Social Proof Ocean Achievement",
+        "style": "ocean"
+      },
+      {
+        "id": "-SocialProofSunsetAnnouncement",
+        "name": "Social Proof Sunset Announcement",
+        "style": "sunset"
+      },
+      {
+        "id": "-SocialProofForestMilestone",
+        "name": "Social Proof Forest Milestone",
+        "style": "forest"
+      },
+      {
+        "id": "-SocialProofRoseAnnouncement",
+        "name": "Social Proof Rose Announcement",
+        "style": "rose"
+      },
+      {
+        "id": "-SocialProofGoldAchievement",
+        "name": "Social Proof Gold Achievement",
+        "style": "gold"
+      },
+      {
+        "id": "-SocialProofMidnightAchievement",
+        "name": "Social Proof Midnight Achievement",
+        "style": "midnight"
+      },
+      {
+        "id": "-SocialProofCrimsonAnnouncement",
+        "name": "Social Proof Crimson Announcement",
+        "style": "crimson"
+      },
+      {
+        "id": "-SocialProofLavenderMilestone",
+        "name": "Social Proof Lavender Milestone",
+        "style": "lavender"
+      },
+      {
+        "id": "-SocialProofArcticAchievement",
+        "name": "Social Proof Arctic Achievement",
+        "style": "arctic"
+      },
+      {
+        "id": "-SocialProofEspressoMilestone",
+        "name": "Social Proof Espresso Milestone",
+        "style": "espresso"
       }
     ],
     "primaryId": "SocialProof-NeonAnnouncement"
@@ -1156,6 +2456,56 @@
         "id": "Testimonial-NeonSplit",
         "name": "Neon Split",
         "style": "neon"
+      },
+      {
+        "id": "Testimonial-OceanCentered",
+        "name": "Ocean Centered",
+        "style": "ocean"
+      },
+      {
+        "id": "Testimonial-SunsetSplit",
+        "name": "Sunset Split",
+        "style": "sunset"
+      },
+      {
+        "id": "Testimonial-ForestCentered",
+        "name": "Forest Centered",
+        "style": "forest"
+      },
+      {
+        "id": "Testimonial-RoseEditorial",
+        "name": "Rose Editorial",
+        "style": "rose"
+      },
+      {
+        "id": "Testimonial-GoldCentered",
+        "name": "Gold Centered",
+        "style": "gold"
+      },
+      {
+        "id": "Testimonial-MidnightCentered",
+        "name": "Midnight Centered",
+        "style": "midnight"
+      },
+      {
+        "id": "Testimonial-CrimsonEditorial",
+        "name": "Crimson Editorial",
+        "style": "crimson"
+      },
+      {
+        "id": "Testimonial-LavenderSplit",
+        "name": "Lavender Split",
+        "style": "lavender"
+      },
+      {
+        "id": "Testimonial-ArcticSplit",
+        "name": "Arctic Split",
+        "style": "arctic"
+      },
+      {
+        "id": "Testimonial-EspressoCentered",
+        "name": "Espresso Centered",
+        "style": "espresso"
       }
     ],
     "primaryId": "Testimonial-NeonSplit"
@@ -1199,6 +2549,56 @@
         "id": "Tutorial-CleanSplitDemo",
         "name": "Clean Split Demo",
         "style": "clean"
+      },
+      {
+        "id": "Tutorial-OceanNumberedSteps",
+        "name": "Ocean Numbered Steps",
+        "style": "ocean"
+      },
+      {
+        "id": "Tutorial-SunsetNumberedSteps",
+        "name": "Sunset Numbered Steps",
+        "style": "sunset"
+      },
+      {
+        "id": "Tutorial-ForestCardSequence",
+        "name": "Forest Card Sequence",
+        "style": "forest"
+      },
+      {
+        "id": "Tutorial-RoseCardSequence",
+        "name": "Rose Card Sequence",
+        "style": "rose"
+      },
+      {
+        "id": "Tutorial-GoldSplitDemo",
+        "name": "Gold Split Demo",
+        "style": "gold"
+      },
+      {
+        "id": "Tutorial-MidnightSplitDemo",
+        "name": "Midnight Split Demo",
+        "style": "midnight"
+      },
+      {
+        "id": "Tutorial-CrimsonNumberedSteps",
+        "name": "Crimson Numbered Steps",
+        "style": "crimson"
+      },
+      {
+        "id": "Tutorial-LavenderNumberedSteps",
+        "name": "Lavender Numbered Steps",
+        "style": "lavender"
+      },
+      {
+        "id": "Tutorial-ArcticCardSequence",
+        "name": "Arctic Card Sequence",
+        "style": "arctic"
+      },
+      {
+        "id": "Tutorial-EspressoCardSequence",
+        "name": "Espresso Card Sequence",
+        "style": "espresso"
       }
     ],
     "primaryId": "Tutorial-DarkNumberedSteps"
@@ -1265,6 +2665,56 @@
         "id": "AgentDashboard-MatrixNeon",
         "name": "Matrix Neon",
         "style": "neon"
+      },
+      {
+        "id": "-AgentDashboardOceanControlPanel",
+        "name": "Agent Dashboard Ocean Control Panel",
+        "style": "ocean"
+      },
+      {
+        "id": "-AgentDashboardSunsetControlPanel",
+        "name": "Agent Dashboard Sunset Control Panel",
+        "style": "sunset"
+      },
+      {
+        "id": "-AgentDashboardForestFlow",
+        "name": "Agent Dashboard Forest Flow",
+        "style": "forest"
+      },
+      {
+        "id": "-AgentDashboardRoseFlow",
+        "name": "Agent Dashboard Rose Flow",
+        "style": "rose"
+      },
+      {
+        "id": "-AgentDashboardGoldMatrix",
+        "name": "Agent Dashboard Gold Matrix",
+        "style": "gold"
+      },
+      {
+        "id": "-AgentDashboardMidnightMatrix",
+        "name": "Agent Dashboard Midnight Matrix",
+        "style": "midnight"
+      },
+      {
+        "id": "-AgentDashboardCrimsonControlPanel",
+        "name": "Agent Dashboard Crimson Control Panel",
+        "style": "crimson"
+      },
+      {
+        "id": "-AgentDashboardLavenderControlPanel",
+        "name": "Agent Dashboard Lavender Control Panel",
+        "style": "lavender"
+      },
+      {
+        "id": "-AgentDashboardArcticFlow",
+        "name": "Agent Dashboard Arctic Flow",
+        "style": "arctic"
+      },
+      {
+        "id": "-AgentDashboardEspressoFlow",
+        "name": "Agent Dashboard Espresso Flow",
+        "style": "espresso"
       }
     ],
     "primaryId": "AgentDashboard-ControlPanelDark"
@@ -1308,6 +2758,56 @@
         "id": "BugTracker-OverviewBold",
         "name": "Overview Bold",
         "style": "bold"
+      },
+      {
+        "id": "-BugTrackerOceanSeverityMatrix",
+        "name": "Bug Tracker Ocean Severity Matrix",
+        "style": "ocean"
+      },
+      {
+        "id": "-BugTrackerSunsetSeverityMatrix",
+        "name": "Bug Tracker Sunset Severity Matrix",
+        "style": "sunset"
+      },
+      {
+        "id": "-BugTrackerForestTriageBoard",
+        "name": "Bug Tracker Forest Triage Board",
+        "style": "forest"
+      },
+      {
+        "id": "-BugTrackerRoseTriageBoard",
+        "name": "Bug Tracker Rose Triage Board",
+        "style": "rose"
+      },
+      {
+        "id": "-BugTrackerGoldOverview",
+        "name": "Bug Tracker Gold Overview",
+        "style": "gold"
+      },
+      {
+        "id": "-BugTrackerMidnightOverview",
+        "name": "Bug Tracker Midnight Overview",
+        "style": "midnight"
+      },
+      {
+        "id": "-BugTrackerCrimsonSeverityMatrix",
+        "name": "Bug Tracker Crimson Severity Matrix",
+        "style": "crimson"
+      },
+      {
+        "id": "-BugTrackerLavenderSeverityMatrix",
+        "name": "Bug Tracker Lavender Severity Matrix",
+        "style": "lavender"
+      },
+      {
+        "id": "-BugTrackerArcticTriageBoard",
+        "name": "Bug Tracker Arctic Triage Board",
+        "style": "arctic"
+      },
+      {
+        "id": "-BugTrackerEspressoTriageBoard",
+        "name": "Bug Tracker Espresso Triage Board",
+        "style": "espresso"
       }
     ],
     "primaryId": "BugTracker-SeverityMatrixDark"
@@ -1351,6 +2851,56 @@
         "id": "BugTriage-SummaryDashboardBold",
         "name": "Summary Dashboard Bold",
         "style": "bold"
+      },
+      {
+        "id": "-BugTriageOceanPriorityColumns",
+        "name": "Bug Triage Ocean Priority Columns",
+        "style": "ocean"
+      },
+      {
+        "id": "-BugTriageSunsetPriorityColumns",
+        "name": "Bug Triage Sunset Priority Columns",
+        "style": "sunset"
+      },
+      {
+        "id": "-BugTriageForestTriageList",
+        "name": "Bug Triage Forest Triage List",
+        "style": "forest"
+      },
+      {
+        "id": "-BugTriageRoseTriageList",
+        "name": "Bug Triage Rose Triage List",
+        "style": "rose"
+      },
+      {
+        "id": "-BugTriageGoldSummaryDashboard",
+        "name": "Bug Triage Gold Summary Dashboard",
+        "style": "gold"
+      },
+      {
+        "id": "-BugTriageMidnightSummaryDashboard",
+        "name": "Bug Triage Midnight Summary Dashboard",
+        "style": "midnight"
+      },
+      {
+        "id": "-BugTriageCrimsonPriorityColumns",
+        "name": "Bug Triage Crimson Priority Columns",
+        "style": "crimson"
+      },
+      {
+        "id": "-BugTriageLavenderPriorityColumns",
+        "name": "Bug Triage Lavender Priority Columns",
+        "style": "lavender"
+      },
+      {
+        "id": "-BugTriageArcticTriageList",
+        "name": "Bug Triage Arctic Triage List",
+        "style": "arctic"
+      },
+      {
+        "id": "-BugTriageEspressoTriageList",
+        "name": "Bug Triage Espresso Triage List",
+        "style": "espresso"
       }
     ],
     "primaryId": "BugTriage-PriorityColumnsDark"
@@ -1394,6 +2944,56 @@
         "id": "ClientPipeline-MetricsWarm",
         "name": "Metrics Warm",
         "style": "warm"
+      },
+      {
+        "id": "-ClientPipelineOceanFunnel",
+        "name": "Client Pipeline Ocean Funnel",
+        "style": "ocean"
+      },
+      {
+        "id": "-ClientPipelineSunsetFunnel",
+        "name": "Client Pipeline Sunset Funnel",
+        "style": "sunset"
+      },
+      {
+        "id": "-ClientPipelineForestPipelineBoard",
+        "name": "Client Pipeline Forest Pipeline Board",
+        "style": "forest"
+      },
+      {
+        "id": "-ClientPipelineRosePipelineBoard",
+        "name": "Client Pipeline Rose Pipeline Board",
+        "style": "rose"
+      },
+      {
+        "id": "-ClientPipelineGoldMetrics",
+        "name": "Client Pipeline Gold Metrics",
+        "style": "gold"
+      },
+      {
+        "id": "-ClientPipelineMidnightMetrics",
+        "name": "Client Pipeline Midnight Metrics",
+        "style": "midnight"
+      },
+      {
+        "id": "-ClientPipelineCrimsonFunnel",
+        "name": "Client Pipeline Crimson Funnel",
+        "style": "crimson"
+      },
+      {
+        "id": "-ClientPipelineLavenderFunnel",
+        "name": "Client Pipeline Lavender Funnel",
+        "style": "lavender"
+      },
+      {
+        "id": "-ClientPipelineArcticPipelineBoard",
+        "name": "Client Pipeline Arctic Pipeline Board",
+        "style": "arctic"
+      },
+      {
+        "id": "-ClientPipelineEspressoPipelineBoard",
+        "name": "Client Pipeline Espresso Pipeline Board",
+        "style": "espresso"
       }
     ],
     "primaryId": "ClientPipeline-FunnelDark"
@@ -1437,6 +3037,56 @@
         "id": "ComponentInventory-InventoryListClean",
         "name": "Inventory List Clean",
         "style": "clean"
+      },
+      {
+        "id": "-ComponentInventoryOceanArchitectureGrid",
+        "name": "Component Inventory Ocean Architecture Grid",
+        "style": "ocean"
+      },
+      {
+        "id": "-ComponentInventorySunsetArchitectureGrid",
+        "name": "Component Inventory Sunset Architecture Grid",
+        "style": "sunset"
+      },
+      {
+        "id": "-ComponentInventoryForestDependencyMap",
+        "name": "Component Inventory Forest Dependency Map",
+        "style": "forest"
+      },
+      {
+        "id": "-ComponentInventoryRoseDependencyMap",
+        "name": "Component Inventory Rose Dependency Map",
+        "style": "rose"
+      },
+      {
+        "id": "-ComponentInventoryGoldInventoryList",
+        "name": "Component Inventory Gold Inventory List",
+        "style": "gold"
+      },
+      {
+        "id": "-ComponentInventoryMidnightInventoryList",
+        "name": "Component Inventory Midnight Inventory List",
+        "style": "midnight"
+      },
+      {
+        "id": "-ComponentInventoryCrimsonArchitectureGrid",
+        "name": "Component Inventory Crimson Architecture Grid",
+        "style": "crimson"
+      },
+      {
+        "id": "-ComponentInventoryLavenderArchitectureGrid",
+        "name": "Component Inventory Lavender Architecture Grid",
+        "style": "lavender"
+      },
+      {
+        "id": "-ComponentInventoryArcticDependencyMap",
+        "name": "Component Inventory Arctic Dependency Map",
+        "style": "arctic"
+      },
+      {
+        "id": "-ComponentInventoryEspressoDependencyMap",
+        "name": "Component Inventory Espresso Dependency Map",
+        "style": "espresso"
       }
     ],
     "primaryId": "ComponentInventory-ArchitectureGridDark"
@@ -1480,6 +3130,56 @@
         "id": "ConceptPitch-BriefBold",
         "name": "Brief Bold",
         "style": "bold"
+      },
+      {
+        "id": "ConceptPitch-OceanArc",
+        "name": "Ocean Arc",
+        "style": "ocean"
+      },
+      {
+        "id": "ConceptPitch-SunsetBoard",
+        "name": "Sunset Board",
+        "style": "sunset"
+      },
+      {
+        "id": "ConceptPitch-ForestBrief",
+        "name": "Forest Brief",
+        "style": "forest"
+      },
+      {
+        "id": "ConceptPitch-RoseArc",
+        "name": "Rose Arc",
+        "style": "rose"
+      },
+      {
+        "id": "ConceptPitch-GoldBoard",
+        "name": "Gold Board",
+        "style": "gold"
+      },
+      {
+        "id": "ConceptPitch-MidnightBrief",
+        "name": "Midnight Brief",
+        "style": "midnight"
+      },
+      {
+        "id": "ConceptPitch-CrimsonArc",
+        "name": "Crimson Arc",
+        "style": "crimson"
+      },
+      {
+        "id": "ConceptPitch-LavenderBoard",
+        "name": "Lavender Board",
+        "style": "lavender"
+      },
+      {
+        "id": "ConceptPitch-ArcticBrief",
+        "name": "Arctic Brief",
+        "style": "arctic"
+      },
+      {
+        "id": "ConceptPitch-EspressoArc",
+        "name": "Espresso Arc",
+        "style": "espresso"
       }
     ],
     "primaryId": "ConceptPitch-ArcDark"
@@ -1523,6 +3223,56 @@
         "id": "DeploymentStatus-HealthDashboardNeon",
         "name": "Health Dashboard Neon",
         "style": "neon"
+      },
+      {
+        "id": "-DeploymentStatusOceanEnvironmentCards",
+        "name": "Deployment Status Ocean Environment Cards",
+        "style": "ocean"
+      },
+      {
+        "id": "-DeploymentStatusSunsetEnvironmentCards",
+        "name": "Deployment Status Sunset Environment Cards",
+        "style": "sunset"
+      },
+      {
+        "id": "-DeploymentStatusForestPipelineView",
+        "name": "Deployment Status Forest Pipeline View",
+        "style": "forest"
+      },
+      {
+        "id": "-DeploymentStatusRosePipelineView",
+        "name": "Deployment Status Rose Pipeline View",
+        "style": "rose"
+      },
+      {
+        "id": "-DeploymentStatusGoldHealthDashboard",
+        "name": "Deployment Status Gold Health Dashboard",
+        "style": "gold"
+      },
+      {
+        "id": "-DeploymentStatusMidnightHealthDashboard",
+        "name": "Deployment Status Midnight Health Dashboard",
+        "style": "midnight"
+      },
+      {
+        "id": "-DeploymentStatusCrimsonEnvironmentCards",
+        "name": "Deployment Status Crimson Environment Cards",
+        "style": "crimson"
+      },
+      {
+        "id": "-DeploymentStatusLavenderEnvironmentCards",
+        "name": "Deployment Status Lavender Environment Cards",
+        "style": "lavender"
+      },
+      {
+        "id": "-DeploymentStatusArcticPipelineView",
+        "name": "Deployment Status Arctic Pipeline View",
+        "style": "arctic"
+      },
+      {
+        "id": "-DeploymentStatusEspressoPipelineView",
+        "name": "Deployment Status Espresso Pipeline View",
+        "style": "espresso"
       }
     ],
     "primaryId": "DeploymentStatus-EnvironmentCardsDark"
@@ -1566,6 +3316,56 @@
         "id": "EffortTracking-BreakdownWarm",
         "name": "Breakdown Warm",
         "style": "warm"
+      },
+      {
+        "id": "-EffortTrackingOceanTeamAllocation",
+        "name": "Effort Tracking Ocean Team Allocation",
+        "style": "ocean"
+      },
+      {
+        "id": "-EffortTrackingSunsetTeamAllocation",
+        "name": "Effort Tracking Sunset Team Allocation",
+        "style": "sunset"
+      },
+      {
+        "id": "-EffortTrackingForestCapacity",
+        "name": "Effort Tracking Forest Capacity",
+        "style": "forest"
+      },
+      {
+        "id": "-EffortTrackingRoseCapacity",
+        "name": "Effort Tracking Rose Capacity",
+        "style": "rose"
+      },
+      {
+        "id": "-EffortTrackingGoldBreakdown",
+        "name": "Effort Tracking Gold Breakdown",
+        "style": "gold"
+      },
+      {
+        "id": "-EffortTrackingMidnightBreakdown",
+        "name": "Effort Tracking Midnight Breakdown",
+        "style": "midnight"
+      },
+      {
+        "id": "-EffortTrackingCrimsonTeamAllocation",
+        "name": "Effort Tracking Crimson Team Allocation",
+        "style": "crimson"
+      },
+      {
+        "id": "-EffortTrackingLavenderTeamAllocation",
+        "name": "Effort Tracking Lavender Team Allocation",
+        "style": "lavender"
+      },
+      {
+        "id": "-EffortTrackingArcticCapacity",
+        "name": "Effort Tracking Arctic Capacity",
+        "style": "arctic"
+      },
+      {
+        "id": "-EffortTrackingEspressoCapacity",
+        "name": "Effort Tracking Espresso Capacity",
+        "style": "espresso"
       }
     ],
     "primaryId": "EffortTracking-TeamAllocationDark"
@@ -1609,6 +3409,56 @@
         "id": "EventVenue-EventOverviewBold",
         "name": "Event Overview Bold",
         "style": "bold"
+      },
+      {
+        "id": "-EventVenueOceanScheduleMap",
+        "name": "Event Venue Ocean Schedule Map",
+        "style": "ocean"
+      },
+      {
+        "id": "-EventVenueSunsetScheduleMap",
+        "name": "Event Venue Sunset Schedule Map",
+        "style": "sunset"
+      },
+      {
+        "id": "-EventVenueForestVenueCards",
+        "name": "Event Venue Forest Venue Cards",
+        "style": "forest"
+      },
+      {
+        "id": "-EventVenueRoseVenueCards",
+        "name": "Event Venue Rose Venue Cards",
+        "style": "rose"
+      },
+      {
+        "id": "-EventVenueGoldEventOverview",
+        "name": "Event Venue Gold Event Overview",
+        "style": "gold"
+      },
+      {
+        "id": "-EventVenueMidnightEventOverview",
+        "name": "Event Venue Midnight Event Overview",
+        "style": "midnight"
+      },
+      {
+        "id": "-EventVenueCrimsonScheduleMap",
+        "name": "Event Venue Crimson Schedule Map",
+        "style": "crimson"
+      },
+      {
+        "id": "-EventVenueLavenderScheduleMap",
+        "name": "Event Venue Lavender Schedule Map",
+        "style": "lavender"
+      },
+      {
+        "id": "-EventVenueArcticVenueCards",
+        "name": "Event Venue Arctic Venue Cards",
+        "style": "arctic"
+      },
+      {
+        "id": "-EventVenueEspressoVenueCards",
+        "name": "Event Venue Espresso Venue Cards",
+        "style": "espresso"
       }
     ],
     "primaryId": "EventVenue-ScheduleMapDark"
@@ -1652,6 +3502,56 @@
         "id": "FeatureFlags-RolloutTrackerNeon",
         "name": "Rollout Tracker Neon",
         "style": "neon"
+      },
+      {
+        "id": "-FeatureFlagsOceanExperimentBoard",
+        "name": "Feature Flags Ocean Experiment Board",
+        "style": "ocean"
+      },
+      {
+        "id": "-FeatureFlagsSunsetExperimentBoard",
+        "name": "Feature Flags Sunset Experiment Board",
+        "style": "sunset"
+      },
+      {
+        "id": "-FeatureFlagsForestResultsView",
+        "name": "Feature Flags Forest Results View",
+        "style": "forest"
+      },
+      {
+        "id": "-FeatureFlagsRoseResultsView",
+        "name": "Feature Flags Rose Results View",
+        "style": "rose"
+      },
+      {
+        "id": "-FeatureFlagsGoldRolloutTracker",
+        "name": "Feature Flags Gold Rollout Tracker",
+        "style": "gold"
+      },
+      {
+        "id": "-FeatureFlagsMidnightRolloutTracker",
+        "name": "Feature Flags Midnight Rollout Tracker",
+        "style": "midnight"
+      },
+      {
+        "id": "-FeatureFlagsCrimsonExperimentBoard",
+        "name": "Feature Flags Crimson Experiment Board",
+        "style": "crimson"
+      },
+      {
+        "id": "-FeatureFlagsLavenderExperimentBoard",
+        "name": "Feature Flags Lavender Experiment Board",
+        "style": "lavender"
+      },
+      {
+        "id": "-FeatureFlagsArcticResultsView",
+        "name": "Feature Flags Arctic Results View",
+        "style": "arctic"
+      },
+      {
+        "id": "-FeatureFlagsEspressoResultsView",
+        "name": "Feature Flags Espresso Results View",
+        "style": "espresso"
       }
     ],
     "primaryId": "FeatureFlags-ExperimentBoardDark"
@@ -1695,6 +3595,56 @@
         "id": "FeatureRoadmap-GridClean",
         "name": "Grid Clean",
         "style": "clean"
+      },
+      {
+        "id": "-FeatureRoadmapOceanTimeline",
+        "name": "Feature Roadmap Ocean Timeline",
+        "style": "ocean"
+      },
+      {
+        "id": "-FeatureRoadmapSunsetTimeline",
+        "name": "Feature Roadmap Sunset Timeline",
+        "style": "sunset"
+      },
+      {
+        "id": "-FeatureRoadmapForestSwimlane",
+        "name": "Feature Roadmap Forest Swimlane",
+        "style": "forest"
+      },
+      {
+        "id": "-FeatureRoadmapRoseSwimlane",
+        "name": "Feature Roadmap Rose Swimlane",
+        "style": "rose"
+      },
+      {
+        "id": "-FeatureRoadmapGoldGrid",
+        "name": "Feature Roadmap Gold Grid",
+        "style": "gold"
+      },
+      {
+        "id": "-FeatureRoadmapMidnightGrid",
+        "name": "Feature Roadmap Midnight Grid",
+        "style": "midnight"
+      },
+      {
+        "id": "-FeatureRoadmapCrimsonTimeline",
+        "name": "Feature Roadmap Crimson Timeline",
+        "style": "crimson"
+      },
+      {
+        "id": "-FeatureRoadmapLavenderTimeline",
+        "name": "Feature Roadmap Lavender Timeline",
+        "style": "lavender"
+      },
+      {
+        "id": "-FeatureRoadmapArcticSwimlane",
+        "name": "Feature Roadmap Arctic Swimlane",
+        "style": "arctic"
+      },
+      {
+        "id": "-FeatureRoadmapEspressoSwimlane",
+        "name": "Feature Roadmap Espresso Swimlane",
+        "style": "espresso"
       }
     ],
     "primaryId": "FeatureRoadmap-TimelineDark"
@@ -1738,6 +3688,56 @@
         "id": "IntegrationStatus-HealthMonitorClean",
         "name": "Health Monitor Clean",
         "style": "clean"
+      },
+      {
+        "id": "-IntegrationStatusOceanStatusWall",
+        "name": "Integration Status Ocean Status Wall",
+        "style": "ocean"
+      },
+      {
+        "id": "-IntegrationStatusSunsetStatusWall",
+        "name": "Integration Status Sunset Status Wall",
+        "style": "sunset"
+      },
+      {
+        "id": "-IntegrationStatusForestCategoryGroups",
+        "name": "Integration Status Forest Category Groups",
+        "style": "forest"
+      },
+      {
+        "id": "-IntegrationStatusRoseCategoryGroups",
+        "name": "Integration Status Rose Category Groups",
+        "style": "rose"
+      },
+      {
+        "id": "-IntegrationStatusGoldHealthMonitor",
+        "name": "Integration Status Gold Health Monitor",
+        "style": "gold"
+      },
+      {
+        "id": "-IntegrationStatusMidnightHealthMonitor",
+        "name": "Integration Status Midnight Health Monitor",
+        "style": "midnight"
+      },
+      {
+        "id": "-IntegrationStatusCrimsonStatusWall",
+        "name": "Integration Status Crimson Status Wall",
+        "style": "crimson"
+      },
+      {
+        "id": "-IntegrationStatusLavenderStatusWall",
+        "name": "Integration Status Lavender Status Wall",
+        "style": "lavender"
+      },
+      {
+        "id": "-IntegrationStatusArcticCategoryGroups",
+        "name": "Integration Status Arctic Category Groups",
+        "style": "arctic"
+      },
+      {
+        "id": "-IntegrationStatusEspressoCategoryGroups",
+        "name": "Integration Status Espresso Category Groups",
+        "style": "espresso"
       }
     ],
     "primaryId": "IntegrationStatus-StatusWallDark"
@@ -1781,6 +3781,56 @@
         "id": "NeighborhoodGuide-OverviewNeon",
         "name": "Overview Neon",
         "style": "neon"
+      },
+      {
+        "id": "-NeighborhoodGuideOceanExplorer",
+        "name": "Neighborhood Guide Ocean Explorer",
+        "style": "ocean"
+      },
+      {
+        "id": "-NeighborhoodGuideSunsetExplorer",
+        "name": "Neighborhood Guide Sunset Explorer",
+        "style": "sunset"
+      },
+      {
+        "id": "-NeighborhoodGuideForestHighlightsReel",
+        "name": "Neighborhood Guide Forest Highlights Reel",
+        "style": "forest"
+      },
+      {
+        "id": "-NeighborhoodGuideRoseHighlightsReel",
+        "name": "Neighborhood Guide Rose Highlights Reel",
+        "style": "rose"
+      },
+      {
+        "id": "-NeighborhoodGuideGoldOverview",
+        "name": "Neighborhood Guide Gold Overview",
+        "style": "gold"
+      },
+      {
+        "id": "-NeighborhoodGuideMidnightOverview",
+        "name": "Neighborhood Guide Midnight Overview",
+        "style": "midnight"
+      },
+      {
+        "id": "-NeighborhoodGuideCrimsonExplorer",
+        "name": "Neighborhood Guide Crimson Explorer",
+        "style": "crimson"
+      },
+      {
+        "id": "-NeighborhoodGuideLavenderExplorer",
+        "name": "Neighborhood Guide Lavender Explorer",
+        "style": "lavender"
+      },
+      {
+        "id": "-NeighborhoodGuideArcticHighlightsReel",
+        "name": "Neighborhood Guide Arctic Highlights Reel",
+        "style": "arctic"
+      },
+      {
+        "id": "-NeighborhoodGuideEspressoHighlightsReel",
+        "name": "Neighborhood Guide Espresso Highlights Reel",
+        "style": "espresso"
       }
     ],
     "primaryId": "NeighborhoodGuide-ExplorerWarm"
@@ -1824,6 +3874,56 @@
         "id": "OfficeDirectory-RegionGroupsClean",
         "name": "Region Groups Clean",
         "style": "clean"
+      },
+      {
+        "id": "-OfficeDirectoryOceanWorldView",
+        "name": "Office Directory Ocean World View",
+        "style": "ocean"
+      },
+      {
+        "id": "-OfficeDirectorySunsetWorldView",
+        "name": "Office Directory Sunset World View",
+        "style": "sunset"
+      },
+      {
+        "id": "-OfficeDirectoryForestCardList",
+        "name": "Office Directory Forest Card List",
+        "style": "forest"
+      },
+      {
+        "id": "-OfficeDirectoryRoseCardList",
+        "name": "Office Directory Rose Card List",
+        "style": "rose"
+      },
+      {
+        "id": "-OfficeDirectoryGoldRegionGroups",
+        "name": "Office Directory Gold Region Groups",
+        "style": "gold"
+      },
+      {
+        "id": "-OfficeDirectoryMidnightRegionGroups",
+        "name": "Office Directory Midnight Region Groups",
+        "style": "midnight"
+      },
+      {
+        "id": "-OfficeDirectoryCrimsonWorldView",
+        "name": "Office Directory Crimson World View",
+        "style": "crimson"
+      },
+      {
+        "id": "-OfficeDirectoryLavenderWorldView",
+        "name": "Office Directory Lavender World View",
+        "style": "lavender"
+      },
+      {
+        "id": "-OfficeDirectoryArcticCardList",
+        "name": "Office Directory Arctic Card List",
+        "style": "arctic"
+      },
+      {
+        "id": "-OfficeDirectoryEspressoCardList",
+        "name": "Office Directory Espresso Card List",
+        "style": "espresso"
       }
     ],
     "primaryId": "OfficeDirectory-WorldViewDark"
@@ -1867,6 +3967,56 @@
         "id": "PinCollection-CategoryGridClean",
         "name": "Category Grid Clean",
         "style": "clean"
+      },
+      {
+        "id": "-PinCollectionOceanCardGallery",
+        "name": "Pin Collection Ocean Card Gallery",
+        "style": "ocean"
+      },
+      {
+        "id": "-PinCollectionSunsetMapList",
+        "name": "Pin Collection Sunset Map List",
+        "style": "sunset"
+      },
+      {
+        "id": "-PinCollectionForestCardGallery",
+        "name": "Pin Collection Forest Card Gallery",
+        "style": "forest"
+      },
+      {
+        "id": "-PinCollectionRoseCategoryGrid",
+        "name": "Pin Collection Rose Category Grid",
+        "style": "rose"
+      },
+      {
+        "id": "-PinCollectionGoldMapList",
+        "name": "Pin Collection Gold Map List",
+        "style": "gold"
+      },
+      {
+        "id": "-PinCollectionMidnightCardGallery",
+        "name": "Pin Collection Midnight Card Gallery",
+        "style": "midnight"
+      },
+      {
+        "id": "-PinCollectionCrimsonCategoryGrid",
+        "name": "Pin Collection Crimson Category Grid",
+        "style": "crimson"
+      },
+      {
+        "id": "-PinCollectionLavenderMapList",
+        "name": "Pin Collection Lavender Map List",
+        "style": "lavender"
+      },
+      {
+        "id": "-PinCollectionArcticCardGallery",
+        "name": "Pin Collection Arctic Card Gallery",
+        "style": "arctic"
+      },
+      {
+        "id": "-PinCollectionEspressoCategoryGrid",
+        "name": "Pin Collection Espresso Category Grid",
+        "style": "espresso"
       }
     ],
     "primaryId": "PinCollection-CardGalleryWarm"
@@ -1910,6 +4060,56 @@
         "id": "PlatformOverview-StackNeon",
         "name": "Stack Neon",
         "style": "neon"
+      },
+      {
+        "id": "-PlatformOverviewOceanCommandCenter",
+        "name": "Platform Overview Ocean Command Center",
+        "style": "ocean"
+      },
+      {
+        "id": "-PlatformOverviewSunsetCommandCenter",
+        "name": "Platform Overview Sunset Command Center",
+        "style": "sunset"
+      },
+      {
+        "id": "-PlatformOverviewForestModuleGrid",
+        "name": "Platform Overview Forest Module Grid",
+        "style": "forest"
+      },
+      {
+        "id": "-PlatformOverviewRoseModuleGrid",
+        "name": "Platform Overview Rose Module Grid",
+        "style": "rose"
+      },
+      {
+        "id": "-PlatformOverviewGoldStack",
+        "name": "Platform Overview Gold Stack",
+        "style": "gold"
+      },
+      {
+        "id": "-PlatformOverviewMidnightStack",
+        "name": "Platform Overview Midnight Stack",
+        "style": "midnight"
+      },
+      {
+        "id": "-PlatformOverviewCrimsonCommandCenter",
+        "name": "Platform Overview Crimson Command Center",
+        "style": "crimson"
+      },
+      {
+        "id": "-PlatformOverviewLavenderCommandCenter",
+        "name": "Platform Overview Lavender Command Center",
+        "style": "lavender"
+      },
+      {
+        "id": "-PlatformOverviewArcticModuleGrid",
+        "name": "Platform Overview Arctic Module Grid",
+        "style": "arctic"
+      },
+      {
+        "id": "-PlatformOverviewEspressoModuleGrid",
+        "name": "Platform Overview Espresso Module Grid",
+        "style": "espresso"
       }
     ],
     "primaryId": "PlatformOverview-CommandCenterDark"
@@ -1953,6 +4153,56 @@
         "id": "ProjectHealth-ExecutiveSummaryWarm",
         "name": "Executive Summary Warm",
         "style": "warm"
+      },
+      {
+        "id": "-ProjectHealthOceanHealthScorecard",
+        "name": "Project Health Ocean Health Scorecard",
+        "style": "ocean"
+      },
+      {
+        "id": "-ProjectHealthSunsetHealthScorecard",
+        "name": "Project Health Sunset Health Scorecard",
+        "style": "sunset"
+      },
+      {
+        "id": "-ProjectHealthForestWorkstreamView",
+        "name": "Project Health Forest Workstream View",
+        "style": "forest"
+      },
+      {
+        "id": "-ProjectHealthRoseWorkstreamView",
+        "name": "Project Health Rose Workstream View",
+        "style": "rose"
+      },
+      {
+        "id": "-ProjectHealthGoldExecutiveSummary",
+        "name": "Project Health Gold Executive Summary",
+        "style": "gold"
+      },
+      {
+        "id": "-ProjectHealthMidnightExecutiveSummary",
+        "name": "Project Health Midnight Executive Summary",
+        "style": "midnight"
+      },
+      {
+        "id": "-ProjectHealthCrimsonHealthScorecard",
+        "name": "Project Health Crimson Health Scorecard",
+        "style": "crimson"
+      },
+      {
+        "id": "-ProjectHealthLavenderHealthScorecard",
+        "name": "Project Health Lavender Health Scorecard",
+        "style": "lavender"
+      },
+      {
+        "id": "-ProjectHealthArcticWorkstreamView",
+        "name": "Project Health Arctic Workstream View",
+        "style": "arctic"
+      },
+      {
+        "id": "-ProjectHealthEspressoWorkstreamView",
+        "name": "Project Health Espresso Workstream View",
+        "style": "espresso"
       }
     ],
     "primaryId": "ProjectHealth-HealthScorecardDark"
@@ -1996,6 +4246,56 @@
         "id": "QBRDashboard-ComparisonClean",
         "name": "Comparison Clean",
         "style": "clean"
+      },
+      {
+        "id": "-QBRDashboardOceanExecutive",
+        "name": "QBRDashboard Ocean Executive",
+        "style": "ocean"
+      },
+      {
+        "id": "-QBRDashboardSunsetExecutive",
+        "name": "QBRDashboard Sunset Executive",
+        "style": "sunset"
+      },
+      {
+        "id": "-QBRDashboardForestDetailed",
+        "name": "QBRDashboard Forest Detailed",
+        "style": "forest"
+      },
+      {
+        "id": "-QBRDashboardRoseDetailed",
+        "name": "QBRDashboard Rose Detailed",
+        "style": "rose"
+      },
+      {
+        "id": "-QBRDashboardGoldComparison",
+        "name": "QBRDashboard Gold Comparison",
+        "style": "gold"
+      },
+      {
+        "id": "-QBRDashboardMidnightComparison",
+        "name": "QBRDashboard Midnight Comparison",
+        "style": "midnight"
+      },
+      {
+        "id": "-QBRDashboardCrimsonExecutive",
+        "name": "QBRDashboard Crimson Executive",
+        "style": "crimson"
+      },
+      {
+        "id": "-QBRDashboardLavenderExecutive",
+        "name": "QBRDashboard Lavender Executive",
+        "style": "lavender"
+      },
+      {
+        "id": "-QBRDashboardArcticDetailed",
+        "name": "QBRDashboard Arctic Detailed",
+        "style": "arctic"
+      },
+      {
+        "id": "-QBRDashboardEspressoDetailed",
+        "name": "QBRDashboard Espresso Detailed",
+        "style": "espresso"
       }
     ],
     "primaryId": "QBRDashboard-ExecutiveDark"
@@ -2039,6 +4339,56 @@
         "id": "ReleaseNotes-VersionCompareClean",
         "name": "Version Compare Clean",
         "style": "clean"
+      },
+      {
+        "id": "-ReleaseNotesOceanChangelog",
+        "name": "Release Notes Ocean Changelog",
+        "style": "ocean"
+      },
+      {
+        "id": "-ReleaseNotesSunsetChangelog",
+        "name": "Release Notes Sunset Changelog",
+        "style": "sunset"
+      },
+      {
+        "id": "-ReleaseNotesForestHighlights",
+        "name": "Release Notes Forest Highlights",
+        "style": "forest"
+      },
+      {
+        "id": "-ReleaseNotesRoseHighlights",
+        "name": "Release Notes Rose Highlights",
+        "style": "rose"
+      },
+      {
+        "id": "-ReleaseNotesGoldVersionCompare",
+        "name": "Release Notes Gold Version Compare",
+        "style": "gold"
+      },
+      {
+        "id": "-ReleaseNotesMidnightVersionCompare",
+        "name": "Release Notes Midnight Version Compare",
+        "style": "midnight"
+      },
+      {
+        "id": "-ReleaseNotesCrimsonChangelog",
+        "name": "Release Notes Crimson Changelog",
+        "style": "crimson"
+      },
+      {
+        "id": "-ReleaseNotesLavenderChangelog",
+        "name": "Release Notes Lavender Changelog",
+        "style": "lavender"
+      },
+      {
+        "id": "-ReleaseNotesArcticHighlights",
+        "name": "Release Notes Arctic Highlights",
+        "style": "arctic"
+      },
+      {
+        "id": "-ReleaseNotesEspressoHighlights",
+        "name": "Release Notes Espresso Highlights",
+        "style": "espresso"
       }
     ],
     "primaryId": "ReleaseNotes-ChangelogDark"
@@ -2082,6 +4432,56 @@
         "id": "SprintDashboard-BurndownBold",
         "name": "Burndown Bold",
         "style": "bold"
+      },
+      {
+        "id": "-SprintDashboardOceanKanban",
+        "name": "Sprint Dashboard Ocean Kanban",
+        "style": "ocean"
+      },
+      {
+        "id": "-SprintDashboardSunsetKanban",
+        "name": "Sprint Dashboard Sunset Kanban",
+        "style": "sunset"
+      },
+      {
+        "id": "-SprintDashboardForestVelocity",
+        "name": "Sprint Dashboard Forest Velocity",
+        "style": "forest"
+      },
+      {
+        "id": "-SprintDashboardRoseVelocity",
+        "name": "Sprint Dashboard Rose Velocity",
+        "style": "rose"
+      },
+      {
+        "id": "-SprintDashboardGoldBurndown",
+        "name": "Sprint Dashboard Gold Burndown",
+        "style": "gold"
+      },
+      {
+        "id": "-SprintDashboardMidnightBurndown",
+        "name": "Sprint Dashboard Midnight Burndown",
+        "style": "midnight"
+      },
+      {
+        "id": "-SprintDashboardCrimsonKanban",
+        "name": "Sprint Dashboard Crimson Kanban",
+        "style": "crimson"
+      },
+      {
+        "id": "-SprintDashboardLavenderKanban",
+        "name": "Sprint Dashboard Lavender Kanban",
+        "style": "lavender"
+      },
+      {
+        "id": "-SprintDashboardArcticVelocity",
+        "name": "Sprint Dashboard Arctic Velocity",
+        "style": "arctic"
+      },
+      {
+        "id": "-SprintDashboardEspressoVelocity",
+        "name": "Sprint Dashboard Espresso Velocity",
+        "style": "espresso"
       }
     ],
     "primaryId": "SprintDashboard-KanbanDark"
@@ -2125,6 +4525,56 @@
         "id": "SprintRecap-TeamContributionsBold",
         "name": "Team Contributions Bold",
         "style": "bold"
+      },
+      {
+        "id": "-SprintRecapOceanShippedList",
+        "name": "Sprint Recap Ocean Shipped List",
+        "style": "ocean"
+      },
+      {
+        "id": "-SprintRecapSunsetShippedList",
+        "name": "Sprint Recap Sunset Shipped List",
+        "style": "sunset"
+      },
+      {
+        "id": "-SprintRecapForestHighlightCards",
+        "name": "Sprint Recap Forest Highlight Cards",
+        "style": "forest"
+      },
+      {
+        "id": "-SprintRecapRoseHighlightCards",
+        "name": "Sprint Recap Rose Highlight Cards",
+        "style": "rose"
+      },
+      {
+        "id": "-SprintRecapGoldTeamContributions",
+        "name": "Sprint Recap Gold Team Contributions",
+        "style": "gold"
+      },
+      {
+        "id": "-SprintRecapMidnightTeamContributions",
+        "name": "Sprint Recap Midnight Team Contributions",
+        "style": "midnight"
+      },
+      {
+        "id": "-SprintRecapCrimsonShippedList",
+        "name": "Sprint Recap Crimson Shipped List",
+        "style": "crimson"
+      },
+      {
+        "id": "-SprintRecapLavenderShippedList",
+        "name": "Sprint Recap Lavender Shipped List",
+        "style": "lavender"
+      },
+      {
+        "id": "-SprintRecapArcticHighlightCards",
+        "name": "Sprint Recap Arctic Highlight Cards",
+        "style": "arctic"
+      },
+      {
+        "id": "-SprintRecapEspressoHighlightCards",
+        "name": "Sprint Recap Espresso Highlight Cards",
+        "style": "espresso"
       }
     ],
     "primaryId": "SprintRecap-ShippedListDark"
@@ -2168,6 +4618,56 @@
         "id": "StoreLocator-DirectoryMinimal",
         "name": "Directory Minimal",
         "style": "minimal"
+      },
+      {
+        "id": "-StoreLocatorOceanFinder",
+        "name": "Store Locator Ocean Finder",
+        "style": "ocean"
+      },
+      {
+        "id": "-StoreLocatorSunsetMapPins",
+        "name": "Store Locator Sunset Map Pins",
+        "style": "sunset"
+      },
+      {
+        "id": "-StoreLocatorForestDirectory",
+        "name": "Store Locator Forest Directory",
+        "style": "forest"
+      },
+      {
+        "id": "-StoreLocatorRoseFinder",
+        "name": "Store Locator Rose Finder",
+        "style": "rose"
+      },
+      {
+        "id": "-StoreLocatorGoldMapPins",
+        "name": "Store Locator Gold Map Pins",
+        "style": "gold"
+      },
+      {
+        "id": "-StoreLocatorMidnightDirectory",
+        "name": "Store Locator Midnight Directory",
+        "style": "midnight"
+      },
+      {
+        "id": "-StoreLocatorCrimsonFinder",
+        "name": "Store Locator Crimson Finder",
+        "style": "crimson"
+      },
+      {
+        "id": "-StoreLocatorLavenderMapPins",
+        "name": "Store Locator Lavender Map Pins",
+        "style": "lavender"
+      },
+      {
+        "id": "-StoreLocatorArcticDirectory",
+        "name": "Store Locator Arctic Directory",
+        "style": "arctic"
+      },
+      {
+        "id": "-StoreLocatorEspressoFinder",
+        "name": "Store Locator Espresso Finder",
+        "style": "espresso"
       }
     ],
     "primaryId": "StoreLocator-FinderClean"
@@ -2211,6 +4711,56 @@
         "id": "ThoughtLeadership-KeynoteClean",
         "name": "Keynote Clean",
         "style": "clean"
+      },
+      {
+        "id": "-ThoughtLeadershipOceanEditorial",
+        "name": "Thought Leadership Ocean Editorial",
+        "style": "ocean"
+      },
+      {
+        "id": "-ThoughtLeadershipSunsetNarrative",
+        "name": "Thought Leadership Sunset Narrative",
+        "style": "sunset"
+      },
+      {
+        "id": "-ThoughtLeadershipForestKeynote",
+        "name": "Thought Leadership Forest Keynote",
+        "style": "forest"
+      },
+      {
+        "id": "-ThoughtLeadershipRoseEditorial",
+        "name": "Thought Leadership Rose Editorial",
+        "style": "rose"
+      },
+      {
+        "id": "-ThoughtLeadershipGoldNarrative",
+        "name": "Thought Leadership Gold Narrative",
+        "style": "gold"
+      },
+      {
+        "id": "-ThoughtLeadershipMidnightKeynote",
+        "name": "Thought Leadership Midnight Keynote",
+        "style": "midnight"
+      },
+      {
+        "id": "-ThoughtLeadershipCrimsonEditorial",
+        "name": "Thought Leadership Crimson Editorial",
+        "style": "crimson"
+      },
+      {
+        "id": "-ThoughtLeadershipLavenderNarrative",
+        "name": "Thought Leadership Lavender Narrative",
+        "style": "lavender"
+      },
+      {
+        "id": "-ThoughtLeadershipArcticKeynote",
+        "name": "Thought Leadership Arctic Keynote",
+        "style": "arctic"
+      },
+      {
+        "id": "-ThoughtLeadershipEspressoEditorial",
+        "name": "Thought Leadership Espresso Editorial",
+        "style": "espresso"
       }
     ],
     "primaryId": "ThoughtLeadership-EditorialDark"
@@ -2254,6 +4804,56 @@
         "id": "TravelItinerary-HighlightsBold",
         "name": "Highlights Bold",
         "style": "bold"
+      },
+      {
+        "id": "-TravelItineraryOceanDayByDay",
+        "name": "Travel Itinerary Ocean Day By Day",
+        "style": "ocean"
+      },
+      {
+        "id": "-TravelItinerarySunsetDayByDay",
+        "name": "Travel Itinerary Sunset Day By Day",
+        "style": "sunset"
+      },
+      {
+        "id": "-TravelItineraryForestRouteOverview",
+        "name": "Travel Itinerary Forest Route Overview",
+        "style": "forest"
+      },
+      {
+        "id": "-TravelItineraryRoseRouteOverview",
+        "name": "Travel Itinerary Rose Route Overview",
+        "style": "rose"
+      },
+      {
+        "id": "-TravelItineraryGoldHighlights",
+        "name": "Travel Itinerary Gold Highlights",
+        "style": "gold"
+      },
+      {
+        "id": "-TravelItineraryMidnightHighlights",
+        "name": "Travel Itinerary Midnight Highlights",
+        "style": "midnight"
+      },
+      {
+        "id": "-TravelItineraryCrimsonDayByDay",
+        "name": "Travel Itinerary Crimson Day By Day",
+        "style": "crimson"
+      },
+      {
+        "id": "-TravelItineraryLavenderDayByDay",
+        "name": "Travel Itinerary Lavender Day By Day",
+        "style": "lavender"
+      },
+      {
+        "id": "-TravelItineraryArcticRouteOverview",
+        "name": "Travel Itinerary Arctic Route Overview",
+        "style": "arctic"
+      },
+      {
+        "id": "-TravelItineraryEspressoRouteOverview",
+        "name": "Travel Itinerary Espresso Route Overview",
+        "style": "espresso"
       }
     ],
     "primaryId": "TravelItinerary-DayByDayWarm"
@@ -2297,6 +4897,56 @@
         "id": "VelocityChart-SummaryClean",
         "name": "Summary Clean",
         "style": "clean"
+      },
+      {
+        "id": "-VelocityChartOceanBarChart",
+        "name": "Velocity Chart Ocean Bar Chart",
+        "style": "ocean"
+      },
+      {
+        "id": "-VelocityChartSunsetBarChart",
+        "name": "Velocity Chart Sunset Bar Chart",
+        "style": "sunset"
+      },
+      {
+        "id": "-VelocityChartForestTrendLine",
+        "name": "Velocity Chart Forest Trend Line",
+        "style": "forest"
+      },
+      {
+        "id": "-VelocityChartRoseTrendLine",
+        "name": "Velocity Chart Rose Trend Line",
+        "style": "rose"
+      },
+      {
+        "id": "-VelocityChartGoldSummary",
+        "name": "Velocity Chart Gold Summary",
+        "style": "gold"
+      },
+      {
+        "id": "-VelocityChartMidnightSummary",
+        "name": "Velocity Chart Midnight Summary",
+        "style": "midnight"
+      },
+      {
+        "id": "-VelocityChartCrimsonBarChart",
+        "name": "Velocity Chart Crimson Bar Chart",
+        "style": "crimson"
+      },
+      {
+        "id": "-VelocityChartLavenderBarChart",
+        "name": "Velocity Chart Lavender Bar Chart",
+        "style": "lavender"
+      },
+      {
+        "id": "-VelocityChartArcticTrendLine",
+        "name": "Velocity Chart Arctic Trend Line",
+        "style": "arctic"
+      },
+      {
+        "id": "-VelocityChartEspressoTrendLine",
+        "name": "Velocity Chart Espresso Trend Line",
+        "style": "espresso"
       }
     ],
     "primaryId": "VelocityChart-BarChartDark"
@@ -2632,17 +5282,1452 @@
     "primaryVariant": "VideoAutomationPipeline",
     "variantCount": 10,
     "variants": [
-      { "id": "NetApp-DemoArchive",             "name": "Demo Archive (148s)",            "style": "dark" },
-      { "id": "NetApp-VideoAutomationPipeline", "name": "Video Automation Pipeline",      "style": "dark" },
-      { "id": "NetApp-ExplainerV2",            "name": "Explainer V2 (14min)",           "style": "dark" },
-      { "id": "NetApp-ExplainerV3",            "name": "Documentary V3 (10min)",         "style": "dark" },
-      { "id": "NetApp-SimsExplainer",          "name": "Sims Explainer (9min)",          "style": "dark" },
-      { "id": "NetApp-ConferenceTravels",      "name": "Conference Travels (10min)",     "style": "dark" },
-      { "id": "NetApp-DemoShorts",             "name": "Demo Shorts (90s portrait)",     "style": "dark" },
-      { "id": "NetApp-AIDemoToEnterprise",     "name": "AI Demo to Enterprise (9min)",   "style": "dark" },
-      { "id": "NetApp-PipelineDiagramDark",    "name": "Pipeline Diagram Dark",          "style": "dark" },
-      { "id": "NetApp-PipelineDiagramLight",   "name": "Pipeline Diagram Light",         "style": "light" }
+      {
+        "id": "NetApp-DemoArchive",
+        "name": "Demo Archive (148s)",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-VideoAutomationPipeline",
+        "name": "Video Automation Pipeline",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-ExplainerV2",
+        "name": "Explainer V2 (14min)",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-ExplainerV3",
+        "name": "Documentary V3 (10min)",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-SimsExplainer",
+        "name": "Sims Explainer (9min)",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-ConferenceTravels",
+        "name": "Conference Travels (10min)",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-DemoShorts",
+        "name": "Demo Shorts (90s portrait)",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-AIDemoToEnterprise",
+        "name": "AI Demo to Enterprise (9min)",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-PipelineDiagramDark",
+        "name": "Pipeline Diagram Dark",
+        "style": "dark"
+      },
+      {
+        "id": "NetApp-PipelineDiagramLight",
+        "name": "Pipeline Diagram Light",
+        "style": "light"
+      }
     ],
     "primaryId": "NetApp-VideoAutomationPipeline"
+  },
+  {
+    "slug": "animatedlist",
+    "camel": "AnimatedList",
+    "name": "Animated List",
+    "description": "Spring-animated list items that slide in with staggered timing. Great for feature lists, agenda items, and step-by-step breakdowns.",
+    "icon": "list",
+    "color": "blue",
+    "primaryVariant": "Dark",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "AnimatedList-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "AnimatedList-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "AnimatedList-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "AnimatedList-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "AnimatedList-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "AnimatedList-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "AnimatedList-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "AnimatedList-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "AnimatedList-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "AnimatedList-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "AnimatedList-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "AnimatedList-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "AnimatedList-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "AnimatedList-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "AnimatedList-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "AnimatedList-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "AnimatedList-Dark"
+  },
+  {
+    "slug": "animatedtext",
+    "camel": "AnimatedText",
+    "name": "Animated Text",
+    "description": "Per-character text animation with spring physics - each letter drops in with rotation. Ideal for titles, brand names, and impact statements.",
+    "icon": "type",
+    "color": "indigo",
+    "primaryVariant": "Neon",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "AnimatedText-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "AnimatedText-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "AnimatedText-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "AnimatedText-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "AnimatedText-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "AnimatedText-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "AnimatedText-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "AnimatedText-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "AnimatedText-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "AnimatedText-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "AnimatedText-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "AnimatedText-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "AnimatedText-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "AnimatedText-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "AnimatedText-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "AnimatedText-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "AnimatedText-Neon"
+  },
+  {
+    "slug": "bouncetext",
+    "camel": "BounceText",
+    "name": "Bounce Text",
+    "description": "Headline with bounce-in animation and gradient card background. Perfect for announcements, CTAs, and section openers.",
+    "icon": "arrow-up-from-line",
+    "color": "cyan",
+    "primaryVariant": "Bold",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "BounceText-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "BounceText-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "BounceText-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "BounceText-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "BounceText-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "BounceText-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "BounceText-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "BounceText-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "BounceText-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "BounceText-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "BounceText-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "BounceText-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "BounceText-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "BounceText-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "BounceText-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "BounceText-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "BounceText-Bold"
+  },
+  {
+    "slug": "bubblepoptext",
+    "camel": "BubblePopText",
+    "name": "Bubble Pop Text",
+    "description": "Letters appear inside bubbles with a springy pop-in effect. Eye-catching for short words, brand names, and social media hooks.",
+    "icon": "circle-dot",
+    "color": "pink",
+    "primaryVariant": "Neon",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "BubblePopText-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "BubblePopText-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "BubblePopText-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "BubblePopText-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "BubblePopText-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "BubblePopText-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "BubblePopText-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "BubblePopText-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "BubblePopText-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "BubblePopText-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "BubblePopText-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "BubblePopText-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "BubblePopText-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "BubblePopText-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "BubblePopText-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "BubblePopText-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "BubblePopText-Neon"
+  },
+  {
+    "slug": "cardflip",
+    "camel": "CardFlip",
+    "name": "Card Flip",
+    "description": "3D card flip animation with front and back faces. Great for reveal moments, before/after, and two-sided information.",
+    "icon": "rotate-3d",
+    "color": "purple",
+    "primaryVariant": "Dark",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "CardFlip-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "CardFlip-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "CardFlip-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "CardFlip-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "CardFlip-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "CardFlip-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "CardFlip-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "CardFlip-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "CardFlip-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "CardFlip-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "CardFlip-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "CardFlip-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "CardFlip-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "CardFlip-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "CardFlip-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "CardFlip-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "CardFlip-Dark"
+  },
+  {
+    "slug": "floatingbubble",
+    "camel": "FloatingBubble",
+    "name": "Floating Bubble",
+    "description": "Text floats inside a glowing bubble with a gentle bobbing motion. Ideal for callouts, featured quotes, and attention-grabbing labels.",
+    "icon": "cloud",
+    "color": "teal",
+    "primaryVariant": "Ocean",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "FloatingBubble-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "FloatingBubble-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "FloatingBubble-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "FloatingBubble-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "FloatingBubble-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "FloatingBubble-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "FloatingBubble-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "FloatingBubble-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "FloatingBubble-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "FloatingBubble-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "FloatingBubble-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "FloatingBubble-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "FloatingBubble-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "FloatingBubble-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "FloatingBubble-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "FloatingBubble-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "FloatingBubble-Ocean"
+  },
+  {
+    "slug": "geometricpatterns",
+    "camel": "GeometricPatterns",
+    "name": "Geometric Patterns",
+    "description": "Rotating concentric geometric shapes that morph and scale. Works as a background layer, intro sequence, or abstract visual break.",
+    "icon": "hexagon",
+    "color": "slate",
+    "primaryVariant": "Dark",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "GeometricPatterns-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "GeometricPatterns-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "GeometricPatterns-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "GeometricPatterns-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "GeometricPatterns-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "GeometricPatterns-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "GeometricPatterns-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "GeometricPatterns-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "GeometricPatterns-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "GeometricPatterns-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "GeometricPatterns-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "GeometricPatterns-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "GeometricPatterns-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "GeometricPatterns-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "GeometricPatterns-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "GeometricPatterns-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "GeometricPatterns-Dark"
+  },
+  {
+    "slug": "glitchtext",
+    "camel": "GlitchText",
+    "name": "Glitch Text",
+    "description": "RGB-split glitch effect with chromatic aberration on text. High-impact for tech intros, error screens, and cyberpunk aesthetics.",
+    "icon": "zap",
+    "color": "red",
+    "primaryVariant": "Neon",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "GlitchText-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "GlitchText-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "GlitchText-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "GlitchText-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "GlitchText-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "GlitchText-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "GlitchText-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "GlitchText-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "GlitchText-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "GlitchText-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "GlitchText-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "GlitchText-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "GlitchText-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "GlitchText-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "GlitchText-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "GlitchText-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "GlitchText-Neon"
+  },
+  {
+    "slug": "liquidwave",
+    "camel": "LiquidWave",
+    "name": "Liquid Wave",
+    "description": "Flowing liquid wave animation using SVG paths. Mesmerizing background for music, wellness, and ambient content.",
+    "icon": "waves",
+    "color": "blue",
+    "primaryVariant": "Ocean",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "LiquidWave-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "LiquidWave-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "LiquidWave-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "LiquidWave-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "LiquidWave-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "LiquidWave-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "LiquidWave-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "LiquidWave-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "LiquidWave-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "LiquidWave-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "LiquidWave-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "LiquidWave-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "LiquidWave-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "LiquidWave-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "LiquidWave-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "LiquidWave-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "LiquidWave-Ocean"
+  },
+  {
+    "slug": "matrixrain",
+    "camel": "MatrixRain",
+    "name": "Matrix Rain",
+    "description": "Falling character rain effect inspired by the Matrix. Great for tech intros, code-themed content, and developer branding.",
+    "icon": "binary",
+    "color": "green",
+    "primaryVariant": "Neon",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "MatrixRain-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "MatrixRain-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "MatrixRain-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "MatrixRain-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "MatrixRain-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "MatrixRain-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "MatrixRain-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "MatrixRain-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "MatrixRain-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "MatrixRain-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "MatrixRain-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "MatrixRain-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "MatrixRain-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "MatrixRain-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "MatrixRain-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "MatrixRain-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "MatrixRain-Neon"
+  },
+  {
+    "slug": "particleexplosion",
+    "camel": "ParticleExplosion",
+    "name": "Particle Explosion",
+    "description": "Particle burst that radiates outward from center with rotating motion. Perfect for celebration moments, reveals, and impact screens.",
+    "icon": "sparkles",
+    "color": "amber",
+    "primaryVariant": "Bold",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ParticleExplosion-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "ParticleExplosion-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "ParticleExplosion-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "ParticleExplosion-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "ParticleExplosion-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "ParticleExplosion-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "ParticleExplosion-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "ParticleExplosion-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "ParticleExplosion-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "ParticleExplosion-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "ParticleExplosion-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "ParticleExplosion-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "ParticleExplosion-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "ParticleExplosion-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "ParticleExplosion-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "ParticleExplosion-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ParticleExplosion-Bold"
+  },
+  {
+    "slug": "pulsingtext",
+    "camel": "PulsingText",
+    "name": "Pulsing Text",
+    "description": "Characters pulse with a rhythmic glow effect. Hypnotic animation for music content, meditation apps, and ambient loops.",
+    "icon": "activity",
+    "color": "violet",
+    "primaryVariant": "Lavender",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "PulsingText-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "PulsingText-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "PulsingText-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "PulsingText-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "PulsingText-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "PulsingText-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "PulsingText-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "PulsingText-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "PulsingText-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "PulsingText-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "PulsingText-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "PulsingText-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "PulsingText-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "PulsingText-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "PulsingText-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "PulsingText-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "PulsingText-Lavender"
+  },
+  {
+    "slug": "slidetext",
+    "camel": "SlideText",
+    "name": "Slide Text",
+    "description": "Clean slide-in text animation with spring physics. The simplest building block - use it as a title card, lower third, or transition.",
+    "icon": "arrow-right",
+    "color": "emerald",
+    "primaryVariant": "Clean",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "SlideText-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "SlideText-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "SlideText-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "SlideText-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "SlideText-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "SlideText-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "SlideText-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "SlideText-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "SlideText-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "SlideText-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "SlideText-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "SlideText-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "SlideText-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "SlideText-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "SlideText-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "SlideText-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "SlideText-Clean"
+  },
+  {
+    "slug": "soundwave",
+    "camel": "SoundWave",
+    "name": "Sound Wave",
+    "description": "Animated audio bar visualization that pulses rhythmically. Ideal for podcast intros, music content, and audiogram-style videos.",
+    "icon": "audio-lines",
+    "color": "fuchsia",
+    "primaryVariant": "Sunset",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "SoundWave-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "SoundWave-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "SoundWave-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "SoundWave-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "SoundWave-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "SoundWave-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "SoundWave-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "SoundWave-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "SoundWave-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "SoundWave-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "SoundWave-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "SoundWave-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "SoundWave-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "SoundWave-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "SoundWave-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "SoundWave-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "SoundWave-Sunset"
+  },
+  {
+    "slug": "typewritersubtitle",
+    "camel": "TypewriterSubtitle",
+    "name": "Typewriter Subtitle",
+    "description": "Typewriter-style text reveal with a blinking cursor. Classic effect for code demos, terminal aesthetics, and dramatic text reveals.",
+    "icon": "terminal",
+    "color": "lime",
+    "primaryVariant": "Dark",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "TypewriterSubtitle-Dark",
+        "name": "Dark",
+        "style": "dark"
+      },
+      {
+        "id": "TypewriterSubtitle-Clean",
+        "name": "Clean",
+        "style": "clean"
+      },
+      {
+        "id": "TypewriterSubtitle-Bold",
+        "name": "Bold",
+        "style": "bold"
+      },
+      {
+        "id": "TypewriterSubtitle-Warm",
+        "name": "Warm",
+        "style": "warm"
+      },
+      {
+        "id": "TypewriterSubtitle-Minimal",
+        "name": "Minimal",
+        "style": "minimal"
+      },
+      {
+        "id": "TypewriterSubtitle-Neon",
+        "name": "Neon",
+        "style": "neon"
+      },
+      {
+        "id": "TypewriterSubtitle-Ocean",
+        "name": "Ocean",
+        "style": "ocean"
+      },
+      {
+        "id": "TypewriterSubtitle-Sunset",
+        "name": "Sunset",
+        "style": "sunset"
+      },
+      {
+        "id": "TypewriterSubtitle-Forest",
+        "name": "Forest",
+        "style": "forest"
+      },
+      {
+        "id": "TypewriterSubtitle-Rose",
+        "name": "Rose",
+        "style": "rose"
+      },
+      {
+        "id": "TypewriterSubtitle-Gold",
+        "name": "Gold",
+        "style": "gold"
+      },
+      {
+        "id": "TypewriterSubtitle-Midnight",
+        "name": "Midnight",
+        "style": "midnight"
+      },
+      {
+        "id": "TypewriterSubtitle-Crimson",
+        "name": "Crimson",
+        "style": "crimson"
+      },
+      {
+        "id": "TypewriterSubtitle-Lavender",
+        "name": "Lavender",
+        "style": "lavender"
+      },
+      {
+        "id": "TypewriterSubtitle-Arctic",
+        "name": "Arctic",
+        "style": "arctic"
+      },
+      {
+        "id": "TypewriterSubtitle-Espresso",
+        "name": "Espresso",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "TypewriterSubtitle-Dark"
   }
 ]
