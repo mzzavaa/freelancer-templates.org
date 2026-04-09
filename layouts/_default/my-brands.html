@@ -257,11 +257,47 @@
     if (!history.length) { section.hidden = true; return; }
     section.hidden = false;
     list.textContent = '';
-    history.slice(0, 10).forEach(function (entry) {
+    history.slice(0, 15).forEach(function (entry) {
       var row = document.createElement('div');
       row.className = 'mb-history__row';
       var d = new Date(entry.date);
-      row.textContent = entry.action + ' "' + entry.brand + '" -- ' + d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      var timeStr = d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+      var label = document.createElement('span');
+      label.className = 'mb-history__label';
+      label.textContent = entry.action + ' ';
+
+      var name = document.createElement('strong');
+      name.textContent = entry.brand;
+      label.appendChild(name);
+
+      var time = document.createElement('span');
+      time.className = 'mb-history__time';
+      time.textContent = timeStr;
+
+      row.appendChild(label);
+      row.appendChild(time);
+
+      // If entry has colors + url, show swatches and make it clickable
+      if (entry.colors && entry.url) {
+        row.style.cursor = 'pointer';
+        var swRow = document.createElement('span');
+        swRow.className = 'mb-history__swatches';
+        var roles = ['bgPrimary','accentPrimary','accentSecondary','textHeading'];
+        // Backward compat: older entries might have old keys
+        var colorKeys = entry.colors.bgPrimary ? roles : ['bg','primary','secondary','text'];
+        colorKeys.forEach(function (k) {
+          if (entry.colors[k]) {
+            var sw = document.createElement('span');
+            sw.className = 'mb-history__sw';
+            sw.style.background = entry.colors[k];
+            swRow.appendChild(sw);
+          }
+        });
+        row.insertBefore(swRow, time);
+        row.addEventListener('click', function () { window.location.href = entry.url; });
+      }
+
       list.appendChild(row);
     });
   }

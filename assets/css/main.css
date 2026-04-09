@@ -3795,7 +3795,17 @@ html.dark .footer__soc:hover { color: #001029; }
 
 .mb-history { margin-bottom: 40px; }
 .mb-history__title { font-size: 16px; font-weight: 700; color: #94a3b8; margin: 0 0 12px; }
-.mb-history__row { font-size: 13px; color: #64748b; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+.mb-history__row {
+  font-size: 13px; color: #64748b; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04);
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap; transition: background 0.15s; border-radius: 4px;
+}
+.mb-history__row[style*="cursor"] { padding: 8px 6px; }
+.mb-history__row[style*="cursor"]:hover { background: rgba(255,255,255,0.03); }
+.mb-history__label { flex: 1; min-width: 120px; }
+.mb-history__label strong { color: #e2e8f0; }
+.mb-history__time { font-size: 11px; color: #475569; white-space: nowrap; }
+.mb-history__swatches { display: flex; gap: 3px; }
+.mb-history__sw { width: 16px; height: 16px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.08); }
 
 .mb-privacy { font-size: 11px; color: #475569; margin-top: 20px; }
 .mb-privacy a { color: #64748b; text-decoration: underline; }

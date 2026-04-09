@@ -85,9 +85,16 @@
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
       Copy link
     </button>
+    <button class="btn btn--outline btn--sm" id="beSaveAsBrand">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+      Save as brand
+    </button>
     <button class="btn btn--outline btn--sm" id="beReset">Reset</button>
     <a href="{{ "customize/" | relURL }}" class="btn btn--outline btn--sm">
       Upload logo / CSS
+    </a>
+    <a href="{{ "my-brands/" | relURL }}" class="btn btn--outline btn--sm">
+      My Brands
     </a>
   </div>
   <p class="be-storage-note">Colors are stored locally in your browser. No data is sent to any server. <a href="{{ "privacy/" | relURL }}">Privacy policy</a></p>
@@ -259,6 +266,70 @@
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
+    });
+  }
+
+  // ---- Auto-history tracking ----
+  var HISTORY_KEY = 'ft_brand_history';
+  var BRANDS_KEY = 'ft_brands';
+  var historyDebounce = null;
+
+  function getPageTitle() {
+    var h1 = document.querySelector('h1');
+    return h1 ? h1.textContent.trim() : document.title;
+  }
+
+  function trackHistory() {
+    clearTimeout(historyDebounce);
+    historyDebounce = setTimeout(function () {
+      try {
+        var history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+        var entry = {
+          action: 'Customized',
+          brand: getPageTitle(),
+          colors: JSON.parse(JSON.stringify(brandColors)),
+          url: buildUrl(),
+          date: new Date().toISOString()
+        };
+        // Don't duplicate if same page + same colors as last entry
+        if (history.length > 0 && history[0].url === entry.url) return;
+        history.unshift(entry);
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 30)));
+      } catch (e) {}
+    }, 2000);
+  }
+
+  // Track on every color change
+  var _origBroadcast = broadcastChange;
+  broadcastChange = function () {
+    _origBroadcast();
+    trackHistory();
+  };
+
+  // ---- Save as Brand ----
+  var saveAsBrandBtn = el('beSaveAsBrand');
+  if (saveAsBrandBtn) {
+    saveAsBrandBtn.addEventListener('click', function () {
+      var name = prompt('Brand name:');
+      if (!name || !name.trim()) return;
+      name = name.trim();
+      try {
+        var brands = JSON.parse(localStorage.getItem(BRANDS_KEY) || '[]');
+        brands.push({
+          id: 'b_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+          name: name,
+          colors: JSON.parse(JSON.stringify(brandColors)),
+          created: new Date().toISOString(),
+          source: getPageTitle()
+        });
+        localStorage.setItem(BRANDS_KEY, JSON.stringify(brands));
+        // Also track in history
+        var history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+        history.unshift({ action: 'Saved brand', brand: name, date: new Date().toISOString() });
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 30)));
+        saveAsBrandBtn.textContent = 'Saved!';
+        setTimeout(function () { saveAsBrandBtn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg> Save as brand'; }, 2000);
+      } catch (e) {}
     });
   }
 
