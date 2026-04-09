@@ -96,6 +96,7 @@ import { PricingDarkTiers, PricingCleanComparison, PricingBoldSpotlight, Pricing
 import { ProductLaunchDarkHeroReveal, ProductLaunchBoldHeroReveal, ProductLaunchDarkFeatureGrid, ProductLaunchBoldFeatureGrid, ProductLaunchDarkCountdown, ProductLaunchBoldCountdown, ProductLaunchOceanHeroReveal, ProductLaunchSunsetHeroReveal, ProductLaunchForestFeatureGrid, ProductLaunchRoseFeatureGrid, ProductLaunchGoldCountdown, ProductLaunchMidnightCountdown, ProductLaunchCrimsonHeroReveal, ProductLaunchLavenderHeroReveal, ProductLaunchArcticFeatureGrid, ProductLaunchEspressoFeatureGrid } from "./templates/productlaunch/ProductLaunchShowcase";
 import { ProjectHealthHealthScorecardDark, ProjectHealthHealthScorecardWarm, ProjectHealthWorkstreamViewDark, ProjectHealthWorkstreamViewWarm, ProjectHealthExecutiveSummaryDark, ProjectHealthExecutiveSummaryWarm, ProjectHealthOceanHealthScorecard, ProjectHealthSunsetHealthScorecard, ProjectHealthForestWorkstreamView, ProjectHealthRoseWorkstreamView, ProjectHealthGoldExecutiveSummary, ProjectHealthMidnightExecutiveSummary, ProjectHealthCrimsonHealthScorecard, ProjectHealthLavenderHealthScorecard, ProjectHealthArcticWorkstreamView, ProjectHealthEspressoWorkstreamView } from "./templates/projecthealth/ProjectHealthShowcase";
 import { ProjectTimelineDarkDashboard, ProjectTimelineBoldDashboard, ProjectTimelineCleanDashboard, ProjectTimelineWarmDashboard, ProjectTimelineMinimalDashboard, ProjectTimelineNeonDashboard, ProjectTimelineOceanDashboard, ProjectTimelineSunsetDashboard, ProjectTimelineForestDashboard, ProjectTimelineRoseDashboard, ProjectTimelineGoldDashboard, ProjectTimelineMidnightDashboard, ProjectTimelineCrimsonDashboard, ProjectTimelineLavenderDashboard, ProjectTimelineArcticDashboard, ProjectTimelineEspressoDashboard } from "./templates/projecttimeline/ProjectTimelineShowcase";
+import { RateCardDarkDashboard, RateCardBoldDashboard, RateCardCleanDashboard, RateCardWarmDashboard, RateCardMinimalDashboard, RateCardNeonDashboard, RateCardOceanDashboard, RateCardSunsetDashboard, RateCardForestDashboard, RateCardRoseDashboard, RateCardGoldDashboard, RateCardMidnightDashboard, RateCardCrimsonDashboard, RateCardLavenderDashboard, RateCardArcticDashboard, RateCardEspressoDashboard } from "./templates/ratecard/RateCardShowcase";
 import { ProposalDarkExecutive, ProposalCleanCreative, ProposalBoldPitch, ProposalWarmExecutive, ProposalMinimalCreative, ProposalNeonPitch, ProposalOceanExecutive, ProposalSunsetCreative, ProposalForestExecutive, ProposalRoseCreative, ProposalGoldExecutive, ProposalMidnightExecutive, ProposalCrimsonPitch, ProposalLavenderCreative, ProposalArcticCreative, ProposalEspressoExecutive } from "./templates/proposal/ProposalShowcase";
 import { QBRDashboardExecutiveDark, QBRDashboardExecutiveClean, QBRDashboardDetailedDark, QBRDashboardDetailedClean, QBRDashboardComparisonDark, QBRDashboardComparisonClean, QBRDashboardOceanExecutive, QBRDashboardSunsetExecutive, QBRDashboardForestDetailed, QBRDashboardRoseDetailed, QBRDashboardGoldComparison, QBRDashboardMidnightComparison, QBRDashboardCrimsonExecutive, QBRDashboardLavenderExecutive, QBRDashboardArcticDetailed, QBRDashboardEspressoDetailed } from "./templates/qbrdashboard/QBRDashboardShowcase";
 import { RecapDarkDashboard, RecapCleanTimeline, RecapBoldCards, RecapWarmDashboard, RecapMinimalCards, RecapNeonTimeline, RecapOceanDashboard, RecapSunsetCards, RecapForestTimeline, RecapRoseCards, RecapGoldDashboard, RecapMidnightDashboard, RecapCrimsonCards, RecapLavenderTimeline, RecapArcticTimeline, RecapEspressoDashboard } from "./templates/recap/RecapShowcase";
@@ -873,6 +874,25 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="Pricing-LavenderComparison" component={PricingLavenderComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Pricing-ArcticTiers" component={PricingArcticTiers} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Pricing-EspressoComparison" component={PricingEspressoComparison} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    </Folder>
+
+    <Folder name="Rate-Card">
+      <Composition id="RateCard-DarkDashboard"     component={RateCardDarkDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-BoldDashboard"     component={RateCardBoldDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-CleanDashboard"    component={RateCardCleanDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-WarmDashboard"     component={RateCardWarmDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-MinimalDashboard"  component={RateCardMinimalDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-NeonDashboard"     component={RateCardNeonDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-OceanDashboard"    component={RateCardOceanDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-SunsetDashboard"   component={RateCardSunsetDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-ForestDashboard"   component={RateCardForestDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-RoseDashboard"     component={RateCardRoseDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-GoldDashboard"     component={RateCardGoldDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-MidnightDashboard" component={RateCardMidnightDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-CrimsonDashboard"  component={RateCardCrimsonDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-LavenderDashboard" component={RateCardLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-ArcticDashboard"   component={RateCardArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-EspressoDashboard" component={RateCardEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Product-Launch">
