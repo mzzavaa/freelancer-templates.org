@@ -6,9 +6,7 @@
 
     <div class="mb-header">
       <div class="mb-header__left">
-        <div class="mb-header__icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        </div>
+        <div class="mb-header__icon"><i data-lucide="palette"></i></div>
         <div>
           <h1 class="mb-header__title">My Brands</h1>
           <p class="mb-header__sub">Your saved brand profiles. Colors are stored locally in your browser.</p>
@@ -32,7 +30,7 @@
     </div>
 
     <!-- Active brand banner -->
-    <div class="mb-active-banner" id="mbActiveBanner" hidden>
+    <div class="mb-active-banner" id="mbActiveBanner" style="display:none;">
       <div class="mb-active-banner__swatches" id="mbActiveSw"></div>
       <div class="mb-active-banner__info">
         <span class="mb-active-banner__label">Active brand:</span>
@@ -49,9 +47,7 @@
 
     <!-- Empty state -->
     <div class="mb-empty" id="mbEmpty">
-      <div class="mb-empty__icon">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="17" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M13.5 9v5l-3 3M6 14.5l7.5-5.5"/></svg>
-      </div>
+      <div class="mb-empty__icon"><i data-lucide="palette" style="width:48px;height:48px;"></i></div>
       <h2 class="mb-empty__title">No brands saved yet</h2>
       <p class="mb-empty__desc">Upload a logo or paste your CSS to extract brand colors, then save them here for quick access across all templates.</p>
       <div class="mb-empty__actions">
@@ -176,7 +172,7 @@
     if (!brands.length) {
       grid.style.display = 'none';
       empty.style.display = '';
-      el('mbActiveBanner').hidden = true;
+      el('mbActiveBanner').style.display = 'none';
       renderHistory();
       return;
     }
@@ -250,7 +246,7 @@
     // Active banner
     var banner = el('mbActiveBanner');
     if (activeBrand) {
-      banner.hidden = false;
+      banner.style.display = '';
       el('mbActiveName').textContent = activeBrand.name;
       var sw = el('mbActiveSw');
       sw.textContent = '';
@@ -280,8 +276,8 @@
     var history = loadHistory();
     var section = el('mbHistory');
     var list = el('mbHistoryList');
-    if (!history.length) { section.hidden = true; return; }
-    section.hidden = false;
+    if (!history.length) { section.style.display = 'none'; return; }
+    section.style.display = '';
     list.textContent = '';
     history.slice(0, 15).forEach(function (entry) {
       var row = document.createElement('div');
