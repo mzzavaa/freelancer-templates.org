@@ -47,14 +47,26 @@
 
         <div class="cz-divider" aria-hidden="true"><span>or</span></div>
 
-        <!-- Option B: URL -->
+        <!-- Option B: CSS -->
         <div class="cz-panel">
           <div class="cz-panel__tag">Option B</div>
-          <h3 class="cz-panel__title">Enter your website URL</h3>
-          <p class="cz-panel__desc">We will fetch your site's CSS and extract colors automatically.</p>
-          <div class="cz-url-form">
-            <input type="url" id="czUrl" class="cz-url-input" placeholder="https://yourwebsite.com" autocomplete="url" inputmode="url">
-            <button type="button" class="btn btn--primary" id="czUrlBtn" disabled>Extract</button>
+          <h3 class="cz-panel__title">Upload CSS or paste your styles</h3>
+          <p class="cz-panel__desc">Drop a .css file or paste CSS text. We extract all colors and font families locally in your browser.</p>
+          <label class="cz-drop cz-drop--css" id="czCssDrop">
+            <input type="file" id="czCssFile" accept=".css,text/css" class="cz-drop__input" aria-label="Upload CSS file">
+            <div class="cz-drop__idle" id="czCssDropIdle">
+              <svg class="cz-drop__icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span class="cz-drop__main">Drop a .css file here</span>
+              <span class="cz-drop__sub">or click to browse</span>
+            </div>
+            <div class="cz-drop__preview" id="czCssDropPreview" style="display:none;">
+              <span id="czCssFileName" class="cz-drop__fname"></span>
+              <span class="cz-drop__change">Click to change</span>
+            </div>
+          </label>
+          <div class="cz-css-paste-wrap">
+            <textarea id="czCssPaste" class="cz-css-paste" rows="5" placeholder="Or paste CSS here, e.g.:&#10;:root {&#10;  --primary: #2563eb;&#10;  --bg: #0f172a;&#10;}&#10;body { font-family: 'Inter', sans-serif; }" spellcheck="false"></textarea>
+            <button type="button" class="btn btn--primary" id="czCssParseBtn">Extract from CSS</button>
           </div>
         </div>
 
@@ -133,6 +145,11 @@
         </div>
 
       </div>
+
+      <div class="cz-fonts" id="czFonts" hidden>
+        <h3 class="cz-roles-title">Detected fonts</h3>
+        <div class="cz-fonts-list" id="czFontsList"></div>
+      </div>
     </section>
 
     <!-- Step 3: Template preview grid -->
@@ -198,6 +215,7 @@
   --brand-accent:    #4299e1;
   --brand-bg:        #f7fafc;
   --brand-text:      #1a202c;
+  --brand-font:      'Inter', sans-serif;
 }</pre>
         </div>
         <div class="cz-export__actions">
@@ -396,17 +414,24 @@ var PLAYER_BASE = (function () {
     Object.keys(assigned).forEach(function (role) { updateRole(role, assigned[role]); });
   }
 
+  var detectedFonts = [];
+
   function updateCssOutput() {
     var out = el('czCssText');
     if (!out) return;
-    out.textContent =
-      ':root {\n' +
+    var lines = ':root {\n' +
       '  --brand-primary:   ' + brandColors.primary   + ';\n' +
       '  --brand-secondary: ' + brandColors.secondary + ';\n' +
       '  --brand-accent:    ' + brandColors.accent    + ';\n' +
       '  --brand-bg:        ' + brandColors.bg        + ';\n' +
-      '  --brand-text:      ' + brandColors.text      + ';\n' +
-      '}';
+      '  --brand-text:      ' + brandColors.text      + ';\n';
+    if (detectedFonts.length) {
+      lines += '  --brand-font:      ' + detectedFonts.map(function(f) {
+        return /\s/.test(f) ? "'" + f + "'" : f;
+      }).join(', ') + ';\n';
+    }
+    lines += '}';
+    out.textContent = lines;
   }
 
   function renderSwatches(colors) {
@@ -490,66 +515,180 @@ var PLAYER_BASE = (function () {
     });
   });
 
-  // ---- URL extraction ----
-  var urlInput = el('czUrl');
-  var urlBtn   = el('czUrlBtn');
+  // ---- CSS color + font extraction ----
 
-  function extractFromUrl(rawUrl) {
-    if (!rawUrl) return;
-    if (!/^https?:\/\//i.test(rawUrl)) rawUrl = 'https://' + rawUrl;
-    urlBtn.disabled = true;
-    urlBtn.textContent = 'Loading...';
+  // Parse all color values from CSS text
+  function extractCssColors(cssText) {
+    var colors = [];
+    var seen = {};
 
-    var hostname = '';
-    try { hostname = new URL(rawUrl).hostname; } catch (e) { hostname = rawUrl; }
+    // Hex colors: #rgb, #rrggbb
+    var hexRe = /#(?:[0-9a-fA-F]{3}){1,2}\b/g;
+    var m;
+    while ((m = hexRe.exec(cssText)) !== null) {
+      var hex = m[0].toLowerCase();
+      // Normalize 3-digit hex to 6-digit
+      if (hex.length === 4) {
+        hex = '#' + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
+      }
+      // Skip near-black and near-white (same as logo extraction)
+      var c = hexToRgb(hex);
+      if (c.r > 240 && c.g > 240 && c.b > 240) continue;
+      if (c.r < 15 && c.g < 15 && c.b < 15) continue;
+      if (!seen[hex]) { seen[hex] = 0; }
+      seen[hex]++;
+    }
 
-    // Use Google's favicon service - returns images with CORS headers
-    var faviconUrl = 'https://www.google.com/s2/favicons?domain_url=' +
-                     encodeURIComponent(rawUrl) + '&sz=128';
+    // rgb() and rgba() colors
+    var rgbRe = /rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*[\d.]+)?\s*\)/g;
+    while ((m = rgbRe.exec(cssText)) !== null) {
+      var r = parseInt(m[1]), g = parseInt(m[2]), b = parseInt(m[3]);
+      if (r > 240 && g > 240 && b > 240) continue;
+      if (r < 15 && g < 15 && b < 15) continue;
+      var rgbHex = rgbToHex(r, g, b).toLowerCase();
+      if (!seen[rgbHex]) { seen[rgbHex] = 0; }
+      seen[rgbHex]++;
+    }
 
-    var img = new Image();
-    img.crossOrigin = 'anonymous';
-    img.onload = function () {
-      var colors = extractColors(img);
-      var assigned = autoAssign(colors.length ? colors : []);
-      renderSwatches(colors.length ? colors : Object.values(assigned).slice(0, 3));
-      var count = el('czColorCount');
-      if (count) count.textContent = 'Extracted ' + colors.length + ' dominant color' +
-        (colors.length !== 1 ? 's' : '') + ' from ' + hostname;
-      updateAllRoles(assigned);
-      var step2 = el('czStep2');
-      step2.hidden = false;
-      var sub = el('czPreviewSub');
-      if (sub) sub.textContent = 'All {{ len .Site.Data.templates }} template types with colors from ' + hostname + '.';
-      activateLivePreviews();
-      step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      urlBtn.disabled = false;
-      urlBtn.textContent = 'Extract';
-    };
-    img.onerror = function () {
-      // Favicon failed - still show step 2 so user can pick colors manually
-      var step2 = el('czStep2');
-      step2.hidden = false;
-      var count = el('czColorCount');
-      if (count) count.textContent = 'Could not load logo from ' + hostname + '. Adjust colors manually below.';
-      step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      urlBtn.disabled = false;
-      urlBtn.textContent = 'Extract';
-    };
-    img.src = faviconUrl;
+    // hsl() and hsla() colors
+    var hslRe = /hsla?\(\s*([\d.]+)\s*,\s*([\d.]+)%\s*,\s*([\d.]+)%(?:\s*,\s*[\d.]+)?\s*\)/g;
+    while ((m = hslRe.exec(cssText)) !== null) {
+      var hh = parseFloat(m[1]), ss = parseFloat(m[2]) / 100, ll = parseFloat(m[3]) / 100;
+      // HSL to RGB conversion
+      var cc = (1 - Math.abs(2 * ll - 1)) * ss;
+      var x = cc * (1 - Math.abs((hh / 60) % 2 - 1));
+      var mm = ll - cc / 2;
+      var r1, g1, b1;
+      if (hh < 60)       { r1 = cc; g1 = x; b1 = 0; }
+      else if (hh < 120) { r1 = x; g1 = cc; b1 = 0; }
+      else if (hh < 180) { r1 = 0; g1 = cc; b1 = x; }
+      else if (hh < 240) { r1 = 0; g1 = x; b1 = cc; }
+      else if (hh < 300) { r1 = x; g1 = 0; b1 = cc; }
+      else               { r1 = cc; g1 = 0; b1 = x; }
+      var hslHex = rgbToHex(
+        Math.round((r1 + mm) * 255),
+        Math.round((g1 + mm) * 255),
+        Math.round((b1 + mm) * 255)
+      ).toLowerCase();
+      if (!seen[hslHex]) { seen[hslHex] = 0; }
+      seen[hslHex]++;
+    }
+
+    // Sort by frequency, return top 8
+    var entries = Object.keys(seen).map(function (k) { return { hex: k, count: seen[k] }; });
+    entries.sort(function (a, b) { return b.count - a.count; });
+    return entries.slice(0, 8).map(function (e) { return e.hex; });
   }
 
-  if (urlInput) {
-    urlInput.addEventListener('input', function () {
-      urlBtn.disabled = !urlInput.value.trim();
-    });
-    urlInput.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' && !urlBtn.disabled) extractFromUrl(urlInput.value.trim());
+  // Parse font-family declarations from CSS text
+  function extractCssFonts(cssText) {
+    var fonts = [];
+    var seen = {};
+    var fontRe = /font-family\s*:\s*([^;{}]+)/gi;
+    var m;
+    while ((m = fontRe.exec(cssText)) !== null) {
+      var raw = m[1].trim();
+      // Split comma-separated font stacks, take each font name
+      raw.split(',').forEach(function (f) {
+        f = f.trim().replace(/^['"]|['"]$/g, '');
+        // Skip generic families
+        if (/^(serif|sans-serif|monospace|cursive|fantasy|system-ui|ui-sans-serif|ui-serif|ui-monospace|ui-rounded|inherit|initial|unset)$/i.test(f)) return;
+        if (!f) return;
+        var key = f.toLowerCase();
+        if (!seen[key]) {
+          seen[key] = true;
+          fonts.push(f);
+        }
+      });
+    }
+    return fonts;
+  }
+
+  function renderFonts(fonts) {
+    var container = el('czFontsList');
+    var section = el('czFonts');
+    if (!container || !section) return;
+    if (!fonts.length) { section.hidden = true; return; }
+    section.hidden = false;
+    container.textContent = '';
+    fonts.forEach(function (font) {
+      var tag = document.createElement('span');
+      tag.className = 'cz-font-tag';
+      tag.textContent = font;
+      container.appendChild(tag);
     });
   }
-  if (urlBtn) {
-    urlBtn.addEventListener('click', function () {
-      extractFromUrl(urlInput && urlInput.value.trim());
+
+  function processCssText(cssText, source) {
+    var colors = extractCssColors(cssText);
+    var fonts = extractCssFonts(cssText);
+    detectedFonts = fonts;
+    var assigned = autoAssign(colors.length ? colors : []);
+    renderSwatches(colors.length ? colors : Object.values(assigned).slice(0, 3));
+    renderFonts(fonts);
+    var count = el('czColorCount');
+    if (count) {
+      count.textContent = 'Found ' + colors.length + ' color' +
+        (colors.length !== 1 ? 's' : '') +
+        (fonts.length ? ' and ' + fonts.length + ' font' + (fonts.length !== 1 ? 's' : '') : '') +
+        (source ? ' from ' + source : '') + '.';
+    }
+    updateAllRoles(assigned);
+    var step2 = el('czStep2');
+    step2.hidden = false;
+    var sub = el('czPreviewSub');
+    if (sub) sub.textContent = 'All {{ len .Site.Data.templates }} template types with your brand colors.';
+    activateLivePreviews();
+    step2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // CSS file upload
+  var cssDrop = el('czCssDrop');
+  var cssFileInput = el('czCssFile');
+
+  function processCssFile(file) {
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      el('czCssDropIdle').style.display = 'none';
+      var preview = el('czCssDropPreview');
+      preview.style.display = 'flex';
+      el('czCssFileName').textContent = file.name;
+      processCssText(reader.result, file.name);
+    };
+    reader.readAsText(file);
+  }
+
+  if (cssDrop) {
+    cssDrop.addEventListener('dragover', function (e) {
+      e.preventDefault();
+      cssDrop.classList.add('is-dragging');
+    });
+    cssDrop.addEventListener('dragleave', function (e) {
+      if (!cssDrop.contains(e.relatedTarget)) cssDrop.classList.remove('is-dragging');
+    });
+    cssDrop.addEventListener('drop', function (e) {
+      e.preventDefault();
+      cssDrop.classList.remove('is-dragging');
+      var file = e.dataTransfer && e.dataTransfer.files[0];
+      if (file) processCssFile(file);
+    });
+  }
+
+  if (cssFileInput) {
+    cssFileInput.addEventListener('change', function () {
+      var file = cssFileInput.files && cssFileInput.files[0];
+      if (file) processCssFile(file);
+    });
+  }
+
+  // CSS paste
+  var cssPasteBtn = el('czCssParseBtn');
+  var cssPasteArea = el('czCssPaste');
+  if (cssPasteBtn && cssPasteArea) {
+    cssPasteBtn.addEventListener('click', function () {
+      var text = cssPasteArea.value.trim();
+      if (text) processCssText(text, 'pasted CSS');
     });
   }
 
