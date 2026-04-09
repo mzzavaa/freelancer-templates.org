@@ -6561,5 +6561,749 @@
       }
     ],
     "primaryId": "TypewriterSubtitle-Dark"
+  },
+  {
+    "slug": "clientreport",
+    "camel": "ClientReport",
+    "name": "Client Report",
+    "description": "Professional weekly and monthly client reports with KPI cards, progress bars, status indicators, and executive summaries. Show project health at a glance.",
+    "icon": "clipboard-list",
+    "color": "blue",
+    "primaryVariant": "DarkDashboard",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ClientReport-DarkDashboard",
+        "name": "Dark Dashboard",
+        "style": "dark"
+      },
+      {
+        "id": "ClientReport-DarkExecutive",
+        "name": "Dark Executive",
+        "style": "dark"
+      },
+      {
+        "id": "ClientReport-DarkTimeline",
+        "name": "Dark Timeline",
+        "style": "dark"
+      },
+      {
+        "id": "ClientReport-BoldDashboard",
+        "name": "Bold Dashboard",
+        "style": "bold"
+      },
+      {
+        "id": "ClientReport-BoldExecutive",
+        "name": "Bold Executive",
+        "style": "bold"
+      },
+      {
+        "id": "ClientReport-BoldTimeline",
+        "name": "Bold Timeline",
+        "style": "bold"
+      },
+      {
+        "id": "ClientReport-OceanDashboard",
+        "name": "Ocean Dashboard",
+        "style": "ocean"
+      },
+      {
+        "id": "ClientReport-SunsetDashboard",
+        "name": "Sunset Dashboard",
+        "style": "sunset"
+      },
+      {
+        "id": "ClientReport-ForestDashboard",
+        "name": "Forest Dashboard",
+        "style": "forest"
+      },
+      {
+        "id": "ClientReport-RoseDashboard",
+        "name": "Rose Dashboard",
+        "style": "rose"
+      },
+      {
+        "id": "ClientReport-GoldDashboard",
+        "name": "Gold Dashboard",
+        "style": "gold"
+      },
+      {
+        "id": "ClientReport-MidnightDashboard",
+        "name": "Midnight Dashboard",
+        "style": "midnight"
+      },
+      {
+        "id": "ClientReport-CrimsonDashboard",
+        "name": "Crimson Dashboard",
+        "style": "crimson"
+      },
+      {
+        "id": "ClientReport-LavenderDashboard",
+        "name": "Lavender Dashboard",
+        "style": "lavender"
+      },
+      {
+        "id": "ClientReport-ArcticDashboard",
+        "name": "Arctic Dashboard",
+        "style": "arctic"
+      },
+      {
+        "id": "ClientReport-EspressoDashboard",
+        "name": "Espresso Dashboard",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ClientReport-DarkDashboard"
+  },
+  {
+    "slug": "projecttimeline",
+    "camel": "ProjectTimeline",
+    "name": "Project Timeline",
+    "description": "Visual project timelines with milestones, phase markers, dependency arrows, and progress tracking. Gantt-style layouts for client presentations.",
+    "icon": "gantt-chart",
+    "color": "violet",
+    "primaryVariant": "DarkGantt",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ProjectTimeline-DarkGantt",
+        "name": "Dark Gantt",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectTimeline-DarkRoadmap",
+        "name": "Dark Roadmap",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectTimeline-DarkMilestones",
+        "name": "Dark Milestones",
+        "style": "dark"
+      },
+      {
+        "id": "ProjectTimeline-BoldGantt",
+        "name": "Bold Gantt",
+        "style": "bold"
+      },
+      {
+        "id": "ProjectTimeline-BoldRoadmap",
+        "name": "Bold Roadmap",
+        "style": "bold"
+      },
+      {
+        "id": "ProjectTimeline-BoldMilestones",
+        "name": "Bold Milestones",
+        "style": "bold"
+      },
+      {
+        "id": "ProjectTimeline-OceanGantt",
+        "name": "Ocean Gantt",
+        "style": "ocean"
+      },
+      {
+        "id": "ProjectTimeline-SunsetGantt",
+        "name": "Sunset Gantt",
+        "style": "sunset"
+      },
+      {
+        "id": "ProjectTimeline-ForestGantt",
+        "name": "Forest Gantt",
+        "style": "forest"
+      },
+      {
+        "id": "ProjectTimeline-RoseGantt",
+        "name": "Rose Gantt",
+        "style": "rose"
+      },
+      {
+        "id": "ProjectTimeline-GoldGantt",
+        "name": "Gold Gantt",
+        "style": "gold"
+      },
+      {
+        "id": "ProjectTimeline-MidnightGantt",
+        "name": "Midnight Gantt",
+        "style": "midnight"
+      },
+      {
+        "id": "ProjectTimeline-CrimsonGantt",
+        "name": "Crimson Gantt",
+        "style": "crimson"
+      },
+      {
+        "id": "ProjectTimeline-LavenderGantt",
+        "name": "Lavender Gantt",
+        "style": "lavender"
+      },
+      {
+        "id": "ProjectTimeline-ArcticGantt",
+        "name": "Arctic Gantt",
+        "style": "arctic"
+      },
+      {
+        "id": "ProjectTimeline-EspressoGantt",
+        "name": "Espresso Gantt",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ProjectTimeline-DarkGantt"
+  },
+  {
+    "slug": "clientwelcome",
+    "camel": "ClientWelcome",
+    "name": "Client Welcome",
+    "description": "Onboarding presentations for new clients with team intros, process overview, communication guidelines, and project kickoff agenda slides.",
+    "icon": "hand-shake",
+    "color": "green",
+    "primaryVariant": "DarkIntro",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ClientWelcome-DarkIntro",
+        "name": "Dark Intro",
+        "style": "dark"
+      },
+      {
+        "id": "ClientWelcome-DarkProcess",
+        "name": "Dark Process",
+        "style": "dark"
+      },
+      {
+        "id": "ClientWelcome-DarkKickoff",
+        "name": "Dark Kickoff",
+        "style": "dark"
+      },
+      {
+        "id": "ClientWelcome-BoldIntro",
+        "name": "Bold Intro",
+        "style": "bold"
+      },
+      {
+        "id": "ClientWelcome-BoldProcess",
+        "name": "Bold Process",
+        "style": "bold"
+      },
+      {
+        "id": "ClientWelcome-BoldKickoff",
+        "name": "Bold Kickoff",
+        "style": "bold"
+      },
+      {
+        "id": "ClientWelcome-OceanIntro",
+        "name": "Ocean Intro",
+        "style": "ocean"
+      },
+      {
+        "id": "ClientWelcome-SunsetIntro",
+        "name": "Sunset Intro",
+        "style": "sunset"
+      },
+      {
+        "id": "ClientWelcome-ForestIntro",
+        "name": "Forest Intro",
+        "style": "forest"
+      },
+      {
+        "id": "ClientWelcome-RoseIntro",
+        "name": "Rose Intro",
+        "style": "rose"
+      },
+      {
+        "id": "ClientWelcome-GoldIntro",
+        "name": "Gold Intro",
+        "style": "gold"
+      },
+      {
+        "id": "ClientWelcome-MidnightIntro",
+        "name": "Midnight Intro",
+        "style": "midnight"
+      },
+      {
+        "id": "ClientWelcome-CrimsonIntro",
+        "name": "Crimson Intro",
+        "style": "crimson"
+      },
+      {
+        "id": "ClientWelcome-LavenderIntro",
+        "name": "Lavender Intro",
+        "style": "lavender"
+      },
+      {
+        "id": "ClientWelcome-ArcticIntro",
+        "name": "Arctic Intro",
+        "style": "arctic"
+      },
+      {
+        "id": "ClientWelcome-EspressoIntro",
+        "name": "Espresso Intro",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ClientWelcome-DarkIntro"
+  },
+  {
+    "slug": "scopechange",
+    "camel": "ScopeChange",
+    "name": "Scope Change",
+    "description": "Formal scope change request videos with impact analysis, timeline adjustments, cost implications, and approval workflows. Professional change management.",
+    "icon": "git-branch",
+    "color": "amber",
+    "primaryVariant": "DarkRequest",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ScopeChange-DarkRequest",
+        "name": "Dark Request",
+        "style": "dark"
+      },
+      {
+        "id": "ScopeChange-DarkImpact",
+        "name": "Dark Impact",
+        "style": "dark"
+      },
+      {
+        "id": "ScopeChange-DarkApproval",
+        "name": "Dark Approval",
+        "style": "dark"
+      },
+      {
+        "id": "ScopeChange-BoldRequest",
+        "name": "Bold Request",
+        "style": "bold"
+      },
+      {
+        "id": "ScopeChange-BoldImpact",
+        "name": "Bold Impact",
+        "style": "bold"
+      },
+      {
+        "id": "ScopeChange-BoldApproval",
+        "name": "Bold Approval",
+        "style": "bold"
+      },
+      {
+        "id": "ScopeChange-OceanRequest",
+        "name": "Ocean Request",
+        "style": "ocean"
+      },
+      {
+        "id": "ScopeChange-SunsetRequest",
+        "name": "Sunset Request",
+        "style": "sunset"
+      },
+      {
+        "id": "ScopeChange-ForestRequest",
+        "name": "Forest Request",
+        "style": "forest"
+      },
+      {
+        "id": "ScopeChange-RoseRequest",
+        "name": "Rose Request",
+        "style": "rose"
+      },
+      {
+        "id": "ScopeChange-GoldRequest",
+        "name": "Gold Request",
+        "style": "gold"
+      },
+      {
+        "id": "ScopeChange-MidnightRequest",
+        "name": "Midnight Request",
+        "style": "midnight"
+      },
+      {
+        "id": "ScopeChange-CrimsonRequest",
+        "name": "Crimson Request",
+        "style": "crimson"
+      },
+      {
+        "id": "ScopeChange-LavenderRequest",
+        "name": "Lavender Request",
+        "style": "lavender"
+      },
+      {
+        "id": "ScopeChange-ArcticRequest",
+        "name": "Arctic Request",
+        "style": "arctic"
+      },
+      {
+        "id": "ScopeChange-EspressoRequest",
+        "name": "Espresso Request",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ScopeChange-DarkRequest"
+  },
+  {
+    "slug": "ratecard",
+    "camel": "RateCard",
+    "name": "Rate Card",
+    "description": "Service pricing presentations with tier comparison, hourly vs project rates, package breakdowns, and value proposition layouts. Close deals faster.",
+    "icon": "credit-card",
+    "color": "emerald",
+    "primaryVariant": "DarkTiers",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "RateCard-DarkTiers",
+        "name": "Dark Tiers",
+        "style": "dark"
+      },
+      {
+        "id": "RateCard-DarkComparison",
+        "name": "Dark Comparison",
+        "style": "dark"
+      },
+      {
+        "id": "RateCard-DarkPackages",
+        "name": "Dark Packages",
+        "style": "dark"
+      },
+      {
+        "id": "RateCard-BoldTiers",
+        "name": "Bold Tiers",
+        "style": "bold"
+      },
+      {
+        "id": "RateCard-BoldComparison",
+        "name": "Bold Comparison",
+        "style": "bold"
+      },
+      {
+        "id": "RateCard-BoldPackages",
+        "name": "Bold Packages",
+        "style": "bold"
+      },
+      {
+        "id": "RateCard-OceanTiers",
+        "name": "Ocean Tiers",
+        "style": "ocean"
+      },
+      {
+        "id": "RateCard-SunsetTiers",
+        "name": "Sunset Tiers",
+        "style": "sunset"
+      },
+      {
+        "id": "RateCard-ForestTiers",
+        "name": "Forest Tiers",
+        "style": "forest"
+      },
+      {
+        "id": "RateCard-RoseTiers",
+        "name": "Rose Tiers",
+        "style": "rose"
+      },
+      {
+        "id": "RateCard-GoldTiers",
+        "name": "Gold Tiers",
+        "style": "gold"
+      },
+      {
+        "id": "RateCard-MidnightTiers",
+        "name": "Midnight Tiers",
+        "style": "midnight"
+      },
+      {
+        "id": "RateCard-CrimsonTiers",
+        "name": "Crimson Tiers",
+        "style": "crimson"
+      },
+      {
+        "id": "RateCard-LavenderTiers",
+        "name": "Lavender Tiers",
+        "style": "lavender"
+      },
+      {
+        "id": "RateCard-ArcticTiers",
+        "name": "Arctic Tiers",
+        "style": "arctic"
+      },
+      {
+        "id": "RateCard-EspressoTiers",
+        "name": "Espresso Tiers",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "RateCard-DarkTiers"
+  },
+  {
+    "slug": "meetingrecap",
+    "camel": "MeetingRecap",
+    "name": "Meeting Recap",
+    "description": "Post-meeting summary videos with action items, decisions made, attendee highlights, and next steps. Send instead of meeting notes.",
+    "icon": "users",
+    "color": "sky",
+    "primaryVariant": "DarkSummary",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "MeetingRecap-DarkSummary",
+        "name": "Dark Summary",
+        "style": "dark"
+      },
+      {
+        "id": "MeetingRecap-DarkActions",
+        "name": "Dark Actions",
+        "style": "dark"
+      },
+      {
+        "id": "MeetingRecap-DarkDecisions",
+        "name": "Dark Decisions",
+        "style": "dark"
+      },
+      {
+        "id": "MeetingRecap-BoldSummary",
+        "name": "Bold Summary",
+        "style": "bold"
+      },
+      {
+        "id": "MeetingRecap-BoldActions",
+        "name": "Bold Actions",
+        "style": "bold"
+      },
+      {
+        "id": "MeetingRecap-BoldDecisions",
+        "name": "Bold Decisions",
+        "style": "bold"
+      },
+      {
+        "id": "MeetingRecap-OceanSummary",
+        "name": "Ocean Summary",
+        "style": "ocean"
+      },
+      {
+        "id": "MeetingRecap-SunsetSummary",
+        "name": "Sunset Summary",
+        "style": "sunset"
+      },
+      {
+        "id": "MeetingRecap-ForestSummary",
+        "name": "Forest Summary",
+        "style": "forest"
+      },
+      {
+        "id": "MeetingRecap-RoseSummary",
+        "name": "Rose Summary",
+        "style": "rose"
+      },
+      {
+        "id": "MeetingRecap-GoldSummary",
+        "name": "Gold Summary",
+        "style": "gold"
+      },
+      {
+        "id": "MeetingRecap-MidnightSummary",
+        "name": "Midnight Summary",
+        "style": "midnight"
+      },
+      {
+        "id": "MeetingRecap-CrimsonSummary",
+        "name": "Crimson Summary",
+        "style": "crimson"
+      },
+      {
+        "id": "MeetingRecap-LavenderSummary",
+        "name": "Lavender Summary",
+        "style": "lavender"
+      },
+      {
+        "id": "MeetingRecap-ArcticSummary",
+        "name": "Arctic Summary",
+        "style": "arctic"
+      },
+      {
+        "id": "MeetingRecap-EspressoSummary",
+        "name": "Espresso Summary",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "MeetingRecap-DarkSummary"
+  },
+  {
+    "slug": "resultsshowcase",
+    "camel": "ResultsShowcase",
+    "name": "Results Showcase",
+    "description": "Client ROI and results presentations with before/after metrics, growth charts, achievement highlights, and impact summaries. Prove your value.",
+    "icon": "trending-up",
+    "color": "rose",
+    "primaryVariant": "DarkMetrics",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ResultsShowcase-DarkMetrics",
+        "name": "Dark Metrics",
+        "style": "dark"
+      },
+      {
+        "id": "ResultsShowcase-DarkGrowth",
+        "name": "Dark Growth",
+        "style": "dark"
+      },
+      {
+        "id": "ResultsShowcase-DarkImpact",
+        "name": "Dark Impact",
+        "style": "dark"
+      },
+      {
+        "id": "ResultsShowcase-BoldMetrics",
+        "name": "Bold Metrics",
+        "style": "bold"
+      },
+      {
+        "id": "ResultsShowcase-BoldGrowth",
+        "name": "Bold Growth",
+        "style": "bold"
+      },
+      {
+        "id": "ResultsShowcase-BoldImpact",
+        "name": "Bold Impact",
+        "style": "bold"
+      },
+      {
+        "id": "ResultsShowcase-OceanMetrics",
+        "name": "Ocean Metrics",
+        "style": "ocean"
+      },
+      {
+        "id": "ResultsShowcase-SunsetMetrics",
+        "name": "Sunset Metrics",
+        "style": "sunset"
+      },
+      {
+        "id": "ResultsShowcase-ForestMetrics",
+        "name": "Forest Metrics",
+        "style": "forest"
+      },
+      {
+        "id": "ResultsShowcase-RoseMetrics",
+        "name": "Rose Metrics",
+        "style": "rose"
+      },
+      {
+        "id": "ResultsShowcase-GoldMetrics",
+        "name": "Gold Metrics",
+        "style": "gold"
+      },
+      {
+        "id": "ResultsShowcase-MidnightMetrics",
+        "name": "Midnight Metrics",
+        "style": "midnight"
+      },
+      {
+        "id": "ResultsShowcase-CrimsonMetrics",
+        "name": "Crimson Metrics",
+        "style": "crimson"
+      },
+      {
+        "id": "ResultsShowcase-LavenderMetrics",
+        "name": "Lavender Metrics",
+        "style": "lavender"
+      },
+      {
+        "id": "ResultsShowcase-ArcticMetrics",
+        "name": "Arctic Metrics",
+        "style": "arctic"
+      },
+      {
+        "id": "ResultsShowcase-EspressoMetrics",
+        "name": "Espresso Metrics",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ResultsShowcase-DarkMetrics"
+  },
+  {
+    "slug": "serviceoverview",
+    "camel": "ServiceOverview",
+    "name": "Service Overview",
+    "description": "One-pager style service descriptions with capability lists, tech stack icons, process diagrams, and call-to-action sections. Perfect for LinkedIn or proposals.",
+    "icon": "briefcase",
+    "color": "indigo",
+    "primaryVariant": "DarkOnePager",
+    "variantCount": 16,
+    "variants": [
+      {
+        "id": "ServiceOverview-DarkOnePager",
+        "name": "Dark OnePager",
+        "style": "dark"
+      },
+      {
+        "id": "ServiceOverview-DarkCapabilities",
+        "name": "Dark Capabilities",
+        "style": "dark"
+      },
+      {
+        "id": "ServiceOverview-DarkProcess",
+        "name": "Dark Process",
+        "style": "dark"
+      },
+      {
+        "id": "ServiceOverview-BoldOnePager",
+        "name": "Bold OnePager",
+        "style": "bold"
+      },
+      {
+        "id": "ServiceOverview-BoldCapabilities",
+        "name": "Bold Capabilities",
+        "style": "bold"
+      },
+      {
+        "id": "ServiceOverview-BoldProcess",
+        "name": "Bold Process",
+        "style": "bold"
+      },
+      {
+        "id": "ServiceOverview-OceanOnePager",
+        "name": "Ocean OnePager",
+        "style": "ocean"
+      },
+      {
+        "id": "ServiceOverview-SunsetOnePager",
+        "name": "Sunset OnePager",
+        "style": "sunset"
+      },
+      {
+        "id": "ServiceOverview-ForestOnePager",
+        "name": "Forest OnePager",
+        "style": "forest"
+      },
+      {
+        "id": "ServiceOverview-RoseOnePager",
+        "name": "Rose OnePager",
+        "style": "rose"
+      },
+      {
+        "id": "ServiceOverview-GoldOnePager",
+        "name": "Gold OnePager",
+        "style": "gold"
+      },
+      {
+        "id": "ServiceOverview-MidnightOnePager",
+        "name": "Midnight OnePager",
+        "style": "midnight"
+      },
+      {
+        "id": "ServiceOverview-CrimsonOnePager",
+        "name": "Crimson OnePager",
+        "style": "crimson"
+      },
+      {
+        "id": "ServiceOverview-LavenderOnePager",
+        "name": "Lavender OnePager",
+        "style": "lavender"
+      },
+      {
+        "id": "ServiceOverview-ArcticOnePager",
+        "name": "Arctic OnePager",
+        "style": "arctic"
+      },
+      {
+        "id": "ServiceOverview-EspressoOnePager",
+        "name": "Espresso OnePager",
+        "style": "espresso"
+      }
+    ],
+    "primaryId": "ServiceOverview-DarkOnePager"
   }
 ]
