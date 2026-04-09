@@ -458,7 +458,6 @@ var PLAYER_BASE = (function () {
     czHistoryDebounce = setTimeout(function () {
       try {
         var history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
-        // Convert old 5-key format to new 9-key for storage
         var colors = {
           bgPrimary: brandColors.bg,
           bgSecondary: '#111827',
@@ -470,22 +469,24 @@ var PLAYER_BASE = (function () {
           accentSecondary: brandColors.secondary,
           border: '#1e293b'
         };
-        var url = window.location.href;
+        var colorKey = Object.values(colors).join(',');
+        // Skip if same colors as last entry
+        if (history.length > 0 && history[0].colors) {
+          var lastKey = Object.values(history[0].colors).join(',');
+          if (lastKey === colorKey) return;
+        }
         var entry = {
           action: 'Customized',
           brand: source || 'Customize page',
           colors: colors,
-          url: url,
+          url: window.location.href,
           date: new Date().toISOString()
         };
-        // Skip if same as last entry
-        if (history.length > 0 && history[0].url === url) return;
         history.unshift(entry);
         localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 30)));
-        // Also save to active brand colors (9-key format)
         localStorage.setItem('ft_brand_colors', JSON.stringify(colors));
       } catch (e) {}
-    }, 2000);
+    }, 1500);
   }
 
   // Patch updateRole to auto-save to history
