@@ -1,0 +1,384 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<section class="mb-page">
+  <div class="container">
+
+    <div class="mb-header">
+      <div class="mb-header__left">
+        <div class="mb-header__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div>
+          <h1 class="mb-header__title">My Brands</h1>
+          <p class="mb-header__sub">Your saved brand profiles. Colors are stored locally in your browser.</p>
+        </div>
+      </div>
+      <div class="mb-header__actions">
+        <button class="btn btn--primary btn--sm" id="mbNewBrand">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          New brand
+        </button>
+        <label class="btn btn--outline btn--sm mb-import-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Import JSON
+          <input type="file" id="mbImportFile" accept=".json,application/json" hidden>
+        </label>
+        <button class="btn btn--outline btn--sm" id="mbExportAll">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Export all
+        </button>
+      </div>
+    </div>
+
+    <!-- Active brand banner -->
+    <div class="mb-active-banner" id="mbActiveBanner" hidden>
+      <div class="mb-active-banner__swatches" id="mbActiveSw"></div>
+      <div class="mb-active-banner__info">
+        <span class="mb-active-banner__label">Active brand:</span>
+        <strong class="mb-active-banner__name" id="mbActiveName"></strong>
+      </div>
+      <div class="mb-active-banner__links">
+        <a id="mbBrowseLink" href="{{ "library/" | relURL }}" class="btn btn--outline btn--sm">Browse templates</a>
+        <a id="mbCustomizeLink" href="{{ "customize/" | relURL }}" class="btn btn--outline btn--sm">Customize further</a>
+      </div>
+    </div>
+
+    <!-- Brand cards grid -->
+    <div class="mb-grid" id="mbGrid"></div>
+
+    <!-- Empty state -->
+    <div class="mb-empty" id="mbEmpty">
+      <div class="mb-empty__icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="17" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="M13.5 9v5l-3 3M6 14.5l7.5-5.5"/></svg>
+      </div>
+      <h2 class="mb-empty__title">No brands saved yet</h2>
+      <p class="mb-empty__desc">Upload a logo or paste your CSS to extract brand colors, then save them here for quick access across all templates.</p>
+      <div class="mb-empty__actions">
+        <a href="{{ "customize/" | relURL }}" class="btn btn--primary">Upload logo or CSS</a>
+        <button class="btn btn--outline" id="mbNewBrandEmpty">Create manually</button>
+      </div>
+    </div>
+
+    <!-- Recent activity -->
+    <div class="mb-history" id="mbHistory" hidden>
+      <h2 class="mb-history__title">Recent activity</h2>
+      <div class="mb-history__list" id="mbHistoryList"></div>
+    </div>
+
+    <p class="mb-privacy">All data is stored locally in your browser. Nothing is sent to any server. <a href="{{ "privacy/" | relURL }}">Privacy policy</a></p>
+  </div>
+</section>
+
+{{ partial "site-footer.html" . }}
+
+<!-- New/Edit brand modal -->
+<div class="mb-modal-overlay" id="mbModal" hidden>
+  <div class="mb-modal">
+    <div class="mb-modal__hd">
+      <h3 class="mb-modal__title" id="mbModalTitle">New brand</h3>
+      <button class="mb-modal__close" id="mbModalClose">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mb-modal__body">
+      <label class="mb-modal__label">Brand name
+        <input type="text" id="mbModalName" class="mb-modal__input" placeholder="e.g. Acme Corp" maxlength="40" autocomplete="off">
+      </label>
+      <div class="mb-modal__colors">
+        <div class="mb-modal__color-row">
+          <label>Primary <input type="color" id="mbModalPrimary" value="#6366f1"></label>
+          <label>Secondary <input type="color" id="mbModalSecondary" value="#a855f7"></label>
+          <label>Accent <input type="color" id="mbModalAccent" value="#ec4899"></label>
+          <label>Background <input type="color" id="mbModalBg" value="#0a0a0f"></label>
+          <label>Text <input type="color" id="mbModalText" value="#ffffff"></label>
+        </div>
+      </div>
+    </div>
+    <div class="mb-modal__foot">
+      <button class="btn btn--outline btn--sm" id="mbModalCancel">Cancel</button>
+      <button class="btn btn--primary btn--sm" id="mbModalSave">Save brand</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var BRANDS_KEY = 'ft_brands';
+  var ACTIVE_KEY = 'ft_brand_colors';
+  var ACTIVE_ID_KEY = 'ft_active_brand_id';
+  var HISTORY_KEY = 'ft_brand_history';
+
+  function el(id) { return document.getElementById(id); }
+
+  function loadBrands() {
+    try { return JSON.parse(localStorage.getItem(BRANDS_KEY)) || []; }
+    catch (e) { return []; }
+  }
+  function saveBrands(brands) {
+    localStorage.setItem(BRANDS_KEY, JSON.stringify(brands));
+  }
+  function loadHistory() {
+    try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }
+    catch (e) { return []; }
+  }
+  function saveHistory(history) {
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 20)));
+  }
+  function addHistoryEntry(action, brandName) {
+    var history = loadHistory();
+    history.unshift({ action: action, brand: brandName, date: new Date().toISOString() });
+    saveHistory(history);
+  }
+  function getActiveId() {
+    try { return localStorage.getItem(ACTIVE_ID_KEY) || ''; } catch (e) { return ''; }
+  }
+  function setActiveId(id) {
+    localStorage.setItem(ACTIVE_ID_KEY, id);
+  }
+
+  function genId() { return 'b_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+  function brandUrl(brand, base) {
+    var u = new URL(base, window.location.origin);
+    u.searchParams.set('brandPrimary', brand.colors.primary.replace('#',''));
+    u.searchParams.set('brandSecondary', brand.colors.secondary.replace('#',''));
+    u.searchParams.set('brandAccent', brand.colors.accent.replace('#',''));
+    u.searchParams.set('brandBg', brand.colors.bg.replace('#',''));
+    u.searchParams.set('brandText', brand.colors.text.replace('#',''));
+    return u.pathname + u.search;
+  }
+
+  // ---- Render ----
+  function render() {
+    var brands = loadBrands();
+    var activeId = getActiveId();
+    var grid = el('mbGrid');
+    var empty = el('mbEmpty');
+
+    if (!brands.length) {
+      grid.style.display = 'none';
+      empty.style.display = '';
+      el('mbActiveBanner').hidden = true;
+      el('mbHistory').hidden = true;
+      renderHistory();
+      return;
+    }
+
+    empty.style.display = 'none';
+    grid.style.display = '';
+    grid.textContent = '';
+
+    var activeBrand = null;
+
+    brands.forEach(function (brand) {
+      if (brand.id === activeId) activeBrand = brand;
+      var card = document.createElement('div');
+      card.className = 'mb-card' + (brand.id === activeId ? ' mb-card--active' : '');
+
+      var swRow = document.createElement('div');
+      swRow.className = 'mb-card__swatches';
+      ['primary','secondary','accent','bg','text'].forEach(function (role) {
+        var sw = document.createElement('div');
+        sw.className = 'mb-card__sw';
+        sw.style.background = brand.colors[role];
+        sw.title = role + ': ' + brand.colors[role];
+        swRow.appendChild(sw);
+      });
+
+      var nameEl = document.createElement('div');
+      nameEl.className = 'mb-card__name';
+      nameEl.textContent = brand.name;
+
+      var dateEl = document.createElement('div');
+      dateEl.className = 'mb-card__date';
+      dateEl.textContent = new Date(brand.created).toLocaleDateString();
+
+      var isActive = brand.id === activeId;
+      var actions = document.createElement('div');
+      actions.className = 'mb-card__actions';
+
+      var activateBtn = document.createElement('button');
+      activateBtn.className = 'btn btn--sm ' + (isActive ? 'btn--primary' : 'btn--outline');
+      activateBtn.textContent = isActive ? 'Active' : 'Set active';
+      activateBtn.disabled = isActive;
+      activateBtn.addEventListener('click', function () { activateBrand(brand); });
+
+      var editBtn = document.createElement('button');
+      editBtn.className = 'btn btn--outline btn--sm';
+      editBtn.textContent = 'Edit';
+      editBtn.addEventListener('click', function () { openModal(brand); });
+
+      var delBtn = document.createElement('button');
+      delBtn.className = 'btn btn--outline btn--sm mb-card__del';
+      delBtn.textContent = 'Delete';
+      delBtn.addEventListener('click', function () { deleteBrand(brand.id); });
+
+      actions.appendChild(activateBtn);
+      actions.appendChild(editBtn);
+      actions.appendChild(delBtn);
+
+      card.appendChild(swRow);
+      card.appendChild(nameEl);
+      card.appendChild(dateEl);
+      card.appendChild(actions);
+      grid.appendChild(card);
+    });
+
+    // Active banner
+    var banner = el('mbActiveBanner');
+    if (activeBrand) {
+      banner.hidden = false;
+      el('mbActiveName').textContent = activeBrand.name;
+      var sw = el('mbActiveSw');
+      sw.textContent = '';
+      ['primary','secondary','accent','bg','text'].forEach(function (role) {
+        var d = document.createElement('div');
+        d.className = 'mb-active-sw';
+        d.style.background = activeBrand.colors[role];
+        sw.appendChild(d);
+      });
+      var libBase = window.location.pathname.replace(/\/my-brands\/?$/, '') + '/library/';
+      var czBase = window.location.pathname.replace(/\/my-brands\/?$/, '') + '/customize/';
+      el('mbBrowseLink').href = brandUrl(activeBrand, libBase);
+      el('mbCustomizeLink').href = brandUrl(activeBrand, czBase);
+    } else {
+      banner.hidden = true;
+    }
+
+    renderHistory();
+  }
+
+  function renderHistory() {
+    var history = loadHistory();
+    var section = el('mbHistory');
+    var list = el('mbHistoryList');
+    if (!history.length) { section.hidden = true; return; }
+    section.hidden = false;
+    list.textContent = '';
+    history.slice(0, 10).forEach(function (entry) {
+      var row = document.createElement('div');
+      row.className = 'mb-history__row';
+      var d = new Date(entry.date);
+      row.textContent = entry.action + ' "' + entry.brand + '" -- ' + d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      list.appendChild(row);
+    });
+  }
+
+  function activateBrand(brand) {
+    setActiveId(brand.id);
+    localStorage.setItem(ACTIVE_KEY, JSON.stringify(brand.colors));
+    addHistoryEntry('Activated', brand.name);
+    render();
+  }
+
+  function deleteBrand(id) {
+    var brands = loadBrands();
+    var brand = brands.find(function (b) { return b.id === id; });
+    if (!brand) return;
+    if (!confirm('Delete "' + brand.name + '"?')) return;
+    saveBrands(brands.filter(function (b) { return b.id !== id; }));
+    if (getActiveId() === id) { setActiveId(''); localStorage.removeItem(ACTIVE_KEY); }
+    addHistoryEntry('Deleted', brand.name);
+    render();
+  }
+
+  // ---- Modal ----
+  var editingId = null;
+
+  function openModal(brand) {
+    editingId = brand ? brand.id : null;
+    el('mbModalTitle').textContent = brand ? 'Edit brand' : 'New brand';
+    el('mbModalName').value = brand ? brand.name : '';
+    el('mbModalPrimary').value = brand ? brand.colors.primary : '#6366f1';
+    el('mbModalSecondary').value = brand ? brand.colors.secondary : '#a855f7';
+    el('mbModalAccent').value = brand ? brand.colors.accent : '#ec4899';
+    el('mbModalBg').value = brand ? brand.colors.bg : '#0a0a0f';
+    el('mbModalText').value = brand ? brand.colors.text : '#ffffff';
+    el('mbModal').hidden = false;
+    el('mbModalName').focus();
+  }
+
+  function closeModal() {
+    el('mbModal').hidden = true;
+    editingId = null;
+  }
+
+  function saveModal() {
+    var name = el('mbModalName').value.trim();
+    if (!name) { el('mbModalName').focus(); return; }
+    var colors = {
+      primary: el('mbModalPrimary').value,
+      secondary: el('mbModalSecondary').value,
+      accent: el('mbModalAccent').value,
+      bg: el('mbModalBg').value,
+      text: el('mbModalText').value
+    };
+    var brands = loadBrands();
+    if (editingId) {
+      brands = brands.map(function (b) {
+        if (b.id === editingId) { b.name = name; b.colors = colors; b.updated = new Date().toISOString(); }
+        return b;
+      });
+      addHistoryEntry('Updated', name);
+    } else {
+      brands.push({ id: genId(), name: name, colors: colors, created: new Date().toISOString() });
+      addHistoryEntry('Created', name);
+    }
+    saveBrands(brands);
+    closeModal();
+    render();
+  }
+
+  el('mbNewBrand').addEventListener('click', function () { openModal(null); });
+  el('mbNewBrandEmpty').addEventListener('click', function () { openModal(null); });
+  el('mbModalClose').addEventListener('click', closeModal);
+  el('mbModalCancel').addEventListener('click', closeModal);
+  el('mbModalSave').addEventListener('click', saveModal);
+  el('mbModal').addEventListener('click', function (e) { if (e.target === el('mbModal')) closeModal(); });
+
+  // ---- Import / Export ----
+  el('mbExportAll').addEventListener('click', function () {
+    var brands = loadBrands();
+    if (!brands.length) return;
+    var blob = new Blob([JSON.stringify({ brands: brands, exported: new Date().toISOString() }, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'my-brands.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+  });
+
+  el('mbImportFile').addEventListener('change', function () {
+    var file = this.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      try {
+        var data = JSON.parse(reader.result);
+        var imported = data.brands || (data.brandColors ? [{ id: genId(), name: 'Imported', colors: data.brandColors, created: new Date().toISOString() }] : []);
+        if (!imported.length) { alert('No brands found in file.'); return; }
+        var existing = loadBrands();
+        var existingIds = {};
+        existing.forEach(function (b) { existingIds[b.id] = true; });
+        var added = 0;
+        imported.forEach(function (b) {
+          if (!existingIds[b.id]) { b.id = genId(); existing.push(b); added++; }
+        });
+        saveBrands(existing);
+        addHistoryEntry('Imported ' + added + ' brand(s)', file.name);
+        render();
+      } catch (e) { alert('Could not parse JSON file.'); }
+    };
+    reader.readAsText(file);
+    this.value = '';
+  });
+
+  // ---- Init ----
+  render();
+}());
+</script>
+{{ end }}

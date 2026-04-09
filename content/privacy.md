@@ -22,7 +22,7 @@ freelancer-templates.org is a static website hosted on GitHub Pages. It provides
 
 **Local browser storage:** The brand color customization tool can optionally save your color preferences to your browser's LocalStorage. This data never leaves your device and is not transmitted to any server. You can clear it at any time through your browser settings.
 
-**No analytics:** This site does not use any analytics, tracking, or advertising services. No cookies are set by this site.
+**Analytics (Plausible):** This site uses Plausible Analytics, a privacy-focused, cookie-free analytics tool. Plausible does not use cookies, does not collect personal data, and is fully GDPR compliant. All data is aggregated and no individual visitors can be identified. More information: [plausible.io/data-policy](https://plausible.io/data-policy)
 
 **No accounts:** This site does not require registration or user accounts.
 
