@@ -3101,6 +3101,29 @@ html.dark .footer__soc:hover { color: #001029; }
   flex-shrink: 0;
 }
 .cz-swatch:hover { transform: scale(1.1); border-color: rgba(255,255,255,.25); }
+.cz-swatch--selected { border-color: #6366f1; box-shadow: 0 0 0 2px rgba(99,102,241,0.4); transform: scale(1.1); }
+
+/* Mode toggle */
+.cz-mode-toggle { margin-bottom: 24px; }
+.cz-mode-toggle__label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: #475569; margin-bottom: 8px; display: block; }
+.cz-mode-btns { display: flex; gap: 8px; margin-bottom: 8px; }
+.cz-mode-btn {
+  padding: 8px 16px; font-size: 13px; font-weight: 600; border-radius: var(--r, 8px);
+  border: 1px solid rgba(255,255,255,0.1); background: transparent; color: #94a3b8; cursor: pointer; transition: all 0.15s;
+}
+.cz-mode-btn:hover { border-color: rgba(255,255,255,0.2); color: #e2e8f0; }
+.cz-mode-btn--active { background: rgba(99,102,241,0.15); border-color: rgba(99,102,241,0.4); color: #a5b4fc; }
+.cz-mode-hint { font-size: 12px; color: #64748b; margin: 0; }
+
+/* Font role selects */
+.cz-font-roles { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 16px; }
+.cz-font-role { display: flex; flex-direction: column; gap: 6px; min-width: 180px; }
+.cz-font-role__label { font-size: 11px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+.cz-font-role__select {
+  padding: 8px 12px; background: #0a1628; border: 1px solid #2a3a52; border-radius: var(--r, 8px);
+  color: #e2e8f0; font-size: 13px; outline: none; cursor: pointer;
+}
+.cz-font-role__select:focus { border-color: #6366f1; }
 
 /* Color roles */
 .cz-roles-hd { margin-bottom: 20px; }

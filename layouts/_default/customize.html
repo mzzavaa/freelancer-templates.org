@@ -88,9 +88,18 @@
         <div class="cz-swatches-row" id="czSwatches" role="list" aria-label="Extracted colors from logo"></div>
       </div>
 
+      <div class="cz-mode-toggle">
+        <span class="cz-mode-toggle__label">Template mode</span>
+        <div class="cz-mode-btns" id="czModeBtns">
+          <button class="cz-mode-btn cz-mode-btn--active" data-mode="dark">Dark background</button>
+          <button class="cz-mode-btn" data-mode="light">Light background</button>
+        </div>
+        <p class="cz-mode-hint" id="czModeHint">Dark mode: accent colors pop on a dark background. Text should be light.</p>
+      </div>
+
       <div class="cz-roles-hd">
         <h3 class="cz-roles-title">Assign to roles</h3>
-        <p class="cz-roles-sub">Click any swatch to edit with the color picker. Colors are auto-assigned by luminance and saturation - darkest becomes text, lightest becomes background, most saturated becomes primary.</p>
+        <p class="cz-roles-sub">Click any swatch to edit. Click an extracted palette color above, then click a role below to assign it there. Or use the color pickers directly.</p>
       </div>
       <div class="cz-roles-grid" id="czRoles">
 
@@ -149,6 +158,16 @@
       <div class="cz-fonts" id="czFonts" hidden>
         <h3 class="cz-roles-title">Detected fonts</h3>
         <div class="cz-fonts-list" id="czFontsList"></div>
+        <div class="cz-font-roles" id="czFontRoles">
+          <div class="cz-font-role">
+            <label class="cz-font-role__label" for="czFontHeading">Heading font</label>
+            <select id="czFontHeading" class="cz-font-role__select"></select>
+          </div>
+          <div class="cz-font-role">
+            <label class="cz-font-role__label" for="czFontBody">Body font</label>
+            <select id="czFontBody" class="cz-font-role__select"></select>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -416,6 +435,8 @@ var PLAYER_BASE = (function () {
 
   var detectedFonts = [];
 
+  function quoteFont(f) { return /\s/.test(f) ? "'" + f + "'" : f; }
+
   function updateCssOutput() {
     var out = el('czCssText');
     if (!out) return;
@@ -425,10 +446,18 @@ var PLAYER_BASE = (function () {
       '  --brand-accent:    ' + brandColors.accent    + ';\n' +
       '  --brand-bg:        ' + brandColors.bg        + ';\n' +
       '  --brand-text:      ' + brandColors.text      + ';\n';
-    if (detectedFonts.length) {
-      lines += '  --brand-font:      ' + detectedFonts.map(function(f) {
-        return /\s/.test(f) ? "'" + f + "'" : f;
-      }).join(', ') + ';\n';
+    var headingSel = el('czFontHeading');
+    var bodySel = el('czFontBody');
+    if (headingSel && headingSel.value) {
+      lines += '  --brand-font-heading: ' + quoteFont(headingSel.value) + ', sans-serif;\n';
+    }
+    if (bodySel && bodySel.value) {
+      lines += '  --brand-font-body:    ' + quoteFont(bodySel.value) + ', sans-serif;\n';
+    }
+    if (!headingSel || !headingSel.value) {
+      if (detectedFonts.length) {
+        lines += '  --brand-font:      ' + detectedFonts.map(quoteFont).join(', ') + ';\n';
+      }
     }
     lines += '}';
     out.textContent = lines;
@@ -512,6 +541,73 @@ var PLAYER_BASE = (function () {
   document.querySelectorAll('.cz-role__picker').forEach(function (picker) {
     picker.addEventListener('input', function () {
       updateRole(picker.dataset.role, picker.value);
+    });
+  });
+
+  // ---- Light/dark mode toggle ----
+  var currentMode = 'dark';
+  var modeHints = {
+    dark: 'Dark mode: accent colors pop on a dark background. Text should be light.',
+    light: 'Light mode: clean and professional. Text should be dark, background light.'
+  };
+  var modeBtns = document.querySelectorAll('.cz-mode-btn');
+  modeBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var mode = btn.dataset.mode;
+      currentMode = mode;
+      modeBtns.forEach(function (b) { b.classList.remove('cz-mode-btn--active'); });
+      btn.classList.add('cz-mode-btn--active');
+      var hint = el('czModeHint');
+      if (hint) hint.textContent = modeHints[mode] || '';
+      // Swap bg and text when toggling
+      if (mode === 'light') {
+        var bgColor = brandColors.bg;
+        var textColor = brandColors.text;
+        var bgLum = relativeLuminance.apply(null, (function (h) { var c = hexToRgb(h); return [c.r, c.g, c.b]; })(bgColor));
+        var textLum = relativeLuminance.apply(null, (function (h) { var c = hexToRgb(h); return [c.r, c.g, c.b]; })(textColor));
+        // If bg is dark, swap them
+        if (bgLum < textLum) {
+          updateRole('bg', textColor);
+          updateRole('text', bgColor);
+        }
+      } else {
+        var bgColor2 = brandColors.bg;
+        var textColor2 = brandColors.text;
+        var bgLum2 = relativeLuminance.apply(null, (function (h) { var c = hexToRgb(h); return [c.r, c.g, c.b]; })(bgColor2));
+        var textLum2 = relativeLuminance.apply(null, (function (h) { var c = hexToRgb(h); return [c.r, c.g, c.b]; })(textColor2));
+        // If bg is light, swap them
+        if (bgLum2 > textLum2) {
+          updateRole('bg', textColor2);
+          updateRole('text', bgColor2);
+        }
+      }
+    });
+  });
+
+  // ---- Palette click-to-assign ----
+  var selectedPaletteColor = null;
+  var swatchContainer = el('czSwatches');
+  if (swatchContainer) {
+    swatchContainer.addEventListener('click', function (e) {
+      var swatch = e.target.closest('.cz-swatch');
+      if (!swatch) return;
+      // Highlight selected
+      swatchContainer.querySelectorAll('.cz-swatch').forEach(function (s) { s.classList.remove('cz-swatch--selected'); });
+      swatch.classList.add('cz-swatch--selected');
+      selectedPaletteColor = swatch.dataset.hex;
+    });
+  }
+  // Click a role to assign the selected palette color
+  document.querySelectorAll('.cz-role').forEach(function (roleEl) {
+    roleEl.addEventListener('click', function (e) {
+      if (e.target.closest('.cz-role__picker')) return; // don't interfere with native picker
+      if (!selectedPaletteColor) return;
+      var role = roleEl.dataset.role;
+      if (role) {
+        updateRole(role, selectedPaletteColor);
+        selectedPaletteColor = null;
+        if (swatchContainer) swatchContainer.querySelectorAll('.cz-swatch').forEach(function (s) { s.classList.remove('cz-swatch--selected'); });
+      }
     });
   });
 
@@ -617,6 +713,25 @@ var PLAYER_BASE = (function () {
       tag.textContent = font;
       container.appendChild(tag);
     });
+
+    // Populate font role selects
+    var headingSel = el('czFontHeading');
+    var bodySel = el('czFontBody');
+    if (headingSel && bodySel) {
+      [headingSel, bodySel].forEach(function (sel) {
+        sel.textContent = '';
+        fonts.forEach(function (font, i) {
+          var opt = document.createElement('option');
+          opt.value = font;
+          opt.textContent = font;
+          sel.appendChild(opt);
+        });
+      });
+      // Default: first font as heading, second (or first) as body
+      if (fonts.length > 1) bodySel.selectedIndex = 1;
+      headingSel.addEventListener('change', updateCssOutput);
+      bodySel.addEventListener('change', updateCssOutput);
+    }
   }
 
   function processCssText(cssText, source) {
