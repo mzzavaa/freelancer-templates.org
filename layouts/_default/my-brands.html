@@ -87,11 +87,13 @@
       </label>
       <div class="mb-modal__colors">
         <div class="mb-modal__color-row">
-          <label>Primary <input type="color" id="mbModalPrimary" value="#6366f1"></label>
-          <label>Secondary <input type="color" id="mbModalSecondary" value="#a855f7"></label>
-          <label>Accent <input type="color" id="mbModalAccent" value="#ec4899"></label>
-          <label>Background <input type="color" id="mbModalBg" value="#0a0a0f"></label>
-          <label>Text <input type="color" id="mbModalText" value="#ffffff"></label>
+          <label>Page BG <input type="color" id="mbModalBgPrimary" value="#0a0a0f"></label>
+          <label>Card BG <input type="color" id="mbModalBgSecondary" value="#111827"></label>
+          <label>Heading <input type="color" id="mbModalTextHeading" value="#ffffff"></label>
+          <label>Body <input type="color" id="mbModalTextBody" value="#e2e8f0"></label>
+          <label>Accent <input type="color" id="mbModalAccentPrimary" value="#6366f1"></label>
+          <label>Accent 2 <input type="color" id="mbModalAccentSecondary" value="#a855f7"></label>
+          <label>Border <input type="color" id="mbModalBorder" value="#1e293b"></label>
         </div>
       </div>
     </div>
@@ -142,11 +144,25 @@
 
   function brandUrl(brand, base) {
     var u = new URL(base, window.location.origin);
-    u.searchParams.set('brandPrimary', brand.colors.primary.replace('#',''));
-    u.searchParams.set('brandSecondary', brand.colors.secondary.replace('#',''));
-    u.searchParams.set('brandAccent', brand.colors.accent.replace('#',''));
-    u.searchParams.set('brandBg', brand.colors.bg.replace('#',''));
-    u.searchParams.set('brandText', brand.colors.text.replace('#',''));
+    var c = brand.colors || {};
+    // Support both new 9-key format and old 5-key format
+    u.searchParams.set('brandPrimary', (c.accentPrimary || c.primary || '#6366f1').replace('#',''));
+    u.searchParams.set('brandSecondary', (c.accentSecondary || c.secondary || '#a855f7').replace('#',''));
+    u.searchParams.set('brandAccent', (c.accentSecondary || c.accent || '#ec4899').replace('#',''));
+    u.searchParams.set('brandBg', (c.bgPrimary || c.bg || '#0a0a0f').replace('#',''));
+    u.searchParams.set('brandText', (c.textHeading || c.text || '#ffffff').replace('#',''));
+    // Also add new format params if available
+    if (c.bgPrimary) {
+      u.searchParams.set('bgPrimary', c.bgPrimary.replace('#',''));
+      u.searchParams.set('bgSecondary', (c.bgSecondary || '#111827').replace('#',''));
+      u.searchParams.set('textHeading', (c.textHeading || '#ffffff').replace('#',''));
+      u.searchParams.set('textSubheading', (c.textSubheading || '#cbd5e1').replace('#',''));
+      u.searchParams.set('textBody', (c.textBody || '#e2e8f0').replace('#',''));
+      u.searchParams.set('textMuted', (c.textMuted || '#64748b').replace('#',''));
+      u.searchParams.set('accentPrimary', c.accentPrimary.replace('#',''));
+      u.searchParams.set('accentSecondary', (c.accentSecondary || '#a855f7').replace('#',''));
+      u.searchParams.set('border', (c.border || '#1e293b').replace('#',''));
+    }
     return u.pathname + u.search;
   }
 
@@ -161,7 +177,6 @@
       grid.style.display = 'none';
       empty.style.display = '';
       el('mbActiveBanner').hidden = true;
-      el('mbHistory').hidden = true;
       renderHistory();
       return;
     }
@@ -179,11 +194,17 @@
 
       var swRow = document.createElement('div');
       swRow.className = 'mb-card__swatches';
-      ['primary','secondary','accent','bg','text'].forEach(function (role) {
+      // Support both new 9-key and old 5-key color formats
+      var swatchKeys = brand.colors.bgPrimary
+        ? ['bgPrimary','bgSecondary','textHeading','accentPrimary','accentSecondary']
+        : ['primary','secondary','accent','bg','text'];
+      swatchKeys.forEach(function (role) {
+        var color = brand.colors[role];
+        if (!color) return;
         var sw = document.createElement('div');
         sw.className = 'mb-card__sw';
-        sw.style.background = brand.colors[role];
-        sw.title = role + ': ' + brand.colors[role];
+        sw.style.background = color;
+        sw.title = role + ': ' + color;
         swRow.appendChild(sw);
       });
 
@@ -233,10 +254,15 @@
       el('mbActiveName').textContent = activeBrand.name;
       var sw = el('mbActiveSw');
       sw.textContent = '';
-      ['primary','secondary','accent','bg','text'].forEach(function (role) {
+      var activeKeys = activeBrand.colors.bgPrimary
+        ? ['bgPrimary','accentPrimary','accentSecondary','textHeading','textBody']
+        : ['primary','secondary','accent','bg','text'];
+      activeKeys.forEach(function (role) {
+        var color = activeBrand.colors[role];
+        if (!color) return;
         var d = document.createElement('div');
         d.className = 'mb-active-sw';
-        d.style.background = activeBrand.colors[role];
+        d.style.background = color;
         sw.appendChild(d);
       });
       var libBase = window.location.pathname.replace(/\/my-brands\/?$/, '') + '/library/';
@@ -327,11 +353,14 @@
     editingId = brand ? brand.id : null;
     el('mbModalTitle').textContent = brand ? 'Edit brand' : 'New brand';
     el('mbModalName').value = brand ? brand.name : '';
-    el('mbModalPrimary').value = brand ? brand.colors.primary : '#6366f1';
-    el('mbModalSecondary').value = brand ? brand.colors.secondary : '#a855f7';
-    el('mbModalAccent').value = brand ? brand.colors.accent : '#ec4899';
-    el('mbModalBg').value = brand ? brand.colors.bg : '#0a0a0f';
-    el('mbModalText').value = brand ? brand.colors.text : '#ffffff';
+    var bc = brand ? brand.colors : {};
+    el('mbModalBgPrimary').value = bc.bgPrimary || bc.bg || '#0a0a0f';
+    el('mbModalBgSecondary').value = bc.bgSecondary || '#111827';
+    el('mbModalTextHeading').value = bc.textHeading || bc.text || '#ffffff';
+    el('mbModalTextBody').value = bc.textBody || '#e2e8f0';
+    el('mbModalAccentPrimary').value = bc.accentPrimary || bc.primary || '#6366f1';
+    el('mbModalAccentSecondary').value = bc.accentSecondary || bc.secondary || '#a855f7';
+    el('mbModalBorder').value = bc.border || '#1e293b';
     el('mbModal').hidden = false;
     el('mbModalName').focus();
   }
@@ -345,11 +374,15 @@
     var name = el('mbModalName').value.trim();
     if (!name) { el('mbModalName').focus(); return; }
     var colors = {
-      primary: el('mbModalPrimary').value,
-      secondary: el('mbModalSecondary').value,
-      accent: el('mbModalAccent').value,
-      bg: el('mbModalBg').value,
-      text: el('mbModalText').value
+      bgPrimary: el('mbModalBgPrimary').value,
+      bgSecondary: el('mbModalBgSecondary').value,
+      textHeading: el('mbModalTextHeading').value,
+      textSubheading: '#cbd5e1',
+      textBody: el('mbModalTextBody').value,
+      textMuted: '#64748b',
+      accentPrimary: el('mbModalAccentPrimary').value,
+      accentSecondary: el('mbModalAccentSecondary').value,
+      border: el('mbModalBorder').value
     };
     var brands = loadBrands();
     if (editingId) {
