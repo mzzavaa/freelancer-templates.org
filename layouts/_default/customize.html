@@ -393,23 +393,30 @@ var PLAYER_BASE = (function () {
 
   // ---- Auto-assign roles by luminance / saturation ----
   function autoAssign(colors) {
-    var fallbacks = ['#1a365d', '#2d3748', '#4299e1', '#f7fafc', '#1a202c'];
+    // Backgrounds should always be neutral (near-white or near-black), never colorful.
+    // Extracted colors only go to accent/primary roles.
     if (!colors.length) {
-      return { primary: fallbacks[0], secondary: fallbacks[1], accent: fallbacks[2], bg: fallbacks[3], text: fallbacks[4] };
+      return { primary: '#6366f1', secondary: '#a855f7', accent: '#ec4899', bg: '#0a0a0f', text: '#ffffff' };
     }
     var rated = colors.map(function (hex) {
       var c = hexToRgb(hex);
       return { hex: hex, lv: relativeLuminance(c.r, c.g, c.b), sv: colorSaturation(c.r, c.g, c.b) };
     });
-    var byLum = rated.slice().sort(function (a, b) { return a.lv - b.lv; });
+    // Sort by saturation (most colorful first) for accent roles
     var bySat = rated.slice().sort(function (a, b) { return b.sv - a.sv; });
-    function pick(arr, idx) { return (arr[idx] && arr[idx].hex) || fallbacks[idx]; }
+    function pick(arr, idx, fallback) { return (arr[idx] && arr[idx].hex) || fallback; }
+
+    // Determine if brand is light or dark based on lightest extracted color
+    var byLum = rated.slice().sort(function (a, b) { return b.lv - a.lv; });
+    var lightestLum = byLum[0] ? byLum[0].lv : 0;
+    var isLightBrand = lightestLum > 0.5;
+
     return {
-      primary:   pick(bySat, 0),
-      secondary: pick(bySat, 1),
-      accent:    pick(bySat, 2),
-      bg:        (byLum[byLum.length - 1] && byLum[byLum.length - 1].hex) || fallbacks[3],
-      text:      pick(byLum, 0)
+      primary:   pick(bySat, 0, '#6366f1'),
+      secondary: pick(bySat, 1, '#a855f7'),
+      accent:    pick(bySat, 2, '#ec4899'),
+      bg:        isLightBrand ? '#f8fafc' : '#0a0a0f',
+      text:      isLightBrand ? '#1a202c' : '#ffffff'
     };
   }
 
@@ -432,6 +439,53 @@ var PLAYER_BASE = (function () {
   function updateAllRoles(assigned) {
     Object.keys(assigned).forEach(function (role) { updateRole(role, assigned[role]); });
   }
+
+  // ---- Shared history (same keys as brand-editor.html and my-brands.html) ----
+  var HISTORY_KEY = 'ft_brand_history';
+  var BRANDS_KEY = 'ft_brands';
+  var czHistoryDebounce = null;
+
+  function saveToHistory(source) {
+    clearTimeout(czHistoryDebounce);
+    czHistoryDebounce = setTimeout(function () {
+      try {
+        var history = JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+        // Convert old 5-key format to new 9-key for storage
+        var colors = {
+          bgPrimary: brandColors.bg,
+          bgSecondary: '#111827',
+          textHeading: brandColors.text,
+          textSubheading: '#cbd5e1',
+          textBody: brandColors.text,
+          textMuted: '#64748b',
+          accentPrimary: brandColors.primary,
+          accentSecondary: brandColors.secondary,
+          border: '#1e293b'
+        };
+        var url = window.location.href;
+        var entry = {
+          action: 'Customized',
+          brand: source || 'Customize page',
+          colors: colors,
+          url: url,
+          date: new Date().toISOString()
+        };
+        // Skip if same as last entry
+        if (history.length > 0 && history[0].url === url) return;
+        history.unshift(entry);
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history.slice(0, 30)));
+        // Also save to active brand colors (9-key format)
+        localStorage.setItem('ft_brand_colors', JSON.stringify(colors));
+      } catch (e) {}
+    }, 2000);
+  }
+
+  // Patch updateRole to auto-save to history
+  var _czOrigUpdateRole = updateRole;
+  updateRole = function (role, hex) {
+    _czOrigUpdateRole(role, hex);
+    saveToHistory();
+  };
 
   var detectedFonts = [];
 

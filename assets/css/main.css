@@ -3805,8 +3805,12 @@ html.dark .footer__soc:hover { color: #001029; }
 .mb-history__label { flex: 1; min-width: 120px; }
 .mb-history__label strong { color: #e2e8f0; }
 .mb-history__time { font-size: 11px; color: #475569; white-space: nowrap; }
-.mb-history__swatches { display: flex; gap: 3px; }
+.mb-history__swatches { display: flex; gap: 3px; flex-shrink: 0; }
 .mb-history__sw { width: 16px; height: 16px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.08); }
+.mb-history__actions { display: flex; gap: 4px; margin-left: auto; flex-shrink: 0; }
+.btn--xs { font-size: 11px; padding: 3px 8px; border-radius: 4px; }
+.mb-history__del { color: #ef4444; border-color: rgba(239,68,68,0.2); }
+.mb-history__del:hover { background: rgba(239,68,68,0.1); }
 
 .mb-privacy { font-size: 11px; color: #475569; margin-top: 20px; }
 .mb-privacy a { color: #64748b; text-decoration: underline; }

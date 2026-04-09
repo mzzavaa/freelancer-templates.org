@@ -279,35 +279,19 @@
     if (!history.length) { section.style.display = 'none'; return; }
     section.style.display = '';
     list.textContent = '';
-    history.slice(0, 15).forEach(function (entry) {
+    history.slice(0, 20).forEach(function (entry, idx) {
       var row = document.createElement('div');
       row.className = 'mb-history__row';
       var d = new Date(entry.date);
       var timeStr = d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
-      var label = document.createElement('span');
-      label.className = 'mb-history__label';
-      label.textContent = entry.action + ' ';
-
-      var name = document.createElement('strong');
-      name.textContent = entry.brand;
-      label.appendChild(name);
-
-      var time = document.createElement('span');
-      time.className = 'mb-history__time';
-      time.textContent = timeStr;
-
-      row.appendChild(label);
-      row.appendChild(time);
-
-      // If entry has colors + url, show swatches and make it clickable
-      if (entry.colors && entry.url) {
-        row.style.cursor = 'pointer';
+      // Swatches
+      if (entry.colors) {
         var swRow = document.createElement('span');
         swRow.className = 'mb-history__swatches';
-        var roles = ['bgPrimary','accentPrimary','accentSecondary','textHeading'];
-        // Backward compat: older entries might have old keys
-        var colorKeys = entry.colors.bgPrimary ? roles : ['bg','primary','secondary','text'];
+        var colorKeys = entry.colors.bgPrimary
+          ? ['bgPrimary','accentPrimary','accentSecondary','textHeading']
+          : ['bg','primary','secondary','text'];
         colorKeys.forEach(function (k) {
           if (entry.colors[k]) {
             var sw = document.createElement('span');
@@ -316,10 +300,75 @@
             swRow.appendChild(sw);
           }
         });
-        row.insertBefore(swRow, time);
-        row.addEventListener('click', function () { window.location.href = entry.url; });
+        row.appendChild(swRow);
       }
 
+      var label = document.createElement('span');
+      label.className = 'mb-history__label';
+      label.textContent = entry.brand || 'Untitled';
+      row.appendChild(label);
+
+      var time = document.createElement('span');
+      time.className = 'mb-history__time';
+      time.textContent = timeStr;
+      row.appendChild(time);
+
+      // Action buttons
+      var actions = document.createElement('span');
+      actions.className = 'mb-history__actions';
+
+      // Save as brand button
+      if (entry.colors) {
+        var saveBtn = document.createElement('button');
+        saveBtn.className = 'btn btn--outline btn--xs';
+        saveBtn.textContent = 'Save';
+        saveBtn.title = 'Save as a named brand';
+        saveBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var name = prompt('Brand name:', entry.brand || '');
+          if (!name || !name.trim()) return;
+          var brands = loadBrands();
+          brands.push({
+            id: genId(), name: name.trim(), colors: entry.colors,
+            created: new Date().toISOString(), source: entry.brand
+          });
+          saveBrands(brands);
+          addHistoryEntry('Saved brand', name.trim());
+          render();
+        });
+        actions.appendChild(saveBtn);
+
+        // Open link
+        if (entry.url) {
+          var openBtn = document.createElement('button');
+          openBtn.className = 'btn btn--outline btn--xs';
+          openBtn.textContent = 'Open';
+          openBtn.title = 'Open with these colors';
+          openBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            window.location.href = entry.url;
+          });
+          actions.appendChild(openBtn);
+        }
+      }
+
+      // Delete button
+      var delBtn = document.createElement('button');
+      delBtn.className = 'btn btn--outline btn--xs mb-history__del';
+      delBtn.textContent = 'X';
+      delBtn.title = 'Remove from history';
+      (function (i) {
+        delBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var h = loadHistory();
+          h.splice(i, 1);
+          saveHistory(h);
+          renderHistory();
+        });
+      })(idx);
+      actions.appendChild(delBtn);
+
+      row.appendChild(actions);
       list.appendChild(row);
     });
   }
