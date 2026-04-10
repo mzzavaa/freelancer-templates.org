@@ -41,9 +41,11 @@
     btn.setAttribute('aria-expanded', open);
   });
 
-  // Close on link click
+  // Close on link click (but not on mega-menu trigger)
   navLinks.querySelectorAll('.nav__link').forEach(function (link) {
     link.addEventListener('click', function () {
+      // Don't close nav when tapping the Templates mega-menu button
+      if (link.classList.contains('nav__link--btn')) return;
       navLinks.classList.remove('nav__links--open');
     });
   });
