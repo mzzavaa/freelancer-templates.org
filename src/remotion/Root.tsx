@@ -129,6 +129,9 @@ import { PulsingTextDark, PulsingTextClean, PulsingTextBold, PulsingTextWarm, Pu
 import { SlideTextDark, SlideTextClean, SlideTextBold, SlideTextWarm, SlideTextMinimal, SlideTextNeon, SlideTextOcean, SlideTextSunset, SlideTextForest, SlideTextRose, SlideTextGold, SlideTextMidnight, SlideTextCrimson, SlideTextLavender, SlideTextArctic, SlideTextEspresso } from "./templates/slidetext/SlideTextShowcase";
 import { SoundWaveDark, SoundWaveClean, SoundWaveBold, SoundWaveWarm, SoundWaveMinimal, SoundWaveNeon, SoundWaveOcean, SoundWaveSunset, SoundWaveForest, SoundWaveRose, SoundWaveGold, SoundWaveMidnight, SoundWaveCrimson, SoundWaveLavender, SoundWaveArctic, SoundWaveEspresso } from "./templates/soundwave/SoundWaveShowcase";
 import { TypewriterSubtitleDark, TypewriterSubtitleClean, TypewriterSubtitleBold, TypewriterSubtitleWarm, TypewriterSubtitleMinimal, TypewriterSubtitleNeon, TypewriterSubtitleOcean, TypewriterSubtitleSunset, TypewriterSubtitleForest, TypewriterSubtitleRose, TypewriterSubtitleGold, TypewriterSubtitleMidnight, TypewriterSubtitleCrimson, TypewriterSubtitleLavender, TypewriterSubtitleArctic, TypewriterSubtitleEspresso } from "./templates/typewritersubtitle/TypewriterSubtitleShowcase";
+import { MeetingRecapDarkDashboard, MeetingRecapBoldDashboard, MeetingRecapCleanDashboard, MeetingRecapWarmDashboard, MeetingRecapMinimalDashboard, MeetingRecapNeonDashboard, MeetingRecapOceanDashboard, MeetingRecapSunsetDashboard, MeetingRecapForestDashboard, MeetingRecapRoseDashboard, MeetingRecapGoldDashboard, MeetingRecapMidnightDashboard, MeetingRecapCrimsonDashboard, MeetingRecapLavenderDashboard, MeetingRecapArcticDashboard, MeetingRecapEspressoDashboard } from "./templates/meetingrecap/MeetingRecapShowcase";
+import { ResultsShowcaseDarkDashboard, ResultsShowcaseBoldDashboard, ResultsShowcaseCleanDashboard, ResultsShowcaseWarmDashboard, ResultsShowcaseMinimalDashboard, ResultsShowcaseNeonDashboard, ResultsShowcaseOceanDashboard, ResultsShowcaseSunsetDashboard, ResultsShowcaseForestDashboard, ResultsShowcaseRoseDashboard, ResultsShowcaseGoldDashboard, ResultsShowcaseMidnightDashboard, ResultsShowcaseCrimsonDashboard, ResultsShowcaseLavenderDashboard, ResultsShowcaseArcticDashboard, ResultsShowcaseEspressoDashboard } from "./templates/resultsshowcase/ResultsShowcaseShowcase";
+import { ServiceOverviewDarkDashboard, ServiceOverviewBoldDashboard, ServiceOverviewCleanDashboard, ServiceOverviewWarmDashboard, ServiceOverviewMinimalDashboard, ServiceOverviewNeonDashboard, ServiceOverviewOceanDashboard, ServiceOverviewSunsetDashboard, ServiceOverviewForestDashboard, ServiceOverviewRoseDashboard, ServiceOverviewGoldDashboard, ServiceOverviewMidnightDashboard, ServiceOverviewCrimsonDashboard, ServiceOverviewLavenderDashboard, ServiceOverviewArcticDashboard, ServiceOverviewEspressoDashboard } from "./templates/serviceoverview/ServiceOverviewShowcase";
 
 // Standard composition defaults: 1280x720, 30fps, 10s
 const W = 1280, H = 720, FPS = 30, DUR = 300;
@@ -1577,6 +1580,63 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="GameDay-StreamHostUpdate"      component={StreamHostUpdate}      durationInFrames={900}   fps={FPS} width={W} height={H} />
       <Composition id="GameDay-LocationShoutout"      component={LocationShoutout}      durationInFrames={900}   fps={FPS} width={W} height={H} />
       <Composition id="GameDay-ImportantReminder"     component={ImportantReminder}     durationInFrames={900}   fps={FPS} width={W} height={H} />
+    </Folder>
+
+    <Folder name="Meeting-Recap">
+      <Composition id="MeetingRecap-DarkDashboard"     component={MeetingRecapDarkDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-BoldDashboard"     component={MeetingRecapBoldDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-CleanDashboard"    component={MeetingRecapCleanDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-WarmDashboard"     component={MeetingRecapWarmDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-MinimalDashboard"  component={MeetingRecapMinimalDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-NeonDashboard"     component={MeetingRecapNeonDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-OceanDashboard"    component={MeetingRecapOceanDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-SunsetDashboard"   component={MeetingRecapSunsetDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-ForestDashboard"   component={MeetingRecapForestDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-RoseDashboard"     component={MeetingRecapRoseDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-GoldDashboard"     component={MeetingRecapGoldDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-MidnightDashboard" component={MeetingRecapMidnightDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-CrimsonDashboard"  component={MeetingRecapCrimsonDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-LavenderDashboard" component={MeetingRecapLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-ArcticDashboard"   component={MeetingRecapArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-EspressoDashboard" component={MeetingRecapEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    </Folder>
+
+    <Folder name="Results-Showcase">
+      <Composition id="ResultsShowcase-DarkDashboard"     component={ResultsShowcaseDarkDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-BoldDashboard"     component={ResultsShowcaseBoldDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-CleanDashboard"    component={ResultsShowcaseCleanDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-WarmDashboard"     component={ResultsShowcaseWarmDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-MinimalDashboard"  component={ResultsShowcaseMinimalDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-NeonDashboard"     component={ResultsShowcaseNeonDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-OceanDashboard"    component={ResultsShowcaseOceanDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-SunsetDashboard"   component={ResultsShowcaseSunsetDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-ForestDashboard"   component={ResultsShowcaseForestDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-RoseDashboard"     component={ResultsShowcaseRoseDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-GoldDashboard"     component={ResultsShowcaseGoldDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-MidnightDashboard" component={ResultsShowcaseMidnightDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-CrimsonDashboard"  component={ResultsShowcaseCrimsonDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-LavenderDashboard" component={ResultsShowcaseLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-ArcticDashboard"   component={ResultsShowcaseArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-EspressoDashboard" component={ResultsShowcaseEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    </Folder>
+
+    <Folder name="Service-Overview">
+      <Composition id="ServiceOverview-DarkDashboard"     component={ServiceOverviewDarkDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-BoldDashboard"     component={ServiceOverviewBoldDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-CleanDashboard"    component={ServiceOverviewCleanDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-WarmDashboard"     component={ServiceOverviewWarmDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-MinimalDashboard"  component={ServiceOverviewMinimalDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-NeonDashboard"     component={ServiceOverviewNeonDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-OceanDashboard"    component={ServiceOverviewOceanDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-SunsetDashboard"   component={ServiceOverviewSunsetDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-ForestDashboard"   component={ServiceOverviewForestDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-RoseDashboard"     component={ServiceOverviewRoseDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-GoldDashboard"     component={ServiceOverviewGoldDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-MidnightDashboard" component={ServiceOverviewMidnightDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-CrimsonDashboard"  component={ServiceOverviewCrimsonDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-LavenderDashboard" component={ServiceOverviewLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-ArcticDashboard"   component={ServiceOverviewArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-EspressoDashboard" component={ServiceOverviewEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
   </>
