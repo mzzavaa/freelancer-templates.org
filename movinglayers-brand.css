@@ -1,0 +1,149 @@
+/* MovingLayers.eu Brand CSS - for testing the CSS upload feature */
+/* Apps, Maps und Geo-Services */
+
+:root {
+  --ml-primary: #511a3f;
+  --ml-primary-dark: #3a0f2c;
+  --ml-primary-light: #681752;
+  --ml-accent-purple: #d6cff9;
+  --ml-accent-green: #c9f2cd;
+  --ml-bg: #ffffff;
+  --ml-bg-dark: #511a3f;
+  --ml-text: #000000;
+  --ml-text-light: #ffffff;
+  --ml-text-muted: rgba(58, 15, 44, 0.6);
+  --ml-border: #d6d6d6;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'ABCGravity-Normal', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+h4, h5, h6, p {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: #511a3f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #681752;
+}
+
+.hero {
+  background-color: #511a3f;
+  color: #ffffff;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-family: 'ABCGravity-Normal', sans-serif;
+}
+
+.nav {
+  background-color: rgba(58, 15, 44, 0);
+  border-bottom: 1px solid rgba(58, 15, 44, 0.1);
+}
+
+.nav a {
+  color: #511a3f;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #511a3f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #681752;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #511a3f;
+  border: 2px solid #511a3f;
+  border-radius: 8px;
+  padding: 12px 28px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(81, 26, 63, 0.08);
+}
+
+.badge-purple {
+  background: #d6cff9;
+  color: #511a3f;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 4px 14px;
+}
+
+.badge-green {
+  background: #c9f2cd;
+  color: #1a4a1f;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 4px 14px;
+}
+
+.section-dark {
+  background-color: #3a0f2c;
+  color: #ffffff;
+}
+
+.section-light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.footer {
+  background-color: #511a3f;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Inter', sans-serif;
+}
+
+.footer a {
+  color: #d6cff9;
+}
+
+/* Gradient overlays */
+.gradient-hero {
+  background: linear-gradient(180deg, #681752 0%, #511a3f 50%, #3a0f2c 100%);
+}
+
+/* Feature highlight */
+.feature-icon {
+  background: rgba(214, 207, 249, 0.2);
+  color: #d6cff9;
+  border-radius: 12px;
+}
+
+/* Code blocks */
+pre, code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  background: #f5f3f8;
+  border: 1px solid rgba(81, 26, 63, 0.1);
+}
