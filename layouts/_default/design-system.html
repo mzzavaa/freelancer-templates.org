@@ -5,7 +5,7 @@
 <section class="ds-hero">
   <div class="container">
     <div class="eyebrow">Design System</div>
-    <h1 class="ds-hero__title">17 themes. One token layer. Every combination works.</h1>
+    <h1 class="ds-hero__title">22 themes. One token layer. Every combination works.</h1>
     {{- $dsTotal := 0 }}{{ range .Site.Data.templates }}{{ $dsTotal = add $dsTotal .variantCount }}{{ end -}}
     <p class="ds-hero__sub">Pass any <code>THEME_*</code> constant to any template and it renders correctly. Override individual colors with a <code>BrandKit</code> without touching theme files. All {{ $dsTotal }} compositions share the same system.</p>
     <div class="ds-hero__actions">
@@ -315,6 +315,96 @@
           <div class="ds-swatch" style="background:rgba(146,64,14,0.1);border:1px solid rgba(180,83,9,0.3);" title="bgGlass / cardBorder"></div>
         </div>
         <a href="{{ "player/" | relURL }}?comp=Testimonial-EspressoCentered" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- European themes divider -->
+      <div style="grid-column:1/-1;margin-top:0.75rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.06);">
+        <p style="font-size:0.7rem;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.08em;margin:0;">European themes — grounded professional palettes</p>
+      </div>
+
+      <!-- Corporate -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#0a1628;">
+          <div class="ds-theme-card__name" style="color:#f8f6ef;">Corporate</div>
+          <div class="ds-theme-card__const" style="color:#5a6a7a;">THEME_CORPORATE</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#c8a94e,#e8c97a);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#0a1628;" title="bg: #0a1628"></div>
+          <div class="ds-swatch" style="background:#f8f6ef;" title="text: #f8f6ef"></div>
+          <div class="ds-swatch" style="background:#c8a94e;" title="accent: #c8a94e"></div>
+          <div class="ds-swatch" style="background:#e8c97a;" title="accentSecondary: #e8c97a"></div>
+          <div class="ds-swatch" style="background:rgba(200,169,78,0.08);border:1px solid rgba(200,169,78,0.22);" title="bgGlass / cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=ClientReport-CorporateDashboard" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Industrial -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#0d1b2a;">
+          <div class="ds-theme-card__name" style="color:#e4f0f0;">Industrial</div>
+          <div class="ds-theme-card__const" style="color:#3e5f5f;">THEME_INDUSTRIAL</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#2e8b8b,#4ab8b8);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#0d1b2a;" title="bg: #0d1b2a"></div>
+          <div class="ds-swatch" style="background:#e4f0f0;" title="text: #e4f0f0"></div>
+          <div class="ds-swatch" style="background:#2e8b8b;" title="accent: #2e8b8b"></div>
+          <div class="ds-swatch" style="background:#4ab8b8;" title="accentSecondary: #4ab8b8"></div>
+          <div class="ds-swatch" style="background:rgba(46,139,139,0.08);border:1px solid rgba(46,139,139,0.22);" title="bgGlass / cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=ClientReport-IndustrialDashboard" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Vienna -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#1a1a2e;">
+          <div class="ds-theme-card__name" style="color:#f0ecff;">Vienna</div>
+          <div class="ds-theme-card__const" style="color:#4c3a6e;">THEME_VIENNA</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#1a1a2e;" title="bg: #1a1a2e"></div>
+          <div class="ds-swatch" style="background:#f0ecff;" title="text: #f0ecff"></div>
+          <div class="ds-swatch" style="background:#a78bfa;" title="accent: #a78bfa"></div>
+          <div class="ds-swatch" style="background:#7c3aed;" title="accentSecondary: #7c3aed"></div>
+          <div class="ds-swatch" style="background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.2);" title="bgGlass / cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=ClientReport-ViennaDashboard" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Alpine -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#f8fafb;border:1px solid rgba(13,107,110,0.15);">
+          <div class="ds-theme-card__name" style="color:#0d2b2c;">Alpine</div>
+          <div class="ds-theme-card__const" style="color:#6b9a9b;">THEME_ALPINE</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#0d6b6e,#1a9a9e);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#f8fafb;border:1px solid rgba(13,107,110,0.15);" title="bg: #f8fafb"></div>
+          <div class="ds-swatch" style="background:#0d2b2c;" title="text: #0d2b2c"></div>
+          <div class="ds-swatch" style="background:#0d6b6e;" title="accent: #0d6b6e"></div>
+          <div class="ds-swatch" style="background:#1a9a9e;" title="accentSecondary: #1a9a9e"></div>
+          <div class="ds-swatch" style="background:#ffffff;border:1px solid rgba(13,107,110,0.15);" title="bgSecondary / cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=ClientReport-AlpineDashboard" class="ds-theme-card__link">Preview in player</a>
+      </div>
+
+      <!-- Finance -->
+      <div class="ds-theme-card">
+        <div class="ds-theme-card__preview" style="background:#1a1510;">
+          <div class="ds-theme-card__name" style="color:#fef9e7;">Finance</div>
+          <div class="ds-theme-card__const" style="color:#7a5c0a;">THEME_FINANCE</div>
+          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#d4a017,#f0b429);"></div>
+        </div>
+        <div class="ds-theme-card__swatches">
+          <div class="ds-swatch" style="background:#1a1510;" title="bg: #1a1510"></div>
+          <div class="ds-swatch" style="background:#fef9e7;" title="text: #fef9e7"></div>
+          <div class="ds-swatch" style="background:#d4a017;" title="accent: #d4a017"></div>
+          <div class="ds-swatch" style="background:#f0b429;" title="accentSecondary: #f0b429"></div>
+          <div class="ds-swatch" style="background:rgba(212,160,23,0.09);border:1px solid rgba(212,160,23,0.25);" title="bgGlass / cardBorder"></div>
+        </div>
+        <a href="{{ "player/" | relURL }}?comp=ClientReport-FinanceDashboard" class="ds-theme-card__link">Preview in player</a>
       </div>
 
     </div>
