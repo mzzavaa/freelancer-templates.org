@@ -34,6 +34,11 @@ import {
   THEME_LAVENDER,
   THEME_ARCTIC,
   THEME_ESPRESSO,
+  THEME_CORPORATE,
+  THEME_INDUSTRIAL,
+  THEME_VIENNA,
+  THEME_ALPINE,
+  THEME_FINANCE,
   BrandKit,
   applyBrandKit,
 } from "../_shared/themes";
@@ -147,4 +152,24 @@ export const ClientReportArcticDashboard: React.FC<{ brandKit?: BrandKit }> = ({
 
 export const ClientReportEspressoDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
   <ClientReport spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} bgPattern="none" />
+);
+
+export const ClientReportCorporateDashboard:  React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ClientReport spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CORPORATE,  brandKit)} bgPattern="grid" />
+);
+
+export const ClientReportIndustrialDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ClientReport spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_INDUSTRIAL, brandKit)} bgPattern="none" />
+);
+
+export const ClientReportViennaDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ClientReport spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_VIENNA, brandKit)} bgPattern="hex" />
+);
+
+export const ClientReportAlpineDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ClientReport spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ALPINE, brandKit)} bgPattern="dots" />
+);
+
+export const ClientReportFinanceDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
+  <ClientReport spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FINANCE, brandKit)} bgPattern="grid" />
 );

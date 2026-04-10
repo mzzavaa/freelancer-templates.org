@@ -9,6 +9,7 @@ import {
   THEME_DARK, THEME_CLEAN, THEME_BOLD, THEME_WARM, THEME_MINIMAL, THEME_NEON,
   THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT,
   THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO,
+  THEME_CORPORATE, THEME_INDUSTRIAL, THEME_VIENNA, THEME_ALPINE, THEME_FINANCE,
   BrandKit, applyBrandKit,
 } from "../_shared/themes";
 
@@ -41,4 +42,9 @@ export const ProjectTimelineMidnightDashboard: React.FC<{ brandKit?: BrandKit }>
 export const ProjectTimelineCrimsonDashboard:  React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON,  brandKit)} bgPattern="dots" />;
 export const ProjectTimelineLavenderDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} bgPattern="hex" />;
 export const ProjectTimelineArcticDashboard:   React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC,   brandKit)} bgPattern="dots" />;
-export const ProjectTimelineEspressoDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} bgPattern="none" />;
+export const ProjectTimelineEspressoDashboard:   React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO,   brandKit)} bgPattern="none" />;
+export const ProjectTimelineCorporateDashboard:  React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CORPORATE,  brandKit)} bgPattern="grid" />;
+export const ProjectTimelineIndustrialDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_INDUSTRIAL, brandKit)} bgPattern="none" />;
+export const ProjectTimelineViennaDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_VIENNA,     brandKit)} bgPattern="hex" />;
+export const ProjectTimelineAlpineDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ALPINE,     brandKit)} bgPattern="dots" />;
+export const ProjectTimelineFinanceDashboard:    React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FINANCE,    brandKit)} bgPattern="grid" />;
