@@ -6578,14 +6578,14 @@
         "style": "dark"
       },
       {
-        "id": "ClientReport-DarkExecutive",
-        "name": "Dark Executive",
-        "style": "dark"
+        "id": "ClientReport-CleanDashboard",
+        "name": "Clean Dashboard",
+        "style": "clean"
       },
       {
-        "id": "ClientReport-DarkTimeline",
-        "name": "Dark Timeline",
-        "style": "dark"
+        "id": "ClientReport-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
       },
       {
         "id": "ClientReport-BoldDashboard",
@@ -6593,14 +6593,14 @@
         "style": "bold"
       },
       {
-        "id": "ClientReport-BoldExecutive",
-        "name": "Bold Executive",
-        "style": "bold"
+        "id": "ClientReport-MinimalDashboard",
+        "name": "Minimal Dashboard",
+        "style": "minimal"
       },
       {
-        "id": "ClientReport-BoldTimeline",
-        "name": "Bold Timeline",
-        "style": "bold"
+        "id": "ClientReport-NeonDashboard",
+        "name": "Neon Dashboard",
+        "style": "neon"
       },
       {
         "id": "ClientReport-OceanDashboard",
@@ -6662,91 +6662,91 @@
     "description": "Visual project timelines with milestones, phase markers, dependency arrows, and progress tracking. Gantt-style layouts for client presentations.",
     "icon": "gantt-chart",
     "color": "violet",
-    "primaryVariant": "DarkGantt",
+    "primaryVariant": "DarkDashboard",
     "variantCount": 16,
     "variants": [
       {
-        "id": "ProjectTimeline-DarkGantt",
-        "name": "Dark Gantt",
+        "id": "ProjectTimeline-DarkDashboard",
+        "name": "Dark Dashboard",
         "style": "dark"
       },
       {
-        "id": "ProjectTimeline-DarkRoadmap",
-        "name": "Dark Roadmap",
-        "style": "dark"
+        "id": "ProjectTimeline-CleanDashboard",
+        "name": "Clean Dashboard",
+        "style": "clean"
       },
       {
-        "id": "ProjectTimeline-DarkMilestones",
-        "name": "Dark Milestones",
-        "style": "dark"
+        "id": "ProjectTimeline-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
       },
       {
-        "id": "ProjectTimeline-BoldGantt",
-        "name": "Bold Gantt",
+        "id": "ProjectTimeline-BoldDashboard",
+        "name": "Bold Dashboard",
         "style": "bold"
       },
       {
-        "id": "ProjectTimeline-BoldRoadmap",
-        "name": "Bold Roadmap",
-        "style": "bold"
+        "id": "ProjectTimeline-MinimalDashboard",
+        "name": "Minimal Dashboard",
+        "style": "minimal"
       },
       {
-        "id": "ProjectTimeline-BoldMilestones",
-        "name": "Bold Milestones",
-        "style": "bold"
+        "id": "ProjectTimeline-NeonDashboard",
+        "name": "Neon Dashboard",
+        "style": "neon"
       },
       {
-        "id": "ProjectTimeline-OceanGantt",
-        "name": "Ocean Gantt",
+        "id": "ProjectTimeline-OceanDashboard",
+        "name": "Ocean Dashboard",
         "style": "ocean"
       },
       {
-        "id": "ProjectTimeline-SunsetGantt",
-        "name": "Sunset Gantt",
+        "id": "ProjectTimeline-SunsetDashboard",
+        "name": "Sunset Dashboard",
         "style": "sunset"
       },
       {
-        "id": "ProjectTimeline-ForestGantt",
-        "name": "Forest Gantt",
+        "id": "ProjectTimeline-ForestDashboard",
+        "name": "Forest Dashboard",
         "style": "forest"
       },
       {
-        "id": "ProjectTimeline-RoseGantt",
-        "name": "Rose Gantt",
+        "id": "ProjectTimeline-RoseDashboard",
+        "name": "Rose Dashboard",
         "style": "rose"
       },
       {
-        "id": "ProjectTimeline-GoldGantt",
-        "name": "Gold Gantt",
+        "id": "ProjectTimeline-GoldDashboard",
+        "name": "Gold Dashboard",
         "style": "gold"
       },
       {
-        "id": "ProjectTimeline-MidnightGantt",
-        "name": "Midnight Gantt",
+        "id": "ProjectTimeline-MidnightDashboard",
+        "name": "Midnight Dashboard",
         "style": "midnight"
       },
       {
-        "id": "ProjectTimeline-CrimsonGantt",
-        "name": "Crimson Gantt",
+        "id": "ProjectTimeline-CrimsonDashboard",
+        "name": "Crimson Dashboard",
         "style": "crimson"
       },
       {
-        "id": "ProjectTimeline-LavenderGantt",
-        "name": "Lavender Gantt",
+        "id": "ProjectTimeline-LavenderDashboard",
+        "name": "Lavender Dashboard",
         "style": "lavender"
       },
       {
-        "id": "ProjectTimeline-ArcticGantt",
-        "name": "Arctic Gantt",
+        "id": "ProjectTimeline-ArcticDashboard",
+        "name": "Arctic Dashboard",
         "style": "arctic"
       },
       {
-        "id": "ProjectTimeline-EspressoGantt",
-        "name": "Espresso Gantt",
+        "id": "ProjectTimeline-EspressoDashboard",
+        "name": "Espresso Dashboard",
         "style": "espresso"
       }
     ],
-    "primaryId": "ProjectTimeline-DarkGantt"
+    "primaryId": "ProjectTimeline-DarkDashboard"
   },
   {
     "slug": "clientwelcome",
@@ -6755,91 +6755,91 @@
     "description": "Onboarding presentations for new clients with team intros, process overview, communication guidelines, and project kickoff agenda slides.",
     "icon": "hand-shake",
     "color": "green",
-    "primaryVariant": "DarkIntro",
+    "primaryVariant": "DarkDashboard",
     "variantCount": 16,
     "variants": [
       {
-        "id": "ClientWelcome-DarkIntro",
-        "name": "Dark Intro",
+        "id": "ClientWelcome-DarkDashboard",
+        "name": "Dark Dashboard",
         "style": "dark"
       },
       {
-        "id": "ClientWelcome-DarkProcess",
-        "name": "Dark Process",
-        "style": "dark"
+        "id": "ClientWelcome-CleanDashboard",
+        "name": "Clean Dashboard",
+        "style": "clean"
       },
       {
-        "id": "ClientWelcome-DarkKickoff",
-        "name": "Dark Kickoff",
-        "style": "dark"
+        "id": "ClientWelcome-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
       },
       {
-        "id": "ClientWelcome-BoldIntro",
-        "name": "Bold Intro",
+        "id": "ClientWelcome-BoldDashboard",
+        "name": "Bold Dashboard",
         "style": "bold"
       },
       {
-        "id": "ClientWelcome-BoldProcess",
-        "name": "Bold Process",
-        "style": "bold"
+        "id": "ClientWelcome-MinimalDashboard",
+        "name": "Minimal Dashboard",
+        "style": "minimal"
       },
       {
-        "id": "ClientWelcome-BoldKickoff",
-        "name": "Bold Kickoff",
-        "style": "bold"
+        "id": "ClientWelcome-NeonDashboard",
+        "name": "Neon Dashboard",
+        "style": "neon"
       },
       {
-        "id": "ClientWelcome-OceanIntro",
-        "name": "Ocean Intro",
+        "id": "ClientWelcome-OceanDashboard",
+        "name": "Ocean Dashboard",
         "style": "ocean"
       },
       {
-        "id": "ClientWelcome-SunsetIntro",
-        "name": "Sunset Intro",
+        "id": "ClientWelcome-SunsetDashboard",
+        "name": "Sunset Dashboard",
         "style": "sunset"
       },
       {
-        "id": "ClientWelcome-ForestIntro",
-        "name": "Forest Intro",
+        "id": "ClientWelcome-ForestDashboard",
+        "name": "Forest Dashboard",
         "style": "forest"
       },
       {
-        "id": "ClientWelcome-RoseIntro",
-        "name": "Rose Intro",
+        "id": "ClientWelcome-RoseDashboard",
+        "name": "Rose Dashboard",
         "style": "rose"
       },
       {
-        "id": "ClientWelcome-GoldIntro",
-        "name": "Gold Intro",
+        "id": "ClientWelcome-GoldDashboard",
+        "name": "Gold Dashboard",
         "style": "gold"
       },
       {
-        "id": "ClientWelcome-MidnightIntro",
-        "name": "Midnight Intro",
+        "id": "ClientWelcome-MidnightDashboard",
+        "name": "Midnight Dashboard",
         "style": "midnight"
       },
       {
-        "id": "ClientWelcome-CrimsonIntro",
-        "name": "Crimson Intro",
+        "id": "ClientWelcome-CrimsonDashboard",
+        "name": "Crimson Dashboard",
         "style": "crimson"
       },
       {
-        "id": "ClientWelcome-LavenderIntro",
-        "name": "Lavender Intro",
+        "id": "ClientWelcome-LavenderDashboard",
+        "name": "Lavender Dashboard",
         "style": "lavender"
       },
       {
-        "id": "ClientWelcome-ArcticIntro",
-        "name": "Arctic Intro",
+        "id": "ClientWelcome-ArcticDashboard",
+        "name": "Arctic Dashboard",
         "style": "arctic"
       },
       {
-        "id": "ClientWelcome-EspressoIntro",
-        "name": "Espresso Intro",
+        "id": "ClientWelcome-EspressoDashboard",
+        "name": "Espresso Dashboard",
         "style": "espresso"
       }
     ],
-    "primaryId": "ClientWelcome-DarkIntro"
+    "primaryId": "ClientWelcome-DarkDashboard"
   },
   {
     "slug": "scopechange",
@@ -6848,91 +6848,91 @@
     "description": "Formal scope change request videos with impact analysis, timeline adjustments, cost implications, and approval workflows. Professional change management.",
     "icon": "git-branch",
     "color": "amber",
-    "primaryVariant": "DarkRequest",
+    "primaryVariant": "DarkDashboard",
     "variantCount": 16,
     "variants": [
       {
-        "id": "ScopeChange-DarkRequest",
-        "name": "Dark Request",
+        "id": "ScopeChange-DarkDashboard",
+        "name": "Dark Dashboard",
         "style": "dark"
       },
       {
-        "id": "ScopeChange-DarkImpact",
-        "name": "Dark Impact",
-        "style": "dark"
+        "id": "ScopeChange-CleanDashboard",
+        "name": "Clean Dashboard",
+        "style": "clean"
       },
       {
-        "id": "ScopeChange-DarkApproval",
-        "name": "Dark Approval",
-        "style": "dark"
+        "id": "ScopeChange-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
       },
       {
-        "id": "ScopeChange-BoldRequest",
-        "name": "Bold Request",
+        "id": "ScopeChange-BoldDashboard",
+        "name": "Bold Dashboard",
         "style": "bold"
       },
       {
-        "id": "ScopeChange-BoldImpact",
-        "name": "Bold Impact",
-        "style": "bold"
+        "id": "ScopeChange-MinimalDashboard",
+        "name": "Minimal Dashboard",
+        "style": "minimal"
       },
       {
-        "id": "ScopeChange-BoldApproval",
-        "name": "Bold Approval",
-        "style": "bold"
+        "id": "ScopeChange-NeonDashboard",
+        "name": "Neon Dashboard",
+        "style": "neon"
       },
       {
-        "id": "ScopeChange-OceanRequest",
-        "name": "Ocean Request",
+        "id": "ScopeChange-OceanDashboard",
+        "name": "Ocean Dashboard",
         "style": "ocean"
       },
       {
-        "id": "ScopeChange-SunsetRequest",
-        "name": "Sunset Request",
+        "id": "ScopeChange-SunsetDashboard",
+        "name": "Sunset Dashboard",
         "style": "sunset"
       },
       {
-        "id": "ScopeChange-ForestRequest",
-        "name": "Forest Request",
+        "id": "ScopeChange-ForestDashboard",
+        "name": "Forest Dashboard",
         "style": "forest"
       },
       {
-        "id": "ScopeChange-RoseRequest",
-        "name": "Rose Request",
+        "id": "ScopeChange-RoseDashboard",
+        "name": "Rose Dashboard",
         "style": "rose"
       },
       {
-        "id": "ScopeChange-GoldRequest",
-        "name": "Gold Request",
+        "id": "ScopeChange-GoldDashboard",
+        "name": "Gold Dashboard",
         "style": "gold"
       },
       {
-        "id": "ScopeChange-MidnightRequest",
-        "name": "Midnight Request",
+        "id": "ScopeChange-MidnightDashboard",
+        "name": "Midnight Dashboard",
         "style": "midnight"
       },
       {
-        "id": "ScopeChange-CrimsonRequest",
-        "name": "Crimson Request",
+        "id": "ScopeChange-CrimsonDashboard",
+        "name": "Crimson Dashboard",
         "style": "crimson"
       },
       {
-        "id": "ScopeChange-LavenderRequest",
-        "name": "Lavender Request",
+        "id": "ScopeChange-LavenderDashboard",
+        "name": "Lavender Dashboard",
         "style": "lavender"
       },
       {
-        "id": "ScopeChange-ArcticRequest",
-        "name": "Arctic Request",
+        "id": "ScopeChange-ArcticDashboard",
+        "name": "Arctic Dashboard",
         "style": "arctic"
       },
       {
-        "id": "ScopeChange-EspressoRequest",
-        "name": "Espresso Request",
+        "id": "ScopeChange-EspressoDashboard",
+        "name": "Espresso Dashboard",
         "style": "espresso"
       }
     ],
-    "primaryId": "ScopeChange-DarkRequest"
+    "primaryId": "ScopeChange-DarkDashboard"
   },
   {
     "slug": "ratecard",
@@ -6941,91 +6941,91 @@
     "description": "Service pricing presentations with tier comparison, hourly vs project rates, package breakdowns, and value proposition layouts. Close deals faster.",
     "icon": "credit-card",
     "color": "emerald",
-    "primaryVariant": "DarkTiers",
+    "primaryVariant": "DarkDashboard",
     "variantCount": 16,
     "variants": [
       {
-        "id": "RateCard-DarkTiers",
-        "name": "Dark Tiers",
+        "id": "RateCard-DarkDashboard",
+        "name": "Dark Dashboard",
         "style": "dark"
       },
       {
-        "id": "RateCard-DarkComparison",
-        "name": "Dark Comparison",
-        "style": "dark"
+        "id": "RateCard-CleanDashboard",
+        "name": "Clean Dashboard",
+        "style": "clean"
       },
       {
-        "id": "RateCard-DarkPackages",
-        "name": "Dark Packages",
-        "style": "dark"
+        "id": "RateCard-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
       },
       {
-        "id": "RateCard-BoldTiers",
-        "name": "Bold Tiers",
+        "id": "RateCard-BoldDashboard",
+        "name": "Bold Dashboard",
         "style": "bold"
       },
       {
-        "id": "RateCard-BoldComparison",
-        "name": "Bold Comparison",
-        "style": "bold"
+        "id": "RateCard-MinimalDashboard",
+        "name": "Minimal Dashboard",
+        "style": "minimal"
       },
       {
-        "id": "RateCard-BoldPackages",
-        "name": "Bold Packages",
-        "style": "bold"
+        "id": "RateCard-NeonDashboard",
+        "name": "Neon Dashboard",
+        "style": "neon"
       },
       {
-        "id": "RateCard-OceanTiers",
-        "name": "Ocean Tiers",
+        "id": "RateCard-OceanDashboard",
+        "name": "Ocean Dashboard",
         "style": "ocean"
       },
       {
-        "id": "RateCard-SunsetTiers",
-        "name": "Sunset Tiers",
+        "id": "RateCard-SunsetDashboard",
+        "name": "Sunset Dashboard",
         "style": "sunset"
       },
       {
-        "id": "RateCard-ForestTiers",
-        "name": "Forest Tiers",
+        "id": "RateCard-ForestDashboard",
+        "name": "Forest Dashboard",
         "style": "forest"
       },
       {
-        "id": "RateCard-RoseTiers",
-        "name": "Rose Tiers",
+        "id": "RateCard-RoseDashboard",
+        "name": "Rose Dashboard",
         "style": "rose"
       },
       {
-        "id": "RateCard-GoldTiers",
-        "name": "Gold Tiers",
+        "id": "RateCard-GoldDashboard",
+        "name": "Gold Dashboard",
         "style": "gold"
       },
       {
-        "id": "RateCard-MidnightTiers",
-        "name": "Midnight Tiers",
+        "id": "RateCard-MidnightDashboard",
+        "name": "Midnight Dashboard",
         "style": "midnight"
       },
       {
-        "id": "RateCard-CrimsonTiers",
-        "name": "Crimson Tiers",
+        "id": "RateCard-CrimsonDashboard",
+        "name": "Crimson Dashboard",
         "style": "crimson"
       },
       {
-        "id": "RateCard-LavenderTiers",
-        "name": "Lavender Tiers",
+        "id": "RateCard-LavenderDashboard",
+        "name": "Lavender Dashboard",
         "style": "lavender"
       },
       {
-        "id": "RateCard-ArcticTiers",
-        "name": "Arctic Tiers",
+        "id": "RateCard-ArcticDashboard",
+        "name": "Arctic Dashboard",
         "style": "arctic"
       },
       {
-        "id": "RateCard-EspressoTiers",
-        "name": "Espresso Tiers",
+        "id": "RateCard-EspressoDashboard",
+        "name": "Espresso Dashboard",
         "style": "espresso"
       }
     ],
-    "primaryId": "RateCard-DarkTiers"
+    "primaryId": "RateCard-DarkDashboard"
   },
   {
     "slug": "meetingrecap",
@@ -7034,91 +7034,91 @@
     "description": "Post-meeting summary videos with action items, decisions made, attendee highlights, and next steps. Send instead of meeting notes.",
     "icon": "users",
     "color": "sky",
-    "primaryVariant": "DarkSummary",
+    "primaryVariant": "DarkDashboard",
     "variantCount": 16,
     "variants": [
       {
-        "id": "MeetingRecap-DarkSummary",
-        "name": "Dark Summary",
+        "id": "MeetingRecap-DarkDashboard",
+        "name": "Dark Dashboard",
         "style": "dark"
       },
       {
-        "id": "MeetingRecap-DarkActions",
-        "name": "Dark Actions",
-        "style": "dark"
+        "id": "MeetingRecap-CleanDashboard",
+        "name": "Clean Dashboard",
+        "style": "clean"
       },
       {
-        "id": "MeetingRecap-DarkDecisions",
-        "name": "Dark Decisions",
-        "style": "dark"
+        "id": "MeetingRecap-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
       },
       {
-        "id": "MeetingRecap-BoldSummary",
-        "name": "Bold Summary",
+        "id": "MeetingRecap-BoldDashboard",
+        "name": "Bold Dashboard",
         "style": "bold"
       },
       {
-        "id": "MeetingRecap-BoldActions",
-        "name": "Bold Actions",
-        "style": "bold"
+        "id": "MeetingRecap-MinimalDashboard",
+        "name": "Minimal Dashboard",
+        "style": "minimal"
       },
       {
-        "id": "MeetingRecap-BoldDecisions",
-        "name": "Bold Decisions",
-        "style": "bold"
+        "id": "MeetingRecap-NeonDashboard",
+        "name": "Neon Dashboard",
+        "style": "neon"
       },
       {
-        "id": "MeetingRecap-OceanSummary",
-        "name": "Ocean Summary",
+        "id": "MeetingRecap-OceanDashboard",
+        "name": "Ocean Dashboard",
         "style": "ocean"
       },
       {
-        "id": "MeetingRecap-SunsetSummary",
-        "name": "Sunset Summary",
+        "id": "MeetingRecap-SunsetDashboard",
+        "name": "Sunset Dashboard",
         "style": "sunset"
       },
       {
-        "id": "MeetingRecap-ForestSummary",
-        "name": "Forest Summary",
+        "id": "MeetingRecap-ForestDashboard",
+        "name": "Forest Dashboard",
         "style": "forest"
       },
       {
-        "id": "MeetingRecap-RoseSummary",
-        "name": "Rose Summary",
+        "id": "MeetingRecap-RoseDashboard",
+        "name": "Rose Dashboard",
         "style": "rose"
       },
       {
-        "id": "MeetingRecap-GoldSummary",
-        "name": "Gold Summary",
+        "id": "MeetingRecap-GoldDashboard",
+        "name": "Gold Dashboard",
         "style": "gold"
       },
       {
-        "id": "MeetingRecap-MidnightSummary",
-        "name": "Midnight Summary",
+        "id": "MeetingRecap-MidnightDashboard",
+        "name": "Midnight Dashboard",
         "style": "midnight"
       },
       {
-        "id": "MeetingRecap-CrimsonSummary",
-        "name": "Crimson Summary",
+        "id": "MeetingRecap-CrimsonDashboard",
+        "name": "Crimson Dashboard",
         "style": "crimson"
       },
       {
-        "id": "MeetingRecap-LavenderSummary",
-        "name": "Lavender Summary",
+        "id": "MeetingRecap-LavenderDashboard",
+        "name": "Lavender Dashboard",
         "style": "lavender"
       },
       {
-        "id": "MeetingRecap-ArcticSummary",
-        "name": "Arctic Summary",
+        "id": "MeetingRecap-ArcticDashboard",
+        "name": "Arctic Dashboard",
         "style": "arctic"
       },
       {
-        "id": "MeetingRecap-EspressoSummary",
-        "name": "Espresso Summary",
+        "id": "MeetingRecap-EspressoDashboard",
+        "name": "Espresso Dashboard",
         "style": "espresso"
       }
     ],
-    "primaryId": "MeetingRecap-DarkSummary"
+    "primaryId": "MeetingRecap-DarkDashboard"
   },
   {
     "slug": "resultsshowcase",
@@ -7127,91 +7127,91 @@
     "description": "Client ROI and results presentations with before/after metrics, growth charts, achievement highlights, and impact summaries. Prove your value.",
     "icon": "trending-up",
     "color": "rose",
-    "primaryVariant": "DarkMetrics",
+    "primaryVariant": "DarkDashboard",
     "variantCount": 16,
     "variants": [
       {
-        "id": "ResultsShowcase-DarkMetrics",
-        "name": "Dark Metrics",
+        "id": "ResultsShowcase-DarkDashboard",
+        "name": "Dark Dashboard",
         "style": "dark"
       },
       {
-        "id": "ResultsShowcase-DarkGrowth",
-        "name": "Dark Growth",
-        "style": "dark"
+        "id": "ResultsShowcase-CleanDashboard",
+        "name": "Clean Dashboard",
+        "style": "clean"
       },
       {
-        "id": "ResultsShowcase-DarkImpact",
-        "name": "Dark Impact",
-        "style": "dark"
+        "id": "ResultsShowcase-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
       },
       {
-        "id": "ResultsShowcase-BoldMetrics",
-        "name": "Bold Metrics",
+        "id": "ResultsShowcase-BoldDashboard",
+        "name": "Bold Dashboard",
         "style": "bold"
       },
       {
-        "id": "ResultsShowcase-BoldGrowth",
-        "name": "Bold Growth",
-        "style": "bold"
+        "id": "ResultsShowcase-MinimalDashboard",
+        "name": "Minimal Dashboard",
+        "style": "minimal"
       },
       {
-        "id": "ResultsShowcase-BoldImpact",
-        "name": "Bold Impact",
-        "style": "bold"
+        "id": "ResultsShowcase-NeonDashboard",
+        "name": "Neon Dashboard",
+        "style": "neon"
       },
       {
-        "id": "ResultsShowcase-OceanMetrics",
-        "name": "Ocean Metrics",
+        "id": "ResultsShowcase-OceanDashboard",
+        "name": "Ocean Dashboard",
         "style": "ocean"
       },
       {
-        "id": "ResultsShowcase-SunsetMetrics",
-        "name": "Sunset Metrics",
+        "id": "ResultsShowcase-SunsetDashboard",
+        "name": "Sunset Dashboard",
         "style": "sunset"
       },
       {
-        "id": "ResultsShowcase-ForestMetrics",
-        "name": "Forest Metrics",
+        "id": "ResultsShowcase-ForestDashboard",
+        "name": "Forest Dashboard",
         "style": "forest"
       },
       {
-        "id": "ResultsShowcase-RoseMetrics",
-        "name": "Rose Metrics",
+        "id": "ResultsShowcase-RoseDashboard",
+        "name": "Rose Dashboard",
         "style": "rose"
       },
       {
-        "id": "ResultsShowcase-GoldMetrics",
-        "name": "Gold Metrics",
+        "id": "ResultsShowcase-GoldDashboard",
+        "name": "Gold Dashboard",
         "style": "gold"
       },
       {
-        "id": "ResultsShowcase-MidnightMetrics",
-        "name": "Midnight Metrics",
+        "id": "ResultsShowcase-MidnightDashboard",
+        "name": "Midnight Dashboard",
         "style": "midnight"
       },
       {
-        "id": "ResultsShowcase-CrimsonMetrics",
-        "name": "Crimson Metrics",
+        "id": "ResultsShowcase-CrimsonDashboard",
+        "name": "Crimson Dashboard",
         "style": "crimson"
       },
       {
-        "id": "ResultsShowcase-LavenderMetrics",
-        "name": "Lavender Metrics",
+        "id": "ResultsShowcase-LavenderDashboard",
+        "name": "Lavender Dashboard",
         "style": "lavender"
       },
       {
-        "id": "ResultsShowcase-ArcticMetrics",
-        "name": "Arctic Metrics",
+        "id": "ResultsShowcase-ArcticDashboard",
+        "name": "Arctic Dashboard",
         "style": "arctic"
       },
       {
-        "id": "ResultsShowcase-EspressoMetrics",
-        "name": "Espresso Metrics",
+        "id": "ResultsShowcase-EspressoDashboard",
+        "name": "Espresso Dashboard",
         "style": "espresso"
       }
     ],
-    "primaryId": "ResultsShowcase-DarkMetrics"
+    "primaryId": "ResultsShowcase-DarkDashboard"
   },
   {
     "slug": "serviceoverview",
@@ -7220,91 +7220,91 @@
     "description": "One-pager style service descriptions with capability lists, tech stack icons, process diagrams, and call-to-action sections. Perfect for LinkedIn or proposals.",
     "icon": "briefcase",
     "color": "indigo",
-    "primaryVariant": "DarkOnePager",
+    "primaryVariant": "DarkDashboard",
     "variantCount": 16,
     "variants": [
       {
-        "id": "ServiceOverview-DarkOnePager",
-        "name": "Dark OnePager",
+        "id": "ServiceOverview-DarkDashboard",
+        "name": "Dark Dashboard",
         "style": "dark"
       },
       {
-        "id": "ServiceOverview-DarkCapabilities",
-        "name": "Dark Capabilities",
-        "style": "dark"
+        "id": "ServiceOverview-CleanDashboard",
+        "name": "Clean Dashboard",
+        "style": "clean"
       },
       {
-        "id": "ServiceOverview-DarkProcess",
-        "name": "Dark Process",
-        "style": "dark"
+        "id": "ServiceOverview-WarmDashboard",
+        "name": "Warm Dashboard",
+        "style": "warm"
       },
       {
-        "id": "ServiceOverview-BoldOnePager",
-        "name": "Bold OnePager",
+        "id": "ServiceOverview-BoldDashboard",
+        "name": "Bold Dashboard",
         "style": "bold"
       },
       {
-        "id": "ServiceOverview-BoldCapabilities",
-        "name": "Bold Capabilities",
-        "style": "bold"
+        "id": "ServiceOverview-MinimalDashboard",
+        "name": "Minimal Dashboard",
+        "style": "minimal"
       },
       {
-        "id": "ServiceOverview-BoldProcess",
-        "name": "Bold Process",
-        "style": "bold"
+        "id": "ServiceOverview-NeonDashboard",
+        "name": "Neon Dashboard",
+        "style": "neon"
       },
       {
-        "id": "ServiceOverview-OceanOnePager",
-        "name": "Ocean OnePager",
+        "id": "ServiceOverview-OceanDashboard",
+        "name": "Ocean Dashboard",
         "style": "ocean"
       },
       {
-        "id": "ServiceOverview-SunsetOnePager",
-        "name": "Sunset OnePager",
+        "id": "ServiceOverview-SunsetDashboard",
+        "name": "Sunset Dashboard",
         "style": "sunset"
       },
       {
-        "id": "ServiceOverview-ForestOnePager",
-        "name": "Forest OnePager",
+        "id": "ServiceOverview-ForestDashboard",
+        "name": "Forest Dashboard",
         "style": "forest"
       },
       {
-        "id": "ServiceOverview-RoseOnePager",
-        "name": "Rose OnePager",
+        "id": "ServiceOverview-RoseDashboard",
+        "name": "Rose Dashboard",
         "style": "rose"
       },
       {
-        "id": "ServiceOverview-GoldOnePager",
-        "name": "Gold OnePager",
+        "id": "ServiceOverview-GoldDashboard",
+        "name": "Gold Dashboard",
         "style": "gold"
       },
       {
-        "id": "ServiceOverview-MidnightOnePager",
-        "name": "Midnight OnePager",
+        "id": "ServiceOverview-MidnightDashboard",
+        "name": "Midnight Dashboard",
         "style": "midnight"
       },
       {
-        "id": "ServiceOverview-CrimsonOnePager",
-        "name": "Crimson OnePager",
+        "id": "ServiceOverview-CrimsonDashboard",
+        "name": "Crimson Dashboard",
         "style": "crimson"
       },
       {
-        "id": "ServiceOverview-LavenderOnePager",
-        "name": "Lavender OnePager",
+        "id": "ServiceOverview-LavenderDashboard",
+        "name": "Lavender Dashboard",
         "style": "lavender"
       },
       {
-        "id": "ServiceOverview-ArcticOnePager",
-        "name": "Arctic OnePager",
+        "id": "ServiceOverview-ArcticDashboard",
+        "name": "Arctic Dashboard",
         "style": "arctic"
       },
       {
-        "id": "ServiceOverview-EspressoOnePager",
-        "name": "Espresso OnePager",
+        "id": "ServiceOverview-EspressoDashboard",
+        "name": "Espresso Dashboard",
         "style": "espresso"
       }
     ],
-    "primaryId": "ServiceOverview-DarkOnePager"
+    "primaryId": "ServiceOverview-DarkDashboard"
   },
   {
     "slug": "linkedincarousel",
