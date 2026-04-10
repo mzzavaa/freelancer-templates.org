@@ -41,10 +41,15 @@
       <a href="{{ .RelPermalink }}" class="lib-card" data-name="{{ lower .Title }}" data-slug="{{ .Params.slug }}">
         <div class="lib-card__media">
           <img src="{{ (printf "previews/showcase/%s.png" .Params.primaryId) | relURL }}"
-               alt="{{ .Title }} preview" class="lib-card__img" loading="lazy">
+               alt="{{ .Title }} preview" class="lib-card__img" loading="lazy"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='none';this.parentElement.querySelector('.lib-card__fallback').style.display='flex';">
           <video class="lib-card__vid" muted loop playsinline preload="none">
             <source src="{{ (printf "previews/hero/%s.mp4" .Params.primaryId) | relURL }}" type="video/mp4">
           </video>
+          <div class="lib-card__fallback" style="display:none;">
+            <i data-lucide="{{ .Params.icon }}"></i>
+            <span>{{ .Title }}</span>
+          </div>
           <div class="lib-card__count">{{ .Params.variantCount }} variants</div>
         </div>
         <div class="lib-card__body">

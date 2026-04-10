@@ -1709,6 +1709,23 @@ html.dark .footer__soc:hover { color: #001029; }
 }
 .tpl-var-card__vid { opacity: 0; transition: opacity .25s; }
 .tpl-var-card:hover .tpl-var-card__vid { opacity: 1; }
+.tpl-var-card__fallback {
+  position: absolute; inset: 0; display: flex;
+  align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #0a1628, #1e293b);
+  color: #475569; font-size: 14px; font-weight: 600;
+}
+.tpl-var-card__fallback-name { text-align: center; padding: 0 12px; }
+
+/* Library card fallback */
+.lib-card__fallback {
+  position: absolute; inset: 0; display: flex;
+  flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  background: linear-gradient(135deg, #0a1628, #1e293b);
+  color: #475569; font-size: 13px; font-weight: 600;
+}
+.lib-card__fallback i, .lib-card__fallback svg { width: 28px; height: 28px; color: #334155; }
+
 .tpl-var-card__style {
   position: absolute; top: 10px; right: 10px;
   padding: 4px 12px;

@@ -117,10 +117,14 @@
            data-style="{{ .style }}">
         <div class="tpl-var-card__media">
           <img src="{{ (printf "previews/showcase/%s.png" .id) | relURL }}"
-               alt="{{ $.Title }} - {{ .name }}" loading="lazy" class="tpl-var-card__img">
+               alt="{{ $.Title }} - {{ .name }}" loading="lazy" class="tpl-var-card__img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='none';this.parentElement.querySelector('.tpl-var-card__fallback').style.display='flex';">
           <video class="tpl-var-card__vid" muted loop playsinline preload="none">
             <source src="{{ (printf "previews/hero/%s.mp4" .id) | relURL }}" type="video/mp4">
           </video>
+          <div class="tpl-var-card__fallback" style="display:none;">
+            <span class="tpl-var-card__fallback-name">{{ .name }}</span>
+          </div>
           <div class="tpl-var-card__style tpl-var-card__style--{{ .style }}">{{ .style }}</div>
         </div>
         <div class="tpl-var-card__name">{{ .name }}</div>
