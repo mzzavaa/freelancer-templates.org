@@ -5,6 +5,7 @@ import {
   THEME_DARK, THEME_CLEAN, THEME_BOLD, THEME_WARM, THEME_MINIMAL, THEME_NEON,
   THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT,
   THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO,
+  THEME_CORPORATE, THEME_INDUSTRIAL, THEME_VIENNA, THEME_ALPINE, THEME_FINANCE,
   BrandKit, applyBrandKit,
 } from "../_shared/themes";
 
@@ -52,3 +53,10 @@ export const ServiceOverviewCrimsonDashboard:  React.FC<{ brandKit?: BrandKit }>
 export const ServiceOverviewLavenderDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ServiceOverview spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} bgPattern="hex" />;
 export const ServiceOverviewArcticDashboard:   React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ServiceOverview spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC,   brandKit)} bgPattern="dots" />;
 export const ServiceOverviewEspressoDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ServiceOverview spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} bgPattern="none" />;
+
+// ── European Themes ───────────────────────────────────────────────
+export const ServiceOverviewCorporateDashboard:  React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ServiceOverview spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CORPORATE,  brandKit)} bgPattern="grid" />;
+export const ServiceOverviewIndustrialDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ServiceOverview spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_INDUSTRIAL, brandKit)} bgPattern="dots" />;
+export const ServiceOverviewViennaDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ServiceOverview spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_VIENNA,     brandKit)} bgPattern="hex" />;
+export const ServiceOverviewAlpineDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ServiceOverview spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ALPINE,     brandKit)} bgPattern="dots" />;
+export const ServiceOverviewFinanceDashboard:    React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ServiceOverview spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FINANCE,    brandKit)} bgPattern="hex" />;

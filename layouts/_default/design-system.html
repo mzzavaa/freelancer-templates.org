@@ -1,11 +1,11 @@
 {{ define "main" }}
 {{ partial "site-nav.html" . }}
 
-<!-- ── Hero ──────────────────────────��───────────────────────── -->
+<!-- ── Hero ────────────────────────────────────────────────────── -->
 <section class="ds-hero">
   <div class="container">
     <div class="eyebrow">Design System</div>
-    <h1 class="ds-hero__title">22 themes. One token layer. Every combination works.</h1>
+    <h1 class="ds-hero__title">{{ .Site.Data.themes.totalThemes }} themes. One token layer. Every combination works.</h1>
     {{- $dsTotal := 0 }}{{ range .Site.Data.templates }}{{ $dsTotal = add $dsTotal .variantCount }}{{ end -}}
     <p class="ds-hero__sub">Pass any <code>THEME_*</code> constant to any template and it renders correctly. Override individual colors with a <code>BrandKit</code> without touching theme files. All {{ $dsTotal }} compositions share the same system.</p>
     <div class="ds-hero__actions">
@@ -22,391 +22,60 @@
     <p class="ds-section__sub">Each theme is a complete visual identity - backgrounds, text hierarchy, accent gradient, card styles, and font weights. Import from <code>_shared/themes.ts</code>.</p>
 
     <div class="ds-theme-grid">
+      {{/* Loop through theme groups */}}
+      {{ $groupOrder := slice "original" "extended" "european" "flat" }}
+      {{ $isFirst := true }}
+      {{ range $groupKey := $groupOrder }}
+        {{ $group := index $.Site.Data.themes.groups $groupKey }}
+        {{ if $group }}
+          {{/* Add divider for non-first groups */}}
+          {{ if not $isFirst }}
+          <div style="grid-column:1/-1;margin-top:0.75rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.06);">
+            <p style="font-size:0.7rem;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.08em;margin:0;">{{ $group.label }}</p>
+          </div>
+          {{ end }}
+          {{ $isFirst = false }}
 
-      <!-- Dark -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#0a0a0f;">
-          <div class="ds-theme-card__name" style="color:#ffffff;">Dark</div>
-          <div class="ds-theme-card__const" style="color:#64748b;">THEME_DARK</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#6366f1,#ec4899);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#0a0a0f;" title="bg: #0a0a0f"></div>
-          <div class="ds-swatch" style="background:#ffffff;" title="text: #ffffff"></div>
-          <div class="ds-swatch" style="background:#6366f1;" title="accent: #6366f1"></div>
-          <div class="ds-swatch" style="background:#a855f7;" title="accentSecondary: #a855f7"></div>
-          <div class="ds-swatch" style="background:rgba(255,255,255,0.04);border:1px solid rgba(99,102,241,0.25);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-DarkCentered" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Clean -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#f8fafc;">
-          <div class="ds-theme-card__name" style="color:#0f172a;">Clean</div>
-          <div class="ds-theme-card__const" style="color:#94a3b8;">THEME_CLEAN</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#2563eb,#7c3aed);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#f8fafc;" title="bg: #f8fafc"></div>
-          <div class="ds-swatch" style="background:#0f172a;" title="text: #0f172a"></div>
-          <div class="ds-swatch" style="background:#2563eb;" title="accent: #2563eb"></div>
-          <div class="ds-swatch" style="background:#3b82f6;" title="accentSecondary: #3b82f6"></div>
-          <div class="ds-swatch" style="background:#ffffff;border:1px solid rgba(37,99,235,0.15);" title="bgSecondary / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-CleanSplit" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Bold -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#0f0f1a;">
-          <div class="ds-theme-card__name" style="color:#ffffff;font-weight:900;">Bold</div>
-          <div class="ds-theme-card__const" style="color:#7c3aed;">THEME_BOLD</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#0f0f1a;" title="bg: #0f0f1a"></div>
-          <div class="ds-swatch" style="background:#ffffff;" title="text: #ffffff"></div>
-          <div class="ds-swatch" style="background:#8b5cf6;" title="accent: #8b5cf6"></div>
-          <div class="ds-swatch" style="background:#ec4899;" title="accentSecondary: #ec4899"></div>
-          <div class="ds-swatch" style="background:rgba(139,92,246,0.3);" title="cardBorder: rgba(139,92,246,0.3)"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-BoldEditorial" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Warm -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:linear-gradient(180deg,#1a1520 0%,#1e1215 100%);">
-          <div class="ds-theme-card__name" style="color:#fef3c7;">Warm</div>
-          <div class="ds-theme-card__const" style="color:#9a7b4f;">THEME_WARM</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#f97316,#ef4444);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#1a1520;" title="bg: #1a1520 (gradient)"></div>
-          <div class="ds-swatch" style="background:#fef3c7;" title="text: #fef3c7"></div>
-          <div class="ds-swatch" style="background:#f97316;" title="accent: #f97316"></div>
-          <div class="ds-swatch" style="background:#ef4444;" title="accentSecondary: #ef4444"></div>
-          <div class="ds-swatch" style="background:rgba(249,115,22,0.25);" title="cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-WarmCentered" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Minimal -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#fafafa;border:1px solid #e2e8f0;">
-          <div class="ds-theme-card__name" style="color:#1e293b;font-weight:600;">Minimal</div>
-          <div class="ds-theme-card__const" style="color:#94a3b8;">THEME_MINIMAL</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#334155,#64748b);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#fafafa;border:1px solid #e2e8f0;" title="bg: #fafafa"></div>
-          <div class="ds-swatch" style="background:#1e293b;" title="text: #1e293b"></div>
-          <div class="ds-swatch" style="background:#334155;" title="accent: #334155"></div>
-          <div class="ds-swatch" style="background:#64748b;" title="accentSecondary: #64748b"></div>
-          <div class="ds-swatch" style="background:rgba(51,65,85,0.1);border:1px solid rgba(51,65,85,0.1);" title="cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-MinimalEditorial" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Neon -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#050510;">
-          <div class="ds-theme-card__name" style="color:#e0ffe0;">Neon</div>
-          <div class="ds-theme-card__const" style="color:#0a6640;">THEME_NEON</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#00ff88,#00ccff);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#050510;" title="bg: #050510"></div>
-          <div class="ds-swatch" style="background:#e0ffe0;" title="text: #e0ffe0"></div>
-          <div class="ds-swatch" style="background:#00ff88;" title="accent: #00ff88"></div>
-          <div class="ds-swatch" style="background:#00ccff;" title="accentSecondary: #00ccff"></div>
-          <div class="ds-swatch" style="background:rgba(0,255,136,0.2);" title="cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-NeonSplit" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Linda Mohamed -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#ffffff;border:1px solid #e8ede8;">
-          <div class="ds-theme-card__name" style="color:#1a1a1a;">Linda Mohamed</div>
-          <div class="ds-theme-card__const" style="color:#8a8a8a;">THEME_LINDAMOHAMED</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#2E7D32,#66BB6A);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#ffffff;border:1px solid #e8ede8;" title="bg: #ffffff"></div>
-          <div class="ds-swatch" style="background:#1a1a1a;" title="text: #1a1a1a"></div>
-          <div class="ds-swatch" style="background:#2E7D32;" title="accent: #2E7D32"></div>
-          <div class="ds-swatch" style="background:#43A047;" title="accentSecondary: #43A047"></div>
-          <div class="ds-swatch" style="background:rgba(46,125,50,0.2);" title="cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Proposal-CleanCreative&brandPrimary=2E7D32&brandBg=ffffff&brandText=1a1a1a&brandAccent=43A047" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Extended themes divider -->
-      <div style="grid-column:1/-1;margin-top:0.75rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.06);">
-        <p style="font-size:0.7rem;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.08em;margin:0;">Extended themes — audience-optimised palettes</p>
-      </div>
-
-      <!-- Ocean -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#050f1a;">
-          <div class="ds-theme-card__name" style="color:#e0f7fa;">Ocean</div>
-          <div class="ds-theme-card__const" style="color:#164e63;">THEME_OCEAN</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#0891b2,#06b6d4);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#050f1a;" title="bg: #050f1a"></div>
-          <div class="ds-swatch" style="background:#e0f7fa;" title="text: #e0f7fa"></div>
-          <div class="ds-swatch" style="background:#0891b2;" title="accent: #0891b2"></div>
-          <div class="ds-swatch" style="background:#06b6d4;" title="accentSecondary: #06b6d4"></div>
-          <div class="ds-swatch" style="background:rgba(8,145,178,0.08);border:1px solid rgba(8,145,178,0.25);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-OceanCentered" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Sunset -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#1a0a0f;">
-          <div class="ds-theme-card__name" style="color:#fff1f5;font-weight:800;">Sunset</div>
-          <div class="ds-theme-card__const" style="color:#9f1239;">THEME_SUNSET</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#f472b6,#fb923c);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#1a0a0f;" title="bg: #1a0a0f"></div>
-          <div class="ds-swatch" style="background:#fff1f5;" title="text: #fff1f5"></div>
-          <div class="ds-swatch" style="background:#f472b6;" title="accent: #f472b6"></div>
-          <div class="ds-swatch" style="background:#fb923c;" title="accentSecondary: #fb923c"></div>
-          <div class="ds-swatch" style="background:rgba(244,114,182,0.08);border:1px solid rgba(244,114,182,0.25);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-SunsetSplit" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Forest -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#031a06;">
-          <div class="ds-theme-card__name" style="color:#f0fdf4;">Forest</div>
-          <div class="ds-theme-card__const" style="color:#166534;">THEME_FOREST</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#16a34a,#4ade80);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#031a06;" title="bg: #031a06"></div>
-          <div class="ds-swatch" style="background:#f0fdf4;" title="text: #f0fdf4"></div>
-          <div class="ds-swatch" style="background:#16a34a;" title="accent: #16a34a"></div>
-          <div class="ds-swatch" style="background:#4ade80;" title="accentSecondary: #4ade80"></div>
-          <div class="ds-swatch" style="background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.25);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-ForestCentered" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Rose -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#1a050a;">
-          <div class="ds-theme-card__name" style="color:#fff1f2;font-weight:800;">Rose</div>
-          <div class="ds-theme-card__const" style="color:#9f1239;">THEME_ROSE</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#e11d48,#fb7185);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#1a050a;" title="bg: #1a050a"></div>
-          <div class="ds-swatch" style="background:#fff1f2;" title="text: #fff1f2"></div>
-          <div class="ds-swatch" style="background:#e11d48;" title="accent: #e11d48"></div>
-          <div class="ds-swatch" style="background:#fb7185;" title="accentSecondary: #fb7185"></div>
-          <div class="ds-swatch" style="background:rgba(225,29,72,0.08);border:1px solid rgba(225,29,72,0.25);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-RoseEditorial" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Gold -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#0a0700;">
-          <div class="ds-theme-card__name" style="color:#fffbeb;">Gold</div>
-          <div class="ds-theme-card__const" style="color:#92400e;">THEME_GOLD</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#d97706,#fbbf24);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#0a0700;" title="bg: #0a0700"></div>
-          <div class="ds-swatch" style="background:#fffbeb;" title="text: #fffbeb"></div>
-          <div class="ds-swatch" style="background:#d97706;" title="accent: #d97706"></div>
-          <div class="ds-swatch" style="background:#fbbf24;" title="accentSecondary: #fbbf24"></div>
-          <div class="ds-swatch" style="background:rgba(217,119,6,0.09);border:1px solid rgba(217,119,6,0.3);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-GoldCentered" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Midnight -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#020817;">
-          <div class="ds-theme-card__name" style="color:#f8fafc;">Midnight</div>
-          <div class="ds-theme-card__const" style="color:#1e3a5f;">THEME_MIDNIGHT</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#1e40af,#3b82f6);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#020817;" title="bg: #020817"></div>
-          <div class="ds-swatch" style="background:#f8fafc;" title="text: #f8fafc"></div>
-          <div class="ds-swatch" style="background:#3b82f6;" title="accent: #3b82f6"></div>
-          <div class="ds-swatch" style="background:#60a5fa;" title="accentSecondary: #60a5fa"></div>
-          <div class="ds-swatch" style="background:rgba(30,64,175,0.1);border:1px solid rgba(59,130,246,0.2);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-MidnightCentered" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Crimson -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#1a0000;">
-          <div class="ds-theme-card__name" style="color:#fff1f2;font-weight:900;">Crimson</div>
-          <div class="ds-theme-card__const" style="color:#7f1d1d;">THEME_CRIMSON</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#dc2626,#f97316);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#1a0000;" title="bg: #1a0000"></div>
-          <div class="ds-swatch" style="background:#fff1f2;" title="text: #fff1f2"></div>
-          <div class="ds-swatch" style="background:#dc2626;" title="accent: #dc2626"></div>
-          <div class="ds-swatch" style="background:#f97316;" title="accentSecondary: #f97316"></div>
-          <div class="ds-swatch" style="background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.25);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-CrimsonEditorial" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Lavender -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#0d0414;">
-          <div class="ds-theme-card__name" style="color:#faf5ff;">Lavender</div>
-          <div class="ds-theme-card__const" style="color:#581c87;">THEME_LAVENDER</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#0d0414;" title="bg: #0d0414"></div>
-          <div class="ds-swatch" style="background:#faf5ff;" title="text: #faf5ff"></div>
-          <div class="ds-swatch" style="background:#a78bfa;" title="accent: #a78bfa"></div>
-          <div class="ds-swatch" style="background:#f0abfc;" title="accentSecondary: #f0abfc"></div>
-          <div class="ds-swatch" style="background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.2);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-LavenderSplit" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Arctic -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#f0f9ff;border:1px solid rgba(14,165,233,0.2);">
-          <div class="ds-theme-card__name" style="color:#0c4a6e;">Arctic</div>
-          <div class="ds-theme-card__const" style="color:#7dd3fc;">THEME_ARCTIC</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#0ea5e9,#38bdf8);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#f0f9ff;border:1px solid rgba(14,165,233,0.2);" title="bg: #f0f9ff"></div>
-          <div class="ds-swatch" style="background:#0c4a6e;" title="text: #0c4a6e"></div>
-          <div class="ds-swatch" style="background:#0ea5e9;" title="accent: #0ea5e9"></div>
-          <div class="ds-swatch" style="background:#38bdf8;" title="accentSecondary: #38bdf8"></div>
-          <div class="ds-swatch" style="background:#e0f2fe;border:1px solid rgba(14,165,233,0.2);" title="bgSecondary / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-ArcticSplit" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Espresso -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#0f0a05;">
-          <div class="ds-theme-card__name" style="color:#fef3c7;">Espresso</div>
-          <div class="ds-theme-card__const" style="color:#78350f;">THEME_ESPRESSO</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#92400e,#d97706);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#0f0a05;" title="bg: #0f0a05"></div>
-          <div class="ds-swatch" style="background:#fef3c7;" title="text: #fef3c7"></div>
-          <div class="ds-swatch" style="background:#b45309;" title="accent: #b45309"></div>
-          <div class="ds-swatch" style="background:#d97706;" title="accentSecondary: #d97706"></div>
-          <div class="ds-swatch" style="background:rgba(146,64,14,0.1);border:1px solid rgba(180,83,9,0.3);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=Testimonial-EspressoCentered" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- European themes divider -->
-      <div style="grid-column:1/-1;margin-top:0.75rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.06);">
-        <p style="font-size:0.7rem;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.08em;margin:0;">European themes — grounded professional palettes</p>
-      </div>
-
-      <!-- Corporate -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#0a1628;">
-          <div class="ds-theme-card__name" style="color:#f8f6ef;">Corporate</div>
-          <div class="ds-theme-card__const" style="color:#5a6a7a;">THEME_CORPORATE</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#c8a94e,#e8c97a);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#0a1628;" title="bg: #0a1628"></div>
-          <div class="ds-swatch" style="background:#f8f6ef;" title="text: #f8f6ef"></div>
-          <div class="ds-swatch" style="background:#c8a94e;" title="accent: #c8a94e"></div>
-          <div class="ds-swatch" style="background:#e8c97a;" title="accentSecondary: #e8c97a"></div>
-          <div class="ds-swatch" style="background:rgba(200,169,78,0.08);border:1px solid rgba(200,169,78,0.22);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=ClientReport-CorporateDashboard" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Industrial -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#0d1b2a;">
-          <div class="ds-theme-card__name" style="color:#e4f0f0;">Industrial</div>
-          <div class="ds-theme-card__const" style="color:#3e5f5f;">THEME_INDUSTRIAL</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#2e8b8b,#4ab8b8);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#0d1b2a;" title="bg: #0d1b2a"></div>
-          <div class="ds-swatch" style="background:#e4f0f0;" title="text: #e4f0f0"></div>
-          <div class="ds-swatch" style="background:#2e8b8b;" title="accent: #2e8b8b"></div>
-          <div class="ds-swatch" style="background:#4ab8b8;" title="accentSecondary: #4ab8b8"></div>
-          <div class="ds-swatch" style="background:rgba(46,139,139,0.08);border:1px solid rgba(46,139,139,0.22);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=ClientReport-IndustrialDashboard" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Vienna -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#1a1a2e;">
-          <div class="ds-theme-card__name" style="color:#f0ecff;">Vienna</div>
-          <div class="ds-theme-card__const" style="color:#4c3a6e;">THEME_VIENNA</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#7c3aed,#a78bfa);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#1a1a2e;" title="bg: #1a1a2e"></div>
-          <div class="ds-swatch" style="background:#f0ecff;" title="text: #f0ecff"></div>
-          <div class="ds-swatch" style="background:#a78bfa;" title="accent: #a78bfa"></div>
-          <div class="ds-swatch" style="background:#7c3aed;" title="accentSecondary: #7c3aed"></div>
-          <div class="ds-swatch" style="background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.2);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=ClientReport-ViennaDashboard" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Alpine -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#f8fafb;border:1px solid rgba(13,107,110,0.15);">
-          <div class="ds-theme-card__name" style="color:#0d2b2c;">Alpine</div>
-          <div class="ds-theme-card__const" style="color:#6b9a9b;">THEME_ALPINE</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#0d6b6e,#1a9a9e);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#f8fafb;border:1px solid rgba(13,107,110,0.15);" title="bg: #f8fafb"></div>
-          <div class="ds-swatch" style="background:#0d2b2c;" title="text: #0d2b2c"></div>
-          <div class="ds-swatch" style="background:#0d6b6e;" title="accent: #0d6b6e"></div>
-          <div class="ds-swatch" style="background:#1a9a9e;" title="accentSecondary: #1a9a9e"></div>
-          <div class="ds-swatch" style="background:#ffffff;border:1px solid rgba(13,107,110,0.15);" title="bgSecondary / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=ClientReport-AlpineDashboard" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
-      <!-- Finance -->
-      <div class="ds-theme-card">
-        <div class="ds-theme-card__preview" style="background:#1a1510;">
-          <div class="ds-theme-card__name" style="color:#fef9e7;">Finance</div>
-          <div class="ds-theme-card__const" style="color:#7a5c0a;">THEME_FINANCE</div>
-          <div class="ds-theme-card__gradient" style="background:linear-gradient(135deg,#d4a017,#f0b429);"></div>
-        </div>
-        <div class="ds-theme-card__swatches">
-          <div class="ds-swatch" style="background:#1a1510;" title="bg: #1a1510"></div>
-          <div class="ds-swatch" style="background:#fef9e7;" title="text: #fef9e7"></div>
-          <div class="ds-swatch" style="background:#d4a017;" title="accent: #d4a017"></div>
-          <div class="ds-swatch" style="background:#f0b429;" title="accentSecondary: #f0b429"></div>
-          <div class="ds-swatch" style="background:rgba(212,160,23,0.09);border:1px solid rgba(212,160,23,0.25);" title="bgGlass / cardBorder"></div>
-        </div>
-        <a href="{{ "player/" | relURL }}?comp=ClientReport-FinanceDashboard" class="ds-theme-card__link">Preview in player</a>
-      </div>
-
+          {{/* Loop through themes in this group */}}
+          {{ range $theme := $group.themes }}
+            {{/* Determine if bg is light or dark for text color */}}
+            {{ $bgIsLight := or (hasPrefix $theme.bg "#f") (hasPrefix $theme.bg "#e") (hasPrefix $theme.bg "#fff") (eq $theme.bg "#ffffff") }}
+            {{ $textColor := cond $bgIsLight $theme.textPrimary "#ffffff" }}
+            {{ $mutedColor := cond $bgIsLight $theme.textMuted "#64748b" }}
+            
+            {{/* Handle gradient backgrounds - extract first color for preview */}}
+            {{ $previewBg := $theme.bg }}
+            {{ if hasPrefix $theme.bg "linear-gradient" }}
+              {{ $previewBg = "#1a1520" }}
+            {{ end }}
+            
+            {{/* Determine if we need a border for light themes */}}
+            {{ $needsBorder := or $bgIsLight (eq $theme.name "minimal") (eq $theme.name "arctic") (eq $theme.name "alpine") }}
+            
+            <div class="ds-theme-card">
+              <div class="ds-theme-card__preview" style="background:{{ $previewBg }};{{ if $needsBorder }}border:1px solid {{ $theme.cardBorder }};{{ end }}">
+                <div class="ds-theme-card__name" style="color:{{ $theme.textPrimary }};{{ if ge $theme.headingWeight 800 }}font-weight:{{ $theme.headingWeight }};{{ end }}">{{ $theme.displayName }}</div>
+                <div class="ds-theme-card__const" style="color:{{ $theme.textMuted }};">{{ $theme.constName }}</div>
+                <div class="ds-theme-card__gradient" style="background:{{ $theme.accentGradient }};"></div>
+              </div>
+              <div class="ds-theme-card__swatches">
+                <div class="ds-swatch" style="background:{{ $previewBg }};{{ if $needsBorder }}border:1px solid {{ $theme.cardBorder }};{{ end }}" title="bg: {{ $theme.bg }}"></div>
+                <div class="ds-swatch" style="background:{{ $theme.textPrimary }};" title="text: {{ $theme.textPrimary }}"></div>
+                <div class="ds-swatch" style="background:{{ $theme.accent }};" title="accent: {{ $theme.accent }}"></div>
+                <div class="ds-swatch" style="background:{{ $theme.accentSecondary }};" title="accentSecondary: {{ $theme.accentSecondary }}"></div>
+                <div class="ds-swatch" style="background:{{ $theme.bgGlass }};border:1px solid {{ $theme.cardBorder }};" title="bgGlass / cardBorder"></div>
+              </div>
+              <div class="ds-theme-card__links">
+                <a href="{{ (printf "themes/%s/" $theme.name) | relURL }}" class="ds-theme-card__link">View theme</a>
+                <a href="{{ $theme.previewUrl | relURL }}" class="ds-theme-card__link ds-theme-card__link--secondary">Preview</a>
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+    <div style="margin-top:32px;text-align:center;">
+      <a href="{{ "themes/" | relURL }}" class="btn btn--outline">Browse all {{ .Site.Data.themes.totalThemes }} themes</a>
     </div>
   </div>
 </section>

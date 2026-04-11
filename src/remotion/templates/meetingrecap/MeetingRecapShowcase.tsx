@@ -5,6 +5,7 @@ import {
   THEME_DARK, THEME_CLEAN, THEME_BOLD, THEME_WARM, THEME_MINIMAL, THEME_NEON,
   THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT,
   THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO,
+  THEME_CORPORATE, THEME_INDUSTRIAL, THEME_VIENNA, THEME_ALPINE, THEME_FINANCE,
   BrandKit, applyBrandKit,
 } from "../_shared/themes";
 
@@ -42,3 +43,10 @@ export const MeetingRecapCrimsonDashboard:  React.FC<{ brandKit?: BrandKit }> = 
 export const MeetingRecapLavenderDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <MeetingRecap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} bgPattern="hex" />;
 export const MeetingRecapArcticDashboard:   React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <MeetingRecap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC,   brandKit)} bgPattern="dots" />;
 export const MeetingRecapEspressoDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <MeetingRecap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} bgPattern="none" />;
+
+// ── European Themes ───────────────────────────────────────────────
+export const MeetingRecapCorporateDashboard:  React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <MeetingRecap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CORPORATE,  brandKit)} bgPattern="grid" />;
+export const MeetingRecapIndustrialDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <MeetingRecap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_INDUSTRIAL, brandKit)} bgPattern="dots" />;
+export const MeetingRecapViennaDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <MeetingRecap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_VIENNA,     brandKit)} bgPattern="hex" />;
+export const MeetingRecapAlpineDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <MeetingRecap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ALPINE,     brandKit)} bgPattern="dots" />;
+export const MeetingRecapFinanceDashboard:    React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <MeetingRecap spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FINANCE,    brandKit)} bgPattern="hex" />;

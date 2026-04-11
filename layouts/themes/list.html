@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<!-- Hero -->
+<section class="ds-hero">
+  <div class="container">
+    <div class="eyebrow">Theme Gallery</div>
+    <h1 class="ds-hero__title">{{ .Site.Data.themes.totalThemes }} themes for every brand</h1>
+    <p class="ds-hero__sub">Browse all available themes. Each theme works with every template - pick your style and start creating.</p>
+    <div class="ds-hero__actions">
+      <a href="{{ "player/" | relURL }}" class="btn btn--primary">Open player</a>
+      <a href="{{ "design-system/" | relURL }}" class="btn btn--outline">Design system docs</a>
+    </div>
+  </div>
+</section>
+
+<!-- Theme Groups -->
+{{ $groupOrder := slice "original" "extended" "european" "flat" }}
+{{ range $groupKey := $groupOrder }}
+  {{ $group := index $.Site.Data.themes.groups $groupKey }}
+  {{ if $group }}
+<section class="theme-group-section">
+  <div class="container">
+    <h2 class="theme-group-section__title">{{ $group.label }}</h2>
+    <div class="theme-gallery-grid">
+      {{ range $group.themes }}
+      <a href="{{ (printf "themes/%s/" .name) | relURL }}" class="theme-gallery-card">
+        <div class="theme-gallery-card__preview" style="background: {{ .bg }};{{ if or (hasPrefix .bg "#f") (hasPrefix .bg "#e") (eq .bg "#ffffff") }}border: 1px solid {{ .cardBorder }};{{ end }}">
+          <div class="theme-gallery-card__name" style="color: {{ .textPrimary }};">{{ .displayName }}</div>
+          <div class="theme-gallery-card__gradient" style="background: {{ .accentGradient }};"></div>
+        </div>
+        <div class="theme-gallery-card__swatches">
+          <div class="theme-gallery-swatch" style="background: {{ .bg }};{{ if or (hasPrefix .bg "#f") (hasPrefix .bg "#e") (eq .bg "#ffffff") }}border: 1px solid {{ .cardBorder }};{{ end }}" title="bg"></div>
+          <div class="theme-gallery-swatch" style="background: {{ .textPrimary }};" title="text"></div>
+          <div class="theme-gallery-swatch" style="background: {{ .accent }};" title="accent"></div>
+          <div class="theme-gallery-swatch" style="background: {{ .accentSecondary }};" title="accent2"></div>
+        </div>
+        <span class="theme-gallery-card__cta">View theme</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+  {{ end }}
+{{ end }}
+
+{{ partial "site-footer.html" . }}
+{{ end }}

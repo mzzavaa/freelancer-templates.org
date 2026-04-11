@@ -493,6 +493,434 @@ export const THEME_FINANCE: Theme = {
   bodyWeight: 400,
 };
 
+// ══════════════════════════════════════════════════════════════════
+// FLAT & MATERIAL DESIGN THEMES - Hard edges, no glow, simple colors
+// ══════════════════════════════════════════════════════════════════
+
+// ── Material Blue / Google Material Design ───────────────────────
+// Classic Material Design blue palette. Flat colors, sharp edges, Roboto.
+// No shadows or glow - pure flat design with elevation via color only.
+export const THEME_MATERIAL_BLUE: Theme = {
+  name: "materialBlue",
+  bg: "#ffffff",
+  bgSecondary: "#f5f5f5",
+  bgGlass: "#eeeeee",
+  textPrimary: "#212121",
+  textSecondary: "#757575",
+  textMuted: "#9e9e9e",
+  accent: "#2196f3",
+  accentSecondary: "#1976d2",
+  accentGradient: "#2196f3",
+  cardBorder: "#e0e0e0",
+  cardShadow: "none",
+  fontFamily: "'Roboto', sans-serif",
+  headingWeight: 500,
+  bodyWeight: 400,
+};
+
+// ── Material Dark / Dark Material Design ─────────────────────────
+// Material Design dark theme. Flat surfaces, teal accent, no glow.
+// Sharp geometric feel with Roboto Mono for technical precision.
+export const THEME_MATERIAL_DARK: Theme = {
+  name: "materialDark",
+  bg: "#121212",
+  bgSecondary: "#1e1e1e",
+  bgGlass: "#2d2d2d",
+  textPrimary: "#ffffff",
+  textSecondary: "#b0b0b0",
+  textMuted: "#6e6e6e",
+  accent: "#03dac6",
+  accentSecondary: "#018786",
+  accentGradient: "#03dac6",
+  cardBorder: "#333333",
+  cardShadow: "none",
+  fontFamily: "'Roboto Mono', monospace",
+  headingWeight: 500,
+  bodyWeight: 400,
+};
+
+// ── Flat Red / Bold Flat Design ──────────────────────────────────
+// High contrast flat design with bold red accent. No shadows, hard edges.
+// Oswald condensed headings for impact, Source Sans for body.
+export const THEME_FLAT_RED: Theme = {
+  name: "flatRed",
+  bg: "#fafafa",
+  bgSecondary: "#ffffff",
+  bgGlass: "#f0f0f0",
+  textPrimary: "#1a1a1a",
+  textSecondary: "#4a4a4a",
+  textMuted: "#8a8a8a",
+  accent: "#e53935",
+  accentSecondary: "#c62828",
+  accentGradient: "#e53935",
+  cardBorder: "#dddddd",
+  cardShadow: "none",
+  fontFamily: "'Oswald', sans-serif",
+  headingWeight: 600,
+  bodyWeight: 400,
+};
+
+// ── Flat Navy / Corporate Flat ───────────────────────────────────
+// Navy and white flat design. Clean corporate look without gradients.
+// Poppins for modern geometric letterforms.
+export const THEME_FLAT_NAVY: Theme = {
+  name: "flatNavy",
+  bg: "#ffffff",
+  bgSecondary: "#f8f9fa",
+  bgGlass: "#eef1f4",
+  textPrimary: "#1a365d",
+  textSecondary: "#2d4a6f",
+  textMuted: "#718096",
+  accent: "#1a365d",
+  accentSecondary: "#2c5282",
+  accentGradient: "#1a365d",
+  cardBorder: "#cbd5e0",
+  cardShadow: "none",
+  fontFamily: "'Poppins', sans-serif",
+  headingWeight: 600,
+  bodyWeight: 400,
+};
+
+// ── Swiss / International Typographic Style ──────────────────────
+// Inspired by Swiss design - grid-based, Helvetica, black and white.
+// Maximum contrast, zero decoration, pure typography.
+export const THEME_SWISS: Theme = {
+  name: "swiss",
+  bg: "#ffffff",
+  bgSecondary: "#f2f2f2",
+  bgGlass: "#e5e5e5",
+  textPrimary: "#000000",
+  textSecondary: "#333333",
+  textMuted: "#666666",
+  accent: "#000000",
+  accentSecondary: "#333333",
+  accentGradient: "#000000",
+  cardBorder: "#000000",
+  cardShadow: "none",
+  fontFamily: "'Helvetica Neue', 'Arial', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Bauhaus / Geometric Primary Colors ───────────────────────────
+// Bauhaus-inspired with primary colors. Geometric, functional, bold.
+// Futura for that classic modernist typography.
+export const THEME_BAUHAUS: Theme = {
+  name: "bauhaus",
+  bg: "#fffef5",
+  bgSecondary: "#f5f4eb",
+  bgGlass: "#eae9e0",
+  textPrimary: "#1a1a1a",
+  textSecondary: "#3d3d3d",
+  textMuted: "#7a7a7a",
+  accent: "#0047ab",
+  accentSecondary: "#d32f2f",
+  accentGradient: "#0047ab",
+  cardBorder: "#1a1a1a",
+  cardShadow: "none",
+  fontFamily: "'Futura', 'Century Gothic', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Mono / Developer Flat ────────────────────────────────────────
+// Monochrome flat design for developers. JetBrains Mono throughout.
+// Green accent on dark - terminal aesthetic without glow.
+export const THEME_MONO: Theme = {
+  name: "mono",
+  bg: "#1a1a1a",
+  bgSecondary: "#242424",
+  bgGlass: "#2e2e2e",
+  textPrimary: "#e0e0e0",
+  textSecondary: "#a0a0a0",
+  textMuted: "#606060",
+  accent: "#4ec9b0",
+  accentSecondary: "#3da88f",
+  accentGradient: "#4ec9b0",
+  cardBorder: "#404040",
+  cardShadow: "none",
+  fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
+  headingWeight: 600,
+  bodyWeight: 400,
+};
+
+// ── Paper / Warm Flat Light ──────────────────────────────────────
+// Warm paper-like background, brown ink colors. Editorial flat design.
+// Libre Baskerville for classic book typography.
+export const THEME_PAPER: Theme = {
+  name: "paper",
+  bg: "#faf8f5",
+  bgSecondary: "#f5f2ed",
+  bgGlass: "#ebe7e0",
+  textPrimary: "#2c2416",
+  textSecondary: "#5c4d3a",
+  textMuted: "#9a8b78",
+  accent: "#8b4513",
+  accentSecondary: "#a0522d",
+  accentGradient: "#8b4513",
+  cardBorder: "#d4c9b8",
+  cardShadow: "none",
+  fontFamily: "'Libre Baskerville', 'Georgia', serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Slate / Neutral Flat Dark ────────────────────────────────────
+// Neutral slate grays with orange accent. Work Sans for clarity.
+// No decorative elements - pure functional flat design.
+export const THEME_SLATE: Theme = {
+  name: "slate",
+  bg: "#1e2328",
+  bgSecondary: "#282d33",
+  bgGlass: "#32383f",
+  textPrimary: "#e8eaed",
+  textSecondary: "#9aa0a6",
+  textMuted: "#5f6368",
+  accent: "#f9ab00",
+  accentSecondary: "#e69500",
+  accentGradient: "#f9ab00",
+  cardBorder: "#3c4248",
+  cardShadow: "none",
+  fontFamily: "'Work Sans', sans-serif",
+  headingWeight: 600,
+  bodyWeight: 400,
+};
+
+// ── Blueprint / Technical Flat ───────────────────────────────────
+// Blueprint-inspired with white lines on blue. Technical documentation feel.
+// IBM Plex Mono for engineering precision.
+export const THEME_BLUEPRINT: Theme = {
+  name: "blueprint",
+  bg: "#0d47a1",
+  bgSecondary: "#1565c0",
+  bgGlass: "#1976d2",
+  textPrimary: "#ffffff",
+  textSecondary: "#bbdefb",
+  textMuted: "#64b5f6",
+  accent: "#ffffff",
+  accentSecondary: "#e3f2fd",
+  accentGradient: "#ffffff",
+  cardBorder: "#ffffff",
+  cardShadow: "none",
+  fontFamily: "'IBM Plex Mono', monospace",
+  headingWeight: 600,
+  bodyWeight: 400,
+};
+
+// ══════════════════════════════════════════════════════════════════
+// EXTENDED FLAT THEMES - More Canva-style simple designs
+// ══════════════════════════════════════════════════════════════════
+
+// ── Candy / Playful Pink ─────────────────────────────────────────
+// Bright pink accent on white. Playful, youthful, social media friendly.
+// Quicksand rounded font for approachable feel.
+export const THEME_CANDY: Theme = {
+  name: "candy",
+  bg: "#ffffff",
+  bgSecondary: "#fff5f7",
+  bgGlass: "#ffe4ec",
+  textPrimary: "#2d2d2d",
+  textSecondary: "#666666",
+  textMuted: "#999999",
+  accent: "#ff6b9d",
+  accentSecondary: "#ff8fab",
+  accentGradient: "#ff6b9d",
+  cardBorder: "#ffd6e0",
+  cardShadow: "none",
+  fontFamily: "'Quicksand', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 500,
+};
+
+// ── Mint / Fresh Green ───────────────────────────────────────────
+// Mint green on white. Fresh, clean, health and wellness vibes.
+// Nunito for friendly rounded letterforms.
+export const THEME_MINT: Theme = {
+  name: "mint",
+  bg: "#ffffff",
+  bgSecondary: "#f0fdf4",
+  bgGlass: "#dcfce7",
+  textPrimary: "#1a1a1a",
+  textSecondary: "#4b5563",
+  textMuted: "#9ca3af",
+  accent: "#10b981",
+  accentSecondary: "#34d399",
+  accentGradient: "#10b981",
+  cardBorder: "#a7f3d0",
+  cardShadow: "none",
+  fontFamily: "'Nunito', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Coral / Warm Orange ──────────────────────────────────────────
+// Coral orange on cream. Warm, inviting, lifestyle content.
+// Lato for clean professional readability.
+export const THEME_CORAL: Theme = {
+  name: "coral",
+  bg: "#fffbf5",
+  bgSecondary: "#fff7ed",
+  bgGlass: "#ffedd5",
+  textPrimary: "#292524",
+  textSecondary: "#57534e",
+  textMuted: "#a8a29e",
+  accent: "#f97316",
+  accentSecondary: "#fb923c",
+  accentGradient: "#f97316",
+  cardBorder: "#fed7aa",
+  cardShadow: "none",
+  fontFamily: "'Lato', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Sky / Light Blue ─────────────────────────────────────────────
+// Sky blue on white. Calm, trustworthy, tech-friendly.
+// Open Sans for maximum readability.
+export const THEME_SKY: Theme = {
+  name: "sky",
+  bg: "#ffffff",
+  bgSecondary: "#f0f9ff",
+  bgGlass: "#e0f2fe",
+  textPrimary: "#0f172a",
+  textSecondary: "#475569",
+  textMuted: "#94a3b8",
+  accent: "#0ea5e9",
+  accentSecondary: "#38bdf8",
+  accentGradient: "#0ea5e9",
+  cardBorder: "#bae6fd",
+  cardShadow: "none",
+  fontFamily: "'Open Sans', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Grape / Purple Flat ──────────────────────────────────────────
+// Rich purple on light lavender. Creative, premium, modern.
+// Montserrat for geometric elegance.
+export const THEME_GRAPE: Theme = {
+  name: "grape",
+  bg: "#faf5ff",
+  bgSecondary: "#f3e8ff",
+  bgGlass: "#e9d5ff",
+  textPrimary: "#1e1b4b",
+  textSecondary: "#4c1d95",
+  textMuted: "#a78bfa",
+  accent: "#8b5cf6",
+  accentSecondary: "#a78bfa",
+  accentGradient: "#8b5cf6",
+  cardBorder: "#c4b5fd",
+  cardShadow: "none",
+  fontFamily: "'Montserrat', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Charcoal / Dark Minimal ──────────────────────────────────────
+// Pure charcoal with white text. Sophisticated dark flat design.
+// Source Sans Pro for clean technical feel.
+export const THEME_CHARCOAL: Theme = {
+  name: "charcoal",
+  bg: "#18181b",
+  bgSecondary: "#27272a",
+  bgGlass: "#3f3f46",
+  textPrimary: "#fafafa",
+  textSecondary: "#a1a1aa",
+  textMuted: "#71717a",
+  accent: "#fafafa",
+  accentSecondary: "#e4e4e7",
+  accentGradient: "#fafafa",
+  cardBorder: "#52525b",
+  cardShadow: "none",
+  fontFamily: "'Source Sans Pro', sans-serif",
+  headingWeight: 600,
+  bodyWeight: 400,
+};
+
+// ── Peach / Soft Warm ────────────────────────────────────────────
+// Soft peach tones. Gentle, feminine, beauty and lifestyle.
+// Playfair Display for editorial elegance.
+export const THEME_PEACH: Theme = {
+  name: "peach",
+  bg: "#fffbf8",
+  bgSecondary: "#fff5f0",
+  bgGlass: "#ffe8db",
+  textPrimary: "#3d2c29",
+  textSecondary: "#6b5750",
+  textMuted: "#a89890",
+  accent: "#f59e0b",
+  accentSecondary: "#fbbf24",
+  accentGradient: "#f59e0b",
+  cardBorder: "#fde68a",
+  cardShadow: "none",
+  fontFamily: "'Playfair Display', serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Ocean Dark / Deep Sea ────────────────────────────────────────
+// Deep ocean blue with cyan accents. Immersive, tech, gaming.
+// Exo 2 for futuristic geometric feel.
+export const THEME_OCEAN_DARK: Theme = {
+  name: "oceanDark",
+  bg: "#0a192f",
+  bgSecondary: "#112240",
+  bgGlass: "#1d3557",
+  textPrimary: "#ccd6f6",
+  textSecondary: "#8892b0",
+  textMuted: "#495670",
+  accent: "#64ffda",
+  accentSecondary: "#4fd1c5",
+  accentGradient: "#64ffda",
+  cardBorder: "#233554",
+  cardShadow: "none",
+  fontFamily: "'Exo 2', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Cream / Warm Neutral ─────────────────────────────────────────
+// Warm cream with brown accents. Cozy, artisan, handcrafted feel.
+// Merriweather for readable serif elegance.
+export const THEME_CREAM: Theme = {
+  name: "cream",
+  bg: "#fefcf3",
+  bgSecondary: "#faf6e9",
+  bgGlass: "#f5edd6",
+  textPrimary: "#3d3929",
+  textSecondary: "#5c5647",
+  textMuted: "#8a8475",
+  accent: "#92400e",
+  accentSecondary: "#b45309",
+  accentGradient: "#92400e",
+  cardBorder: "#d6ceb8",
+  cardShadow: "none",
+  fontFamily: "'Merriweather', serif",
+  headingWeight: 700,
+  bodyWeight: 400,
+};
+
+// ── Electric / Vibrant Dark ──────────────────────────────────────
+// Dark with electric blue accent. High energy, gaming, tech.
+// Rajdhani for bold condensed impact.
+export const THEME_ELECTRIC: Theme = {
+  name: "electric",
+  bg: "#0f0f0f",
+  bgSecondary: "#1a1a1a",
+  bgGlass: "#262626",
+  textPrimary: "#ffffff",
+  textSecondary: "#b3b3b3",
+  textMuted: "#666666",
+  accent: "#3b82f6",
+  accentSecondary: "#60a5fa",
+  accentGradient: "#3b82f6",
+  cardBorder: "#333333",
+  cardShadow: "none",
+  fontFamily: "'Rajdhani', sans-serif",
+  headingWeight: 700,
+  bodyWeight: 500,
+};
+
 // ── Theme Registry ──────────────────────────────────────────────
 // Use this to look up themes by name string (useful for AgentCore integration)
 export const THEMES: Record<string, Theme> = {
@@ -521,6 +949,28 @@ export const THEMES: Record<string, Theme> = {
   vienna:     THEME_VIENNA,
   alpine:     THEME_ALPINE,
   finance:    THEME_FINANCE,
+  // 10 flat and material design themes - hard edges, no glow
+  materialBlue: THEME_MATERIAL_BLUE,
+  materialDark: THEME_MATERIAL_DARK,
+  flatRed:      THEME_FLAT_RED,
+  flatNavy:     THEME_FLAT_NAVY,
+  swiss:        THEME_SWISS,
+  bauhaus:      THEME_BAUHAUS,
+  mono:         THEME_MONO,
+  paper:        THEME_PAPER,
+  slate:        THEME_SLATE,
+  blueprint:    THEME_BLUEPRINT,
+  // 10 extended flat themes - Canva-style simple designs
+  candy:        THEME_CANDY,
+  mint:         THEME_MINT,
+  coral:        THEME_CORAL,
+  sky:          THEME_SKY,
+  grape:        THEME_GRAPE,
+  charcoal:     THEME_CHARCOAL,
+  peach:        THEME_PEACH,
+  oceanDark:    THEME_OCEAN_DARK,
+  cream:        THEME_CREAM,
+  electric:     THEME_ELECTRIC,
 };
 
 // ── Brand Kit ───────────────────────────────────────────────────

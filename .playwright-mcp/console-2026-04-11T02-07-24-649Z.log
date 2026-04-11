@@ -1,0 +1,13 @@
+[     347ms] [WARNING] <i data-lucide="hand-shake" style="color:#8b5cf6;"></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js:54
+[     348ms] [WARNING] <i data-lucide="audio-lines" style="color:#8b5cf6;"></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js:54
+[     354ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/ClientFeedback-BoldRating.png:0
+[     355ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/ContractSummary-BoldTerms.png:0
+[     355ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/EmailSignature-BoldClassic.png:0
+[     355ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/ExpenseReport-BoldSummary.png:0
+[     387ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/favicon.ico:0
+[   25676ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/LinkedinCarousel-BoldSlide.png:0
+[   25682ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/ProjectCloseout-BoldChecklist.png:0
+[   25690ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/TimeTracking-BoldWeekly.png:0
+[   25691ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/WeeklyUpdate-BoldStatus.png:0
+[   43315ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42

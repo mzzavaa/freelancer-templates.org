@@ -1,4 +1,4 @@
-.PHONY: player-install player-dev player-build hugo-dev dev thumbnails thumbnails-changed build
+.PHONY: player-install player-dev player-build hugo-dev dev thumbnails thumbnails-changed build render render-all render-missing render-video render-template check-compositions generate-variants
 
 ## Install player dependencies
 player-install:
@@ -25,3 +25,66 @@ hugo-dev:
 dev:
 	@echo "Starting Hugo + Remotion Player dev servers..."
 	@make player-dev & hugo server --disableFastRender
+
+# ══════════════════════════════════════════════════════════════════
+# RENDERING TARGETS
+# ══════════════════════════════════════════════════════════════════
+
+## Render missing still previews only (default)
+render:
+	./scripts/render-thumbnails.sh missing --still
+
+## Render ALL still previews (overwrites existing)
+render-all:
+	./scripts/render-thumbnails.sh all --still
+
+## Render missing still + video previews
+render-missing:
+	./scripts/render-thumbnails.sh missing --both
+
+## Render ALL video previews (hero animations)
+render-video:
+	./scripts/render-thumbnails.sh all --video
+
+## Render both stills and videos for ALL compositions
+render-both:
+	./scripts/render-thumbnails.sh all --both
+
+## Render specific template (e.g., make render-template T=Testimonial)
+render-template:
+	@if [ -z "$(T)" ]; then echo "Usage: make render-template T=TemplateName"; exit 1; fi
+	./scripts/render-thumbnails.sh $(T) --both
+
+## Render with parallel jobs (e.g., make render-parallel J=4)
+render-parallel:
+	./scripts/render-thumbnails.sh all --both --parallel $(or $(J),4)
+
+## Check all compositions compile without errors
+check-compositions:
+	cd player && npx remotion compositions src/remotion/index.ts --quiet
+
+# ══════════════════════════════════════════════════════════════════
+# TEMPLATE GENERATION TARGETS
+# ══════════════════════════════════════════════════════════════════
+
+## Generate variants for a specific template (e.g., make generate-variants T=listicle)
+generate-variants:
+	@if [ -z "$(T)" ]; then echo "Usage: make generate-variants T=template_name"; exit 1; fi
+	python3 scripts/generate-template-variants.py --template $(T)
+
+## Preview what would be generated (dry run)
+generate-variants-preview:
+	@if [ -z "$(T)" ]; then echo "Usage: make generate-variants-preview T=template_name"; exit 1; fi
+	python3 scripts/generate-template-variants.py --template $(T) --dry-run
+
+## Generate variants for ALL templates
+generate-all-variants:
+	python3 scripts/generate-template-variants.py --all
+
+## List available templates in config
+list-templates:
+	@python3 -c "import json; c=json.load(open('scripts/template-config.json')); print('Available templates:'); [print(f'  - {k}: {v[\"layouts\"]}') for k,v in c['templates'].items()]"
+
+## List all themes
+list-themes:
+	@python3 -c "import json; c=json.load(open('scripts/template-config.json')); [print(f'{g} ({len(t)}): {t}') for g,t in c['themes'].items()]"

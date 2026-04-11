@@ -62,8 +62,8 @@ import { BugTrackerSeverityMatrixDark, BugTrackerSeverityMatrixBold, BugTrackerT
 import { BugTriagePriorityColumnsDark, BugTriagePriorityColumnsBold, BugTriageTriageListDark, BugTriageTriageListBold, BugTriageSummaryDashboardDark, BugTriageSummaryDashboardBold, BugTriageOceanPriorityColumns, BugTriageSunsetPriorityColumns, BugTriageForestTriageList, BugTriageRoseTriageList, BugTriageGoldSummaryDashboard, BugTriageMidnightSummaryDashboard, BugTriageCrimsonPriorityColumns, BugTriageLavenderPriorityColumns, BugTriageArcticTriageList, BugTriageEspressoTriageList } from "./templates/bugtriage/BugTriageShowcase";
 import { CaseStudyDarkNarrative, CaseStudyCleanComparison, CaseStudyBoldSpotlight, CaseStudyWarmNarrative, CaseStudyMinimalComparison, CaseStudyNeonSpotlight, CaseStudyOceanNarrative, CaseStudySunsetSpotlight, CaseStudyForestNarrative, CaseStudyRoseSpotlight, CaseStudyGoldNarrative, CaseStudyMidnightNarrative, CaseStudyCrimsonSpotlight, CaseStudyLavenderComparison, CaseStudyArcticComparison, CaseStudyEspressoNarrative } from "./templates/casestudy/CaseStudyShowcase";
 import { ClientPipelineFunnelDark, ClientPipelineFunnelWarm, ClientPipelinePipelineBoardDark, ClientPipelinePipelineBoardWarm, ClientPipelineMetricsDark, ClientPipelineMetricsWarm, ClientPipelineOceanFunnel, ClientPipelineSunsetFunnel, ClientPipelineForestPipelineBoard, ClientPipelineRosePipelineBoard, ClientPipelineGoldMetrics, ClientPipelineMidnightMetrics, ClientPipelineCrimsonFunnel, ClientPipelineLavenderFunnel, ClientPipelineArcticPipelineBoard, ClientPipelineEspressoPipelineBoard } from "./templates/clientpipeline/ClientPipelineShowcase";
-import { ClientReportDarkDashboard, ClientReportBoldDashboard, ClientReportCleanDashboard, ClientReportWarmDashboard, ClientReportMinimalDashboard, ClientReportNeonDashboard, ClientReportOceanDashboard, ClientReportSunsetDashboard, ClientReportForestDashboard, ClientReportRoseDashboard, ClientReportGoldDashboard, ClientReportMidnightDashboard, ClientReportCrimsonDashboard, ClientReportLavenderDashboard, ClientReportArcticDashboard, ClientReportEspressoDashboard, ClientReportCorporateDashboard, ClientReportIndustrialDashboard, ClientReportViennaDashboard, ClientReportAlpineDashboard, ClientReportFinanceDashboard } from "./templates/clientreport/ClientReportShowcase";
-import { ClientWelcomeDarkDashboard, ClientWelcomeBoldDashboard, ClientWelcomeCleanDashboard, ClientWelcomeWarmDashboard, ClientWelcomeMinimalDashboard, ClientWelcomeNeonDashboard, ClientWelcomeOceanDashboard, ClientWelcomeSunsetDashboard, ClientWelcomeForestDashboard, ClientWelcomeRoseDashboard, ClientWelcomeGoldDashboard, ClientWelcomeMidnightDashboard, ClientWelcomeCrimsonDashboard, ClientWelcomeLavenderDashboard, ClientWelcomeArcticDashboard, ClientWelcomeEspressoDashboard } from "./templates/clientwelcome/ClientWelcomeShowcase";
+import { ClientReportDarkDashboard, ClientReportBoldDashboard, ClientReportCleanDashboard, ClientReportWarmDashboard, ClientReportMinimalDashboard, ClientReportNeonDashboard, ClientReportOceanDashboard, ClientReportSunsetDashboard, ClientReportForestDashboard, ClientReportRoseDashboard, ClientReportGoldDashboard, ClientReportMidnightDashboard, ClientReportCrimsonDashboard, ClientReportLavenderDashboard, ClientReportArcticDashboard, ClientReportEspressoDashboard, ClientReportCorporateDashboard, ClientReportIndustrialDashboard, ClientReportViennaDashboard, ClientReportAlpineDashboard, ClientReportFinanceDashboard, ClientReportMaterialBlueDashboard, ClientReportMaterialDarkDashboard, ClientReportFlatRedDashboard, ClientReportFlatNavyDashboard, ClientReportSwissDashboard, ClientReportBauhausDashboard, ClientReportMonoDashboard, ClientReportPaperDashboard, ClientReportSlateDashboard, ClientReportBlueprintDashboard } from "./templates/clientreport/ClientReportShowcase";
+import { ClientWelcomeDarkDashboard, ClientWelcomeBoldDashboard, ClientWelcomeCleanDashboard, ClientWelcomeWarmDashboard, ClientWelcomeMinimalDashboard, ClientWelcomeNeonDashboard, ClientWelcomeOceanDashboard, ClientWelcomeSunsetDashboard, ClientWelcomeForestDashboard, ClientWelcomeRoseDashboard, ClientWelcomeGoldDashboard, ClientWelcomeMidnightDashboard, ClientWelcomeCrimsonDashboard, ClientWelcomeLavenderDashboard, ClientWelcomeArcticDashboard, ClientWelcomeEspressoDashboard, ClientWelcomeCorporateDashboard, ClientWelcomeIndustrialDashboard, ClientWelcomeViennaDashboard, ClientWelcomeAlpineDashboard, ClientWelcomeFinanceDashboard } from "./templates/clientwelcome/ClientWelcomeShowcase";
 import { CollaborationDarkSplitScreen, CollaborationBoldSplitScreen, CollaborationDarkAnnouncement, CollaborationBoldAnnouncement, CollaborationDarkStatsMerge, CollaborationBoldStatsMerge, CollaborationOceanSplitScreen, CollaborationSunsetSplitScreen, CollaborationForestAnnouncement, CollaborationRoseAnnouncement, CollaborationGoldStatsMerge, CollaborationMidnightStatsMerge, CollaborationCrimsonSplitScreen, CollaborationLavenderSplitScreen, CollaborationArcticAnnouncement, CollaborationEspressoAnnouncement } from "./templates/collaboration/CollaborationShowcase";
 import { ComponentInventoryArchitectureGridDark, ComponentInventoryArchitectureGridClean, ComponentInventoryDependencyMapDark, ComponentInventoryDependencyMapClean, ComponentInventoryInventoryListDark, ComponentInventoryInventoryListClean, ComponentInventoryOceanArchitectureGrid, ComponentInventorySunsetArchitectureGrid, ComponentInventoryForestDependencyMap, ComponentInventoryRoseDependencyMap, ComponentInventoryGoldInventoryList, ComponentInventoryMidnightInventoryList, ComponentInventoryCrimsonArchitectureGrid, ComponentInventoryLavenderArchitectureGrid, ComponentInventoryArcticDependencyMap, ComponentInventoryEspressoDependencyMap } from "./templates/componentinventory/ComponentInventoryShowcase";
 import { ConceptPitchArcDark, ConceptPitchArcBold, ConceptPitchBoardDark, ConceptPitchBoardBold, ConceptPitchBriefDark, ConceptPitchBriefBold, ConceptPitchOceanArc, ConceptPitchSunsetBoard, ConceptPitchForestBrief, ConceptPitchRoseArc, ConceptPitchGoldBoard, ConceptPitchMidnightBrief, ConceptPitchCrimsonArc, ConceptPitchLavenderBoard, ConceptPitchArcticBrief, ConceptPitchEspressoArc } from "./templates/conceptpitch/ConceptPitchShowcase";
@@ -95,19 +95,67 @@ import { PortfolioDarkGallery, PortfolioCleanCaseStudy, PortfolioBoldReel, Portf
 import { PricingDarkTiers, PricingCleanComparison, PricingBoldSpotlight, PricingWarmTiers, PricingMinimalComparison, PricingNeonSpotlight, PricingOceanTiers, PricingSunsetComparison, PricingForestTiers, PricingRoseComparison, PricingGoldTiers, PricingMidnightComparison, PricingCrimsonTiers, PricingLavenderComparison, PricingArcticTiers, PricingEspressoComparison } from "./templates/pricing/PricingShowcase";
 import { ProductLaunchDarkHeroReveal, ProductLaunchBoldHeroReveal, ProductLaunchDarkFeatureGrid, ProductLaunchBoldFeatureGrid, ProductLaunchDarkCountdown, ProductLaunchBoldCountdown, ProductLaunchOceanHeroReveal, ProductLaunchSunsetHeroReveal, ProductLaunchForestFeatureGrid, ProductLaunchRoseFeatureGrid, ProductLaunchGoldCountdown, ProductLaunchMidnightCountdown, ProductLaunchCrimsonHeroReveal, ProductLaunchLavenderHeroReveal, ProductLaunchArcticFeatureGrid, ProductLaunchEspressoFeatureGrid } from "./templates/productlaunch/ProductLaunchShowcase";
 import { ProjectHealthHealthScorecardDark, ProjectHealthHealthScorecardWarm, ProjectHealthWorkstreamViewDark, ProjectHealthWorkstreamViewWarm, ProjectHealthExecutiveSummaryDark, ProjectHealthExecutiveSummaryWarm, ProjectHealthOceanHealthScorecard, ProjectHealthSunsetHealthScorecard, ProjectHealthForestWorkstreamView, ProjectHealthRoseWorkstreamView, ProjectHealthGoldExecutiveSummary, ProjectHealthMidnightExecutiveSummary, ProjectHealthCrimsonHealthScorecard, ProjectHealthLavenderHealthScorecard, ProjectHealthArcticWorkstreamView, ProjectHealthEspressoWorkstreamView } from "./templates/projecthealth/ProjectHealthShowcase";
-import { ProjectTimelineDarkDashboard, ProjectTimelineBoldDashboard, ProjectTimelineCleanDashboard, ProjectTimelineWarmDashboard, ProjectTimelineMinimalDashboard, ProjectTimelineNeonDashboard, ProjectTimelineOceanDashboard, ProjectTimelineSunsetDashboard, ProjectTimelineForestDashboard, ProjectTimelineRoseDashboard, ProjectTimelineGoldDashboard, ProjectTimelineMidnightDashboard, ProjectTimelineCrimsonDashboard, ProjectTimelineLavenderDashboard, ProjectTimelineArcticDashboard, ProjectTimelineEspressoDashboard, ProjectTimelineCorporateDashboard, ProjectTimelineIndustrialDashboard, ProjectTimelineViennaDashboard, ProjectTimelineAlpineDashboard, ProjectTimelineFinanceDashboard } from "./templates/projecttimeline/ProjectTimelineShowcase";
-import { RateCardDarkDashboard, RateCardBoldDashboard, RateCardCleanDashboard, RateCardWarmDashboard, RateCardMinimalDashboard, RateCardNeonDashboard, RateCardOceanDashboard, RateCardSunsetDashboard, RateCardForestDashboard, RateCardRoseDashboard, RateCardGoldDashboard, RateCardMidnightDashboard, RateCardCrimsonDashboard, RateCardLavenderDashboard, RateCardArcticDashboard, RateCardEspressoDashboard } from "./templates/ratecard/RateCardShowcase";
+import { ProjectTimelineDarkDashboard, ProjectTimelineBoldDashboard, ProjectTimelineCleanDashboard, ProjectTimelineWarmDashboard, ProjectTimelineMinimalDashboard, ProjectTimelineNeonDashboard, ProjectTimelineOceanDashboard, ProjectTimelineSunsetDashboard, ProjectTimelineForestDashboard, ProjectTimelineRoseDashboard, ProjectTimelineGoldDashboard, ProjectTimelineMidnightDashboard, ProjectTimelineCrimsonDashboard, ProjectTimelineLavenderDashboard, ProjectTimelineArcticDashboard, ProjectTimelineEspressoDashboard, ProjectTimelineCorporateDashboard, ProjectTimelineIndustrialDashboard, ProjectTimelineViennaDashboard, ProjectTimelineAlpineDashboard, ProjectTimelineFinanceDashboard, ProjectTimelineMaterialBlueDashboard, ProjectTimelineMaterialDarkDashboard, ProjectTimelineFlatRedDashboard, ProjectTimelineFlatNavyDashboard, ProjectTimelineSwissDashboard, ProjectTimelineBauhausDashboard, ProjectTimelineMonoDashboard, ProjectTimelinePaperDashboard, ProjectTimelineSlateDashboard, ProjectTimelineBlueprintDashboard } from "./templates/projecttimeline/ProjectTimelineShowcase";
+import { RateCardDarkDashboard, RateCardBoldDashboard, RateCardCleanDashboard, RateCardWarmDashboard, RateCardMinimalDashboard, RateCardNeonDashboard, RateCardOceanDashboard, RateCardSunsetDashboard, RateCardForestDashboard, RateCardRoseDashboard, RateCardGoldDashboard, RateCardMidnightDashboard, RateCardCrimsonDashboard, RateCardLavenderDashboard, RateCardArcticDashboard, RateCardEspressoDashboard, RateCardCorporateDashboard, RateCardIndustrialDashboard, RateCardViennaDashboard, RateCardAlpineDashboard, RateCardFinanceDashboard, RateCardMaterialBlueDashboard, RateCardMaterialDarkDashboard, RateCardFlatRedDashboard, RateCardFlatNavyDashboard, RateCardSwissDashboard, RateCardBauhausDashboard, RateCardMonoDashboard, RateCardPaperDashboard, RateCardSlateDashboard, RateCardBlueprintDashboard } from "./templates/ratecard/RateCardShowcase";
 import { ProposalDarkExecutive, ProposalCleanCreative, ProposalBoldPitch, ProposalWarmExecutive, ProposalMinimalCreative, ProposalNeonPitch, ProposalOceanExecutive, ProposalSunsetCreative, ProposalForestExecutive, ProposalRoseCreative, ProposalGoldExecutive, ProposalMidnightExecutive, ProposalCrimsonPitch, ProposalLavenderCreative, ProposalArcticCreative, ProposalEspressoExecutive } from "./templates/proposal/ProposalShowcase";
 import { QBRDashboardExecutiveDark, QBRDashboardExecutiveClean, QBRDashboardDetailedDark, QBRDashboardDetailedClean, QBRDashboardComparisonDark, QBRDashboardComparisonClean, QBRDashboardOceanExecutive, QBRDashboardSunsetExecutive, QBRDashboardForestDetailed, QBRDashboardRoseDetailed, QBRDashboardGoldComparison, QBRDashboardMidnightComparison, QBRDashboardCrimsonExecutive, QBRDashboardLavenderExecutive, QBRDashboardArcticDetailed, QBRDashboardEspressoDetailed } from "./templates/qbrdashboard/QBRDashboardShowcase";
 import { RecapDarkDashboard, RecapCleanTimeline, RecapBoldCards, RecapWarmDashboard, RecapMinimalCards, RecapNeonTimeline, RecapOceanDashboard, RecapSunsetCards, RecapForestTimeline, RecapRoseCards, RecapGoldDashboard, RecapMidnightDashboard, RecapCrimsonCards, RecapLavenderTimeline, RecapArcticTimeline, RecapEspressoDashboard } from "./templates/recap/RecapShowcase";
 import { RecipeStepWarmIngredientList, RecipeStepCleanIngredientList, RecipeStepWarmStepSequence, RecipeStepCleanStepSequence, RecipeStepWarmSummaryCard, RecipeStepCleanSummaryCard, RecipeStepOceanIngredientList, RecipeStepSunsetIngredientList, RecipeStepForestStepSequence, RecipeStepRoseStepSequence, RecipeStepGoldSummaryCard, RecipeStepMidnightSummaryCard, RecipeStepCrimsonIngredientList, RecipeStepLavenderIngredientList, RecipeStepArcticStepSequence, RecipeStepEspressoStepSequence } from "./templates/recipestep/RecipeStepShowcase";
 import { ReleaseNotesChangelogDark, ReleaseNotesChangelogClean, ReleaseNotesHighlightsDark, ReleaseNotesHighlightsClean, ReleaseNotesVersionCompareDark, ReleaseNotesVersionCompareClean, ReleaseNotesOceanChangelog, ReleaseNotesSunsetChangelog, ReleaseNotesForestHighlights, ReleaseNotesRoseHighlights, ReleaseNotesGoldVersionCompare, ReleaseNotesMidnightVersionCompare, ReleaseNotesCrimsonChangelog, ReleaseNotesLavenderChangelog, ReleaseNotesArcticHighlights, ReleaseNotesEspressoHighlights } from "./templates/releasenotes/ReleaseNotesShowcase";
-import { ScopeChangeDarkDashboard, ScopeChangeBoldDashboard, ScopeChangeCleanDashboard, ScopeChangeWarmDashboard, ScopeChangeMinimalDashboard, ScopeChangeNeonDashboard, ScopeChangeOceanDashboard, ScopeChangeSunsetDashboard, ScopeChangeForestDashboard, ScopeChangeRoseDashboard, ScopeChangeGoldDashboard, ScopeChangeMidnightDashboard, ScopeChangeCrimsonDashboard, ScopeChangeLavenderDashboard, ScopeChangeArcticDashboard, ScopeChangeEspressoDashboard } from "./templates/scopechange/ScopeChangeShowcase";
+import { ScopeChangeDarkDashboard, ScopeChangeBoldDashboard, ScopeChangeCleanDashboard, ScopeChangeWarmDashboard, ScopeChangeMinimalDashboard, ScopeChangeNeonDashboard, ScopeChangeOceanDashboard, ScopeChangeSunsetDashboard, ScopeChangeForestDashboard, ScopeChangeRoseDashboard, ScopeChangeGoldDashboard, ScopeChangeMidnightDashboard, ScopeChangeCrimsonDashboard, ScopeChangeLavenderDashboard, ScopeChangeArcticDashboard, ScopeChangeEspressoDashboard, ScopeChangeCorporateDashboard, ScopeChangeIndustrialDashboard, ScopeChangeViennaDashboard, ScopeChangeAlpineDashboard, ScopeChangeFinanceDashboard } from "./templates/scopechange/ScopeChangeShowcase";
 import { SocialProofDarkMilestone, SocialProofCleanAchievement, SocialProofBoldAnnouncement, SocialProofWarmMilestone, SocialProofMinimalAchievement, SocialProofNeonAnnouncement, SocialProofOceanAchievement, SocialProofSunsetAnnouncement, SocialProofForestMilestone, SocialProofRoseAnnouncement, SocialProofGoldAchievement, SocialProofMidnightAchievement, SocialProofCrimsonAnnouncement, SocialProofLavenderMilestone, SocialProofArcticAchievement, SocialProofEspressoMilestone } from "./templates/socialproof/SocialProofShowcase";
 import { SprintDashboardKanbanDark, SprintDashboardKanbanBold, SprintDashboardVelocityDark, SprintDashboardVelocityBold, SprintDashboardBurndownDark, SprintDashboardBurndownBold, SprintDashboardOceanKanban, SprintDashboardSunsetKanban, SprintDashboardForestVelocity, SprintDashboardRoseVelocity, SprintDashboardGoldBurndown, SprintDashboardMidnightBurndown, SprintDashboardCrimsonKanban, SprintDashboardLavenderKanban, SprintDashboardArcticVelocity, SprintDashboardEspressoVelocity } from "./templates/sprintdashboard/SprintDashboardShowcase";
 import { SprintRecapShippedListDark, SprintRecapShippedListBold, SprintRecapHighlightCardsDark, SprintRecapHighlightCardsBold, SprintRecapTeamContributionsDark, SprintRecapTeamContributionsBold, SprintRecapOceanShippedList, SprintRecapSunsetShippedList, SprintRecapForestHighlightCards, SprintRecapRoseHighlightCards, SprintRecapGoldTeamContributions, SprintRecapMidnightTeamContributions, SprintRecapCrimsonShippedList, SprintRecapLavenderShippedList, SprintRecapArcticHighlightCards, SprintRecapEspressoHighlightCards } from "./templates/sprintrecap/SprintRecapShowcase";
 import { StoreLocatorFinderClean, StoreLocatorFinderMinimal, StoreLocatorMapPinsClean, StoreLocatorMapPinsMinimal, StoreLocatorDirectoryClean, StoreLocatorDirectoryMinimal, StoreLocatorOceanFinder, StoreLocatorSunsetMapPins, StoreLocatorForestDirectory, StoreLocatorRoseFinder, StoreLocatorGoldMapPins, StoreLocatorMidnightDirectory, StoreLocatorCrimsonFinder, StoreLocatorLavenderMapPins, StoreLocatorArcticDirectory, StoreLocatorEspressoFinder } from "./templates/storelocator/StoreLocatorShowcase";
-import { TestimonialDarkCentered, TestimonialCleanSplit, TestimonialBoldEditorial, TestimonialWarmCentered, TestimonialMinimalEditorial, TestimonialNeonSplit, TestimonialOceanCentered, TestimonialSunsetSplit, TestimonialForestCentered, TestimonialRoseEditorial, TestimonialGoldCentered, TestimonialMidnightCentered, TestimonialCrimsonEditorial, TestimonialLavenderSplit, TestimonialArcticSplit, TestimonialEspressoCentered } from "./templates/testimonial/TestimonialShowcase";
+import {
+  // Original themes (7 x 3 = 21)
+  TestimonialDarkCentered, TestimonialDarkSplit, TestimonialDarkEditorial,
+  TestimonialCleanCentered, TestimonialCleanSplit, TestimonialCleanEditorial,
+  TestimonialBoldCentered, TestimonialBoldSplit, TestimonialBoldEditorial,
+  TestimonialWarmCentered, TestimonialWarmSplit, TestimonialWarmEditorial,
+  TestimonialMinimalCentered, TestimonialMinimalSplit, TestimonialMinimalEditorial,
+  TestimonialNeonCentered, TestimonialNeonSplit, TestimonialNeonEditorial,
+  TestimonialLindamohamedCentered, TestimonialLindamohamedSplit, TestimonialLindamohamedEditorial,
+  // Extended themes (10 x 3 = 30)
+  TestimonialOceanCentered, TestimonialOceanSplit, TestimonialOceanEditorial,
+  TestimonialSunsetCentered, TestimonialSunsetSplit, TestimonialSunsetEditorial,
+  TestimonialForestCentered, TestimonialForestSplit, TestimonialForestEditorial,
+  TestimonialRoseCentered, TestimonialRoseSplit, TestimonialRoseEditorial,
+  TestimonialGoldCentered, TestimonialGoldSplit, TestimonialGoldEditorial,
+  TestimonialMidnightCentered, TestimonialMidnightSplit, TestimonialMidnightEditorial,
+  TestimonialCrimsonCentered, TestimonialCrimsonSplit, TestimonialCrimsonEditorial,
+  TestimonialLavenderCentered, TestimonialLavenderSplit, TestimonialLavenderEditorial,
+  TestimonialArcticCentered, TestimonialArcticSplit, TestimonialArcticEditorial,
+  TestimonialEspressoCentered, TestimonialEspressoSplit, TestimonialEspressoEditorial,
+  // European themes (5 x 3 = 15)
+  TestimonialCorporateCentered, TestimonialCorporateSplit, TestimonialCorporateEditorial,
+  TestimonialIndustrialCentered, TestimonialIndustrialSplit, TestimonialIndustrialEditorial,
+  TestimonialViennaCentered, TestimonialViennaSplit, TestimonialViennaEditorial,
+  TestimonialAlpineCentered, TestimonialAlpineSplit, TestimonialAlpineEditorial,
+  TestimonialFinanceCentered, TestimonialFinanceSplit, TestimonialFinanceEditorial,
+  // Flat themes (10 x 3 = 30)
+  TestimonialMaterialBlueCentered, TestimonialMaterialBlueSplit, TestimonialMaterialBlueEditorial,
+  TestimonialMaterialDarkCentered, TestimonialMaterialDarkSplit, TestimonialMaterialDarkEditorial,
+  TestimonialFlatRedCentered, TestimonialFlatRedSplit, TestimonialFlatRedEditorial,
+  TestimonialFlatNavyCentered, TestimonialFlatNavySplit, TestimonialFlatNavyEditorial,
+  TestimonialSwissCentered, TestimonialSwissSplit, TestimonialSwissEditorial,
+  TestimonialBauhausCentered, TestimonialBauhausSplit, TestimonialBauhausEditorial,
+  TestimonialMonoCentered, TestimonialMonoSplit, TestimonialMonoEditorial,
+  TestimonialPaperCentered, TestimonialPaperSplit, TestimonialPaperEditorial,
+  TestimonialSlateCentered, TestimonialSlateSplit, TestimonialSlateEditorial,
+  TestimonialBlueprintCentered, TestimonialBlueprintSplit, TestimonialBlueprintEditorial,
+  // Canva themes (10 x 3 = 30)
+  TestimonialCandyCentered, TestimonialCandySplit, TestimonialCandyEditorial,
+  TestimonialMintCentered, TestimonialMintSplit, TestimonialMintEditorial,
+  TestimonialCoralCentered, TestimonialCoralSplit, TestimonialCoralEditorial,
+  TestimonialSkyCentered, TestimonialSkySplit, TestimonialSkyEditorial,
+  TestimonialGrapeCentered, TestimonialGrapeSplit, TestimonialGrapeEditorial,
+  TestimonialCharcoalCentered, TestimonialCharcoalSplit, TestimonialCharcoalEditorial,
+  TestimonialPeachCentered, TestimonialPeachSplit, TestimonialPeachEditorial,
+  TestimonialOceanDarkCentered, TestimonialOceanDarkSplit, TestimonialOceanDarkEditorial,
+  TestimonialCreamCentered, TestimonialCreamSplit, TestimonialCreamEditorial,
+  TestimonialElectricCentered, TestimonialElectricSplit, TestimonialElectricEditorial,
+} from "./templates/testimonial/TestimonialShowcase";
 import { ThoughtLeadershipEditorialDark, ThoughtLeadershipEditorialClean, ThoughtLeadershipNarrativeDark, ThoughtLeadershipNarrativeClean, ThoughtLeadershipKeynoteDark, ThoughtLeadershipKeynoteClean, ThoughtLeadershipOceanEditorial, ThoughtLeadershipSunsetNarrative, ThoughtLeadershipForestKeynote, ThoughtLeadershipRoseEditorial, ThoughtLeadershipGoldNarrative, ThoughtLeadershipMidnightKeynote, ThoughtLeadershipCrimsonEditorial, ThoughtLeadershipLavenderNarrative, ThoughtLeadershipArcticKeynote, ThoughtLeadershipEspressoEditorial } from "./templates/thoughtleadership/ThoughtLeadershipShowcase";
 import { TravelItineraryDayByDayWarm, TravelItineraryDayByDayBold, TravelItineraryRouteOverviewWarm, TravelItineraryRouteOverviewBold, TravelItineraryHighlightsWarm, TravelItineraryHighlightsBold, TravelItineraryOceanDayByDay, TravelItinerarySunsetDayByDay, TravelItineraryForestRouteOverview, TravelItineraryRoseRouteOverview, TravelItineraryGoldHighlights, TravelItineraryMidnightHighlights, TravelItineraryCrimsonDayByDay, TravelItineraryLavenderDayByDay, TravelItineraryArcticRouteOverview, TravelItineraryEspressoRouteOverview } from "./templates/travelitinerary/TravelItineraryShowcase";
 import { TutorialDarkNumberedSteps, TutorialCleanNumberedSteps, TutorialDarkCardSequence, TutorialCleanCardSequence, TutorialDarkSplitDemo, TutorialCleanSplitDemo, TutorialOceanNumberedSteps, TutorialSunsetNumberedSteps, TutorialForestCardSequence, TutorialRoseCardSequence, TutorialGoldSplitDemo, TutorialMidnightSplitDemo, TutorialCrimsonNumberedSteps, TutorialLavenderNumberedSteps, TutorialArcticCardSequence, TutorialEspressoCardSequence } from "./templates/tutorial/TutorialShowcase";
@@ -129,9 +177,66 @@ import { PulsingTextDark, PulsingTextClean, PulsingTextBold, PulsingTextWarm, Pu
 import { SlideTextDark, SlideTextClean, SlideTextBold, SlideTextWarm, SlideTextMinimal, SlideTextNeon, SlideTextOcean, SlideTextSunset, SlideTextForest, SlideTextRose, SlideTextGold, SlideTextMidnight, SlideTextCrimson, SlideTextLavender, SlideTextArctic, SlideTextEspresso } from "./templates/slidetext/SlideTextShowcase";
 import { SoundWaveDark, SoundWaveClean, SoundWaveBold, SoundWaveWarm, SoundWaveMinimal, SoundWaveNeon, SoundWaveOcean, SoundWaveSunset, SoundWaveForest, SoundWaveRose, SoundWaveGold, SoundWaveMidnight, SoundWaveCrimson, SoundWaveLavender, SoundWaveArctic, SoundWaveEspresso } from "./templates/soundwave/SoundWaveShowcase";
 import { TypewriterSubtitleDark, TypewriterSubtitleClean, TypewriterSubtitleBold, TypewriterSubtitleWarm, TypewriterSubtitleMinimal, TypewriterSubtitleNeon, TypewriterSubtitleOcean, TypewriterSubtitleSunset, TypewriterSubtitleForest, TypewriterSubtitleRose, TypewriterSubtitleGold, TypewriterSubtitleMidnight, TypewriterSubtitleCrimson, TypewriterSubtitleLavender, TypewriterSubtitleArctic, TypewriterSubtitleEspresso } from "./templates/typewritersubtitle/TypewriterSubtitleShowcase";
-import { MeetingRecapDarkDashboard, MeetingRecapBoldDashboard, MeetingRecapCleanDashboard, MeetingRecapWarmDashboard, MeetingRecapMinimalDashboard, MeetingRecapNeonDashboard, MeetingRecapOceanDashboard, MeetingRecapSunsetDashboard, MeetingRecapForestDashboard, MeetingRecapRoseDashboard, MeetingRecapGoldDashboard, MeetingRecapMidnightDashboard, MeetingRecapCrimsonDashboard, MeetingRecapLavenderDashboard, MeetingRecapArcticDashboard, MeetingRecapEspressoDashboard } from "./templates/meetingrecap/MeetingRecapShowcase";
-import { ResultsShowcaseDarkDashboard, ResultsShowcaseBoldDashboard, ResultsShowcaseCleanDashboard, ResultsShowcaseWarmDashboard, ResultsShowcaseMinimalDashboard, ResultsShowcaseNeonDashboard, ResultsShowcaseOceanDashboard, ResultsShowcaseSunsetDashboard, ResultsShowcaseForestDashboard, ResultsShowcaseRoseDashboard, ResultsShowcaseGoldDashboard, ResultsShowcaseMidnightDashboard, ResultsShowcaseCrimsonDashboard, ResultsShowcaseLavenderDashboard, ResultsShowcaseArcticDashboard, ResultsShowcaseEspressoDashboard } from "./templates/resultsshowcase/ResultsShowcaseShowcase";
-import { ServiceOverviewDarkDashboard, ServiceOverviewBoldDashboard, ServiceOverviewCleanDashboard, ServiceOverviewWarmDashboard, ServiceOverviewMinimalDashboard, ServiceOverviewNeonDashboard, ServiceOverviewOceanDashboard, ServiceOverviewSunsetDashboard, ServiceOverviewForestDashboard, ServiceOverviewRoseDashboard, ServiceOverviewGoldDashboard, ServiceOverviewMidnightDashboard, ServiceOverviewCrimsonDashboard, ServiceOverviewLavenderDashboard, ServiceOverviewArcticDashboard, ServiceOverviewEspressoDashboard } from "./templates/serviceoverview/ServiceOverviewShowcase";
+import { MeetingRecapDarkDashboard, MeetingRecapBoldDashboard, MeetingRecapCleanDashboard, MeetingRecapWarmDashboard, MeetingRecapMinimalDashboard, MeetingRecapNeonDashboard, MeetingRecapOceanDashboard, MeetingRecapSunsetDashboard, MeetingRecapForestDashboard, MeetingRecapRoseDashboard, MeetingRecapGoldDashboard, MeetingRecapMidnightDashboard, MeetingRecapCrimsonDashboard, MeetingRecapLavenderDashboard, MeetingRecapArcticDashboard, MeetingRecapEspressoDashboard, MeetingRecapCorporateDashboard, MeetingRecapIndustrialDashboard, MeetingRecapViennaDashboard, MeetingRecapAlpineDashboard, MeetingRecapFinanceDashboard } from "./templates/meetingrecap/MeetingRecapShowcase";
+import { ResultsShowcaseDarkDashboard, ResultsShowcaseBoldDashboard, ResultsShowcaseCleanDashboard, ResultsShowcaseWarmDashboard, ResultsShowcaseMinimalDashboard, ResultsShowcaseNeonDashboard, ResultsShowcaseOceanDashboard, ResultsShowcaseSunsetDashboard, ResultsShowcaseForestDashboard, ResultsShowcaseRoseDashboard, ResultsShowcaseGoldDashboard, ResultsShowcaseMidnightDashboard, ResultsShowcaseCrimsonDashboard, ResultsShowcaseLavenderDashboard, ResultsShowcaseArcticDashboard, ResultsShowcaseEspressoDashboard, ResultsShowcaseCorporateDashboard, ResultsShowcaseIndustrialDashboard, ResultsShowcaseViennaDashboard, ResultsShowcaseAlpineDashboard, ResultsShowcaseFinanceDashboard } from "./templates/resultsshowcase/ResultsShowcaseShowcase";
+import { ServiceOverviewDarkDashboard, ServiceOverviewBoldDashboard, ServiceOverviewCleanDashboard, ServiceOverviewWarmDashboard, ServiceOverviewMinimalDashboard, ServiceOverviewNeonDashboard, ServiceOverviewOceanDashboard, ServiceOverviewSunsetDashboard, ServiceOverviewForestDashboard, ServiceOverviewRoseDashboard, ServiceOverviewGoldDashboard, ServiceOverviewMidnightDashboard, ServiceOverviewCrimsonDashboard, ServiceOverviewLavenderDashboard, ServiceOverviewArcticDashboard, ServiceOverviewEspressoDashboard, ServiceOverviewCorporateDashboard, ServiceOverviewIndustrialDashboard, ServiceOverviewViennaDashboard, ServiceOverviewAlpineDashboard, ServiceOverviewFinanceDashboard } from "./templates/serviceoverview/ServiceOverviewShowcase";
+
+// ── Content Creator Templates (vertical/square formats) ──────────
+// Listicle - All 42 themes x 3 layouts = 126 compositions
+import {
+  // Original themes (7 x 3 = 21)
+  ListicleDarkStack, ListicleDarkCards, ListicleDarkReveal,
+  ListicleCleanStack, ListicleCleanCards, ListicleCleanReveal,
+  ListicleBoldStack, ListicleBoldCards, ListicleBoldReveal,
+  ListicleWarmStack, ListicleWarmCards, ListicleWarmReveal,
+  ListicleMinimalStack, ListicleMinimalCards, ListicleMinimalReveal,
+  ListicleNeonStack, ListicleNeonCards, ListicleNeonReveal,
+  ListicleLindamohamedStack, ListicleLindamohamedCards, ListicleLindamohamedReveal,
+  // Extended themes (10 x 3 = 30)
+  ListicleOceanStack, ListicleOceanCards, ListicleOceanReveal,
+  ListicleSunsetStack, ListicleSunsetCards, ListicleSunsetReveal,
+  ListicleForestStack, ListicleForestCards, ListicleForestReveal,
+  ListicleRoseStack, ListicleRoseCards, ListicleRoseReveal,
+  ListicleGoldStack, ListicleGoldCards, ListicleGoldReveal,
+  ListicleMidnightStack, ListicleMidnightCards, ListicleMidnightReveal,
+  ListicleCrimsonStack, ListicleCrimsonCards, ListicleCrimsonReveal,
+  ListicleLavenderStack, ListicleLavenderCards, ListicleLavenderReveal,
+  ListicleArcticStack, ListicleArcticCards, ListicleArcticReveal,
+  ListicleEspressoStack, ListicleEspressoCards, ListicleEspressoReveal,
+  // European themes (5 x 3 = 15)
+  ListicleCorporateStack, ListicleCorporateCards, ListicleCorporateReveal,
+  ListicleIndustrialStack, ListicleIndustrialCards, ListicleIndustrialReveal,
+  ListicleViennaStack, ListicleViennaCards, ListicleViennaReveal,
+  ListicleAlpineStack, ListicleAlpineCards, ListicleAlpineReveal,
+  ListicleFinanceStack, ListicleFinanceCards, ListicleFinanceReveal,
+  // Flat themes (10 x 3 = 30)
+  ListicleMaterialBlueStack, ListicleMaterialBlueCards, ListicleMaterialBlueReveal,
+  ListicleMaterialDarkStack, ListicleMaterialDarkCards, ListicleMaterialDarkReveal,
+  ListicleFlatRedStack, ListicleFlatRedCards, ListicleFlatRedReveal,
+  ListicleFlatNavyStack, ListicleFlatNavyCards, ListicleFlatNavyReveal,
+  ListicleSwissStack, ListicleSwissCards, ListicleSwissReveal,
+  ListicleBauhausStack, ListicleBauhausCards, ListicleBauhausReveal,
+  ListicleMonoStack, ListicleMonoCards, ListicleMonoReveal,
+  ListiclePaperStack, ListiclePaperCards, ListiclePaperReveal,
+  ListicleSlateStack, ListicleSlateCards, ListicleSlateReveal,
+  ListicleBlueprintStack, ListicleBlueprintCards, ListicleBlueprintReveal,
+  // Canva themes (10 x 3 = 30)
+  ListicleCandyStack, ListicleCandyCards, ListicleCandyReveal,
+  ListicleMintStack, ListicleMintCards, ListicleMintReveal,
+  ListicleCoralStack, ListicleCoralCards, ListicleCoralReveal,
+  ListicleSkyStack, ListicleSkyCards, ListicleSkyReveal,
+  ListicleGrapeStack, ListicleGrapeCards, ListicleGrapeReveal,
+  ListicleCharcoalStack, ListicleCharcoalCards, ListicleCharcoalReveal,
+  ListiclePeachStack, ListiclePeachCards, ListiclePeachReveal,
+  ListicleOceanDarkStack, ListicleOceanDarkCards, ListicleOceanDarkReveal,
+  ListicleCreamStack, ListicleCreamCards, ListicleCreamReveal,
+  ListicleElectricStack, ListicleElectricCards, ListicleElectricReveal,
+} from "./templates/listicle/ListicleShowcase";
+import { QuoteCardDarkCentered, QuoteCardMinimalMinimal, QuoteCardCandyBold, QuoteCardMintCentered, QuoteCardGrapeBold, QuoteCardCharcoalMinimal, QuoteCardPeachCentered, QuoteCardCreamMinimal, QuoteCardPaperMinimal, QuoteCardSwissCentered, QuoteCardDarkCenteredVertical, QuoteCardCandyBoldVertical, QuoteCardGrapeBoldVertical, QuoteCardCharcoalMinimalVertical } from "./templates/quotecard/QuoteCardShowcase";
+import { TipOfTheDayDarkCard, TipOfTheDayNeonFullscreen, TipOfTheDayCandyCard, TipOfTheDayMintMinimal, TipOfTheDayCoralCard, TipOfTheDaySkyFullscreen, TipOfTheDayGrapeCard, TipOfTheDayCharcoalMinimal, TipOfTheDayCreamCard, TipOfTheDayOceanDarkFullscreen, TipOfTheDayDarkCardVertical, TipOfTheDayNeonFullscreenVertical, TipOfTheDayCandyCardVertical, TipOfTheDayPeachMinimalVertical, TipOfTheDayElectricFullscreenVertical } from "./templates/tipoftheday/TipOfTheDayShowcase";
+import { AnnouncementDarkBanner, AnnouncementNeonCard, AnnouncementCandyBanner, AnnouncementMintCard, AnnouncementCoralMinimal, AnnouncementSkyBanner, AnnouncementGrapeCard, AnnouncementCharcoalMinimal, AnnouncementCreamCard, AnnouncementOceanDarkBanner, AnnouncementDarkBannerVertical, AnnouncementNeonCardVertical, AnnouncementCandyBannerVertical, AnnouncementPeachMinimalVertical, AnnouncementElectricBannerVertical } from "./templates/announcement/AnnouncementShowcase";
+import { StatCounterDarkSingle, StatCounterNeonGrid, StatCounterCandySingle, StatCounterMintProgress, StatCounterCoralGrid, StatCounterSkyProgress, StatCounterGrapeSingle, StatCounterCharcoalGrid, StatCounterCreamProgress, StatCounterOceanDarkSingle, StatCounterDarkSingleVertical, StatCounterNeonGridVertical, StatCounterCandyProgressVertical, StatCounterPeachSingleVertical, StatCounterElectricGridVertical } from "./templates/statcounter/StatCounterShowcase";
+import { CallToActionDarkCentered, CallToActionNeonSplit, CallToActionCandyCentered, CallToActionMintMinimal, CallToActionCoralSplit, CallToActionSkyCentered, CallToActionGrapeMinimal, CallToActionCharcoalCentered, CallToActionCreamSplit, CallToActionOceanDarkMinimal, CallToActionDarkCenteredVertical, CallToActionNeonSplitVertical, CallToActionCandyMinimalVertical, CallToActionPeachCenteredVertical, CallToActionElectricSplitVertical } from "./templates/calltoaction/CallToActionShowcase";
 
 // Standard composition defaults: 1280x720, 30fps, 10s
 const W = 1280, H = 720, FPS = 30, DUR = 300;
@@ -312,6 +417,16 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="ClientReport-ViennaDashboard"     component={ClientReportViennaDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ClientReport-AlpineDashboard"     component={ClientReportAlpineDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ClientReport-FinanceDashboard"    component={ClientReportFinanceDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-MaterialBlueDashboard" component={ClientReportMaterialBlueDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-MaterialDarkDashboard" component={ClientReportMaterialDarkDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-FlatRedDashboard"    component={ClientReportFlatRedDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-FlatNavyDashboard"   component={ClientReportFlatNavyDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-SwissDashboard"      component={ClientReportSwissDashboard}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-BauhausDashboard"    component={ClientReportBauhausDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-MonoDashboard"       component={ClientReportMonoDashboard}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-PaperDashboard"      component={ClientReportPaperDashboard}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-SlateDashboard"      component={ClientReportSlateDashboard}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientReport-BlueprintDashboard"  component={ClientReportBlueprintDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Client-Welcome">
@@ -331,6 +446,11 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="ClientWelcome-LavenderDashboard" component={ClientWelcomeLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ClientWelcome-ArcticDashboard"   component={ClientWelcomeArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ClientWelcome-EspressoDashboard" component={ClientWelcomeEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientWelcome-CorporateDashboard"  component={ClientWelcomeCorporateDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientWelcome-IndustrialDashboard" component={ClientWelcomeIndustrialDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientWelcome-ViennaDashboard"     component={ClientWelcomeViennaDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientWelcome-AlpineDashboard"     component={ClientWelcomeAlpineDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ClientWelcome-FinanceDashboard"    component={ClientWelcomeFinanceDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Collaboration">
@@ -901,6 +1021,21 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="RateCard-LavenderDashboard" component={RateCardLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="RateCard-ArcticDashboard"   component={RateCardArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="RateCard-EspressoDashboard" component={RateCardEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-CorporateDashboard"  component={RateCardCorporateDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-IndustrialDashboard" component={RateCardIndustrialDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-ViennaDashboard"     component={RateCardViennaDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-AlpineDashboard"     component={RateCardAlpineDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-FinanceDashboard"    component={RateCardFinanceDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-MaterialBlueDashboard" component={RateCardMaterialBlueDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-MaterialDarkDashboard" component={RateCardMaterialDarkDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-FlatRedDashboard"      component={RateCardFlatRedDashboard}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-FlatNavyDashboard"     component={RateCardFlatNavyDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-SwissDashboard"        component={RateCardSwissDashboard}        durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-BauhausDashboard"      component={RateCardBauhausDashboard}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-MonoDashboard"         component={RateCardMonoDashboard}         durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-PaperDashboard"        component={RateCardPaperDashboard}        durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-SlateDashboard"        component={RateCardSlateDashboard}        durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="RateCard-BlueprintDashboard"    component={RateCardBlueprintDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Product-Launch">
@@ -963,6 +1098,16 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="ProjectTimeline-ViennaDashboard"     component={ProjectTimelineViennaDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ProjectTimeline-AlpineDashboard"     component={ProjectTimelineAlpineDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ProjectTimeline-FinanceDashboard"    component={ProjectTimelineFinanceDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-MaterialBlueDashboard" component={ProjectTimelineMaterialBlueDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-MaterialDarkDashboard" component={ProjectTimelineMaterialDarkDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-FlatRedDashboard"    component={ProjectTimelineFlatRedDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-FlatNavyDashboard"   component={ProjectTimelineFlatNavyDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-SwissDashboard"      component={ProjectTimelineSwissDashboard}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-BauhausDashboard"    component={ProjectTimelineBauhausDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-MonoDashboard"       component={ProjectTimelineMonoDashboard}       durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-PaperDashboard"      component={ProjectTimelinePaperDashboard}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-SlateDashboard"      component={ProjectTimelineSlateDashboard}      durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ProjectTimeline-BlueprintDashboard"  component={ProjectTimelineBlueprintDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Proposal">
@@ -1058,6 +1203,11 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="ScopeChange-LavenderDashboard" component={ScopeChangeLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ScopeChange-ArcticDashboard"   component={ScopeChangeArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ScopeChange-EspressoDashboard" component={ScopeChangeEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ScopeChange-CorporateDashboard"  component={ScopeChangeCorporateDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ScopeChange-IndustrialDashboard" component={ScopeChangeIndustrialDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ScopeChange-ViennaDashboard"     component={ScopeChangeViennaDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ScopeChange-AlpineDashboard"     component={ScopeChangeAlpineDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ScopeChange-FinanceDashboard"    component={ScopeChangeFinanceDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Release-Notes">
@@ -1156,22 +1306,137 @@ export const RemotionRoot: React.FC = () => (
     </Folder>
 
     <Folder name="Testimonial">
+      {/* Original themes - 7 x 3 = 21 */}
       <Composition id="Testimonial-DarkCentered" component={TestimonialDarkCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-DarkSplit" component={TestimonialDarkSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-DarkEditorial" component={TestimonialDarkEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CleanCentered" component={TestimonialCleanCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-CleanSplit" component={TestimonialCleanSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CleanEditorial" component={TestimonialCleanEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-BoldCentered" component={TestimonialBoldCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-BoldSplit" component={TestimonialBoldSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-BoldEditorial" component={TestimonialBoldEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-WarmCentered" component={TestimonialWarmCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-WarmSplit" component={TestimonialWarmSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-WarmEditorial" component={TestimonialWarmEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MinimalCentered" component={TestimonialMinimalCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MinimalSplit" component={TestimonialMinimalSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-MinimalEditorial" component={TestimonialMinimalEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-NeonCentered" component={TestimonialNeonCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-NeonSplit" component={TestimonialNeonSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-NeonEditorial" component={TestimonialNeonEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-LindamohamedCentered" component={TestimonialLindamohamedCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-LindamohamedSplit" component={TestimonialLindamohamedSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-LindamohamedEditorial" component={TestimonialLindamohamedEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      {/* Extended themes - 10 x 3 = 30 */}
       <Composition id="Testimonial-OceanCentered" component={TestimonialOceanCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-OceanSplit" component={TestimonialOceanSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-OceanEditorial" component={TestimonialOceanEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SunsetCentered" component={TestimonialSunsetCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-SunsetSplit" component={TestimonialSunsetSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SunsetEditorial" component={TestimonialSunsetEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-ForestCentered" component={TestimonialForestCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ForestSplit" component={TestimonialForestSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ForestEditorial" component={TestimonialForestEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-RoseCentered" component={TestimonialRoseCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-RoseSplit" component={TestimonialRoseSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-RoseEditorial" component={TestimonialRoseEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-GoldCentered" component={TestimonialGoldCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-GoldSplit" component={TestimonialGoldSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-GoldEditorial" component={TestimonialGoldEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-MidnightCentered" component={TestimonialMidnightCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MidnightSplit" component={TestimonialMidnightSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MidnightEditorial" component={TestimonialMidnightEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CrimsonCentered" component={TestimonialCrimsonCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CrimsonSplit" component={TestimonialCrimsonSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-CrimsonEditorial" component={TestimonialCrimsonEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-LavenderCentered" component={TestimonialLavenderCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-LavenderSplit" component={TestimonialLavenderSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-LavenderEditorial" component={TestimonialLavenderEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ArcticCentered" component={TestimonialArcticCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-ArcticSplit" component={TestimonialArcticSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ArcticEditorial" component={TestimonialArcticEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="Testimonial-EspressoCentered" component={TestimonialEspressoCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-EspressoSplit" component={TestimonialEspressoSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-EspressoEditorial" component={TestimonialEspressoEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      {/* European themes - 5 x 3 = 15 */}
+      <Composition id="Testimonial-CorporateCentered" component={TestimonialCorporateCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CorporateSplit" component={TestimonialCorporateSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CorporateEditorial" component={TestimonialCorporateEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-IndustrialCentered" component={TestimonialIndustrialCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-IndustrialSplit" component={TestimonialIndustrialSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-IndustrialEditorial" component={TestimonialIndustrialEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ViennaCentered" component={TestimonialViennaCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ViennaSplit" component={TestimonialViennaSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ViennaEditorial" component={TestimonialViennaEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-AlpineCentered" component={TestimonialAlpineCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-AlpineSplit" component={TestimonialAlpineSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-AlpineEditorial" component={TestimonialAlpineEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FinanceCentered" component={TestimonialFinanceCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FinanceSplit" component={TestimonialFinanceSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FinanceEditorial" component={TestimonialFinanceEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      {/* Flat themes - 10 x 3 = 30 */}
+      <Composition id="Testimonial-MaterialBlueCentered" component={TestimonialMaterialBlueCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MaterialBlueSplit" component={TestimonialMaterialBlueSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MaterialBlueEditorial" component={TestimonialMaterialBlueEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MaterialDarkCentered" component={TestimonialMaterialDarkCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MaterialDarkSplit" component={TestimonialMaterialDarkSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MaterialDarkEditorial" component={TestimonialMaterialDarkEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FlatRedCentered" component={TestimonialFlatRedCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FlatRedSplit" component={TestimonialFlatRedSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FlatRedEditorial" component={TestimonialFlatRedEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FlatNavyCentered" component={TestimonialFlatNavyCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FlatNavySplit" component={TestimonialFlatNavySplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-FlatNavyEditorial" component={TestimonialFlatNavyEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SwissCentered" component={TestimonialSwissCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SwissSplit" component={TestimonialSwissSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SwissEditorial" component={TestimonialSwissEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-BauhausCentered" component={TestimonialBauhausCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-BauhausSplit" component={TestimonialBauhausSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-BauhausEditorial" component={TestimonialBauhausEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MonoCentered" component={TestimonialMonoCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MonoSplit" component={TestimonialMonoSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MonoEditorial" component={TestimonialMonoEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-PaperCentered" component={TestimonialPaperCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-PaperSplit" component={TestimonialPaperSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-PaperEditorial" component={TestimonialPaperEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SlateCentered" component={TestimonialSlateCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SlateSplit" component={TestimonialSlateSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SlateEditorial" component={TestimonialSlateEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-BlueprintCentered" component={TestimonialBlueprintCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-BlueprintSplit" component={TestimonialBlueprintSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-BlueprintEditorial" component={TestimonialBlueprintEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      {/* Canva themes - 10 x 3 = 30 */}
+      <Composition id="Testimonial-CandyCentered" component={TestimonialCandyCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CandySplit" component={TestimonialCandySplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CandyEditorial" component={TestimonialCandyEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MintCentered" component={TestimonialMintCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MintSplit" component={TestimonialMintSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-MintEditorial" component={TestimonialMintEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CoralCentered" component={TestimonialCoralCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CoralSplit" component={TestimonialCoralSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CoralEditorial" component={TestimonialCoralEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SkyCentered" component={TestimonialSkyCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SkySplit" component={TestimonialSkySplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-SkyEditorial" component={TestimonialSkyEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-GrapeCentered" component={TestimonialGrapeCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-GrapeSplit" component={TestimonialGrapeSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-GrapeEditorial" component={TestimonialGrapeEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CharcoalCentered" component={TestimonialCharcoalCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CharcoalSplit" component={TestimonialCharcoalSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CharcoalEditorial" component={TestimonialCharcoalEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-PeachCentered" component={TestimonialPeachCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-PeachSplit" component={TestimonialPeachSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-PeachEditorial" component={TestimonialPeachEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-OceanDarkCentered" component={TestimonialOceanDarkCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-OceanDarkSplit" component={TestimonialOceanDarkSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-OceanDarkEditorial" component={TestimonialOceanDarkEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CreamCentered" component={TestimonialCreamCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CreamSplit" component={TestimonialCreamSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-CreamEditorial" component={TestimonialCreamEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ElectricCentered" component={TestimonialElectricCentered} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ElectricSplit" component={TestimonialElectricSplit} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="Testimonial-ElectricEditorial" component={TestimonialElectricEditorial} durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Thought-Leadership">
@@ -1609,6 +1874,11 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="MeetingRecap-LavenderDashboard" component={MeetingRecapLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="MeetingRecap-ArcticDashboard"   component={MeetingRecapArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="MeetingRecap-EspressoDashboard" component={MeetingRecapEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-CorporateDashboard"  component={MeetingRecapCorporateDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-IndustrialDashboard" component={MeetingRecapIndustrialDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-ViennaDashboard"     component={MeetingRecapViennaDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-AlpineDashboard"     component={MeetingRecapAlpineDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="MeetingRecap-FinanceDashboard"    component={MeetingRecapFinanceDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Results-Showcase">
@@ -1628,6 +1898,11 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="ResultsShowcase-LavenderDashboard" component={ResultsShowcaseLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ResultsShowcase-ArcticDashboard"   component={ResultsShowcaseArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ResultsShowcase-EspressoDashboard" component={ResultsShowcaseEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-CorporateDashboard"  component={ResultsShowcaseCorporateDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-IndustrialDashboard" component={ResultsShowcaseIndustrialDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-ViennaDashboard"     component={ResultsShowcaseViennaDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-AlpineDashboard"     component={ResultsShowcaseAlpineDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ResultsShowcase-FinanceDashboard"    component={ResultsShowcaseFinanceDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
     </Folder>
 
     <Folder name="Service-Overview">
@@ -1647,6 +1922,251 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="ServiceOverview-LavenderDashboard" component={ServiceOverviewLavenderDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ServiceOverview-ArcticDashboard"   component={ServiceOverviewArcticDashboard}   durationInFrames={DUR} fps={FPS} width={W} height={H} />
       <Composition id="ServiceOverview-EspressoDashboard" component={ServiceOverviewEspressoDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-CorporateDashboard"  component={ServiceOverviewCorporateDashboard}  durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-IndustrialDashboard" component={ServiceOverviewIndustrialDashboard} durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-ViennaDashboard"     component={ServiceOverviewViennaDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-AlpineDashboard"     component={ServiceOverviewAlpineDashboard}     durationInFrames={DUR} fps={FPS} width={W} height={H} />
+      <Composition id="ServiceOverview-FinanceDashboard"    component={ServiceOverviewFinanceDashboard}    durationInFrames={DUR} fps={FPS} width={W} height={H} />
+    </Folder>
+
+    {/* ── Content Creator Templates (Vertical 9:16 and Square 1:1) ── */}
+    {/* Listicle - 42 themes x 3 layouts = 126 compositions */}
+    <Folder name="Listicle">
+      {/* Original themes (7 x 3 = 21) */}
+      <Composition id="Listicle-DarkStack" component={ListicleDarkStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-DarkCards" component={ListicleDarkCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-DarkReveal" component={ListicleDarkReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CleanStack" component={ListicleCleanStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CleanCards" component={ListicleCleanCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CleanReveal" component={ListicleCleanReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BoldStack" component={ListicleBoldStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BoldCards" component={ListicleBoldCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BoldReveal" component={ListicleBoldReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-WarmStack" component={ListicleWarmStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-WarmCards" component={ListicleWarmCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-WarmReveal" component={ListicleWarmReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MinimalStack" component={ListicleMinimalStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MinimalCards" component={ListicleMinimalCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MinimalReveal" component={ListicleMinimalReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-NeonStack" component={ListicleNeonStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-NeonCards" component={ListicleNeonCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-NeonReveal" component={ListicleNeonReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-LindamohamedStack" component={ListicleLindamohamedStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-LindamohamedCards" component={ListicleLindamohamedCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-LindamohamedReveal" component={ListicleLindamohamedReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      {/* Extended themes (10 x 3 = 30) */}
+      <Composition id="Listicle-OceanStack" component={ListicleOceanStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-OceanCards" component={ListicleOceanCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-OceanReveal" component={ListicleOceanReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SunsetStack" component={ListicleSunsetStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SunsetCards" component={ListicleSunsetCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SunsetReveal" component={ListicleSunsetReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ForestStack" component={ListicleForestStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ForestCards" component={ListicleForestCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ForestReveal" component={ListicleForestReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-RoseStack" component={ListicleRoseStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-RoseCards" component={ListicleRoseCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-RoseReveal" component={ListicleRoseReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-GoldStack" component={ListicleGoldStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-GoldCards" component={ListicleGoldCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-GoldReveal" component={ListicleGoldReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MidnightStack" component={ListicleMidnightStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MidnightCards" component={ListicleMidnightCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MidnightReveal" component={ListicleMidnightReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CrimsonStack" component={ListicleCrimsonStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CrimsonCards" component={ListicleCrimsonCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CrimsonReveal" component={ListicleCrimsonReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-LavenderStack" component={ListicleLavenderStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-LavenderCards" component={ListicleLavenderCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-LavenderReveal" component={ListicleLavenderReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ArcticStack" component={ListicleArcticStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ArcticCards" component={ListicleArcticCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ArcticReveal" component={ListicleArcticReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-EspressoStack" component={ListicleEspressoStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-EspressoCards" component={ListicleEspressoCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-EspressoReveal" component={ListicleEspressoReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      {/* European themes (5 x 3 = 15) */}
+      <Composition id="Listicle-CorporateStack" component={ListicleCorporateStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CorporateCards" component={ListicleCorporateCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CorporateReveal" component={ListicleCorporateReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-IndustrialStack" component={ListicleIndustrialStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-IndustrialCards" component={ListicleIndustrialCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-IndustrialReveal" component={ListicleIndustrialReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ViennaStack" component={ListicleViennaStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ViennaCards" component={ListicleViennaCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ViennaReveal" component={ListicleViennaReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-AlpineStack" component={ListicleAlpineStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-AlpineCards" component={ListicleAlpineCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-AlpineReveal" component={ListicleAlpineReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FinanceStack" component={ListicleFinanceStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FinanceCards" component={ListicleFinanceCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FinanceReveal" component={ListicleFinanceReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      {/* Flat themes (10 x 3 = 30) */}
+      <Composition id="Listicle-MaterialBlueStack" component={ListicleMaterialBlueStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MaterialBlueCards" component={ListicleMaterialBlueCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MaterialBlueReveal" component={ListicleMaterialBlueReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MaterialDarkStack" component={ListicleMaterialDarkStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MaterialDarkCards" component={ListicleMaterialDarkCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MaterialDarkReveal" component={ListicleMaterialDarkReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FlatRedStack" component={ListicleFlatRedStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FlatRedCards" component={ListicleFlatRedCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FlatRedReveal" component={ListicleFlatRedReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FlatNavyStack" component={ListicleFlatNavyStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FlatNavyCards" component={ListicleFlatNavyCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-FlatNavyReveal" component={ListicleFlatNavyReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SwissStack" component={ListicleSwissStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SwissCards" component={ListicleSwissCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SwissReveal" component={ListicleSwissReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BauhausStack" component={ListicleBauhausStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BauhausCards" component={ListicleBauhausCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BauhausReveal" component={ListicleBauhausReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MonoStack" component={ListicleMonoStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MonoCards" component={ListicleMonoCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MonoReveal" component={ListicleMonoReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-PaperStack" component={ListiclePaperStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-PaperCards" component={ListiclePaperCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-PaperReveal" component={ListiclePaperReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SlateStack" component={ListicleSlateStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SlateCards" component={ListicleSlateCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SlateReveal" component={ListicleSlateReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BlueprintStack" component={ListicleBlueprintStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BlueprintCards" component={ListicleBlueprintCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-BlueprintReveal" component={ListicleBlueprintReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      {/* Canva themes (10 x 3 = 30) */}
+      <Composition id="Listicle-CandyStack" component={ListicleCandyStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CandyCards" component={ListicleCandyCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CandyReveal" component={ListicleCandyReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MintStack" component={ListicleMintStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MintCards" component={ListicleMintCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-MintReveal" component={ListicleMintReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CoralStack" component={ListicleCoralStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CoralCards" component={ListicleCoralCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CoralReveal" component={ListicleCoralReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SkyStack" component={ListicleSkyStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SkyCards" component={ListicleSkyCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-SkyReveal" component={ListicleSkyReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-GrapeStack" component={ListicleGrapeStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-GrapeCards" component={ListicleGrapeCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-GrapeReveal" component={ListicleGrapeReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CharcoalStack" component={ListicleCharcoalStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CharcoalCards" component={ListicleCharcoalCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CharcoalReveal" component={ListicleCharcoalReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-PeachStack" component={ListiclePeachStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-PeachCards" component={ListiclePeachCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-PeachReveal" component={ListiclePeachReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-OceanDarkStack" component={ListicleOceanDarkStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-OceanDarkCards" component={ListicleOceanDarkCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-OceanDarkReveal" component={ListicleOceanDarkReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CreamStack" component={ListicleCreamStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CreamCards" component={ListicleCreamCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-CreamReveal" component={ListicleCreamReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ElectricStack" component={ListicleElectricStack} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ElectricCards" component={ListicleElectricCards} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Listicle-ElectricReveal" component={ListicleElectricReveal} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="QuoteCard-Square">
+      <Composition id="QuoteCard-DarkCentered"    component={QuoteCardDarkCentered}    durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-MinimalMinimal"  component={QuoteCardMinimalMinimal}  durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-CandyBold"       component={QuoteCardCandyBold}       durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-MintCentered"    component={QuoteCardMintCentered}    durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-GrapeBold"       component={QuoteCardGrapeBold}       durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-CharcoalMinimal" component={QuoteCardCharcoalMinimal} durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-PeachCentered"   component={QuoteCardPeachCentered}   durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-CreamMinimal"    component={QuoteCardCreamMinimal}    durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-PaperMinimal"    component={QuoteCardPaperMinimal}    durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="QuoteCard-SwissCentered"   component={QuoteCardSwissCentered}   durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+    </Folder>
+
+    <Folder name="QuoteCard-Vertical">
+      <Composition id="QuoteCard-DarkCenteredVertical"    component={QuoteCardDarkCenteredVertical}    durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="QuoteCard-CandyBoldVertical"       component={QuoteCardCandyBoldVertical}       durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="QuoteCard-GrapeBoldVertical"       component={QuoteCardGrapeBoldVertical}       durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="QuoteCard-CharcoalMinimalVertical" component={QuoteCardCharcoalMinimalVertical} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="TipOfTheDay-Square">
+      <Composition id="TipOfTheDay-DarkCard"         component={TipOfTheDayDarkCard}         durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-NeonFullscreen"   component={TipOfTheDayNeonFullscreen}   durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-CandyCard"        component={TipOfTheDayCandyCard}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-MintMinimal"      component={TipOfTheDayMintMinimal}      durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-CoralCard"        component={TipOfTheDayCoralCard}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-SkyFullscreen"    component={TipOfTheDaySkyFullscreen}    durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-GrapeCard"        component={TipOfTheDayGrapeCard}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-CharcoalMinimal"  component={TipOfTheDayCharcoalMinimal}  durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-CreamCard"        component={TipOfTheDayCreamCard}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="TipOfTheDay-OceanDarkFullscreen" component={TipOfTheDayOceanDarkFullscreen} durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+    </Folder>
+
+    <Folder name="TipOfTheDay-Vertical">
+      <Composition id="TipOfTheDay-DarkCardVertical"         component={TipOfTheDayDarkCardVertical}         durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="TipOfTheDay-NeonFullscreenVertical"   component={TipOfTheDayNeonFullscreenVertical}   durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="TipOfTheDay-CandyCardVertical"        component={TipOfTheDayCandyCardVertical}        durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="TipOfTheDay-PeachMinimalVertical"     component={TipOfTheDayPeachMinimalVertical}     durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="TipOfTheDay-ElectricFullscreenVertical" component={TipOfTheDayElectricFullscreenVertical} durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="Announcement-Square">
+      <Composition id="Announcement-DarkBanner"      component={AnnouncementDarkBanner}      durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-NeonCard"        component={AnnouncementNeonCard}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-CandyBanner"     component={AnnouncementCandyBanner}     durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-MintCard"        component={AnnouncementMintCard}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-CoralMinimal"    component={AnnouncementCoralMinimal}    durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-SkyBanner"       component={AnnouncementSkyBanner}       durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-GrapeCard"       component={AnnouncementGrapeCard}       durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-CharcoalMinimal" component={AnnouncementCharcoalMinimal} durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-CreamCard"       component={AnnouncementCreamCard}       durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="Announcement-OceanDarkBanner" component={AnnouncementOceanDarkBanner} durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+    </Folder>
+
+    <Folder name="Announcement-Vertical">
+      <Composition id="Announcement-DarkBannerVertical"      component={AnnouncementDarkBannerVertical}      durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Announcement-NeonCardVertical"        component={AnnouncementNeonCardVertical}        durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Announcement-CandyBannerVertical"     component={AnnouncementCandyBannerVertical}     durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Announcement-PeachMinimalVertical"    component={AnnouncementPeachMinimalVertical}    durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="Announcement-ElectricBannerVertical"  component={AnnouncementElectricBannerVertical}  durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="StatCounter-Square">
+      <Composition id="StatCounter-DarkSingle"       component={StatCounterDarkSingle}       durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-NeonGrid"         component={StatCounterNeonGrid}         durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-CandySingle"      component={StatCounterCandySingle}      durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-MintProgress"     component={StatCounterMintProgress}     durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-CoralGrid"        component={StatCounterCoralGrid}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-SkyProgress"      component={StatCounterSkyProgress}      durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-GrapeSingle"      component={StatCounterGrapeSingle}      durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-CharcoalGrid"     component={StatCounterCharcoalGrid}     durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-CreamProgress"    component={StatCounterCreamProgress}    durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="StatCounter-OceanDarkSingle"  component={StatCounterOceanDarkSingle}  durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+    </Folder>
+
+    <Folder name="StatCounter-Vertical">
+      <Composition id="StatCounter-DarkSingleVertical"       component={StatCounterDarkSingleVertical}       durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="StatCounter-NeonGridVertical"         component={StatCounterNeonGridVertical}         durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="StatCounter-CandyProgressVertical"    component={StatCounterCandyProgressVertical}    durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="StatCounter-PeachSingleVertical"      component={StatCounterPeachSingleVertical}      durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="StatCounter-ElectricGridVertical"     component={StatCounterElectricGridVertical}     durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="CallToAction-Square">
+      <Composition id="CallToAction-DarkCentered"      component={CallToActionDarkCentered}      durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-NeonSplit"         component={CallToActionNeonSplit}         durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-CandyCentered"     component={CallToActionCandyCentered}     durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-MintMinimal"       component={CallToActionMintMinimal}       durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-CoralSplit"        component={CallToActionCoralSplit}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-SkyCentered"       component={CallToActionSkyCentered}       durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-GrapeMinimal"      component={CallToActionGrapeMinimal}      durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-CharcoalCentered"  component={CallToActionCharcoalCentered}  durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-CreamSplit"        component={CallToActionCreamSplit}        durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+      <Composition id="CallToAction-OceanDarkMinimal"  component={CallToActionOceanDarkMinimal}  durationInFrames={DUR} fps={FPS} width={1080} height={1080} />
+    </Folder>
+
+    <Folder name="CallToAction-Vertical">
+      <Composition id="CallToAction-DarkCenteredVertical"    component={CallToActionDarkCenteredVertical}    durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="CallToAction-NeonSplitVertical"       component={CallToActionNeonSplitVertical}       durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="CallToAction-CandyMinimalVertical"    component={CallToActionCandyMinimalVertical}    durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="CallToAction-PeachCenteredVertical"   component={CallToActionPeachCenteredVertical}   durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+      <Composition id="CallToAction-ElectricSplitVertical"   component={CallToActionElectricSplitVertical}   durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
     </Folder>
 
   </>

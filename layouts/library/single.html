@@ -153,6 +153,125 @@
   </div>
 </section>
 
+<!-- ── Theme x Layout Matrix ──────────────────────────────────── -->
+<section class="tpl-matrix">
+  <div class="container">
+    <div class="tpl-matrix__hd">
+      <h2 class="tpl-matrix__title">Theme x Layout Matrix</h2>
+      <div class="tpl-matrix__toggle">
+        <button class="tpl-matrix__toggle-btn active" data-view="grid">Grid View</button>
+        <button class="tpl-matrix__toggle-btn" data-view="table">Table View</button>
+      </div>
+    </div>
+    
+    {{/* Extract unique layouts and themes from variants */}}
+    {{ $layouts := slice }}
+    {{ $themes := slice }}
+    {{ $variantMap := dict }}
+    {{ range .Params.variants }}
+      {{ $parts := split .name " " }}
+      {{ $theme := .style }}
+      {{ $layout := index $parts (sub (len $parts) 1) }}
+      {{ if not (in $layouts $layout) }}
+        {{ $layouts = $layouts | append $layout }}
+      {{ end }}
+      {{ if not (in $themes $theme) }}
+        {{ $themes = $themes | append $theme }}
+      {{ end }}
+      {{ $key := printf "%s-%s" $theme $layout }}
+      {{ $variantMap = merge $variantMap (dict $key .) }}
+    {{ end }}
+    
+    <!-- Grid View (default) -->
+    <div class="tpl-variants__grid" id="matrixGridView">
+      {{ range .Params.variants }}
+      <a href="{{ "player/" | relURL }}?comp={{ .id }}" class="tpl-var-card tpl-matrix-card"
+         data-id="{{ .id }}"
+         data-name="{{ .name }}"
+         data-style="{{ .style }}">
+        <div class="tpl-var-card__media">
+          <img src="{{ (printf "previews/showcase/%s.png" .id) | relURL }}"
+               alt="{{ $.Title }} - {{ .name }}" loading="lazy" class="tpl-var-card__img"
+               onerror="this.style.display='none';this.parentElement.querySelector('.tpl-var-card__fallback').style.display='flex';">
+          <div class="tpl-var-card__fallback" style="display:none;">
+            <span class="tpl-var-card__fallback-name">{{ .name }}</span>
+          </div>
+          <div class="tpl-var-card__style tpl-var-card__style--{{ .style }}">{{ .style }}</div>
+        </div>
+        <div class="tpl-var-card__name">{{ .name }}</div>
+        <div class="tpl-var-card__id">{{ .id }}</div>
+      </a>
+      {{ end }}
+    </div>
+    
+    <!-- Table View (hidden by default) -->
+    <div class="tpl-matrix__table-wrap" id="matrixTableView" style="display: none;">
+      <table class="tpl-matrix__table">
+        <thead>
+          <tr>
+            <th>Theme</th>
+            {{ range $layouts }}
+            <th>{{ . }}</th>
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $theme := $themes }}
+          <tr>
+            <td>{{ $theme | title }}</td>
+            {{ range $layout := $layouts }}
+              {{ $key := printf "%s-%s" $theme $layout }}
+              {{ $variant := index $variantMap $key }}
+              <td>
+                {{ if $variant }}
+                <a href="{{ "player/" | relURL }}?comp={{ $variant.id }}" class="tpl-matrix__cell-link">
+                  <img src="{{ (printf "previews/showcase/%s.png" $variant.id) | relURL }}" 
+                       alt="{{ $variant.name }}" 
+                       class="tpl-matrix__cell-thumb"
+                       loading="lazy"
+                       onerror="this.style.display='none'">
+                  <span class="tpl-matrix__cell-play">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  </span>
+                </a>
+                {{ else }}
+                <span class="tpl-matrix__cell-empty">-</span>
+                {{ end }}
+              </td>
+            {{ end }}
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<script>
+// Matrix view toggle
+(function() {
+  var gridView = document.getElementById('matrixGridView');
+  var tableView = document.getElementById('matrixTableView');
+  var toggleBtns = document.querySelectorAll('.tpl-matrix__toggle-btn');
+  
+  toggleBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var view = this.dataset.view;
+      toggleBtns.forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      
+      if (view === 'grid') {
+        gridView.style.display = '';
+        tableView.style.display = 'none';
+      } else {
+        gridView.style.display = 'none';
+        tableView.style.display = '';
+      }
+    });
+  });
+})();
+</script>
+
 <!-- ── How to Use ─────────────────────────────────────────────── -->
 <section class="tpl-how-section">
   <div class="container">

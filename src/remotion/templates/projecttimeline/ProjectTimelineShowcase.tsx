@@ -10,6 +10,8 @@ import {
   THEME_OCEAN, THEME_SUNSET, THEME_FOREST, THEME_ROSE, THEME_GOLD, THEME_MIDNIGHT,
   THEME_CRIMSON, THEME_LAVENDER, THEME_ARCTIC, THEME_ESPRESSO,
   THEME_CORPORATE, THEME_INDUSTRIAL, THEME_VIENNA, THEME_ALPINE, THEME_FINANCE,
+  THEME_MATERIAL_BLUE, THEME_MATERIAL_DARK, THEME_FLAT_RED, THEME_FLAT_NAVY, THEME_SWISS,
+  THEME_BAUHAUS, THEME_MONO, THEME_PAPER, THEME_SLATE, THEME_BLUEPRINT,
   BrandKit, applyBrandKit,
 } from "../_shared/themes";
 
@@ -48,3 +50,15 @@ export const ProjectTimelineIndustrialDashboard: React.FC<{ brandKit?: BrandKit 
 export const ProjectTimelineViennaDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_VIENNA,     brandKit)} bgPattern="hex" />;
 export const ProjectTimelineAlpineDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ALPINE,     brandKit)} bgPattern="dots" />;
 export const ProjectTimelineFinanceDashboard:    React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FINANCE,    brandKit)} bgPattern="grid" />;
+
+// Flat & Material Design Variants
+export const ProjectTimelineMaterialBlueDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MATERIAL_BLUE, brandKit)} bgPattern="none" />;
+export const ProjectTimelineMaterialDarkDashboard: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MATERIAL_DARK, brandKit)} bgPattern="none" />;
+export const ProjectTimelineFlatRedDashboard:      React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FLAT_RED,      brandKit)} bgPattern="none" />;
+export const ProjectTimelineFlatNavyDashboard:     React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FLAT_NAVY,     brandKit)} bgPattern="none" />;
+export const ProjectTimelineSwissDashboard:        React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SWISS,        brandKit)} bgPattern="none" />;
+export const ProjectTimelineBauhausDashboard:      React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BAUHAUS,      brandKit)} bgPattern="none" />;
+export const ProjectTimelineMonoDashboard:         React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MONO,         brandKit)} bgPattern="none" />;
+export const ProjectTimelinePaperDashboard:        React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_PAPER,        brandKit)} bgPattern="none" />;
+export const ProjectTimelineSlateDashboard:        React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SLATE,        brandKit)} bgPattern="none" />;
+export const ProjectTimelineBlueprintDashboard:    React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => <ProjectTimeline spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_BLUEPRINT,    brandKit)} bgPattern="none" />;

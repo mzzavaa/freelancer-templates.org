@@ -42,32 +42,32 @@ export const CollaborationBoldStatsMerge: React.FC<{ brandKit?: BrandKit }> = ({
 
 // ── Extended Themes ──────────────────────────────────────────────
 export const CollaborationOceanSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="split-screen" bgPattern="grid" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_OCEAN, brandKit)} layout="split-screen" />
 );
 export const CollaborationSunsetSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="split-screen" bgPattern="none" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_SUNSET, brandKit)} layout="split-screen" />
 );
 export const CollaborationForestAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="announcement" bgPattern="hex" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_FOREST, brandKit)} layout="announcement" />
 );
 export const CollaborationRoseAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="announcement" bgPattern="dots" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ROSE, brandKit)} layout="announcement" />
 );
 export const CollaborationGoldStatsMerge: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="stats-merge" bgPattern="none" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_GOLD, brandKit)} layout="stats-merge" />
 );
 export const CollaborationMidnightStatsMerge: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="stats-merge" bgPattern="grid" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_MIDNIGHT, brandKit)} layout="stats-merge" />
 );
 export const CollaborationCrimsonSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="split-screen" bgPattern="none" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_CRIMSON, brandKit)} layout="split-screen" />
 );
 export const CollaborationLavenderSplitScreen: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="split-screen" bgPattern="hex" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_LAVENDER, brandKit)} layout="split-screen" />
 );
 export const CollaborationArcticAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="announcement" bgPattern="dots" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ARCTIC, brandKit)} layout="announcement" />
 );
 export const CollaborationEspressoAnnouncement: React.FC<{ brandKit?: BrandKit }> = ({ brandKit }) => (
-  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="announcement" bgPattern="none" />
+  <Collaboration spec={SAMPLE_SPEC} theme={applyBrandKit(THEME_ESPRESSO, brandKit)} layout="announcement" />
 );

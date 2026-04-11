@@ -1,0 +1,111 @@
+{
+  "themes": {
+    "original": ["dark", "clean", "bold", "warm", "minimal", "neon", "lindamohamed"],
+    "extended": ["ocean", "sunset", "forest", "rose", "gold", "midnight", "crimson", "lavender", "arctic", "espresso"],
+    "european": ["corporate", "industrial", "vienna", "alpine", "finance"],
+    "flat": ["materialBlue", "materialDark", "flatRed", "flatNavy", "swiss", "bauhaus", "mono", "paper", "slate", "blueprint"],
+    "canva": ["candy", "mint", "coral", "sky", "grape", "charcoal", "peach", "oceanDark", "cream", "electric"]
+  },
+  "themeConstants": {
+    "dark": "THEME_DARK",
+    "clean": "THEME_CLEAN",
+    "bold": "THEME_BOLD",
+    "warm": "THEME_WARM",
+    "minimal": "THEME_MINIMAL",
+    "neon": "THEME_NEON",
+    "lindamohamed": "THEME_LINDAMOHAMED",
+    "ocean": "THEME_OCEAN",
+    "sunset": "THEME_SUNSET",
+    "forest": "THEME_FOREST",
+    "rose": "THEME_ROSE",
+    "gold": "THEME_GOLD",
+    "midnight": "THEME_MIDNIGHT",
+    "crimson": "THEME_CRIMSON",
+    "lavender": "THEME_LAVENDER",
+    "arctic": "THEME_ARCTIC",
+    "espresso": "THEME_ESPRESSO",
+    "corporate": "THEME_CORPORATE",
+    "industrial": "THEME_INDUSTRIAL",
+    "vienna": "THEME_VIENNA",
+    "alpine": "THEME_ALPINE",
+    "finance": "THEME_FINANCE",
+    "materialBlue": "THEME_MATERIAL_BLUE",
+    "materialDark": "THEME_MATERIAL_DARK",
+    "flatRed": "THEME_FLAT_RED",
+    "flatNavy": "THEME_FLAT_NAVY",
+    "swiss": "THEME_SWISS",
+    "bauhaus": "THEME_BAUHAUS",
+    "mono": "THEME_MONO",
+    "paper": "THEME_PAPER",
+    "slate": "THEME_SLATE",
+    "blueprint": "THEME_BLUEPRINT",
+    "candy": "THEME_CANDY",
+    "mint": "THEME_MINT",
+    "coral": "THEME_CORAL",
+    "sky": "THEME_SKY",
+    "grape": "THEME_GRAPE",
+    "charcoal": "THEME_CHARCOAL",
+    "peach": "THEME_PEACH",
+    "oceanDark": "THEME_OCEAN_DARK",
+    "cream": "THEME_CREAM",
+    "electric": "THEME_ELECTRIC"
+  },
+  "templates": {
+    "listicle": {
+      "component": "Listicle",
+      "layouts": ["stack", "cards", "reveal"],
+      "format": "vertical",
+      "description": "Numbered lists, tips, and step-by-step content for social media",
+      "icon": "list-ordered",
+      "color": "pink"
+    },
+    "testimonial": {
+      "component": "Testimonial",
+      "layouts": ["centered", "split", "editorial"],
+      "format": "landscape",
+      "description": "Client testimonials, reviews, and social proof",
+      "icon": "message-circle",
+      "color": "blue"
+    },
+    "quotecard": {
+      "component": "QuoteCard",
+      "layouts": ["centered", "minimal", "bold"],
+      "format": "square",
+      "description": "Inspirational quotes, testimonials, and text-focused social posts",
+      "icon": "quote",
+      "color": "violet"
+    },
+    "tipoftheday": {
+      "component": "TipOfTheDay",
+      "layouts": ["card", "fullscreen", "minimal"],
+      "format": "square",
+      "description": "Daily tips, quick advice, and educational snippets",
+      "icon": "lightbulb",
+      "color": "amber"
+    },
+    "announcement": {
+      "component": "Announcement",
+      "layouts": ["banner", "card", "fullscreen"],
+      "format": "square",
+      "description": "News, updates, and important announcements",
+      "icon": "megaphone",
+      "color": "red"
+    },
+    "statcounter": {
+      "component": "StatCounter",
+      "layouts": ["single", "grid", "comparison"],
+      "format": "square",
+      "description": "Animated statistics, metrics, and number reveals",
+      "icon": "trending-up",
+      "color": "green"
+    },
+    "calltoaction": {
+      "component": "CallToAction",
+      "layouts": ["centered", "split", "minimal"],
+      "format": "square",
+      "description": "CTAs, sign-up prompts, and conversion-focused content",
+      "icon": "mouse-pointer",
+      "color": "orange"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 // Composition registry for freelancer-templates.org
-// 919 compositions: 53 freelancer templates × 16 themes + gameday (35) + lindamohamed (24+2) + netapp (10) + youtube (2)
+// 1106 compositions: 53 freelancer templates × 16 themes + 8 templates × 5 European themes + gameday (35) + lindamohamed (24+2) + netapp (10) + youtube (2) + listicle (15) + quotecard (14)
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type FC = React.FC<any>;
@@ -19,7 +19,7 @@ const STD = { fps: 30, width: 1280, height: 720, durationInFrames: 300 } as cons
 
 // ── Imports ──────────────────────────────────────────────────────
 
-import { TestimonialDarkCentered, TestimonialCleanSplit, TestimonialBoldEditorial, TestimonialWarmCentered, TestimonialMinimalEditorial, TestimonialNeonSplit, TestimonialOceanCentered, TestimonialSunsetSplit, TestimonialForestCentered, TestimonialRoseEditorial, TestimonialGoldCentered, TestimonialMidnightCentered, TestimonialCrimsonEditorial, TestimonialLavenderSplit, TestimonialArcticSplit, TestimonialEspressoCentered } from "@templates/testimonial/TestimonialShowcase";
+import { TestimonialDarkCentered, TestimonialCleanSplit, TestimonialBoldEditorial, TestimonialWarmCentered, TestimonialMinimalEditorial, TestimonialNeonSplit, TestimonialOceanCentered, TestimonialSunsetSplit, TestimonialForestCentered, TestimonialRoseEditorial, TestimonialGoldCentered, TestimonialMidnightCentered, TestimonialCrimsonEditorial, TestimonialLavenderSplit, TestimonialArcticSplit, TestimonialEspressoCentered, TestimonialMaterialBlueCentered, TestimonialMaterialDarkCentered, TestimonialFlatRedEditorial, TestimonialFlatNavySplit, TestimonialSwissEditorial, TestimonialBauhausCentered, TestimonialMonoSplit, TestimonialPaperEditorial, TestimonialSlateCentered, TestimonialBlueprintSplit } from "@templates/testimonial/TestimonialShowcase";
 import { RecapDarkDashboard, RecapCleanTimeline, RecapBoldCards, RecapWarmDashboard, RecapMinimalCards, RecapNeonTimeline, RecapOceanDashboard, RecapSunsetCards, RecapForestTimeline, RecapRoseCards, RecapGoldDashboard, RecapMidnightDashboard, RecapCrimsonCards, RecapLavenderTimeline, RecapArcticTimeline, RecapEspressoDashboard } from "@templates/recap/RecapShowcase";
 import { EventDarkHero, EventCleanSpeakers, EventBoldCountdown, EventWarmHero, EventMinimalSpeakers, EventNeonCountdown, EventOceanHero, EventSunsetSpeakers, EventForestCountdown, EventRoseHero, EventGoldSpeakers, EventMidnightCountdown, EventCrimsonHero, EventLavenderSpeakers, EventArcticCountdown, EventEspressoHero } from "@templates/event/EventShowcase";
 import { ProposalDarkExecutive, ProposalCleanCreative, ProposalBoldPitch, ProposalWarmExecutive, ProposalMinimalCreative, ProposalNeonPitch, ProposalOceanExecutive, ProposalSunsetCreative, ProposalForestExecutive, ProposalRoseCreative, ProposalGoldExecutive, ProposalMidnightExecutive, ProposalCrimsonPitch, ProposalLavenderCreative, ProposalArcticCreative, ProposalEspressoExecutive } from "@templates/proposal/ProposalShowcase";
@@ -72,6 +72,14 @@ import { BugTriagePriorityColumnsDark, BugTriagePriorityColumnsBold, BugTriageTr
 import { ComponentInventoryArchitectureGridDark, ComponentInventoryArchitectureGridClean, ComponentInventoryDependencyMapDark, ComponentInventoryDependencyMapClean, ComponentInventoryInventoryListDark, ComponentInventoryInventoryListClean, ComponentInventoryOceanArchitectureGrid, ComponentInventorySunsetArchitectureGrid, ComponentInventoryForestDependencyMap, ComponentInventoryRoseDependencyMap, ComponentInventoryGoldInventoryList, ComponentInventoryMidnightInventoryList, ComponentInventoryCrimsonArchitectureGrid, ComponentInventoryLavenderArchitectureGrid, ComponentInventoryArcticDependencyMap, ComponentInventoryEspressoDependencyMap } from "@templates/componentinventory/ComponentInventoryShowcase";
 import { ConceptPitchArcDark, ConceptPitchArcBold, ConceptPitchBoardDark, ConceptPitchBoardBold, ConceptPitchBriefDark, ConceptPitchBriefBold, ConceptPitchOceanArc, ConceptPitchSunsetBoard, ConceptPitchForestBrief, ConceptPitchRoseArc, ConceptPitchGoldBoard, ConceptPitchMidnightBrief, ConceptPitchCrimsonArc, ConceptPitchLavenderBoard, ConceptPitchArcticBrief, ConceptPitchEspressoArc } from "@templates/conceptpitch/ConceptPitchShowcase";
 import { ThoughtLeadershipEditorialDark, ThoughtLeadershipEditorialClean, ThoughtLeadershipNarrativeDark, ThoughtLeadershipNarrativeClean, ThoughtLeadershipKeynoteDark, ThoughtLeadershipKeynoteClean, ThoughtLeadershipOceanEditorial, ThoughtLeadershipSunsetNarrative, ThoughtLeadershipForestKeynote, ThoughtLeadershipRoseEditorial, ThoughtLeadershipGoldNarrative, ThoughtLeadershipMidnightKeynote, ThoughtLeadershipCrimsonEditorial, ThoughtLeadershipLavenderNarrative, ThoughtLeadershipArcticKeynote, ThoughtLeadershipEspressoEditorial } from "@templates/thoughtleadership/ThoughtLeadershipShowcase";
+import { ClientReportDarkDashboard, ClientReportBoldDashboard, ClientReportCleanDashboard, ClientReportWarmDashboard, ClientReportMinimalDashboard, ClientReportNeonDashboard, ClientReportOceanDashboard, ClientReportSunsetDashboard, ClientReportForestDashboard, ClientReportRoseDashboard, ClientReportGoldDashboard, ClientReportMidnightDashboard, ClientReportCrimsonDashboard, ClientReportLavenderDashboard, ClientReportArcticDashboard, ClientReportEspressoDashboard, ClientReportCorporateDashboard, ClientReportIndustrialDashboard, ClientReportViennaDashboard, ClientReportAlpineDashboard, ClientReportFinanceDashboard, ClientReportMaterialBlueDashboard, ClientReportMaterialDarkDashboard, ClientReportFlatRedDashboard, ClientReportFlatNavyDashboard, ClientReportSwissDashboard, ClientReportBauhausDashboard, ClientReportMonoDashboard, ClientReportPaperDashboard, ClientReportSlateDashboard, ClientReportBlueprintDashboard } from "@templates/clientreport/ClientReportShowcase";
+import { ClientWelcomeDarkDashboard, ClientWelcomeBoldDashboard, ClientWelcomeCleanDashboard, ClientWelcomeWarmDashboard, ClientWelcomeMinimalDashboard, ClientWelcomeNeonDashboard, ClientWelcomeOceanDashboard, ClientWelcomeSunsetDashboard, ClientWelcomeForestDashboard, ClientWelcomeRoseDashboard, ClientWelcomeGoldDashboard, ClientWelcomeMidnightDashboard, ClientWelcomeCrimsonDashboard, ClientWelcomeLavenderDashboard, ClientWelcomeArcticDashboard, ClientWelcomeEspressoDashboard, ClientWelcomeCorporateDashboard, ClientWelcomeIndustrialDashboard, ClientWelcomeViennaDashboard, ClientWelcomeAlpineDashboard, ClientWelcomeFinanceDashboard } from "@templates/clientwelcome/ClientWelcomeShowcase";
+import { RateCardDarkDashboard, RateCardBoldDashboard, RateCardCleanDashboard, RateCardWarmDashboard, RateCardMinimalDashboard, RateCardNeonDashboard, RateCardOceanDashboard, RateCardSunsetDashboard, RateCardForestDashboard, RateCardRoseDashboard, RateCardGoldDashboard, RateCardMidnightDashboard, RateCardCrimsonDashboard, RateCardLavenderDashboard, RateCardArcticDashboard, RateCardEspressoDashboard, RateCardCorporateDashboard, RateCardIndustrialDashboard, RateCardViennaDashboard, RateCardAlpineDashboard, RateCardFinanceDashboard, RateCardMaterialBlueDashboard, RateCardMaterialDarkDashboard, RateCardFlatRedDashboard, RateCardFlatNavyDashboard, RateCardSwissDashboard, RateCardBauhausDashboard, RateCardMonoDashboard, RateCardPaperDashboard, RateCardSlateDashboard, RateCardBlueprintDashboard } from "@templates/ratecard/RateCardShowcase";
+import { ScopeChangeDarkDashboard, ScopeChangeBoldDashboard, ScopeChangeCleanDashboard, ScopeChangeWarmDashboard, ScopeChangeMinimalDashboard, ScopeChangeNeonDashboard, ScopeChangeOceanDashboard, ScopeChangeSunsetDashboard, ScopeChangeForestDashboard, ScopeChangeRoseDashboard, ScopeChangeGoldDashboard, ScopeChangeMidnightDashboard, ScopeChangeCrimsonDashboard, ScopeChangeLavenderDashboard, ScopeChangeArcticDashboard, ScopeChangeEspressoDashboard, ScopeChangeCorporateDashboard, ScopeChangeIndustrialDashboard, ScopeChangeViennaDashboard, ScopeChangeAlpineDashboard, ScopeChangeFinanceDashboard } from "@templates/scopechange/ScopeChangeShowcase";
+import { MeetingRecapDarkDashboard, MeetingRecapBoldDashboard, MeetingRecapCleanDashboard, MeetingRecapWarmDashboard, MeetingRecapMinimalDashboard, MeetingRecapNeonDashboard, MeetingRecapOceanDashboard, MeetingRecapSunsetDashboard, MeetingRecapForestDashboard, MeetingRecapRoseDashboard, MeetingRecapGoldDashboard, MeetingRecapMidnightDashboard, MeetingRecapCrimsonDashboard, MeetingRecapLavenderDashboard, MeetingRecapArcticDashboard, MeetingRecapEspressoDashboard, MeetingRecapCorporateDashboard, MeetingRecapIndustrialDashboard, MeetingRecapViennaDashboard, MeetingRecapAlpineDashboard, MeetingRecapFinanceDashboard } from "@templates/meetingrecap/MeetingRecapShowcase";
+import { ResultsShowcaseDarkDashboard, ResultsShowcaseBoldDashboard, ResultsShowcaseCleanDashboard, ResultsShowcaseWarmDashboard, ResultsShowcaseMinimalDashboard, ResultsShowcaseNeonDashboard, ResultsShowcaseOceanDashboard, ResultsShowcaseSunsetDashboard, ResultsShowcaseForestDashboard, ResultsShowcaseRoseDashboard, ResultsShowcaseGoldDashboard, ResultsShowcaseMidnightDashboard, ResultsShowcaseCrimsonDashboard, ResultsShowcaseLavenderDashboard, ResultsShowcaseArcticDashboard, ResultsShowcaseEspressoDashboard, ResultsShowcaseCorporateDashboard, ResultsShowcaseIndustrialDashboard, ResultsShowcaseViennaDashboard, ResultsShowcaseAlpineDashboard, ResultsShowcaseFinanceDashboard } from "@templates/resultsshowcase/ResultsShowcaseShowcase";
+import { ServiceOverviewDarkDashboard, ServiceOverviewBoldDashboard, ServiceOverviewCleanDashboard, ServiceOverviewWarmDashboard, ServiceOverviewMinimalDashboard, ServiceOverviewNeonDashboard, ServiceOverviewOceanDashboard, ServiceOverviewSunsetDashboard, ServiceOverviewForestDashboard, ServiceOverviewRoseDashboard, ServiceOverviewGoldDashboard, ServiceOverviewMidnightDashboard, ServiceOverviewCrimsonDashboard, ServiceOverviewLavenderDashboard, ServiceOverviewArcticDashboard, ServiceOverviewEspressoDashboard, ServiceOverviewCorporateDashboard, ServiceOverviewIndustrialDashboard, ServiceOverviewViennaDashboard, ServiceOverviewAlpineDashboard, ServiceOverviewFinanceDashboard } from "@templates/serviceoverview/ServiceOverviewShowcase";
+import { ProjectTimelineDarkDashboard, ProjectTimelineBoldDashboard, ProjectTimelineCleanDashboard, ProjectTimelineWarmDashboard, ProjectTimelineMinimalDashboard, ProjectTimelineNeonDashboard, ProjectTimelineOceanDashboard, ProjectTimelineSunsetDashboard, ProjectTimelineForestDashboard, ProjectTimelineRoseDashboard, ProjectTimelineGoldDashboard, ProjectTimelineMidnightDashboard, ProjectTimelineCrimsonDashboard, ProjectTimelineLavenderDashboard, ProjectTimelineArcticDashboard, ProjectTimelineEspressoDashboard, ProjectTimelineCorporateDashboard, ProjectTimelineIndustrialDashboard, ProjectTimelineViennaDashboard, ProjectTimelineAlpineDashboard, ProjectTimelineFinanceDashboard, ProjectTimelineMaterialBlueDashboard, ProjectTimelineMaterialDarkDashboard, ProjectTimelineFlatRedDashboard, ProjectTimelineFlatNavyDashboard, ProjectTimelineSwissDashboard, ProjectTimelineBauhausDashboard, ProjectTimelineMonoDashboard, ProjectTimelinePaperDashboard, ProjectTimelineSlateDashboard, ProjectTimelineBlueprintDashboard } from "@templates/projecttimeline/ProjectTimelineShowcase";
 import { VideoFlowPipelineTutorial } from "@templates/youtubetuorial/tutorials/VideoFlowPipeline";
 import { AIDemoToEnterpriseTutorial } from "@templates/youtubetuorial/tutorials/AIDemoToEnterprise";
 import {
@@ -124,6 +132,14 @@ import { QuestHint } from "@gameday/compositions/inserts/quest/QuestHint";
 import { QuestUpdate } from "@gameday/compositions/inserts/quest/QuestUpdate";
 import { SurveyReminder } from "@gameday/compositions/inserts/quest/SurveyReminder";
 
+// Content Creator Templates (vertical/square formats)
+import { ListicleDarkStack, ListicleNeonCards, ListicleSunsetReveal, ListicleCandyStack, ListicleMintCards, ListicleCoralStack, ListicleSkyCards, ListicleGrapeReveal, ListicleCharcoalStack, ListicleElectricCards, ListicleOceanDarkReveal, ListicleDarkStackSquare, ListicleCandyCardsSquare, ListicleMintStackSquare, ListicleElectricRevealSquare } from "@templates/listicle/ListicleShowcase";
+import { QuoteCardDarkCentered, QuoteCardMinimalMinimal, QuoteCardCandyBold, QuoteCardMintCentered, QuoteCardGrapeBold, QuoteCardCharcoalMinimal, QuoteCardPeachCentered, QuoteCardCreamMinimal, QuoteCardPaperMinimal, QuoteCardSwissCentered, QuoteCardDarkCenteredVertical, QuoteCardCandyBoldVertical, QuoteCardGrapeBoldVertical, QuoteCardCharcoalMinimalVertical } from "@templates/quotecard/QuoteCardShowcase";
+import { TipOfTheDayDarkCard, TipOfTheDayNeonFullscreen, TipOfTheDayCandyCard, TipOfTheDayMintMinimal, TipOfTheDayCoralCard, TipOfTheDaySkyFullscreen, TipOfTheDayGrapeCard, TipOfTheDayCharcoalMinimal, TipOfTheDayCreamCard, TipOfTheDayOceanDarkFullscreen, TipOfTheDayDarkCardVertical, TipOfTheDayNeonFullscreenVertical, TipOfTheDayCandyCardVertical, TipOfTheDayPeachMinimalVertical, TipOfTheDayElectricFullscreenVertical } from "@templates/tipoftheday/TipOfTheDayShowcase";
+import { AnnouncementDarkBanner, AnnouncementNeonCard, AnnouncementCandyBanner, AnnouncementMintCard, AnnouncementCoralMinimal, AnnouncementSkyBanner, AnnouncementGrapeCard, AnnouncementCharcoalMinimal, AnnouncementCreamCard, AnnouncementOceanDarkBanner, AnnouncementDarkBannerVertical, AnnouncementNeonCardVertical, AnnouncementCandyBannerVertical, AnnouncementPeachMinimalVertical, AnnouncementElectricBannerVertical } from "@templates/announcement/AnnouncementShowcase";
+import { StatCounterDarkSingle, StatCounterNeonGrid, StatCounterCandySingle, StatCounterMintProgress, StatCounterCoralGrid, StatCounterSkyProgress, StatCounterGrapeSingle, StatCounterCharcoalGrid, StatCounterCreamProgress, StatCounterOceanDarkSingle, StatCounterDarkSingleVertical, StatCounterNeonGridVertical, StatCounterCandyProgressVertical, StatCounterPeachSingleVertical, StatCounterElectricGridVertical } from "@templates/statcounter/StatCounterShowcase";
+import { CallToActionDarkCentered, CallToActionNeonSplit, CallToActionCandyCentered, CallToActionMintMinimal, CallToActionCoralSplit, CallToActionSkyCentered, CallToActionGrapeMinimal, CallToActionCharcoalCentered, CallToActionCreamSplit, CallToActionOceanDarkMinimal, CallToActionDarkCenteredVertical, CallToActionNeonSplitVertical, CallToActionCandyMinimalVertical, CallToActionPeachCenteredVertical, CallToActionElectricSplitVertical } from "@templates/calltoaction/CallToActionShowcase";
+
 // ── Registry ─────────────────────────────────────────────────────
 
 function c(id: string, component: FC, cat: string, dur = 300): CompSpec {
@@ -136,6 +152,10 @@ function cFHD(id: string, component: FC, cat: string, dur = 300): CompSpec {
 // Portrait helper for 1080x1920 compositions (Shorts)
 function cShort(id: string, component: FC, cat: string, dur = 300): CompSpec {
   return { fps: 30, width: 1080, height: 1920, id, component, category: cat, durationInFrames: dur };
+}
+// Square helper for 1080x1080 compositions (Instagram Feed)
+function cSquare(id: string, component: FC, cat: string, dur = 300): CompSpec {
+  return { fps: 30, width: 1080, height: 1080, id, component, category: cat, durationInFrames: dur };
 }
 
 export const COMPOSITIONS: CompSpec[] = [
@@ -156,6 +176,16 @@ export const COMPOSITIONS: CompSpec[] = [
   c("Testimonial-LavenderSplit",   TestimonialLavenderSplit,   "testimonial"),
   c("Testimonial-ArcticSplit",     TestimonialArcticSplit,     "testimonial"),
   c("Testimonial-EspressoCentered",TestimonialEspressoCentered,"testimonial"),
+  c("Testimonial-MaterialBlueCentered", TestimonialMaterialBlueCentered, "testimonial"),
+  c("Testimonial-MaterialDarkCentered", TestimonialMaterialDarkCentered, "testimonial"),
+  c("Testimonial-FlatRedEditorial",     TestimonialFlatRedEditorial,     "testimonial"),
+  c("Testimonial-FlatNavySplit",        TestimonialFlatNavySplit,        "testimonial"),
+  c("Testimonial-SwissEditorial",       TestimonialSwissEditorial,       "testimonial"),
+  c("Testimonial-BauhausCentered",      TestimonialBauhausCentered,      "testimonial"),
+  c("Testimonial-MonoSplit",            TestimonialMonoSplit,            "testimonial"),
+  c("Testimonial-PaperEditorial",       TestimonialPaperEditorial,       "testimonial"),
+  c("Testimonial-SlateCentered",        TestimonialSlateCentered,        "testimonial"),
+  c("Testimonial-BlueprintSplit",       TestimonialBlueprintSplit,       "testimonial"),
 
   // Recap
   c("Recap-DarkDashboard",   RecapDarkDashboard,   "recap"),
@@ -1093,6 +1123,220 @@ export const COMPOSITIONS: CompSpec[] = [
   c("ThoughtLeadership-KeynoteDark",    ThoughtLeadershipKeynoteDark,    "thoughtleadership"),
   c("ThoughtLeadership-KeynoteClean",   ThoughtLeadershipKeynoteClean,   "thoughtleadership"),
 
+  // Client Report (with European themes)
+  c("ClientReport-DarkDashboard",     ClientReportDarkDashboard,     "clientreport"),
+  c("ClientReport-BoldDashboard",     ClientReportBoldDashboard,     "clientreport"),
+  c("ClientReport-CleanDashboard",    ClientReportCleanDashboard,    "clientreport"),
+  c("ClientReport-WarmDashboard",     ClientReportWarmDashboard,     "clientreport"),
+  c("ClientReport-MinimalDashboard",  ClientReportMinimalDashboard,  "clientreport"),
+  c("ClientReport-NeonDashboard",     ClientReportNeonDashboard,     "clientreport"),
+  c("ClientReport-OceanDashboard",    ClientReportOceanDashboard,    "clientreport"),
+  c("ClientReport-SunsetDashboard",   ClientReportSunsetDashboard,   "clientreport"),
+  c("ClientReport-ForestDashboard",   ClientReportForestDashboard,   "clientreport"),
+  c("ClientReport-RoseDashboard",     ClientReportRoseDashboard,     "clientreport"),
+  c("ClientReport-GoldDashboard",     ClientReportGoldDashboard,     "clientreport"),
+  c("ClientReport-MidnightDashboard", ClientReportMidnightDashboard, "clientreport"),
+  c("ClientReport-CrimsonDashboard",  ClientReportCrimsonDashboard,  "clientreport"),
+  c("ClientReport-LavenderDashboard", ClientReportLavenderDashboard, "clientreport"),
+  c("ClientReport-ArcticDashboard",   ClientReportArcticDashboard,   "clientreport"),
+  c("ClientReport-EspressoDashboard", ClientReportEspressoDashboard, "clientreport"),
+  c("ClientReport-CorporateDashboard",  ClientReportCorporateDashboard,  "clientreport"),
+  c("ClientReport-IndustrialDashboard", ClientReportIndustrialDashboard, "clientreport"),
+  c("ClientReport-ViennaDashboard",     ClientReportViennaDashboard,     "clientreport"),
+  c("ClientReport-AlpineDashboard",     ClientReportAlpineDashboard,     "clientreport"),
+  c("ClientReport-FinanceDashboard",    ClientReportFinanceDashboard,    "clientreport"),
+  c("ClientReport-MaterialBlueDashboard", ClientReportMaterialBlueDashboard, "clientreport"),
+  c("ClientReport-MaterialDarkDashboard", ClientReportMaterialDarkDashboard, "clientreport"),
+  c("ClientReport-FlatRedDashboard",      ClientReportFlatRedDashboard,      "clientreport"),
+  c("ClientReport-FlatNavyDashboard",     ClientReportFlatNavyDashboard,     "clientreport"),
+  c("ClientReport-SwissDashboard",        ClientReportSwissDashboard,        "clientreport"),
+  c("ClientReport-BauhausDashboard",      ClientReportBauhausDashboard,      "clientreport"),
+  c("ClientReport-MonoDashboard",         ClientReportMonoDashboard,         "clientreport"),
+  c("ClientReport-PaperDashboard",        ClientReportPaperDashboard,        "clientreport"),
+  c("ClientReport-SlateDashboard",        ClientReportSlateDashboard,        "clientreport"),
+  c("ClientReport-BlueprintDashboard",    ClientReportBlueprintDashboard,    "clientreport"),
+
+  // Client Welcome (with European themes)
+  c("ClientWelcome-DarkDashboard",     ClientWelcomeDarkDashboard,     "clientwelcome"),
+  c("ClientWelcome-BoldDashboard",     ClientWelcomeBoldDashboard,     "clientwelcome"),
+  c("ClientWelcome-CleanDashboard",    ClientWelcomeCleanDashboard,    "clientwelcome"),
+  c("ClientWelcome-WarmDashboard",     ClientWelcomeWarmDashboard,     "clientwelcome"),
+  c("ClientWelcome-MinimalDashboard",  ClientWelcomeMinimalDashboard,  "clientwelcome"),
+  c("ClientWelcome-NeonDashboard",     ClientWelcomeNeonDashboard,     "clientwelcome"),
+  c("ClientWelcome-OceanDashboard",    ClientWelcomeOceanDashboard,    "clientwelcome"),
+  c("ClientWelcome-SunsetDashboard",   ClientWelcomeSunsetDashboard,   "clientwelcome"),
+  c("ClientWelcome-ForestDashboard",   ClientWelcomeForestDashboard,   "clientwelcome"),
+  c("ClientWelcome-RoseDashboard",     ClientWelcomeRoseDashboard,     "clientwelcome"),
+  c("ClientWelcome-GoldDashboard",     ClientWelcomeGoldDashboard,     "clientwelcome"),
+  c("ClientWelcome-MidnightDashboard", ClientWelcomeMidnightDashboard, "clientwelcome"),
+  c("ClientWelcome-CrimsonDashboard",  ClientWelcomeCrimsonDashboard,  "clientwelcome"),
+  c("ClientWelcome-LavenderDashboard", ClientWelcomeLavenderDashboard, "clientwelcome"),
+  c("ClientWelcome-ArcticDashboard",   ClientWelcomeArcticDashboard,   "clientwelcome"),
+  c("ClientWelcome-EspressoDashboard", ClientWelcomeEspressoDashboard, "clientwelcome"),
+  c("ClientWelcome-CorporateDashboard",  ClientWelcomeCorporateDashboard,  "clientwelcome"),
+  c("ClientWelcome-IndustrialDashboard", ClientWelcomeIndustrialDashboard, "clientwelcome"),
+  c("ClientWelcome-ViennaDashboard",     ClientWelcomeViennaDashboard,     "clientwelcome"),
+  c("ClientWelcome-AlpineDashboard",     ClientWelcomeAlpineDashboard,     "clientwelcome"),
+  c("ClientWelcome-FinanceDashboard",    ClientWelcomeFinanceDashboard,    "clientwelcome"),
+
+  // Rate Card (with European themes)
+  c("RateCard-DarkDashboard",     RateCardDarkDashboard,     "ratecard"),
+  c("RateCard-BoldDashboard",     RateCardBoldDashboard,     "ratecard"),
+  c("RateCard-CleanDashboard",    RateCardCleanDashboard,    "ratecard"),
+  c("RateCard-WarmDashboard",     RateCardWarmDashboard,     "ratecard"),
+  c("RateCard-MinimalDashboard",  RateCardMinimalDashboard,  "ratecard"),
+  c("RateCard-NeonDashboard",     RateCardNeonDashboard,     "ratecard"),
+  c("RateCard-OceanDashboard",    RateCardOceanDashboard,    "ratecard"),
+  c("RateCard-SunsetDashboard",   RateCardSunsetDashboard,   "ratecard"),
+  c("RateCard-ForestDashboard",   RateCardForestDashboard,   "ratecard"),
+  c("RateCard-RoseDashboard",     RateCardRoseDashboard,     "ratecard"),
+  c("RateCard-GoldDashboard",     RateCardGoldDashboard,     "ratecard"),
+  c("RateCard-MidnightDashboard", RateCardMidnightDashboard, "ratecard"),
+  c("RateCard-CrimsonDashboard",  RateCardCrimsonDashboard,  "ratecard"),
+  c("RateCard-LavenderDashboard", RateCardLavenderDashboard, "ratecard"),
+  c("RateCard-ArcticDashboard",   RateCardArcticDashboard,   "ratecard"),
+  c("RateCard-EspressoDashboard", RateCardEspressoDashboard, "ratecard"),
+  c("RateCard-CorporateDashboard",  RateCardCorporateDashboard,  "ratecard"),
+  c("RateCard-IndustrialDashboard", RateCardIndustrialDashboard, "ratecard"),
+  c("RateCard-ViennaDashboard",     RateCardViennaDashboard,     "ratecard"),
+  c("RateCard-AlpineDashboard",     RateCardAlpineDashboard,     "ratecard"),
+  c("RateCard-FinanceDashboard",    RateCardFinanceDashboard,    "ratecard"),
+  c("RateCard-MaterialBlueDashboard", RateCardMaterialBlueDashboard, "ratecard"),
+  c("RateCard-MaterialDarkDashboard", RateCardMaterialDarkDashboard, "ratecard"),
+  c("RateCard-FlatRedDashboard",      RateCardFlatRedDashboard,      "ratecard"),
+  c("RateCard-FlatNavyDashboard",     RateCardFlatNavyDashboard,     "ratecard"),
+  c("RateCard-SwissDashboard",        RateCardSwissDashboard,        "ratecard"),
+  c("RateCard-BauhausDashboard",      RateCardBauhausDashboard,      "ratecard"),
+  c("RateCard-MonoDashboard",         RateCardMonoDashboard,         "ratecard"),
+  c("RateCard-PaperDashboard",        RateCardPaperDashboard,        "ratecard"),
+  c("RateCard-SlateDashboard",        RateCardSlateDashboard,        "ratecard"),
+  c("RateCard-BlueprintDashboard",    RateCardBlueprintDashboard,    "ratecard"),
+
+  // Scope Change (with European themes)
+  c("ScopeChange-DarkDashboard",     ScopeChangeDarkDashboard,     "scopechange"),
+  c("ScopeChange-BoldDashboard",     ScopeChangeBoldDashboard,     "scopechange"),
+  c("ScopeChange-CleanDashboard",    ScopeChangeCleanDashboard,    "scopechange"),
+  c("ScopeChange-WarmDashboard",     ScopeChangeWarmDashboard,     "scopechange"),
+  c("ScopeChange-MinimalDashboard",  ScopeChangeMinimalDashboard,  "scopechange"),
+  c("ScopeChange-NeonDashboard",     ScopeChangeNeonDashboard,     "scopechange"),
+  c("ScopeChange-OceanDashboard",    ScopeChangeOceanDashboard,    "scopechange"),
+  c("ScopeChange-SunsetDashboard",   ScopeChangeSunsetDashboard,   "scopechange"),
+  c("ScopeChange-ForestDashboard",   ScopeChangeForestDashboard,   "scopechange"),
+  c("ScopeChange-RoseDashboard",     ScopeChangeRoseDashboard,     "scopechange"),
+  c("ScopeChange-GoldDashboard",     ScopeChangeGoldDashboard,     "scopechange"),
+  c("ScopeChange-MidnightDashboard", ScopeChangeMidnightDashboard, "scopechange"),
+  c("ScopeChange-CrimsonDashboard",  ScopeChangeCrimsonDashboard,  "scopechange"),
+  c("ScopeChange-LavenderDashboard", ScopeChangeLavenderDashboard, "scopechange"),
+  c("ScopeChange-ArcticDashboard",   ScopeChangeArcticDashboard,   "scopechange"),
+  c("ScopeChange-EspressoDashboard", ScopeChangeEspressoDashboard, "scopechange"),
+  c("ScopeChange-CorporateDashboard",  ScopeChangeCorporateDashboard,  "scopechange"),
+  c("ScopeChange-IndustrialDashboard", ScopeChangeIndustrialDashboard, "scopechange"),
+  c("ScopeChange-ViennaDashboard",     ScopeChangeViennaDashboard,     "scopechange"),
+  c("ScopeChange-AlpineDashboard",     ScopeChangeAlpineDashboard,     "scopechange"),
+  c("ScopeChange-FinanceDashboard",    ScopeChangeFinanceDashboard,    "scopechange"),
+
+  // Meeting Recap (with European themes)
+  c("MeetingRecap-DarkDashboard",     MeetingRecapDarkDashboard,     "meetingrecap"),
+  c("MeetingRecap-BoldDashboard",     MeetingRecapBoldDashboard,     "meetingrecap"),
+  c("MeetingRecap-CleanDashboard",    MeetingRecapCleanDashboard,    "meetingrecap"),
+  c("MeetingRecap-WarmDashboard",     MeetingRecapWarmDashboard,     "meetingrecap"),
+  c("MeetingRecap-MinimalDashboard",  MeetingRecapMinimalDashboard,  "meetingrecap"),
+  c("MeetingRecap-NeonDashboard",     MeetingRecapNeonDashboard,     "meetingrecap"),
+  c("MeetingRecap-OceanDashboard",    MeetingRecapOceanDashboard,    "meetingrecap"),
+  c("MeetingRecap-SunsetDashboard",   MeetingRecapSunsetDashboard,   "meetingrecap"),
+  c("MeetingRecap-ForestDashboard",   MeetingRecapForestDashboard,   "meetingrecap"),
+  c("MeetingRecap-RoseDashboard",     MeetingRecapRoseDashboard,     "meetingrecap"),
+  c("MeetingRecap-GoldDashboard",     MeetingRecapGoldDashboard,     "meetingrecap"),
+  c("MeetingRecap-MidnightDashboard", MeetingRecapMidnightDashboard, "meetingrecap"),
+  c("MeetingRecap-CrimsonDashboard",  MeetingRecapCrimsonDashboard,  "meetingrecap"),
+  c("MeetingRecap-LavenderDashboard", MeetingRecapLavenderDashboard, "meetingrecap"),
+  c("MeetingRecap-ArcticDashboard",   MeetingRecapArcticDashboard,   "meetingrecap"),
+  c("MeetingRecap-EspressoDashboard", MeetingRecapEspressoDashboard, "meetingrecap"),
+  c("MeetingRecap-CorporateDashboard",  MeetingRecapCorporateDashboard,  "meetingrecap"),
+  c("MeetingRecap-IndustrialDashboard", MeetingRecapIndustrialDashboard, "meetingrecap"),
+  c("MeetingRecap-ViennaDashboard",     MeetingRecapViennaDashboard,     "meetingrecap"),
+  c("MeetingRecap-AlpineDashboard",     MeetingRecapAlpineDashboard,     "meetingrecap"),
+  c("MeetingRecap-FinanceDashboard",    MeetingRecapFinanceDashboard,    "meetingrecap"),
+
+  // Results Showcase (with European themes)
+  c("ResultsShowcase-DarkDashboard",     ResultsShowcaseDarkDashboard,     "resultsshowcase"),
+  c("ResultsShowcase-BoldDashboard",     ResultsShowcaseBoldDashboard,     "resultsshowcase"),
+  c("ResultsShowcase-CleanDashboard",    ResultsShowcaseCleanDashboard,    "resultsshowcase"),
+  c("ResultsShowcase-WarmDashboard",     ResultsShowcaseWarmDashboard,     "resultsshowcase"),
+  c("ResultsShowcase-MinimalDashboard",  ResultsShowcaseMinimalDashboard,  "resultsshowcase"),
+  c("ResultsShowcase-NeonDashboard",     ResultsShowcaseNeonDashboard,     "resultsshowcase"),
+  c("ResultsShowcase-OceanDashboard",    ResultsShowcaseOceanDashboard,    "resultsshowcase"),
+  c("ResultsShowcase-SunsetDashboard",   ResultsShowcaseSunsetDashboard,   "resultsshowcase"),
+  c("ResultsShowcase-ForestDashboard",   ResultsShowcaseForestDashboard,   "resultsshowcase"),
+  c("ResultsShowcase-RoseDashboard",     ResultsShowcaseRoseDashboard,     "resultsshowcase"),
+  c("ResultsShowcase-GoldDashboard",     ResultsShowcaseGoldDashboard,     "resultsshowcase"),
+  c("ResultsShowcase-MidnightDashboard", ResultsShowcaseMidnightDashboard, "resultsshowcase"),
+  c("ResultsShowcase-CrimsonDashboard",  ResultsShowcaseCrimsonDashboard,  "resultsshowcase"),
+  c("ResultsShowcase-LavenderDashboard", ResultsShowcaseLavenderDashboard, "resultsshowcase"),
+  c("ResultsShowcase-ArcticDashboard",   ResultsShowcaseArcticDashboard,   "resultsshowcase"),
+  c("ResultsShowcase-EspressoDashboard", ResultsShowcaseEspressoDashboard, "resultsshowcase"),
+  c("ResultsShowcase-CorporateDashboard",  ResultsShowcaseCorporateDashboard,  "resultsshowcase"),
+  c("ResultsShowcase-IndustrialDashboard", ResultsShowcaseIndustrialDashboard, "resultsshowcase"),
+  c("ResultsShowcase-ViennaDashboard",     ResultsShowcaseViennaDashboard,     "resultsshowcase"),
+  c("ResultsShowcase-AlpineDashboard",     ResultsShowcaseAlpineDashboard,     "resultsshowcase"),
+  c("ResultsShowcase-FinanceDashboard",    ResultsShowcaseFinanceDashboard,    "resultsshowcase"),
+
+  // Service Overview (with European themes)
+  c("ServiceOverview-DarkDashboard",     ServiceOverviewDarkDashboard,     "serviceoverview"),
+  c("ServiceOverview-BoldDashboard",     ServiceOverviewBoldDashboard,     "serviceoverview"),
+  c("ServiceOverview-CleanDashboard",    ServiceOverviewCleanDashboard,    "serviceoverview"),
+  c("ServiceOverview-WarmDashboard",     ServiceOverviewWarmDashboard,     "serviceoverview"),
+  c("ServiceOverview-MinimalDashboard",  ServiceOverviewMinimalDashboard,  "serviceoverview"),
+  c("ServiceOverview-NeonDashboard",     ServiceOverviewNeonDashboard,     "serviceoverview"),
+  c("ServiceOverview-OceanDashboard",    ServiceOverviewOceanDashboard,    "serviceoverview"),
+  c("ServiceOverview-SunsetDashboard",   ServiceOverviewSunsetDashboard,   "serviceoverview"),
+  c("ServiceOverview-ForestDashboard",   ServiceOverviewForestDashboard,   "serviceoverview"),
+  c("ServiceOverview-RoseDashboard",     ServiceOverviewRoseDashboard,     "serviceoverview"),
+  c("ServiceOverview-GoldDashboard",     ServiceOverviewGoldDashboard,     "serviceoverview"),
+  c("ServiceOverview-MidnightDashboard", ServiceOverviewMidnightDashboard, "serviceoverview"),
+  c("ServiceOverview-CrimsonDashboard",  ServiceOverviewCrimsonDashboard,  "serviceoverview"),
+  c("ServiceOverview-LavenderDashboard", ServiceOverviewLavenderDashboard, "serviceoverview"),
+  c("ServiceOverview-ArcticDashboard",   ServiceOverviewArcticDashboard,   "serviceoverview"),
+  c("ServiceOverview-EspressoDashboard", ServiceOverviewEspressoDashboard, "serviceoverview"),
+  c("ServiceOverview-CorporateDashboard",  ServiceOverviewCorporateDashboard,  "serviceoverview"),
+  c("ServiceOverview-IndustrialDashboard", ServiceOverviewIndustrialDashboard, "serviceoverview"),
+  c("ServiceOverview-ViennaDashboard",     ServiceOverviewViennaDashboard,     "serviceoverview"),
+  c("ServiceOverview-AlpineDashboard",     ServiceOverviewAlpineDashboard,     "serviceoverview"),
+  c("ServiceOverview-FinanceDashboard",    ServiceOverviewFinanceDashboard,    "serviceoverview"),
+
+  // Project Timeline (with European themes)
+  c("ProjectTimeline-DarkDashboard",     ProjectTimelineDarkDashboard,     "projecttimeline"),
+  c("ProjectTimeline-BoldDashboard",     ProjectTimelineBoldDashboard,     "projecttimeline"),
+  c("ProjectTimeline-CleanDashboard",    ProjectTimelineCleanDashboard,    "projecttimeline"),
+  c("ProjectTimeline-WarmDashboard",     ProjectTimelineWarmDashboard,     "projecttimeline"),
+  c("ProjectTimeline-MinimalDashboard",  ProjectTimelineMinimalDashboard,  "projecttimeline"),
+  c("ProjectTimeline-NeonDashboard",     ProjectTimelineNeonDashboard,     "projecttimeline"),
+  c("ProjectTimeline-OceanDashboard",    ProjectTimelineOceanDashboard,    "projecttimeline"),
+  c("ProjectTimeline-SunsetDashboard",   ProjectTimelineSunsetDashboard,   "projecttimeline"),
+  c("ProjectTimeline-ForestDashboard",   ProjectTimelineForestDashboard,   "projecttimeline"),
+  c("ProjectTimeline-RoseDashboard",     ProjectTimelineRoseDashboard,     "projecttimeline"),
+  c("ProjectTimeline-GoldDashboard",     ProjectTimelineGoldDashboard,     "projecttimeline"),
+  c("ProjectTimeline-MidnightDashboard", ProjectTimelineMidnightDashboard, "projecttimeline"),
+  c("ProjectTimeline-CrimsonDashboard",  ProjectTimelineCrimsonDashboard,  "projecttimeline"),
+  c("ProjectTimeline-LavenderDashboard", ProjectTimelineLavenderDashboard, "projecttimeline"),
+  c("ProjectTimeline-ArcticDashboard",   ProjectTimelineArcticDashboard,   "projecttimeline"),
+  c("ProjectTimeline-EspressoDashboard", ProjectTimelineEspressoDashboard, "projecttimeline"),
+  c("ProjectTimeline-CorporateDashboard",  ProjectTimelineCorporateDashboard,  "projecttimeline"),
+  c("ProjectTimeline-IndustrialDashboard", ProjectTimelineIndustrialDashboard, "projecttimeline"),
+  c("ProjectTimeline-ViennaDashboard",     ProjectTimelineViennaDashboard,     "projecttimeline"),
+  c("ProjectTimeline-AlpineDashboard",     ProjectTimelineAlpineDashboard,     "projecttimeline"),
+  c("ProjectTimeline-FinanceDashboard",    ProjectTimelineFinanceDashboard,    "projecttimeline"),
+  c("ProjectTimeline-MaterialBlueDashboard", ProjectTimelineMaterialBlueDashboard, "projecttimeline"),
+  c("ProjectTimeline-MaterialDarkDashboard", ProjectTimelineMaterialDarkDashboard, "projecttimeline"),
+  c("ProjectTimeline-FlatRedDashboard",      ProjectTimelineFlatRedDashboard,      "projecttimeline"),
+  c("ProjectTimeline-FlatNavyDashboard",     ProjectTimelineFlatNavyDashboard,     "projecttimeline"),
+  c("ProjectTimeline-SwissDashboard",        ProjectTimelineSwissDashboard,        "projecttimeline"),
+  c("ProjectTimeline-BauhausDashboard",      ProjectTimelineBauhausDashboard,      "projecttimeline"),
+  c("ProjectTimeline-MonoDashboard",         ProjectTimelineMonoDashboard,         "projecttimeline"),
+  c("ProjectTimeline-PaperDashboard",        ProjectTimelinePaperDashboard,        "projecttimeline"),
+  c("ProjectTimeline-SlateDashboard",        ProjectTimelineSlateDashboard,        "projecttimeline"),
+  c("ProjectTimeline-BlueprintDashboard",    ProjectTimelineBlueprintDashboard,    "projecttimeline"),
+
   // YouTube Tutorial
   c("YouTubeTutorial-VideoFlowPipeline",    VideoFlowPipelineTutorial,    "youtubetuorial"),
   c("YouTubeTutorial-AIDemoToEnterprise",   AIDemoToEnterpriseTutorial,   "youtubetuorial", 1138),
@@ -1122,6 +1366,113 @@ export const COMPOSITIONS: CompSpec[] = [
   c("LindaMohamed-ThankYou",         Folie22ThankYouV2,        "lindamohamed", 150),
   c("LindaMohamed-Deck",             LindaMohamedDeck,         "lindamohamed", 3300),
   c("LindaMohamed-DeckV2",           LindaMohamedDeckV2,       "lindamohamed", 3300),
+
+  // Listicle - Vertical (1080x1920) for Stories/Reels/Shorts
+  cShort("Listicle-DarkStack",       ListicleDarkStack,       "listicle"),
+  cShort("Listicle-NeonCards",       ListicleNeonCards,       "listicle"),
+  cShort("Listicle-SunsetReveal",    ListicleSunsetReveal,    "listicle"),
+  cShort("Listicle-CandyStack",      ListicleCandyStack,      "listicle"),
+  cShort("Listicle-MintCards",       ListicleMintCards,       "listicle"),
+  cShort("Listicle-CoralStack",      ListicleCoralStack,      "listicle"),
+  cShort("Listicle-SkyCards",        ListicleSkyCards,        "listicle"),
+  cShort("Listicle-GrapeReveal",     ListicleGrapeReveal,     "listicle"),
+  cShort("Listicle-CharcoalStack",   ListicleCharcoalStack,   "listicle"),
+  cShort("Listicle-ElectricCards",   ListicleElectricCards,   "listicle"),
+  cShort("Listicle-OceanDarkReveal", ListicleOceanDarkReveal, "listicle"),
+  // Listicle - Square (1080x1080) for Instagram Feed
+  cSquare("Listicle-DarkStackSquare",      ListicleDarkStackSquare,      "listicle"),
+  cSquare("Listicle-CandyCardsSquare",     ListicleCandyCardsSquare,     "listicle"),
+  cSquare("Listicle-MintStackSquare",      ListicleMintStackSquare,      "listicle"),
+  cSquare("Listicle-ElectricRevealSquare", ListicleElectricRevealSquare, "listicle"),
+
+  // QuoteCard - Square (1080x1080) for Instagram Feed
+  cSquare("QuoteCard-DarkCentered",    QuoteCardDarkCentered,    "quotecard"),
+  cSquare("QuoteCard-MinimalMinimal",  QuoteCardMinimalMinimal,  "quotecard"),
+  cSquare("QuoteCard-CandyBold",       QuoteCardCandyBold,       "quotecard"),
+  cSquare("QuoteCard-MintCentered",    QuoteCardMintCentered,    "quotecard"),
+  cSquare("QuoteCard-GrapeBold",       QuoteCardGrapeBold,       "quotecard"),
+  cSquare("QuoteCard-CharcoalMinimal", QuoteCardCharcoalMinimal, "quotecard"),
+  cSquare("QuoteCard-PeachCentered",   QuoteCardPeachCentered,   "quotecard"),
+  cSquare("QuoteCard-CreamMinimal",    QuoteCardCreamMinimal,    "quotecard"),
+  cSquare("QuoteCard-PaperMinimal",    QuoteCardPaperMinimal,    "quotecard"),
+  cSquare("QuoteCard-SwissCentered",   QuoteCardSwissCentered,   "quotecard"),
+  // QuoteCard - Vertical (1080x1920) for Stories
+  cShort("QuoteCard-DarkCenteredVertical",    QuoteCardDarkCenteredVertical,    "quotecard"),
+  cShort("QuoteCard-CandyBoldVertical",       QuoteCardCandyBoldVertical,       "quotecard"),
+  cShort("QuoteCard-GrapeBoldVertical",       QuoteCardGrapeBoldVertical,       "quotecard"),
+  cShort("QuoteCard-CharcoalMinimalVertical", QuoteCardCharcoalMinimalVertical, "quotecard"),
+
+  // TipOfTheDay - Square (1080x1080) for Instagram Feed
+  cSquare("TipOfTheDay-DarkCard",         TipOfTheDayDarkCard,         "tipoftheday"),
+  cSquare("TipOfTheDay-NeonFullscreen",   TipOfTheDayNeonFullscreen,   "tipoftheday"),
+  cSquare("TipOfTheDay-CandyCard",        TipOfTheDayCandyCard,        "tipoftheday"),
+  cSquare("TipOfTheDay-MintMinimal",      TipOfTheDayMintMinimal,      "tipoftheday"),
+  cSquare("TipOfTheDay-CoralCard",        TipOfTheDayCoralCard,        "tipoftheday"),
+  cSquare("TipOfTheDay-SkyFullscreen",    TipOfTheDaySkyFullscreen,    "tipoftheday"),
+  cSquare("TipOfTheDay-GrapeCard",        TipOfTheDayGrapeCard,        "tipoftheday"),
+  cSquare("TipOfTheDay-CharcoalMinimal",  TipOfTheDayCharcoalMinimal,  "tipoftheday"),
+  cSquare("TipOfTheDay-CreamCard",        TipOfTheDayCreamCard,        "tipoftheday"),
+  cSquare("TipOfTheDay-OceanDarkFullscreen", TipOfTheDayOceanDarkFullscreen, "tipoftheday"),
+  // TipOfTheDay - Vertical (1080x1920) for Stories
+  cShort("TipOfTheDay-DarkCardVertical",         TipOfTheDayDarkCardVertical,         "tipoftheday"),
+  cShort("TipOfTheDay-NeonFullscreenVertical",   TipOfTheDayNeonFullscreenVertical,   "tipoftheday"),
+  cShort("TipOfTheDay-CandyCardVertical",        TipOfTheDayCandyCardVertical,        "tipoftheday"),
+  cShort("TipOfTheDay-PeachMinimalVertical",     TipOfTheDayPeachMinimalVertical,     "tipoftheday"),
+  cShort("TipOfTheDay-ElectricFullscreenVertical", TipOfTheDayElectricFullscreenVertical, "tipoftheday"),
+
+  // Announcement - Square (1080x1080) for Instagram Feed
+  cSquare("Announcement-DarkBanner",      AnnouncementDarkBanner,      "announcement"),
+  cSquare("Announcement-NeonCard",        AnnouncementNeonCard,        "announcement"),
+  cSquare("Announcement-CandyBanner",     AnnouncementCandyBanner,     "announcement"),
+  cSquare("Announcement-MintCard",        AnnouncementMintCard,        "announcement"),
+  cSquare("Announcement-CoralMinimal",    AnnouncementCoralMinimal,    "announcement"),
+  cSquare("Announcement-SkyBanner",       AnnouncementSkyBanner,       "announcement"),
+  cSquare("Announcement-GrapeCard",       AnnouncementGrapeCard,       "announcement"),
+  cSquare("Announcement-CharcoalMinimal", AnnouncementCharcoalMinimal, "announcement"),
+  cSquare("Announcement-CreamCard",       AnnouncementCreamCard,       "announcement"),
+  cSquare("Announcement-OceanDarkBanner", AnnouncementOceanDarkBanner, "announcement"),
+  // Announcement - Vertical (1080x1920) for Stories
+  cShort("Announcement-DarkBannerVertical",      AnnouncementDarkBannerVertical,      "announcement"),
+  cShort("Announcement-NeonCardVertical",        AnnouncementNeonCardVertical,        "announcement"),
+  cShort("Announcement-CandyBannerVertical",     AnnouncementCandyBannerVertical,     "announcement"),
+  cShort("Announcement-PeachMinimalVertical",    AnnouncementPeachMinimalVertical,    "announcement"),
+  cShort("Announcement-ElectricBannerVertical",  AnnouncementElectricBannerVertical,  "announcement"),
+
+  // StatCounter - Square (1080x1080) for Instagram Feed
+  cSquare("StatCounter-DarkSingle",       StatCounterDarkSingle,       "statcounter"),
+  cSquare("StatCounter-NeonGrid",         StatCounterNeonGrid,         "statcounter"),
+  cSquare("StatCounter-CandySingle",      StatCounterCandySingle,      "statcounter"),
+  cSquare("StatCounter-MintProgress",     StatCounterMintProgress,     "statcounter"),
+  cSquare("StatCounter-CoralGrid",        StatCounterCoralGrid,        "statcounter"),
+  cSquare("StatCounter-SkyProgress",      StatCounterSkyProgress,      "statcounter"),
+  cSquare("StatCounter-GrapeSingle",      StatCounterGrapeSingle,      "statcounter"),
+  cSquare("StatCounter-CharcoalGrid",     StatCounterCharcoalGrid,     "statcounter"),
+  cSquare("StatCounter-CreamProgress",    StatCounterCreamProgress,    "statcounter"),
+  cSquare("StatCounter-OceanDarkSingle",  StatCounterOceanDarkSingle,  "statcounter"),
+  // StatCounter - Vertical (1080x1920) for Stories
+  cShort("StatCounter-DarkSingleVertical",       StatCounterDarkSingleVertical,       "statcounter"),
+  cShort("StatCounter-NeonGridVertical",         StatCounterNeonGridVertical,         "statcounter"),
+  cShort("StatCounter-CandyProgressVertical",    StatCounterCandyProgressVertical,    "statcounter"),
+  cShort("StatCounter-PeachSingleVertical",      StatCounterPeachSingleVertical,      "statcounter"),
+  cShort("StatCounter-ElectricGridVertical",     StatCounterElectricGridVertical,     "statcounter"),
+
+  // CallToAction - Square (1080x1080) for Instagram Feed
+  cSquare("CallToAction-DarkCentered",      CallToActionDarkCentered,      "calltoaction"),
+  cSquare("CallToAction-NeonSplit",         CallToActionNeonSplit,         "calltoaction"),
+  cSquare("CallToAction-CandyCentered",     CallToActionCandyCentered,     "calltoaction"),
+  cSquare("CallToAction-MintMinimal",       CallToActionMintMinimal,       "calltoaction"),
+  cSquare("CallToAction-CoralSplit",        CallToActionCoralSplit,        "calltoaction"),
+  cSquare("CallToAction-SkyCentered",       CallToActionSkyCentered,       "calltoaction"),
+  cSquare("CallToAction-GrapeMinimal",      CallToActionGrapeMinimal,      "calltoaction"),
+  cSquare("CallToAction-CharcoalCentered",  CallToActionCharcoalCentered,  "calltoaction"),
+  cSquare("CallToAction-CreamSplit",        CallToActionCreamSplit,        "calltoaction"),
+  cSquare("CallToAction-OceanDarkMinimal",  CallToActionOceanDarkMinimal,  "calltoaction"),
+  // CallToAction - Vertical (1080x1920) for Stories
+  cShort("CallToAction-DarkCenteredVertical",    CallToActionDarkCenteredVertical,    "calltoaction"),
+  cShort("CallToAction-NeonSplitVertical",       CallToActionNeonSplitVertical,       "calltoaction"),
+  cShort("CallToAction-CandyMinimalVertical",    CallToActionCandyMinimalVertical,    "calltoaction"),
+  cShort("CallToAction-PeachCenteredVertical",   CallToActionPeachCenteredVertical,   "calltoaction"),
+  cShort("CallToAction-ElectricSplitVertical",   CallToActionElectricSplitVertical,   "calltoaction"),
 
   // Community GameDay Europe - Main sequences
   c("GameDay-Countdown",            Countdown,            "gameday", 18000),

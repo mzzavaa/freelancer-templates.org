@@ -5,6 +5,10 @@
   "scripts": {
     "studio": "remotion studio --public-dir src/remotion/public src/remotion/index.ts",
     "render": "remotion render --public-dir src/remotion/public src/remotion/index.ts",
+    "render:thumbnails": "./scripts/render-thumbnails.sh",
+    "render:thumbnails:all": "./scripts/render-thumbnails.sh all",
+    "render:thumbnails:missing": "./scripts/render-thumbnails.sh missing",
+    "generate:themes": "node scripts/generate-theme-data.js",
     "build:player": "cd player && npm run build",
     "install:player": "cd player && npm install"
   },

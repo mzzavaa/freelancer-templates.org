@@ -1,0 +1,657 @@
+- generic [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "freelancer-templates" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: freelancer
+        - emphasis [ref=e6]: "-templates"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Templates" [ref=e9] [cursor=pointer]:
+            - text: Templates
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - link "Use Cases" [ref=e13] [cursor=pointer]:
+            - /url: /use-cases/
+        - listitem [ref=e14]:
+          - link "Design Tips" [ref=e15] [cursor=pointer]:
+            - /url: /tips/
+        - listitem [ref=e16]:
+          - link "Studio" [ref=e17] [cursor=pointer]:
+            - /url: /studio/
+        - listitem [ref=e18]:
+          - link "Design System" [ref=e19] [cursor=pointer]:
+            - /url: /design-system/
+        - listitem [ref=e20]:
+          - link "Customize" [ref=e21] [cursor=pointer]:
+            - /url: /customize/
+        - listitem [ref=e22]:
+          - link "My Brands" [ref=e23] [cursor=pointer]:
+            - /url: /my-brands/
+      - generic [ref=e24]:
+        - button "Toggle dark mode" [ref=e25] [cursor=pointer]:
+          - img [ref=e27]
+        - link "GitHub" [ref=e33] [cursor=pointer]:
+          - /url: https://github.com/mzzavaa/freelancer-templates.org
+          - img [ref=e34]
+          - text: GitHub
+  - generic [ref=e38]:
+    - link "Back to library" [ref=e39] [cursor=pointer]:
+      - /url: /library/
+      - img [ref=e40]
+      - text: Back to library
+    - generic [ref=e42]:
+      - img [ref=e44]
+      - generic [ref=e46]:
+        - heading "Testimonial" [level=1] [ref=e47]
+        - paragraph [ref=e48]: Animate client quotes with smooth entrance reveals, social proof reels, and editorial-style review layouts. Turn text testimonials into video content.
+    - generic [ref=e49]:
+      - generic [ref=e50]: 16 style variants
+      - generic [ref=e51]: Remotion composition
+      - generic [ref=e52]: CC-BY-NC-SA
+  - generic [ref=e55]:
+    - paragraph [ref=e56]: Use in proposals, on sales pages, and as social proof reels. The neon split variant works well for tech product testimonials; warm centered for service-based businesses.
+    - heading "Use cases" [level=2] [ref=e57]
+    - list [ref=e58]:
+      - listitem [ref=e59]: Client quote videos for website and proposals
+      - listitem [ref=e60]: Testimonial reel for social media ads
+      - listitem [ref=e61]: Case study quote highlights
+      - listitem [ref=e62]: Review screenshot animations
+    - heading "What you get" [level=2] [ref=e63]
+    - list [ref=e64]:
+      - listitem [ref=e65]:
+        - strong [ref=e66]: Centered
+        - text: "- single quote hero with large typography"
+      - listitem [ref=e67]:
+        - strong [ref=e68]: Split
+        - text: "- quote + author photo side by side"
+      - listitem [ref=e69]:
+        - strong [ref=e70]: Editorial
+        - text: "- magazine-style quote card with pull quote formatting"
+  - generic [ref=e72]:
+    - generic [ref=e73]:
+      - heading "Live preview" [level=2] [ref=e74]
+      - generic [ref=e75]:
+        - link "Open full player" [ref=e76] [cursor=pointer]:
+          - /url: /player/?comp=Testimonial-NeonSplit
+          - img [ref=e77]
+          - text: Open full player
+        - link "Browse all 16 variants" [ref=e81] [cursor=pointer]:
+          - /url: /player/
+          - img [ref=e82]
+          - text: Browse all 16 variants
+    - iframe [ref=e88]:
+      - generic [ref=f1e4]:
+        - generic [ref=f1e7]:
+          - img [ref=f1e9]
+          - generic [ref=f1e11]:
+            - generic [ref=f1e12]:
+              - generic [ref=f1e13]: “
+              - generic [ref=f1e14]: Working with this team transformed our entire product pipeline. We shipped 3x faster and our users noticed the difference immediately.
+              - generic [ref=f1e16]:
+                - generic [ref=f1e17]: x
+                - generic [ref=f1e18]: x
+                - generic [ref=f1e19]: x
+                - generic [ref=f1e20]: x
+                - generic [ref=f1e21]: x
+            - generic [ref=f1e23]:
+              - generic [ref=f1e24]: M
+              - generic [ref=f1e25]: Mrs Lee G
+              - generic [ref=f1e26]: Head of Product
+              - generic [ref=f1e27]: TechFlow Inc.
+              - generic [ref=f1e28]: Product Strategy
+          - generic [ref=f1e30]: Book a free consultation
+        - generic [ref=f1e32]:
+          - generic [ref=f1e33]:
+            - button "Pause video" [ref=f1e34] [cursor=pointer]:
+              - img [ref=f1e35]
+            - button "Mute sound" [ref=f1e39] [cursor=pointer]:
+              - img [ref=f1e40]
+            - generic [ref=f1e42]: 0:00 / 0:10
+          - button "Enter Fullscreen" [ref=f1e44] [cursor=pointer]:
+            - img [ref=f1e45]
+    - paragraph [ref=e89]: Click a variant below to switch the preview. Use arrow keys in the full player to step through all compositions.
+  - generic [ref=e92]:
+    - generic [ref=e93]:
+      - heading "Customize brand colors" [level=3] [ref=e94]:
+        - img [ref=e95]
+        - text: Customize brand colors
+      - paragraph [ref=e100]: Adjust colors below to see this template in your brand. Changes are saved in the URL so you can share or bookmark.
+    - generic [ref=e101]:
+      - generic [ref=e102]: Backgrounds
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]: Page
+          - textbox [ref=e108] [cursor=pointer]: "#0a0a0f"
+          - code [ref=e109]: "#0a0a0f"
+        - generic [ref=e110]:
+          - generic [ref=e111]: Card / Section
+          - textbox [ref=e114] [cursor=pointer]: "#111827"
+          - code [ref=e115]: "#111827"
+    - generic [ref=e116]:
+      - generic [ref=e117]: Text
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]: Heading (h1/h2)
+          - textbox [ref=e123] [cursor=pointer]: "#ffffff"
+          - code [ref=e124]: "#ffffff"
+        - generic [ref=e125]:
+          - generic [ref=e126]: Subheading (h3)
+          - textbox [ref=e129] [cursor=pointer]: "#cbd5e1"
+          - code [ref=e130]: "#cbd5e1"
+        - generic [ref=e131]:
+          - generic [ref=e132]: Paragraph
+          - textbox [ref=e135] [cursor=pointer]: "#e2e8f0"
+          - code [ref=e136]: "#e2e8f0"
+        - generic [ref=e137]:
+          - generic [ref=e138]: Muted / Caption
+          - textbox [ref=e141] [cursor=pointer]: "#64748b"
+          - code [ref=e142]: "#64748b"
+    - generic [ref=e143]:
+      - generic [ref=e144]: Accents & Borders
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - generic [ref=e147]: Primary
+          - textbox [ref=e150] [cursor=pointer]: "#6366f1"
+          - code [ref=e151]: "#6366f1"
+        - generic [ref=e152]:
+          - generic [ref=e153]: Secondary
+          - textbox [ref=e156] [cursor=pointer]: "#a855f7"
+          - code [ref=e157]: "#a855f7"
+        - generic [ref=e158]:
+          - generic [ref=e159]: Border
+          - textbox [ref=e162] [cursor=pointer]: "#1e293b"
+          - code [ref=e163]: "#1e293b"
+    - generic [ref=e164]:
+      - button "Save to browser" [ref=e165] [cursor=pointer]:
+        - img [ref=e166]
+        - text: Save to browser
+      - button "Download JSON" [ref=e170] [cursor=pointer]:
+        - img [ref=e171]
+        - text: Download JSON
+      - button "Copy link" [ref=e174] [cursor=pointer]:
+        - img [ref=e175]
+        - text: Copy link
+      - button "Reset" [ref=e178] [cursor=pointer]
+      - link "Upload logo / CSS" [ref=e179] [cursor=pointer]:
+        - /url: /customize/
+      - link "My Brands" [ref=e180] [cursor=pointer]:
+        - /url: /my-brands/
+    - generic [ref=e181]:
+      - textbox "Name this design, e.g. Acme Corp Testimonial Dark..." [ref=e182]
+      - button "Save design" [ref=e183] [cursor=pointer]
+      - button "Save colors only" [ref=e184] [cursor=pointer]
+    - paragraph [ref=e185]:
+      - text: Saved designs and brands appear in
+      - link "My Brands" [ref=e186] [cursor=pointer]:
+        - /url: /my-brands/
+      - text: . All data stays in your browser.
+      - link "Privacy policy" [ref=e187] [cursor=pointer]:
+        - /url: /privacy/
+  - generic [ref=e189]:
+    - heading "All 16 style variants" [level=2] [ref=e190]
+    - generic [ref=e191]:
+      - generic [ref=e192] [cursor=pointer]:
+        - generic [ref=e193]:
+          - img "Testimonial - Dark Centered" [ref=e194]
+          - generic [ref=e196]: dark
+        - generic [ref=e197]: Dark Centered
+        - generic [ref=e198]: Testimonial-DarkCentered
+      - generic [ref=e199] [cursor=pointer]:
+        - generic [ref=e200]:
+          - img "Testimonial - Clean Split" [ref=e201]
+          - generic [ref=e203]: clean
+        - generic [ref=e204]: Clean Split
+        - generic [ref=e205]: Testimonial-CleanSplit
+      - generic [ref=e206] [cursor=pointer]:
+        - generic [ref=e207]:
+          - img "Testimonial - Bold Editorial" [ref=e208]
+          - generic [ref=e210]: bold
+        - generic [ref=e211]: Bold Editorial
+        - generic [ref=e212]: Testimonial-BoldEditorial
+      - generic [ref=e213] [cursor=pointer]:
+        - generic [ref=e214]:
+          - img "Testimonial - Warm Centered" [ref=e215]
+          - generic [ref=e217]: warm
+        - generic [ref=e218]: Warm Centered
+        - generic [ref=e219]: Testimonial-WarmCentered
+      - generic [ref=e220] [cursor=pointer]:
+        - generic [ref=e221]:
+          - img "Testimonial - Minimal Editorial" [ref=e222]
+          - generic [ref=e224]: minimal
+        - generic [ref=e225]: Minimal Editorial
+        - generic [ref=e226]: Testimonial-MinimalEditorial
+      - generic [ref=e227] [cursor=pointer]:
+        - generic [ref=e228]:
+          - img "Testimonial - Neon Split" [ref=e229]
+          - generic [ref=e231]: neon
+        - generic [ref=e232]: Neon Split
+        - generic [ref=e233]: Testimonial-NeonSplit
+      - generic [ref=e234] [cursor=pointer]:
+        - generic [ref=e235]:
+          - img "Testimonial - Ocean Centered" [ref=e236]
+          - generic [ref=e238]: ocean
+        - generic [ref=e239]: Ocean Centered
+        - generic [ref=e240]: Testimonial-OceanCentered
+      - generic [ref=e241] [cursor=pointer]:
+        - generic [ref=e242]:
+          - img "Testimonial - Sunset Split" [ref=e243]
+          - generic [ref=e245]: sunset
+        - generic [ref=e246]: Sunset Split
+        - generic [ref=e247]: Testimonial-SunsetSplit
+      - generic [ref=e248] [cursor=pointer]:
+        - generic [ref=e249]:
+          - img "Testimonial - Forest Centered" [ref=e250]
+          - generic [ref=e252]: forest
+        - generic [ref=e253]: Forest Centered
+        - generic [ref=e254]: Testimonial-ForestCentered
+      - generic [ref=e255] [cursor=pointer]:
+        - generic [ref=e256]:
+          - img "Testimonial - Rose Editorial" [ref=e257]
+          - generic [ref=e259]: rose
+        - generic [ref=e260]: Rose Editorial
+        - generic [ref=e261]: Testimonial-RoseEditorial
+      - generic [ref=e262] [cursor=pointer]:
+        - generic [ref=e263]:
+          - img "Testimonial - Gold Centered" [ref=e264]
+          - generic [ref=e266]: gold
+        - generic [ref=e267]: Gold Centered
+        - generic [ref=e268]: Testimonial-GoldCentered
+      - generic [ref=e269] [cursor=pointer]:
+        - generic [ref=e270]:
+          - img "Testimonial - Midnight Centered" [ref=e271]
+          - generic [ref=e273]: midnight
+        - generic [ref=e274]: Midnight Centered
+        - generic [ref=e275]: Testimonial-MidnightCentered
+      - generic [ref=e276] [cursor=pointer]:
+        - generic [ref=e277]:
+          - img "Testimonial - Crimson Editorial" [ref=e278]
+          - generic [ref=e280]: crimson
+        - generic [ref=e281]: Crimson Editorial
+        - generic [ref=e282]: Testimonial-CrimsonEditorial
+      - generic [ref=e283] [cursor=pointer]:
+        - generic [ref=e284]:
+          - img "Testimonial - Lavender Split" [ref=e285]
+          - generic [ref=e287]: lavender
+        - generic [ref=e288]: Lavender Split
+        - generic [ref=e289]: Testimonial-LavenderSplit
+      - generic [ref=e290] [cursor=pointer]:
+        - generic [ref=e291]:
+          - img "Testimonial - Arctic Split" [ref=e292]
+          - generic [ref=e294]: arctic
+        - generic [ref=e295]: Arctic Split
+        - generic [ref=e296]: Testimonial-ArcticSplit
+      - generic [ref=e297] [cursor=pointer]:
+        - generic [ref=e298]:
+          - img "Testimonial - Espresso Centered" [ref=e299]
+          - generic [ref=e301]: espresso
+        - generic [ref=e302]: Espresso Centered
+        - generic [ref=e303]: Testimonial-EspressoCentered
+  - generic [ref=e305]:
+    - generic [ref=e306]:
+      - heading "Theme x Layout Matrix" [level=2] [ref=e307]
+      - generic [ref=e308]:
+        - button "Grid View" [ref=e309] [cursor=pointer]
+        - button "Table View" [active] [ref=e310] [cursor=pointer]
+    - table [ref=e583]:
+      - rowgroup [ref=e584]:
+        - row "Theme Centered Split Editorial" [ref=e585]:
+          - columnheader "Theme" [ref=e586]
+          - columnheader "Centered" [ref=e587]
+          - columnheader "Split" [ref=e588]
+          - columnheader "Editorial" [ref=e589]
+      - rowgroup [ref=e590]:
+        - row "Dark Dark Centered - -" [ref=e591]:
+          - cell "Dark" [ref=e592]
+          - cell "Dark Centered" [ref=e593]:
+            - link "Dark Centered" [ref=e594] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-DarkCentered
+              - img "Dark Centered" [ref=e595]
+              - img [ref=e597]
+          - cell "-" [ref=e599]
+          - cell "-" [ref=e600]
+        - row "Clean - Clean Split -" [ref=e601]:
+          - cell "Clean" [ref=e602]
+          - cell "-" [ref=e603]
+          - cell "Clean Split" [ref=e604]:
+            - link "Clean Split" [ref=e605] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-CleanSplit
+              - img "Clean Split" [ref=e606]
+              - img [ref=e608]
+          - cell "-" [ref=e610]
+        - row "Bold - - Bold Editorial" [ref=e611]:
+          - cell "Bold" [ref=e612]
+          - cell "-" [ref=e613]
+          - cell "-" [ref=e614]
+          - cell "Bold Editorial" [ref=e615]:
+            - link "Bold Editorial" [ref=e616] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-BoldEditorial
+              - img "Bold Editorial" [ref=e617]
+              - img [ref=e619]
+        - row "Warm Warm Centered - -" [ref=e621]:
+          - cell "Warm" [ref=e622]
+          - cell "Warm Centered" [ref=e623]:
+            - link "Warm Centered" [ref=e624] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-WarmCentered
+              - img "Warm Centered" [ref=e625]
+              - img [ref=e627]
+          - cell "-" [ref=e629]
+          - cell "-" [ref=e630]
+        - row "Minimal - - Minimal Editorial" [ref=e631]:
+          - cell "Minimal" [ref=e632]
+          - cell "-" [ref=e633]
+          - cell "-" [ref=e634]
+          - cell "Minimal Editorial" [ref=e635]:
+            - link "Minimal Editorial" [ref=e636] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-MinimalEditorial
+              - img "Minimal Editorial" [ref=e637]
+              - img [ref=e639]
+        - row "Neon - Neon Split -" [ref=e641]:
+          - cell "Neon" [ref=e642]
+          - cell "-" [ref=e643]
+          - cell "Neon Split" [ref=e644]:
+            - link "Neon Split" [ref=e645] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-NeonSplit
+              - img "Neon Split" [ref=e646]
+              - img [ref=e648]
+          - cell "-" [ref=e650]
+        - row "Ocean Ocean Centered - -" [ref=e651]:
+          - cell "Ocean" [ref=e652]
+          - cell "Ocean Centered" [ref=e653]:
+            - link "Ocean Centered" [ref=e654] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-OceanCentered
+              - img "Ocean Centered" [ref=e655]
+              - img [ref=e657]
+          - cell "-" [ref=e659]
+          - cell "-" [ref=e660]
+        - row "Sunset - Sunset Split -" [ref=e661]:
+          - cell "Sunset" [ref=e662]
+          - cell "-" [ref=e663]
+          - cell "Sunset Split" [ref=e664]:
+            - link "Sunset Split" [ref=e665] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-SunsetSplit
+              - img "Sunset Split" [ref=e666]
+              - img [ref=e668]
+          - cell "-" [ref=e670]
+        - row "Forest Forest Centered - -" [ref=e671]:
+          - cell "Forest" [ref=e672]
+          - cell "Forest Centered" [ref=e673]:
+            - link "Forest Centered" [ref=e674] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-ForestCentered
+              - img "Forest Centered" [ref=e675]
+              - img [ref=e677]
+          - cell "-" [ref=e679]
+          - cell "-" [ref=e680]
+        - row "Rose - - Rose Editorial" [ref=e681]:
+          - cell "Rose" [ref=e682]
+          - cell "-" [ref=e683]
+          - cell "-" [ref=e684]
+          - cell "Rose Editorial" [ref=e685]:
+            - link "Rose Editorial" [ref=e686] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-RoseEditorial
+              - img "Rose Editorial" [ref=e687]
+              - img [ref=e689]
+        - row "Gold Gold Centered - -" [ref=e691]:
+          - cell "Gold" [ref=e692]
+          - cell "Gold Centered" [ref=e693]:
+            - link "Gold Centered" [ref=e694] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-GoldCentered
+              - img "Gold Centered" [ref=e695]
+              - img [ref=e697]
+          - cell "-" [ref=e699]
+          - cell "-" [ref=e700]
+        - row "Midnight Midnight Centered - -" [ref=e701]:
+          - cell "Midnight" [ref=e702]
+          - cell "Midnight Centered" [ref=e703]:
+            - link "Midnight Centered" [ref=e704] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-MidnightCentered
+              - img "Midnight Centered" [ref=e705]
+              - img [ref=e707]
+          - cell "-" [ref=e709]
+          - cell "-" [ref=e710]
+        - row "Crimson - - Crimson Editorial" [ref=e711]:
+          - cell "Crimson" [ref=e712]
+          - cell "-" [ref=e713]
+          - cell "-" [ref=e714]
+          - cell "Crimson Editorial" [ref=e715]:
+            - link "Crimson Editorial" [ref=e716] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-CrimsonEditorial
+              - img "Crimson Editorial" [ref=e717]
+              - img [ref=e719]
+        - row "Lavender - Lavender Split -" [ref=e721]:
+          - cell "Lavender" [ref=e722]
+          - cell "-" [ref=e723]
+          - cell "Lavender Split" [ref=e724]:
+            - link "Lavender Split" [ref=e725] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-LavenderSplit
+              - img "Lavender Split" [ref=e726]
+              - img [ref=e728]
+          - cell "-" [ref=e730]
+        - row "Arctic - Arctic Split -" [ref=e731]:
+          - cell "Arctic" [ref=e732]
+          - cell "-" [ref=e733]
+          - cell "Arctic Split" [ref=e734]:
+            - link "Arctic Split" [ref=e735] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-ArcticSplit
+              - img "Arctic Split" [ref=e736]
+              - img [ref=e738]
+          - cell "-" [ref=e740]
+        - row "Espresso Espresso Centered - -" [ref=e741]:
+          - cell "Espresso" [ref=e742]
+          - cell "Espresso Centered" [ref=e743]:
+            - link "Espresso Centered" [ref=e744] [cursor=pointer]:
+              - /url: /player/?comp=Testimonial-EspressoCentered
+              - img "Espresso Centered" [ref=e745]
+              - img [ref=e747]
+          - cell "-" [ref=e749]
+          - cell "-" [ref=e750]
+  - generic [ref=e409]:
+    - heading "How to use this template" [level=2] [ref=e410]
+    - generic [ref=e411]:
+      - generic [ref=e412]:
+        - generic [ref=e413]: "1"
+        - heading "Clone and install" [level=3] [ref=e414]
+        - paragraph [ref=e415]: Clone the repo, install dependencies, then open Remotion Studio to preview all compositions live.
+        - generic [ref=e416]:
+          - generic [ref=e421]: terminal
+          - generic [ref=e422]:
+            - text: "# Clone the repo"
+            - text: git clone https://github.com/mzzavaa/freelancer-templates.org
+            - text: cd freelancer-templates.org
+            - text: npm install
+            - text: "# Start Remotion Studio (live preview)"
+            - text: npx remotion studio
+      - generic [ref=e423]:
+        - generic [ref=e424]: "2"
+        - heading "Customize the template" [level=3] [ref=e425]
+        - paragraph [ref=e426]: Edit the showcase file to swap in your own data. All templates accept typed props - no magic strings.
+        - generic [ref=e427]:
+          - generic [ref=e432]: src/remotion/templates/testimonial/TestimonialShowcase.tsx
+          - generic [ref=e433]:
+            - text: // Swap these props with your own data
+            - text: "const MY_SPEC = {"
+            - text: // See Testimonial.tsx for the full spec type
+            - text: "title: \"Your title here\","
+            - text: "theme: THEME_DARK, // or THEME_NEON etc."
+            - text: "};"
+      - generic [ref=e434]:
+        - generic [ref=e435]: "3"
+        - heading "Render to video, GIF or image" [level=3] [ref=e436]
+        - paragraph [ref=e437]: Export a full MP4, a looping GIF, or a still PNG of any specific frame - all from the CLI.
+        - generic [ref=e438]:
+          - generic [ref=e443]: terminal
+          - generic [ref=e444]:
+            - text: "# Render full video (MP4)"
+            - text: npx remotion render Testimonial-NeonSplit out/video.mp4
+            - text: "# Export a still (frame 0 = thumbnail)"
+            - text: npx remotion still Testimonial-NeonSplit --frame=0 out/thumb.png
+            - text: "# Export animated GIF"
+            - text: npx remotion render Testimonial-NeonSplit out/preview.gif
+  - generic [ref=e447]:
+    - generic [ref=e448]:
+      - heading "22 built-in themes" [level=3] [ref=e449]:
+        - img [ref=e450]
+        - text: 22 built-in themes
+      - paragraph [ref=e453]:
+        - text: Every template supports all 22 themes out of the box. Pass any
+        - code [ref=e454]: THEME_*
+        - text: constant from
+        - code [ref=e455]: _shared/themes.ts
+        - text: to instantly switch the full visual identity.
+      - generic [ref=e456]:
+        - generic "Dark" [ref=e457]
+        - generic "Clean" [ref=e458]
+        - generic "Bold" [ref=e459]
+        - generic "Warm" [ref=e460]
+        - generic "Minimal" [ref=e461]
+        - generic "Neon" [ref=e462]
+        - generic "Linda Mohamed" [ref=e463]: LM
+    - generic [ref=e464]:
+      - heading "Typography scale" [level=3] [ref=e465]:
+        - img [ref=e466]
+        - text: Typography scale
+      - paragraph [ref=e468]:
+        - text: All font sizes come from
+        - code [ref=e469]: _shared/layouts.ts TYPE
+        - text: . Edit once, updates every composition. Minimum
+        - code [ref=e470]: TYPE.caption
+        - text: (24px) - broadcast legibility standard for 1280x720.
+      - generic [ref=e471]:
+        - generic [ref=e472]:
+          - generic [ref=e473]: hero
+          - generic [ref=e474]: 72px
+        - generic [ref=e475]:
+          - generic [ref=e476]: title
+          - generic [ref=e477]: 52px
+        - generic [ref=e478]:
+          - generic [ref=e479]: body
+          - generic [ref=e480]: 32px
+        - generic [ref=e481]:
+          - generic [ref=e482]: caption
+          - generic [ref=e483]: 24px
+    - generic [ref=e484]:
+      - heading "Add a custom theme" [level=3] [ref=e485]:
+        - img [ref=e486]
+        - text: Add a custom theme
+      - paragraph [ref=e488]:
+        - text: Copy any
+        - code [ref=e489]: THEME_*
+        - text: object in
+        - code [ref=e490]: _shared/themes.ts
+        - text: ", change the colors, register it in"
+        - code [ref=e491]: THEMES
+        - text: ", then pass it to any template. No per-template changes needed."
+      - generic [ref=e493]:
+        - text: "export const THEME_MYBRAND: Theme = {"
+        - text: "name: \"mybrand\","
+        - text: "bg: \"#0d0d0d\","
+        - text: "accent: \"#ff6b35\","
+        - text: // ... other tokens
+        - text: "};"
+  - generic [ref=e496]:
+    - img [ref=e498]
+    - generic [ref=e500]:
+      - heading "Preview live in Remotion Studio" [level=3] [ref=e501]
+      - paragraph [ref=e502]:
+        - text: Run Remotion Studio locally to scrub through every frame, adjust props in real time, and compare all style variants side by side. Studio opens at
+        - code [ref=e503]: localhost:3000
+        - text: after running
+        - code [ref=e504]: npx remotion studio
+        - text: in the project root.
+      - generic [ref=e505]:
+        - link "Setup guide" [ref=e506] [cursor=pointer]:
+          - /url: /studio/
+          - img [ref=e507]
+          - text: Setup guide
+        - link "View source on GitHub" [ref=e509] [cursor=pointer]:
+          - /url: https://github.com/mzzavaa/freelancer-templates.org
+          - img [ref=e510]
+          - text: View source on GitHub
+  - contentinfo [ref=e513]:
+    - generic [ref=e514]:
+      - generic [ref=e515]:
+        - generic [ref=e516]:
+          - generic [ref=e517]:
+            - text: freelancer
+            - emphasis [ref=e518]: "-templates"
+          - paragraph [ref=e519]: Free, open-source template library for freelancers and communities. Documents, Remotion video compositions, and everything in between.
+          - generic [ref=e520]:
+            - link "GitHub" [ref=e521] [cursor=pointer]:
+              - /url: https://github.com/mzzavaa/freelancer-templates.org
+              - img [ref=e522]
+            - link "Twitter / X" [ref=e525] [cursor=pointer]:
+              - /url: https://twitter.com/
+              - img [ref=e526]
+            - link "LinkedIn" [ref=e528] [cursor=pointer]:
+              - /url: https://linkedin.com/
+              - img [ref=e529]
+        - generic [ref=e533]:
+          - generic [ref=e534]: Templates
+          - list [ref=e535]:
+            - listitem [ref=e536]:
+              - link "Contracts" [ref=e537] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e538]:
+              - link "Proposals" [ref=e539] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e540]:
+              - link "Invoices" [ref=e541] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e542]:
+              - link "Email Scripts" [ref=e543] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e544]:
+              - link "Notion Templates" [ref=e545] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e546]:
+              - link "Remotion Library" [ref=e547] [cursor=pointer]:
+                - /url: /#remotion
+        - generic [ref=e548]:
+          - generic [ref=e549]: SISY Ecosystem
+          - list [ref=e550]:
+            - listitem [ref=e551]:
+              - link "freelancer-automation.com" [ref=e552] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e553]:
+              - link "ai-workshops.digital" [ref=e554] [cursor=pointer]:
+                - /url: https://ai-workshops.digital
+            - listitem [ref=e555]:
+              - link "sisy.digital" [ref=e556] [cursor=pointer]:
+                - /url: https://sisy.digital
+            - listitem [ref=e557]:
+              - link "sisy.best" [ref=e558] [cursor=pointer]:
+                - /url: https://sisy.best
+        - generic [ref=e559]:
+          - generic [ref=e560]: Resources
+          - list [ref=e561]:
+            - listitem [ref=e562]:
+              - link "GitHub Repository" [ref=e563] [cursor=pointer]:
+                - /url: https://github.com/mzzavaa/freelancer-templates.org
+            - listitem [ref=e564]:
+              - link "Use Cases" [ref=e565] [cursor=pointer]:
+                - /url: /use-cases/
+            - listitem [ref=e566]:
+              - link "CC-BY-NC-SA License" [ref=e567] [cursor=pointer]:
+                - /url: /#license
+            - listitem [ref=e568]:
+              - link "License Text" [ref=e569] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - listitem [ref=e570]:
+              - link "Commercial License" [ref=e571] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e572]:
+              - link "Contact" [ref=e573] [cursor=pointer]:
+                - /url: mailto:hello@freelancer-templates.org
+      - generic [ref=e574]:
+        - generic [ref=e575]: © 2026 freelancer-templates.org - Licensed under CC-BY-NC-SA 4.0
+        - generic [ref=e576]:
+          - link "Imprint" [ref=e577] [cursor=pointer]:
+            - /url: /imprint/
+          - link "Privacy Policy" [ref=e578] [cursor=pointer]:
+            - /url: /privacy/
+          - link "CC-BY-NC-SA 4.0" [ref=e579] [cursor=pointer]:
+            - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+          - link "Commercial License" [ref=e580] [cursor=pointer]:
+            - /url: https://freelancer-automation.com
+          - link "Contact" [ref=e581] [cursor=pointer]:
+            - /url: mailto:hello@freelancer-templates.org

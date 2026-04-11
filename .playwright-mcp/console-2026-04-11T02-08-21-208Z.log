@@ -1,0 +1,43 @@
+[     179ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42
+[     187ms] [WARNING] The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:109
+[     495ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42
+[  263114ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/Testimonial-ArcticSplit.mp4:0
+[  263130ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/Testimonial-MidnightCentered.mp4:0
+[  263311ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/Testimonial-ForestCentered.mp4:0
+[  302231ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42
+[  309012ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42
+[  309998ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/Testimonial-LavenderSplit.mp4:0
+[  311363ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/Testimonial-GoldCentered.mp4:0
+[  311429ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/Testimonial-SunsetSplit.mp4:0
+[  318217ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/Announcement-CandyBanner.png:0
+[  318225ms] [WARNING] <i data-lucide="hand-shake"></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js:54
+[  318225ms] [WARNING] <i data-lucide="hand-shake"></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js:54
+[  318227ms] [WARNING] <i data-lucide="audio-lines"></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js:54
+[  318227ms] [WARNING] <i data-lucide="audio-lines"></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js:54
+[  318228ms] [WARNING] <i data-lucide=""></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js:54
+[  318228ms] [WARNING] <i data-lucide=""></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@0.263.0/dist/umd/lucide.js:54
+[  320699ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/CallToAction-CandyCentered.png:0
+[  320729ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/AgentDashboard-ControlPanelDark.mp4:0
+[  320778ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/showcase/ClientFeedback-DarkRating.png:0
+[  322149ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/Announcement-CandyBanner.mp4:0
+[  322831ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/AnimatedText-Neon.mp4:0
+[  323505ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42
+[  323802ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42
+[  324779ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/AnimatedText-Clean.mp4:0
+[  326238ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/AnimatedText-Bold.mp4:0
+[  327296ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/AnimatedText-Neon.mp4:0
+[  327331ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/AnimatedText-Forest.mp4:0
+[  328398ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/AnimatedText-Midnight.mp4:0
+[  328413ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:56554/previews/hero/AnimatedText-Arctic.mp4:0
+[ 1380957ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42
+[ 1381168ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42
+[ 1386990ms] [WARNING] Note: Some companies are required to obtain a license to use Remotion. See: https://remotion.dev/license
+Pass the `acknowledgeRemotionLicense` prop to `<Player />` function to make this message disappear. @ http://localhost:56554/player/assets/index-C8Qq4yCF.js:42

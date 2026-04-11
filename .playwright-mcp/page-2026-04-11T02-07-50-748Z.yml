@@ -1,0 +1,530 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "freelancer-templates" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: freelancer
+        - emphasis [ref=e6]: "-templates"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Templates" [ref=e9] [cursor=pointer]:
+            - text: Templates
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - link "Use Cases" [ref=e13] [cursor=pointer]:
+            - /url: /use-cases/
+        - listitem [ref=e14]:
+          - link "Design Tips" [ref=e15] [cursor=pointer]:
+            - /url: /tips/
+        - listitem [ref=e16]:
+          - link "Studio" [ref=e17] [cursor=pointer]:
+            - /url: /studio/
+        - listitem [ref=e18]:
+          - link "Design System" [ref=e19] [cursor=pointer]:
+            - /url: /design-system/
+        - listitem [ref=e20]:
+          - link "Customize" [ref=e21] [cursor=pointer]:
+            - /url: /customize/
+        - listitem [ref=e22]:
+          - link "My Brands" [ref=e23] [cursor=pointer]:
+            - /url: /my-brands/
+      - generic [ref=e24]:
+        - button "Toggle dark mode" [ref=e25] [cursor=pointer]:
+          - img [ref=e27]
+        - link "GitHub" [ref=e33] [cursor=pointer]:
+          - /url: https://github.com/mzzavaa/freelancer-templates.org
+          - img [ref=e34]
+          - text: GitHub
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e40]: Original themes
+      - heading "Bold Theme" [level=1] [ref=e41]
+      - paragraph [ref=e42]: A high-contrast dark theme with vibrant purple-pink accents. Great for creative agencies, bold statements, and attention-grabbing content.
+      - generic [ref=e43]:
+        - link "Preview all templates" [ref=e44] [cursor=pointer]:
+          - /url: /player/?theme=bold
+          - img [ref=e45]
+          - text: Preview all templates
+        - link "View all themes" [ref=e47] [cursor=pointer]:
+          - /url: /design-system/
+    - generic [ref=e48]:
+      - generic "Background" [ref=e49]:
+        - generic [ref=e50]: bg
+      - generic "Text Primary" [ref=e51]:
+        - generic [ref=e52]: text
+      - generic "Accent" [ref=e53]:
+        - generic [ref=e54]: accent
+      - generic "Accent Secondary" [ref=e55]:
+        - generic [ref=e56]: accent2
+      - generic "Gradient" [ref=e57]:
+        - generic [ref=e58]: gradient
+  - generic [ref=e61]:
+    - generic [ref=e62]:
+      - img [ref=e64]
+      - generic [ref=e66]:
+        - generic [ref=e67]: Card Shadow
+        - code [ref=e68]: elevated
+    - generic [ref=e69]:
+      - img [ref=e71]
+      - generic [ref=e73]:
+        - generic [ref=e74]: Heading Weight
+        - code [ref=e75]: "900"
+    - generic [ref=e76]:
+      - img [ref=e78]
+      - generic [ref=e81]:
+        - generic [ref=e82]: Constant
+        - code [ref=e83]: THEME_BOLD
+  - generic [ref=e85]:
+    - heading "All templates in Bold" [level=2] [ref=e86]
+    - paragraph [ref=e87]: Every template below is available with the Bold theme. Click to preview in the player.
+    - generic [ref=e88]:
+      - link "Affiliate Review - Bold Scorecard preview Affiliate Review Bold Scorecard" [ref=e89] [cursor=pointer]:
+        - /url: /player/?comp=AffiliateReview-BoldScorecard
+        - img "Affiliate Review - Bold Scorecard preview" [ref=e91]
+        - generic [ref=e92]:
+          - generic [ref=e93]: Affiliate Review
+          - generic [ref=e94]: Bold Scorecard
+      - link "Animated List - Bold preview Animated List Bold" [ref=e95] [cursor=pointer]:
+        - /url: /player/?comp=AnimatedList-Bold
+        - img "Animated List - Bold preview" [ref=e97]
+        - generic [ref=e98]:
+          - generic [ref=e99]: Animated List
+          - generic [ref=e100]: Bold
+      - link "Animated Text - Bold preview Animated Text Bold" [ref=e101] [cursor=pointer]:
+        - /url: /player/?comp=AnimatedText-Bold
+        - img "Animated Text - Bold preview" [ref=e103]
+        - generic [ref=e104]:
+          - generic [ref=e105]: Animated Text
+          - generic [ref=e106]: Bold
+      - link "Bounce Text - Bold preview Bounce Text Bold" [ref=e107] [cursor=pointer]:
+        - /url: /player/?comp=BounceText-Bold
+        - img "Bounce Text - Bold preview" [ref=e109]
+        - generic [ref=e110]:
+          - generic [ref=e111]: Bounce Text
+          - generic [ref=e112]: Bold
+      - link "Bubble Pop Text - Bold preview Bubble Pop Text Bold" [ref=e113] [cursor=pointer]:
+        - /url: /player/?comp=BubblePopText-Bold
+        - img "Bubble Pop Text - Bold preview" [ref=e115]
+        - generic [ref=e116]:
+          - generic [ref=e117]: Bubble Pop Text
+          - generic [ref=e118]: Bold
+      - link "Bug Tracker - Severity Matrix Bold preview Bug Tracker Severity Matrix Bold" [ref=e119] [cursor=pointer]:
+        - /url: /player/?comp=BugTracker-SeverityMatrixBold
+        - img "Bug Tracker - Severity Matrix Bold preview" [ref=e121]
+        - generic [ref=e122]:
+          - generic [ref=e123]: Bug Tracker
+          - generic [ref=e124]: Severity Matrix Bold
+      - link "Bug Triage - Priority Columns Bold preview Bug Triage Priority Columns Bold" [ref=e125] [cursor=pointer]:
+        - /url: /player/?comp=BugTriage-PriorityColumnsBold
+        - img "Bug Triage - Priority Columns Bold preview" [ref=e127]
+        - generic [ref=e128]:
+          - generic [ref=e129]: Bug Triage
+          - generic [ref=e130]: Priority Columns Bold
+      - link "Card Flip - Bold preview Card Flip Bold" [ref=e131] [cursor=pointer]:
+        - /url: /player/?comp=CardFlip-Bold
+        - img "Card Flip - Bold preview" [ref=e133]
+        - generic [ref=e134]:
+          - generic [ref=e135]: Card Flip
+          - generic [ref=e136]: Bold
+      - link "Case Study - Bold Spotlight preview Case Study Bold Spotlight" [ref=e137] [cursor=pointer]:
+        - /url: /player/?comp=CaseStudy-BoldSpotlight
+        - img "Case Study - Bold Spotlight preview" [ref=e139]
+        - generic [ref=e140]:
+          - generic [ref=e141]: Case Study
+          - generic [ref=e142]: Bold Spotlight
+      - link "Client Feedback Bold Rating" [ref=e143] [cursor=pointer]:
+        - /url: /player/?comp=ClientFeedback-BoldRating
+        - img [ref=e146]
+        - generic [ref=e148]:
+          - generic [ref=e149]: Client Feedback
+          - generic [ref=e150]: Bold Rating
+      - link "Client Welcome Deck - Bold Dashboard preview Client Welcome Deck Bold Dashboard" [ref=e151] [cursor=pointer]:
+        - /url: /player/?comp=ClientWelcome-BoldDashboard
+        - img "Client Welcome Deck - Bold Dashboard preview" [ref=e153]
+        - generic [ref=e154]:
+          - generic [ref=e155]: Client Welcome Deck
+          - generic [ref=e156]: Bold Dashboard
+      - link "Collaboration - Bold Split Screen preview Collaboration Bold Split Screen" [ref=e157] [cursor=pointer]:
+        - /url: /player/?comp=Collaboration-BoldSplitScreen
+        - img "Collaboration - Bold Split Screen preview" [ref=e159]
+        - generic [ref=e160]:
+          - generic [ref=e161]: Collaboration
+          - generic [ref=e162]: Bold Split Screen
+      - link "Concept Pitch - Arc Bold preview Concept Pitch Arc Bold" [ref=e163] [cursor=pointer]:
+        - /url: /player/?comp=ConceptPitch-ArcBold
+        - img "Concept Pitch - Arc Bold preview" [ref=e165]
+        - generic [ref=e166]:
+          - generic [ref=e167]: Concept Pitch
+          - generic [ref=e168]: Arc Bold
+      - link "Contract Summary Bold Terms" [ref=e169] [cursor=pointer]:
+        - /url: /player/?comp=ContractSummary-BoldTerms
+        - img [ref=e172]
+        - generic [ref=e175]:
+          - generic [ref=e176]: Contract Summary
+          - generic [ref=e177]: Bold Terms
+      - link "Creator Projects - OpenClaw Virality preview Creator Projects OpenClaw Virality" [ref=e178] [cursor=pointer]:
+        - /url: /player/?comp=OpenClawVirality
+        - img "Creator Projects - OpenClaw Virality preview" [ref=e180]
+        - generic [ref=e181]:
+          - generic [ref=e182]: Creator Projects
+          - generic [ref=e183]: OpenClaw Virality
+      - link "Email Signature Banner Bold Classic" [ref=e184] [cursor=pointer]:
+        - /url: /player/?comp=EmailSignature-BoldClassic
+        - img [ref=e187]
+        - generic [ref=e190]:
+          - generic [ref=e191]: Email Signature Banner
+          - generic [ref=e192]: Bold Classic
+      - link "Event - Bold Countdown preview Event Bold Countdown" [ref=e193] [cursor=pointer]:
+        - /url: /player/?comp=Event-BoldCountdown
+        - img "Event - Bold Countdown preview" [ref=e195]
+        - generic [ref=e196]:
+          - generic [ref=e197]: Event
+          - generic [ref=e198]: Bold Countdown
+      - link "Event Venue - Schedule Map Bold preview Event Venue Schedule Map Bold" [ref=e199] [cursor=pointer]:
+        - /url: /player/?comp=EventVenue-ScheduleMapBold
+        - img "Event Venue - Schedule Map Bold preview" [ref=e201]
+        - generic [ref=e202]:
+          - generic [ref=e203]: Event Venue
+          - generic [ref=e204]: Schedule Map Bold
+      - link "Expense Report Bold Summary" [ref=e205] [cursor=pointer]:
+        - /url: /player/?comp=ExpenseReport-BoldSummary
+        - img [ref=e208]
+        - generic [ref=e211]:
+          - generic [ref=e212]: Expense Report
+          - generic [ref=e213]: Bold Summary
+      - link "Explainer - Bold Process preview Explainer Bold Process" [ref=e214] [cursor=pointer]:
+        - /url: /player/?comp=Explainer-BoldProcess
+        - img "Explainer - Bold Process preview" [ref=e216]
+        - generic [ref=e217]:
+          - generic [ref=e218]: Explainer
+          - generic [ref=e219]: Bold Process
+      - link "FAQ - Bold Interview preview FAQ Bold Interview" [ref=e220] [cursor=pointer]:
+        - /url: /player/?comp=FAQ-BoldInterview
+        - img "FAQ - Bold Interview preview" [ref=e222]
+        - generic [ref=e223]:
+          - generic [ref=e224]: FAQ
+          - generic [ref=e225]: Bold Interview
+      - link "Fitness Routine - Bold Exercise List preview Fitness Routine Bold Exercise List" [ref=e226] [cursor=pointer]:
+        - /url: /player/?comp=FitnessRoutine-BoldExerciseList
+        - img "Fitness Routine - Bold Exercise List preview" [ref=e228]
+        - generic [ref=e229]:
+          - generic [ref=e230]: Fitness Routine
+          - generic [ref=e231]: Bold Exercise List
+      - link "Floating Bubble - Bold preview Floating Bubble Bold" [ref=e232] [cursor=pointer]:
+        - /url: /player/?comp=FloatingBubble-Bold
+        - img "Floating Bubble - Bold preview" [ref=e234]
+        - generic [ref=e235]:
+          - generic [ref=e236]: Floating Bubble
+          - generic [ref=e237]: Bold
+      - link "Geometric Patterns - Bold preview Geometric Patterns Bold" [ref=e238] [cursor=pointer]:
+        - /url: /player/?comp=GeometricPatterns-Bold
+        - img "Geometric Patterns - Bold preview" [ref=e240]
+        - generic [ref=e241]:
+          - generic [ref=e242]: Geometric Patterns
+          - generic [ref=e243]: Bold
+      - link "Glitch Text - Bold preview Glitch Text Bold" [ref=e244] [cursor=pointer]:
+        - /url: /player/?comp=GlitchText-Bold
+        - img "Glitch Text - Bold preview" [ref=e246]
+        - generic [ref=e247]:
+          - generic [ref=e248]: Glitch Text
+          - generic [ref=e249]: Bold
+      - link "Invoice - Bold Urgent preview Invoice Bold Urgent" [ref=e250] [cursor=pointer]:
+        - /url: /player/?comp=Invoice-BoldUrgent
+        - img "Invoice - Bold Urgent preview" [ref=e252]
+        - generic [ref=e253]:
+          - generic [ref=e254]: Invoice
+          - generic [ref=e255]: Bold Urgent
+      - link "LinkedIn Carousel Post Bold Slide" [ref=e537] [cursor=pointer]:
+        - /url: /player/?comp=LinkedinCarousel-BoldSlide
+        - img [ref=e539]
+        - generic [ref=e259]:
+          - generic [ref=e260]: LinkedIn Carousel Post
+          - generic [ref=e261]: Bold Slide
+      - link "Liquid Wave - Bold preview Liquid Wave Bold" [ref=e262] [cursor=pointer]:
+        - /url: /player/?comp=LiquidWave-Bold
+        - img "Liquid Wave - Bold preview" [ref=e264]
+        - generic [ref=e265]:
+          - generic [ref=e266]: Liquid Wave
+          - generic [ref=e267]: Bold
+      - link "Matrix Rain - Bold preview Matrix Rain Bold" [ref=e268] [cursor=pointer]:
+        - /url: /player/?comp=MatrixRain-Bold
+        - img "Matrix Rain - Bold preview" [ref=e270]
+        - generic [ref=e271]:
+          - generic [ref=e272]: Matrix Rain
+          - generic [ref=e273]: Bold
+      - link "Meeting Recap - Bold Dashboard preview Meeting Recap Bold Dashboard" [ref=e274] [cursor=pointer]:
+        - /url: /player/?comp=MeetingRecap-BoldDashboard
+        - img "Meeting Recap - Bold Dashboard preview" [ref=e276]
+        - generic [ref=e277]:
+          - generic [ref=e278]: Meeting Recap
+          - generic [ref=e279]: Bold Dashboard
+      - link "Milestone - Bold Celebration preview Milestone Bold Celebration" [ref=e280] [cursor=pointer]:
+        - /url: /player/?comp=Milestone-BoldCelebration
+        - img "Milestone - Bold Celebration preview" [ref=e282]
+        - generic [ref=e283]:
+          - generic [ref=e284]: Milestone
+          - generic [ref=e285]: Bold Celebration
+      - link "Onboarding - Bold Creative preview Onboarding Bold Creative" [ref=e286] [cursor=pointer]:
+        - /url: /player/?comp=Onboarding-BoldCreative
+        - img "Onboarding - Bold Creative preview" [ref=e288]
+        - generic [ref=e289]:
+          - generic [ref=e290]: Onboarding
+          - generic [ref=e291]: Bold Creative
+      - link "Particle Explosion - Bold preview Particle Explosion Bold" [ref=e292] [cursor=pointer]:
+        - /url: /player/?comp=ParticleExplosion-Bold
+        - img "Particle Explosion - Bold preview" [ref=e294]
+        - generic [ref=e295]:
+          - generic [ref=e296]: Particle Explosion
+          - generic [ref=e297]: Bold
+      - link "Portfolio - Bold Reel preview Portfolio Bold Reel" [ref=e298] [cursor=pointer]:
+        - /url: /player/?comp=Portfolio-BoldReel
+        - img "Portfolio - Bold Reel preview" [ref=e300]
+        - generic [ref=e301]:
+          - generic [ref=e302]: Portfolio
+          - generic [ref=e303]: Bold Reel
+      - link "Pricing - Bold Spotlight preview Pricing Bold Spotlight" [ref=e304] [cursor=pointer]:
+        - /url: /player/?comp=Pricing-BoldSpotlight
+        - img "Pricing - Bold Spotlight preview" [ref=e306]
+        - generic [ref=e307]:
+          - generic [ref=e308]: Pricing
+          - generic [ref=e309]: Bold Spotlight
+      - link "Product Launch - Bold Hero Reveal preview Product Launch Bold Hero Reveal" [ref=e310] [cursor=pointer]:
+        - /url: /player/?comp=ProductLaunch-BoldHeroReveal
+        - img "Product Launch - Bold Hero Reveal preview" [ref=e312]
+        - generic [ref=e313]:
+          - generic [ref=e314]: Product Launch
+          - generic [ref=e315]: Bold Hero Reveal
+      - link "Project Closeout Bold Checklist" [ref=e544] [cursor=pointer]:
+        - /url: /player/?comp=ProjectCloseout-BoldChecklist
+        - img [ref=e546]
+        - generic [ref=e319]:
+          - generic [ref=e320]: Project Closeout
+          - generic [ref=e321]: Bold Checklist
+      - link "Project Proposal - Bold Pitch preview Project Proposal Bold Pitch" [ref=e322] [cursor=pointer]:
+        - /url: /player/?comp=Proposal-BoldPitch
+        - img "Project Proposal - Bold Pitch preview" [ref=e324]
+        - generic [ref=e325]:
+          - generic [ref=e326]: Project Proposal
+          - generic [ref=e327]: Bold Pitch
+      - link "Project Timeline - Bold Dashboard preview Project Timeline Bold Dashboard" [ref=e328] [cursor=pointer]:
+        - /url: /player/?comp=ProjectTimeline-BoldDashboard
+        - img "Project Timeline - Bold Dashboard preview" [ref=e330]
+        - generic [ref=e331]:
+          - generic [ref=e332]: Project Timeline
+          - generic [ref=e333]: Bold Dashboard
+      - link "Pulsing Text - Bold preview Pulsing Text Bold" [ref=e334] [cursor=pointer]:
+        - /url: /player/?comp=PulsingText-Bold
+        - img "Pulsing Text - Bold preview" [ref=e336]
+        - generic [ref=e337]:
+          - generic [ref=e338]: Pulsing Text
+          - generic [ref=e339]: Bold
+      - link "Rate Card - Bold Dashboard preview Rate Card Bold Dashboard" [ref=e340] [cursor=pointer]:
+        - /url: /player/?comp=RateCard-BoldDashboard
+        - img "Rate Card - Bold Dashboard preview" [ref=e342]
+        - generic [ref=e343]:
+          - generic [ref=e344]: Rate Card
+          - generic [ref=e345]: Bold Dashboard
+      - link "Recap - Bold Cards preview Recap Bold Cards" [ref=e346] [cursor=pointer]:
+        - /url: /player/?comp=Recap-BoldCards
+        - img "Recap - Bold Cards preview" [ref=e348]
+        - generic [ref=e349]:
+          - generic [ref=e350]: Recap
+          - generic [ref=e351]: Bold Cards
+      - link "Results Showcase - Bold Dashboard preview Results Showcase Bold Dashboard" [ref=e352] [cursor=pointer]:
+        - /url: /player/?comp=ResultsShowcase-BoldDashboard
+        - img "Results Showcase - Bold Dashboard preview" [ref=e354]
+        - generic [ref=e355]:
+          - generic [ref=e356]: Results Showcase
+          - generic [ref=e357]: Bold Dashboard
+      - link "Scope Change Request - Bold Dashboard preview Scope Change Request Bold Dashboard" [ref=e358] [cursor=pointer]:
+        - /url: /player/?comp=ScopeChange-BoldDashboard
+        - img "Scope Change Request - Bold Dashboard preview" [ref=e360]
+        - generic [ref=e361]:
+          - generic [ref=e362]: Scope Change Request
+          - generic [ref=e363]: Bold Dashboard
+      - link "Service Overview - Bold Dashboard preview Service Overview Bold Dashboard" [ref=e364] [cursor=pointer]:
+        - /url: /player/?comp=ServiceOverview-BoldDashboard
+        - img "Service Overview - Bold Dashboard preview" [ref=e366]
+        - generic [ref=e367]:
+          - generic [ref=e368]: Service Overview
+          - generic [ref=e369]: Bold Dashboard
+      - link "Slide Text - Bold preview Slide Text Bold" [ref=e370] [cursor=pointer]:
+        - /url: /player/?comp=SlideText-Bold
+        - img "Slide Text - Bold preview" [ref=e372]
+        - generic [ref=e373]:
+          - generic [ref=e374]: Slide Text
+          - generic [ref=e375]: Bold
+      - link "Social Proof - Bold Announcement preview Social Proof Bold Announcement" [ref=e376] [cursor=pointer]:
+        - /url: /player/?comp=SocialProof-BoldAnnouncement
+        - img "Social Proof - Bold Announcement preview" [ref=e378]
+        - generic [ref=e379]:
+          - generic [ref=e380]: Social Proof
+          - generic [ref=e381]: Bold Announcement
+      - link "Sound Wave - Bold preview Sound Wave Bold" [ref=e382] [cursor=pointer]:
+        - /url: /player/?comp=SoundWave-Bold
+        - img "Sound Wave - Bold preview" [ref=e384]
+        - generic [ref=e385]:
+          - generic [ref=e386]: Sound Wave
+          - generic [ref=e387]: Bold
+      - link "Sprint Dashboard - Kanban Bold preview Sprint Dashboard Kanban Bold" [ref=e388] [cursor=pointer]:
+        - /url: /player/?comp=SprintDashboard-KanbanBold
+        - img "Sprint Dashboard - Kanban Bold preview" [ref=e390]
+        - generic [ref=e391]:
+          - generic [ref=e392]: Sprint Dashboard
+          - generic [ref=e393]: Kanban Bold
+      - link "Sprint Recap - Shipped List Bold preview Sprint Recap Shipped List Bold" [ref=e394] [cursor=pointer]:
+        - /url: /player/?comp=SprintRecap-ShippedListBold
+        - img "Sprint Recap - Shipped List Bold preview" [ref=e396]
+        - generic [ref=e397]:
+          - generic [ref=e398]: Sprint Recap
+          - generic [ref=e399]: Shipped List Bold
+      - link "Testimonial - Bold Editorial preview Testimonial Bold Editorial" [ref=e400] [cursor=pointer]:
+        - /url: /player/?comp=Testimonial-BoldEditorial
+        - img "Testimonial - Bold Editorial preview" [ref=e402]
+        - generic [ref=e403]:
+          - generic [ref=e404]: Testimonial
+          - generic [ref=e405]: Bold Editorial
+      - link "Time Tracking Summary Bold Weekly" [ref=e549] [cursor=pointer]:
+        - /url: /player/?comp=TimeTracking-BoldWeekly
+        - img [ref=e551]
+        - generic [ref=e409]:
+          - generic [ref=e410]: Time Tracking Summary
+          - generic [ref=e411]: Bold Weekly
+      - link "Travel Itinerary - Day By Day Bold preview Travel Itinerary Day By Day Bold" [ref=e412] [cursor=pointer]:
+        - /url: /player/?comp=TravelItinerary-DayByDayBold
+        - img "Travel Itinerary - Day By Day Bold preview" [ref=e414]
+        - generic [ref=e415]:
+          - generic [ref=e416]: Travel Itinerary
+          - generic [ref=e417]: Day By Day Bold
+      - link "Typewriter Subtitle - Bold preview Typewriter Subtitle Bold" [ref=e418] [cursor=pointer]:
+        - /url: /player/?comp=TypewriterSubtitle-Bold
+        - img "Typewriter Subtitle - Bold preview" [ref=e420]
+        - generic [ref=e421]:
+          - generic [ref=e422]: Typewriter Subtitle
+          - generic [ref=e423]: Bold
+      - link "Weekly Client Report - Bold Dashboard preview Weekly Client Report Bold Dashboard" [ref=e424] [cursor=pointer]:
+        - /url: /player/?comp=ClientReport-BoldDashboard
+        - img "Weekly Client Report - Bold Dashboard preview" [ref=e426]
+        - generic [ref=e427]:
+          - generic [ref=e428]: Weekly Client Report
+          - generic [ref=e429]: Bold Dashboard
+      - link "Weekly Update Bold Status" [ref=e554] [cursor=pointer]:
+        - /url: /player/?comp=WeeklyUpdate-BoldStatus
+        - img [ref=e556]
+        - generic [ref=e433]:
+          - generic [ref=e434]: Weekly Update
+          - generic [ref=e435]: Bold Status
+  - generic [ref=e437]:
+    - heading "Use Bold in your code" [level=2] [ref=e438]
+    - generic [ref=e439]:
+      - generic [ref=e444]: Example usage
+      - generic [ref=e445]: "import { THEME_BOLD } from \"../_shared/themes\"; // Use with any template <Testimonial spec={mySpec} theme={THEME_BOLD} layout=\"centered\" /> // Or use the THEMES registry const theme = THEMES[\"bold\"];"
+  - generic [ref=e447]:
+    - heading "More themes in Original themes" [level=2] [ref=e448]
+    - generic [ref=e449]:
+      - link "Dark" [ref=e450] [cursor=pointer]:
+        - /url: /themes/dark/
+        - generic [ref=e452]: Dark
+      - link "Clean" [ref=e453] [cursor=pointer]:
+        - /url: /themes/clean/
+        - generic [ref=e455]: Clean
+      - link "Warm" [ref=e456] [cursor=pointer]:
+        - /url: /themes/warm/
+        - generic [ref=e458]: Warm
+      - link "Minimal" [ref=e459] [cursor=pointer]:
+        - /url: /themes/minimal/
+        - generic [ref=e461]: Minimal
+      - link "Neon" [ref=e462] [cursor=pointer]:
+        - /url: /themes/neon/
+        - generic [ref=e464]: Neon
+      - link "Lindamohamed" [ref=e465] [cursor=pointer]:
+        - /url: /themes/lindamohamed/
+        - generic [ref=e467]: Lindamohamed
+  - contentinfo [ref=e468]:
+    - generic [ref=e469]:
+      - generic [ref=e470]:
+        - generic [ref=e471]:
+          - generic [ref=e472]:
+            - text: freelancer
+            - emphasis [ref=e473]: "-templates"
+          - paragraph [ref=e474]: Free, open-source template library for freelancers and communities. Documents, Remotion video compositions, and everything in between.
+          - generic [ref=e475]:
+            - link "GitHub" [ref=e476] [cursor=pointer]:
+              - /url: https://github.com/mzzavaa/freelancer-templates.org
+              - img [ref=e477]
+            - link "Twitter / X" [ref=e480] [cursor=pointer]:
+              - /url: https://twitter.com/
+              - img [ref=e481]
+            - link "LinkedIn" [ref=e483] [cursor=pointer]:
+              - /url: https://linkedin.com/
+              - img [ref=e484]
+        - generic [ref=e488]:
+          - generic [ref=e489]: Templates
+          - list [ref=e490]:
+            - listitem [ref=e491]:
+              - link "Contracts" [ref=e492] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e493]:
+              - link "Proposals" [ref=e494] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e495]:
+              - link "Invoices" [ref=e496] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e497]:
+              - link "Email Scripts" [ref=e498] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e499]:
+              - link "Notion Templates" [ref=e500] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e501]:
+              - link "Remotion Library" [ref=e502] [cursor=pointer]:
+                - /url: /#remotion
+        - generic [ref=e503]:
+          - generic [ref=e504]: SISY Ecosystem
+          - list [ref=e505]:
+            - listitem [ref=e506]:
+              - link "freelancer-automation.com" [ref=e507] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e508]:
+              - link "ai-workshops.digital" [ref=e509] [cursor=pointer]:
+                - /url: https://ai-workshops.digital
+            - listitem [ref=e510]:
+              - link "sisy.digital" [ref=e511] [cursor=pointer]:
+                - /url: https://sisy.digital
+            - listitem [ref=e512]:
+              - link "sisy.best" [ref=e513] [cursor=pointer]:
+                - /url: https://sisy.best
+        - generic [ref=e514]:
+          - generic [ref=e515]: Resources
+          - list [ref=e516]:
+            - listitem [ref=e517]:
+              - link "GitHub Repository" [ref=e518] [cursor=pointer]:
+                - /url: https://github.com/mzzavaa/freelancer-templates.org
+            - listitem [ref=e519]:
+              - link "Use Cases" [ref=e520] [cursor=pointer]:
+                - /url: /use-cases/
+            - listitem [ref=e521]:
+              - link "CC-BY-NC-SA License" [ref=e522] [cursor=pointer]:
+                - /url: /#license
+            - listitem [ref=e523]:
+              - link "License Text" [ref=e524] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - listitem [ref=e525]:
+              - link "Commercial License" [ref=e526] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e527]:
+              - link "Contact" [ref=e528] [cursor=pointer]:
+                - /url: mailto:hello@freelancer-templates.org
+      - generic [ref=e529]:
+        - generic [ref=e530]: © 2026 freelancer-templates.org - Licensed under CC-BY-NC-SA 4.0
+        - generic [ref=e531]:
+          - link "Imprint" [ref=e532] [cursor=pointer]:
+            - /url: /imprint/
+          - link "Privacy Policy" [ref=e533] [cursor=pointer]:
+            - /url: /privacy/
+          - link "CC-BY-NC-SA 4.0" [ref=e534] [cursor=pointer]:
+            - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+          - link "Commercial License" [ref=e535] [cursor=pointer]:
+            - /url: https://freelancer-automation.com
+          - link "Contact" [ref=e536] [cursor=pointer]:
+            - /url: mailto:hello@freelancer-templates.org

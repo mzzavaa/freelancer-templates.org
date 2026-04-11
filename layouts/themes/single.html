@@ -1,0 +1,241 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+{{ $themeName := .Params.themeName }}
+{{ $themeData := .Params.themeData }}
+
+<!-- Hero Section -->
+<section class="theme-hero" style="background: {{ $themeData.bg }};">
+  <div class="container">
+    <div class="theme-hero__content">
+      <div class="theme-hero__badge" style="background: {{ $themeData.accentGradient }}; color: {{ if $themeData.bgIsLight }}#ffffff{{ else }}#ffffff{{ end }};">
+        {{ .Params.groupLabel }}
+      </div>
+      <h1 class="theme-hero__title" style="color: {{ $themeData.textPrimary }};">{{ $themeData.displayName }} Theme</h1>
+      <p class="theme-hero__sub" style="color: {{ $themeData.textSecondary }};">
+        {{ .Description }}
+      </p>
+      <div class="theme-hero__actions">
+        <a href="{{ "player/" | relURL }}?theme={{ $themeName }}" class="btn btn--primary" style="background: {{ $themeData.accent }};">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Preview all templates
+        </a>
+        <a href="{{ "design-system/" | relURL }}" class="btn btn--outline" style="border-color: {{ $themeData.cardBorder }}; color: {{ $themeData.textPrimary }};">
+          View all themes
+        </a>
+      </div>
+    </div>
+    
+    <!-- Color Swatches -->
+    <div class="theme-hero__swatches">
+      <div class="theme-swatch" style="background: {{ $themeData.bg }};{{ if $themeData.bgIsLight }}border: 1px solid {{ $themeData.cardBorder }};{{ end }}" title="Background">
+        <span class="theme-swatch__label" style="color: {{ $themeData.textMuted }};">bg</span>
+      </div>
+      <div class="theme-swatch" style="background: {{ $themeData.textPrimary }};" title="Text Primary">
+        <span class="theme-swatch__label" style="color: {{ if $themeData.bgIsLight }}#ffffff{{ else }}#000000{{ end }};">text</span>
+      </div>
+      <div class="theme-swatch" style="background: {{ $themeData.accent }};" title="Accent">
+        <span class="theme-swatch__label" style="color: #ffffff;">accent</span>
+      </div>
+      <div class="theme-swatch" style="background: {{ $themeData.accentSecondary }};" title="Accent Secondary">
+        <span class="theme-swatch__label" style="color: #ffffff;">accent2</span>
+      </div>
+      <div class="theme-swatch theme-swatch--gradient" style="background: {{ $themeData.accentGradient }};" title="Gradient">
+        <span class="theme-swatch__label" style="color: #ffffff;">gradient</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Theme Details -->
+<section class="theme-details">
+  <div class="container">
+    <div class="theme-details__grid">
+      <div class="theme-detail-card">
+        <div class="theme-detail-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg>
+        </div>
+        <div class="theme-detail-card__content">
+          <span class="theme-detail-card__label">Card Shadow</span>
+          <code class="theme-detail-card__value">{{ if eq $themeData.cardShadow "none" }}none (flat){{ else }}elevated{{ end }}</code>
+        </div>
+      </div>
+      <div class="theme-detail-card">
+        <div class="theme-detail-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3M9 20h6M12 4v16"></path></svg>
+        </div>
+        <div class="theme-detail-card__content">
+          <span class="theme-detail-card__label">Heading Weight</span>
+          <code class="theme-detail-card__value">{{ $themeData.headingWeight }}</code>
+        </div>
+      </div>
+      <div class="theme-detail-card">
+        <div class="theme-detail-card__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+        </div>
+        <div class="theme-detail-card__content">
+          <span class="theme-detail-card__label">Constant</span>
+          <code class="theme-detail-card__value">{{ $themeData.constName }}</code>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Templates Grid -->
+<section class="theme-templates">
+  <div class="container">
+    <h2 class="theme-templates__title">All templates in {{ $themeData.displayName }}</h2>
+    <p class="theme-templates__sub">Every template below is available with the {{ $themeData.displayName }} theme. Click to preview in the player.</p>
+    
+    <div class="theme-templates__grid">
+      {{ $targetTheme := $themeName | lower }}
+      {{ range where .Site.Pages "Section" "library" }}
+        {{ if ne .File.ContentBaseName "_index" }}
+          {{ $templateTitle := .Title }}
+          {{ $templateIcon := .Params.icon }}
+          
+          {{/* Skip if no variants defined */}}
+          {{ if .Params.variants }}
+          {{/* Use where to find matching variant by style */}}
+          {{ $matchingVariants := where .Params.variants "style" $targetTheme }}
+          {{ $matchedVariant := index $matchingVariants 0 }}
+          
+          {{/* Only show templates that have a variant for this theme */}}
+          {{ with $matchedVariant }}
+          <a href="{{ "player/" | relURL }}?comp={{ .id }}" class="theme-template-card" data-variant-id="{{ .id }}">
+            <div class="theme-template-card__media">
+              {{/* Static preview image */}}
+              <img class="theme-template-card__img" 
+                   src="{{ (printf "previews/showcase/%s.png" .id) | relURL }}"
+                   alt="{{ $templateTitle }} - {{ .name }} preview" 
+                   loading="lazy"
+                   onerror="this.style.display='none';this.parentElement.querySelector('.theme-template-card__fallback').style.display='flex'">
+              {{/* Video preview for hover - hidden by default */}}
+              <video class="theme-template-card__video" 
+                     src="{{ (printf "previews/hero/%s.mp4" .id) | relURL }}"
+                     muted 
+                     loop 
+                     playsinline
+                     preload="none"></video>
+              {{/* Fallback icon if image fails to load */}}
+              <div class="theme-template-card__fallback" style="display:none;background:{{ $themeData.bg }};">
+                <i data-lucide="{{ $templateIcon }}" style="color:{{ $themeData.accent }};"></i>
+              </div>
+            </div>
+            <div class="theme-template-card__body">
+              <span class="theme-template-card__name">{{ $templateTitle }}</span>
+              <span class="theme-template-card__variant">{{ .name }}</span>
+            </div>
+          </a>
+          {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Code Example -->
+<section class="theme-code">
+  <div class="container">
+    <h2 class="theme-code__title">Use {{ $themeData.displayName }} in your code</h2>
+    <div class="ds-code-card">
+      <div class="ds-code-card__hd">
+        <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+        <span class="ds-code-card__label">Example usage</span>
+      </div>
+      <pre class="ds-code-card__body"><span class="ck">import</span> { {{ $themeData.constName }} } <span class="ck">from</span> <span class="cp">"../_shared/themes"</span>;
+
+<span class="cc">// Use with any template</span>
+&lt;<span class="ca">Testimonial</span>
+  spec={mySpec}
+  theme={ {{- $themeData.constName -}} }
+  layout=<span class="cp">"centered"</span>
+/&gt;
+
+<span class="cc">// Or use the THEMES registry</span>
+<span class="ck">const</span> theme = THEMES[<span class="cp">"{{ $themeName }}"</span>];</pre>
+    </div>
+  </div>
+</section>
+
+<!-- Related Themes -->
+<section class="theme-related">
+  <div class="container">
+    <h2 class="theme-related__title">More themes in {{ .Params.groupLabel }}</h2>
+    <div class="theme-related__grid">
+      {{ $currentTheme := $themeName }}
+      {{ $groupKey := .Params.groupKey }}
+      {{ range $key, $group := $.Site.Data.themes.groups }}
+        {{ if eq $key $groupKey }}
+          {{ range $group.themes }}
+            {{ if ne .name $currentTheme }}
+              <a href="{{ (printf "themes/%s/" .name) | relURL }}" class="theme-related-card" style="background: {{ .bg }};">
+                <div class="theme-related-card__gradient" style="background: {{ .accentGradient }};"></div>
+                <span class="theme-related-card__name" style="color: {{ .textPrimary }};">{{ .displayName }}</span>
+              </a>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* Video hover script */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.theme-template-card');
+  
+  cards.forEach(card => {
+    const video = card.querySelector('.theme-template-card__video');
+    const img = card.querySelector('.theme-template-card__img');
+    
+    if (!video) return;
+    
+    let videoLoaded = false;
+    let videoError = false;
+    
+    // Check if video exists by trying to load it
+    video.addEventListener('error', function() {
+      videoError = true;
+      video.style.display = 'none';
+    });
+    
+    video.addEventListener('loadeddata', function() {
+      videoLoaded = true;
+    });
+    
+    card.addEventListener('mouseenter', function() {
+      if (videoError) return;
+      
+      // Start loading if not already
+      if (video.preload === 'none') {
+        video.preload = 'auto';
+        video.load();
+      }
+      
+      // Show video and play
+      video.style.opacity = '1';
+      if (img) img.style.opacity = '0';
+      
+      video.play().catch(function() {
+        // If play fails, show image
+        video.style.opacity = '0';
+        if (img) img.style.opacity = '1';
+      });
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      video.pause();
+      video.currentTime = 0;
+      video.style.opacity = '0';
+      if (img) img.style.opacity = '1';
+    });
+  });
+});
+</script>
+
+{{ partial "site-footer.html" . }}
+{{ end }}
