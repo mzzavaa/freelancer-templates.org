@@ -117,7 +117,7 @@ export const GridCell: React.FC<GridCellProps> = ({
           background: theme.bgGlass,
           border: `1px solid ${theme.cardBorder}`,
           boxShadow: theme.cardShadow,
-          borderRadius: 12,
+          borderRadius: theme.borderRadius,
         }
       : {};
 

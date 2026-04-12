@@ -1,0 +1,99 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<!-- ============================================================
+     PREMIUM TIPS LANDING PAGE LAYOUT
+     A data-driven layout for rich, numbered-section landing pages.
+     Renders hero, numbered sections, and CTA from front matter.
+     Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 12.1, 12.2
+     ============================================================ -->
+
+<!-- ── Hero Section ──────────────────────────────────────────── -->
+{{ if .Params.hero }}
+  {{ partial "tips-hero.html" (dict
+    "category" .Params.hero.category
+    "icon" .Params.hero.icon
+    "title" .Params.hero.title
+    "description" .Params.hero.description
+    "tags" .Params.hero.tags
+    "video" .Params.hero.video
+    "videoFallback" .Params.hero.videoFallback
+    "breadcrumb" .Title
+  ) }}
+{{ else }}
+  <!-- Fallback hero using page title/description when hero config is missing -->
+  {{ partial "tips-hero.html" (dict
+    "category" (default "Design Tips" .Params.category)
+    "icon" (default "lightbulb" .Params.icon)
+    "title" .Title
+    "description" .Description
+    "breadcrumb" .Title
+  ) }}
+{{ end }}
+
+<!-- ── Numbered Sections ─────────────────────────────────────── -->
+{{ if .Params.sections }}
+  {{ range $index, $section := .Params.sections }}
+    {{/* Calculate section number (1-indexed, zero-padded) */}}
+    {{ $sectionNumber := default (add $index 1) $section.number }}
+    
+    {{/* Apply alternating backgrounds: odd indices (1, 3, 5...) get alt class */}}
+    {{ $isAlt := or $section.alt (eq (mod $index 2) 1) }}
+    
+    {{ partial "tips-section.html" (dict
+      "number" $sectionNumber
+      "title" $section.title
+      "description" $section.description
+      "columns" (default 2 $section.columns)
+      "cards" $section.cards
+      "alt" $isAlt
+    ) }}
+  {{ end }}
+{{ end }}
+
+<!-- ── Related Tips Section ──────────────────────────────────── -->
+{{ if .Params.relatedTips }}
+<section class="section section--alt">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+      "eyebrow" "Keep Learning"
+      "title" "Related tips"
+      "subtitle" "Continue exploring with these related guides and tutorials."
+    ) }}
+    
+    <div class="content-card-grid">
+      {{ range .Params.relatedTips }}
+        {{ partial "content-card.html" (dict
+          "href" (printf "/tips/%s/" .slug)
+          "image" (printf "/images/tips/%s.png" .slug)
+          "icon" .icon
+          "title" .title
+          "description" .description
+          "meta" .meta
+        ) }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ── CTA Section ───────────────────────────────────────────── -->
+{{ if .Params.cta }}
+  {{ partial "tips-cta.html" (dict
+    "title" .Params.cta.title
+    "description" .Params.cta.description
+    "buttons" .Params.cta.buttons
+  ) }}
+{{ else }}
+  <!-- Default CTA when not specified (graceful degradation) -->
+  {{ partial "tips-cta.html" (dict
+    "title" "Ready to start creating?"
+    "description" "Browse our full template library and find the perfect starting point for your next video project."
+    "buttons" (slice
+      (dict "text" "Browse Templates" "href" "/library/" "style" "primary" "icon" "grid")
+    )
+  ) }}
+{{ end }}
+
+{{ partial "site-footer.html" . }}
+{{ end }}

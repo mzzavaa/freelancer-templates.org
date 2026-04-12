@@ -82,56 +82,118 @@
   </div>
 </section>
 
-<!-- Templates Grid -->
-<section class="theme-templates">
+<!-- Templates in this Theme Section -->
+<section class="section">
   <div class="container">
-    <h2 class="theme-templates__title">All templates in {{ $themeData.displayName }}</h2>
-    <p class="theme-templates__sub">Every template below is available with the {{ $themeData.displayName }} theme. Click to preview in the player.</p>
-    
-    <div class="theme-templates__grid">
-      {{ $targetTheme := $themeName | lower }}
-      {{ range where .Site.Pages "Section" "library" }}
-        {{ if ne .File.ContentBaseName "_index" }}
-          {{ $templateTitle := .Title }}
-          {{ $templateIcon := .Params.icon }}
-          
-          {{/* Skip if no variants defined */}}
-          {{ if .Params.variants }}
-          {{/* Use where to find matching variant by style */}}
+    {{/* Count templates that have this theme */}}
+    {{ $targetTheme := $themeName | lower }}
+    {{ $templateCount := 0 }}
+    {{ range where .Site.Pages "Section" "library" }}
+      {{ if ne .File.ContentBaseName "_index" }}
+        {{ if .Params.variants }}
           {{ $matchingVariants := where .Params.variants "style" $targetTheme }}
-          {{ $matchedVariant := index $matchingVariants 0 }}
-          
-          {{/* Only show templates that have a variant for this theme */}}
-          {{ with $matchedVariant }}
-          <a href="{{ "player/" | relURL }}?comp={{ .id }}" class="theme-template-card" data-variant-id="{{ .id }}">
-            <div class="theme-template-card__media">
-              {{/* Static preview image */}}
-              <img class="theme-template-card__img" 
-                   src="{{ (printf "previews/showcase/%s.png" .id) | relURL }}"
-                   alt="{{ $templateTitle }} - {{ .name }} preview" 
-                   loading="lazy"
-                   onerror="this.style.display='none';this.parentElement.querySelector('.theme-template-card__fallback').style.display='flex'">
-              {{/* Video preview for hover - hidden by default */}}
-              <video class="theme-template-card__video" 
-                     src="{{ (printf "previews/hero/%s.mp4" .id) | relURL }}"
-                     muted 
-                     loop 
-                     playsinline
-                     preload="none"></video>
-              {{/* Fallback icon if image fails to load */}}
-              <div class="theme-template-card__fallback" style="display:none;background:{{ $themeData.bg }};">
-                <i data-lucide="{{ $templateIcon }}" style="color:{{ $themeData.accent }};"></i>
-              </div>
-            </div>
-            <div class="theme-template-card__body">
-              <span class="theme-template-card__name">{{ $templateTitle }}</span>
-              <span class="theme-template-card__variant">{{ .name }}</span>
-            </div>
-          </a>
-          {{ end }}
+          {{ if gt (len $matchingVariants) 0 }}
+            {{ $templateCount = add $templateCount 1 }}
           {{ end }}
         {{ end }}
       {{ end }}
+    {{ end }}
+    
+    {{ partial "section-header.html" (dict
+      "eyebrow" "Templates in this Theme"
+      "title" (printf "%d templates available in %s" $templateCount $themeData.displayName)
+      "subtitle" (printf "Every template below is available with the %s theme. Click to view the template details or preview in the player." $themeData.displayName)
+    ) }}
+    
+    <div class="content-card-grid">
+      {{ range where .Site.Pages "Section" "library" }}
+        {{ if ne .File.ContentBaseName "_index" }}
+          {{ $templatePage := . }}
+          {{ $templateTitle := .Title }}
+          {{ $templateIcon := .Params.icon }}
+          {{ $templateSlug := .Params.slug }}
+          {{ $templateDesc := .Description }}
+          {{ $variantCount := .Params.variantCount }}
+          
+          {{/* Skip if no variants defined */}}
+          {{ if .Params.variants }}
+            {{/* Use where to find matching variant by style */}}
+            {{ $matchingVariants := where .Params.variants "style" $targetTheme }}
+            {{ $matchedVariant := index $matchingVariants 0 }}
+            
+            {{/* Only show templates that have a variant for this theme */}}
+            {{ with $matchedVariant }}
+              {{ partial "content-card.html" (dict
+                "href" (printf "/library/%s/" $templateSlug)
+                "image" (printf "/previews/showcase/%s.png" .id)
+                "video" (printf "/previews/hero/%s.mp4" .id)
+                "icon" $templateIcon
+                "title" $templateTitle
+                "description" $templateDesc
+                "meta" (printf "%d variants" $variantCount)
+              ) }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Adapt this Theme Section -->
+<section class="section section--alt">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+      "eyebrow" "Customize"
+      "title" (printf "Adapt the %s theme" $themeData.displayName)
+      "subtitle" "Make this theme your own by customizing colors, fonts, and gradients."
+    ) }}
+    
+    <div class="adapt-theme">
+      <div class="adapt-theme__grid">
+        <div class="adapt-theme__card">
+          <div class="adapt-theme__icon">
+            <i data-lucide="palette"></i>
+          </div>
+          <h3 class="adapt-theme__title">Customize Colors</h3>
+          <p class="adapt-theme__desc">Modify the accent colors, backgrounds, and text colors to match your brand. All color values are defined in the theme configuration.</p>
+        </div>
+        
+        <div class="adapt-theme__card">
+          <div class="adapt-theme__icon">
+            <i data-lucide="type"></i>
+          </div>
+          <h3 class="adapt-theme__title">Change Fonts</h3>
+          <p class="adapt-theme__desc">Swap out the default fonts with your brand typography. The theme supports custom font families and weights.</p>
+        </div>
+        
+        <div class="adapt-theme__card">
+          <div class="adapt-theme__icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3 class="adapt-theme__title">Adjust Gradients</h3>
+          <p class="adapt-theme__desc">Create unique gradient combinations for accent elements. Define custom gradient directions and color stops.</p>
+        </div>
+        
+        <div class="adapt-theme__card">
+          <div class="adapt-theme__icon">
+            <i data-lucide="save"></i>
+          </div>
+          <h3 class="adapt-theme__title">Save as New Theme</h3>
+          <p class="adapt-theme__desc">Once customized, save your modifications as a new theme to reuse across all templates in your projects.</p>
+        </div>
+      </div>
+      
+      <div class="adapt-theme__cta">
+        <a href="{{ "customize/" | relURL }}" class="btn btn--primary btn--lg">
+          <i data-lucide="settings"></i>
+          Learn how to customize themes
+        </a>
+        <a href="{{ "design-system/" | relURL }}" class="btn btn--outline btn--lg">
+          <i data-lucide="book-open"></i>
+          View Design System docs
+        </a>
+      </div>
     </div>
   </div>
 </section>

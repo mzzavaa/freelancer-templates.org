@@ -1,0 +1,44 @@
+{{/*
+  ============================================================
+  TIPS CTA PARTIAL
+  Renders the call-to-action section at the bottom of premium tips pages.
+  
+  Parameters:
+  - title: string (required) - CTA headline
+  - description: string (required) - CTA description text
+  - buttons: []Button (required) - Array of action buttons
+  
+  Button Object:
+  - text: string (required) - Button label
+  - href: string (required) - Button link
+  - style: string (required) - "primary" or "outline"
+  - icon: string (optional) - Lucide icon name
+  
+  Requirements: 1.4, 8.4, 10.5
+  ============================================================
+*/}}
+
+{{/* Default values for graceful degradation */}}
+{{ $title := .title | default "Ready to start creating?" }}
+{{ $description := .description | default "Browse our full template library and find the perfect starting point for your next video project." }}
+{{ $buttons := .buttons | default (slice (dict "text" "Browse Templates" "href" "/library/" "style" "primary" "icon" "grid")) }}
+
+<section class="tips-cta-section">
+  <div class="container">
+    <div class="tips-cta-box">
+      <h2 class="tips-cta-box__title">{{ $title }}</h2>
+      <p class="tips-cta-box__desc">{{ $description }}</p>
+      
+      {{ if $buttons }}
+      <div class="tips-cta-box__actions">
+        {{ range $buttons }}
+          <a href="{{ .href | relURL }}" class="btn btn--{{ .style | default "primary" }} btn--lg">
+            {{ if .icon }}<i data-lucide="{{ .icon }}"></i>{{ end }}
+            {{ .text }}
+          </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -407,6 +407,58 @@
   </div>
 </section>
 
+<!-- ── Available Themes ─────────────────────────────────────────── -->
+<section class="tpl-themes-section">
+  <div class="container">
+    {{/* Extract unique theme styles from variants */}}
+    {{ $uniqueStyles := slice }}
+    {{ range .Params.variants }}
+      {{ if not (in $uniqueStyles .style) }}
+        {{ $uniqueStyles = $uniqueStyles | append .style }}
+      {{ end }}
+    {{ end }}
+    
+    {{ partial "section-header.html" (dict
+      "eyebrow" "Available Themes"
+      "title" (printf "This template in %d themes" (len $uniqueStyles))
+      "subtitle" "Click any theme to explore its full color palette and see all templates available in that style."
+    ) }}
+    
+    <div class="theme-grid">
+      {{/* Build a lookup map of theme name -> theme data from themegroups.yaml */}}
+      {{ $themeMap := dict }}
+      {{ range $.Site.Data.themegroups.groups }}
+        {{ range .themes }}
+          {{ $themeMap = merge $themeMap (dict .name .) }}
+        {{ end }}
+      {{ end }}
+      
+      {{ range $style := $uniqueStyles }}
+        {{ $themeData := index $themeMap $style }}
+        {{ if $themeData }}
+        <a href="{{ (printf "themes/%s/" $style) | relURL }}" class="theme-link-card">
+          <span class="theme-link-card__swatch" style="background: {{ $themeData.accent }};"></span>
+          <span class="theme-link-card__name">{{ $themeData.displayName }}</span>
+        </a>
+        {{ else }}
+        {{/* Fallback for themes not in themegroups.yaml */}}
+        <a href="{{ (printf "themes/%s/" $style) | relURL }}" class="theme-link-card">
+          <span class="theme-link-card__swatch" style="background: var(--accent);"></span>
+          <span class="theme-link-card__name">{{ $style | title }}</span>
+        </a>
+        {{ end }}
+      {{ end }}
+    </div>
+    
+    <div class="tpl-themes-cta">
+      <a href="{{ (printf "studio/?comp=%s-%s" .Params.camel .Params.primaryVariant) | relURL }}" class="btn btn--primary btn--lg">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Preview in Studio
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ── Remotion Studio CTA ────────────────────────────────────── -->
 <section class="tpl-studio-section">
   <div class="container">

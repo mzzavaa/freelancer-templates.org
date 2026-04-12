@@ -1,0 +1,358 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "freelancer-templates" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: freelancer
+        - emphasis [ref=e6]: "-templates"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Templates" [ref=e9] [cursor=pointer]:
+            - text: Templates
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - button "Themes" [ref=e13] [cursor=pointer]:
+            - text: Themes
+            - img [ref=e14]
+        - listitem [ref=e16]:
+          - link "Design Tips" [ref=e17] [cursor=pointer]:
+            - /url: /tips/
+        - listitem [ref=e18]:
+          - link "Studio" [ref=e19] [cursor=pointer]:
+            - /url: /studio/
+        - listitem [ref=e20]:
+          - link "Enterprise" [ref=e21] [cursor=pointer]:
+            - /url: /enterprise/
+      - generic [ref=e22]:
+        - button "Toggle dark mode" [ref=e23] [cursor=pointer]:
+          - img [ref=e25]
+        - link "Customize templates" [ref=e31] [cursor=pointer]:
+          - /url: /customize/
+          - img [ref=e32]
+          - generic [ref=e33]: Customize
+        - link "My Brands" [ref=e34] [cursor=pointer]:
+          - /url: /my-brands/
+          - img [ref=e35]
+          - generic [ref=e39]: My Brands
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - img [ref=e44]
+      - text: Design Tips
+    - heading "Learn to create stunning videos" [level=1] [ref=e46]
+    - paragraph [ref=e47]: Tutorials, customization guides, and inspiration to help you get the most out of the template library.
+    - generic [ref=e48]:
+      - link "Browse Tutorials" [ref=e49] [cursor=pointer]:
+        - /url: "#tutorials"
+        - img [ref=e50]
+        - text: Browse Tutorials
+      - link "View Inspiration" [ref=e53] [cursor=pointer]:
+        - /url: "#inspiration"
+        - img [ref=e54]
+        - text: View Inspiration
+  - generic [ref=e57]:
+    - generic [ref=e58]:
+      - generic [ref=e59]: Remotion Tutorials
+      - heading "Master the tools" [level=2] [ref=e60]
+      - paragraph [ref=e61]: Step-by-step guides for Remotion Studio, CLI rendering, and Lambda deployment.
+    - generic [ref=e62]:
+      - link "Remotion Studio Basics Beginner Remotion Studio Basics Learn to navigate the Studio interface, preview compositions, and adjust props in real-time." [ref=e63] [cursor=pointer]:
+        - /url: /tips/remotion-studio-basics/
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - img [ref=e66]
+            - generic [ref=e69]: Remotion Studio Basics
+          - generic [ref=e70]: Beginner
+        - generic [ref=e71]:
+          - img [ref=e73]
+          - generic [ref=e76]:
+            - generic [ref=e77]: Remotion Studio Basics
+            - generic [ref=e78]: Learn to navigate the Studio interface, preview compositions, and adjust props in real-time.
+      - link "CLI Rendering Guide Intermediate CLI Rendering Guide Render videos from the command line with custom settings, formats, and quality options." [ref=e79] [cursor=pointer]:
+        - /url: /tips/cli-rendering/
+        - generic [ref=e80]:
+          - generic [ref=e81]:
+            - img [ref=e82]
+            - generic [ref=e84]: CLI Rendering Guide
+          - generic [ref=e85]: Intermediate
+        - generic [ref=e86]:
+          - img [ref=e88]
+          - generic [ref=e90]:
+            - generic [ref=e91]: CLI Rendering Guide
+            - generic [ref=e92]: Render videos from the command line with custom settings, formats, and quality options.
+      - link "Lambda Deployment Advanced Lambda Deployment Deploy your rendering pipeline to AWS Lambda for scalable, serverless video generation." [ref=e93] [cursor=pointer]:
+        - /url: /tips/lambda-deployment/
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - img [ref=e96]
+            - generic [ref=e98]: Lambda Deployment
+          - generic [ref=e99]: Advanced
+        - generic [ref=e100]:
+          - img [ref=e102]
+          - generic [ref=e104]:
+            - generic [ref=e105]: Lambda Deployment
+            - generic [ref=e106]: Deploy your rendering pipeline to AWS Lambda for scalable, serverless video generation.
+      - link "Composition Structure Beginner Composition Structure Understand how compositions, sequences, and scenes work together in Remotion." [ref=e107] [cursor=pointer]:
+        - /url: /tips/composition-structure/
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - img [ref=e110]
+            - generic [ref=e114]: Composition Structure
+          - generic [ref=e115]: Beginner
+        - generic [ref=e116]:
+          - img [ref=e118]
+          - generic [ref=e122]:
+            - generic [ref=e123]: Composition Structure
+            - generic [ref=e124]: Understand how compositions, sequences, and scenes work together in Remotion.
+  - generic [ref=e126]:
+    - generic [ref=e127]:
+      - generic [ref=e128]: Template Customization
+      - heading "Make it yours" [level=2] [ref=e129]
+      - paragraph [ref=e130]: Learn to edit props, create custom themes, and modify layouts.
+    - generic [ref=e131]:
+      - link "Editing Props Beginner Editing Props Customize text, colors, images, and timing through the props interface." [ref=e132] [cursor=pointer]:
+        - /url: /tips/editing-props/
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - img [ref=e135]
+            - generic [ref=e136]: Editing Props
+          - generic [ref=e137]: Beginner
+        - generic [ref=e138]:
+          - img [ref=e140]
+          - generic [ref=e141]:
+            - generic [ref=e142]: Editing Props
+            - generic [ref=e143]: Customize text, colors, images, and timing through the props interface.
+      - link "Creating Custom Themes Intermediate Creating Custom Themes Build your own theme with custom colors, gradients, and typography." [ref=e144] [cursor=pointer]:
+        - /url: /tips/custom-themes/
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - img [ref=e147]
+            - generic [ref=e153]: Creating Custom Themes
+          - generic [ref=e154]: Intermediate
+        - generic [ref=e155]:
+          - img [ref=e157]
+          - generic [ref=e163]:
+            - generic [ref=e164]: Creating Custom Themes
+            - generic [ref=e165]: Build your own theme with custom colors, gradients, and typography.
+      - link "Layout Modifications Intermediate Layout Modifications Adjust positioning, sizing, and arrangement of elements in templates." [ref=e166] [cursor=pointer]:
+        - /url: /tips/layout-modifications/
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - img [ref=e169]
+            - generic [ref=e171]: Layout Modifications
+          - generic [ref=e172]: Intermediate
+        - generic [ref=e173]:
+          - img [ref=e175]
+          - generic [ref=e177]:
+            - generic [ref=e178]: Layout Modifications
+            - generic [ref=e179]: Adjust positioning, sizing, and arrangement of elements in templates.
+      - link "Brand Integration Beginner Brand Integration Incorporate your brand assets, logos, and style guidelines into templates." [ref=e180] [cursor=pointer]:
+        - /url: /tips/brand-integration/
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - img [ref=e183]
+            - generic [ref=e186]: Brand Integration
+          - generic [ref=e187]: Beginner
+        - generic [ref=e188]:
+          - img [ref=e190]
+          - generic [ref=e193]:
+            - generic [ref=e194]: Brand Integration
+            - generic [ref=e195]: Incorporate your brand assets, logos, and style guidelines into templates.
+  - generic [ref=e197]:
+    - generic [ref=e198]:
+      - generic [ref=e199]: Inspiration Gallery
+      - heading "See what's possible" [level=2] [ref=e200]
+      - paragraph [ref=e201]: Example videos and creative use cases from the community.
+    - generic [ref=e202]:
+      - link "Client Testimonials preview Showcase Client Testimonials See how creators use testimonial templates to build social proof." [ref=e203] [cursor=pointer]:
+        - /url: /tips/showcase-testimonials/
+        - generic [ref=e204]:
+          - img "Client Testimonials preview" [ref=e205]
+          - generic [ref=e206]: Showcase
+        - generic [ref=e207]:
+          - img [ref=e209]
+          - generic [ref=e211]:
+            - generic [ref=e212]: Client Testimonials
+            - generic [ref=e213]: See how creators use testimonial templates to build social proof.
+      - link "Product Launches preview Showcase Product Launches Explore announcement and launch videos created with our templates." [ref=e214] [cursor=pointer]:
+        - /url: /tips/showcase-product-launches/
+        - generic [ref=e215]:
+          - img "Product Launches preview" [ref=e216]
+          - generic [ref=e217]: Showcase
+        - generic [ref=e218]:
+          - img [ref=e220]
+          - generic [ref=e225]:
+            - generic [ref=e226]: Product Launches
+            - generic [ref=e227]: Explore announcement and launch videos created with our templates.
+      - link "Social Media Content preview Showcase Social Media Content Instagram reels, TikToks, and YouTube shorts made with templates." [ref=e228] [cursor=pointer]:
+        - /url: /tips/showcase-social-content/
+        - generic [ref=e229]:
+          - img "Social Media Content preview" [ref=e230]
+          - generic [ref=e231]: Showcase
+        - generic [ref=e232]:
+          - img [ref=e234]
+          - generic [ref=e240]:
+            - generic [ref=e241]: Social Media Content
+            - generic [ref=e242]: Instagram reels, TikToks, and YouTube shorts made with templates.
+      - link "Educational Content preview Showcase Educational Content Tutorials, explainers, and course content created by educators." [ref=e243] [cursor=pointer]:
+        - /url: /tips/showcase-educational/
+        - generic [ref=e244]:
+          - img "Educational Content preview" [ref=e245]
+          - generic [ref=e246]: Showcase
+        - generic [ref=e247]:
+          - img [ref=e249]
+          - generic [ref=e252]:
+            - generic [ref=e253]: Educational Content
+            - generic [ref=e254]: Tutorials, explainers, and course content created by educators.
+  - generic [ref=e256]:
+    - generic [ref=e257]:
+      - generic [ref=e258]: Featured Projects
+      - heading "Community highlights" [level=2] [ref=e259]
+      - paragraph [ref=e260]: Standout projects and case studies from template users.
+    - generic [ref=e261]:
+      - link "Agency Workflow preview Case Study Agency Workflow How a creative agency automated their video production pipeline." [ref=e262] [cursor=pointer]:
+        - /url: /tips/project-agency-workflow/
+        - generic [ref=e263]:
+          - img "Agency Workflow preview" [ref=e264]
+          - generic [ref=e265]: Case Study
+        - generic [ref=e266]:
+          - img [ref=e268]
+          - generic [ref=e272]:
+            - generic [ref=e273]: Agency Workflow
+            - generic [ref=e274]: How a creative agency automated their video production pipeline.
+      - link "Content Creator Setup preview Case Study Content Creator Setup A YouTuber's system for producing consistent branded content." [ref=e275] [cursor=pointer]:
+        - /url: /tips/project-content-creator/
+        - generic [ref=e276]:
+          - img "Content Creator Setup preview" [ref=e277]
+          - generic [ref=e278]: Case Study
+        - generic [ref=e279]:
+          - img [ref=e281]
+          - generic [ref=e284]:
+            - generic [ref=e285]: Content Creator Setup
+            - generic [ref=e286]: A YouTuber's system for producing consistent branded content.
+      - link "SaaS Marketing preview Case Study SaaS Marketing How a startup scaled their video marketing with templates." [ref=e287] [cursor=pointer]:
+        - /url: /tips/project-saas-marketing/
+        - generic [ref=e288]:
+          - img "SaaS Marketing preview" [ref=e289]
+          - generic [ref=e290]: Case Study
+        - generic [ref=e291]:
+          - img [ref=e293]
+          - generic [ref=e296]:
+            - generic [ref=e297]: SaaS Marketing
+            - generic [ref=e298]: How a startup scaled their video marketing with templates.
+      - link "Freelancer Portfolio preview Case Study Freelancer Portfolio Building a video portfolio that wins clients." [ref=e299] [cursor=pointer]:
+        - /url: /tips/project-freelancer-portfolio/
+        - generic [ref=e300]:
+          - img "Freelancer Portfolio preview" [ref=e301]
+          - generic [ref=e302]: Case Study
+        - generic [ref=e303]:
+          - img [ref=e305]
+          - generic [ref=e308]:
+            - generic [ref=e309]: Freelancer Portfolio
+            - generic [ref=e310]: Building a video portfolio that wins clients.
+  - generic [ref=e313]:
+    - heading "Ready to start creating?" [level=2] [ref=e314]
+    - paragraph [ref=e315]: Browse our full template library and find the perfect starting point for your next video project.
+    - link "Browse Templates" [ref=e316] [cursor=pointer]:
+      - /url: /library/
+      - img [ref=e317]
+      - text: Browse Templates
+  - contentinfo [ref=e320]:
+    - generic [ref=e321]:
+      - navigation "Secondary navigation" [ref=e322]:
+        - list [ref=e323]:
+          - listitem [ref=e324]:
+            - link "Use Cases" [ref=e325] [cursor=pointer]:
+              - /url: /use-cases/
+              - img [ref=e326]
+              - text: Use Cases
+          - listitem [ref=e329]:
+            - link "Design System" [ref=e330] [cursor=pointer]:
+              - /url: /design-system/
+              - img [ref=e331]
+              - text: Design System
+      - generic [ref=e337]:
+        - generic [ref=e338]:
+          - generic [ref=e339]:
+            - text: freelancer
+            - emphasis [ref=e340]: "-templates"
+          - paragraph [ref=e341]: Free, open-source template library for freelancers and communities. Documents, Remotion video compositions, and everything in between.
+          - generic [ref=e342]:
+            - link "GitHub" [ref=e343] [cursor=pointer]:
+              - /url: https://github.com/mzzavaa/freelancer-templates.org
+              - img [ref=e344]
+            - link "Twitter / X" [ref=e347] [cursor=pointer]:
+              - /url: https://twitter.com/
+              - img [ref=e348]
+            - link "LinkedIn" [ref=e350] [cursor=pointer]:
+              - /url: https://linkedin.com/
+              - img [ref=e351]
+        - generic [ref=e355]:
+          - generic [ref=e356]: Templates
+          - list [ref=e357]:
+            - listitem [ref=e358]:
+              - link "Contracts" [ref=e359] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e360]:
+              - link "Proposals" [ref=e361] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e362]:
+              - link "Invoices" [ref=e363] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e364]:
+              - link "Email Scripts" [ref=e365] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e366]:
+              - link "Notion Templates" [ref=e367] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e368]:
+              - link "Remotion Library" [ref=e369] [cursor=pointer]:
+                - /url: /#remotion
+        - generic [ref=e370]:
+          - generic [ref=e371]: SISY Ecosystem
+          - list [ref=e372]:
+            - listitem [ref=e373]:
+              - link "freelancer-automation.com" [ref=e374] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e375]:
+              - link "ai-workshops.digital" [ref=e376] [cursor=pointer]:
+                - /url: https://ai-workshops.digital
+            - listitem [ref=e377]:
+              - link "sisy.digital" [ref=e378] [cursor=pointer]:
+                - /url: https://sisy.digital
+            - listitem [ref=e379]:
+              - link "sisy.best" [ref=e380] [cursor=pointer]:
+                - /url: https://sisy.best
+        - generic [ref=e381]:
+          - generic [ref=e382]: Resources
+          - list [ref=e383]:
+            - listitem [ref=e384]:
+              - link "GitHub Repository" [ref=e385] [cursor=pointer]:
+                - /url: https://github.com/mzzavaa/freelancer-templates.org
+            - listitem [ref=e386]:
+              - link "Use Cases" [ref=e387] [cursor=pointer]:
+                - /url: /use-cases/
+            - listitem [ref=e388]:
+              - link "CC-BY-NC-SA License" [ref=e389] [cursor=pointer]:
+                - /url: /#license
+            - listitem [ref=e390]:
+              - link "License Text" [ref=e391] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - listitem [ref=e392]:
+              - link "Commercial License" [ref=e393] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e394]:
+              - link "Contact" [ref=e395] [cursor=pointer]:
+                - /url: mailto:hello@freelancer-templates.org
+      - generic [ref=e396]:
+        - generic [ref=e397]: © 2026 freelancer-templates.org - Licensed under CC-BY-NC-SA 4.0
+        - generic [ref=e398]:
+          - link "Imprint" [ref=e399] [cursor=pointer]:
+            - /url: /imprint/
+          - link "Privacy Policy" [ref=e400] [cursor=pointer]:
+            - /url: /privacy/
+          - link "CC-BY-NC-SA 4.0" [ref=e401] [cursor=pointer]:
+            - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+          - link "Commercial License" [ref=e402] [cursor=pointer]:
+            - /url: https://freelancer-automation.com
+          - link "Contact" [ref=e403] [cursor=pointer]:
+            - /url: mailto:hello@freelancer-templates.org

@@ -1,0 +1,5 @@
+# Overlay components for tutorial videos
+# - CursorOverlay.tsx: Animated cursor with click indicators
+# - ZoomEffect.tsx: Smooth zoom in/out animations
+# - HighlightBox.tsx: Pulsing highlight rectangles
+# - AnnotationOverlay.tsx: Text labels and arrows

@@ -1,0 +1,55 @@
+{{/*
+  Content Card Partial
+  
+  A reusable card component for displaying content items across Templates, Themes, and Design Tips sections.
+  
+  Parameters:
+  - href: Link destination (required)
+  - image: Preview image URL (required)
+  - video: Preview video URL (optional, plays on hover)
+  - icon: Lucide icon name (required)
+  - title: Card title (required)
+  - description: Card description (required)
+  - meta: Metadata text, e.g., "16 variants" (optional)
+  - category: Category slug for color coding, e.g., "client-work" (optional)
+  
+  Usage:
+  {{ partial "content-card.html" (dict
+    "href" "/library/testimonial/"
+    "image" "/previews/showcase/Testimonial-NeonSplit.png"
+    "video" "/previews/hero/Testimonial-NeonSplit.mp4"
+    "icon" "message-square"
+    "title" "Testimonial"
+    "description" "Client quotes and social proof"
+    "meta" "16 variants"
+    "category" "client-work"
+  ) }}
+  
+  Requirements: 8.1, 8.2, 8.3, 8.4, 8.5
+*/}}
+
+<a href="{{ .href }}" class="content-card{{ if .category }} content-card--{{ .category }}{{ end }}" data-name="{{ lower .title }}">
+  <div class="content-card__media">
+    <img src="{{ .image }}" alt="{{ .title }} preview" class="content-card__img" loading="lazy"
+         onerror="this.style.display='none';if(this.nextElementSibling)this.nextElementSibling.style.display='none';this.parentElement.querySelector('.content-card__fallback').style.display='flex';">
+    {{ if .video }}
+    <video class="content-card__vid" muted loop playsinline preload="none">
+      <source src="{{ .video }}" type="video/mp4">
+    </video>
+    {{ end }}
+    <div class="content-card__fallback">
+      <i data-lucide="{{ .icon }}"></i>
+      <span>{{ .title }}</span>
+    </div>
+    {{ if .meta }}
+    <div class="content-card__meta">{{ .meta }}</div>
+    {{ end }}
+  </div>
+  <div class="content-card__body">
+    <div class="content-card__icon"><i data-lucide="{{ .icon }}"></i></div>
+    <div class="content-card__info">
+      <div class="content-card__title">{{ .title }}</div>
+      <div class="content-card__desc">{{ .description }}</div>
+    </div>
+  </div>
+</a>

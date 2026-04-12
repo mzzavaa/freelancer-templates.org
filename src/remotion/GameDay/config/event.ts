@@ -8,7 +8,59 @@
  * For a new edition, update:
  *   EVENT_EDITION, EVENT_DATE, HOST_TIMEZONE, HOST_LOCATION,
  *   and the offset constants below.
+ *
+ * @see Requirements: 11.1-11.8
  */
+
+import type { BrandKit } from "../../themes";
+import { ThemeFactory, THEME_DARK } from "../../themes";
+
+// ══════════════════════════════════════════════════════════════════════════════
+// GAMEDAY BRANDKIT & THEME
+// Custom branding for AWS Community GameDay Europe
+// ══════════════════════════════════════════════════════════════════════════════
+
+/**
+ * GameDay BrandKit - Custom brand colors for AWS Community GameDay Europe.
+ *
+ * These colors are derived from the GameDay design system and can be used
+ * to create custom themes via ThemeFactory.createFromBrandKit().
+ *
+ * Color Reference (from src/remotion/GameDay/src/design/colors.ts):
+ * - GD_DARK = "#0c0820" (background)
+ * - GD_PURPLE = "#6c3fa0" (primary)
+ * - GD_VIOLET = "#8b5cf6" (secondary)
+ * - GD_PINK = "#d946ef" (accent)
+ * - GD_ORANGE = "#ff9900" (AWS orange)
+ *
+ * @see Requirements: 11.1-11.8
+ */
+export const GAMEDAY_BRANDKIT: BrandKit = {
+  primaryColor: "#6c3fa0",    // GD_PURPLE - primary accent
+  secondaryColor: "#d946ef",  // GD_PINK - gradient end
+  accentColor: "#8b5cf6",     // GD_VIOLET - secondary accent
+  bgColor: "#0c0820",         // GD_DARK - deep purple background
+  textColor: "#ffffff",       // White text for dark background
+};
+
+/**
+ * GameDay Theme - Custom theme created from THEME_DARK + GAMEDAY_BRANDKIT.
+ *
+ * This demonstrates the BrandKit integration pattern where a base theme
+ * is customized with event-specific colors. The ThemeFactory automatically
+ * derives secondary colors (bgSecondary, bgGlass, textSecondary, textMuted,
+ * cardBorder, accentGradient) from the BrandKit values.
+ *
+ * @see Requirements: 11.1-11.8
+ */
+export const GAMEDAY_THEME = ThemeFactory.createFromBrandKit(
+  THEME_DARK,
+  GAMEDAY_BRANDKIT
+);
+
+// ══════════════════════════════════════════════════════════════════════════════
+// EVENT CONFIGURATION
+// ══════════════════════════════════════════════════════════════════════════════
 
 export const EVENT_NAME = "AWS Community GameDay Europe";
 

@@ -1,0 +1,540 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "freelancer-templates" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: freelancer
+        - emphasis [ref=e6]: "-templates"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Templates" [ref=e9] [cursor=pointer]:
+            - text: Templates
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - button "Themes" [ref=e13] [cursor=pointer]:
+            - text: Themes
+            - img [ref=e14]
+        - listitem [ref=e16]:
+          - link "Design Tips" [ref=e17] [cursor=pointer]:
+            - /url: /tips/
+        - listitem [ref=e18]:
+          - link "Studio" [ref=e19] [cursor=pointer]:
+            - /url: /studio/
+        - listitem [ref=e20]:
+          - link "Enterprise" [ref=e21] [cursor=pointer]:
+            - /url: /enterprise/
+      - generic [ref=e22]:
+        - button "Toggle dark mode" [ref=e23] [cursor=pointer]:
+          - img [ref=e25]
+        - link "Customize templates" [ref=e31] [cursor=pointer]:
+          - /url: /customize/
+          - img [ref=e32]
+          - generic [ref=e33]: Customize
+        - link "My Brands" [ref=e34] [cursor=pointer]:
+          - /url: /my-brands/
+          - img [ref=e35]
+          - generic [ref=e39]: My Brands
+  - generic [ref=e41]:
+    - navigation "Breadcrumb" [ref=e42]:
+      - link "Tips" [ref=e43] [cursor=pointer]:
+        - /url: /tips/
+      - generic [ref=e44]: ›
+      - generic [ref=e45]: Freelancer Portfolio
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - img [ref=e49]
+        - text: Featured Projects
+      - heading "Building a Client-Winning Portfolio" [level=1] [ref=e52]
+      - paragraph [ref=e53]: Follow Marcus Chen's journey from struggling freelancer to $15K+ monthly retainers. Learn his systematic approach to portfolio building—from strategic spec work creation to niche-specific landing pages—and discover how templates transformed his client acquisition funnel.
+      - generic [ref=e54]:
+        - generic [ref=e55]: Freelancer
+        - generic [ref=e56]: Portfolio
+        - generic [ref=e57]: Client Acquisition
+        - generic [ref=e58]: Case Study
+        - generic [ref=e59]: Personal Brand
+  - generic [ref=e61]:
+    - generic [ref=e62]:
+      - generic [ref=e63]: "01"
+      - generic [ref=e64]:
+        - heading "Portfolio Goals and Challenges" [level=2] [ref=e65]
+        - paragraph [ref=e66]: Marcus Chen, a freelance video editor specializing in social media content, faced common freelancer struggles that limited his growth and earning potential.
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]: Rule
+        - heading "The Scattered Portfolio Problem" [level=3] [ref=e70]
+        - paragraph [ref=e71]: Most freelancers store work samples across multiple platforms—Google Drive, Vimeo, client accounts—creating a fragmented, unprofessional presentation. This scattered approach makes it impossible for potential clients to evaluate your capabilities quickly.
+        - generic [ref=e72]: Freelance Portfolio Research
+      - generic [ref=e73]:
+        - generic [ref=e74]: This project
+        - 'heading "Before: Key Pain Points" [level=3] [ref=e75]'
+        - paragraph [ref=e76]: Marcus struggled with fundamental portfolio challenges that affected every client interaction.
+        - list [ref=e77]:
+          - listitem [ref=e78]: Videos spread across Google Drive, Vimeo, and client accounts
+          - listitem [ref=e79]: No cohesive presentation or visual identity
+          - listitem [ref=e80]: Client permission issues limiting what could be shared
+          - listitem [ref=e81]: Best work buried under older, weaker projects
+      - generic [ref=e82]:
+        - generic [ref=e83]: Tip
+        - heading "The Perception Gap" [level=3] [ref=e84]
+        - paragraph [ref=e85]: "\"I was doing great work, but my portfolio didn't reflect it. Potential clients would see my samples and assume I was a beginner.\" — Marcus Chen"
+      - generic [ref=e86]:
+        - generic [ref=e87]: This project
+        - heading "Baseline Conversion Metrics" [level=3] [ref=e88]
+        - paragraph [ref=e89]: Starting point measurements that revealed the portfolio's ineffectiveness.
+        - table [ref=e91]:
+          - rowgroup [ref=e92]:
+            - row "Funnel Stage Rate" [ref=e93]:
+              - columnheader "Funnel Stage" [ref=e94]
+              - columnheader "Rate" [ref=e95]
+          - rowgroup [ref=e96]:
+            - row "Portfolio views 100%" [ref=e97]:
+              - cell "Portfolio views" [ref=e98]
+              - cell "100%" [ref=e99]
+            - row "Inquiry sent 8%" [ref=e100]:
+              - cell "Inquiry sent" [ref=e101]
+              - cell "8%" [ref=e102]
+            - row "Discovery call booked 40%" [ref=e103]:
+              - cell "Discovery call booked" [ref=e104]
+              - cell "40%" [ref=e105]
+            - row "Proposal accepted 25%" [ref=e106]:
+              - cell "Proposal accepted" [ref=e107]
+              - cell "25%" [ref=e108]
+            - row "Overall conversion 0.8%" [ref=e109]:
+              - cell "Overall conversion" [ref=e110]
+              - cell "0.8%" [ref=e111]
+      - generic [ref=e112]:
+        - generic [ref=e113]: Rule
+        - heading "Commodity Perception" [level=3] [ref=e114]
+        - paragraph [ref=e115]: Without differentiation, freelancers compete on price alone. A generic portfolio signals 'just another editor' rather than a specialist who commands premium rates. The portfolio must position you as the obvious choice for your target clients.
+        - generic [ref=e116]: Freelance Positioning Strategy
+      - generic [ref=e117]:
+        - generic [ref=e118]: This project
+        - heading "Revenue Limitations" [level=3] [ref=e119]
+        - paragraph [ref=e120]: The weak portfolio directly impacted Marcus's earning potential.
+        - list [ref=e121]:
+          - listitem [ref=e122]: "Monthly retainer revenue: $3,200"
+          - listitem [ref=e123]: "Average project value: $800"
+          - listitem [ref=e124]: Only 2 retainer clients
+          - listitem [ref=e125]: "Effective hourly rate: $45"
+  - generic [ref=e127]:
+    - generic [ref=e128]:
+      - generic [ref=e129]: "02"
+      - generic [ref=e130]:
+        - heading "Template Selection Strategy" [level=2] [ref=e131]
+        - paragraph [ref=e132]: Instead of relying solely on client work, Marcus created strategic spec pieces using templates to demonstrate his capabilities to ideal clients.
+    - generic [ref=e133]:
+      - generic [ref=e134]:
+        - generic [ref=e135]: Rule
+        - heading "Spec Work Beats Old Client Work" [level=3] [ref=e136]
+        - paragraph [ref=e137]: Fresh, targeted spec pieces outperform dated client projects every time. Spec work lets you demonstrate exactly the skills your ideal clients need, without waiting for the perfect project to come along.
+        - generic [ref=e138]: Portfolio Development Best Practices
+      - generic [ref=e139]:
+        - generic [ref=e140]: This project
+        - heading "Spec Portfolio Structure" [level=3] [ref=e141]
+        - paragraph [ref=e142]: Marcus built a targeted library covering his ideal client niches.
+        - table [ref=e144]:
+          - rowgroup [ref=e145]:
+            - row "Niche Pieces Platforms" [ref=e146]:
+              - columnheader "Niche" [ref=e147]
+              - columnheader "Pieces" [ref=e148]
+              - columnheader "Platforms" [ref=e149]
+          - rowgroup [ref=e150]:
+            - row "Business coaches 5 Instagram, TikTok" [ref=e151]:
+              - cell "Business coaches" [ref=e152]
+              - cell "5" [ref=e153]
+              - cell "Instagram, TikTok" [ref=e154]
+            - row "Course creators 4 YouTube, Instagram" [ref=e155]:
+              - cell "Course creators" [ref=e156]
+              - cell "4" [ref=e157]
+              - cell "YouTube, Instagram" [ref=e158]
+            - row "SaaS companies 3 LinkedIn, Twitter" [ref=e159]:
+              - cell "SaaS companies" [ref=e160]
+              - cell "3" [ref=e161]
+              - cell "LinkedIn, Twitter" [ref=e162]
+            - row "E-commerce 3 Instagram, TikTok" [ref=e163]:
+              - cell "E-commerce" [ref=e164]
+              - cell "3" [ref=e165]
+              - cell "Instagram, TikTok" [ref=e166]
+      - generic [ref=e167]:
+        - generic [ref=e168]: Tip
+        - heading "The 80/20 Approach" [level=3] [ref=e169]
+        - paragraph [ref=e170]: Focus on creating 3-5 exceptional pieces per target niche rather than dozens of mediocre samples. Quality signals expertise; quantity signals desperation.
+      - generic [ref=e171]:
+        - generic [ref=e172]: This project
+        - heading "Template Selection Criteria" [level=3] [ref=e173]
+        - paragraph [ref=e174]: Each spec piece was strategically chosen to demonstrate specific skills.
+        - list [ref=e175]:
+          - listitem [ref=e176]: Kinetic typography for attention-grabbing hooks
+          - listitem [ref=e177]: Brand color integration for customization ability
+          - listitem [ref=e178]: Hook optimization for platform expertise
+          - listitem [ref=e179]: CTA design for conversion understanding
+      - generic [ref=e180]:
+        - generic [ref=e181]: Rule
+        - heading "Platform-Specific Expertise" [level=3] [ref=e182]
+        - paragraph [ref=e183]: Create spec pieces in the exact formats your clients need. A coach looking for Instagram Reels wants to see Instagram Reels—not YouTube videos or generic samples that require imagination to translate.
+        - generic [ref=e184]: Niche Marketing Strategy
+      - generic [ref=e185]:
+        - generic [ref=e186]: Tip
+        - heading "Templates Used" [level=3] [ref=e187]
+        - paragraph [ref=e188]: "Marcus leveraged these templates for his spec portfolio: Social Proof for testimonial compilations, Course Promo for educational content, Announcement for launch videos, Quote Card for testimonial highlights, and Call to Action for conversion-focused endings."
+  - generic [ref=e190]:
+    - generic [ref=e191]:
+      - generic [ref=e192]: "03"
+      - generic [ref=e193]:
+        - heading "Personal Branding System" [level=2] [ref=e194]
+        - paragraph [ref=e195]: Marcus developed a case study framework and niche-specific landing pages that positioned him as a specialist rather than a generalist.
+    - generic [ref=e196]:
+      - generic [ref=e197]:
+        - generic [ref=e198]: Rule
+        - heading "Case Studies Add Context" [level=3] [ref=e199]
+        - paragraph [ref=e200]: Showing process builds trust and justifies pricing. A video sample shows what you made; a case study shows how you think. Clients buy your strategic thinking, not just your execution skills.
+        - generic [ref=e201]: Freelance Positioning Guide
+      - generic [ref=e202]:
+        - generic [ref=e203]: This project
+        - heading "Case Study Framework" [level=3] [ref=e204]
+        - paragraph [ref=e205]: Each portfolio piece includes a mini case study with four components.
+        - list [ref=e206]:
+          - listitem [ref=e207]: "The Brief: What the client needed or problem solved"
+          - listitem [ref=e208]: "The Approach: How the creative challenge was tackled"
+          - listitem [ref=e209]: "The Execution: Technical details and creative decisions"
+          - listitem [ref=e210]: "The Results: Metrics, feedback, or intended outcomes"
+      - generic [ref=e211]:
+        - generic [ref=e212]: This project
+        - heading "Example Case Study" [level=3] [ref=e213]
+        - paragraph [ref=e214]: "Spec: Coach Launch Reel — Created a high-converting Instagram Reel for a business coach launching a new program. Used hook-problem-solution-CTA framework with kinetic typography. Custom color palette, 3-second bold claim hook, animated benefit bullets. Designed for 15-30% higher completion rates."
+      - generic [ref=e215]:
+        - generic [ref=e216]: Tip
+        - heading "Niche Landing Pages" [level=3] [ref=e217]
+        - paragraph [ref=e218]: "Marcus created dedicated portfolio pages for each target market: /portfolio/coaches/, /portfolio/course-creators/, /portfolio/saas/, and /portfolio/ecommerce/. Each page speaks directly to that audience's specific needs."
+      - generic [ref=e219]:
+        - generic [ref=e220]: Rule
+        - heading "Niche Pages Convert Better" [level=3] [ref=e221]
+        - paragraph [ref=e222]: Coaches want to see coach content, not generic samples. A dedicated landing page with niche-specific headline, relevant samples, testimonials from that industry, and tailored pricing packages dramatically outperforms a one-size-fits-all portfolio.
+        - generic [ref=e223]: Conversion Optimization Research
+      - generic [ref=e224]:
+        - generic [ref=e225]: This project
+        - heading "Niche Page Components" [level=3] [ref=e226]
+        - paragraph [ref=e227]: Each landing page includes these conversion-optimized elements.
+        - list [ref=e228]:
+          - listitem [ref=e229]: Niche-specific headline and value proposition
+          - listitem [ref=e230]: 4-6 relevant portfolio pieces with case studies
+          - listitem [ref=e231]: Testimonials from clients in that niche
+          - listitem [ref=e232]: Niche-specific pricing packages
+          - listitem [ref=e233]: Clear call-to-action for that audience
+  - generic [ref=e235]:
+    - generic [ref=e236]:
+      - generic [ref=e237]: "04"
+      - generic [ref=e238]:
+        - heading "Client Presentation Approach" [level=2] [ref=e239]
+        - paragraph [ref=e240]: The new portfolio system transformed how Marcus presented himself to potential clients, shifting conversations from price to value.
+    - generic [ref=e241]:
+      - generic [ref=e242]:
+        - generic [ref=e243]: Rule
+        - heading "Lead with Your Best" [level=3] [ref=e244]
+        - paragraph [ref=e245]: First impression determines if they keep scrolling. Place your strongest, most relevant work at the top. Visitors decide within seconds whether you're worth their time—make those seconds count.
+        - generic [ref=e246]: Portfolio UX Research
+      - generic [ref=e247]:
+        - generic [ref=e248]: This project
+        - heading "Portfolio Best Practices" [level=3] [ref=e249]
+        - paragraph [ref=e250]: Design principles that maximize portfolio effectiveness.
+        - list [ref=e251]:
+          - listitem [ref=e252]: Lead with your best, most relevant work
+          - listitem [ref=e253]: Show range within niche, not across niches
+          - listitem [ref=e254]: Include process, not just output
+          - listitem [ref=e255]: Update quarterly with fresh work
+          - listitem [ref=e256]: Make it easy to hire with clear next steps
+      - generic [ref=e257]:
+        - generic [ref=e258]: Tip
+        - heading "Spec Work Confidence" [level=3] [ref=e259]
+        - paragraph [ref=e260]: Marcus initially felt imposter syndrome about spec work feeling 'fake.' The breakthrough came when he realized clients care about capability, not whether a specific piece was paid work.
+      - generic [ref=e261]:
+        - generic [ref=e262]: This project
+        - heading "Spec Work Planning" [level=3] [ref=e263]
+        - paragraph [ref=e264]: A systematic approach to creating effective spec pieces.
+        - table [ref=e266]:
+          - rowgroup [ref=e267]:
+            - row "Phase Activities" [ref=e268]:
+              - columnheader "Phase" [ref=e269]
+              - columnheader "Activities" [ref=e270]
+          - rowgroup [ref=e271]:
+            - row "Research Define ideal client, study top performers, identify trends" [ref=e272]:
+              - cell "Research" [ref=e273]
+              - cell "Define ideal client, study top performers, identify trends" [ref=e274]
+            - row "Creation Select template, adapt to niche, write compelling copy" [ref=e275]:
+              - cell "Creation" [ref=e276]
+              - cell "Select template, adapt to niche, write compelling copy" [ref=e277]
+            - row "Presentation Document approach, explain brief, project outcomes" [ref=e278]:
+              - cell "Presentation" [ref=e279]
+              - cell "Document approach, explain brief, project outcomes" [ref=e280]
+      - generic [ref=e281]:
+        - generic [ref=e282]: Rule
+        - heading "Show Process, Not Just Output" [level=3] [ref=e283]
+        - paragraph [ref=e284]: Clients buy your thinking, not just execution. Including your creative process—the brief, your approach, key decisions—demonstrates strategic value that justifies premium pricing.
+        - generic [ref=e285]: Value-Based Pricing Guide
+      - generic [ref=e286]:
+        - generic [ref=e287]: Tip
+        - heading "Overcoming Challenges" [level=3] [ref=e288]
+        - paragraph [ref=e289]: The portfolio rebuild took 3 weeks of focused effort. Key challenges included committing to specific niches (scary but necessary), raising prices (felt risky but worked), and treating spec work as legitimate samples.
+  - generic [ref=e291]:
+    - generic [ref=e292]:
+      - generic [ref=e293]: "05"
+      - generic [ref=e294]:
+        - heading "Business Impact and Results" [level=2] [ref=e295]
+        - paragraph [ref=e296]: After 6 months with the new portfolio system, Marcus achieved transformational improvements in conversion rates, revenue, and client quality.
+    - generic [ref=e297]:
+      - generic [ref=e298]:
+        - generic [ref=e299]: This project
+        - heading "Conversion Funnel Transformation" [level=3] [ref=e300]
+        - paragraph [ref=e301]: Dramatic improvements at every stage of the client acquisition funnel.
+        - table [ref=e303]:
+          - rowgroup [ref=e304]:
+            - row "Stage Before After Change" [ref=e305]:
+              - columnheader "Stage" [ref=e306]
+              - columnheader "Before" [ref=e307]
+              - columnheader "After" [ref=e308]
+              - columnheader "Change" [ref=e309]
+          - rowgroup [ref=e310]:
+            - row "Inquiry rate 8% 24% +200%" [ref=e311]:
+              - cell "Inquiry rate" [ref=e312]
+              - cell "8%" [ref=e313]
+              - cell "24%" [ref=e314]
+              - cell "+200%" [ref=e315]
+            - row "Call booked 40% 75% +88%" [ref=e316]:
+              - cell "Call booked" [ref=e317]
+              - cell "40%" [ref=e318]
+              - cell "75%" [ref=e319]
+              - cell "+88%" [ref=e320]
+            - row "Proposal accepted 25% 60% +140%" [ref=e321]:
+              - cell "Proposal accepted" [ref=e322]
+              - cell "25%" [ref=e323]
+              - cell "60%" [ref=e324]
+              - cell "+140%" [ref=e325]
+            - row "Overall conversion 0.8% 10.8% +1,250%" [ref=e326]:
+              - cell "Overall conversion" [ref=e327]
+              - cell "0.8%" [ref=e328]
+              - cell "10.8%" [ref=e329]
+              - cell "+1,250%" [ref=e330]
+      - generic [ref=e331]:
+        - generic [ref=e332]: Rule
+        - heading "1,250% Conversion Improvement" [level=3] [ref=e333]
+        - paragraph [ref=e334]: The portfolio transformation increased overall conversion from 0.8% to 10.8%—a 13.5x improvement. This wasn't from more traffic, but from converting existing visitors at dramatically higher rates through strategic positioning.
+        - generic [ref=e335]: Freelance Business Metrics
+      - generic [ref=e336]:
+        - generic [ref=e337]: This project
+        - heading "Revenue Growth" [level=3] [ref=e338]
+        - paragraph [ref=e339]: Financial improvements from the portfolio transformation.
+        - table [ref=e341]:
+          - rowgroup [ref=e342]:
+            - row "Metric Before After Change" [ref=e343]:
+              - columnheader "Metric" [ref=e344]
+              - columnheader "Before" [ref=e345]
+              - columnheader "After" [ref=e346]
+              - columnheader "Change" [ref=e347]
+          - rowgroup [ref=e348]:
+            - row "Monthly retainers $3,200 $15,800 +394%" [ref=e349]:
+              - cell "Monthly retainers" [ref=e350]
+              - cell "$3,200" [ref=e351]
+              - cell "$15,800" [ref=e352]
+              - cell "+394%" [ref=e353]
+            - row "Avg project value $800 $2,400 +200%" [ref=e354]:
+              - cell "Avg project value" [ref=e355]
+              - cell "$800" [ref=e356]
+              - cell "$2,400" [ref=e357]
+              - cell "+200%" [ref=e358]
+            - row "Retainer clients 2 6 +200%" [ref=e359]:
+              - cell "Retainer clients" [ref=e360]
+              - cell "2" [ref=e361]
+              - cell "6" [ref=e362]
+              - cell "+200%" [ref=e363]
+            - row "Effective hourly $45 $125 +178%" [ref=e364]:
+              - cell "Effective hourly" [ref=e365]
+              - cell "$45" [ref=e366]
+              - cell "$125" [ref=e367]
+              - cell "+178%" [ref=e368]
+      - generic [ref=e369]:
+        - generic [ref=e370]: Tip
+        - heading "Client Quality Shift" [level=3] [ref=e371]
+        - paragraph [ref=e372]: "\"The clients who find me now are already sold on my work. Discovery calls are about fit, not convincing them I'm capable.\" — Marcus Chen"
+      - generic [ref=e373]:
+        - generic [ref=e374]: This project
+        - heading "Client Profile Transformation" [level=3] [ref=e375]
+        - paragraph [ref=e376]: The type of clients attracted changed dramatically.
+        - table [ref=e378]:
+          - rowgroup [ref=e379]:
+            - row "Attribute Before After" [ref=e380]:
+              - columnheader "Attribute" [ref=e381]
+              - columnheader "Before" [ref=e382]
+              - columnheader "After" [ref=e383]
+          - rowgroup [ref=e384]:
+            - row "Average budget $500-1,500 $2,000-5,000" [ref=e385]:
+              - cell "Average budget" [ref=e386]
+              - cell "$500-1,500" [ref=e387]
+              - cell "$2,000-5,000" [ref=e388]
+            - row "Project scope One-off videos Monthly retainers" [ref=e389]:
+              - cell "Project scope" [ref=e390]
+              - cell "One-off videos" [ref=e391]
+              - cell "Monthly retainers" [ref=e392]
+            - row "Communication Price-focused Value-focused" [ref=e393]:
+              - cell "Communication" [ref=e394]
+              - cell "Price-focused" [ref=e395]
+              - cell "Value-focused" [ref=e396]
+            - row "Referral rate 10% 45%" [ref=e397]:
+              - cell "Referral rate" [ref=e398]
+              - cell "10%" [ref=e399]
+              - cell "45%" [ref=e400]
+      - generic [ref=e401]:
+        - generic [ref=e402]: This project
+        - heading "Time Savings" [level=3] [ref=e403]
+        - paragraph [ref=e404]: Operational efficiency improvements from the new system.
+        - list [ref=e405]:
+          - listitem [ref=e406]: "Portfolio maintenance: 5 hrs/month → 2 hrs/month"
+          - listitem [ref=e407]: "Proposal creation: 3 hrs each → 45 min each"
+          - listitem [ref=e408]: "Client education: 2 hrs/client → 30 min/client"
+          - listitem [ref=e409]: "Revision cycles: 3-4 rounds → 1-2 rounds"
+      - generic [ref=e410]:
+        - generic [ref=e411]: Rule
+        - heading "Premium Pricing Enabled" [level=3] [ref=e412]
+        - paragraph [ref=e413]: A professional portfolio demonstrates quality, case studies show strategic thinking, niche expertise commands premium rates, and clear packages reduce negotiation. Marcus raised his monthly retainer from $1,800 to $4,500 for the same deliverable count.
+        - generic [ref=e414]: Freelance Pricing Strategy
+  - generic [ref=e416]:
+    - generic [ref=e417]:
+      - generic [ref=e418]: Keep Learning
+      - heading "Related tips" [level=2] [ref=e419]
+      - paragraph [ref=e420]: Continue exploring with these related guides and tutorials.
+    - generic [ref=e421]:
+      - link "Content Creator Setup preview Content Creator Setup A YouTuber's system for consistent branded content production at scale." [ref=e422] [cursor=pointer]:
+        - /url: /tips/project-content-creator/
+        - img "Content Creator Setup preview" [ref=e424]
+        - generic [ref=e425]:
+          - img [ref=e427]
+          - generic [ref=e430]:
+            - generic [ref=e431]: Content Creator Setup
+            - generic [ref=e432]: A YouTuber's system for consistent branded content production at scale.
+      - link "Agency Workflow preview Agency Workflow How a creative agency automated their video production pipeline." [ref=e433] [cursor=pointer]:
+        - /url: /tips/project-agency-workflow/
+        - img "Agency Workflow preview" [ref=e435]
+        - generic [ref=e436]:
+          - img [ref=e438]
+          - generic [ref=e442]:
+            - generic [ref=e443]: Agency Workflow
+            - generic [ref=e444]: How a creative agency automated their video production pipeline.
+      - link "Editing Props preview Editing Props Customize templates through the props interface for your portfolio pieces." [ref=e445] [cursor=pointer]:
+        - /url: /tips/editing-props/
+        - img "Editing Props preview" [ref=e447]
+        - generic [ref=e448]:
+          - img [ref=e450]
+          - generic [ref=e451]:
+            - generic [ref=e452]: Editing Props
+            - generic [ref=e453]: Customize templates through the props interface for your portfolio pieces.
+  - generic [ref=e456]:
+    - heading "Ready to build a client-winning portfolio?" [level=2] [ref=e457]
+    - paragraph [ref=e458]: Start creating spec pieces that showcase your capabilities to ideal clients. Browse our template library to find the perfect starting points, or learn how to integrate your personal brand for a cohesive presentation.
+    - generic [ref=e459]:
+      - link "Browse Templates" [ref=e460] [cursor=pointer]:
+        - /url: /library/
+        - img [ref=e461]
+        - text: Browse Templates
+      - link "Brand Integration Guide" [ref=e463] [cursor=pointer]:
+        - /url: /tips/brand-integration/
+        - img [ref=e464]
+        - text: Brand Integration Guide
+  - contentinfo [ref=e467]:
+    - generic [ref=e468]:
+      - navigation "Secondary navigation" [ref=e469]:
+        - list [ref=e470]:
+          - listitem [ref=e471]:
+            - link "Use Cases" [ref=e472] [cursor=pointer]:
+              - /url: /use-cases/
+              - img [ref=e473]
+              - text: Use Cases
+          - listitem [ref=e476]:
+            - link "Design System" [ref=e477] [cursor=pointer]:
+              - /url: /design-system/
+              - img [ref=e478]
+              - text: Design System
+      - generic [ref=e484]:
+        - generic [ref=e485]:
+          - generic [ref=e486]:
+            - text: freelancer
+            - emphasis [ref=e487]: "-templates"
+          - paragraph [ref=e488]: Free, open-source template library for freelancers and communities. Documents, Remotion video compositions, and everything in between.
+          - generic [ref=e489]:
+            - link "GitHub" [ref=e490] [cursor=pointer]:
+              - /url: https://github.com/mzzavaa/freelancer-templates.org
+              - img [ref=e491]
+            - link "Twitter / X" [ref=e494] [cursor=pointer]:
+              - /url: https://twitter.com/
+              - img [ref=e495]
+            - link "LinkedIn" [ref=e497] [cursor=pointer]:
+              - /url: https://linkedin.com/
+              - img [ref=e498]
+        - generic [ref=e502]:
+          - generic [ref=e503]: Templates
+          - list [ref=e504]:
+            - listitem [ref=e505]:
+              - link "Contracts" [ref=e506] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e507]:
+              - link "Proposals" [ref=e508] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e509]:
+              - link "Invoices" [ref=e510] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e511]:
+              - link "Email Scripts" [ref=e512] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e513]:
+              - link "Notion Templates" [ref=e514] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e515]:
+              - link "Remotion Library" [ref=e516] [cursor=pointer]:
+                - /url: /#remotion
+        - generic [ref=e517]:
+          - generic [ref=e518]: SISY Ecosystem
+          - list [ref=e519]:
+            - listitem [ref=e520]:
+              - link "freelancer-automation.com" [ref=e521] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e522]:
+              - link "ai-workshops.digital" [ref=e523] [cursor=pointer]:
+                - /url: https://ai-workshops.digital
+            - listitem [ref=e524]:
+              - link "sisy.digital" [ref=e525] [cursor=pointer]:
+                - /url: https://sisy.digital
+            - listitem [ref=e526]:
+              - link "sisy.best" [ref=e527] [cursor=pointer]:
+                - /url: https://sisy.best
+        - generic [ref=e528]:
+          - generic [ref=e529]: Resources
+          - list [ref=e530]:
+            - listitem [ref=e531]:
+              - link "GitHub Repository" [ref=e532] [cursor=pointer]:
+                - /url: https://github.com/mzzavaa/freelancer-templates.org
+            - listitem [ref=e533]:
+              - link "Use Cases" [ref=e534] [cursor=pointer]:
+                - /url: /use-cases/
+            - listitem [ref=e535]:
+              - link "CC-BY-NC-SA License" [ref=e536] [cursor=pointer]:
+                - /url: /#license
+            - listitem [ref=e537]:
+              - link "License Text" [ref=e538] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - listitem [ref=e539]:
+              - link "Commercial License" [ref=e540] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e541]:
+              - link "Contact" [ref=e542] [cursor=pointer]:
+                - /url: mailto:hello@freelancer-templates.org
+      - generic [ref=e543]:
+        - generic [ref=e544]: © 2026 freelancer-templates.org - Licensed under CC-BY-NC-SA 4.0
+        - generic [ref=e545]:
+          - link "Imprint" [ref=e546] [cursor=pointer]:
+            - /url: /imprint/
+          - link "Privacy Policy" [ref=e547] [cursor=pointer]:
+            - /url: /privacy/
+          - link "CC-BY-NC-SA 4.0" [ref=e548] [cursor=pointer]:
+            - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+          - link "Commercial License" [ref=e549] [cursor=pointer]:
+            - /url: https://freelancer-automation.com
+          - link "Contact" [ref=e550] [cursor=pointer]:
+            - /url: mailto:hello@freelancer-templates.org

@@ -1,0 +1,508 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "freelancer-templates" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: freelancer
+        - emphasis [ref=e6]: "-templates"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Templates" [ref=e9] [cursor=pointer]:
+            - text: Templates
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - button "Themes" [ref=e13] [cursor=pointer]:
+            - text: Themes
+            - img [ref=e14]
+        - listitem [ref=e16]:
+          - link "Design Tips" [ref=e17] [cursor=pointer]:
+            - /url: /tips/
+        - listitem [ref=e18]:
+          - link "Studio" [ref=e19] [cursor=pointer]:
+            - /url: /studio/
+        - listitem [ref=e20]:
+          - link "Enterprise" [ref=e21] [cursor=pointer]:
+            - /url: /enterprise/
+      - generic [ref=e22]:
+        - button "Toggle dark mode" [ref=e23] [cursor=pointer]:
+          - img [ref=e25]
+        - link "Customize templates" [ref=e31] [cursor=pointer]:
+          - /url: /customize/
+          - img [ref=e32]
+          - generic [ref=e33]: Customize
+        - link "My Brands" [ref=e34] [cursor=pointer]:
+          - /url: /my-brands/
+          - img [ref=e35]
+          - generic [ref=e39]: My Brands
+  - generic [ref=e41]:
+    - navigation "Breadcrumb" [ref=e42]:
+      - link "Tips" [ref=e43] [cursor=pointer]:
+        - /url: /tips/
+      - generic [ref=e44]: ›
+      - generic [ref=e45]: CLI Rendering Guide
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - img [ref=e49]
+        - text: Remotion Tutorials
+      - heading "Master CLI Rendering" [level=1] [ref=e51]
+      - paragraph [ref=e52]: Your complete guide to rendering videos from the command line. Learn essential commands, output formats, quality settings, batch rendering, and automation techniques for production-ready video workflows.
+      - generic [ref=e53]:
+        - generic [ref=e54]: Commands
+        - generic [ref=e55]: Formats
+        - generic [ref=e56]: Quality
+        - generic [ref=e57]: Batch
+        - generic [ref=e58]: Automation
+  - generic [ref=e60]:
+    - generic [ref=e61]:
+      - generic [ref=e62]: "01"
+      - generic [ref=e63]:
+        - heading "Basic Commands" [level=2] [ref=e64]
+        - paragraph [ref=e65]: Get started with the essential Remotion CLI commands for rendering videos and generating stills from your compositions.
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]: Tip
+        - heading "The Render Command" [level=3] [ref=e69]
+        - paragraph [ref=e70]:
+          - text: The core command for rendering videos is
+          - code [ref=e71]: npx remotion render <composition-id>
+          - text: . This renders your composition to the default
+          - code [ref=e72]: out
+          - text: folder as an MP4 file.
+      - generic [ref=e73]:
+        - generic [ref=e74]: Rule
+        - heading "Specifying Output Path" [level=3] [ref=e75]
+        - paragraph [ref=e76]:
+          - text: "Control where your video is saved by adding an output path:"
+          - code [ref=e77]: npx remotion render MyVideo ./output/video.mp4
+          - text: . You can also use the
+          - code [ref=e78]: "--output"
+          - text: flag for clarity.
+        - generic [ref=e79]: Remotion CLI Documentation
+      - generic [ref=e80]:
+        - generic [ref=e81]: This project
+        - heading "Quick Render Example" [level=3] [ref=e82]
+        - paragraph [ref=e83]:
+          - text: "Render a composition named 'Intro' to a specific location:"
+          - code [ref=e84]: npx remotion render Intro ./renders/intro-final.mp4
+      - generic [ref=e85]:
+        - generic [ref=e86]: Tip
+        - heading "Rendering Stills" [level=3] [ref=e87]
+        - paragraph [ref=e88]:
+          - text: Generate a single frame as an image with
+          - code [ref=e89]: npx remotion still MyVideo output.png
+          - text: . Use
+          - code [ref=e90]: "--frame=30"
+          - text: to specify which frame to capture.
+      - generic [ref=e91]:
+        - generic [ref=e92]: Rule
+        - heading "Passing Props" [level=3] [ref=e93]
+        - paragraph [ref=e94]:
+          - text: Pass custom props to your composition using
+          - code [ref=e95]: "--props='{ \"title\": \"Hello\" }'"
+          - text: for inline JSON, or
+          - code [ref=e96]: "--props=./props.json"
+          - text: to load from a file.
+        - generic [ref=e97]: Remotion Props Documentation
+      - generic [ref=e98]:
+        - generic [ref=e99]: Tip
+        - heading "Environment Variables" [level=3] [ref=e100]
+        - paragraph [ref=e101]:
+          - text: Load environment variables from a file with
+          - code [ref=e102]: "--env-file=.env.production"
+          - text: . This is useful for managing API keys and configuration across environments.
+  - generic [ref=e104]:
+    - generic [ref=e105]:
+      - generic [ref=e106]: "02"
+      - generic [ref=e107]:
+        - heading "Output Formats" [level=2] [ref=e108]
+        - paragraph [ref=e109]: Choose the right video codec and container format for your use case, from web-optimized MP4 to professional ProRes masters.
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]: Rule
+        - heading "Video Codecs" [level=3] [ref=e113]
+        - paragraph [ref=e114]:
+          - text: Select your codec with the
+          - code [ref=e115]: "--codec"
+          - text: flag. Each codec offers different tradeoffs between quality, file size, and compatibility.
+        - table [ref=e117]:
+          - rowgroup [ref=e118]:
+            - row "Codec Format Best For" [ref=e119]:
+              - columnheader "Codec" [ref=e120]
+              - columnheader "Format" [ref=e121]
+              - columnheader "Best For" [ref=e122]
+          - rowgroup [ref=e123]:
+            - row "h264 MP4 Web, universal playback" [ref=e124]:
+              - cell "h264" [ref=e125]
+              - cell "MP4" [ref=e126]
+              - cell "Web, universal playback" [ref=e127]
+            - row "h265 MP4 Smaller files, modern devices" [ref=e128]:
+              - cell "h265" [ref=e129]
+              - cell "MP4" [ref=e130]
+              - cell "Smaller files, modern devices" [ref=e131]
+            - row "vp8 WebM Web, open format" [ref=e132]:
+              - cell "vp8" [ref=e133]
+              - cell "WebM" [ref=e134]
+              - cell "Web, open format" [ref=e135]
+            - row "vp9 WebM High quality web video" [ref=e136]:
+              - cell "vp9" [ref=e137]
+              - cell "WebM" [ref=e138]
+              - cell "High quality web video" [ref=e139]
+            - row "prores MOV Professional editing" [ref=e140]:
+              - cell "prores" [ref=e141]
+              - cell "MOV" [ref=e142]
+              - cell "Professional editing" [ref=e143]
+        - generic [ref=e144]: Remotion Encoding Guide
+      - generic [ref=e145]:
+        - generic [ref=e146]: Tip
+        - heading "H.264 for Web" [level=3] [ref=e147]
+        - paragraph [ref=e148]:
+          - text: Use
+          - code [ref=e149]: "--codec=h264"
+          - text: for maximum compatibility. This is the default codec and works on virtually all devices and platforms.
+      - generic [ref=e150]:
+        - generic [ref=e151]: This project
+        - heading "ProRes for Editing" [level=3] [ref=e152]
+        - paragraph [ref=e153]:
+          - text: "For professional workflows, render with ProRes:"
+          - code [ref=e154]: npx remotion render MyVideo --codec=prores --prores-profile=hq
+          - text: ". Available profiles: 4444-xq, 4444, hq, standard, light, proxy."
+      - generic [ref=e155]:
+        - generic [ref=e156]: Rule
+        - heading "Audio Codecs" [level=3] [ref=e157]
+        - paragraph [ref=e158]:
+          - text: Set the audio codec independently with
+          - code [ref=e159]: "--audio-codec"
+          - text: . Options include
+          - code [ref=e160]: aac
+          - text: (default, best compatibility),
+          - code [ref=e161]: mp3
+          - text: ", and"
+          - code [ref=e162]: wav
+          - text: (uncompressed).
+        - generic [ref=e163]: Remotion Audio Documentation
+      - generic [ref=e164]:
+        - generic [ref=e165]: Tip
+        - heading "Image Sequences" [level=3] [ref=e166]
+        - paragraph [ref=e167]:
+          - text: Export as individual frames instead of a video with
+          - code [ref=e168]: "--sequence"
+          - text: . Customize naming with
+          - code [ref=e169]: "--image-sequence-pattern='frame_[frame].[ext]'"
+          - text: .
+      - generic [ref=e170]:
+        - generic [ref=e171]: This project
+        - heading "WebM for Modern Web" [level=3] [ref=e172]
+        - paragraph [ref=e173]:
+          - text: "For modern browsers with smaller file sizes:"
+          - code [ref=e174]: npx remotion render MyVideo output.webm --codec=vp9
+  - generic [ref=e176]:
+    - generic [ref=e177]:
+      - generic [ref=e178]: "03"
+      - generic [ref=e179]:
+        - heading "Quality Settings" [level=2] [ref=e180]
+        - paragraph [ref=e181]: Fine-tune video quality, compression, and file size to achieve the perfect balance for your delivery requirements.
+    - generic [ref=e182]:
+      - generic [ref=e183]:
+        - generic [ref=e184]: Rule
+        - heading "Constant Rate Factor (CRF)" [level=3] [ref=e185]
+        - paragraph [ref=e186]: CRF controls the quality-to-size ratio. Lower values mean higher quality and larger files. The scale is 0-51, with 23 being the default.
+        - list [ref=e187]:
+          - listitem [ref=e188]: "CRF 18: High quality, larger file"
+          - listitem [ref=e189]: "CRF 23: Balanced (default)"
+          - listitem [ref=e190]: "CRF 28: Lower quality, smaller file"
+        - generic [ref=e191]: FFmpeg CRF Guide
+      - generic [ref=e192]:
+        - generic [ref=e193]: Tip
+        - heading "Setting CRF" [level=3] [ref=e194]
+        - paragraph [ref=e195]:
+          - text: Use
+          - code [ref=e196]: "--crf=18"
+          - text: for high-quality renders where file size isn't a concern. For web delivery,
+          - code [ref=e197]: "--crf=23"
+          - text: offers a good balance.
+      - generic [ref=e198]:
+        - generic [ref=e199]: This project
+        - heading "High Quality Master" [level=3] [ref=e200]
+        - paragraph [ref=e201]:
+          - text: "Create a high-quality master file:"
+          - code [ref=e202]: npx remotion render MyVideo master.mp4 --crf=18 --image-format=png
+      - generic [ref=e203]:
+        - generic [ref=e204]: Rule
+        - heading "Video Bitrate" [level=3] [ref=e205]
+        - paragraph [ref=e206]:
+          - text: "For precise file size control, use bitrate instead of CRF:"
+          - code [ref=e207]: "--video-bitrate=5M"
+          - text: for 5 Mbps or
+          - code [ref=e208]: "--video-bitrate=2500K"
+          - text: for 2.5 Mbps.
+        - generic [ref=e209]: Remotion Encoding Guide
+      - generic [ref=e210]:
+        - generic [ref=e211]: Tip
+        - heading "Audio Bitrate" [level=3] [ref=e212]
+        - paragraph [ref=e213]:
+          - text: Control audio quality with
+          - code [ref=e214]: "--audio-bitrate=320k"
+          - text: for high quality or
+          - code [ref=e215]: "--audio-bitrate=192k"
+          - text: for standard quality. Higher bitrates preserve audio fidelity.
+      - generic [ref=e216]:
+        - generic [ref=e217]: This project
+        - heading "Web-Optimized Output" [level=3] [ref=e218]
+        - paragraph [ref=e219]:
+          - text: "Optimize for web delivery:"
+          - code [ref=e220]: npx remotion render MyVideo web.mp4 --codec=h264 --crf=23 --audio-codec=aac --audio-bitrate=192k
+  - generic [ref=e222]:
+    - generic [ref=e223]:
+      - generic [ref=e224]: "04"
+      - generic [ref=e225]:
+        - heading "Batch Rendering" [level=2] [ref=e226]
+        - paragraph [ref=e227]: Render multiple compositions efficiently using scripts, loops, and parallel processing techniques.
+    - generic [ref=e228]:
+      - generic [ref=e229]:
+        - generic [ref=e230]: Tip
+        - heading "Shell Script Approach" [level=3] [ref=e231]
+        - paragraph [ref=e232]: Create a shell script to render multiple compositions sequentially. This is the simplest approach for batch rendering a known set of videos.
+      - generic [ref=e233]:
+        - generic [ref=e234]: This project
+        - heading "Batch Script Example" [level=3] [ref=e235]
+        - paragraph [ref=e236]:
+          - text: Create a
+          - code [ref=e237]: render-all.sh
+          - text: script that renders each composition with consistent settings. Run with
+          - code [ref=e238]: bash render-all.sh
+          - text: to process all videos.
+        - list [ref=e239]:
+          - listitem [ref=e240]: npx remotion render Intro ./out/intro.mp4
+          - listitem [ref=e241]: npx remotion render Main ./out/main.mp4
+          - listitem [ref=e242]: npx remotion render Outro ./out/outro.mp4
+      - generic [ref=e243]:
+        - generic [ref=e244]: Rule
+        - heading "Concurrency Control" [level=3] [ref=e245]
+        - paragraph [ref=e246]:
+          - text: Control CPU usage with
+          - code [ref=e247]: "--concurrency"
+          - text: . Use
+          - code [ref=e248]: "--concurrency=4"
+          - text: for 4 threads,
+          - code [ref=e249]: "--concurrency=50%"
+          - text: for half your cores, or
+          - code [ref=e250]: "--concurrency=100%"
+          - text: for maximum speed.
+        - generic [ref=e251]: Remotion Performance Guide
+      - generic [ref=e252]:
+        - generic [ref=e253]: Tip
+        - heading "Props-Based Batch Rendering" [level=3] [ref=e254]
+        - paragraph [ref=e255]:
+          - text: "Render the same composition with different props by creating multiple JSON files and looping through them:"
+          - code [ref=e256]: for f in props/*.json; do npx remotion render MyVideo --props="$f"; done
+      - generic [ref=e257]:
+        - generic [ref=e258]: This project
+        - heading "Parallel Rendering" [level=3] [ref=e259]
+        - paragraph [ref=e260]:
+          - text: "Use GNU Parallel for concurrent batch rendering:"
+          - code [ref=e261]: "parallel npx remotion render {} ::: Comp1 Comp2 Comp3"
+          - text: . This renders multiple compositions simultaneously.
+      - generic [ref=e262]:
+        - generic [ref=e263]: Rule
+        - heading "Memory Management" [level=3] [ref=e264]
+        - paragraph [ref=e265]:
+          - text: "For large batches, reduce concurrency to prevent out-of-memory errors:"
+          - code [ref=e266]: "--concurrency=2 --image-format=jpeg"
+          - text: . JPEG frames use less memory than PNG.
+        - generic [ref=e267]: Remotion Troubleshooting Guide
+  - generic [ref=e269]:
+    - generic [ref=e270]:
+      - generic [ref=e271]: "05"
+      - generic [ref=e272]:
+        - heading "Automation" [level=2] [ref=e273]
+        - paragraph [ref=e274]: Integrate Remotion rendering into automated workflows, CI/CD pipelines, and programmatic video generation systems.
+    - generic [ref=e275]:
+      - generic [ref=e276]:
+        - generic [ref=e277]: Rule
+        - heading "Exit Codes" [level=3] [ref=e278]
+        - paragraph [ref=e279]:
+          - text: "The CLI returns exit code 0 on success and non-zero on failure. Use this in scripts to detect errors:"
+          - code [ref=e280]: npx remotion render MyVideo || echo 'Render failed'
+        - generic [ref=e281]: Remotion CLI Reference
+      - generic [ref=e282]:
+        - generic [ref=e283]: Tip
+        - heading "CI/CD Integration" [level=3] [ref=e284]
+        - paragraph [ref=e285]:
+          - text: Add rendering to your CI pipeline by installing dependencies and running the render command. Use
+          - code [ref=e286]: "--gl=angle"
+          - text: on Linux servers without GPU for software rendering.
+      - generic [ref=e287]:
+        - generic [ref=e288]: This project
+        - heading "GitHub Actions Workflow" [level=3] [ref=e289]
+        - paragraph [ref=e290]:
+          - text: In your workflow file, install dependencies with
+          - code [ref=e291]: npm ci
+          - text: ", then render with"
+          - code [ref=e292]: npx remotion render MyVideo --gl=angle
+          - text: . Upload artifacts to store the output.
+      - generic [ref=e293]:
+        - generic [ref=e294]: Rule
+        - heading "Programmatic Rendering" [level=3] [ref=e295]
+        - paragraph [ref=e296]:
+          - text: Use the
+          - code [ref=e297]: "@remotion/renderer"
+          - text: package for Node.js integration. The
+          - code [ref=e298]: renderMedia()
+          - text: function provides full control over rendering with TypeScript support.
+        - generic [ref=e299]: Remotion Renderer API
+      - generic [ref=e300]:
+        - generic [ref=e301]: Tip
+        - heading "Progress Callbacks" [level=3] [ref=e302]
+        - paragraph [ref=e303]:
+          - text: When using the Node.js API, pass an
+          - code [ref=e304]: onProgress
+          - text: callback to track rendering progress. This enables progress bars and status updates in your application.
+      - generic [ref=e305]:
+        - generic [ref=e306]: This project
+        - heading "Webhook Integration" [level=3] [ref=e307]
+        - paragraph [ref=e308]:
+          - text: Trigger renders via webhooks by creating an API endpoint that calls
+          - code [ref=e309]: renderMedia()
+          - text: . Return the video URL or upload to cloud storage when complete.
+  - generic [ref=e311]:
+    - generic [ref=e312]:
+      - generic [ref=e313]: Keep Learning
+      - heading "Related tips" [level=2] [ref=e314]
+      - paragraph [ref=e315]: Continue exploring with these related guides and tutorials.
+    - generic [ref=e316]:
+      - link "Remotion Studio Basics preview Remotion Studio Basics Navigate the Studio interface and preview compositions in real-time." [ref=e317] [cursor=pointer]:
+        - /url: /tips/remotion-studio-basics/
+        - img "Remotion Studio Basics preview" [ref=e319]
+        - generic [ref=e320]:
+          - img [ref=e322]
+          - generic [ref=e325]:
+            - generic [ref=e326]: Remotion Studio Basics
+            - generic [ref=e327]: Navigate the Studio interface and preview compositions in real-time.
+      - link "Lambda Deployment preview Lambda Deployment Deploy rendering pipelines to AWS Lambda for serverless video generation." [ref=e328] [cursor=pointer]:
+        - /url: /tips/lambda-deployment/
+        - img "Lambda Deployment preview" [ref=e330]
+        - generic [ref=e331]:
+          - img [ref=e333]
+          - generic [ref=e335]:
+            - generic [ref=e336]: Lambda Deployment
+            - generic [ref=e337]: Deploy rendering pipelines to AWS Lambda for serverless video generation.
+      - link "Composition Structure preview Composition Structure Understand how compositions, sequences, and scenes work together." [ref=e338] [cursor=pointer]:
+        - /url: /tips/composition-structure/
+        - img "Composition Structure preview" [ref=e340]
+        - generic [ref=e341]:
+          - img [ref=e343]
+          - generic [ref=e347]:
+            - generic [ref=e348]: Composition Structure
+            - generic [ref=e349]: Understand how compositions, sequences, and scenes work together.
+  - generic [ref=e352]:
+    - heading "Ready to render at scale?" [level=2] [ref=e353]
+    - paragraph [ref=e354]: Now that you've mastered CLI rendering, explore Lambda deployment for serverless video generation or browse our template library for your next project.
+    - generic [ref=e355]:
+      - link "Lambda Deployment" [ref=e356] [cursor=pointer]:
+        - /url: /tips/lambda-deployment/
+        - img [ref=e357]
+        - text: Lambda Deployment
+      - link "Browse Templates" [ref=e359] [cursor=pointer]:
+        - /url: /library/
+        - img [ref=e360]
+        - text: Browse Templates
+  - contentinfo [ref=e362]:
+    - generic [ref=e363]:
+      - navigation "Secondary navigation" [ref=e364]:
+        - list [ref=e365]:
+          - listitem [ref=e366]:
+            - link "Use Cases" [ref=e367] [cursor=pointer]:
+              - /url: /use-cases/
+              - img [ref=e368]
+              - text: Use Cases
+          - listitem [ref=e371]:
+            - link "Design System" [ref=e372] [cursor=pointer]:
+              - /url: /design-system/
+              - img [ref=e373]
+              - text: Design System
+      - generic [ref=e379]:
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - text: freelancer
+            - emphasis [ref=e382]: "-templates"
+          - paragraph [ref=e383]: Free, open-source template library for freelancers and communities. Documents, Remotion video compositions, and everything in between.
+          - generic [ref=e384]:
+            - link "GitHub" [ref=e385] [cursor=pointer]:
+              - /url: https://github.com/mzzavaa/freelancer-templates.org
+              - img [ref=e386]
+            - link "Twitter / X" [ref=e389] [cursor=pointer]:
+              - /url: https://twitter.com/
+              - img [ref=e390]
+            - link "LinkedIn" [ref=e392] [cursor=pointer]:
+              - /url: https://linkedin.com/
+              - img [ref=e393]
+        - generic [ref=e397]:
+          - generic [ref=e398]: Templates
+          - list [ref=e399]:
+            - listitem [ref=e400]:
+              - link "Contracts" [ref=e401] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e402]:
+              - link "Proposals" [ref=e403] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e404]:
+              - link "Invoices" [ref=e405] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e406]:
+              - link "Email Scripts" [ref=e407] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e408]:
+              - link "Notion Templates" [ref=e409] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e410]:
+              - link "Remotion Library" [ref=e411] [cursor=pointer]:
+                - /url: /#remotion
+        - generic [ref=e412]:
+          - generic [ref=e413]: SISY Ecosystem
+          - list [ref=e414]:
+            - listitem [ref=e415]:
+              - link "freelancer-automation.com" [ref=e416] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e417]:
+              - link "ai-workshops.digital" [ref=e418] [cursor=pointer]:
+                - /url: https://ai-workshops.digital
+            - listitem [ref=e419]:
+              - link "sisy.digital" [ref=e420] [cursor=pointer]:
+                - /url: https://sisy.digital
+            - listitem [ref=e421]:
+              - link "sisy.best" [ref=e422] [cursor=pointer]:
+                - /url: https://sisy.best
+        - generic [ref=e423]:
+          - generic [ref=e424]: Resources
+          - list [ref=e425]:
+            - listitem [ref=e426]:
+              - link "GitHub Repository" [ref=e427] [cursor=pointer]:
+                - /url: https://github.com/mzzavaa/freelancer-templates.org
+            - listitem [ref=e428]:
+              - link "Use Cases" [ref=e429] [cursor=pointer]:
+                - /url: /use-cases/
+            - listitem [ref=e430]:
+              - link "CC-BY-NC-SA License" [ref=e431] [cursor=pointer]:
+                - /url: /#license
+            - listitem [ref=e432]:
+              - link "License Text" [ref=e433] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - listitem [ref=e434]:
+              - link "Commercial License" [ref=e435] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e436]:
+              - link "Contact" [ref=e437] [cursor=pointer]:
+                - /url: mailto:hello@freelancer-templates.org
+      - generic [ref=e438]:
+        - generic [ref=e439]: © 2026 freelancer-templates.org - Licensed under CC-BY-NC-SA 4.0
+        - generic [ref=e440]:
+          - link "Imprint" [ref=e441] [cursor=pointer]:
+            - /url: /imprint/
+          - link "Privacy Policy" [ref=e442] [cursor=pointer]:
+            - /url: /privacy/
+          - link "CC-BY-NC-SA 4.0" [ref=e443] [cursor=pointer]:
+            - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+          - link "Commercial License" [ref=e444] [cursor=pointer]:
+            - /url: https://freelancer-automation.com
+          - link "Contact" [ref=e445] [cursor=pointer]:
+            - /url: mailto:hello@freelancer-templates.org

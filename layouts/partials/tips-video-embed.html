@@ -1,0 +1,60 @@
+{{/*
+  Tips Video Embed Partial
+  Embeds tutorial videos with poster frame and controls
+  
+  Parameters:
+  - .id: Tutorial ID
+  - .category: Tutorial category (studio-basics, editing-props, cli-rendering)
+  - .format: Preferred format (mp4, gif, webm) - default: mp4
+  - .autoplay: Enable viewport autoplay - default: false
+  - .loop: Loop video - default: true
+  - .caption: Optional caption text
+*/}}
+
+{{ $id := .id }}
+{{ $category := .category }}
+{{ $format := .format | default "mp4" }}
+{{ $autoplay := .autoplay | default false }}
+{{ $loop := .loop | default true }}
+{{ $caption := .caption }}
+
+{{ $basePath := printf "/tutorials/%s/%s" $category $id }}
+{{ $posterPath := printf "%s-poster.png" $basePath }}
+
+<div class="tips-video" data-tutorial-id="{{ $id }}">
+  {{ if eq $format "gif" }}
+    {{/* GIF display */}}
+    <img 
+      src="{{ $basePath }}.gif" 
+      alt="{{ $caption | default $id }}"
+      class="tips-video__gif"
+      loading="lazy"
+    />
+  {{ else }}
+    {{/* Video player */}}
+    <video 
+      class="tips-video__player"
+      poster="{{ $posterPath }}"
+      {{ if $loop }}loop{{ end }}
+      {{ if $autoplay }}data-autoplay="true"{{ end }}
+      muted
+      playsinline
+      preload="metadata"
+    >
+      <source src="{{ $basePath }}.mp4" type="video/mp4">
+      <source src="{{ $basePath }}.webm" type="video/webm">
+      Your browser does not support video playback.
+    </video>
+    
+    {{/* Play button overlay */}}
+    <button class="tips-video__play-btn" aria-label="Play video">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </button>
+  {{ end }}
+  
+  {{ if $caption }}
+    <p class="tips-video__caption">{{ $caption }}</p>
+  {{ end }}
+</div>

@@ -11,6 +11,9 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
 
+// ── Theme Framework - Dynamic Composition Generation ─────────────────────────
+import { compositions } from "./themes/scripts/generate-compositions";
+
 // ── Linda Mohamed (personal deck) ────────────────────────────────
 import { Folie1Cover, Folie2AboutMe, Folie3WhatIOffer, Folie4CostsPackages } from "./templates/lindamohamed/LindaMohamed";
 import { Folie1CoverV2, Folie2AboutMeV2, Folie3WhatIOfferV2, Folie4CostsPackagesV2, Folie5WorkshopsV2 } from "./templates/lindamohamed/LindaMohamedV2";
@@ -2167,6 +2170,28 @@ export const RemotionRoot: React.FC = () => (
       <Composition id="CallToAction-CandyMinimalVertical"    component={CallToActionCandyMinimalVertical}    durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
       <Composition id="CallToAction-PeachCenteredVertical"   component={CallToActionPeachCenteredVertical}   durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
       <Composition id="CallToAction-ElectricSplitVertical"   component={CallToActionElectricSplitVertical}   durationInFrames={DUR} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    {/* ═══════════════════════════════════════════════════════════════════════════
+        Theme Framework - Dynamically Generated Compositions
+        
+        These compositions are generated from the theme framework registries.
+        They combine templates with compatible themes automatically.
+        See: src/remotion/themes/scripts/generate-compositions.ts
+        ═══════════════════════════════════════════════════════════════════════════ */}
+    <Folder name="Theme-Framework">
+      {compositions.map((comp) => (
+        <Composition
+          key={comp.id}
+          id={comp.id}
+          component={comp.component}
+          durationInFrames={comp.durationInFrames}
+          fps={comp.fps}
+          width={comp.width}
+          height={comp.height}
+          defaultProps={{ ...comp.defaultProps }}
+        />
+      ))}
     </Folder>
 
   </>

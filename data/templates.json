@@ -2427,132 +2427,636 @@
     "primaryVariant": "NeonSplit",
     "variantCount": 126,
     "variants": [
-      { "id": "Testimonial-DarkCentered", "name": "Dark Centered", "style": "dark" },
-      { "id": "Testimonial-DarkSplit", "name": "Dark Split", "style": "dark" },
-      { "id": "Testimonial-DarkEditorial", "name": "Dark Editorial", "style": "dark" },
-      { "id": "Testimonial-CleanCentered", "name": "Clean Centered", "style": "clean" },
-      { "id": "Testimonial-CleanSplit", "name": "Clean Split", "style": "clean" },
-      { "id": "Testimonial-CleanEditorial", "name": "Clean Editorial", "style": "clean" },
-      { "id": "Testimonial-BoldCentered", "name": "Bold Centered", "style": "bold" },
-      { "id": "Testimonial-BoldSplit", "name": "Bold Split", "style": "bold" },
-      { "id": "Testimonial-BoldEditorial", "name": "Bold Editorial", "style": "bold" },
-      { "id": "Testimonial-WarmCentered", "name": "Warm Centered", "style": "warm" },
-      { "id": "Testimonial-WarmSplit", "name": "Warm Split", "style": "warm" },
-      { "id": "Testimonial-WarmEditorial", "name": "Warm Editorial", "style": "warm" },
-      { "id": "Testimonial-MinimalCentered", "name": "Minimal Centered", "style": "minimal" },
-      { "id": "Testimonial-MinimalSplit", "name": "Minimal Split", "style": "minimal" },
-      { "id": "Testimonial-MinimalEditorial", "name": "Minimal Editorial", "style": "minimal" },
-      { "id": "Testimonial-NeonCentered", "name": "Neon Centered", "style": "neon" },
-      { "id": "Testimonial-NeonSplit", "name": "Neon Split", "style": "neon" },
-      { "id": "Testimonial-NeonEditorial", "name": "Neon Editorial", "style": "neon" },
-      { "id": "Testimonial-LindamohamedCentered", "name": "Lindamohamed Centered", "style": "lindamohamed" },
-      { "id": "Testimonial-LindamohamedSplit", "name": "Lindamohamed Split", "style": "lindamohamed" },
-      { "id": "Testimonial-LindamohamedEditorial", "name": "Lindamohamed Editorial", "style": "lindamohamed" },
-      { "id": "Testimonial-OceanCentered", "name": "Ocean Centered", "style": "ocean" },
-      { "id": "Testimonial-OceanSplit", "name": "Ocean Split", "style": "ocean" },
-      { "id": "Testimonial-OceanEditorial", "name": "Ocean Editorial", "style": "ocean" },
-      { "id": "Testimonial-SunsetCentered", "name": "Sunset Centered", "style": "sunset" },
-      { "id": "Testimonial-SunsetSplit", "name": "Sunset Split", "style": "sunset" },
-      { "id": "Testimonial-SunsetEditorial", "name": "Sunset Editorial", "style": "sunset" },
-      { "id": "Testimonial-ForestCentered", "name": "Forest Centered", "style": "forest" },
-      { "id": "Testimonial-ForestSplit", "name": "Forest Split", "style": "forest" },
-      { "id": "Testimonial-ForestEditorial", "name": "Forest Editorial", "style": "forest" },
-      { "id": "Testimonial-RoseCentered", "name": "Rose Centered", "style": "rose" },
-      { "id": "Testimonial-RoseSplit", "name": "Rose Split", "style": "rose" },
-      { "id": "Testimonial-RoseEditorial", "name": "Rose Editorial", "style": "rose" },
-      { "id": "Testimonial-GoldCentered", "name": "Gold Centered", "style": "gold" },
-      { "id": "Testimonial-GoldSplit", "name": "Gold Split", "style": "gold" },
-      { "id": "Testimonial-GoldEditorial", "name": "Gold Editorial", "style": "gold" },
-      { "id": "Testimonial-MidnightCentered", "name": "Midnight Centered", "style": "midnight" },
-      { "id": "Testimonial-MidnightSplit", "name": "Midnight Split", "style": "midnight" },
-      { "id": "Testimonial-MidnightEditorial", "name": "Midnight Editorial", "style": "midnight" },
-      { "id": "Testimonial-CrimsonCentered", "name": "Crimson Centered", "style": "crimson" },
-      { "id": "Testimonial-CrimsonSplit", "name": "Crimson Split", "style": "crimson" },
-      { "id": "Testimonial-CrimsonEditorial", "name": "Crimson Editorial", "style": "crimson" },
-      { "id": "Testimonial-LavenderCentered", "name": "Lavender Centered", "style": "lavender" },
-      { "id": "Testimonial-LavenderSplit", "name": "Lavender Split", "style": "lavender" },
-      { "id": "Testimonial-LavenderEditorial", "name": "Lavender Editorial", "style": "lavender" },
-      { "id": "Testimonial-ArcticCentered", "name": "Arctic Centered", "style": "arctic" },
-      { "id": "Testimonial-ArcticSplit", "name": "Arctic Split", "style": "arctic" },
-      { "id": "Testimonial-ArcticEditorial", "name": "Arctic Editorial", "style": "arctic" },
-      { "id": "Testimonial-EspressoCentered", "name": "Espresso Centered", "style": "espresso" },
-      { "id": "Testimonial-EspressoSplit", "name": "Espresso Split", "style": "espresso" },
-      { "id": "Testimonial-EspressoEditorial", "name": "Espresso Editorial", "style": "espresso" },
-      { "id": "Testimonial-CorporateCentered", "name": "Corporate Centered", "style": "corporate" },
-      { "id": "Testimonial-CorporateSplit", "name": "Corporate Split", "style": "corporate" },
-      { "id": "Testimonial-CorporateEditorial", "name": "Corporate Editorial", "style": "corporate" },
-      { "id": "Testimonial-IndustrialCentered", "name": "Industrial Centered", "style": "industrial" },
-      { "id": "Testimonial-IndustrialSplit", "name": "Industrial Split", "style": "industrial" },
-      { "id": "Testimonial-IndustrialEditorial", "name": "Industrial Editorial", "style": "industrial" },
-      { "id": "Testimonial-ViennaCentered", "name": "Vienna Centered", "style": "vienna" },
-      { "id": "Testimonial-ViennaSplit", "name": "Vienna Split", "style": "vienna" },
-      { "id": "Testimonial-ViennaEditorial", "name": "Vienna Editorial", "style": "vienna" },
-      { "id": "Testimonial-AlpineCentered", "name": "Alpine Centered", "style": "alpine" },
-      { "id": "Testimonial-AlpineSplit", "name": "Alpine Split", "style": "alpine" },
-      { "id": "Testimonial-AlpineEditorial", "name": "Alpine Editorial", "style": "alpine" },
-      { "id": "Testimonial-FinanceCentered", "name": "Finance Centered", "style": "finance" },
-      { "id": "Testimonial-FinanceSplit", "name": "Finance Split", "style": "finance" },
-      { "id": "Testimonial-FinanceEditorial", "name": "Finance Editorial", "style": "finance" },
-      { "id": "Testimonial-MaterialBlueCentered", "name": "Material Blue Centered", "style": "materialBlue" },
-      { "id": "Testimonial-MaterialBlueSplit", "name": "Material Blue Split", "style": "materialBlue" },
-      { "id": "Testimonial-MaterialBlueEditorial", "name": "Material Blue Editorial", "style": "materialBlue" },
-      { "id": "Testimonial-MaterialDarkCentered", "name": "Material Dark Centered", "style": "materialDark" },
-      { "id": "Testimonial-MaterialDarkSplit", "name": "Material Dark Split", "style": "materialDark" },
-      { "id": "Testimonial-MaterialDarkEditorial", "name": "Material Dark Editorial", "style": "materialDark" },
-      { "id": "Testimonial-FlatRedCentered", "name": "Flat Red Centered", "style": "flatRed" },
-      { "id": "Testimonial-FlatRedSplit", "name": "Flat Red Split", "style": "flatRed" },
-      { "id": "Testimonial-FlatRedEditorial", "name": "Flat Red Editorial", "style": "flatRed" },
-      { "id": "Testimonial-FlatNavyCentered", "name": "Flat Navy Centered", "style": "flatNavy" },
-      { "id": "Testimonial-FlatNavySplit", "name": "Flat Navy Split", "style": "flatNavy" },
-      { "id": "Testimonial-FlatNavyEditorial", "name": "Flat Navy Editorial", "style": "flatNavy" },
-      { "id": "Testimonial-SwissCentered", "name": "Swiss Centered", "style": "swiss" },
-      { "id": "Testimonial-SwissSplit", "name": "Swiss Split", "style": "swiss" },
-      { "id": "Testimonial-SwissEditorial", "name": "Swiss Editorial", "style": "swiss" },
-      { "id": "Testimonial-BauhausCentered", "name": "Bauhaus Centered", "style": "bauhaus" },
-      { "id": "Testimonial-BauhausSplit", "name": "Bauhaus Split", "style": "bauhaus" },
-      { "id": "Testimonial-BauhausEditorial", "name": "Bauhaus Editorial", "style": "bauhaus" },
-      { "id": "Testimonial-MonoCentered", "name": "Mono Centered", "style": "mono" },
-      { "id": "Testimonial-MonoSplit", "name": "Mono Split", "style": "mono" },
-      { "id": "Testimonial-MonoEditorial", "name": "Mono Editorial", "style": "mono" },
-      { "id": "Testimonial-PaperCentered", "name": "Paper Centered", "style": "paper" },
-      { "id": "Testimonial-PaperSplit", "name": "Paper Split", "style": "paper" },
-      { "id": "Testimonial-PaperEditorial", "name": "Paper Editorial", "style": "paper" },
-      { "id": "Testimonial-SlateCentered", "name": "Slate Centered", "style": "slate" },
-      { "id": "Testimonial-SlateSplit", "name": "Slate Split", "style": "slate" },
-      { "id": "Testimonial-SlateEditorial", "name": "Slate Editorial", "style": "slate" },
-      { "id": "Testimonial-BlueprintCentered", "name": "Blueprint Centered", "style": "blueprint" },
-      { "id": "Testimonial-BlueprintSplit", "name": "Blueprint Split", "style": "blueprint" },
-      { "id": "Testimonial-BlueprintEditorial", "name": "Blueprint Editorial", "style": "blueprint" },
-      { "id": "Testimonial-CandyCentered", "name": "Candy Centered", "style": "candy" },
-      { "id": "Testimonial-CandySplit", "name": "Candy Split", "style": "candy" },
-      { "id": "Testimonial-CandyEditorial", "name": "Candy Editorial", "style": "candy" },
-      { "id": "Testimonial-MintCentered", "name": "Mint Centered", "style": "mint" },
-      { "id": "Testimonial-MintSplit", "name": "Mint Split", "style": "mint" },
-      { "id": "Testimonial-MintEditorial", "name": "Mint Editorial", "style": "mint" },
-      { "id": "Testimonial-CoralCentered", "name": "Coral Centered", "style": "coral" },
-      { "id": "Testimonial-CoralSplit", "name": "Coral Split", "style": "coral" },
-      { "id": "Testimonial-CoralEditorial", "name": "Coral Editorial", "style": "coral" },
-      { "id": "Testimonial-SkyCentered", "name": "Sky Centered", "style": "sky" },
-      { "id": "Testimonial-SkySplit", "name": "Sky Split", "style": "sky" },
-      { "id": "Testimonial-SkyEditorial", "name": "Sky Editorial", "style": "sky" },
-      { "id": "Testimonial-GrapeCentered", "name": "Grape Centered", "style": "grape" },
-      { "id": "Testimonial-GrapeSplit", "name": "Grape Split", "style": "grape" },
-      { "id": "Testimonial-GrapeEditorial", "name": "Grape Editorial", "style": "grape" },
-      { "id": "Testimonial-CharcoalCentered", "name": "Charcoal Centered", "style": "charcoal" },
-      { "id": "Testimonial-CharcoalSplit", "name": "Charcoal Split", "style": "charcoal" },
-      { "id": "Testimonial-CharcoalEditorial", "name": "Charcoal Editorial", "style": "charcoal" },
-      { "id": "Testimonial-PeachCentered", "name": "Peach Centered", "style": "peach" },
-      { "id": "Testimonial-PeachSplit", "name": "Peach Split", "style": "peach" },
-      { "id": "Testimonial-PeachEditorial", "name": "Peach Editorial", "style": "peach" },
-      { "id": "Testimonial-OceanDarkCentered", "name": "Ocean Dark Centered", "style": "oceanDark" },
-      { "id": "Testimonial-OceanDarkSplit", "name": "Ocean Dark Split", "style": "oceanDark" },
-      { "id": "Testimonial-OceanDarkEditorial", "name": "Ocean Dark Editorial", "style": "oceanDark" },
-      { "id": "Testimonial-CreamCentered", "name": "Cream Centered", "style": "cream" },
-      { "id": "Testimonial-CreamSplit", "name": "Cream Split", "style": "cream" },
-      { "id": "Testimonial-CreamEditorial", "name": "Cream Editorial", "style": "cream" },
-      { "id": "Testimonial-ElectricCentered", "name": "Electric Centered", "style": "electric" },
-      { "id": "Testimonial-ElectricSplit", "name": "Electric Split", "style": "electric" },
-      { "id": "Testimonial-ElectricEditorial", "name": "Electric Editorial", "style": "electric" }
+      {
+        "id": "Testimonial-DarkCentered",
+        "name": "Dark Centered",
+        "style": "dark"
+      },
+      {
+        "id": "Testimonial-DarkSplit",
+        "name": "Dark Split",
+        "style": "dark"
+      },
+      {
+        "id": "Testimonial-DarkEditorial",
+        "name": "Dark Editorial",
+        "style": "dark"
+      },
+      {
+        "id": "Testimonial-CleanCentered",
+        "name": "Clean Centered",
+        "style": "clean"
+      },
+      {
+        "id": "Testimonial-CleanSplit",
+        "name": "Clean Split",
+        "style": "clean"
+      },
+      {
+        "id": "Testimonial-CleanEditorial",
+        "name": "Clean Editorial",
+        "style": "clean"
+      },
+      {
+        "id": "Testimonial-BoldCentered",
+        "name": "Bold Centered",
+        "style": "bold"
+      },
+      {
+        "id": "Testimonial-BoldSplit",
+        "name": "Bold Split",
+        "style": "bold"
+      },
+      {
+        "id": "Testimonial-BoldEditorial",
+        "name": "Bold Editorial",
+        "style": "bold"
+      },
+      {
+        "id": "Testimonial-WarmCentered",
+        "name": "Warm Centered",
+        "style": "warm"
+      },
+      {
+        "id": "Testimonial-WarmSplit",
+        "name": "Warm Split",
+        "style": "warm"
+      },
+      {
+        "id": "Testimonial-WarmEditorial",
+        "name": "Warm Editorial",
+        "style": "warm"
+      },
+      {
+        "id": "Testimonial-MinimalCentered",
+        "name": "Minimal Centered",
+        "style": "minimal"
+      },
+      {
+        "id": "Testimonial-MinimalSplit",
+        "name": "Minimal Split",
+        "style": "minimal"
+      },
+      {
+        "id": "Testimonial-MinimalEditorial",
+        "name": "Minimal Editorial",
+        "style": "minimal"
+      },
+      {
+        "id": "Testimonial-NeonCentered",
+        "name": "Neon Centered",
+        "style": "neon"
+      },
+      {
+        "id": "Testimonial-NeonSplit",
+        "name": "Neon Split",
+        "style": "neon"
+      },
+      {
+        "id": "Testimonial-NeonEditorial",
+        "name": "Neon Editorial",
+        "style": "neon"
+      },
+      {
+        "id": "Testimonial-LindamohamedCentered",
+        "name": "Lindamohamed Centered",
+        "style": "lindamohamed"
+      },
+      {
+        "id": "Testimonial-LindamohamedSplit",
+        "name": "Lindamohamed Split",
+        "style": "lindamohamed"
+      },
+      {
+        "id": "Testimonial-LindamohamedEditorial",
+        "name": "Lindamohamed Editorial",
+        "style": "lindamohamed"
+      },
+      {
+        "id": "Testimonial-OceanCentered",
+        "name": "Ocean Centered",
+        "style": "ocean"
+      },
+      {
+        "id": "Testimonial-OceanSplit",
+        "name": "Ocean Split",
+        "style": "ocean"
+      },
+      {
+        "id": "Testimonial-OceanEditorial",
+        "name": "Ocean Editorial",
+        "style": "ocean"
+      },
+      {
+        "id": "Testimonial-SunsetCentered",
+        "name": "Sunset Centered",
+        "style": "sunset"
+      },
+      {
+        "id": "Testimonial-SunsetSplit",
+        "name": "Sunset Split",
+        "style": "sunset"
+      },
+      {
+        "id": "Testimonial-SunsetEditorial",
+        "name": "Sunset Editorial",
+        "style": "sunset"
+      },
+      {
+        "id": "Testimonial-ForestCentered",
+        "name": "Forest Centered",
+        "style": "forest"
+      },
+      {
+        "id": "Testimonial-ForestSplit",
+        "name": "Forest Split",
+        "style": "forest"
+      },
+      {
+        "id": "Testimonial-ForestEditorial",
+        "name": "Forest Editorial",
+        "style": "forest"
+      },
+      {
+        "id": "Testimonial-RoseCentered",
+        "name": "Rose Centered",
+        "style": "rose"
+      },
+      {
+        "id": "Testimonial-RoseSplit",
+        "name": "Rose Split",
+        "style": "rose"
+      },
+      {
+        "id": "Testimonial-RoseEditorial",
+        "name": "Rose Editorial",
+        "style": "rose"
+      },
+      {
+        "id": "Testimonial-GoldCentered",
+        "name": "Gold Centered",
+        "style": "gold"
+      },
+      {
+        "id": "Testimonial-GoldSplit",
+        "name": "Gold Split",
+        "style": "gold"
+      },
+      {
+        "id": "Testimonial-GoldEditorial",
+        "name": "Gold Editorial",
+        "style": "gold"
+      },
+      {
+        "id": "Testimonial-MidnightCentered",
+        "name": "Midnight Centered",
+        "style": "midnight"
+      },
+      {
+        "id": "Testimonial-MidnightSplit",
+        "name": "Midnight Split",
+        "style": "midnight"
+      },
+      {
+        "id": "Testimonial-MidnightEditorial",
+        "name": "Midnight Editorial",
+        "style": "midnight"
+      },
+      {
+        "id": "Testimonial-CrimsonCentered",
+        "name": "Crimson Centered",
+        "style": "crimson"
+      },
+      {
+        "id": "Testimonial-CrimsonSplit",
+        "name": "Crimson Split",
+        "style": "crimson"
+      },
+      {
+        "id": "Testimonial-CrimsonEditorial",
+        "name": "Crimson Editorial",
+        "style": "crimson"
+      },
+      {
+        "id": "Testimonial-LavenderCentered",
+        "name": "Lavender Centered",
+        "style": "lavender"
+      },
+      {
+        "id": "Testimonial-LavenderSplit",
+        "name": "Lavender Split",
+        "style": "lavender"
+      },
+      {
+        "id": "Testimonial-LavenderEditorial",
+        "name": "Lavender Editorial",
+        "style": "lavender"
+      },
+      {
+        "id": "Testimonial-ArcticCentered",
+        "name": "Arctic Centered",
+        "style": "arctic"
+      },
+      {
+        "id": "Testimonial-ArcticSplit",
+        "name": "Arctic Split",
+        "style": "arctic"
+      },
+      {
+        "id": "Testimonial-ArcticEditorial",
+        "name": "Arctic Editorial",
+        "style": "arctic"
+      },
+      {
+        "id": "Testimonial-EspressoCentered",
+        "name": "Espresso Centered",
+        "style": "espresso"
+      },
+      {
+        "id": "Testimonial-EspressoSplit",
+        "name": "Espresso Split",
+        "style": "espresso"
+      },
+      {
+        "id": "Testimonial-EspressoEditorial",
+        "name": "Espresso Editorial",
+        "style": "espresso"
+      },
+      {
+        "id": "Testimonial-CorporateCentered",
+        "name": "Corporate Centered",
+        "style": "corporate"
+      },
+      {
+        "id": "Testimonial-CorporateSplit",
+        "name": "Corporate Split",
+        "style": "corporate"
+      },
+      {
+        "id": "Testimonial-CorporateEditorial",
+        "name": "Corporate Editorial",
+        "style": "corporate"
+      },
+      {
+        "id": "Testimonial-IndustrialCentered",
+        "name": "Industrial Centered",
+        "style": "industrial"
+      },
+      {
+        "id": "Testimonial-IndustrialSplit",
+        "name": "Industrial Split",
+        "style": "industrial"
+      },
+      {
+        "id": "Testimonial-IndustrialEditorial",
+        "name": "Industrial Editorial",
+        "style": "industrial"
+      },
+      {
+        "id": "Testimonial-ViennaCentered",
+        "name": "Vienna Centered",
+        "style": "vienna"
+      },
+      {
+        "id": "Testimonial-ViennaSplit",
+        "name": "Vienna Split",
+        "style": "vienna"
+      },
+      {
+        "id": "Testimonial-ViennaEditorial",
+        "name": "Vienna Editorial",
+        "style": "vienna"
+      },
+      {
+        "id": "Testimonial-AlpineCentered",
+        "name": "Alpine Centered",
+        "style": "alpine"
+      },
+      {
+        "id": "Testimonial-AlpineSplit",
+        "name": "Alpine Split",
+        "style": "alpine"
+      },
+      {
+        "id": "Testimonial-AlpineEditorial",
+        "name": "Alpine Editorial",
+        "style": "alpine"
+      },
+      {
+        "id": "Testimonial-FinanceCentered",
+        "name": "Finance Centered",
+        "style": "finance"
+      },
+      {
+        "id": "Testimonial-FinanceSplit",
+        "name": "Finance Split",
+        "style": "finance"
+      },
+      {
+        "id": "Testimonial-FinanceEditorial",
+        "name": "Finance Editorial",
+        "style": "finance"
+      },
+      {
+        "id": "Testimonial-MaterialBlueCentered",
+        "name": "Material Blue Centered",
+        "style": "materialBlue"
+      },
+      {
+        "id": "Testimonial-MaterialBlueSplit",
+        "name": "Material Blue Split",
+        "style": "materialBlue"
+      },
+      {
+        "id": "Testimonial-MaterialBlueEditorial",
+        "name": "Material Blue Editorial",
+        "style": "materialBlue"
+      },
+      {
+        "id": "Testimonial-MaterialDarkCentered",
+        "name": "Material Dark Centered",
+        "style": "materialDark"
+      },
+      {
+        "id": "Testimonial-MaterialDarkSplit",
+        "name": "Material Dark Split",
+        "style": "materialDark"
+      },
+      {
+        "id": "Testimonial-MaterialDarkEditorial",
+        "name": "Material Dark Editorial",
+        "style": "materialDark"
+      },
+      {
+        "id": "Testimonial-FlatRedCentered",
+        "name": "Flat Red Centered",
+        "style": "flatRed"
+      },
+      {
+        "id": "Testimonial-FlatRedSplit",
+        "name": "Flat Red Split",
+        "style": "flatRed"
+      },
+      {
+        "id": "Testimonial-FlatRedEditorial",
+        "name": "Flat Red Editorial",
+        "style": "flatRed"
+      },
+      {
+        "id": "Testimonial-FlatNavyCentered",
+        "name": "Flat Navy Centered",
+        "style": "flatNavy"
+      },
+      {
+        "id": "Testimonial-FlatNavySplit",
+        "name": "Flat Navy Split",
+        "style": "flatNavy"
+      },
+      {
+        "id": "Testimonial-FlatNavyEditorial",
+        "name": "Flat Navy Editorial",
+        "style": "flatNavy"
+      },
+      {
+        "id": "Testimonial-SwissCentered",
+        "name": "Swiss Centered",
+        "style": "swiss"
+      },
+      {
+        "id": "Testimonial-SwissSplit",
+        "name": "Swiss Split",
+        "style": "swiss"
+      },
+      {
+        "id": "Testimonial-SwissEditorial",
+        "name": "Swiss Editorial",
+        "style": "swiss"
+      },
+      {
+        "id": "Testimonial-BauhausCentered",
+        "name": "Bauhaus Centered",
+        "style": "bauhaus"
+      },
+      {
+        "id": "Testimonial-BauhausSplit",
+        "name": "Bauhaus Split",
+        "style": "bauhaus"
+      },
+      {
+        "id": "Testimonial-BauhausEditorial",
+        "name": "Bauhaus Editorial",
+        "style": "bauhaus"
+      },
+      {
+        "id": "Testimonial-MonoCentered",
+        "name": "Mono Centered",
+        "style": "mono"
+      },
+      {
+        "id": "Testimonial-MonoSplit",
+        "name": "Mono Split",
+        "style": "mono"
+      },
+      {
+        "id": "Testimonial-MonoEditorial",
+        "name": "Mono Editorial",
+        "style": "mono"
+      },
+      {
+        "id": "Testimonial-PaperCentered",
+        "name": "Paper Centered",
+        "style": "paper"
+      },
+      {
+        "id": "Testimonial-PaperSplit",
+        "name": "Paper Split",
+        "style": "paper"
+      },
+      {
+        "id": "Testimonial-PaperEditorial",
+        "name": "Paper Editorial",
+        "style": "paper"
+      },
+      {
+        "id": "Testimonial-SlateCentered",
+        "name": "Slate Centered",
+        "style": "slate"
+      },
+      {
+        "id": "Testimonial-SlateSplit",
+        "name": "Slate Split",
+        "style": "slate"
+      },
+      {
+        "id": "Testimonial-SlateEditorial",
+        "name": "Slate Editorial",
+        "style": "slate"
+      },
+      {
+        "id": "Testimonial-BlueprintCentered",
+        "name": "Blueprint Centered",
+        "style": "blueprint"
+      },
+      {
+        "id": "Testimonial-BlueprintSplit",
+        "name": "Blueprint Split",
+        "style": "blueprint"
+      },
+      {
+        "id": "Testimonial-BlueprintEditorial",
+        "name": "Blueprint Editorial",
+        "style": "blueprint"
+      },
+      {
+        "id": "Testimonial-CandyCentered",
+        "name": "Candy Centered",
+        "style": "candy"
+      },
+      {
+        "id": "Testimonial-CandySplit",
+        "name": "Candy Split",
+        "style": "candy"
+      },
+      {
+        "id": "Testimonial-CandyEditorial",
+        "name": "Candy Editorial",
+        "style": "candy"
+      },
+      {
+        "id": "Testimonial-MintCentered",
+        "name": "Mint Centered",
+        "style": "mint"
+      },
+      {
+        "id": "Testimonial-MintSplit",
+        "name": "Mint Split",
+        "style": "mint"
+      },
+      {
+        "id": "Testimonial-MintEditorial",
+        "name": "Mint Editorial",
+        "style": "mint"
+      },
+      {
+        "id": "Testimonial-CoralCentered",
+        "name": "Coral Centered",
+        "style": "coral"
+      },
+      {
+        "id": "Testimonial-CoralSplit",
+        "name": "Coral Split",
+        "style": "coral"
+      },
+      {
+        "id": "Testimonial-CoralEditorial",
+        "name": "Coral Editorial",
+        "style": "coral"
+      },
+      {
+        "id": "Testimonial-SkyCentered",
+        "name": "Sky Centered",
+        "style": "sky"
+      },
+      {
+        "id": "Testimonial-SkySplit",
+        "name": "Sky Split",
+        "style": "sky"
+      },
+      {
+        "id": "Testimonial-SkyEditorial",
+        "name": "Sky Editorial",
+        "style": "sky"
+      },
+      {
+        "id": "Testimonial-GrapeCentered",
+        "name": "Grape Centered",
+        "style": "grape"
+      },
+      {
+        "id": "Testimonial-GrapeSplit",
+        "name": "Grape Split",
+        "style": "grape"
+      },
+      {
+        "id": "Testimonial-GrapeEditorial",
+        "name": "Grape Editorial",
+        "style": "grape"
+      },
+      {
+        "id": "Testimonial-CharcoalCentered",
+        "name": "Charcoal Centered",
+        "style": "charcoal"
+      },
+      {
+        "id": "Testimonial-CharcoalSplit",
+        "name": "Charcoal Split",
+        "style": "charcoal"
+      },
+      {
+        "id": "Testimonial-CharcoalEditorial",
+        "name": "Charcoal Editorial",
+        "style": "charcoal"
+      },
+      {
+        "id": "Testimonial-PeachCentered",
+        "name": "Peach Centered",
+        "style": "peach"
+      },
+      {
+        "id": "Testimonial-PeachSplit",
+        "name": "Peach Split",
+        "style": "peach"
+      },
+      {
+        "id": "Testimonial-PeachEditorial",
+        "name": "Peach Editorial",
+        "style": "peach"
+      },
+      {
+        "id": "Testimonial-OceanDarkCentered",
+        "name": "Ocean Dark Centered",
+        "style": "oceanDark"
+      },
+      {
+        "id": "Testimonial-OceanDarkSplit",
+        "name": "Ocean Dark Split",
+        "style": "oceanDark"
+      },
+      {
+        "id": "Testimonial-OceanDarkEditorial",
+        "name": "Ocean Dark Editorial",
+        "style": "oceanDark"
+      },
+      {
+        "id": "Testimonial-CreamCentered",
+        "name": "Cream Centered",
+        "style": "cream"
+      },
+      {
+        "id": "Testimonial-CreamSplit",
+        "name": "Cream Split",
+        "style": "cream"
+      },
+      {
+        "id": "Testimonial-CreamEditorial",
+        "name": "Cream Editorial",
+        "style": "cream"
+      },
+      {
+        "id": "Testimonial-ElectricCentered",
+        "name": "Electric Centered",
+        "style": "electric"
+      },
+      {
+        "id": "Testimonial-ElectricSplit",
+        "name": "Electric Split",
+        "style": "electric"
+      },
+      {
+        "id": "Testimonial-ElectricEditorial",
+        "name": "Electric Editorial",
+        "style": "electric"
+      }
     ],
     "primaryId": "Testimonial-NeonSplit"
   },
@@ -7553,750 +8057,6 @@
     "primaryId": "ServiceOverview-DarkDashboard"
   },
   {
-    "slug": "linkedincarousel",
-    "camel": "LinkedinCarousel",
-    "name": "LinkedIn Carousel Post",
-    "description": "Multi-slide carousel posts for LinkedIn with swipe-through layouts, headline cards, and CTA slides.",
-    "icon": "layout-grid",
-    "color": "blue",
-    "primaryVariant": "DarkSlide",
-    "variantCount": 16,
-    "variants": [
-      {
-        "id": "LinkedinCarousel-DarkSlide",
-        "name": "Dark Slide",
-        "style": "dark"
-      },
-      {
-        "id": "LinkedinCarousel-DarkHeadline",
-        "name": "Dark Headline",
-        "style": "dark"
-      },
-      {
-        "id": "LinkedinCarousel-DarkCTA",
-        "name": "Dark CTA",
-        "style": "dark"
-      },
-      {
-        "id": "LinkedinCarousel-BoldSlide",
-        "name": "Bold Slide",
-        "style": "bold"
-      },
-      {
-        "id": "LinkedinCarousel-BoldHeadline",
-        "name": "Bold Headline",
-        "style": "bold"
-      },
-      {
-        "id": "LinkedinCarousel-BoldCTA",
-        "name": "Bold CTA",
-        "style": "bold"
-      },
-      {
-        "id": "LinkedinCarousel-OceanSlide",
-        "name": "Ocean Slide",
-        "style": "ocean"
-      },
-      {
-        "id": "LinkedinCarousel-SunsetSlide",
-        "name": "Sunset Slide",
-        "style": "sunset"
-      },
-      {
-        "id": "LinkedinCarousel-ForestSlide",
-        "name": "Forest Slide",
-        "style": "forest"
-      },
-      {
-        "id": "LinkedinCarousel-RoseSlide",
-        "name": "Rose Slide",
-        "style": "rose"
-      },
-      {
-        "id": "LinkedinCarousel-GoldSlide",
-        "name": "Gold Slide",
-        "style": "gold"
-      },
-      {
-        "id": "LinkedinCarousel-MidnightSlide",
-        "name": "Midnight Slide",
-        "style": "midnight"
-      },
-      {
-        "id": "LinkedinCarousel-CrimsonSlide",
-        "name": "Crimson Slide",
-        "style": "crimson"
-      },
-      {
-        "id": "LinkedinCarousel-LavenderSlide",
-        "name": "Lavender Slide",
-        "style": "lavender"
-      },
-      {
-        "id": "LinkedinCarousel-ArcticSlide",
-        "name": "Arctic Slide",
-        "style": "arctic"
-      },
-      {
-        "id": "LinkedinCarousel-EspressoSlide",
-        "name": "Espresso Slide",
-        "style": "espresso"
-      }
-    ],
-    "primaryId": "LinkedinCarousel-DarkSlide"
-  },
-  {
-    "slug": "emailsignature",
-    "camel": "EmailSignature",
-    "name": "Email Signature Banner",
-    "description": "Animated email signature banners with contact info, social links, and brand elements.",
-    "icon": "mail",
-    "color": "indigo",
-    "primaryVariant": "DarkClassic",
-    "variantCount": 16,
-    "variants": [
-      {
-        "id": "EmailSignature-DarkClassic",
-        "name": "Dark Classic",
-        "style": "dark"
-      },
-      {
-        "id": "EmailSignature-DarkCompact",
-        "name": "Dark Compact",
-        "style": "dark"
-      },
-      {
-        "id": "EmailSignature-DarkMinimal",
-        "name": "Dark Minimal",
-        "style": "dark"
-      },
-      {
-        "id": "EmailSignature-BoldClassic",
-        "name": "Bold Classic",
-        "style": "bold"
-      },
-      {
-        "id": "EmailSignature-BoldCompact",
-        "name": "Bold Compact",
-        "style": "bold"
-      },
-      {
-        "id": "EmailSignature-BoldMinimal",
-        "name": "Bold Minimal",
-        "style": "bold"
-      },
-      {
-        "id": "EmailSignature-OceanClassic",
-        "name": "Ocean Classic",
-        "style": "ocean"
-      },
-      {
-        "id": "EmailSignature-SunsetClassic",
-        "name": "Sunset Classic",
-        "style": "sunset"
-      },
-      {
-        "id": "EmailSignature-ForestClassic",
-        "name": "Forest Classic",
-        "style": "forest"
-      },
-      {
-        "id": "EmailSignature-RoseClassic",
-        "name": "Rose Classic",
-        "style": "rose"
-      },
-      {
-        "id": "EmailSignature-GoldClassic",
-        "name": "Gold Classic",
-        "style": "gold"
-      },
-      {
-        "id": "EmailSignature-MidnightClassic",
-        "name": "Midnight Classic",
-        "style": "midnight"
-      },
-      {
-        "id": "EmailSignature-CrimsonClassic",
-        "name": "Crimson Classic",
-        "style": "crimson"
-      },
-      {
-        "id": "EmailSignature-LavenderClassic",
-        "name": "Lavender Classic",
-        "style": "lavender"
-      },
-      {
-        "id": "EmailSignature-ArcticClassic",
-        "name": "Arctic Classic",
-        "style": "arctic"
-      },
-      {
-        "id": "EmailSignature-EspressoClassic",
-        "name": "Espresso Classic",
-        "style": "espresso"
-      }
-    ],
-    "primaryId": "EmailSignature-DarkClassic"
-  },
-  {
-    "slug": "timetracking",
-    "camel": "TimeTracking",
-    "name": "Time Tracking Summary",
-    "description": "Weekly/monthly time reports with hours breakdown, project allocation charts, and billable vs non-billable.",
-    "icon": "clock",
-    "color": "green",
-    "primaryVariant": "DarkWeekly",
-    "variantCount": 16,
-    "variants": [
-      {
-        "id": "TimeTracking-DarkWeekly",
-        "name": "Dark Weekly",
-        "style": "dark"
-      },
-      {
-        "id": "TimeTracking-DarkMonthly",
-        "name": "Dark Monthly",
-        "style": "dark"
-      },
-      {
-        "id": "TimeTracking-DarkBreakdown",
-        "name": "Dark Breakdown",
-        "style": "dark"
-      },
-      {
-        "id": "TimeTracking-BoldWeekly",
-        "name": "Bold Weekly",
-        "style": "bold"
-      },
-      {
-        "id": "TimeTracking-BoldMonthly",
-        "name": "Bold Monthly",
-        "style": "bold"
-      },
-      {
-        "id": "TimeTracking-BoldBreakdown",
-        "name": "Bold Breakdown",
-        "style": "bold"
-      },
-      {
-        "id": "TimeTracking-OceanWeekly",
-        "name": "Ocean Weekly",
-        "style": "ocean"
-      },
-      {
-        "id": "TimeTracking-SunsetWeekly",
-        "name": "Sunset Weekly",
-        "style": "sunset"
-      },
-      {
-        "id": "TimeTracking-ForestWeekly",
-        "name": "Forest Weekly",
-        "style": "forest"
-      },
-      {
-        "id": "TimeTracking-RoseWeekly",
-        "name": "Rose Weekly",
-        "style": "rose"
-      },
-      {
-        "id": "TimeTracking-GoldWeekly",
-        "name": "Gold Weekly",
-        "style": "gold"
-      },
-      {
-        "id": "TimeTracking-MidnightWeekly",
-        "name": "Midnight Weekly",
-        "style": "midnight"
-      },
-      {
-        "id": "TimeTracking-CrimsonWeekly",
-        "name": "Crimson Weekly",
-        "style": "crimson"
-      },
-      {
-        "id": "TimeTracking-LavenderWeekly",
-        "name": "Lavender Weekly",
-        "style": "lavender"
-      },
-      {
-        "id": "TimeTracking-ArcticWeekly",
-        "name": "Arctic Weekly",
-        "style": "arctic"
-      },
-      {
-        "id": "TimeTracking-EspressoWeekly",
-        "name": "Espresso Weekly",
-        "style": "espresso"
-      }
-    ],
-    "primaryId": "TimeTracking-DarkWeekly"
-  },
-  {
-    "slug": "expensereport",
-    "camel": "ExpenseReport",
-    "name": "Expense Report",
-    "description": "Itemized expense summaries with category breakdowns, receipt highlights, and total calculations.",
-    "icon": "receipt",
-    "color": "amber",
-    "primaryVariant": "DarkSummary",
-    "variantCount": 16,
-    "variants": [
-      {
-        "id": "ExpenseReport-DarkSummary",
-        "name": "Dark Summary",
-        "style": "dark"
-      },
-      {
-        "id": "ExpenseReport-DarkDetail",
-        "name": "Dark Detail",
-        "style": "dark"
-      },
-      {
-        "id": "ExpenseReport-DarkCategory",
-        "name": "Dark Category",
-        "style": "dark"
-      },
-      {
-        "id": "ExpenseReport-BoldSummary",
-        "name": "Bold Summary",
-        "style": "bold"
-      },
-      {
-        "id": "ExpenseReport-BoldDetail",
-        "name": "Bold Detail",
-        "style": "bold"
-      },
-      {
-        "id": "ExpenseReport-BoldCategory",
-        "name": "Bold Category",
-        "style": "bold"
-      },
-      {
-        "id": "ExpenseReport-OceanSummary",
-        "name": "Ocean Summary",
-        "style": "ocean"
-      },
-      {
-        "id": "ExpenseReport-SunsetSummary",
-        "name": "Sunset Summary",
-        "style": "sunset"
-      },
-      {
-        "id": "ExpenseReport-ForestSummary",
-        "name": "Forest Summary",
-        "style": "forest"
-      },
-      {
-        "id": "ExpenseReport-RoseSummary",
-        "name": "Rose Summary",
-        "style": "rose"
-      },
-      {
-        "id": "ExpenseReport-GoldSummary",
-        "name": "Gold Summary",
-        "style": "gold"
-      },
-      {
-        "id": "ExpenseReport-MidnightSummary",
-        "name": "Midnight Summary",
-        "style": "midnight"
-      },
-      {
-        "id": "ExpenseReport-CrimsonSummary",
-        "name": "Crimson Summary",
-        "style": "crimson"
-      },
-      {
-        "id": "ExpenseReport-LavenderSummary",
-        "name": "Lavender Summary",
-        "style": "lavender"
-      },
-      {
-        "id": "ExpenseReport-ArcticSummary",
-        "name": "Arctic Summary",
-        "style": "arctic"
-      },
-      {
-        "id": "ExpenseReport-EspressoSummary",
-        "name": "Espresso Summary",
-        "style": "espresso"
-      }
-    ],
-    "primaryId": "ExpenseReport-DarkSummary"
-  },
-  {
-    "slug": "contractsummary",
-    "camel": "ContractSummary",
-    "name": "Contract Summary",
-    "description": "Key terms overview with deliverables, timelines, payment terms, and renewal dates.",
-    "icon": "file-text",
-    "color": "slate",
-    "primaryVariant": "DarkTerms",
-    "variantCount": 16,
-    "variants": [
-      {
-        "id": "ContractSummary-DarkTerms",
-        "name": "Dark Terms",
-        "style": "dark"
-      },
-      {
-        "id": "ContractSummary-DarkTimeline",
-        "name": "Dark Timeline",
-        "style": "dark"
-      },
-      {
-        "id": "ContractSummary-DarkPayment",
-        "name": "Dark Payment",
-        "style": "dark"
-      },
-      {
-        "id": "ContractSummary-BoldTerms",
-        "name": "Bold Terms",
-        "style": "bold"
-      },
-      {
-        "id": "ContractSummary-BoldTimeline",
-        "name": "Bold Timeline",
-        "style": "bold"
-      },
-      {
-        "id": "ContractSummary-BoldPayment",
-        "name": "Bold Payment",
-        "style": "bold"
-      },
-      {
-        "id": "ContractSummary-OceanTerms",
-        "name": "Ocean Terms",
-        "style": "ocean"
-      },
-      {
-        "id": "ContractSummary-SunsetTerms",
-        "name": "Sunset Terms",
-        "style": "sunset"
-      },
-      {
-        "id": "ContractSummary-ForestTerms",
-        "name": "Forest Terms",
-        "style": "forest"
-      },
-      {
-        "id": "ContractSummary-RoseTerms",
-        "name": "Rose Terms",
-        "style": "rose"
-      },
-      {
-        "id": "ContractSummary-GoldTerms",
-        "name": "Gold Terms",
-        "style": "gold"
-      },
-      {
-        "id": "ContractSummary-MidnightTerms",
-        "name": "Midnight Terms",
-        "style": "midnight"
-      },
-      {
-        "id": "ContractSummary-CrimsonTerms",
-        "name": "Crimson Terms",
-        "style": "crimson"
-      },
-      {
-        "id": "ContractSummary-LavenderTerms",
-        "name": "Lavender Terms",
-        "style": "lavender"
-      },
-      {
-        "id": "ContractSummary-ArcticTerms",
-        "name": "Arctic Terms",
-        "style": "arctic"
-      },
-      {
-        "id": "ContractSummary-EspressoTerms",
-        "name": "Espresso Terms",
-        "style": "espresso"
-      }
-    ],
-    "primaryId": "ContractSummary-DarkTerms"
-  },
-  {
-    "slug": "projectcloseout",
-    "camel": "ProjectCloseout",
-    "name": "Project Closeout",
-    "description": "Final project handoff with deliverables checklist, lessons learned, and next steps.",
-    "icon": "check-circle",
-    "color": "teal",
-    "primaryVariant": "DarkChecklist",
-    "variantCount": 16,
-    "variants": [
-      {
-        "id": "ProjectCloseout-DarkChecklist",
-        "name": "Dark Checklist",
-        "style": "dark"
-      },
-      {
-        "id": "ProjectCloseout-DarkLessons",
-        "name": "Dark Lessons",
-        "style": "dark"
-      },
-      {
-        "id": "ProjectCloseout-DarkNextSteps",
-        "name": "Dark NextSteps",
-        "style": "dark"
-      },
-      {
-        "id": "ProjectCloseout-BoldChecklist",
-        "name": "Bold Checklist",
-        "style": "bold"
-      },
-      {
-        "id": "ProjectCloseout-BoldLessons",
-        "name": "Bold Lessons",
-        "style": "bold"
-      },
-      {
-        "id": "ProjectCloseout-BoldNextSteps",
-        "name": "Bold NextSteps",
-        "style": "bold"
-      },
-      {
-        "id": "ProjectCloseout-OceanChecklist",
-        "name": "Ocean Checklist",
-        "style": "ocean"
-      },
-      {
-        "id": "ProjectCloseout-SunsetChecklist",
-        "name": "Sunset Checklist",
-        "style": "sunset"
-      },
-      {
-        "id": "ProjectCloseout-ForestChecklist",
-        "name": "Forest Checklist",
-        "style": "forest"
-      },
-      {
-        "id": "ProjectCloseout-RoseChecklist",
-        "name": "Rose Checklist",
-        "style": "rose"
-      },
-      {
-        "id": "ProjectCloseout-GoldChecklist",
-        "name": "Gold Checklist",
-        "style": "gold"
-      },
-      {
-        "id": "ProjectCloseout-MidnightChecklist",
-        "name": "Midnight Checklist",
-        "style": "midnight"
-      },
-      {
-        "id": "ProjectCloseout-CrimsonChecklist",
-        "name": "Crimson Checklist",
-        "style": "crimson"
-      },
-      {
-        "id": "ProjectCloseout-LavenderChecklist",
-        "name": "Lavender Checklist",
-        "style": "lavender"
-      },
-      {
-        "id": "ProjectCloseout-ArcticChecklist",
-        "name": "Arctic Checklist",
-        "style": "arctic"
-      },
-      {
-        "id": "ProjectCloseout-EspressoChecklist",
-        "name": "Espresso Checklist",
-        "style": "espresso"
-      }
-    ],
-    "primaryId": "ProjectCloseout-DarkChecklist"
-  },
-  {
-    "slug": "weeklyupdate",
-    "camel": "WeeklyUpdate",
-    "name": "Weekly Update",
-    "description": "Short weekly status videos with accomplished/planned/blocked sections.",
-    "icon": "calendar",
-    "color": "purple",
-    "primaryVariant": "DarkStatus",
-    "variantCount": 16,
-    "variants": [
-      {
-        "id": "WeeklyUpdate-DarkStatus",
-        "name": "Dark Status",
-        "style": "dark"
-      },
-      {
-        "id": "WeeklyUpdate-DarkProgress",
-        "name": "Dark Progress",
-        "style": "dark"
-      },
-      {
-        "id": "WeeklyUpdate-DarkBlocked",
-        "name": "Dark Blocked",
-        "style": "dark"
-      },
-      {
-        "id": "WeeklyUpdate-BoldStatus",
-        "name": "Bold Status",
-        "style": "bold"
-      },
-      {
-        "id": "WeeklyUpdate-BoldProgress",
-        "name": "Bold Progress",
-        "style": "bold"
-      },
-      {
-        "id": "WeeklyUpdate-BoldBlocked",
-        "name": "Bold Blocked",
-        "style": "bold"
-      },
-      {
-        "id": "WeeklyUpdate-OceanStatus",
-        "name": "Ocean Status",
-        "style": "ocean"
-      },
-      {
-        "id": "WeeklyUpdate-SunsetStatus",
-        "name": "Sunset Status",
-        "style": "sunset"
-      },
-      {
-        "id": "WeeklyUpdate-ForestStatus",
-        "name": "Forest Status",
-        "style": "forest"
-      },
-      {
-        "id": "WeeklyUpdate-RoseStatus",
-        "name": "Rose Status",
-        "style": "rose"
-      },
-      {
-        "id": "WeeklyUpdate-GoldStatus",
-        "name": "Gold Status",
-        "style": "gold"
-      },
-      {
-        "id": "WeeklyUpdate-MidnightStatus",
-        "name": "Midnight Status",
-        "style": "midnight"
-      },
-      {
-        "id": "WeeklyUpdate-CrimsonStatus",
-        "name": "Crimson Status",
-        "style": "crimson"
-      },
-      {
-        "id": "WeeklyUpdate-LavenderStatus",
-        "name": "Lavender Status",
-        "style": "lavender"
-      },
-      {
-        "id": "WeeklyUpdate-ArcticStatus",
-        "name": "Arctic Status",
-        "style": "arctic"
-      },
-      {
-        "id": "WeeklyUpdate-EspressoStatus",
-        "name": "Espresso Status",
-        "style": "espresso"
-      }
-    ],
-    "primaryId": "WeeklyUpdate-DarkStatus"
-  },
-  {
-    "slug": "clientfeedback",
-    "camel": "ClientFeedback",
-    "name": "Client Feedback",
-    "description": "Structured feedback collection with rating cards, comment highlights, and NPS-style scores.",
-    "icon": "message-circle",
-    "color": "rose",
-    "primaryVariant": "DarkRating",
-    "variantCount": 16,
-    "variants": [
-      {
-        "id": "ClientFeedback-DarkRating",
-        "name": "Dark Rating",
-        "style": "dark"
-      },
-      {
-        "id": "ClientFeedback-DarkComments",
-        "name": "Dark Comments",
-        "style": "dark"
-      },
-      {
-        "id": "ClientFeedback-DarkNPS",
-        "name": "Dark NPS",
-        "style": "dark"
-      },
-      {
-        "id": "ClientFeedback-BoldRating",
-        "name": "Bold Rating",
-        "style": "bold"
-      },
-      {
-        "id": "ClientFeedback-BoldComments",
-        "name": "Bold Comments",
-        "style": "bold"
-      },
-      {
-        "id": "ClientFeedback-BoldNPS",
-        "name": "Bold NPS",
-        "style": "bold"
-      },
-      {
-        "id": "ClientFeedback-OceanRating",
-        "name": "Ocean Rating",
-        "style": "ocean"
-      },
-      {
-        "id": "ClientFeedback-SunsetRating",
-        "name": "Sunset Rating",
-        "style": "sunset"
-      },
-      {
-        "id": "ClientFeedback-ForestRating",
-        "name": "Forest Rating",
-        "style": "forest"
-      },
-      {
-        "id": "ClientFeedback-RoseRating",
-        "name": "Rose Rating",
-        "style": "rose"
-      },
-      {
-        "id": "ClientFeedback-GoldRating",
-        "name": "Gold Rating",
-        "style": "gold"
-      },
-      {
-        "id": "ClientFeedback-MidnightRating",
-        "name": "Midnight Rating",
-        "style": "midnight"
-      },
-      {
-        "id": "ClientFeedback-CrimsonRating",
-        "name": "Crimson Rating",
-        "style": "crimson"
-      },
-      {
-        "id": "ClientFeedback-LavenderRating",
-        "name": "Lavender Rating",
-        "style": "lavender"
-      },
-      {
-        "id": "ClientFeedback-ArcticRating",
-        "name": "Arctic Rating",
-        "style": "arctic"
-      },
-      {
-        "id": "ClientFeedback-EspressoRating",
-        "name": "Espresso Rating",
-        "style": "espresso"
-      }
-    ],
-    "primaryId": "ClientFeedback-DarkRating"
-  },
-  {
     "slug": "listicle",
     "camel": "Listicle",
     "name": "Listicle",
@@ -8306,132 +8066,762 @@
     "primaryVariant": "DarkStack",
     "variantCount": 126,
     "variants": [
-      { "id": "Listicle-DarkStack", "name": "Dark Stack", "style": "dark", "format": "vertical" },
-      { "id": "Listicle-DarkCards", "name": "Dark Cards", "style": "dark", "format": "vertical" },
-      { "id": "Listicle-DarkReveal", "name": "Dark Reveal", "style": "dark", "format": "vertical" },
-      { "id": "Listicle-CleanStack", "name": "Clean Stack", "style": "clean", "format": "vertical" },
-      { "id": "Listicle-CleanCards", "name": "Clean Cards", "style": "clean", "format": "vertical" },
-      { "id": "Listicle-CleanReveal", "name": "Clean Reveal", "style": "clean", "format": "vertical" },
-      { "id": "Listicle-BoldStack", "name": "Bold Stack", "style": "bold", "format": "vertical" },
-      { "id": "Listicle-BoldCards", "name": "Bold Cards", "style": "bold", "format": "vertical" },
-      { "id": "Listicle-BoldReveal", "name": "Bold Reveal", "style": "bold", "format": "vertical" },
-      { "id": "Listicle-WarmStack", "name": "Warm Stack", "style": "warm", "format": "vertical" },
-      { "id": "Listicle-WarmCards", "name": "Warm Cards", "style": "warm", "format": "vertical" },
-      { "id": "Listicle-WarmReveal", "name": "Warm Reveal", "style": "warm", "format": "vertical" },
-      { "id": "Listicle-MinimalStack", "name": "Minimal Stack", "style": "minimal", "format": "vertical" },
-      { "id": "Listicle-MinimalCards", "name": "Minimal Cards", "style": "minimal", "format": "vertical" },
-      { "id": "Listicle-MinimalReveal", "name": "Minimal Reveal", "style": "minimal", "format": "vertical" },
-      { "id": "Listicle-NeonStack", "name": "Neon Stack", "style": "neon", "format": "vertical" },
-      { "id": "Listicle-NeonCards", "name": "Neon Cards", "style": "neon", "format": "vertical" },
-      { "id": "Listicle-NeonReveal", "name": "Neon Reveal", "style": "neon", "format": "vertical" },
-      { "id": "Listicle-LindamohamedStack", "name": "Lindamohamed Stack", "style": "lindamohamed", "format": "vertical" },
-      { "id": "Listicle-LindamohamedCards", "name": "Lindamohamed Cards", "style": "lindamohamed", "format": "vertical" },
-      { "id": "Listicle-LindamohamedReveal", "name": "Lindamohamed Reveal", "style": "lindamohamed", "format": "vertical" },
-      { "id": "Listicle-OceanStack", "name": "Ocean Stack", "style": "ocean", "format": "vertical" },
-      { "id": "Listicle-OceanCards", "name": "Ocean Cards", "style": "ocean", "format": "vertical" },
-      { "id": "Listicle-OceanReveal", "name": "Ocean Reveal", "style": "ocean", "format": "vertical" },
-      { "id": "Listicle-SunsetStack", "name": "Sunset Stack", "style": "sunset", "format": "vertical" },
-      { "id": "Listicle-SunsetCards", "name": "Sunset Cards", "style": "sunset", "format": "vertical" },
-      { "id": "Listicle-SunsetReveal", "name": "Sunset Reveal", "style": "sunset", "format": "vertical" },
-      { "id": "Listicle-ForestStack", "name": "Forest Stack", "style": "forest", "format": "vertical" },
-      { "id": "Listicle-ForestCards", "name": "Forest Cards", "style": "forest", "format": "vertical" },
-      { "id": "Listicle-ForestReveal", "name": "Forest Reveal", "style": "forest", "format": "vertical" },
-      { "id": "Listicle-RoseStack", "name": "Rose Stack", "style": "rose", "format": "vertical" },
-      { "id": "Listicle-RoseCards", "name": "Rose Cards", "style": "rose", "format": "vertical" },
-      { "id": "Listicle-RoseReveal", "name": "Rose Reveal", "style": "rose", "format": "vertical" },
-      { "id": "Listicle-GoldStack", "name": "Gold Stack", "style": "gold", "format": "vertical" },
-      { "id": "Listicle-GoldCards", "name": "Gold Cards", "style": "gold", "format": "vertical" },
-      { "id": "Listicle-GoldReveal", "name": "Gold Reveal", "style": "gold", "format": "vertical" },
-      { "id": "Listicle-MidnightStack", "name": "Midnight Stack", "style": "midnight", "format": "vertical" },
-      { "id": "Listicle-MidnightCards", "name": "Midnight Cards", "style": "midnight", "format": "vertical" },
-      { "id": "Listicle-MidnightReveal", "name": "Midnight Reveal", "style": "midnight", "format": "vertical" },
-      { "id": "Listicle-CrimsonStack", "name": "Crimson Stack", "style": "crimson", "format": "vertical" },
-      { "id": "Listicle-CrimsonCards", "name": "Crimson Cards", "style": "crimson", "format": "vertical" },
-      { "id": "Listicle-CrimsonReveal", "name": "Crimson Reveal", "style": "crimson", "format": "vertical" },
-      { "id": "Listicle-LavenderStack", "name": "Lavender Stack", "style": "lavender", "format": "vertical" },
-      { "id": "Listicle-LavenderCards", "name": "Lavender Cards", "style": "lavender", "format": "vertical" },
-      { "id": "Listicle-LavenderReveal", "name": "Lavender Reveal", "style": "lavender", "format": "vertical" },
-      { "id": "Listicle-ArcticStack", "name": "Arctic Stack", "style": "arctic", "format": "vertical" },
-      { "id": "Listicle-ArcticCards", "name": "Arctic Cards", "style": "arctic", "format": "vertical" },
-      { "id": "Listicle-ArcticReveal", "name": "Arctic Reveal", "style": "arctic", "format": "vertical" },
-      { "id": "Listicle-EspressoStack", "name": "Espresso Stack", "style": "espresso", "format": "vertical" },
-      { "id": "Listicle-EspressoCards", "name": "Espresso Cards", "style": "espresso", "format": "vertical" },
-      { "id": "Listicle-EspressoReveal", "name": "Espresso Reveal", "style": "espresso", "format": "vertical" },
-      { "id": "Listicle-CorporateStack", "name": "Corporate Stack", "style": "corporate", "format": "vertical" },
-      { "id": "Listicle-CorporateCards", "name": "Corporate Cards", "style": "corporate", "format": "vertical" },
-      { "id": "Listicle-CorporateReveal", "name": "Corporate Reveal", "style": "corporate", "format": "vertical" },
-      { "id": "Listicle-IndustrialStack", "name": "Industrial Stack", "style": "industrial", "format": "vertical" },
-      { "id": "Listicle-IndustrialCards", "name": "Industrial Cards", "style": "industrial", "format": "vertical" },
-      { "id": "Listicle-IndustrialReveal", "name": "Industrial Reveal", "style": "industrial", "format": "vertical" },
-      { "id": "Listicle-ViennaStack", "name": "Vienna Stack", "style": "vienna", "format": "vertical" },
-      { "id": "Listicle-ViennaCards", "name": "Vienna Cards", "style": "vienna", "format": "vertical" },
-      { "id": "Listicle-ViennaReveal", "name": "Vienna Reveal", "style": "vienna", "format": "vertical" },
-      { "id": "Listicle-AlpineStack", "name": "Alpine Stack", "style": "alpine", "format": "vertical" },
-      { "id": "Listicle-AlpineCards", "name": "Alpine Cards", "style": "alpine", "format": "vertical" },
-      { "id": "Listicle-AlpineReveal", "name": "Alpine Reveal", "style": "alpine", "format": "vertical" },
-      { "id": "Listicle-FinanceStack", "name": "Finance Stack", "style": "finance", "format": "vertical" },
-      { "id": "Listicle-FinanceCards", "name": "Finance Cards", "style": "finance", "format": "vertical" },
-      { "id": "Listicle-FinanceReveal", "name": "Finance Reveal", "style": "finance", "format": "vertical" },
-      { "id": "Listicle-MaterialBlueStack", "name": "Material Blue Stack", "style": "materialBlue", "format": "vertical" },
-      { "id": "Listicle-MaterialBlueCards", "name": "Material Blue Cards", "style": "materialBlue", "format": "vertical" },
-      { "id": "Listicle-MaterialBlueReveal", "name": "Material Blue Reveal", "style": "materialBlue", "format": "vertical" },
-      { "id": "Listicle-MaterialDarkStack", "name": "Material Dark Stack", "style": "materialDark", "format": "vertical" },
-      { "id": "Listicle-MaterialDarkCards", "name": "Material Dark Cards", "style": "materialDark", "format": "vertical" },
-      { "id": "Listicle-MaterialDarkReveal", "name": "Material Dark Reveal", "style": "materialDark", "format": "vertical" },
-      { "id": "Listicle-FlatRedStack", "name": "Flat Red Stack", "style": "flatRed", "format": "vertical" },
-      { "id": "Listicle-FlatRedCards", "name": "Flat Red Cards", "style": "flatRed", "format": "vertical" },
-      { "id": "Listicle-FlatRedReveal", "name": "Flat Red Reveal", "style": "flatRed", "format": "vertical" },
-      { "id": "Listicle-FlatNavyStack", "name": "Flat Navy Stack", "style": "flatNavy", "format": "vertical" },
-      { "id": "Listicle-FlatNavyCards", "name": "Flat Navy Cards", "style": "flatNavy", "format": "vertical" },
-      { "id": "Listicle-FlatNavyReveal", "name": "Flat Navy Reveal", "style": "flatNavy", "format": "vertical" },
-      { "id": "Listicle-SwissStack", "name": "Swiss Stack", "style": "swiss", "format": "vertical" },
-      { "id": "Listicle-SwissCards", "name": "Swiss Cards", "style": "swiss", "format": "vertical" },
-      { "id": "Listicle-SwissReveal", "name": "Swiss Reveal", "style": "swiss", "format": "vertical" },
-      { "id": "Listicle-BauhausStack", "name": "Bauhaus Stack", "style": "bauhaus", "format": "vertical" },
-      { "id": "Listicle-BauhausCards", "name": "Bauhaus Cards", "style": "bauhaus", "format": "vertical" },
-      { "id": "Listicle-BauhausReveal", "name": "Bauhaus Reveal", "style": "bauhaus", "format": "vertical" },
-      { "id": "Listicle-MonoStack", "name": "Mono Stack", "style": "mono", "format": "vertical" },
-      { "id": "Listicle-MonoCards", "name": "Mono Cards", "style": "mono", "format": "vertical" },
-      { "id": "Listicle-MonoReveal", "name": "Mono Reveal", "style": "mono", "format": "vertical" },
-      { "id": "Listicle-PaperStack", "name": "Paper Stack", "style": "paper", "format": "vertical" },
-      { "id": "Listicle-PaperCards", "name": "Paper Cards", "style": "paper", "format": "vertical" },
-      { "id": "Listicle-PaperReveal", "name": "Paper Reveal", "style": "paper", "format": "vertical" },
-      { "id": "Listicle-SlateStack", "name": "Slate Stack", "style": "slate", "format": "vertical" },
-      { "id": "Listicle-SlateCards", "name": "Slate Cards", "style": "slate", "format": "vertical" },
-      { "id": "Listicle-SlateReveal", "name": "Slate Reveal", "style": "slate", "format": "vertical" },
-      { "id": "Listicle-BlueprintStack", "name": "Blueprint Stack", "style": "blueprint", "format": "vertical" },
-      { "id": "Listicle-BlueprintCards", "name": "Blueprint Cards", "style": "blueprint", "format": "vertical" },
-      { "id": "Listicle-BlueprintReveal", "name": "Blueprint Reveal", "style": "blueprint", "format": "vertical" },
-      { "id": "Listicle-CandyStack", "name": "Candy Stack", "style": "candy", "format": "vertical" },
-      { "id": "Listicle-CandyCards", "name": "Candy Cards", "style": "candy", "format": "vertical" },
-      { "id": "Listicle-CandyReveal", "name": "Candy Reveal", "style": "candy", "format": "vertical" },
-      { "id": "Listicle-MintStack", "name": "Mint Stack", "style": "mint", "format": "vertical" },
-      { "id": "Listicle-MintCards", "name": "Mint Cards", "style": "mint", "format": "vertical" },
-      { "id": "Listicle-MintReveal", "name": "Mint Reveal", "style": "mint", "format": "vertical" },
-      { "id": "Listicle-CoralStack", "name": "Coral Stack", "style": "coral", "format": "vertical" },
-      { "id": "Listicle-CoralCards", "name": "Coral Cards", "style": "coral", "format": "vertical" },
-      { "id": "Listicle-CoralReveal", "name": "Coral Reveal", "style": "coral", "format": "vertical" },
-      { "id": "Listicle-SkyStack", "name": "Sky Stack", "style": "sky", "format": "vertical" },
-      { "id": "Listicle-SkyCards", "name": "Sky Cards", "style": "sky", "format": "vertical" },
-      { "id": "Listicle-SkyReveal", "name": "Sky Reveal", "style": "sky", "format": "vertical" },
-      { "id": "Listicle-GrapeStack", "name": "Grape Stack", "style": "grape", "format": "vertical" },
-      { "id": "Listicle-GrapeCards", "name": "Grape Cards", "style": "grape", "format": "vertical" },
-      { "id": "Listicle-GrapeReveal", "name": "Grape Reveal", "style": "grape", "format": "vertical" },
-      { "id": "Listicle-CharcoalStack", "name": "Charcoal Stack", "style": "charcoal", "format": "vertical" },
-      { "id": "Listicle-CharcoalCards", "name": "Charcoal Cards", "style": "charcoal", "format": "vertical" },
-      { "id": "Listicle-CharcoalReveal", "name": "Charcoal Reveal", "style": "charcoal", "format": "vertical" },
-      { "id": "Listicle-PeachStack", "name": "Peach Stack", "style": "peach", "format": "vertical" },
-      { "id": "Listicle-PeachCards", "name": "Peach Cards", "style": "peach", "format": "vertical" },
-      { "id": "Listicle-PeachReveal", "name": "Peach Reveal", "style": "peach", "format": "vertical" },
-      { "id": "Listicle-OceanDarkStack", "name": "Ocean Dark Stack", "style": "oceanDark", "format": "vertical" },
-      { "id": "Listicle-OceanDarkCards", "name": "Ocean Dark Cards", "style": "oceanDark", "format": "vertical" },
-      { "id": "Listicle-OceanDarkReveal", "name": "Ocean Dark Reveal", "style": "oceanDark", "format": "vertical" },
-      { "id": "Listicle-CreamStack", "name": "Cream Stack", "style": "cream", "format": "vertical" },
-      { "id": "Listicle-CreamCards", "name": "Cream Cards", "style": "cream", "format": "vertical" },
-      { "id": "Listicle-CreamReveal", "name": "Cream Reveal", "style": "cream", "format": "vertical" },
-      { "id": "Listicle-ElectricStack", "name": "Electric Stack", "style": "electric", "format": "vertical" },
-      { "id": "Listicle-ElectricCards", "name": "Electric Cards", "style": "electric", "format": "vertical" },
-      { "id": "Listicle-ElectricReveal", "name": "Electric Reveal", "style": "electric", "format": "vertical" }
+      {
+        "id": "Listicle-DarkStack",
+        "name": "Dark Stack",
+        "style": "dark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-DarkCards",
+        "name": "Dark Cards",
+        "style": "dark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-DarkReveal",
+        "name": "Dark Reveal",
+        "style": "dark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CleanStack",
+        "name": "Clean Stack",
+        "style": "clean",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CleanCards",
+        "name": "Clean Cards",
+        "style": "clean",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CleanReveal",
+        "name": "Clean Reveal",
+        "style": "clean",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BoldStack",
+        "name": "Bold Stack",
+        "style": "bold",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BoldCards",
+        "name": "Bold Cards",
+        "style": "bold",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BoldReveal",
+        "name": "Bold Reveal",
+        "style": "bold",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-WarmStack",
+        "name": "Warm Stack",
+        "style": "warm",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-WarmCards",
+        "name": "Warm Cards",
+        "style": "warm",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-WarmReveal",
+        "name": "Warm Reveal",
+        "style": "warm",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MinimalStack",
+        "name": "Minimal Stack",
+        "style": "minimal",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MinimalCards",
+        "name": "Minimal Cards",
+        "style": "minimal",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MinimalReveal",
+        "name": "Minimal Reveal",
+        "style": "minimal",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-NeonStack",
+        "name": "Neon Stack",
+        "style": "neon",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-NeonCards",
+        "name": "Neon Cards",
+        "style": "neon",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-NeonReveal",
+        "name": "Neon Reveal",
+        "style": "neon",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-LindamohamedStack",
+        "name": "Lindamohamed Stack",
+        "style": "lindamohamed",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-LindamohamedCards",
+        "name": "Lindamohamed Cards",
+        "style": "lindamohamed",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-LindamohamedReveal",
+        "name": "Lindamohamed Reveal",
+        "style": "lindamohamed",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-OceanStack",
+        "name": "Ocean Stack",
+        "style": "ocean",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-OceanCards",
+        "name": "Ocean Cards",
+        "style": "ocean",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-OceanReveal",
+        "name": "Ocean Reveal",
+        "style": "ocean",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SunsetStack",
+        "name": "Sunset Stack",
+        "style": "sunset",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SunsetCards",
+        "name": "Sunset Cards",
+        "style": "sunset",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SunsetReveal",
+        "name": "Sunset Reveal",
+        "style": "sunset",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ForestStack",
+        "name": "Forest Stack",
+        "style": "forest",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ForestCards",
+        "name": "Forest Cards",
+        "style": "forest",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ForestReveal",
+        "name": "Forest Reveal",
+        "style": "forest",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-RoseStack",
+        "name": "Rose Stack",
+        "style": "rose",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-RoseCards",
+        "name": "Rose Cards",
+        "style": "rose",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-RoseReveal",
+        "name": "Rose Reveal",
+        "style": "rose",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-GoldStack",
+        "name": "Gold Stack",
+        "style": "gold",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-GoldCards",
+        "name": "Gold Cards",
+        "style": "gold",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-GoldReveal",
+        "name": "Gold Reveal",
+        "style": "gold",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MidnightStack",
+        "name": "Midnight Stack",
+        "style": "midnight",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MidnightCards",
+        "name": "Midnight Cards",
+        "style": "midnight",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MidnightReveal",
+        "name": "Midnight Reveal",
+        "style": "midnight",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CrimsonStack",
+        "name": "Crimson Stack",
+        "style": "crimson",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CrimsonCards",
+        "name": "Crimson Cards",
+        "style": "crimson",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CrimsonReveal",
+        "name": "Crimson Reveal",
+        "style": "crimson",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-LavenderStack",
+        "name": "Lavender Stack",
+        "style": "lavender",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-LavenderCards",
+        "name": "Lavender Cards",
+        "style": "lavender",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-LavenderReveal",
+        "name": "Lavender Reveal",
+        "style": "lavender",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ArcticStack",
+        "name": "Arctic Stack",
+        "style": "arctic",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ArcticCards",
+        "name": "Arctic Cards",
+        "style": "arctic",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ArcticReveal",
+        "name": "Arctic Reveal",
+        "style": "arctic",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-EspressoStack",
+        "name": "Espresso Stack",
+        "style": "espresso",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-EspressoCards",
+        "name": "Espresso Cards",
+        "style": "espresso",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-EspressoReveal",
+        "name": "Espresso Reveal",
+        "style": "espresso",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CorporateStack",
+        "name": "Corporate Stack",
+        "style": "corporate",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CorporateCards",
+        "name": "Corporate Cards",
+        "style": "corporate",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CorporateReveal",
+        "name": "Corporate Reveal",
+        "style": "corporate",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-IndustrialStack",
+        "name": "Industrial Stack",
+        "style": "industrial",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-IndustrialCards",
+        "name": "Industrial Cards",
+        "style": "industrial",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-IndustrialReveal",
+        "name": "Industrial Reveal",
+        "style": "industrial",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ViennaStack",
+        "name": "Vienna Stack",
+        "style": "vienna",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ViennaCards",
+        "name": "Vienna Cards",
+        "style": "vienna",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ViennaReveal",
+        "name": "Vienna Reveal",
+        "style": "vienna",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-AlpineStack",
+        "name": "Alpine Stack",
+        "style": "alpine",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-AlpineCards",
+        "name": "Alpine Cards",
+        "style": "alpine",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-AlpineReveal",
+        "name": "Alpine Reveal",
+        "style": "alpine",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FinanceStack",
+        "name": "Finance Stack",
+        "style": "finance",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FinanceCards",
+        "name": "Finance Cards",
+        "style": "finance",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FinanceReveal",
+        "name": "Finance Reveal",
+        "style": "finance",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MaterialBlueStack",
+        "name": "Material Blue Stack",
+        "style": "materialBlue",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MaterialBlueCards",
+        "name": "Material Blue Cards",
+        "style": "materialBlue",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MaterialBlueReveal",
+        "name": "Material Blue Reveal",
+        "style": "materialBlue",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MaterialDarkStack",
+        "name": "Material Dark Stack",
+        "style": "materialDark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MaterialDarkCards",
+        "name": "Material Dark Cards",
+        "style": "materialDark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MaterialDarkReveal",
+        "name": "Material Dark Reveal",
+        "style": "materialDark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FlatRedStack",
+        "name": "Flat Red Stack",
+        "style": "flatRed",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FlatRedCards",
+        "name": "Flat Red Cards",
+        "style": "flatRed",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FlatRedReveal",
+        "name": "Flat Red Reveal",
+        "style": "flatRed",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FlatNavyStack",
+        "name": "Flat Navy Stack",
+        "style": "flatNavy",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FlatNavyCards",
+        "name": "Flat Navy Cards",
+        "style": "flatNavy",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-FlatNavyReveal",
+        "name": "Flat Navy Reveal",
+        "style": "flatNavy",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SwissStack",
+        "name": "Swiss Stack",
+        "style": "swiss",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SwissCards",
+        "name": "Swiss Cards",
+        "style": "swiss",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SwissReveal",
+        "name": "Swiss Reveal",
+        "style": "swiss",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BauhausStack",
+        "name": "Bauhaus Stack",
+        "style": "bauhaus",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BauhausCards",
+        "name": "Bauhaus Cards",
+        "style": "bauhaus",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BauhausReveal",
+        "name": "Bauhaus Reveal",
+        "style": "bauhaus",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MonoStack",
+        "name": "Mono Stack",
+        "style": "mono",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MonoCards",
+        "name": "Mono Cards",
+        "style": "mono",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MonoReveal",
+        "name": "Mono Reveal",
+        "style": "mono",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-PaperStack",
+        "name": "Paper Stack",
+        "style": "paper",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-PaperCards",
+        "name": "Paper Cards",
+        "style": "paper",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-PaperReveal",
+        "name": "Paper Reveal",
+        "style": "paper",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SlateStack",
+        "name": "Slate Stack",
+        "style": "slate",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SlateCards",
+        "name": "Slate Cards",
+        "style": "slate",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SlateReveal",
+        "name": "Slate Reveal",
+        "style": "slate",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BlueprintStack",
+        "name": "Blueprint Stack",
+        "style": "blueprint",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BlueprintCards",
+        "name": "Blueprint Cards",
+        "style": "blueprint",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-BlueprintReveal",
+        "name": "Blueprint Reveal",
+        "style": "blueprint",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CandyStack",
+        "name": "Candy Stack",
+        "style": "candy",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CandyCards",
+        "name": "Candy Cards",
+        "style": "candy",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CandyReveal",
+        "name": "Candy Reveal",
+        "style": "candy",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MintStack",
+        "name": "Mint Stack",
+        "style": "mint",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MintCards",
+        "name": "Mint Cards",
+        "style": "mint",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-MintReveal",
+        "name": "Mint Reveal",
+        "style": "mint",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CoralStack",
+        "name": "Coral Stack",
+        "style": "coral",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CoralCards",
+        "name": "Coral Cards",
+        "style": "coral",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CoralReveal",
+        "name": "Coral Reveal",
+        "style": "coral",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SkyStack",
+        "name": "Sky Stack",
+        "style": "sky",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SkyCards",
+        "name": "Sky Cards",
+        "style": "sky",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-SkyReveal",
+        "name": "Sky Reveal",
+        "style": "sky",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-GrapeStack",
+        "name": "Grape Stack",
+        "style": "grape",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-GrapeCards",
+        "name": "Grape Cards",
+        "style": "grape",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-GrapeReveal",
+        "name": "Grape Reveal",
+        "style": "grape",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CharcoalStack",
+        "name": "Charcoal Stack",
+        "style": "charcoal",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CharcoalCards",
+        "name": "Charcoal Cards",
+        "style": "charcoal",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CharcoalReveal",
+        "name": "Charcoal Reveal",
+        "style": "charcoal",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-PeachStack",
+        "name": "Peach Stack",
+        "style": "peach",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-PeachCards",
+        "name": "Peach Cards",
+        "style": "peach",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-PeachReveal",
+        "name": "Peach Reveal",
+        "style": "peach",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-OceanDarkStack",
+        "name": "Ocean Dark Stack",
+        "style": "oceanDark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-OceanDarkCards",
+        "name": "Ocean Dark Cards",
+        "style": "oceanDark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-OceanDarkReveal",
+        "name": "Ocean Dark Reveal",
+        "style": "oceanDark",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CreamStack",
+        "name": "Cream Stack",
+        "style": "cream",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CreamCards",
+        "name": "Cream Cards",
+        "style": "cream",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-CreamReveal",
+        "name": "Cream Reveal",
+        "style": "cream",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ElectricStack",
+        "name": "Electric Stack",
+        "style": "electric",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ElectricCards",
+        "name": "Electric Cards",
+        "style": "electric",
+        "format": "vertical"
+      },
+      {
+        "id": "Listicle-ElectricReveal",
+        "name": "Electric Reveal",
+        "style": "electric",
+        "format": "vertical"
+      }
     ],
     "primaryId": "Listicle-DarkStack"
   },
@@ -8541,23 +8931,101 @@
     "color": "yellow",
     "primaryVariant": "CandyCard",
     "variantCount": 15,
-    "formats": ["square", "vertical"],
+    "formats": [
+      "square",
+      "vertical"
+    ],
     "variants": [
-      { "id": "TipOfTheDay-DarkCard", "name": "Dark Card", "style": "dark", "format": "square" },
-      { "id": "TipOfTheDay-NeonFullscreen", "name": "Neon Fullscreen", "style": "neon", "format": "square" },
-      { "id": "TipOfTheDay-CandyCard", "name": "Candy Card", "style": "candy", "format": "square" },
-      { "id": "TipOfTheDay-MintMinimal", "name": "Mint Minimal", "style": "mint", "format": "square" },
-      { "id": "TipOfTheDay-CoralCard", "name": "Coral Card", "style": "coral", "format": "square" },
-      { "id": "TipOfTheDay-SkyFullscreen", "name": "Sky Fullscreen", "style": "sky", "format": "square" },
-      { "id": "TipOfTheDay-GrapeCard", "name": "Grape Card", "style": "grape", "format": "square" },
-      { "id": "TipOfTheDay-CharcoalMinimal", "name": "Charcoal Minimal", "style": "charcoal", "format": "square" },
-      { "id": "TipOfTheDay-CreamCard", "name": "Cream Card", "style": "cream", "format": "square" },
-      { "id": "TipOfTheDay-OceanDarkFullscreen", "name": "Ocean Dark Fullscreen", "style": "oceanDark", "format": "square" },
-      { "id": "TipOfTheDay-DarkCardVertical", "name": "Dark Card Vertical", "style": "dark", "format": "vertical" },
-      { "id": "TipOfTheDay-NeonFullscreenVertical", "name": "Neon Fullscreen Vertical", "style": "neon", "format": "vertical" },
-      { "id": "TipOfTheDay-CandyCardVertical", "name": "Candy Card Vertical", "style": "candy", "format": "vertical" },
-      { "id": "TipOfTheDay-PeachMinimalVertical", "name": "Peach Minimal Vertical", "style": "peach", "format": "vertical" },
-      { "id": "TipOfTheDay-ElectricFullscreenVertical", "name": "Electric Fullscreen Vertical", "style": "electric", "format": "vertical" }
+      {
+        "id": "TipOfTheDay-DarkCard",
+        "name": "Dark Card",
+        "style": "dark",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-NeonFullscreen",
+        "name": "Neon Fullscreen",
+        "style": "neon",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-CandyCard",
+        "name": "Candy Card",
+        "style": "candy",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-MintMinimal",
+        "name": "Mint Minimal",
+        "style": "mint",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-CoralCard",
+        "name": "Coral Card",
+        "style": "coral",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-SkyFullscreen",
+        "name": "Sky Fullscreen",
+        "style": "sky",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-GrapeCard",
+        "name": "Grape Card",
+        "style": "grape",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-CharcoalMinimal",
+        "name": "Charcoal Minimal",
+        "style": "charcoal",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-CreamCard",
+        "name": "Cream Card",
+        "style": "cream",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-OceanDarkFullscreen",
+        "name": "Ocean Dark Fullscreen",
+        "style": "oceanDark",
+        "format": "square"
+      },
+      {
+        "id": "TipOfTheDay-DarkCardVertical",
+        "name": "Dark Card Vertical",
+        "style": "dark",
+        "format": "vertical"
+      },
+      {
+        "id": "TipOfTheDay-NeonFullscreenVertical",
+        "name": "Neon Fullscreen Vertical",
+        "style": "neon",
+        "format": "vertical"
+      },
+      {
+        "id": "TipOfTheDay-CandyCardVertical",
+        "name": "Candy Card Vertical",
+        "style": "candy",
+        "format": "vertical"
+      },
+      {
+        "id": "TipOfTheDay-PeachMinimalVertical",
+        "name": "Peach Minimal Vertical",
+        "style": "peach",
+        "format": "vertical"
+      },
+      {
+        "id": "TipOfTheDay-ElectricFullscreenVertical",
+        "name": "Electric Fullscreen Vertical",
+        "style": "electric",
+        "format": "vertical"
+      }
     ],
     "primaryId": "TipOfTheDay-CandyCard"
   },
@@ -8570,23 +9038,101 @@
     "color": "red",
     "primaryVariant": "CandyBanner",
     "variantCount": 15,
-    "formats": ["square", "vertical"],
+    "formats": [
+      "square",
+      "vertical"
+    ],
     "variants": [
-      { "id": "Announcement-DarkBanner", "name": "Dark Banner", "style": "dark", "format": "square" },
-      { "id": "Announcement-NeonCard", "name": "Neon Card", "style": "neon", "format": "square" },
-      { "id": "Announcement-CandyBanner", "name": "Candy Banner", "style": "candy", "format": "square" },
-      { "id": "Announcement-MintCard", "name": "Mint Card", "style": "mint", "format": "square" },
-      { "id": "Announcement-CoralMinimal", "name": "Coral Minimal", "style": "coral", "format": "square" },
-      { "id": "Announcement-SkyBanner", "name": "Sky Banner", "style": "sky", "format": "square" },
-      { "id": "Announcement-GrapeCard", "name": "Grape Card", "style": "grape", "format": "square" },
-      { "id": "Announcement-CharcoalMinimal", "name": "Charcoal Minimal", "style": "charcoal", "format": "square" },
-      { "id": "Announcement-CreamCard", "name": "Cream Card", "style": "cream", "format": "square" },
-      { "id": "Announcement-OceanDarkBanner", "name": "Ocean Dark Banner", "style": "oceanDark", "format": "square" },
-      { "id": "Announcement-DarkBannerVertical", "name": "Dark Banner Vertical", "style": "dark", "format": "vertical" },
-      { "id": "Announcement-NeonCardVertical", "name": "Neon Card Vertical", "style": "neon", "format": "vertical" },
-      { "id": "Announcement-CandyBannerVertical", "name": "Candy Banner Vertical", "style": "candy", "format": "vertical" },
-      { "id": "Announcement-PeachMinimalVertical", "name": "Peach Minimal Vertical", "style": "peach", "format": "vertical" },
-      { "id": "Announcement-ElectricBannerVertical", "name": "Electric Banner Vertical", "style": "electric", "format": "vertical" }
+      {
+        "id": "Announcement-DarkBanner",
+        "name": "Dark Banner",
+        "style": "dark",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-NeonCard",
+        "name": "Neon Card",
+        "style": "neon",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-CandyBanner",
+        "name": "Candy Banner",
+        "style": "candy",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-MintCard",
+        "name": "Mint Card",
+        "style": "mint",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-CoralMinimal",
+        "name": "Coral Minimal",
+        "style": "coral",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-SkyBanner",
+        "name": "Sky Banner",
+        "style": "sky",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-GrapeCard",
+        "name": "Grape Card",
+        "style": "grape",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-CharcoalMinimal",
+        "name": "Charcoal Minimal",
+        "style": "charcoal",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-CreamCard",
+        "name": "Cream Card",
+        "style": "cream",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-OceanDarkBanner",
+        "name": "Ocean Dark Banner",
+        "style": "oceanDark",
+        "format": "square"
+      },
+      {
+        "id": "Announcement-DarkBannerVertical",
+        "name": "Dark Banner Vertical",
+        "style": "dark",
+        "format": "vertical"
+      },
+      {
+        "id": "Announcement-NeonCardVertical",
+        "name": "Neon Card Vertical",
+        "style": "neon",
+        "format": "vertical"
+      },
+      {
+        "id": "Announcement-CandyBannerVertical",
+        "name": "Candy Banner Vertical",
+        "style": "candy",
+        "format": "vertical"
+      },
+      {
+        "id": "Announcement-PeachMinimalVertical",
+        "name": "Peach Minimal Vertical",
+        "style": "peach",
+        "format": "vertical"
+      },
+      {
+        "id": "Announcement-ElectricBannerVertical",
+        "name": "Electric Banner Vertical",
+        "style": "electric",
+        "format": "vertical"
+      }
     ],
     "primaryId": "Announcement-CandyBanner"
   },
@@ -8599,23 +9145,101 @@
     "color": "green",
     "primaryVariant": "CandySingle",
     "variantCount": 15,
-    "formats": ["square", "vertical"],
+    "formats": [
+      "square",
+      "vertical"
+    ],
     "variants": [
-      { "id": "StatCounter-DarkSingle", "name": "Dark Single", "style": "dark", "format": "square" },
-      { "id": "StatCounter-NeonGrid", "name": "Neon Grid", "style": "neon", "format": "square" },
-      { "id": "StatCounter-CandySingle", "name": "Candy Single", "style": "candy", "format": "square" },
-      { "id": "StatCounter-MintProgress", "name": "Mint Progress", "style": "mint", "format": "square" },
-      { "id": "StatCounter-CoralGrid", "name": "Coral Grid", "style": "coral", "format": "square" },
-      { "id": "StatCounter-SkyProgress", "name": "Sky Progress", "style": "sky", "format": "square" },
-      { "id": "StatCounter-GrapeSingle", "name": "Grape Single", "style": "grape", "format": "square" },
-      { "id": "StatCounter-CharcoalGrid", "name": "Charcoal Grid", "style": "charcoal", "format": "square" },
-      { "id": "StatCounter-CreamProgress", "name": "Cream Progress", "style": "cream", "format": "square" },
-      { "id": "StatCounter-OceanDarkSingle", "name": "Ocean Dark Single", "style": "oceanDark", "format": "square" },
-      { "id": "StatCounter-DarkSingleVertical", "name": "Dark Single Vertical", "style": "dark", "format": "vertical" },
-      { "id": "StatCounter-NeonGridVertical", "name": "Neon Grid Vertical", "style": "neon", "format": "vertical" },
-      { "id": "StatCounter-CandyProgressVertical", "name": "Candy Progress Vertical", "style": "candy", "format": "vertical" },
-      { "id": "StatCounter-PeachSingleVertical", "name": "Peach Single Vertical", "style": "peach", "format": "vertical" },
-      { "id": "StatCounter-ElectricGridVertical", "name": "Electric Grid Vertical", "style": "electric", "format": "vertical" }
+      {
+        "id": "StatCounter-DarkSingle",
+        "name": "Dark Single",
+        "style": "dark",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-NeonGrid",
+        "name": "Neon Grid",
+        "style": "neon",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-CandySingle",
+        "name": "Candy Single",
+        "style": "candy",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-MintProgress",
+        "name": "Mint Progress",
+        "style": "mint",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-CoralGrid",
+        "name": "Coral Grid",
+        "style": "coral",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-SkyProgress",
+        "name": "Sky Progress",
+        "style": "sky",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-GrapeSingle",
+        "name": "Grape Single",
+        "style": "grape",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-CharcoalGrid",
+        "name": "Charcoal Grid",
+        "style": "charcoal",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-CreamProgress",
+        "name": "Cream Progress",
+        "style": "cream",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-OceanDarkSingle",
+        "name": "Ocean Dark Single",
+        "style": "oceanDark",
+        "format": "square"
+      },
+      {
+        "id": "StatCounter-DarkSingleVertical",
+        "name": "Dark Single Vertical",
+        "style": "dark",
+        "format": "vertical"
+      },
+      {
+        "id": "StatCounter-NeonGridVertical",
+        "name": "Neon Grid Vertical",
+        "style": "neon",
+        "format": "vertical"
+      },
+      {
+        "id": "StatCounter-CandyProgressVertical",
+        "name": "Candy Progress Vertical",
+        "style": "candy",
+        "format": "vertical"
+      },
+      {
+        "id": "StatCounter-PeachSingleVertical",
+        "name": "Peach Single Vertical",
+        "style": "peach",
+        "format": "vertical"
+      },
+      {
+        "id": "StatCounter-ElectricGridVertical",
+        "name": "Electric Grid Vertical",
+        "style": "electric",
+        "format": "vertical"
+      }
     ],
     "primaryId": "StatCounter-CandySingle"
   },
@@ -8628,23 +9252,101 @@
     "color": "orange",
     "primaryVariant": "CandyCentered",
     "variantCount": 15,
-    "formats": ["square", "vertical"],
+    "formats": [
+      "square",
+      "vertical"
+    ],
     "variants": [
-      { "id": "CallToAction-DarkCentered", "name": "Dark Centered", "style": "dark", "format": "square" },
-      { "id": "CallToAction-NeonSplit", "name": "Neon Split", "style": "neon", "format": "square" },
-      { "id": "CallToAction-CandyCentered", "name": "Candy Centered", "style": "candy", "format": "square" },
-      { "id": "CallToAction-MintMinimal", "name": "Mint Minimal", "style": "mint", "format": "square" },
-      { "id": "CallToAction-CoralSplit", "name": "Coral Split", "style": "coral", "format": "square" },
-      { "id": "CallToAction-SkyCentered", "name": "Sky Centered", "style": "sky", "format": "square" },
-      { "id": "CallToAction-GrapeMinimal", "name": "Grape Minimal", "style": "grape", "format": "square" },
-      { "id": "CallToAction-CharcoalCentered", "name": "Charcoal Centered", "style": "charcoal", "format": "square" },
-      { "id": "CallToAction-CreamSplit", "name": "Cream Split", "style": "cream", "format": "square" },
-      { "id": "CallToAction-OceanDarkMinimal", "name": "Ocean Dark Minimal", "style": "oceanDark", "format": "square" },
-      { "id": "CallToAction-DarkCenteredVertical", "name": "Dark Centered Vertical", "style": "dark", "format": "vertical" },
-      { "id": "CallToAction-NeonSplitVertical", "name": "Neon Split Vertical", "style": "neon", "format": "vertical" },
-      { "id": "CallToAction-CandyMinimalVertical", "name": "Candy Minimal Vertical", "style": "candy", "format": "vertical" },
-      { "id": "CallToAction-PeachCenteredVertical", "name": "Peach Centered Vertical", "style": "peach", "format": "vertical" },
-      { "id": "CallToAction-ElectricSplitVertical", "name": "Electric Split Vertical", "style": "electric", "format": "vertical" }
+      {
+        "id": "CallToAction-DarkCentered",
+        "name": "Dark Centered",
+        "style": "dark",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-NeonSplit",
+        "name": "Neon Split",
+        "style": "neon",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-CandyCentered",
+        "name": "Candy Centered",
+        "style": "candy",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-MintMinimal",
+        "name": "Mint Minimal",
+        "style": "mint",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-CoralSplit",
+        "name": "Coral Split",
+        "style": "coral",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-SkyCentered",
+        "name": "Sky Centered",
+        "style": "sky",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-GrapeMinimal",
+        "name": "Grape Minimal",
+        "style": "grape",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-CharcoalCentered",
+        "name": "Charcoal Centered",
+        "style": "charcoal",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-CreamSplit",
+        "name": "Cream Split",
+        "style": "cream",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-OceanDarkMinimal",
+        "name": "Ocean Dark Minimal",
+        "style": "oceanDark",
+        "format": "square"
+      },
+      {
+        "id": "CallToAction-DarkCenteredVertical",
+        "name": "Dark Centered Vertical",
+        "style": "dark",
+        "format": "vertical"
+      },
+      {
+        "id": "CallToAction-NeonSplitVertical",
+        "name": "Neon Split Vertical",
+        "style": "neon",
+        "format": "vertical"
+      },
+      {
+        "id": "CallToAction-CandyMinimalVertical",
+        "name": "Candy Minimal Vertical",
+        "style": "candy",
+        "format": "vertical"
+      },
+      {
+        "id": "CallToAction-PeachCenteredVertical",
+        "name": "Peach Centered Vertical",
+        "style": "peach",
+        "format": "vertical"
+      },
+      {
+        "id": "CallToAction-ElectricSplitVertical",
+        "name": "Electric Split Vertical",
+        "style": "electric",
+        "format": "vertical"
+      }
     ],
     "primaryId": "CallToAction-CandyCentered"
   }

@@ -1,0 +1,4792 @@
+./scripts/render-thumbnails.sh missing --both
+Rendering MISSING compositions only...
+Found 129 composition(s) to render
+
+Render mode: still=true, video=true
+Parallel jobs: 1
+Video frames: 60 (0-59)
+
+Starting render...
+
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+Rendered 0/1
+Rendered 0/1
+Rendered 1/1
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+Rendered 0/60
+Rendered 1/60, time remaining: 15s
+Rendered 2/60, time remaining: 7s
+  YouTubeTutorial-VideoFlowPipeline - still:OK, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-DarkSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-DarkHeadline - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-DarkCTA - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-BoldSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-BoldHeadline - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-BoldCTA - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-OceanSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-SunsetSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-ForestSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-RoseSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-GoldSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-MidnightSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-CrimsonSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-LavenderSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-ArcticSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  LinkedinCarousel-EspressoSlide - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-DarkClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-DarkCompact - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-DarkMinimal - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-BoldClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-BoldCompact - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-BoldMinimal - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-OceanClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-SunsetClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-ForestClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-RoseClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-GoldClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-MidnightClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-CrimsonClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-LavenderClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-ArcticClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  EmailSignature-EspressoClassic - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-DarkWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-DarkMonthly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-DarkBreakdown - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-BoldWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-BoldMonthly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 63%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-BoldBreakdown - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-OceanWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-SunsetWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-ForestWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-RoseWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-GoldWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-MidnightWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-CrimsonWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-LavenderWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-ArcticWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  TimeTracking-EspressoWeekly - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-DarkSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-DarkDetail - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-DarkCategory - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-BoldSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-BoldDetail - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-BoldCategory - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-OceanSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-SunsetSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-ForestSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-RoseSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-GoldSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 63%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 95%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-MidnightSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-CrimsonSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-LavenderSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-ArcticSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ExpenseReport-EspressoSummary - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-DarkTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-DarkTimeline - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-DarkPayment - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 12%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-BoldTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-BoldTimeline - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-BoldPayment - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-OceanTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-SunsetTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-ForestTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-RoseTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-GoldTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-MidnightTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-CrimsonTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-LavenderTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-ArcticTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ContractSummary-EspressoTerms - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-DarkChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-DarkLessons - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-DarkNextSteps - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-BoldChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-BoldLessons - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-BoldNextSteps - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-OceanChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-SunsetChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-ForestChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-RoseChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-GoldChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-MidnightChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-CrimsonChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-LavenderChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-ArcticChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ProjectCloseout-EspressoChecklist - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-DarkStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-DarkProgress - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-DarkBlocked - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-BoldStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-BoldProgress - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-BoldBlocked - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-OceanStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-SunsetStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-ForestStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-RoseStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-GoldStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-MidnightStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-CrimsonStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-LavenderStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-ArcticStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  WeeklyUpdate-EspressoStatus - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 51%
+Bundling 65%
+Bundling 71%
+Bundling 76%
+Bundling 81%
+Bundling 87%
+Bundling 92%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-DarkRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-DarkComments - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-DarkNPS - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-BoldRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-BoldComments - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-BoldNPS - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-OceanRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-SunsetRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-ForestRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-RoseRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-GoldRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 14%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-MidnightRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-CrimsonRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-LavenderRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-ArcticRating - still:FAIL, video:FAIL
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+Bundling 6%
+Bundling 13%
+Bundling 65%
+Bundling 70%
+Bundling 75%
+Bundling 80%
+Bundling 85%
+Bundling 91%
+Bundling 98%
+Bundling 100%
+Copying public dir 13.2 MB
+Copying public dir 14.2 MB
+Copying public dir 15.8 MB
+Copying public dir 19.4 MB
+Copying public dir 30.1 MB
+Copying public dir 41.8 MB
+Getting composition
+An error occurred:
+  ClientFeedback-EspressoRating - still:FAIL, video:FAIL
+
+Done!
+  Stills saved to: static/previews/showcase
+  Videos saved to: static/previews/hero

@@ -3,23 +3,23 @@
 {{ partial "site-nav.html" . }}
 
 <!-- ============================================================
-     PAGE HEADER
+     PAGE HEADER (Unified Hero)
      ============================================================ -->
-<section class="uc-header">
-  <div class="container">
-    <div class="uc-header__eyebrow">
-      <i data-lucide="zap"></i>
-      Automation Use Cases
-    </div>
-    <h1 class="uc-header__title">Stop doing manually what a template can do</h1>
-    <p class="uc-header__desc">Practical guides for automating the most time-consuming parts of freelance work - from invoicing to client onboarding to content creation.</p>
-  </div>
-</section>
+{{ partial "hero.html" (dict
+  "badge" "Automation Use Cases"
+  "badgeIcon" "zap"
+  "title" "Stop doing manually what a <span class='hl'>template can do</span>"
+  "subtitle" "Practical guides for automating the most time-consuming parts of freelance work - from invoicing to client onboarding to content creation."
+  "ctas" (slice
+    (dict "text" "Browse Use Cases" "href" "#use-cases" "style" "primary" "icon" "layout-grid")
+    (dict "text" "View Templates" "href" "/library/" "style" "outline" "icon" "play-circle")
+  )
+) }}
 
 <!-- ============================================================
      USE CASES GRID
      ============================================================ -->
-<section class="section">
+<section class="section" id="use-cases">
   <div class="container">
 
     <div class="uc-list-grid">

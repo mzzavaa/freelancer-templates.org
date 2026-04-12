@@ -1,0 +1,112 @@
+{{/*
+  Tips Card Partial
+  
+  Renders individual content cards with type-specific styling for premium tips landing pages.
+  
+  Parameters:
+    - type: (string, optional) Card type: rule, example, tip, or default
+    - title: (string, required) Card title
+    - body: (string, required) Card body content
+    - source: (string, optional) Source citation (for rule cards)
+    - list: ([]string, optional) Bullet list items
+    - table: (object, optional) Table with headers and rows
+  
+  Type-Specific Rendering:
+    - rule: Blue accent border, "Rule" badge, source citation at bottom
+    - example: Dark background, "This project" badge
+    - tip: Default styling, "Tip" badge
+    - default: No badge, standard styling
+  
+  Table Object Structure:
+    table:
+      headers: ["Name", "Size", "Use"]
+      rows:
+        - ["hero", "72px", "Headlines"]
+        - ["body", "16px", "Paragraphs"]
+  
+  Usage:
+    {{ partial "tips-card.html" (dict
+      "type" "rule"
+      "title" "Minimum body text: 32px at 1280x720"
+      "body" "Broadcast standard requires text to be at least 2% of frame height."
+      "source" "BBC/EBU broadcast spec"
+    ) }}
+  
+  Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 9.4
+*/}}
+
+{{/* Determine card type and class */}}
+{{ $type := default "default" .type }}
+{{ $cardClass := "tips-card" }}
+
+{{/* Apply type-specific classes */}}
+{{ if eq $type "rule" }}
+  {{ $cardClass = "tips-card tips-card--rule" }}
+{{ else if eq $type "example" }}
+  {{ $cardClass = "tips-card tips-card--example" }}
+{{ else if eq $type "tip" }}
+  {{ $cardClass = "tips-card tips-card--tip" }}
+{{ end }}
+
+<div class="{{ $cardClass }}">
+  {{/* Type-specific badge */}}
+  {{ if eq $type "rule" }}
+    <div class="tips-card__label">Rule</div>
+  {{ else if eq $type "example" }}
+    <div class="tips-card__label tips-card__label--example">This project</div>
+  {{ else if eq $type "tip" }}
+    <div class="tips-card__label tips-card__label--tip">Tip</div>
+  {{ end }}
+  
+  {{/* Card title */}}
+  {{ if .title }}
+    <h3 class="tips-card__title">{{ .title }}</h3>
+  {{ end }}
+  
+  {{/* Card body content */}}
+  {{ if .body }}
+    <p class="tips-card__body">{{ .body | safeHTML }}</p>
+  {{ end }}
+  
+  {{/* Bullet list (optional) */}}
+  {{ if .list }}
+    <ul class="tips-list">
+      {{ range .list }}
+        <li>{{ . | safeHTML }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  
+  {{/* Table (optional) */}}
+  {{ if .table }}
+    <div class="tips-table-wrap">
+      <table class="tips-table">
+        {{ if .table.headers }}
+          <thead>
+            <tr>
+              {{ range .table.headers }}
+                <th>{{ . }}</th>
+              {{ end }}
+            </tr>
+          </thead>
+        {{ end }}
+        {{ if .table.rows }}
+          <tbody>
+            {{ range .table.rows }}
+              <tr>
+                {{ range . }}
+                  <td>{{ . | safeHTML }}</td>
+                {{ end }}
+              </tr>
+            {{ end }}
+          </tbody>
+        {{ end }}
+      </table>
+    </div>
+  {{ end }}
+  
+  {{/* Source citation for rule cards (optional) */}}
+  {{ if and (eq $type "rule") .source }}
+    <div class="tips-card__proof">{{ .source }}</div>
+  {{ end }}
+</div>

@@ -1,0 +1,491 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "freelancer-templates" [ref=e5] [cursor=pointer]:
+        - /url: /freelancer-templates.org/
+        - text: freelancer
+        - emphasis [ref=e6]: "-templates"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Templates" [ref=e9] [cursor=pointer]:
+            - text: Templates
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - link "Use Cases" [ref=e13] [cursor=pointer]:
+            - /url: /freelancer-templates.org/use-cases/
+        - listitem [ref=e14]:
+          - link "Design Tips" [ref=e15] [cursor=pointer]:
+            - /url: /freelancer-templates.org/tips/
+        - listitem [ref=e16]:
+          - link "Studio" [ref=e17] [cursor=pointer]:
+            - /url: /freelancer-templates.org/studio/
+        - listitem [ref=e18]:
+          - link "Design System" [ref=e19] [cursor=pointer]:
+            - /url: /freelancer-templates.org/design-system/
+        - listitem [ref=e20]:
+          - link "Customize" [ref=e21] [cursor=pointer]:
+            - /url: /freelancer-templates.org/customize/
+        - listitem [ref=e22]:
+          - link "My Brands" [ref=e23] [cursor=pointer]:
+            - /url: /freelancer-templates.org/my-brands/
+      - generic [ref=e24]:
+        - button "Toggle dark mode" [ref=e25] [cursor=pointer]:
+          - img [ref=e27]
+        - link "GitHub" [ref=e33] [cursor=pointer]:
+          - /url: https://github.com/mzzavaa/freelancer-templates.org
+          - img [ref=e34]
+          - text: GitHub
+  - generic [ref=e39]:
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - img [ref=e42]
+        - text: Free and open-source - CC-BY-NC-SA
+      - heading "Open-source templates for freelancers and communities" [level=1] [ref=e45]
+      - paragraph [ref=e46]: 1424 Remotion video compositions and document templates - free under CC-BY-NC-SA. Use them, customize them, make them yours.
+      - generic [ref=e47]:
+        - link "Browse on GitHub" [ref=e48] [cursor=pointer]:
+          - /url: https://github.com/mzzavaa/freelancer-templates.org
+          - img [ref=e49]
+          - text: Browse on GitHub
+        - link "Need commercial use?" [ref=e52] [cursor=pointer]:
+          - /url: https://freelancer-automation.com
+          - img [ref=e53]
+          - text: Need commercial use?
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]: "1424"
+          - generic [ref=e59]: Video compositions
+        - generic [ref=e60]:
+          - generic [ref=e61]: "87"
+          - generic [ref=e62]: Template types
+        - generic [ref=e63]:
+          - generic [ref=e64]: "7"
+          - generic [ref=e65]: Style themes each
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - img [ref=e70]
+        - generic [ref=e72]: Testimonial
+      - generic [ref=e73]:
+        - img [ref=e75]
+        - generic [ref=e77]: Project Proposal
+      - generic [ref=e78]:
+        - img [ref=e80]
+        - generic [ref=e82]: Event
+      - generic [ref=e83]:
+        - img [ref=e85]
+        - generic [ref=e87]: Case Study
+      - generic [ref=e89]: "// Remotion composition const MyVideo = () => ( <AbsoluteFill> <Title text={props.title} /> <LogoReveal color={brand} /> </AbsoluteFill> );"
+  - generic [ref=e91]:
+    - generic [ref=e92]:
+      - generic [ref=e93]: Document Templates
+      - heading "Everything a freelancer needs in writing" [level=2] [ref=e94]
+      - paragraph [ref=e95]: Professional document templates for every stage of client work - from first contact to final invoice.
+    - generic [ref=e96]:
+      - generic [ref=e97] [cursor=pointer]:
+        - img [ref=e99]
+        - heading "Contracts" [level=3] [ref=e102]
+        - paragraph [ref=e103]: Protect yourself and your clients with clear, professional agreements.
+        - generic [ref=e104]:
+          - generic [ref=e105]: Client Contract
+          - generic [ref=e106]: Subcontractor
+          - generic [ref=e107]: NDA
+      - generic [ref=e108] [cursor=pointer]:
+        - img [ref=e110]
+        - heading "Proposals" [level=3] [ref=e113]
+        - paragraph [ref=e114]: Win clients with polished proposals that speak their language.
+        - generic [ref=e115]:
+          - generic [ref=e116]: Project Proposal
+          - generic [ref=e117]: Retainer
+          - generic [ref=e118]: Pitch Deck
+      - generic [ref=e119] [cursor=pointer]:
+        - img [ref=e121]
+        - heading "Invoices" [level=3] [ref=e124]
+        - paragraph [ref=e125]: Get paid on time with clean invoices and payment terms that stick.
+        - generic [ref=e126]:
+          - generic [ref=e127]: Invoice Template
+          - generic [ref=e128]: Payment Terms
+          - generic [ref=e129]: Receipt
+      - generic [ref=e130] [cursor=pointer]:
+        - img [ref=e132]
+        - heading "Email Scripts" [level=3] [ref=e135]
+        - paragraph [ref=e136]: The right words for every awkward client situation, ready to copy.
+        - generic [ref=e137]:
+          - generic [ref=e138]: Onboarding
+          - generic [ref=e139]: Late Payment
+          - generic [ref=e140]: Scope Creep
+          - generic [ref=e141]: Follow-up
+      - generic [ref=e142] [cursor=pointer]:
+        - img [ref=e144]
+        - heading "Project Management" [level=3] [ref=e145]
+        - paragraph [ref=e146]: Keep projects on track and clients informed with structured docs.
+        - generic [ref=e147]:
+          - generic [ref=e148]: Project Brief
+          - generic [ref=e149]: Status Report
+          - generic [ref=e150]: Retrospective
+          - generic [ref=e151]: Timeline
+      - generic [ref=e152] [cursor=pointer]:
+        - img [ref=e154]
+        - heading "Notion Templates" [level=3] [ref=e159]
+        - paragraph [ref=e160]: Complete Notion systems built for how freelancers actually work.
+        - generic [ref=e161]:
+          - generic [ref=e162]: Freelancer OS
+          - generic [ref=e163]: Project Tracker
+          - generic [ref=e164]: CRM
+          - generic [ref=e165]: Client Portal
+    - generic [ref=e166]:
+      - img [ref=e167]
+      - text: Free for personal projects and non-commercial community use - CC-BY-NC-SA license applies to all templates.
+  - generic [ref=e170]:
+    - generic [ref=e171]:
+      - generic [ref=e172]: Video Template Library
+      - heading "Programmatic video templates built with Remotion" [level=2] [ref=e173]
+      - paragraph [ref=e174]: 1424 compositions across 87 template types, 22 style themes each. Hover to preview.
+    - generic [ref=e175]:
+      - link "Testimonial template preview 16 variants Testimonial Client quote animations, social proof reels, and review highlights View all 16 variants →" [ref=e176] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/testimonial/
+        - generic [ref=e177]:
+          - img "Testimonial template preview" [ref=e178]
+          - generic:
+            - img
+            - text: 16 variants
+        - generic [ref=e180]:
+          - img [ref=e182]
+          - heading "Testimonial" [level=3] [ref=e184]
+          - paragraph [ref=e185]: Client quote animations, social proof reels, and review highlights
+          - generic [ref=e187]: View all 16 variants →
+      - link "Recap template preview 16 variants Recap Project wrap-ups, sprint reviews, and milestone summaries View all 16 variants →" [ref=e188] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/recap/
+        - generic [ref=e189]:
+          - img "Recap template preview" [ref=e190]
+          - generic:
+            - img
+            - text: 16 variants
+        - generic [ref=e192]:
+          - img [ref=e194]
+          - heading "Recap" [level=3] [ref=e195]
+          - paragraph [ref=e196]: Project wrap-ups, sprint reviews, and milestone summaries
+          - generic [ref=e198]: View all 16 variants →
+      - link "Behind The Scenes template preview 16 variants Behind The Scenes Process walkthroughs, timeline reveals, and scene documentation View all 16 variants →" [ref=e199] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/behindthescenes/
+        - generic [ref=e200]:
+          - img "Behind The Scenes template preview" [ref=e201]
+          - generic:
+            - img
+            - text: 16 variants
+        - generic [ref=e203]:
+          - img [ref=e205]
+          - heading "Behind The Scenes" [level=3] [ref=e208]
+          - paragraph [ref=e209]: Process walkthroughs, timeline reveals, and scene documentation
+          - generic [ref=e211]: View all 16 variants →
+      - link "Tutorial template preview 16 variants Tutorial Step-by-step guides, demo walkthroughs, and how-to content View all 16 variants →" [ref=e212] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/tutorial/
+        - generic [ref=e213]:
+          - img "Tutorial template preview" [ref=e214]
+          - generic:
+            - img
+            - text: 16 variants
+        - generic [ref=e216]:
+          - img [ref=e218]
+          - heading "Tutorial" [level=3] [ref=e221]
+          - paragraph [ref=e222]: Step-by-step guides, demo walkthroughs, and how-to content
+          - generic [ref=e224]: View all 16 variants →
+      - link "Project Proposal template preview 16 variants Project Proposal Scope walkthroughs, timeline visualizations, and pricing animations View all 16 variants →" [ref=e225] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/proposal/
+        - generic [ref=e226]:
+          - img "Project Proposal template preview" [ref=e227]
+          - generic:
+            - img
+            - text: 16 variants
+        - generic [ref=e229]:
+          - img [ref=e231]
+          - heading "Project Proposal" [level=3] [ref=e234]
+          - paragraph [ref=e235]: Scope walkthroughs, timeline visualizations, and pricing animations
+          - generic [ref=e237]: View all 16 variants →
+      - link "Event template preview 16 variants Event Event promos, speaker lineups, and countdown reveals View all 16 variants →" [ref=e238] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/event/
+        - generic [ref=e239]:
+          - img "Event template preview" [ref=e240]
+          - generic:
+            - img
+            - text: 16 variants
+        - generic [ref=e242]:
+          - img [ref=e244]
+          - heading "Event" [level=3] [ref=e246]
+          - paragraph [ref=e247]: Event promos, speaker lineups, and countdown reveals
+          - generic [ref=e249]: View all 16 variants →
+      - link "Course Promo template preview 16 variants Course Promo Curriculum previews, instructor intros, and course overviews View all 16 variants →" [ref=e250] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/coursepromo/
+        - generic [ref=e251]:
+          - img "Course Promo template preview" [ref=e252]
+          - generic:
+            - img
+            - text: 16 variants
+        - generic [ref=e254]:
+          - img [ref=e256]
+          - heading "Course Promo" [level=3] [ref=e259]
+          - paragraph [ref=e260]: Curriculum previews, instructor intros, and course overviews
+          - generic [ref=e262]: View all 16 variants →
+      - link "Affiliate Review template preview 16 variants Affiliate Review Product comparisons, score cards, and review verdicts View all 16 variants →" [ref=e263] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/affiliatereview/
+        - generic [ref=e264]:
+          - img "Affiliate Review template preview" [ref=e265]
+          - generic:
+            - img
+            - text: 16 variants
+        - generic [ref=e267]:
+          - img [ref=e269]
+          - heading "Affiliate Review" [level=3] [ref=e271]
+          - paragraph [ref=e272]: Product comparisons, score cards, and review verdicts
+          - generic [ref=e274]: View all 16 variants →
+    - link "See all 87 template types - 1424 compositions" [ref=e276] [cursor=pointer]:
+      - /url: /freelancer-templates.org/library/
+      - img [ref=e277]
+      - text: See all 87 template types - 1424 compositions
+    - generic [ref=e282]:
+      - generic [ref=e287]: terminal
+      - generic [ref=e288]:
+        - text: "# 1. Clone the repo"
+        - text: git clone https://github.com/mzzavaa/freelancer-templates.org
+        - text: "# 2. Install dependencies"
+        - text: npm install
+        - text: "# 3. Customize composition props"
+        - text: "import { TestimonialVideo } from './compositions';"
+        - text: "const props = { name: \"Jane Doe\", quote: \"...\", brand: \"#1a365d\" };"
+        - text: "# 4. Render with Remotion CLI"
+        - text: npx remotion render TestimonialVideo out/video.mp4
+  - generic [ref=e291]:
+    - generic [ref=e292]:
+      - generic [ref=e293]: Full Library
+      - heading "202 templates across 4 series" [level=2] [ref=e294]
+      - paragraph [ref=e295]: Every composition in the library, broken down by series and use case.
+    - button "View Full Library" [ref=e296] [cursor=pointer]:
+      - generic [ref=e297]: View Full Library
+      - img [ref=e298]
+  - generic [ref=e301]:
+    - generic [ref=e302]:
+      - generic [ref=e303]: How to Use
+      - heading "From clone to rendered video in minutes" [level=2] [ref=e304]
+      - paragraph [ref=e305]: Three steps - whether you need a contract PDF or a thousand personalized videos.
+    - generic [ref=e306]:
+      - generic [ref=e307]:
+        - generic [ref=e308]: "1"
+        - heading "Clone from GitHub" [level=3] [ref=e309]
+        - paragraph [ref=e310]: Fork or clone the repository. Browse the 87 template directories and pick what you need - document templates, Remotion compositions, or both.
+        - generic [ref=e311]:
+          - text: git clone github.com/mzzavaa/
+          - text: freelancer-templates.org
+      - generic [ref=e312]:
+        - generic [ref=e313]: "2"
+        - heading "Customize props and styles" [level=3] [ref=e314]
+        - paragraph [ref=e315]: Edit composition props to match your brand - client name, colors, data. Document templates open in Word, Notion, or Google Docs. Remotion templates accept typed props.
+      - generic [ref=e316]:
+        - generic [ref=e317]: "3"
+        - heading "Render with Remotion CLI" [level=3] [ref=e318]
+        - paragraph [ref=e319]: Render locally with the Remotion CLI, or scale to thousands of outputs with Remotion Lambda. One composition, unlimited unique videos.
+        - generic [ref=e320]:
+          - text: npm install
+          - text: npx remotion render MyComp out/video.mp4
+  - generic [ref=e322]:
+    - generic [ref=e323]:
+      - generic [ref=e324]: Automation Use Cases
+      - heading "Find your specific solution" [level=2] [ref=e325]
+      - paragraph [ref=e326]: Practical guides for automating the most time-consuming parts of freelance work - from invoicing to client onboarding to content creation.
+    - generic [ref=e327]:
+      - link "AI-Powered Proposal Generation Generate professional proposals in minutes, not hours. AI-assisted proposal writing from deal context. Read guide" [ref=e328] [cursor=pointer]:
+        - /url: /freelancer-templates.org/use-cases/proposal-generation-ai/
+        - img [ref=e330]
+        - generic [ref=e333]: AI-Powered Proposal Generation
+        - generic [ref=e334]: Generate professional proposals in minutes, not hours. AI-assisted proposal writing from deal context.
+        - generic [ref=e335]:
+          - text: Read guide
+          - img [ref=e336]
+      - link "Automate Your Freelance Invoicing Stop manually creating invoices. Automate invoice generation, tracking, and payment reminders with AI-powered tools. Read guide" [ref=e338] [cursor=pointer]:
+        - /url: /freelancer-templates.org/use-cases/freelancer-invoice-automation/
+        - img [ref=e340]
+        - generic [ref=e343]: Automate Your Freelance Invoicing
+        - generic [ref=e344]: Stop manually creating invoices. Automate invoice generation, tracking, and payment reminders with AI-powered tools.
+        - generic [ref=e345]:
+          - text: Read guide
+          - img [ref=e346]
+      - link "Automated Client Onboarding for Freelancers Streamline your client onboarding with automated contracts, welcome sequences, and project setup. Read guide" [ref=e348] [cursor=pointer]:
+        - /url: /freelancer-templates.org/use-cases/client-onboarding-automation/
+        - img [ref=e350]
+        - generic [ref=e355]: Automated Client Onboarding for Freelancers
+        - generic [ref=e356]: Streamline your client onboarding with automated contracts, welcome sequences, and project setup.
+        - generic [ref=e357]:
+          - text: Read guide
+          - img [ref=e358]
+      - link "Content Automation for Freelancers Automate your newsletter, social media, and blog content creation. Stay visible without the hustle. Read guide" [ref=e360] [cursor=pointer]:
+        - /url: /freelancer-templates.org/use-cases/content-automation-freelancers/
+        - img [ref=e362]
+        - generic [ref=e367]: Content Automation for Freelancers
+        - generic [ref=e368]: Automate your newsletter, social media, and blog content creation. Stay visible without the hustle.
+        - generic [ref=e369]:
+          - text: Read guide
+          - img [ref=e370]
+      - link "CRM Automation for Solo Freelancers Track deals, follow up with clients, and manage your pipeline without expensive CRM software. Read guide" [ref=e372] [cursor=pointer]:
+        - /url: /freelancer-templates.org/use-cases/freelance-crm-automation/
+        - img [ref=e374]
+        - generic [ref=e378]: CRM Automation for Solo Freelancers
+        - generic [ref=e379]: Track deals, follow up with clients, and manage your pipeline without expensive CRM software.
+        - generic [ref=e380]:
+          - text: Read guide
+          - img [ref=e381]
+      - link "Freelance Tax Preparation Made Easy Automate your quarterly VAT filings, expense tracking, and tax documentation. Read guide" [ref=e383] [cursor=pointer]:
+        - /url: /freelancer-templates.org/use-cases/freelance-tax-preparation/
+        - img [ref=e385]
+        - generic [ref=e387]: Freelance Tax Preparation Made Easy
+        - generic [ref=e388]: Automate your quarterly VAT filings, expense tracking, and tax documentation.
+        - generic [ref=e389]:
+          - text: Read guide
+          - img [ref=e390]
+      - link "Generate Case Studies from Your Projects Turn completed projects into professional case studies automatically. Build your portfolio while you work. Read guide" [ref=e392] [cursor=pointer]:
+        - /url: /freelancer-templates.org/use-cases/portfolio-case-study-generator/
+        - img [ref=e394]
+        - generic [ref=e396]: Generate Case Studies from Your Projects
+        - generic [ref=e397]: Turn completed projects into professional case studies automatically. Build your portfolio while you work.
+        - generic [ref=e398]:
+          - text: Read guide
+          - img [ref=e399]
+    - generic [ref=e401]:
+      - img [ref=e402]
+      - text: Each guide links to free templates on GitHub and the full automation system at freelancer-automation.com.
+  - generic [ref=e405]:
+    - generic [ref=e406]:
+      - generic [ref=e407]: License
+      - heading "Free and open - with one rule" [level=2] [ref=e408]
+      - paragraph [ref=e409]: All templates are published under Creative Commons CC-BY-NC-SA. Here is what that means for you.
+    - generic [ref=e410]:
+      - generic [ref=e411]:
+        - img [ref=e413]
+        - generic [ref=e415]:
+          - generic [ref=e416]: Free for personal and community projects
+          - paragraph [ref=e417]: Use any template for personal projects, open-source work, or community events. No payment needed.
+      - generic [ref=e418]:
+        - img [ref=e420]
+        - generic [ref=e423]:
+          - generic [ref=e424]: Must give credit
+          - paragraph [ref=e425]: Include a link back to freelancer-templates.org when sharing or publishing work based on these templates.
+      - generic [ref=e426]:
+        - img [ref=e428]
+        - generic [ref=e431]:
+          - generic [ref=e432]: Non-commercial only
+          - paragraph [ref=e433]: You cannot sell the templates themselves or use them as the primary deliverable in a paid product or service.
+      - generic [ref=e434]:
+        - img [ref=e436]
+        - generic [ref=e440]:
+          - generic [ref=e441]: Share-alike derivatives
+          - paragraph [ref=e442]: If you remix or build on these templates, your version must also be shared under CC-BY-NC-SA.
+    - generic [ref=e443]:
+      - generic [ref=e444]:
+        - heading "Need commercial rights?" [level=3] [ref=e445]
+        - paragraph [ref=e446]: freelancer-automation.com offers a commercial license with premium templates, monthly updates, and full commercial use rights - including client deliverables and resale.
+      - link "View commercial license" [ref=e447] [cursor=pointer]:
+        - /url: https://freelancer-automation.com
+        - img [ref=e448]
+        - text: View commercial license
+  - generic [ref=e453]:
+    - generic [ref=e454]:
+      - img [ref=e456]
+      - generic [ref=e459]:
+        - generic [ref=e460]: All 87 template directories on GitHub
+        - generic [ref=e461]: Browse, fork, and contribute. The full library - Remotion compositions, contracts, proposals, invoices, email scripts, and Notion templates - is open and free to clone.
+    - link "Star on GitHub" [ref=e462] [cursor=pointer]:
+      - /url: https://github.com/mzzavaa/freelancer-templates.org
+      - img [ref=e463]
+      - text: Star on GitHub
+  - generic [ref=e467]:
+    - heading "Looking for commercial licenses and premium templates?" [level=2] [ref=e468]
+    - paragraph [ref=e469]: freelancer-automation.com offers a commercial license, 500+ premium templates, monthly updates, and priority support - built for agencies and freelancers who bill clients.
+    - link "Visit freelancer-automation.com" [ref=e470] [cursor=pointer]:
+      - /url: https://freelancer-automation.com
+      - img [ref=e471]
+      - text: Visit freelancer-automation.com
+  - contentinfo [ref=e474]:
+    - generic [ref=e475]:
+      - generic [ref=e476]:
+        - generic [ref=e477]:
+          - generic [ref=e478]:
+            - text: freelancer
+            - emphasis [ref=e479]: "-templates"
+          - paragraph [ref=e480]: Free, open-source template library for freelancers and communities. Documents, Remotion video compositions, and everything in between.
+          - generic [ref=e481]:
+            - link "GitHub" [ref=e482] [cursor=pointer]:
+              - /url: https://github.com/mzzavaa/freelancer-templates.org
+              - img [ref=e483]
+            - link "Twitter / X" [ref=e486] [cursor=pointer]:
+              - /url: https://twitter.com/
+              - img [ref=e487]
+            - link "LinkedIn" [ref=e489] [cursor=pointer]:
+              - /url: https://linkedin.com/
+              - img [ref=e490]
+        - generic [ref=e494]:
+          - generic [ref=e495]: Templates
+          - list [ref=e496]:
+            - listitem [ref=e497]:
+              - link "Contracts" [ref=e498] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e499]:
+              - link "Proposals" [ref=e500] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e501]:
+              - link "Invoices" [ref=e502] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e503]:
+              - link "Email Scripts" [ref=e504] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e505]:
+              - link "Notion Templates" [ref=e506] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e507]:
+              - link "Remotion Library" [ref=e508] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#remotion
+        - generic [ref=e509]:
+          - generic [ref=e510]: SISY Ecosystem
+          - list [ref=e511]:
+            - listitem [ref=e512]:
+              - link "freelancer-automation.com" [ref=e513] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e514]:
+              - link "ai-workshops.digital" [ref=e515] [cursor=pointer]:
+                - /url: https://ai-workshops.digital
+            - listitem [ref=e516]:
+              - link "sisy.digital" [ref=e517] [cursor=pointer]:
+                - /url: https://sisy.digital
+            - listitem [ref=e518]:
+              - link "sisy.best" [ref=e519] [cursor=pointer]:
+                - /url: https://sisy.best
+        - generic [ref=e520]:
+          - generic [ref=e521]: Resources
+          - list [ref=e522]:
+            - listitem [ref=e523]:
+              - link "GitHub Repository" [ref=e524] [cursor=pointer]:
+                - /url: https://github.com/mzzavaa/freelancer-templates.org
+            - listitem [ref=e525]:
+              - link "Use Cases" [ref=e526] [cursor=pointer]:
+                - /url: /freelancer-templates.org/use-cases/
+            - listitem [ref=e527]:
+              - link "CC-BY-NC-SA License" [ref=e528] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#license
+            - listitem [ref=e529]:
+              - link "License Text" [ref=e530] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - listitem [ref=e531]:
+              - link "Commercial License" [ref=e532] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e533]:
+              - link "Contact" [ref=e534] [cursor=pointer]:
+                - /url: mailto:hello@freelancer-templates.org
+      - generic [ref=e535]:
+        - generic [ref=e536]: © 2026 freelancer-templates.org - Licensed under CC-BY-NC-SA 4.0
+        - generic [ref=e537]:
+          - link "Imprint" [ref=e538] [cursor=pointer]:
+            - /url: /freelancer-templates.org/imprint/
+          - link "Privacy Policy" [ref=e539] [cursor=pointer]:
+            - /url: /freelancer-templates.org/privacy/
+          - link "CC-BY-NC-SA 4.0" [ref=e540] [cursor=pointer]:
+            - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+          - link "Commercial License" [ref=e541] [cursor=pointer]:
+            - /url: https://freelancer-automation.com
+          - link "Contact" [ref=e542] [cursor=pointer]:
+            - /url: mailto:hello@freelancer-templates.org

@@ -1,0 +1,74 @@
+/**
+ * Tips Video Styles
+ * Styles for tutorial video embeds
+ */
+
+.tips-video {
+  position: relative;
+  max-width: 1280px;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.tips-video__player,
+.tips-video__gif {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.tips-video__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.tips-video__play-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.tips-video__play-btn svg {
+  width: 32px;
+  height: 32px;
+}
+
+.tips-video.is-playing .tips-video__play-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tips-video__caption {
+  padding: 0.75rem 1rem;
+  margin: 0;
+  font-size: 0.875rem;
+  color: #64748b;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tips-video__play-btn {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .tips-video__play-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+}

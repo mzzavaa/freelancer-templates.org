@@ -1,0 +1,92 @@
+{{/*
+  Tips Hero Partial
+  
+  Renders the hero section for premium tips landing pages with optional video player.
+  
+  Parameters:
+    - category: (string, required) Category label (e.g., "Remotion Tutorials")
+    - icon: (string, required) Lucide icon name
+    - title: (string, required) Main headline
+    - description: (string, required) Subtitle/description
+    - tags: ([]string, optional) Topic tags array
+    - video: (string, optional) Remotion composition ID
+    - videoFallback: (string, optional) Fallback image path
+    - breadcrumb: (string, optional) Parent page title for breadcrumb
+  
+  Usage:
+    {{ partial "tips-hero.html" (dict
+      "category" "Remotion Tutorials"
+      "icon" "monitor-play"
+      "title" "Master Remotion Studio"
+      "description" "Step-by-step guide to the Remotion Studio interface"
+      "tags" (slice "Interface" "Preview" "Props")
+      "video" "remotion-studio-intro"
+      "videoFallback" "/images/tips/remotion-studio-poster.png"
+      "breadcrumb" "Remotion Studio Basics"
+    ) }}
+  
+  Requirements: 1.1, 1.6, 3.1, 3.2, 3.3, 3.4, 3.6, 12.5
+*/}}
+
+<section class="tips-hero{{ if .video }} tips-hero--with-video{{ end }}">
+  <div class="container">
+    {{/* Breadcrumb Navigation */}}
+    {{ if .breadcrumb }}
+    <nav class="tips-hero__breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ "tips/" | relURL }}">Tips</a>
+      <span class="tips-hero__breadcrumb-sep" aria-hidden="true">›</span>
+      <span class="tips-hero__breadcrumb-current">{{ .breadcrumb }}</span>
+    </nav>
+    {{ end }}
+
+    <div class="tips-hero__content">
+      <div class="tips-hero__text">
+        {{/* Category Badge with Icon */}}
+        <div class="tips-hero__eyebrow">
+          <i data-lucide="{{ .icon | default "lightbulb" }}"></i>
+          {{ .category | default "Design Tips" }}
+        </div>
+
+        {{/* Title */}}
+        <h1 class="tips-hero__title">{{ .title | safeHTML }}</h1>
+
+        {{/* Description */}}
+        <p class="tips-hero__sub">{{ .description }}</p>
+
+        {{/* Topic Tags */}}
+        {{ if .tags }}
+        <div class="tips-hero__meta">
+          {{ range .tags }}
+          <span class="tips-badge">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      {{/* Video Player Section (conditional) */}}
+      {{ if .video }}
+      <div class="tips-hero__video">
+        <div class="tips-hero__player">
+          {{/* Remotion Player Embed */}}
+          <div class="tips-hero__player-wrapper" data-composition="{{ .video }}">
+            {{ if .videoFallback }}
+            <img 
+              src="{{ .videoFallback }}" 
+              alt="{{ .title }} video preview" 
+              class="tips-hero__poster"
+              loading="eager"
+            >
+            {{ else }}
+            {{/* Placeholder when no video or fallback is available */}}
+            <div class="tips-hero__placeholder">
+              <i data-lucide="play-circle"></i>
+              <span>Video preview</span>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

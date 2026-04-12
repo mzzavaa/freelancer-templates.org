@@ -122,7 +122,7 @@ const TiersLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => {
               width: cardWidth,
               background: isHighlighted ? theme.bgGlass : theme.bgSecondary,
               border: `1px solid ${isHighlighted ? theme.accent : theme.cardBorder}`,
-              borderRadius: 16,
+              borderRadius: theme.borderRadius + 4,
               padding: "24px 28px",
               display: "flex", flexDirection: "column",
               opacity: s,
@@ -330,7 +330,7 @@ const SpotlightLayout: React.FC<LayoutProps> = ({ spec, theme, frame, fps }) => 
       <div style={{
         background: theme.bgGlass,
         border: `2px solid ${theme.accent}`,
-        borderRadius: 20,
+        borderRadius: theme.borderRadius + 8,
         padding: "32px 48px",
         textAlign: "center",
         opacity: cardS,

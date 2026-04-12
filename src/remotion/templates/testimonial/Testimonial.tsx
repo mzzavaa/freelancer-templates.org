@@ -49,8 +49,8 @@ import {
   slideIn,
   SPRING,
 } from "../_shared/animations";
-import type { Theme } from "../_shared/themes";
-import { THEME_DARK } from "../_shared/themes";
+import type { Theme } from "../../themes";
+import { THEME_DARK } from "../../themes";
 import { PADDING, TYPE } from "../_shared/layouts";
 import {
   GradientBadge,

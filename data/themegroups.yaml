@@ -1,0 +1,62 @@
+groups:
+  - name: "Original"
+    key: "original"
+    themes:
+      - { name: "dark", displayName: "Dark", accent: "#6366f1" }
+      - { name: "clean", displayName: "Clean", accent: "#2563eb" }
+      - { name: "bold", displayName: "Bold", accent: "#8b5cf6" }
+      - { name: "warm", displayName: "Warm", accent: "#f97316" }
+      - { name: "minimal", displayName: "Minimal", accent: "#334155" }
+      - { name: "neon", displayName: "Neon", accent: "#00ff88" }
+      - { name: "lindamohamed", displayName: "Linda Mohamed", accent: "#2E7D32" }
+
+  - name: "Extended"
+    key: "extended"
+    themes:
+      - { name: "ocean", displayName: "Ocean", accent: "#0891b2" }
+      - { name: "sunset", displayName: "Sunset", accent: "#f472b6" }
+      - { name: "forest", displayName: "Forest", accent: "#16a34a" }
+      - { name: "rose", displayName: "Rose", accent: "#e11d48" }
+      - { name: "gold", displayName: "Gold", accent: "#d97706" }
+      - { name: "midnight", displayName: "Midnight", accent: "#3b82f6" }
+      - { name: "crimson", displayName: "Crimson", accent: "#dc2626" }
+      - { name: "lavender", displayName: "Lavender", accent: "#a78bfa" }
+      - { name: "arctic", displayName: "Arctic", accent: "#0ea5e9" }
+      - { name: "espresso", displayName: "Espresso", accent: "#b45309" }
+
+  - name: "European"
+    key: "european"
+    themes:
+      - { name: "corporate", displayName: "Corporate", accent: "#c8a94e" }
+      - { name: "industrial", displayName: "Industrial", accent: "#2e8b8b" }
+      - { name: "vienna", displayName: "Vienna", accent: "#a78bfa" }
+      - { name: "alpine", displayName: "Alpine", accent: "#0d6b6e" }
+      - { name: "finance", displayName: "Finance", accent: "#d4a017" }
+
+  - name: "Flat"
+    key: "flat"
+    themes:
+      - { name: "materialBlue", displayName: "Material Blue", accent: "#2196f3" }
+      - { name: "materialDark", displayName: "Material Dark", accent: "#03dac6" }
+      - { name: "flatRed", displayName: "Flat Red", accent: "#e53935" }
+      - { name: "flatNavy", displayName: "Flat Navy", accent: "#1a365d" }
+      - { name: "swiss", displayName: "Swiss", accent: "#000000" }
+      - { name: "bauhaus", displayName: "Bauhaus", accent: "#0047ab" }
+      - { name: "mono", displayName: "Mono", accent: "#4ec9b0" }
+      - { name: "paper", displayName: "Paper", accent: "#8b4513" }
+      - { name: "slate", displayName: "Slate", accent: "#f9ab00" }
+      - { name: "blueprint", displayName: "Blueprint", accent: "#ffffff" }
+
+  - name: "Canva"
+    key: "canva"
+    themes:
+      - { name: "candy", displayName: "Candy", accent: "#ff6b9d" }
+      - { name: "mint", displayName: "Mint", accent: "#10b981" }
+      - { name: "coral", displayName: "Coral", accent: "#f97316" }
+      - { name: "sky", displayName: "Sky", accent: "#0ea5e9" }
+      - { name: "grape", displayName: "Grape", accent: "#8b5cf6" }
+      - { name: "charcoal", displayName: "Charcoal", accent: "#fafafa" }
+      - { name: "peach", displayName: "Peach", accent: "#f59e0b" }
+      - { name: "oceanDark", displayName: "Ocean Dark", accent: "#64ffda" }
+      - { name: "cream", displayName: "Cream", accent: "#92400e" }
+      - { name: "electric", displayName: "Electric", accent: "#3b82f6" }

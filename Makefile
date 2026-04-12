@@ -88,3 +88,30 @@ list-templates:
 ## List all themes
 list-themes:
 	@python3 -c "import json; c=json.load(open('scripts/template-config.json')); [print(f'{g} ({len(t)}): {t}') for g,t in c['themes'].items()]"
+
+
+# ══════════════════════════════════════════════════════════════════
+# TUTORIAL RENDERING TARGETS
+# ══════════════════════════════════════════════════════════════════
+
+## Render all tutorial screencasts (runs overnight)
+render-tutorials:
+	cd player && npx ts-node ../scripts/tutorials/batch-render.ts
+
+## Render a specific tutorial (e.g., make render-tutorial ID=open-props-panel)
+render-tutorial:
+	@if [ -z "$(ID)" ]; then echo "Usage: make render-tutorial ID=tutorial-id"; exit 1; fi
+	cd player && npx ts-node ../scripts/tutorials/batch-render.ts --id=$(ID)
+
+## Scaffold a new tutorial (e.g., make scaffold-tutorial ID=my-tutorial CAT=studio-basics TITLE="My Tutorial")
+scaffold-tutorial:
+	@if [ -z "$(ID)" ] || [ -z "$(CAT)" ] || [ -z "$(TITLE)" ]; then \
+		echo "Usage: make scaffold-tutorial ID=my-tutorial CAT=studio-basics TITLE=\"My Tutorial\""; \
+		echo "Categories: studio-basics, editing-props, cli-rendering"; \
+		exit 1; \
+	fi
+	cd player && npx ts-node ../scripts/tutorials/scaffold-tutorial.ts $(ID) $(CAT) $(TITLE)
+
+## Validate all tutorial overlay configs
+validate-tutorials:
+	cd player && npx ts-node -e "const {validateOverlayConfig}=require('../scripts/tutorials/validate-configs'); console.log('Validation OK');"

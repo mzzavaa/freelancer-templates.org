@@ -1,0 +1,83 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<!-- ============================================================
+     PAGE HEADER (Breadcrumb + Hero)
+     Requirements: 1.1, 1.2, 1.6
+     ============================================================ -->
+<section class="tip-header">
+  <div class="container">
+    <a href="{{ "tips/" | relURL }}" class="tip-back">
+      <i data-lucide="arrow-left"></i>
+      All Design Tips
+    </a>
+  </div>
+</section>
+
+{{ partial "hero.html" (dict
+  "badge" (default "Design Tips" .Params.category)
+  "badgeIcon" (default "lightbulb" .Params.icon)
+  "title" .Title
+  "subtitle" .Description
+) }}
+
+<!-- ============================================================
+     MAIN CONTENT
+     Requirements: 1.3, 1.6
+     ============================================================ -->
+<section class="tip-content">
+  <div class="container">
+    <div class="tip-prose">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RELATED TIPS SECTION
+     Requirements: 1.4, 8.2
+     ============================================================ -->
+{{ if .Params.relatedTips }}
+<section class="section section--alt">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+      "eyebrow" "Keep Learning"
+      "title" "Related tips"
+      "subtitle" "Continue exploring with these related guides and tutorials."
+    ) }}
+    
+    <div class="content-card-grid">
+      {{ range .Params.relatedTips }}
+        {{ partial "content-card.html" (dict
+          "href" (printf "/tips/%s/" .slug)
+          "image" (printf "/images/tips/%s.png" .slug)
+          "icon" .icon
+          "title" .title
+          "description" .description
+          "meta" .meta
+        ) }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ============================================================
+     CTA UPSELL SECTION
+     Requirements: 1.5
+     ============================================================ -->
+<section class="upsell">
+  <div class="container">
+    <div class="upsell__inner">
+      <h2 class="upsell__title">Ready to start creating?</h2>
+      <p class="upsell__sub">Browse our full template library and find the perfect starting point for your next video project.</p>
+      <a href="{{ "library/" | relURL }}" class="btn btn--ghost btn--lg">
+        <i data-lucide="play-circle"></i>
+        Browse Templates
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ partial "site-footer.html" . }}
+{{ end }}

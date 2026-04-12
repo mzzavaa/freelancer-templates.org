@@ -1,0 +1,69 @@
+{{/*
+  Unified Hero Partial
+  
+  Usage:
+  {{ partial "hero.html" (dict
+    "badge" "Badge Text"
+    "badgeIcon" "lucide-icon-name"
+    "title" "Page Title with <span class='hl'>highlight</span>"
+    "subtitle" "Descriptive subtitle text"
+    "ctas" (slice
+      (dict "text" "Primary CTA" "href" "/path" "style" "primary" "icon" "icon-name")
+      (dict "text" "Secondary CTA" "href" "/path" "style" "outline" "icon" "icon-name")
+    )
+    "stats" (slice
+      (dict "value" "318" "label" "Compositions")
+      (dict "value" "42" "label" "Themes")
+    )
+  ) }}
+  
+  Parameters:
+  - badge: Badge text (required)
+  - badgeIcon: Lucide icon name for badge (required)
+  - title: Page title, can include HTML like <span class="hl"> for highlights (required)
+  - subtitle: Descriptive subtitle text (required)
+  - ctas: Array of CTA objects with text, href, style (primary/outline), and optional icon
+  - stats: Optional array of stat objects with value and label
+*/}}
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      {{/* Badge */}}
+      <div class="hero__badge">
+        <i data-lucide="{{ .badgeIcon }}"></i>
+        {{ .badge }}
+      </div>
+
+      {{/* Title - use safeHTML to allow highlight spans */}}
+      <h1 class="hero__title">{{ .title | safeHTML }}</h1>
+
+      {{/* Subtitle */}}
+      <p class="hero__sub">{{ .subtitle }}</p>
+
+      {{/* CTAs */}}
+      {{ if .ctas }}
+      <div class="hero__ctas">
+        {{ range .ctas }}
+        <a href="{{ .href }}"{{ if .external }} target="_blank" rel="noopener"{{ end }} class="btn btn--{{ .style | default "primary" }} btn--lg">
+          {{ if .icon }}<i data-lucide="{{ .icon }}"></i>{{ end }}
+          {{ .text }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{/* Stats (optional) */}}
+      {{ if .stats }}
+      <div class="hero__stats">
+        {{ range .stats }}
+        <div class="hero__stat">
+          <div class="hero__stat-val">{{ .value }}</div>
+          <div class="hero__stat-lbl">{{ .label }}</div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

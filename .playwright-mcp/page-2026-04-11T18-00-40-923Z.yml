@@ -1,0 +1,275 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "freelancer-templates" [ref=e5] [cursor=pointer]:
+        - /url: /freelancer-templates.org/
+        - text: freelancer
+        - emphasis [ref=e6]: "-templates"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Templates" [ref=e9] [cursor=pointer]:
+            - text: Templates
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - link "Use Cases" [ref=e13] [cursor=pointer]:
+            - /url: /freelancer-templates.org/use-cases/
+        - listitem [ref=e14]:
+          - link "Design Tips" [ref=e15] [cursor=pointer]:
+            - /url: /freelancer-templates.org/tips/
+        - listitem [ref=e16]:
+          - link "Studio" [ref=e17] [cursor=pointer]:
+            - /url: /freelancer-templates.org/studio/
+        - listitem [ref=e18]:
+          - link "Design System" [ref=e19] [cursor=pointer]:
+            - /url: /freelancer-templates.org/design-system/
+        - listitem [ref=e20]:
+          - link "Customize" [ref=e21] [cursor=pointer]:
+            - /url: /freelancer-templates.org/customize/
+        - listitem [ref=e22]:
+          - link "My Brands" [ref=e23] [cursor=pointer]:
+            - /url: /freelancer-templates.org/my-brands/
+      - generic [ref=e24]:
+        - button "Toggle dark mode" [ref=e25] [cursor=pointer]:
+          - img [ref=e27]
+        - link "GitHub" [ref=e33] [cursor=pointer]:
+          - /url: https://github.com/mzzavaa/freelancer-templates.org
+          - img [ref=e34]
+          - text: GitHub
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - img [ref=e40]
+      - text: Video Design Tips
+    - heading "Make videos that get watched - not skipped" [level=1] [ref=e42]
+    - paragraph [ref=e43]: Research-backed principles from broadcast design, data visualization, and cognitive science. Applied to freelance video presentations at 1280x720.
+    - generic [ref=e44]:
+      - generic [ref=e45]: Typography
+      - generic [ref=e46]: Layout
+      - generic [ref=e47]: Color
+      - generic [ref=e48]: Animation
+  - generic [ref=e50]:
+    - generic [ref=e51]:
+      - generic [ref=e52]: "01"
+      - generic [ref=e53]:
+        - heading "Typography - size for the back row" [level=2] [ref=e54]
+        - paragraph [ref=e55]: Every text element must be readable when the video plays at 360p in an app sidebar. That means much bigger than you think.
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]: Rule
+        - 'heading "Minimum body text: 32px at 1280x720" [level=3] [ref=e59]'
+        - paragraph [ref=e60]: Broadcast standard requires text to be at least 2% of frame height. At 720px that is 14px - but that assumes a 40-inch TV at 2 meters. For web video watched on a laptop, scale up to 32px minimum for any readable text.
+        - generic [ref=e61]: "Scaled from: BBC/EBU broadcast spec (1920x1080 minimum 40px body text)"
+      - generic [ref=e62]:
+        - generic [ref=e63]: Rule
+        - heading "Maximum 4 levels of hierarchy per composition" [level=3] [ref=e64]
+        - paragraph [ref=e65]: Hero, title, body, caption. Use each level for exactly one purpose. Never use font size to create emphasis inside a single level - use weight or color instead.
+        - generic [ref=e66]: "Source: Bringhurst, The Elements of Typographic Style"
+      - generic [ref=e67]:
+        - generic [ref=e68]: This project
+        - heading "TYPE scale in layouts.ts" [level=3] [ref=e69]
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: hero
+            - generic [ref=e73]: 72px
+            - generic [ref=e74]: Main headline only
+          - generic [ref=e75]:
+            - generic [ref=e76]: title
+            - generic [ref=e77]: 52px
+            - generic [ref=e78]: Section titles
+          - generic [ref=e79]:
+            - generic [ref=e80]: subtitle
+            - generic [ref=e81]: 38px
+            - generic [ref=e82]: Supporting text
+          - generic [ref=e83]:
+            - generic [ref=e84]: body
+            - generic [ref=e85]: 32px
+            - generic [ref=e86]: All body copy
+          - generic [ref=e87]:
+            - generic [ref=e88]: label
+            - generic [ref=e89]: 26px
+            - generic [ref=e90]: Badges, tags
+          - generic [ref=e91]:
+            - generic [ref=e92]: caption
+            - generic [ref=e93]: 24px
+            - generic [ref=e94]: Minimum - never go below
+  - generic [ref=e96]:
+    - generic [ref=e97]:
+      - generic [ref=e98]: "02"
+      - generic [ref=e99]:
+        - heading "Signal to noise - ruthless reduction" [level=2] [ref=e100]
+        - paragraph [ref=e101]: "Edward Tufte's core principle: maximize the ratio of data to ink. Every element that does not add meaning reduces it."
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - heading "One idea per scene" [level=3] [ref=e104]
+        - paragraph [ref=e105]: If a viewer needs to read two things at once, they read neither. Each scene should answer exactly one question. If you have two points, use two scenes with a cut.
+        - list [ref=e106]:
+          - listitem [ref=e107]: One headline per frame - not a list of bullets
+          - listitem [ref=e108]: One number per stat card - not a dashboard
+          - listitem [ref=e109]: One action in the CTA - not "choose one of these"
+      - generic [ref=e110]:
+        - heading "Remove decoration, keep structure" [level=3] [ref=e111]
+        - paragraph [ref=e112]: Background textures, gradient overlays, drop shadows, and decorative borders are noise. Grid lines on charts are signal. Safe zones and consistent margins are signal. Animated blobs are noise.
+        - list [ref=e113]:
+          - listitem [ref=e114]: "Background grids: use at 4-8% opacity maximum"
+          - listitem [ref=e115]: "Drop shadows: only when showing depth is the point"
+          - listitem [ref=e116]: "Borders on cards: 1px at 20-30% opacity"
+      - generic [ref=e117]:
+        - heading "Negative space is content" [level=3] [ref=e118]
+        - paragraph [ref=e119]: A frame with 40% empty space reads as confident. A frame with 90% text reads as a document. For 1280x720, leave at least 80px safe zones on all sides and never fill more than 65% of the frame with content.
+      - generic [ref=e120]:
+        - heading "Consistent margins = visual trust" [level=3] [ref=e121]
+        - paragraph [ref=e122]: Use the same padding value across every scene in a composition. Random-feeling spacing signals amateur work. This project uses PADDING=80 left/right and TOP_SAFE=48 - always use these constants, never hardcode.
+  - generic [ref=e124]:
+    - generic [ref=e125]:
+      - generic [ref=e126]: "03"
+      - generic [ref=e127]:
+        - heading "Color - contrast and purpose" [level=2] [ref=e128]
+        - paragraph [ref=e129]: "Color has one job in a video: direct attention. Every color that is not directing attention is competing with the ones that are."
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - generic [ref=e132]: Rule
+        - heading "4.5:1 contrast ratio minimum for all text" [level=3] [ref=e133]
+        - paragraph [ref=e134]: WCAG AA requires 4.5:1 for body text. This is also the threshold for text to read cleanly when video is compressed (H.264 compression amplifies low-contrast artifacts).
+        - generic [ref=e135]: WCAG 2.1 Level AA / YouTube compression artifacts study, 2019
+      - generic [ref=e136]:
+        - generic [ref=e137]: Rule
+        - heading "One accent color, one supporting color" [level=3] [ref=e138]
+        - paragraph [ref=e139]: Your accent is the "look here" color - used only for the most important element per scene. Supporting color is for secondary labels. Background and text are neutrals. Four colors maximum on screen at once.
+      - generic [ref=e140]:
+        - generic [ref=e141]: Rule
+        - heading "Never use color alone to convey meaning" [level=3] [ref=e142]
+        - paragraph [ref=e143]: 8% of men have color blindness. Use shape + color for status indicators, labels + color for categories, and icon + color for actions. A red warning badge must also say "Error" - the red alone is not enough.
+  - generic [ref=e145]:
+    - generic [ref=e146]:
+      - generic [ref=e147]: "04"
+      - generic [ref=e148]:
+        - heading "Animation - purpose, not decoration" [level=2] [ref=e149]
+        - paragraph [ref=e150]: Every animation should direct focus, show a relationship, or give the viewer time to process information. If it does none of these, remove it.
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - 'heading "Entrance timing: 0.3-0.6 seconds" [level=3] [ref=e153]'
+        - paragraph [ref=e154]: "At 30fps: 9-18 frames. Faster than 9 frames (0.3s) and elements \"pop in\" - viewers miss the movement. Slower than 18 frames (0.6s) and viewers feel like they are waiting. This project's DUR.fast=9 and DUR.normal=18 hit these exactly."
+      - generic [ref=e155]:
+        - 'heading "Stagger: 15-25 frames between items" [level=3] [ref=e156]'
+        - paragraph [ref=e157]: When animating a list, stagger each item by half a second maximum. Longer staggers make a 4-item list feel like a 10-second video about nothing. Use staggerDelay() from animations.ts with 15-25 frame offsets.
+      - generic [ref=e158]:
+        - heading "Spring physics feel more natural than easing" [level=3] [ref=e159]
+        - paragraph [ref=e160]: CSS ease-out is fine for simple fades. For translations and scales, spring physics (mass, stiffness, damping) feel physically real because they model how objects actually decelerate. This is why Remotion's useSpring is better than interpolate for entrances.
+      - generic [ref=e161]:
+        - heading "Idle frames = breathing room" [level=3] [ref=e162]
+        - paragraph [ref=e163]: After all items have animated in, leave 30-60 idle frames (1-2 seconds) before the composition ends. This is when viewers actually read and retain the content. Cutting to black immediately after the last animation = zero retention.
+  - generic [ref=e165]:
+    - generic [ref=e166]:
+      - generic [ref=e167]: "05"
+      - generic [ref=e168]:
+        - heading "Layout - visual hierarchy drives the eye" [level=2] [ref=e169]
+        - paragraph [ref=e170]: The eye enters a frame at the top-left and scans in a Z-pattern. Design your layout to match that path.
+    - generic [ref=e171]:
+      - generic [ref=e172]:
+        - heading "F-pattern for data-heavy layouts" [level=3] [ref=e173]
+        - paragraph [ref=e174]: The strongest position is top-left. Primary headline here. Secondary information goes on the second horizontal "stroke" of the F. Supporting details and stats fill the vertical "stem". Use BackgroundGrid to reinforce this structure visually.
+      - generic [ref=e175]:
+        - heading "Cards must be content-sized, not frame-filling" [level=3] [ref=e176]
+        - paragraph [ref=e177]: Never use flex:1 or align-stretch on card grids. Cards should be as tall as their content plus consistent padding. A 32px label in a 120px card is a layout error. Use alignContent:"start" on grid containers so rows wrap to content height.
+      - generic [ref=e178]:
+        - 'heading "Grid columns: 2-3 maximum" [level=3] [ref=e179]'
+        - paragraph [ref=e180]: A 4-column grid at 1280px gives each column 280px after margins. At TYPE.body (32px), you can fit about 8-10 words per line. That is correct. Never go to 5+ columns - text wraps to 2-3 words per line which is unreadable.
+  - generic [ref=e183]:
+    - heading "All these principles are built into every template" [level=2] [ref=e184]
+    - paragraph [ref=e185]: The shared design system - TYPE, SPACE, PADDING, DUR, themes.ts - encodes all of the above. Use the tokens, stay in the system, and your videos will be legible, focused, and professional by default.
+    - generic [ref=e186]:
+      - link "Browse all templates" [ref=e187] [cursor=pointer]:
+        - /url: /freelancer-templates.org/library/
+        - img [ref=e188]
+        - text: Browse all templates
+      - link "Open in Remotion Studio" [ref=e193] [cursor=pointer]:
+        - /url: /freelancer-templates.org/studio/
+        - img [ref=e194]
+        - text: Open in Remotion Studio
+  - contentinfo [ref=e196]:
+    - generic [ref=e197]:
+      - generic [ref=e198]:
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - text: freelancer
+            - emphasis [ref=e201]: "-templates"
+          - paragraph [ref=e202]: Free, open-source template library for freelancers and communities. Documents, Remotion video compositions, and everything in between.
+          - generic [ref=e203]:
+            - link "GitHub" [ref=e204] [cursor=pointer]:
+              - /url: https://github.com/mzzavaa/freelancer-templates.org
+              - img [ref=e205]
+            - link "Twitter / X" [ref=e208] [cursor=pointer]:
+              - /url: https://twitter.com/
+              - img [ref=e209]
+            - link "LinkedIn" [ref=e211] [cursor=pointer]:
+              - /url: https://linkedin.com/
+              - img [ref=e212]
+        - generic [ref=e216]:
+          - generic [ref=e217]: Templates
+          - list [ref=e218]:
+            - listitem [ref=e219]:
+              - link "Contracts" [ref=e220] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e221]:
+              - link "Proposals" [ref=e222] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e223]:
+              - link "Invoices" [ref=e224] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e225]:
+              - link "Email Scripts" [ref=e226] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e227]:
+              - link "Notion Templates" [ref=e228] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#categories
+            - listitem [ref=e229]:
+              - link "Remotion Library" [ref=e230] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#remotion
+        - generic [ref=e231]:
+          - generic [ref=e232]: SISY Ecosystem
+          - list [ref=e233]:
+            - listitem [ref=e234]:
+              - link "freelancer-automation.com" [ref=e235] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e236]:
+              - link "ai-workshops.digital" [ref=e237] [cursor=pointer]:
+                - /url: https://ai-workshops.digital
+            - listitem [ref=e238]:
+              - link "sisy.digital" [ref=e239] [cursor=pointer]:
+                - /url: https://sisy.digital
+            - listitem [ref=e240]:
+              - link "sisy.best" [ref=e241] [cursor=pointer]:
+                - /url: https://sisy.best
+        - generic [ref=e242]:
+          - generic [ref=e243]: Resources
+          - list [ref=e244]:
+            - listitem [ref=e245]:
+              - link "GitHub Repository" [ref=e246] [cursor=pointer]:
+                - /url: https://github.com/mzzavaa/freelancer-templates.org
+            - listitem [ref=e247]:
+              - link "Use Cases" [ref=e248] [cursor=pointer]:
+                - /url: /freelancer-templates.org/use-cases/
+            - listitem [ref=e249]:
+              - link "CC-BY-NC-SA License" [ref=e250] [cursor=pointer]:
+                - /url: /freelancer-templates.org/#license
+            - listitem [ref=e251]:
+              - link "License Text" [ref=e252] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - listitem [ref=e253]:
+              - link "Commercial License" [ref=e254] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e255]:
+              - link "Contact" [ref=e256] [cursor=pointer]:
+                - /url: mailto:hello@freelancer-templates.org
+      - generic [ref=e257]:
+        - generic [ref=e258]: © 2026 freelancer-templates.org - Licensed under CC-BY-NC-SA 4.0
+        - generic [ref=e259]:
+          - link "Imprint" [ref=e260] [cursor=pointer]:
+            - /url: /freelancer-templates.org/imprint/
+          - link "Privacy Policy" [ref=e261] [cursor=pointer]:
+            - /url: /freelancer-templates.org/privacy/
+          - link "CC-BY-NC-SA 4.0" [ref=e262] [cursor=pointer]:
+            - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+          - link "Commercial License" [ref=e263] [cursor=pointer]:
+            - /url: https://freelancer-automation.com
+          - link "Contact" [ref=e264] [cursor=pointer]:
+            - /url: mailto:hello@freelancer-templates.org

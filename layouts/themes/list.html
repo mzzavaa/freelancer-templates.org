@@ -2,17 +2,16 @@
 {{ partial "site-nav.html" . }}
 
 <!-- Hero -->
-<section class="ds-hero">
-  <div class="container">
-    <div class="eyebrow">Theme Gallery</div>
-    <h1 class="ds-hero__title">{{ .Site.Data.themes.totalThemes }} themes for every brand</h1>
-    <p class="ds-hero__sub">Browse all available themes. Each theme works with every template - pick your style and start creating.</p>
-    <div class="ds-hero__actions">
-      <a href="{{ "player/" | relURL }}" class="btn btn--primary">Open player</a>
-      <a href="{{ "design-system/" | relURL }}" class="btn btn--outline">Design system docs</a>
-    </div>
-  </div>
-</section>
+{{ partial "hero.html" (dict
+  "badge" "Theme Gallery"
+  "badgeIcon" "palette"
+  "title" (printf "%d themes for <span class='hl'>every brand</span>" (int .Site.Data.themes.totalThemes))
+  "subtitle" "Browse all available themes. Each theme works with every template - pick your style and start creating."
+  "ctas" (slice
+    (dict "text" "Open player" "href" (relURL "player/") "style" "primary" "icon" "play")
+    (dict "text" "Design system docs" "href" (relURL "design-system/") "style" "outline" "icon" "book-open")
+  )
+) }}
 
 <!-- Theme Groups -->
 {{ $groupOrder := slice "original" "extended" "european" "flat" }}

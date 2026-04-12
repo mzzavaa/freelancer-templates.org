@@ -1,27 +1,48 @@
 {{ define "main" }}
 {{ partial "site-nav.html" . }}
 
-<section class="lib-hero">
-  <div class="container">
-    <div class="eyebrow">Full Library</div>
-    {{ $total := 0 }}{{ range .Site.Data.templates }}{{ $total = add $total .variantCount }}{{ end }}
-    <h1 class="lib-hero__title">{{ $total }} compositions, {{ len .Site.Data.templates }} template types</h1>
-    <p class="lib-hero__sub">Every template in multiple style variants. Hover to preview. Click to see all variants and full documentation. <a href="{{ "player/" | relURL }}" class="lib-hero__player-link">Open interactive player &rarr;</a></p>
+{{/* Calculate totals for stats */}}
+{{ $totalCompositions := 0 }}{{ range .Site.Data.templates }}{{ $totalCompositions = add $totalCompositions .variantCount }}{{ end }}
+{{ $templateCount := len .Site.Data.templates }}
 
+{{ partial "hero.html" (dict
+  "badge" "Full Library"
+  "badgeIcon" "library"
+  "title" "Browse <span class='hl'>every template</span> in the collection"
+  "subtitle" "Every template in multiple style variants. Hover to preview. Click to see all variants and full documentation."
+  "ctas" (slice
+    (dict "text" "Open Interactive Player" "href" (printf "%s" ("player/" | relURL)) "style" "primary" "icon" "play")
+    (dict "text" "Preview in Studio" "href" "/studio/" "style" "outline" "icon" "monitor-play")
+  )
+  "stats" (slice
+    (dict "value" (printf "%d" $totalCompositions) "label" "Compositions")
+    (dict "value" (printf "%d" $templateCount) "label" "Template Types")
+  )
+) }}
+
+{{/* Search and filter controls */}}
+<section class="lib-controls-section">
+  <div class="container">
     <div class="lib-controls">
       <div class="lib-search-wrap">
         <i data-lucide="search"></i>
         <input type="text" id="libSearch" class="lib-search" placeholder="Search templates...">
       </div>
-      <div class="lib-style-filters">
-        <button class="lib-sf active" data-style="all">All</button>
-        <button class="lib-sf lib-sf--dark" data-style="dark">Dark</button>
-        <button class="lib-sf lib-sf--clean" data-style="clean">Clean</button>
-        <button class="lib-sf lib-sf--bold" data-style="bold">Bold</button>
-        <button class="lib-sf lib-sf--warm" data-style="warm">Warm</button>
-        <button class="lib-sf lib-sf--minimal" data-style="minimal">Minimal</button>
-        <button class="lib-sf lib-sf--neon" data-style="neon">Neon</button>
-        <button class="lib-sf lib-sf--lm" data-style="lindamohamed">Linda Mohamed</button>
+      
+      {{/* Theme filter buttons - generated from themegroups data */}}
+      <div class="lib-theme-filters">
+        <div class="lib-theme-filters__label">Filter by Theme:</div>
+        <div class="lib-style-filters" id="themeFilters">
+          <button class="lib-sf active" data-style="all" data-theme-filter="all">All</button>
+          {{/* Generate buttons for Original themes (most commonly used) */}}
+          {{ $originalGroup := index (where .Site.Data.themegroups.groups "key" "original") 0 }}
+          {{ range $originalGroup.themes }}
+          <button class="lib-sf" data-style="{{ .name }}" data-theme-filter="{{ .name }}" style="--theme-accent: {{ .accent }}">
+            <span class="lib-sf__swatch" style="background: {{ .accent }};"></span>
+            {{ .displayName }}
+          </button>
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>
@@ -100,35 +121,114 @@
 </section>
 
 <script>
-// Search
+// Embed template data for style switching - convert array to object keyed by slug
+(function() {
+  var tplArray = {{ .Site.Data.templates | jsonify }};
+  window.__TPLS__ = {};
+  tplArray.forEach(function(tpl) {
+    window.__TPLS__[tpl.slug] = tpl;
+  });
+})();
+
+// Store original image sources for restoration when "All" is selected
+(function() {
+  document.querySelectorAll('.lib-card').forEach(function(card) {
+    var img = card.querySelector('.lib-card__img');
+    var vid = card.querySelector('.lib-card__vid source');
+    if (img) card.dataset.originalImg = img.src;
+    if (vid) card.dataset.originalVid = vid.src;
+  });
+})();
+
+// Current active theme filter (for combining with search)
+var currentThemeFilter = 'all';
+
+// Search - integrates with theme filter
 document.getElementById('libSearch').addEventListener('input', function() {
   var q = this.value.toLowerCase();
-  document.querySelectorAll('.lib-card, .lib-mol-card').forEach(function(c) {
+  document.querySelectorAll('.lib-card').forEach(function(card) {
+    var matchesSearch = (card.dataset.name || '').includes(q);
+    var matchesTheme = currentThemeFilter === 'all' || cardHasTheme(card, currentThemeFilter);
+    card.style.display = (matchesSearch && matchesTheme) ? '' : 'none';
+  });
+  // Molecule cards only filter by search (no theme variants)
+  document.querySelectorAll('.lib-mol-card').forEach(function(c) {
     c.style.display = (c.dataset.name || '').includes(q) ? '' : 'none';
   });
 });
 
-// Style filter
+// Helper: Check if a template card has variants in the specified theme
+function cardHasTheme(card, themeName) {
+  var slug = card.dataset.slug;
+  var tpl = window.__TPLS__ && window.__TPLS__[slug];
+  if (!tpl || !tpl.variants) return false;
+  return tpl.variants.some(function(v) { return v.style === themeName; });
+}
+
+// Helper: Get the first variant matching the theme for a template
+function getVariantForTheme(slug, themeName) {
+  var tpl = window.__TPLS__ && window.__TPLS__[slug];
+  if (!tpl || !tpl.variants) return null;
+  return tpl.variants.find(function(v) { return v.style === themeName; });
+}
+
+// Theme filter - filters cards and updates preview images
 document.querySelectorAll('.lib-sf').forEach(function(btn) {
   btn.addEventListener('click', function() {
+    // Update active state on filter buttons
     document.querySelectorAll('.lib-sf').forEach(function(b) { b.classList.remove('active'); });
     this.classList.add('active');
-    var style = this.dataset.style;
+    
+    var style = this.dataset.themeFilter || this.dataset.style;
+    currentThemeFilter = style;
+    
+    // Get current search query
+    var searchInput = document.getElementById('libSearch');
+    var searchQuery = searchInput ? searchInput.value.toLowerCase() : '';
+    
     document.querySelectorAll('.lib-card').forEach(function(card) {
-      if (style === 'all') { card.style.display = ''; return; }
-      var href = card.href || '';
-      // Swap the preview image to show the matching style variant
-      var img = card.querySelector('.lib-card__img');
       var slug = card.dataset.slug;
-      // find variant matching style from embedded data
-      var tpl = window.__TPLS__ && window.__TPLS__[slug];
-      if (tpl) {
-        var variant = tpl.variants.find(function(v) { return v.style === style; });
-        if (variant && img) {
-          img.src = img.src.replace(/\/showcase\/[^/]+\.png/, '/showcase/' + variant.id + '.png');
+      var img = card.querySelector('.lib-card__img');
+      var vid = card.querySelector('.lib-card__vid source');
+      var matchesSearch = (card.dataset.name || '').includes(searchQuery);
+      
+      if (style === 'all') {
+        // Show all templates (respecting search filter)
+        card.style.display = matchesSearch ? '' : 'none';
+        // Restore original preview image
+        if (img && card.dataset.originalImg) {
+          img.src = card.dataset.originalImg;
+        }
+        // Restore original video source
+        if (vid && card.dataset.originalVid) {
+          vid.src = card.dataset.originalVid;
+        }
+      } else {
+        // Check if template has variants in this theme
+        var hasTheme = cardHasTheme(card, style);
+        
+        if (hasTheme && matchesSearch) {
+          // Show card and update preview to matching variant
+          card.style.display = '';
+          var variant = getVariantForTheme(slug, style);
+          if (variant) {
+            // Update image to show the matching theme variant
+            if (img) {
+              img.src = img.src.replace(/\/showcase\/[^/]+\.png/, '/showcase/' + variant.id + '.png');
+            }
+            // Update video to show the matching theme variant
+            if (vid) {
+              vid.src = vid.src.replace(/\/hero\/[^/]+\.mp4/, '/hero/' + variant.id + '.mp4');
+              // Reload video element to pick up new source
+              var video = card.querySelector('.lib-card__vid');
+              if (video) video.load();
+            }
+          }
+        } else {
+          // Hide card - doesn't have variants in this theme or doesn't match search
+          card.style.display = 'none';
         }
       }
-      card.style.display = '';
     });
   });
 });
@@ -159,9 +259,6 @@ if (window.__setupVideoCards) {
     card.addEventListener('mouseleave', function() { vid.pause(); vid.currentTime = 0; });
   });
 }
-
-// Embed template data for style switching
-window.__TPLS__ = {{ .Site.Data.templates | jsonify }};
 </script>
 
 {{ partial "site-footer.html" . }}

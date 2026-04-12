@@ -51,12 +51,66 @@
           </div>
         </li>
 
-        <li><a href="{{ "use-cases/" | relURL }}" class="nav__link{{ if eq .Section "use-cases" }} nav__link--active{{ end }}">Use Cases</a></li>
-        <li><a href="{{ "tips/" | relURL }}" class="nav__link{{ if eq .RelPermalink "/tips/" }} nav__link--active{{ end }}">Design Tips</a></li>
+        <!-- Themes mega-menu -->
+        <li class="nav__item nav__item--has-mega">
+          <button class="nav__link nav__link--btn{{ if eq .Section "themes" }} nav__link--active{{ end }}" aria-expanded="false" aria-controls="megaThemes">
+            Themes
+            <svg class="nav__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+
+          <div class="mega mega--themes" id="megaThemes" role="region" aria-label="All themes">
+            <div class="mega__inner container">
+              
+              <!-- Brand Customization Promo - spans multiple columns -->
+              <div class="mega__brand-promo">
+                <div class="mega__brand-promo-content">
+                  <div class="mega__brand-promo-icon">
+                    <i data-lucide="palette"></i>
+                  </div>
+                  <div class="mega__brand-promo-text">
+                    <div class="mega__brand-promo-title">Make it your own brand</div>
+                    <p class="mega__brand-promo-desc">Customize colors, fonts, and logos to match your brand identity. Create unlimited brand presets and apply them to any template instantly.</p>
+                  </div>
+                  <a href="{{ "my-brands/" | relURL }}" class="btn btn--primary btn--sm">
+                    <i data-lucide="sparkles"></i>
+                    Customize Your Brand
+                  </a>
+                </div>
+              </div>
+
+              <div class="mega__groups mega__groups--themes" id="megaThemeGroups">
+                {{ range .Site.Data.themegroups.groups }}
+                <div class="mega__group">
+                  <div class="mega__group-hd">{{ .name }}</div>
+                  <ul class="mega__list mega__list--themes" role="list">
+                    {{ range .themes }}
+                    <li class="mega__item">
+                      <a href="{{ (printf "themes/%s/" .name) | relURL }}" class="mega__link mega__link--theme">
+                        <span class="mega__swatch" style="background: {{ .accent }};"></span>
+                        {{ .displayName }}
+                      </a>
+                    </li>
+                    {{ end }}
+                  </ul>
+                </div>
+                {{ end }}
+              </div>
+
+              <div class="mega__footer">
+                {{- $themeCount := 0 }}{{ range .Site.Data.themegroups.groups }}{{ $themeCount = add $themeCount (len .themes) }}{{ end -}}
+                <a href="{{ "themes/" | relURL }}" class="mega__footer-link">
+                  View all {{ $themeCount }} themes
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Direct links -->
+        <li><a href="{{ "tips/" | relURL }}" class="nav__link{{ if eq .Section "tips" }} nav__link--active{{ end }}">Design Tips</a></li>
         <li><a href="{{ "studio/" | relURL }}" class="nav__link{{ if eq .RelPermalink "/studio/" }} nav__link--active{{ end }}">Studio</a></li>
-        <li><a href="{{ "design-system/" | relURL }}" class="nav__link{{ if eq .RelPermalink "/design-system/" }} nav__link--active{{ end }}">Design System</a></li>
-        <li><a href="{{ "customize/" | relURL }}" class="nav__link nav__link--cta{{ if eq .RelPermalink "/customize/" }} nav__link--active{{ end }}">Customize</a></li>
-        <li><a href="{{ "my-brands/" | relURL }}" class="nav__link{{ if eq .RelPermalink "/my-brands/" }} nav__link--active{{ end }}">My Brands</a></li>
+        <li><a href="{{ "enterprise/" | relURL }}" class="nav__link nav__link--cta{{ if eq .RelPermalink "/enterprise/" }} nav__link--active{{ end }}">Enterprise</a></li>
       </ul>
 
       <div class="nav__actions">
@@ -64,10 +118,19 @@
           <span class="icon-wrap-light"><i data-lucide="sun"></i></span>
           <span class="icon-wrap-dark"><i data-lucide="moon"></i></span>
         </button>
-        <a href="https://github.com/mzzavaa/freelancer-templates.org" target="_blank" rel="noopener" class="btn btn--primary btn--sm">
-          <i data-lucide="github"></i>
-          GitHub
+        
+        <!-- Customize action button -->
+        <a href="{{ "customize/" | relURL }}" class="nav__action-btn{{ if eq .RelPermalink "/customize/" }} nav__action-btn--active{{ end }}" aria-label="Customize templates">
+          <i data-lucide="sliders-horizontal"></i>
+          <span class="nav__action-label">Customize</span>
         </a>
+        
+        <!-- My Brands profile button (replaces GitHub) -->
+        <a href="{{ "my-brands/" | relURL }}" class="nav__profile-btn{{ if eq .RelPermalink "/my-brands/" }} nav__profile-btn--active{{ end }}" aria-label="My Brands">
+          <i data-lucide="user-circle"></i>
+          <span class="nav__action-label">My Brands</span>
+        </a>
+        
         <button class="nav__hamburger" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
           <i data-lucide="menu"></i>
         </button>

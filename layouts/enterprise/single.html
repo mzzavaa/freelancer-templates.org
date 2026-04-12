@@ -1,0 +1,279 @@
+{{ define "main" }}
+{{ partial "site-nav.html" . }}
+
+<!-- ============================================================
+     PAGE HEADER (Unified Hero)
+     Requirements: 6.1, 6.2
+     ============================================================ -->
+{{ partial "hero.html" (dict
+  "badge" "Enterprise"
+  "badgeIcon" "building-2"
+  "title" "Commercial licenses for <span class='hl'>agencies and teams</span>"
+  "subtitle" "Remove attribution requirements, access premium templates, and get priority support for your business."
+  "ctas" (slice
+    (dict "text" "View Commercial License" "href" "https://freelancer-automation.com" "style" "primary" "icon" "arrow-up-right" "external" true)
+    (dict "text" "Contact Sales" "href" "mailto:enterprise@freelancer-templates.org" "style" "outline" "icon" "mail")
+  )
+) }}
+
+<!-- ============================================================
+     COMMERCIAL LICENSE BENEFITS SECTION
+     Requirements: 6.3, 6.4
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+      "eyebrow" "License Benefits"
+      "title" "What you get with commercial licensing"
+      "subtitle" "Upgrade from CC-BY-NC-SA to full commercial rights for your business."
+    ) }}
+    
+    <div class="license-grid">
+      <div class="lic-card">
+        <div class="lic-icon"><i data-lucide="check-circle"></i></div>
+        <div>
+          <div class="lic-title">No attribution required</div>
+          <p class="lic-desc">Use templates in client work without linking back. Your deliverables, your brand - no fine print.</p>
+        </div>
+      </div>
+
+      <div class="lic-card">
+        <div class="lic-icon"><i data-lucide="briefcase"></i></div>
+        <div>
+          <div class="lic-title">Full commercial use</div>
+          <p class="lic-desc">Bill clients, sell products, create paid content. No restrictions on how you monetize your work.</p>
+        </div>
+      </div>
+
+      <div class="lic-card">
+        <div class="lic-icon"><i data-lucide="users"></i></div>
+        <div>
+          <div class="lic-title">Team licensing</div>
+          <p class="lic-desc">Cover your entire team with a single license. No per-seat fees or usage tracking.</p>
+        </div>
+      </div>
+
+      <div class="lic-card">
+        <div class="lic-icon"><i data-lucide="shield-check"></i></div>
+        <div>
+          <div class="lic-title">Legal clarity</div>
+          <p class="lic-desc">Clear commercial terms that protect your business. No ambiguity about what you can and cannot do.</p>
+        </div>
+      </div>
+
+      <div class="lic-card">
+        <div class="lic-icon"><i data-lucide="sparkles"></i></div>
+        <div>
+          <div class="lic-title">Premium templates</div>
+          <p class="lic-desc">Access 500+ premium templates not available in the free library. New templates added monthly.</p>
+        </div>
+      </div>
+
+      <div class="lic-card">
+        <div class="lic-icon"><i data-lucide="headphones"></i></div>
+        <div>
+          <div class="lic-title">Priority support</div>
+          <p class="lic-desc">Get help when you need it. Direct access to the team for technical questions and customization guidance.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- License comparison note -->
+    <div class="cat-note" style="margin-top: 32px;">
+      <i data-lucide="info"></i>
+      The free CC-BY-NC-SA license requires attribution and prohibits commercial use. Commercial licensing removes both restrictions.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VOLUME PRICING SECTION
+     Requirements: 6.3
+     ============================================================ -->
+<section class="section section--alt">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+      "eyebrow" "Volume Pricing"
+      "title" "Scales with your team"
+      "subtitle" "Flexible pricing for agencies, studios, and enterprise teams."
+      "centered" true
+    ) }}
+    
+    <div class="pricing-grid">
+      <!-- Freelancer Tier -->
+      <div class="pricing-card">
+        <div class="pricing-card__header">
+          <div class="pricing-card__icon"><i data-lucide="user"></i></div>
+          <h3 class="pricing-card__title">Freelancer</h3>
+          <p class="pricing-card__desc">For independent professionals</p>
+        </div>
+        <div class="pricing-card__body">
+          <ul class="pricing-card__features">
+            <li><i data-lucide="check"></i> Single user license</li>
+            <li><i data-lucide="check"></i> All premium templates</li>
+            <li><i data-lucide="check"></i> Commercial use rights</li>
+            <li><i data-lucide="check"></i> Email support</li>
+          </ul>
+        </div>
+        <div class="pricing-card__footer">
+          <a href="https://freelancer-automation.com" target="_blank" rel="noopener" class="btn btn--outline btn--block">
+            View Pricing
+          </a>
+        </div>
+      </div>
+
+      <!-- Agency Tier -->
+      <div class="pricing-card pricing-card--featured">
+        <div class="pricing-card__badge">Most Popular</div>
+        <div class="pricing-card__header">
+          <div class="pricing-card__icon"><i data-lucide="building"></i></div>
+          <h3 class="pricing-card__title">Agency</h3>
+          <p class="pricing-card__desc">For teams up to 10 people</p>
+        </div>
+        <div class="pricing-card__body">
+          <ul class="pricing-card__features">
+            <li><i data-lucide="check"></i> Up to 10 team members</li>
+            <li><i data-lucide="check"></i> All premium templates</li>
+            <li><i data-lucide="check"></i> Commercial use rights</li>
+            <li><i data-lucide="check"></i> Priority support</li>
+            <li><i data-lucide="check"></i> Custom branding assets</li>
+          </ul>
+        </div>
+        <div class="pricing-card__footer">
+          <a href="https://freelancer-automation.com" target="_blank" rel="noopener" class="btn btn--primary btn--block">
+            View Pricing
+          </a>
+        </div>
+      </div>
+
+      <!-- Enterprise Tier -->
+      <div class="pricing-card">
+        <div class="pricing-card__header">
+          <div class="pricing-card__icon"><i data-lucide="building-2"></i></div>
+          <h3 class="pricing-card__title">Enterprise</h3>
+          <p class="pricing-card__desc">For large organizations</p>
+        </div>
+        <div class="pricing-card__body">
+          <ul class="pricing-card__features">
+            <li><i data-lucide="check"></i> Unlimited team members</li>
+            <li><i data-lucide="check"></i> All premium templates</li>
+            <li><i data-lucide="check"></i> Commercial use rights</li>
+            <li><i data-lucide="check"></i> Dedicated support</li>
+            <li><i data-lucide="check"></i> Custom template development</li>
+            <li><i data-lucide="check"></i> SLA guarantee</li>
+          </ul>
+        </div>
+        <div class="pricing-card__footer">
+          <a href="mailto:enterprise@freelancer-templates.org" class="btn btn--outline btn--block">
+            Contact Sales
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CUSTOM TEMPLATE DEVELOPMENT SECTION
+     Requirements: 6.3
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+      "eyebrow" "Custom Development"
+      "title" "Need something unique?"
+      "subtitle" "Our team can build custom templates tailored to your brand and workflow."
+    ) }}
+    
+    <div class="custom-dev-grid">
+      <div class="custom-dev-content">
+        <h3 class="custom-dev-title">Bespoke templates for your business</h3>
+        <p class="custom-dev-desc">
+          Whether you need a custom Remotion composition for your product launches, a branded document system for your agency, or a complete video automation pipeline - we can build it.
+        </p>
+        
+        <ul class="custom-dev-list">
+          <li>
+            <i data-lucide="palette"></i>
+            <div>
+              <strong>Brand-matched designs</strong>
+              <span>Templates that perfectly match your visual identity, colors, and typography.</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="code-2"></i>
+            <div>
+              <strong>Custom compositions</strong>
+              <span>Unique Remotion compositions built to your exact specifications.</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="workflow"></i>
+            <div>
+              <strong>Workflow integration</strong>
+              <span>Connect templates to your existing tools - CRM, project management, or custom APIs.</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="refresh-cw"></i>
+            <div>
+              <strong>Ongoing updates</strong>
+              <span>Keep your templates current with regular updates and new features.</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="custom-dev-cta">
+          <a href="mailto:enterprise@freelancer-templates.org" class="btn btn--primary btn--lg">
+            <i data-lucide="mail"></i>
+            Discuss Your Project
+          </a>
+        </div>
+      </div>
+
+      <div class="custom-dev-visual">
+        <div class="custom-dev-card">
+          <div class="custom-dev-card__header">
+            <span class="dot dot--r"></span>
+            <span class="dot dot--y"></span>
+            <span class="dot dot--g"></span>
+            <span class="custom-dev-card__label">custom-template.tsx</span>
+          </div>
+          <div class="custom-dev-card__body">
+            <span style="color:#475569">// Your custom Remotion composition</span><br/>
+            <span style="color:#c084fc">import</span> { <span style="color:#4a90d9">AbsoluteFill</span> } <span style="color:#c084fc">from</span> <span style="color:#86efac">'remotion'</span>;<br/>
+            <span style="color:#c084fc">import</span> { <span style="color:#4a90d9">YourBrand</span> } <span style="color:#c084fc">from</span> <span style="color:#86efac">'./brand'</span>;<br/>
+            <br/>
+            <span style="color:#c084fc">export const</span> <span style="color:#4a90d9">CustomTemplate</span> = () => (<br/>
+            &nbsp;&nbsp;<span style="color:#93c5fd">&lt;AbsoluteFill&gt;</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#93c5fd">&lt;YourBrand.Logo /&gt;</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#93c5fd">&lt;YourBrand.Colors /&gt;</span><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#93c5fd">&lt;YourBrand.Animation /&gt;</span><br/>
+            &nbsp;&nbsp;<span style="color:#93c5fd">&lt;/AbsoluteFill&gt;</span><br/>
+            );
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     UPSELL / CTA SECTION
+     Requirements: 6.5, 6.7
+     ============================================================ -->
+<section class="upsell">
+  <div class="container">
+    <div class="upsell__inner">
+      <h2 class="upsell__title">Ready to upgrade?</h2>
+      <p class="upsell__sub">Visit freelancer-automation.com for commercial licensing, premium templates, and enterprise support.</p>
+      <a href="https://freelancer-automation.com" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+        <i data-lucide="arrow-up-right"></i>
+        Get Commercial License
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ partial "site-footer.html" . }}
+{{ end }}

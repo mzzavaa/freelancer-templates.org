@@ -2,21 +2,21 @@
 {{ partial "site-nav.html" . }}
 
 <!-- ── Studio Hero ─────────────────────────────────────────────── -->
-<section class="studio-hero">
-  <div class="container">
-    <div class="studio-hero__eyebrow">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-      Remotion Studio
-    </div>
-    <h1 class="studio-hero__title">Preview templates live - adjust and export in seconds</h1>
-    <p class="studio-hero__sub">Remotion Studio is a local browser app that lets you scrub through every frame, change props, compare themes, and export to MP4, GIF, or PNG - all without touching config files.</p>
-    <div class="studio-hero__badges">
-      <span class="studio-badge">Free and open-source</span>
-      <span class="studio-badge">Runs at localhost:3000</span>
-      <span class="studio-badge">No account needed</span>
-    </div>
-  </div>
-</section>
+{{ partial "hero.html" (dict
+  "badge" "Preview Studio"
+  "badgeIcon" "monitor-play"
+  "title" "Preview templates <span class='hl'>live</span> - adjust and export in seconds"
+  "subtitle" "Remotion Studio is a local browser app that lets you scrub through every frame, change props, compare themes, and export to MP4, GIF, or PNG - all without touching config files."
+  "ctas" (slice
+    (dict "text" "Browse Templates" "href" "/library/" "style" "primary" "icon" "grid")
+    (dict "text" "View on GitHub" "href" "https://github.com/mzzavaa/freelancer-templates.org" "style" "outline" "icon" "github" "external" true)
+  )
+  "stats" (slice
+    (dict "value" "Free" "label" "Open-source")
+    (dict "value" "localhost:3000" "label" "Local preview")
+    (dict "value" "No account" "label" "Required")
+  )
+) }}
 
 <!-- ── Output Showcase ────────────────────────────────────────── -->
 <section class="studio-section studio-section--alt">

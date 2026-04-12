@@ -71,7 +71,7 @@ export const GlassCard: React.FC<{
   <div style={{
     background: theme.bgGlass,
     border: `1px solid ${theme.cardBorder}`,
-    borderRadius: 12,
+    borderRadius: theme.borderRadius,
     padding: "20px 24px",
     backdropFilter: "blur(12px)",
     boxShadow: theme.cardShadow,
@@ -506,7 +506,7 @@ export const ComparisonTable: React.FC<{
                 flex: 1,
                 background: theme.bgGlass,
                 border: `1px solid ${theme.cardBorder}`,
-                borderRadius: 8,
+                borderRadius: theme.borderRadius,
                 padding: "10px 14px",
                 backdropFilter: "blur(12px)",
                 boxShadow: theme.cardShadow,
@@ -523,7 +523,7 @@ export const ComparisonTable: React.FC<{
                 flex: 1,
                 background: theme.bgGlass,
                 border: `1px solid ${theme.cardBorder}`,
-                borderRadius: 8,
+                borderRadius: theme.borderRadius,
                 padding: "10px 14px",
                 backdropFilter: "blur(12px)",
                 boxShadow: theme.cardShadow,
@@ -539,7 +539,7 @@ export const ComparisonTable: React.FC<{
                 flex: 1,
                 background: theme.bgGlass,
                 border: `1px solid ${theme.cardBorder}`,
-                borderRadius: 8,
+                borderRadius: theme.borderRadius,
                 padding: "10px 14px",
                 backdropFilter: "blur(12px)",
                 boxShadow: theme.cardShadow,
@@ -639,7 +639,7 @@ export const CaptionOverlay: React.FC<{
       <div
         style={{
           background: "rgba(0,0,0,0.65)",
-          borderRadius: 8,
+          borderRadius: theme.borderRadius,
           padding: `10px ${paddingH}px`,
           maxWidth: "80%",
         }}

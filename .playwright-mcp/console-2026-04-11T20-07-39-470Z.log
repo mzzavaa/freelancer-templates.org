@@ -1,0 +1,9 @@
+[     486ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/favicon.ico:0
+[   11784ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/images/tips/cli-rendering.png:0
+[   11785ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/images/tips/composition-structure.png:0
+[   11785ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/images/tips/editing-props.png:0
+[   11785ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/images/tips/custom-themes.png:0
+[   11785ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/images/tips/lambda-deploy.png:0
+[   11820ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/images/tips/remotion-studio.png:0
+[   11820ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/images/tips/brand-integration.png:0
+[   11820ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:1313/images/tips/layout-mods.png:0

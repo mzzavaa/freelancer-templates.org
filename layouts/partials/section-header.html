@@ -1,0 +1,25 @@
+{{/*
+  Section Header Partial
+  
+  A reusable section header component with eyebrow, title, subtitle, and optional centering.
+  
+  Parameters:
+    - eyebrow: (string) Small label text above the title
+    - title: (string) Main section title (supports HTML via safeHTML)
+    - subtitle: (string, optional) Descriptive text below the title
+    - centered: (bool, optional) Whether to center the header (adds section-hd--c class)
+  
+  Usage:
+    {{ partial "section-header.html" (dict
+      "eyebrow" "Section Label"
+      "title" "Section Title"
+      "subtitle" "Optional subtitle text"
+      "centered" true
+    ) }}
+*/}}
+
+<div class="section-hd{{ if .centered }} section-hd--c{{ end }}">
+  {{ with .eyebrow }}<div class="eyebrow">{{ . }}</div>{{ end }}
+  {{ with .title }}<h2 class="section-title">{{ . | safeHTML }}</h2>{{ end }}
+  {{ with .subtitle }}<p class="section-sub">{{ . }}</p>{{ end }}
+</div>

@@ -1,5 +1,23 @@
 <footer class="footer">
   <div class="container">
+    <!-- Secondary Navigation -->
+    <nav class="footer__secondary-nav" aria-label="Secondary navigation">
+      <ul class="footer__secondary-links">
+        <li>
+          <a href="{{ "use-cases/" | relURL }}" class="footer__secondary-lnk{{ if eq .Section "use-cases" }} footer__secondary-lnk--active{{ end }}">
+            <i data-lucide="briefcase"></i>
+            Use Cases
+          </a>
+        </li>
+        <li>
+          <a href="{{ "design-system/" | relURL }}" class="footer__secondary-lnk{{ if eq .RelPermalink "/design-system/" }} footer__secondary-lnk--active{{ end }}">
+            <i data-lucide="palette"></i>
+            Design System
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <div class="footer__main">
 
       <!-- Brand col -->

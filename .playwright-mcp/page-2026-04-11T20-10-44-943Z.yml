@@ -1,0 +1,394 @@
+- generic [active] [ref=e1]:
+  - navigation "Main navigation" [ref=e2]:
+    - generic [ref=e4]:
+      - link "freelancer-templates" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - text: freelancer
+        - emphasis [ref=e6]: "-templates"
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - button "Templates" [ref=e9] [cursor=pointer]:
+            - text: Templates
+            - img [ref=e10]
+        - listitem [ref=e12]:
+          - button "Themes" [ref=e13] [cursor=pointer]:
+            - text: Themes
+            - img [ref=e14]
+        - listitem [ref=e16]:
+          - link "Design Tips" [ref=e17] [cursor=pointer]:
+            - /url: /tips/
+        - listitem [ref=e18]:
+          - link "Studio" [ref=e19] [cursor=pointer]:
+            - /url: /studio/
+        - listitem [ref=e20]:
+          - link "Enterprise" [ref=e21] [cursor=pointer]:
+            - /url: /enterprise/
+      - generic [ref=e22]:
+        - button "Toggle dark mode" [ref=e23] [cursor=pointer]:
+          - img [ref=e25]
+        - link "Customize templates" [ref=e31] [cursor=pointer]:
+          - /url: /customize/
+          - img [ref=e32]
+          - generic [ref=e33]: Customize
+        - link "My Brands" [ref=e34] [cursor=pointer]:
+          - /url: /my-brands/
+          - img [ref=e35]
+          - generic [ref=e39]: My Brands
+  - generic [ref=e41]:
+    - navigation "Breadcrumb" [ref=e42]:
+      - link "Tips" [ref=e43] [cursor=pointer]:
+        - /url: /tips/
+      - generic [ref=e44]: ›
+      - generic [ref=e45]: Remotion Studio Basics
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - img [ref=e49]
+        - text: Remotion Tutorials
+      - heading "Master Remotion Studio" [level=1] [ref=e52]
+      - paragraph [ref=e53]: Your complete guide to navigating the Remotion Studio interface, previewing compositions in real-time, editing props visually, and mastering keyboard shortcuts for a faster workflow.
+      - generic [ref=e54]:
+        - generic [ref=e55]: Interface
+        - generic [ref=e56]: Preview
+        - generic [ref=e57]: Props
+        - generic [ref=e58]: Timeline
+        - generic [ref=e59]: Shortcuts
+  - generic [ref=e61]:
+    - generic [ref=e62]:
+      - generic [ref=e63]: "01"
+      - generic [ref=e64]:
+        - heading "Interface Navigation and Panels" [level=2] [ref=e65]
+        - paragraph [ref=e66]: Get familiar with the Studio's layout and understand how each panel contributes to your video development workflow.
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]: Tip
+        - heading "Launching the Studio" [level=3] [ref=e70]
+        - paragraph [ref=e71]:
+          - text: Start the Remotion Studio from your project directory with
+          - code [ref=e72]: npx remotion studio
+          - text: . The Studio opens in your default browser at localhost:3000. Use
+          - code [ref=e73]: "--port 3001"
+          - text: to specify a custom port.
+      - generic [ref=e74]:
+        - generic [ref=e75]: Rule
+        - heading "Composition Sidebar" [level=3] [ref=e76]
+        - paragraph [ref=e77]: The left sidebar displays all registered compositions. Each entry shows the composition ID, duration (frames and time), and dimensions (width × height in pixels).
+        - generic [ref=e78]: Remotion Studio Documentation
+      - generic [ref=e79]:
+        - generic [ref=e80]: Tip
+        - heading "Preview Area" [level=3] [ref=e81]
+        - paragraph [ref=e82]: The central preview area renders your composition in real-time. This is where you'll see your video come to life as you make changes to your code.
+      - generic [ref=e83]:
+        - generic [ref=e84]: Rule
+        - heading "Props Panel" [level=3] [ref=e85]
+        - paragraph [ref=e86]: The right sidebar displays editable controls when you define your composition props using a Zod schema. This enables visual editing without touching code.
+        - generic [ref=e87]: Remotion Visual Editing Guide
+      - generic [ref=e88]:
+        - generic [ref=e89]: Tip
+        - heading "Timeline Panel" [level=3] [ref=e90]
+        - paragraph [ref=e91]: The timeline at the bottom shows the full duration of your composition. Sequences and layers are visualized here, making it easy to understand your video's structure.
+      - generic [ref=e92]:
+        - generic [ref=e93]: This project
+        - heading "Hot Reload Workflow" [level=3] [ref=e94]
+        - paragraph [ref=e95]: The Studio renders your composition in real-time as you make changes. Edit your React components, save the file, and see changes instantly in the preview—no manual refresh needed.
+  - generic [ref=e97]:
+    - generic [ref=e98]:
+      - generic [ref=e99]: "02"
+      - generic [ref=e100]:
+        - heading "Preview and Playback Controls" [level=2] [ref=e101]
+        - paragraph [ref=e102]: Learn how to control video playback, navigate through frames, and preview your compositions at different speeds.
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - generic [ref=e105]: Rule
+        - heading "Play/Pause Controls" [level=3] [ref=e106]
+        - paragraph [ref=e107]: Use the spacebar or click the play button to toggle playback. The preview renders in real-time, so you can see exactly how your video will look when exported.
+        - generic [ref=e108]: Remotion Studio Documentation
+      - generic [ref=e109]:
+        - generic [ref=e110]: Tip
+        - heading "Timeline Scrubbing" [level=3] [ref=e111]
+        - paragraph [ref=e112]: Drag the playhead along the timeline to jump to any frame instantly. This is useful for checking specific moments in your composition without playing through the entire video.
+      - generic [ref=e113]:
+        - generic [ref=e114]: Rule
+        - heading "Playback Speed" [level=3] [ref=e115]
+        - paragraph [ref=e116]: Adjust playback speed using J (slower) and L (faster) keys. This helps you review animations in slow motion or quickly scan through longer compositions.
+        - generic [ref=e117]: Remotion Keyboard Shortcuts
+      - generic [ref=e118]:
+        - generic [ref=e119]: This project
+        - heading "Frame-by-Frame Navigation" [level=3] [ref=e120]
+        - paragraph [ref=e121]: Use the left and right arrow keys to step through your composition one frame at a time. This precision is essential for fine-tuning animation timing and transitions.
+  - generic [ref=e123]:
+    - generic [ref=e124]:
+      - generic [ref=e125]: "03"
+      - generic [ref=e126]:
+        - heading "Props Editing in Real-Time" [level=2] [ref=e127]
+        - paragraph [ref=e128]: Harness the power of visual props editing to experiment with different values without modifying your source code.
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - generic [ref=e131]: Rule
+        - heading "Zod Schema Integration" [level=3] [ref=e132]
+        - paragraph [ref=e133]: Define your composition props using a Zod schema to enable visual editing. The Studio automatically generates form controls based on your schema types.
+        - generic [ref=e134]: Remotion Visual Editing Guide
+      - generic [ref=e135]:
+        - generic [ref=e136]: Tip
+        - heading "Defining Props with Zod" [level=3] [ref=e137]
+        - paragraph [ref=e138]:
+          - text: Create a schema using
+          - code [ref=e139]: z.object()
+          - text: that describes your composition's configurable properties. Include types like
+          - code [ref=e140]: z.string()
+          - text: ","
+          - code [ref=e141]: z.number()
+          - text: ", and"
+          - code [ref=e142]: z.boolean()
+          - text: for different control types.
+      - generic [ref=e143]:
+        - generic [ref=e144]: This project
+        - heading "Registering with Schema" [level=3] [ref=e145]
+        - paragraph [ref=e146]:
+          - text: Pass your schema to the
+          - code [ref=e147]: Composition
+          - text: component along with
+          - code [ref=e148]: defaultProps
+          - text: . The Studio will display editable controls in the right sidebar for each property defined in your schema.
+      - generic [ref=e149]:
+        - generic [ref=e150]: Tip
+        - heading "Control Types" [level=3] [ref=e151]
+        - paragraph [ref=e152]: "The Studio generates appropriate controls based on your schema: text fields for strings, number sliders for numeric values, color pickers for color strings, checkboxes for booleans, and dropdowns for enums."
+        - list [ref=e153]:
+          - listitem [ref=e154]: Text fields for strings
+          - listitem [ref=e155]: Number sliders for numeric values
+          - listitem [ref=e156]: Color pickers for color strings
+          - listitem [ref=e157]: Checkboxes for booleans
+          - listitem [ref=e158]: Dropdowns for enums
+      - generic [ref=e159]:
+        - generic [ref=e160]: Rule
+        - heading "Saving Props to Code" [level=3] [ref=e161]
+        - paragraph [ref=e162]:
+          - text: After adjusting props in the Studio, click the save icon to update your
+          - code [ref=e163]: defaultProps
+          - text: in the source file. This bridges the gap between visual experimentation and code.
+        - generic [ref=e164]: Remotion Visual Editing Guide
+  - generic [ref=e166]:
+    - generic [ref=e167]:
+      - generic [ref=e168]: "04"
+      - generic [ref=e169]:
+        - heading "Timeline and Frame Navigation" [level=2] [ref=e170]
+        - paragraph [ref=e171]: Master the timeline to understand your composition's structure and navigate precisely to any point in your video.
+    - generic [ref=e172]:
+      - generic [ref=e173]:
+        - generic [ref=e174]: Rule
+        - heading "Timeline Overview" [level=3] [ref=e175]
+        - paragraph [ref=e176]: The timeline displays your composition's full duration with visual markers for sequences and layers. This bird's-eye view helps you understand the overall structure.
+        - generic [ref=e177]: Remotion Studio Documentation
+      - generic [ref=e178]:
+        - generic [ref=e179]: Tip
+        - heading "Jump to Start/End" [level=3] [ref=e180]
+        - paragraph [ref=e181]: Press Home to jump to the first frame or End to jump to the last frame. These shortcuts are essential for quickly reviewing the beginning and end of your composition.
+      - generic [ref=e182]:
+        - generic [ref=e183]: This project
+        - heading "Frame Counter" [level=3] [ref=e184]
+        - paragraph [ref=e185]: The current frame number is displayed in the timeline controls. Use this to note specific frames for animation timing or to communicate precise moments with collaborators.
+      - generic [ref=e186]:
+        - generic [ref=e187]: Tip
+        - heading "Sequence Visualization" [level=3] [ref=e188]
+        - paragraph [ref=e189]: When your composition uses Sequence components, the timeline shows each sequence as a distinct block. This makes it easy to see how different parts of your video are organized.
+      - generic [ref=e190]:
+        - generic [ref=e191]: Rule
+        - heading "Duration Display" [level=3] [ref=e192]
+        - paragraph [ref=e193]: The timeline shows both frame count and time duration. For a 30fps composition with 150 frames, you'll see both '150 frames' and '5.0s' displayed.
+        - generic [ref=e194]: Remotion Studio Documentation
+      - generic [ref=e195]:
+        - generic [ref=e196]: Tip
+        - heading "Zoom Controls" [level=3] [ref=e197]
+        - paragraph [ref=e198]: Zoom in on the timeline to see more detail for precise frame selection, or zoom out to see the full composition at a glance.
+  - generic [ref=e200]:
+    - generic [ref=e201]:
+      - generic [ref=e202]: "05"
+      - generic [ref=e203]:
+        - heading "Keyboard Shortcuts and Productivity Tips" [level=2] [ref=e204]
+        - paragraph [ref=e205]: Speed up your workflow with essential keyboard shortcuts and productivity techniques for efficient video development.
+    - generic [ref=e206]:
+      - generic [ref=e207]:
+        - generic [ref=e208]: Rule
+        - heading "Essential Shortcuts" [level=3] [ref=e209]
+        - paragraph [ref=e210]: Master these keyboard shortcuts to dramatically speed up your Studio workflow.
+        - table [ref=e212]:
+          - rowgroup [ref=e213]:
+            - row "Shortcut Action" [ref=e214]:
+              - columnheader "Shortcut" [ref=e215]
+              - columnheader "Action" [ref=e216]
+          - rowgroup [ref=e217]:
+            - row "Space Play/Pause" [ref=e218]:
+              - cell "Space" [ref=e219]
+              - cell "Play/Pause" [ref=e220]
+            - row "← / → Previous/Next frame" [ref=e221]:
+              - cell "← / →" [ref=e222]
+              - cell "Previous/Next frame" [ref=e223]
+            - row "J / L Decrease/Increase speed" [ref=e224]:
+              - cell "J / L" [ref=e225]
+              - cell "Decrease/Increase speed" [ref=e226]
+            - row "Home Jump to start" [ref=e227]:
+              - cell "Home" [ref=e228]
+              - cell "Jump to start" [ref=e229]
+            - row "End Jump to end" [ref=e230]:
+              - cell "End" [ref=e231]
+              - cell "Jump to end" [ref=e232]
+        - generic [ref=e233]: Remotion Keyboard Shortcuts
+      - generic [ref=e234]:
+        - generic [ref=e235]: Tip
+        - heading "Render from Studio" [level=3] [ref=e236]
+        - paragraph [ref=e237]: Click the 'Render' button to open the render dialog. Choose output format, set quality options, configure output location, and monitor render progress—all without leaving the Studio.
+      - generic [ref=e238]:
+        - generic [ref=e239]: This project
+        - heading "Best Practices" [level=3] [ref=e240]
+        - paragraph [ref=e241]: Follow these practices to get the most out of Remotion Studio and maintain an efficient development workflow.
+        - list [ref=e242]:
+          - listitem [ref=e243]: Use Zod schemas for all compositions to enable visual editing
+          - listitem [ref=e244]: Keep compositions focused on single scenes for easier preview
+          - listitem [ref=e245]: Leverage hot reload by keeping the Studio open while coding
+          - listitem [ref=e246]: Test at different frame rates using playback speed controls
+      - generic [ref=e247]:
+        - generic [ref=e248]: Tip
+        - heading "Quick Preview Renders" [level=3] [ref=e249]
+        - paragraph [ref=e250]: Use the Studio's built-in render interface for quick preview renders during development. This is often faster than typing CLI commands for iterative testing.
+  - generic [ref=e252]:
+    - generic [ref=e253]:
+      - generic [ref=e254]: Keep Learning
+      - heading "Related tips" [level=2] [ref=e255]
+      - paragraph [ref=e256]: Continue exploring with these related guides and tutorials.
+    - generic [ref=e257]:
+      - link "CLI Rendering Guide preview CLI Rendering Guide Master command-line video rendering with custom settings, output formats, and quality options." [ref=e258] [cursor=pointer]:
+        - /url: /tips/cli-rendering/
+        - img "CLI Rendering Guide preview" [ref=e260]
+        - generic [ref=e261]:
+          - img [ref=e263]
+          - generic [ref=e265]:
+            - generic [ref=e266]: CLI Rendering Guide
+            - generic [ref=e267]: Master command-line video rendering with custom settings, output formats, and quality options.
+      - link "Composition Structure preview Composition Structure Understand how compositions, sequences, and scenes work together in Remotion." [ref=e268] [cursor=pointer]:
+        - /url: /tips/composition-structure/
+        - img "Composition Structure preview" [ref=e270]
+        - generic [ref=e271]:
+          - img [ref=e273]
+          - generic [ref=e277]:
+            - generic [ref=e278]: Composition Structure
+            - generic [ref=e279]: Understand how compositions, sequences, and scenes work together in Remotion.
+      - link "Editing Props preview Editing Props Customize text, colors, images, and timing through the props interface." [ref=e280] [cursor=pointer]:
+        - /url: /tips/editing-props/
+        - img "Editing Props preview" [ref=e282]
+        - generic [ref=e283]:
+          - img [ref=e285]
+          - generic [ref=e286]:
+            - generic [ref=e287]: Editing Props
+            - generic [ref=e288]: Customize text, colors, images, and timing through the props interface.
+  - generic [ref=e291]:
+    - heading "Ready to start creating?" [level=2] [ref=e292]
+    - paragraph [ref=e293]: Now that you understand the Studio interface, explore our template library to find the perfect starting point for your next video project.
+    - generic [ref=e294]:
+      - link "Browse Templates" [ref=e295] [cursor=pointer]:
+        - /url: /library/
+        - img [ref=e296]
+        - text: Browse Templates
+      - link "CLI Rendering Guide" [ref=e298] [cursor=pointer]:
+        - /url: /tips/cli-rendering/
+        - img [ref=e299]
+        - text: CLI Rendering Guide
+  - contentinfo [ref=e301]:
+    - generic [ref=e302]:
+      - navigation "Secondary navigation" [ref=e303]:
+        - list [ref=e304]:
+          - listitem [ref=e305]:
+            - link "Use Cases" [ref=e306] [cursor=pointer]:
+              - /url: /use-cases/
+              - img [ref=e307]
+              - text: Use Cases
+          - listitem [ref=e310]:
+            - link "Design System" [ref=e311] [cursor=pointer]:
+              - /url: /design-system/
+              - img [ref=e312]
+              - text: Design System
+      - generic [ref=e318]:
+        - generic [ref=e319]:
+          - generic [ref=e320]:
+            - text: freelancer
+            - emphasis [ref=e321]: "-templates"
+          - paragraph [ref=e322]: Free, open-source template library for freelancers and communities. Documents, Remotion video compositions, and everything in between.
+          - generic [ref=e323]:
+            - link "GitHub" [ref=e324] [cursor=pointer]:
+              - /url: https://github.com/mzzavaa/freelancer-templates.org
+              - img [ref=e325]
+            - link "Twitter / X" [ref=e328] [cursor=pointer]:
+              - /url: https://twitter.com/
+              - img [ref=e329]
+            - link "LinkedIn" [ref=e331] [cursor=pointer]:
+              - /url: https://linkedin.com/
+              - img [ref=e332]
+        - generic [ref=e336]:
+          - generic [ref=e337]: Templates
+          - list [ref=e338]:
+            - listitem [ref=e339]:
+              - link "Contracts" [ref=e340] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e341]:
+              - link "Proposals" [ref=e342] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e343]:
+              - link "Invoices" [ref=e344] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e345]:
+              - link "Email Scripts" [ref=e346] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e347]:
+              - link "Notion Templates" [ref=e348] [cursor=pointer]:
+                - /url: /#categories
+            - listitem [ref=e349]:
+              - link "Remotion Library" [ref=e350] [cursor=pointer]:
+                - /url: /#remotion
+        - generic [ref=e351]:
+          - generic [ref=e352]: SISY Ecosystem
+          - list [ref=e353]:
+            - listitem [ref=e354]:
+              - link "freelancer-automation.com" [ref=e355] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e356]:
+              - link "ai-workshops.digital" [ref=e357] [cursor=pointer]:
+                - /url: https://ai-workshops.digital
+            - listitem [ref=e358]:
+              - link "sisy.digital" [ref=e359] [cursor=pointer]:
+                - /url: https://sisy.digital
+            - listitem [ref=e360]:
+              - link "sisy.best" [ref=e361] [cursor=pointer]:
+                - /url: https://sisy.best
+        - generic [ref=e362]:
+          - generic [ref=e363]: Resources
+          - list [ref=e364]:
+            - listitem [ref=e365]:
+              - link "GitHub Repository" [ref=e366] [cursor=pointer]:
+                - /url: https://github.com/mzzavaa/freelancer-templates.org
+            - listitem [ref=e367]:
+              - link "Use Cases" [ref=e368] [cursor=pointer]:
+                - /url: /use-cases/
+            - listitem [ref=e369]:
+              - link "CC-BY-NC-SA License" [ref=e370] [cursor=pointer]:
+                - /url: /#license
+            - listitem [ref=e371]:
+              - link "License Text" [ref=e372] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+            - listitem [ref=e373]:
+              - link "Commercial License" [ref=e374] [cursor=pointer]:
+                - /url: https://freelancer-automation.com
+            - listitem [ref=e375]:
+              - link "Contact" [ref=e376] [cursor=pointer]:
+                - /url: mailto:hello@freelancer-templates.org
+      - generic [ref=e377]:
+        - generic [ref=e378]: © 2026 freelancer-templates.org - Licensed under CC-BY-NC-SA 4.0
+        - generic [ref=e379]:
+          - link "Imprint" [ref=e380] [cursor=pointer]:
+            - /url: /imprint/
+          - link "Privacy Policy" [ref=e381] [cursor=pointer]:
+            - /url: /privacy/
+          - link "CC-BY-NC-SA 4.0" [ref=e382] [cursor=pointer]:
+            - /url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+          - link "Commercial License" [ref=e383] [cursor=pointer]:
+            - /url: https://freelancer-automation.com
+          - link "Contact" [ref=e384] [cursor=pointer]:
+            - /url: mailto:hello@freelancer-templates.org

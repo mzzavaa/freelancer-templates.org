@@ -1,0 +1,3 @@
+# Shared utilities for tutorial system
+# - easing.ts: Easing functions for animations
+# - frameLoader.ts: Frame sequence loading utilities
