@@ -1,5 +1,95 @@
 [
   {
+    "slug": "dayinthelife",
+    "camel": "DayInTheLife",
+    "name": "Day In The Life",
+    "description": "6-scene vlog auto-cut with timestamp stickers and lifestyle stock photography",
+    "icon": "sun",
+    "color": "yellow",
+    "primaryVariant": "TikTokEnergetic",
+    "variantCount": 2,
+    "variants": [
+      { "id": "DayInTheLife-TikTokEnergetic", "name": "TikTok Energetic", "style": "bold" },
+      { "id": "DayInTheLife-ReelsCinematic",  "name": "Reels Cinematic",  "style": "dark" }
+    ],
+    "primaryId": "DayInTheLife-TikTokEnergetic"
+  },
+  {
+    "slug": "productreveal",
+    "camel": "ProductReveal",
+    "name": "Product Reveal",
+    "description": "3-beat launch sequence: blurred teaser, NEW DROP sticker, confetti hero",
+    "icon": "gift",
+    "color": "rose",
+    "primaryVariant": "LuxuryBlack",
+    "variantCount": 2,
+    "variants": [
+      { "id": "ProductReveal-LuxuryBlack",   "name": "Luxury Black",   "style": "dark" },
+      { "id": "ProductReveal-PlayfulPastel",  "name": "Playful Pastel", "style": "rose" }
+    ],
+    "primaryId": "ProductReveal-LuxuryBlack"
+  },
+  {
+    "slug": "travelmontage",
+    "camel": "TravelMontage",
+    "name": "Travel Montage",
+    "description": "8 location flashes with country stickers and film-grade colour overlays",
+    "icon": "globe",
+    "color": "teal",
+    "primaryVariant": "FilmGrain",
+    "variantCount": 2,
+    "variants": [
+      { "id": "TravelMontage-FilmGrain",   "name": "Film Grain",    "style": "espresso" },
+      { "id": "TravelMontage-SunsetVibes", "name": "Sunset Vibes",  "style": "sunset"   }
+    ],
+    "primaryId": "TravelMontage-FilmGrain"
+  },
+  {
+    "slug": "aestheticquote",
+    "camel": "AestheticQuote",
+    "name": "Aesthetic Quote",
+    "description": "Slow-panning background with large serif quote and WavyText emphasis word",
+    "icon": "quote",
+    "color": "amber",
+    "primaryVariant": "MinimalCream",
+    "variantCount": 2,
+    "variants": [
+      { "id": "AestheticQuote-MinimalCream", "name": "Minimal Cream", "style": "cream"    },
+      { "id": "AestheticQuote-DarkMoody",    "name": "Dark Moody",    "style": "midnight" }
+    ],
+    "primaryId": "AestheticQuote-MinimalCream"
+  },
+  {
+    "slug": "btscreator",
+    "camel": "BTSCreator",
+    "name": "BTS Creator",
+    "description": "Split-screen before/after portrait with animated BTS sticker badge and glowing divider",
+    "icon": "camera",
+    "color": "purple",
+    "primaryVariant": "ChaoticCreator",
+    "variantCount": 2,
+    "variants": [
+      { "id": "BTSCreator-ChaoticCreator", "name": "Chaotic Creator", "style": "bold"    },
+      { "id": "BTSCreator-CleanStudio",    "name": "Clean Studio",    "style": "minimal" }
+    ],
+    "primaryId": "BTSCreator-ChaoticCreator"
+  },
+  {
+    "slug": "unboxingmoment",
+    "camel": "UnboxingMoment",
+    "name": "Unboxing Moment",
+    "description": "Max-energy unboxing with 3 confetti bursts, morphing blobs, and sticker callout badges",
+    "icon": "package",
+    "color": "green",
+    "primaryVariant": "TikTokHype",
+    "variantCount": 2,
+    "variants": [
+      { "id": "UnboxingMoment-TikTokHype",     "name": "TikTok Hype",     "style": "neon" },
+      { "id": "UnboxingMoment-ReelsEditorial", "name": "Reels Editorial", "style": "dark" }
+    ],
+    "primaryId": "UnboxingMoment-TikTokHype"
+  },
+  {
     "slug": "affiliatereview",
     "camel": "AffiliateReview",
     "name": "Affiliate Review",

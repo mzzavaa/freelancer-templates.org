@@ -180,6 +180,12 @@ import { FloatingBubbleDark, FloatingBubbleClean, FloatingBubbleBold, FloatingBu
 import { GeometricPatternsDark, GeometricPatternsClean, GeometricPatternsBold, GeometricPatternsWarm, GeometricPatternsMinimal, GeometricPatternsNeon, GeometricPatternsOcean, GeometricPatternsSunset, GeometricPatternsForest, GeometricPatternsRose, GeometricPatternsGold, GeometricPatternsMidnight, GeometricPatternsCrimson, GeometricPatternsLavender, GeometricPatternsArctic, GeometricPatternsEspresso } from "./templates/geometricpatterns/GeometricPatternsShowcase";
 import { GlitchTextDark, GlitchTextClean, GlitchTextBold, GlitchTextWarm, GlitchTextMinimal, GlitchTextNeon, GlitchTextOcean, GlitchTextSunset, GlitchTextForest, GlitchTextRose, GlitchTextGold, GlitchTextMidnight, GlitchTextCrimson, GlitchTextLavender, GlitchTextArctic, GlitchTextEspresso } from "./templates/glitchtext/GlitchTextShowcase";
 import { GRWMReelTikTok, GRWMReelReels } from "./templates/grwmreel/GRWMReelShowcase";
+import { DayInTheLifeTikTokEnergetic, DayInTheLifeReelsCinematic } from "./templates/dayinthelife/DayInTheLifeShowcase";
+import { ProductRevealLuxuryBlack, ProductRevealPlayfulPastel } from "./templates/productreveal/ProductRevealShowcase";
+import { TravelMontageFilmGrain, TravelMontageSunsetVibes } from "./templates/travelmontage/TravelMontageShowcase";
+import { AestheticQuoteMinimalCream, AestheticQuoteDarkMoody } from "./templates/aestheticquote/AestheticQuoteShowcase";
+import { BTSCreatorChaoticCreator, BTSCreatorCleanStudio } from "./templates/btscreator/BTSCreatorShowcase";
+import { UnboxingMomentTikTokHype, UnboxingMomentReelsEditorial } from "./templates/unboxingmoment/UnboxingMomentShowcase";
 import { LiquidWaveDark, LiquidWaveClean, LiquidWaveBold, LiquidWaveWarm, LiquidWaveMinimal, LiquidWaveNeon, LiquidWaveOcean, LiquidWaveSunset, LiquidWaveForest, LiquidWaveRose, LiquidWaveGold, LiquidWaveMidnight, LiquidWaveCrimson, LiquidWaveLavender, LiquidWaveArctic, LiquidWaveEspresso } from "./templates/liquidwave/LiquidWaveShowcase";
 import { MatrixRainDark, MatrixRainClean, MatrixRainBold, MatrixRainWarm, MatrixRainMinimal, MatrixRainNeon, MatrixRainOcean, MatrixRainSunset, MatrixRainForest, MatrixRainRose, MatrixRainGold, MatrixRainMidnight, MatrixRainCrimson, MatrixRainLavender, MatrixRainArctic, MatrixRainEspresso } from "./templates/matrixrain/MatrixRainShowcase";
 import { ParticleExplosionDark, ParticleExplosionClean, ParticleExplosionBold, ParticleExplosionWarm, ParticleExplosionMinimal, ParticleExplosionNeon, ParticleExplosionOcean, ParticleExplosionSunset, ParticleExplosionForest, ParticleExplosionRose, ParticleExplosionGold, ParticleExplosionMidnight, ParticleExplosionCrimson, ParticleExplosionLavender, ParticleExplosionArctic, ParticleExplosionEspresso } from "./templates/particleexplosion/ParticleExplosionShowcase";
@@ -1729,6 +1735,36 @@ export const RemotionRoot: React.FC = () => (
     <Folder name="GRWM-Reel">
       <Composition id="GRWMReel-TikTok" component={GRWMReelTikTok} durationInFrames={240} fps={FPS} width={1080} height={1920} />
       <Composition id="GRWMReel-Reels"  component={GRWMReelReels}  durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="DayInTheLife">
+      <Composition id="DayInTheLife-TikTokEnergetic" component={DayInTheLifeTikTokEnergetic} durationInFrames={360} fps={FPS} width={1080} height={1920} />
+      <Composition id="DayInTheLife-ReelsCinematic"  component={DayInTheLifeReelsCinematic}  durationInFrames={360} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="ProductReveal">
+      <Composition id="ProductReveal-LuxuryBlack"   component={ProductRevealLuxuryBlack}   durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="ProductReveal-PlayfulPastel"  component={ProductRevealPlayfulPastel}  durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="TravelMontage">
+      <Composition id="TravelMontage-FilmGrain"   component={TravelMontageFilmGrain}   durationInFrames={330} fps={FPS} width={1080} height={1920} />
+      <Composition id="TravelMontage-SunsetVibes" component={TravelMontageSunsetVibes} durationInFrames={330} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="AestheticQuote">
+      <Composition id="AestheticQuote-MinimalCream" component={AestheticQuoteMinimalCream} durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="AestheticQuote-DarkMoody"    component={AestheticQuoteDarkMoody}    durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="BTSCreator">
+      <Composition id="BTSCreator-ChaoticCreator" component={BTSCreatorChaoticCreator} durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="BTSCreator-CleanStudio"    component={BTSCreatorCleanStudio}    durationInFrames={240} fps={FPS} width={1080} height={1920} />
+    </Folder>
+
+    <Folder name="UnboxingMoment">
+      <Composition id="UnboxingMoment-TikTokHype"      component={UnboxingMomentTikTokHype}      durationInFrames={240} fps={FPS} width={1080} height={1920} />
+      <Composition id="UnboxingMoment-ReelsEditorial"  component={UnboxingMomentReelsEditorial}  durationInFrames={240} fps={FPS} width={1080} height={1920} />
     </Folder>
 
     <Folder name="Liquid-Wave">
