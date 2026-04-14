@@ -25,6 +25,20 @@ groups:
       - { slug: "socialproof", label: "Social Proof" }
       - { slug: "podcastaudiogram", label: "Podcast Audiogram" }
 
+  - name: "Portrait Reels"
+    icon: "smartphone"
+    templates:
+      - { slug: "grwmreel", label: "GRWM Reel" }
+      - { slug: "outfitreveal", label: "Outfit Reveal" }
+      - { slug: "festivallineup", label: "Festival Lineup" }
+      - { slug: "creatorrecap", label: "Creator Recap" }
+      - { slug: "dayinthelife", label: "Day In The Life" }
+      - { slug: "productreveal", label: "Product Reveal" }
+      - { slug: "travelmontage", label: "Travel Montage" }
+      - { slug: "aestheticquote", label: "Aesthetic Quote" }
+      - { slug: "btscreator", label: "BTS Creator" }
+      - { slug: "unboxingmoment", label: "Unboxing Moment" }
+
   - name: "Tech & Analytics"
     icon: "bar-chart-2"
     templates:
