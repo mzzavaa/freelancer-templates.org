@@ -2,6 +2,7 @@
 title: "Thought Leadership"
 description: "Establish expertise with editorial article layouts, narrative sequences, and keynote-style presentations. Designed for executives, consultants, and subject-matter experts."
 slug: "thoughtleadership"
+navgroup: "Creator & Content"
 icon: "book-open"
 camel: "ThoughtLeadership"
 variantCount: 16

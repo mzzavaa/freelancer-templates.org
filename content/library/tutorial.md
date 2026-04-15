@@ -2,6 +2,7 @@
 title: "Tutorial"
 description: "Teach anything with numbered step sequences, demo walkthroughs, and split-screen tutorial formats. Works for software, skills, and processes."
 slug: "tutorial"
+navgroup: "Creator & Content"
 camel: "Tutorial"
 icon: "book-open"
 color: "amber"

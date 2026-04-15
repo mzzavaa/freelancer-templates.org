@@ -2,6 +2,7 @@
 title: "Archive"
 description: "Legacy compositions from earlier versions - Sims 4 style enterprise AI and character screen designs"
 slug: "archive"
+navgroup: "Portfolio & Brand"
 icon: "archive"
 camel: ""
 primaryVariant: ""

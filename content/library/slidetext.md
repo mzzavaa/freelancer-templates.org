@@ -2,6 +2,7 @@
 title: "Slide Text"
 description: "Clean slide-in text animation with spring physics. The simplest building block - use it as a title card, lower third, or transition."
 slug: "slidetext"
+navgroup: "Animated Elements"
 camel: "SlideText"
 icon: "arrow-right"
 color: "emerald"

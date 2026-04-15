@@ -2,6 +2,7 @@
 title: "Unboxing Moment"
 description: "Maximum-energy 8-second unboxing portrait. Three ConfettiBurst explosions at 1s/3s/5s, three sticker callout badges flying in, morphing BlobShape backgrounds, and WavyText product name."
 slug: "unboxingmoment"
+navgroup: "Portrait Reels"
 camel: "UnboxingMoment"
 icon: "package"
 color: "green"

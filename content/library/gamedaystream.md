@@ -2,6 +2,7 @@
 title: "GameDay Stream Overlays"
 description: "Live stream overlays and transition screens for gaming events - pre-show, main event, gameplay, and closing"
 slug: "gamedaystream"
+navgroup: "Community & Events"
 icon: "tv"
 camel: ""
 primaryVariant: ""

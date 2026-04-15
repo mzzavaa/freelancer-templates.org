@@ -2,6 +2,7 @@
 title: "Animated List"
 description: "Spring-animated list items that slide in with staggered timing. Great for feature lists, agenda items, and step-by-step breakdowns."
 slug: "animatedlist"
+navgroup: "Animated Elements"
 camel: "AnimatedList"
 icon: "list"
 color: "blue"

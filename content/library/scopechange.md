@@ -2,6 +2,7 @@
 title: "Scope Change Request"
 description: "Formal scope change request videos with impact analysis, timeline adjustments, cost implications, and approval workflows. Professional change management."
 slug: "scopechange"
+navgroup: "Animated Elements"
 icon: "git-branch"
 camel: "ScopeChange"
 primaryVariant: "DarkDashboard"

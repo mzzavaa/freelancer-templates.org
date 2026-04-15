@@ -2,6 +2,7 @@
 title: "Product Launch"
 description: "Launch products with dramatic feature reveals, countdown teasers, and hero announcement sequences. Designed to generate pre-launch buzz and day-of excitement."
 slug: "productlaunch"
+navgroup: "Marketing & Sales"
 camel: "ProductLaunch"
 icon: "rocket"
 color: "yellow"

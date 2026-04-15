@@ -2,6 +2,7 @@
 title: "Milestone"
 description: "Celebrate achievements with animated goal completion reveals, anniversary announcements, and journey recaps. Turn any win into shareable content."
 slug: "milestone"
+navgroup: "Business & Client"
 camel: "Milestone"
 icon: "star"
 color: "rose"

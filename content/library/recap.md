@@ -2,6 +2,7 @@
 title: "Recap"
 description: "Summarize projects, sprints, and milestones with animated dashboard views, timeline cards, and metrics rollups. Turn any project into a shareable win."
 slug: "recap"
+navgroup: "Business & Client"
 camel: "Recap"
 icon: "bar-chart"
 color: "green"

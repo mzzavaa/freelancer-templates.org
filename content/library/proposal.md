@@ -2,6 +2,7 @@
 title: "Project Proposal"
 description: "Present project proposals with scope walkthroughs, timeline animations, and pricing reveals. Win more clients by making your pitch a visual experience."
 slug: "proposal"
+navgroup: "Business & Client"
 camel: "Proposal"
 icon: "file-text"
 color: "rose"

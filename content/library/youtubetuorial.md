@@ -2,6 +2,7 @@
 title: "YouTube Tutorial"
 description: "Specialized tutorial compositions for pipeline explainers and technical walkthroughs. Pre-configured for the VideoFlow pipeline and AI demo sequences."
 slug: "youtubetuorial"
+navgroup: "Creator & Content"
 camel: "YouTubeTutorial"
 icon: "play-circle"
 color: "blue"

@@ -2,6 +2,7 @@
 title: "Sound Wave"
 description: "Animated audio bar visualization that pulses rhythmically. Ideal for podcast intros, music content, and audiogram-style videos."
 slug: "soundwave"
+navgroup: "Animated Elements"
 camel: "SoundWave"
 icon: "audio-lines"
 color: "fuchsia"

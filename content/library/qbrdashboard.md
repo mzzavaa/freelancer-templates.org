@@ -2,6 +2,7 @@
 title: "QBR Dashboard"
 description: "Deliver quarterly business reviews with executive summary cards, detailed metric breakdowns, and quarter-over-quarter comparison views."
 slug: "qbrdashboard"
+navgroup: "Business & Client"
 icon: "pie-chart"
 camel: "QBRDashboard"
 variantCount: 16

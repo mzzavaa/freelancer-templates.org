@@ -2,6 +2,7 @@
 title: "Office Directory"
 description: "Present team directories with world map views, card list layouts, and regional group animations. Makes global team structure visible and navigable."
 slug: "officedirectory"
+navgroup: "Lifestyle"
 icon: "globe"
 camel: "OfficeDirectory"
 variantCount: 16

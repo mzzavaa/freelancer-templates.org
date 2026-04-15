@@ -2,6 +2,7 @@
 title: "GRWM Reel"
 description: "Get Ready With Me portrait reel with 4-scene auto-cut (60 frames each), platform-safe captions, step counter sticker badge, and ConfettiBurst on the final outfit reveal."
 slug: "grwmreel"
+navgroup: "Portrait Reels"
 camel: "GRWMReel"
 icon: "sparkles"
 color: "pink"

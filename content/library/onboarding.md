@@ -2,6 +2,7 @@
 title: "Onboarding"
 description: "Welcome new clients and customers with process overview sequences, step reveals, and welcome animations. Reduces early churn by setting clear expectations."
 slug: "onboarding"
+navgroup: "Community & Events"
 camel: "Onboarding"
 icon: "user-plus"
 color: "purple"

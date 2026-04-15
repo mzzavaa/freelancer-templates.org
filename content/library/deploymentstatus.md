@@ -2,6 +2,7 @@
 title: "Deployment Status"
 description: "Show deployment and release status with environment card grids, pipeline views, and health monitor dashboards. Built for DevOps and platform engineering teams."
 slug: "deploymentstatus"
+navgroup: "Tech & Analytics"
 icon: "rocket"
 camel: "DeploymentStatus"
 variantCount: 16

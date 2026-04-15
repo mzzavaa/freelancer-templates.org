@@ -2,6 +2,7 @@
 title: "Aesthetic Quote"
 description: "Slow-panning minimalist background image with a large serif quote. One emphasis word animates as WavyText. Editorial top/bottom rules frame the composition."
 slug: "aestheticquote"
+navgroup: "Portrait Reels"
 camel: "AestheticQuote"
 icon: "quote"
 color: "amber"

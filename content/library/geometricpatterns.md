@@ -2,6 +2,7 @@
 title: "Geometric Patterns"
 description: "Rotating concentric geometric shapes that morph and scale. Works as a background layer, intro sequence, or abstract visual break."
 slug: "geometricpatterns"
+navgroup: "Animated Elements"
 camel: "GeometricPatterns"
 icon: "hexagon"
 color: "slate"

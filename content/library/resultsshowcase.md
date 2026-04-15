@@ -2,6 +2,7 @@
 title: "Results Showcase"
 description: "Client ROI and results presentations with before/after metrics, growth charts, achievement highlights, and impact summaries. Prove your value."
 slug: "resultsshowcase"
+navgroup: "Animated Elements"
 icon: "trending-up"
 camel: "ResultsShowcase"
 primaryVariant: "DarkDashboard"

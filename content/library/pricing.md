@@ -2,6 +2,7 @@
 title: "Pricing"
 description: "Present pricing tiers with animated plan comparison cards, spotlight callouts, and offer reveal sequences. Designed to reduce pricing page drop-off."
 slug: "pricing"
+navgroup: "Marketing & Sales"
 camel: "Pricing"
 icon: "tag"
 color: "indigo"

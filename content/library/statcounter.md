@@ -2,6 +2,7 @@
 title: "Stat Counter"
 description: "Animated statistics and metrics for social media - number counters, progress bars, and data visualizations with smooth animations."
 slug: "statcounter"
+navgroup: "Animated Elements"
 camel: "StatCounter"
 icon: "trending-up"
 color: "green"

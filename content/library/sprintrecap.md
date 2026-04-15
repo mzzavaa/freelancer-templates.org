@@ -2,6 +2,7 @@
 title: "Sprint Recap"
 description: "Celebrate sprint completions with shipped item lists, highlight cards, and team contribution animations. End every sprint on a high note."
 slug: "sprintrecap"
+navgroup: "Tech & Analytics"
 icon: "check-square"
 camel: "SprintRecap"
 variantCount: 16

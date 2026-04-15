@@ -2,6 +2,7 @@
 title: "Feature Flags"
 description: "Visualize A/B experiments, feature rollouts, and flag status with experiment board animations, results views, and rollout tracker displays."
 slug: "featureflags"
+navgroup: "Tech & Analytics"
 icon: "toggle-left"
 camel: "FeatureFlags"
 variantCount: 16

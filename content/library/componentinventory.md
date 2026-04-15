@@ -2,6 +2,7 @@
 title: "Component Inventory"
 description: "Document system architecture with animated component grids, dependency maps, and inventory lists. Essential for engineering teams and technical documentation."
 slug: "componentinventory"
+navgroup: "Tech & Analytics"
 icon: "layers"
 camel: "ComponentInventory"
 variantCount: 16

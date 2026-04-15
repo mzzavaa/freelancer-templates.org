@@ -2,6 +2,7 @@
 title: "Client Pipeline"
 description: "Visualize your sales and client pipeline with funnel animations, pipeline board views, and revenue metrics. Turn CRM data into compelling video."
 slug: "clientpipeline"
+navgroup: "Business & Client"
 icon: "git-branch"
 camel: "ClientPipeline"
 variantCount: 16

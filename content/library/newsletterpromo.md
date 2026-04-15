@@ -2,6 +2,7 @@
 title: "Newsletter Promo"
 description: "Grow email subscribers with issue preview teasers, subscribe CTA sequences, and social proof blends. Built for newsletter creators and content marketers."
 slug: "newsletterpromo"
+navgroup: "Marketing & Sales"
 camel: "NewsletterPromo"
 icon: "mail"
 color: "green"

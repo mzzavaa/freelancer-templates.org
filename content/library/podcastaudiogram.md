@@ -2,6 +2,7 @@
 title: "Podcast Audiogram"
 description: "Repurpose podcast audio into shareable video clips with animated waveforms, quote cards, and episode promo sequences. Works for all major podcast platforms."
 slug: "podcastaudiogram"
+navgroup: "Creator & Content"
 camel: "PodcastAudiogram"
 icon: "mic"
 color: "blue"

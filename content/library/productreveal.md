@@ -2,6 +2,7 @@
 title: "Product Reveal"
 description: "3-beat beauty/fashion product launch: blurred teaser → NEW DROP sticker with WavyText → hero image with ConfettiBurst. Drama-packed 8-second portrait drop video."
 slug: "productreveal"
+navgroup: "Portrait Reels"
 camel: "ProductReveal"
 icon: "gift"
 color: "rose"

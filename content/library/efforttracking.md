@@ -2,6 +2,7 @@
 title: "Effort Tracking"
 description: "Show team allocation, capacity utilization, and effort breakdowns with animated charts and workforce views. Turn spreadsheet data into visual reports."
 slug: "efforttracking"
+navgroup: "Tech & Analytics"
 icon: "bar-chart-2"
 camel: "EffortTracking"
 variantCount: 16

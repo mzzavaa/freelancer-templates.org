@@ -2,6 +2,7 @@
 title: "Typewriter Subtitle"
 description: "Typewriter-style text reveal with a blinking cursor. Classic effect for code demos, terminal aesthetics, and dramatic text reveals."
 slug: "typewritersubtitle"
+navgroup: "Animated Elements"
 camel: "TypewriterSubtitle"
 icon: "terminal"
 color: "lime"

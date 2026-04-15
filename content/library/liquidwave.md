@@ -2,6 +2,7 @@
 title: "Liquid Wave"
 description: "Flowing liquid wave animation using SVG paths. Mesmerizing background for music, wellness, and ambient content."
 slug: "liquidwave"
+navgroup: "Animated Elements"
 camel: "LiquidWave"
 icon: "waves"
 color: "blue"

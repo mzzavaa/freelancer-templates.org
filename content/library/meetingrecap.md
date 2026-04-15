@@ -2,6 +2,7 @@
 title: "Meeting Recap"
 description: "Post-meeting summary videos with action items, decisions made, attendee highlights, and next steps. Send instead of meeting notes."
 slug: "meetingrecap"
+navgroup: "Animated Elements"
 icon: "users"
 camel: "MeetingRecap"
 primaryVariant: "DarkDashboard"

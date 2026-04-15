@@ -2,6 +2,7 @@
 title: "Community GameDay Europe"
 description: "Live stream overlays for AWS Community GameDay Europe events including preshow countdowns, gameplay displays, leaderboards, and closing ceremonies."
 slug: "communitygameday"
+navgroup: "Community & Events"
 icon: "users"
 camel: "GameDay"
 primaryVariant: "MarketingVideo"

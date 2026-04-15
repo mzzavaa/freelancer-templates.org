@@ -2,6 +2,7 @@
 title: "Listicle"
 description: "Animated list videos for social media - numbered tips, top 5 lists, and step-by-step guides with smooth reveal animations."
 slug: "listicle"
+navgroup: "Animated Elements"
 camel: "Listicle"
 icon: "list-ordered"
 color: "purple"

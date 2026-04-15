@@ -2,6 +2,7 @@
 title: "Event"
 description: "Promote events with animated hero banners, speaker lineup cards, and countdown reveals. Works for conferences, workshops, webinars, and meetups."
 slug: "event"
+navgroup: "Community & Events"
 camel: "Event"
 icon: "calendar"
 color: "indigo"

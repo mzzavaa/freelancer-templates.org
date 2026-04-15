@@ -2,6 +2,7 @@
 title: "Feature Roadmap"
 description: "Present product roadmaps with animated timeline views, swimlane charts, and grid layouts. Makes quarterly planning visible and shareable."
 slug: "featureroadmap"
+navgroup: "Tech & Analytics"
 icon: "map"
 camel: "FeatureRoadmap"
 variantCount: 16

@@ -2,6 +2,7 @@
 title: "Integration Status"
 description: "Show integration health with status wall displays, category group views, and live health monitor dashboards. Essential for platform and DevRel teams."
 slug: "integrationstatus"
+navgroup: "Tech & Analytics"
 icon: "link-2"
 camel: "IntegrationStatus"
 variantCount: 16

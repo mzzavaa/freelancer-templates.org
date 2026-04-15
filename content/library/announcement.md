@@ -2,6 +2,7 @@
 title: "Announcement"
 description: "Eye-catching announcement videos for social media - product launches, updates, and news with bold typography and animations."
 slug: "announcement"
+navgroup: "Animated Elements"
 camel: "Announcement"
 icon: "megaphone"
 color: "red"

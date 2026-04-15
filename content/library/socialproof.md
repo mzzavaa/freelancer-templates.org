@@ -2,6 +2,7 @@
 title: "Social Proof"
 description: "Announce achievements, metrics milestones, and community growth with animated badge reveals, number counters, and announcement sequences. Social proof sells."
 slug: "socialproof"
+navgroup: "Creator & Content"
 camel: "SocialProof"
 icon: "award"
 color: "amber"

@@ -2,6 +2,7 @@
 title: "Project Health"
 description: "Report project health with scorecard animations, workstream views, and executive summary layouts. Turn RAG status into a video your stakeholders will actually read."
 slug: "projecthealth"
+navgroup: "Business & Client"
 icon: "activity"
 camel: "ProjectHealth"
 variantCount: 16

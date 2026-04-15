@@ -2,6 +2,7 @@
 title: "Concept Pitch"
 description: "Pitch creative concepts with arc reveal sequences, mood board layouts, and brief presentation formats. Built for creative directors, agencies, and content strategists."
 slug: "conceptpitch"
+navgroup: "Business & Client"
 icon: "lightbulb"
 camel: "ConceptPitch"
 variantCount: 16

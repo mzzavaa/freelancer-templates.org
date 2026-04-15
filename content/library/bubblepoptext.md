@@ -2,6 +2,7 @@
 title: "Bubble Pop Text"
 description: "Letters appear inside bubbles with a springy pop-in effect. Eye-catching for short words, brand names, and social media hooks."
 slug: "bubblepoptext"
+navgroup: "Animated Elements"
 camel: "BubblePopText"
 icon: "circle-dot"
 color: "pink"

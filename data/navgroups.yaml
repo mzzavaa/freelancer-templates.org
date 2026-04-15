@@ -111,3 +111,37 @@ groups:
       - { slug: "portfolio", label: "Portfolio" }
       - { slug: "sims4", label: "Sims 4" }
       - { slug: "archive", label: "Archive" }
+
+  - name: "Animated Elements"
+    icon: "zap"
+    templates:
+      - { slug: "announcement", label: "Announcement" }
+      - { slug: "animatedlist", label: "Animated List" }
+      - { slug: "animatedtext", label: "Animated Text" }
+      - { slug: "bouncetext", label: "Bounce Text" }
+      - { slug: "bubblepoptext", label: "Bubble Pop Text" }
+      - { slug: "calltoaction", label: "Call To Action" }
+      - { slug: "cardflip", label: "Card Flip" }
+      - { slug: "clientreport", label: "Client Report" }
+      - { slug: "clientwelcome", label: "Client Welcome" }
+      - { slug: "floatingbubble", label: "Floating Bubble" }
+      - { slug: "geometricpatterns", label: "Geometric Patterns" }
+      - { slug: "glitchtext", label: "Glitch Text" }
+      - { slug: "liquidwave", label: "Liquid Wave" }
+      - { slug: "listicle", label: "Listicle" }
+      - { slug: "matrixrain", label: "Matrix Rain" }
+      - { slug: "meetingrecap", label: "Meeting Recap" }
+      - { slug: "particleexplosion", label: "Particle Explosion" }
+      - { slug: "projecttimeline", label: "Project Timeline" }
+      - { slug: "pulsingtext", label: "Pulsing Text" }
+      - { slug: "quotecard", label: "Quote Card" }
+      - { slug: "ratecard", label: "Rate Card" }
+      - { slug: "resultsshowcase", label: "Results Showcase" }
+      - { slug: "scopechange", label: "Scope Change" }
+      - { slug: "screencastslideshow", label: "Screencast Slideshow" }
+      - { slug: "serviceoverview", label: "Service Overview" }
+      - { slug: "slidetext", label: "Slide Text" }
+      - { slug: "soundwave", label: "Sound Wave" }
+      - { slug: "statcounter", label: "Stat Counter" }
+      - { slug: "tipoftheday", label: "Tip Of The Day" }
+      - { slug: "typewritersubtitle", label: "Typewriter Subtitle" }

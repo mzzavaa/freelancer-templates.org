@@ -2,6 +2,7 @@
 title: "Store Locator"
 description: "Help customers find your locations with animated store finder displays, map pin reveals, and directory listings. Built for retail, hospitality, and franchise brands."
 slug: "storelocator"
+navgroup: "Marketing & Sales"
 icon: "store"
 camel: "StoreLocator"
 variantCount: 16

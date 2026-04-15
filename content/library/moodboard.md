@@ -2,6 +2,7 @@
 title: "Mood Board"
 description: "9-tile image grid (3×3) with staggered reveals, a cycling NeonGlowBorder highlight, and a title + StickerBadge — two variants: VibrantMix and EditorialGrid."
 slug: "moodboard"
+navgroup: "Portrait Reels"
 camel: "MoodBoard"
 icon: "grid"
 color: "pink"

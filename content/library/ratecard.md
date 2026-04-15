@@ -2,6 +2,7 @@
 title: "Rate Card"
 description: "Service pricing presentations with tier comparison, hourly vs project rates, package breakdowns, and value proposition layouts. Close deals faster."
 slug: "ratecard"
+navgroup: "Animated Elements"
 icon: "credit-card"
 camel: "RateCard"
 primaryVariant: "DarkDashboard"

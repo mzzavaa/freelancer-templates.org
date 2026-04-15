@@ -2,6 +2,7 @@
 title: "Music Visualizer"
 description: "Animate audio with waveform bars, radial visualizers, and lyric card displays. Turn podcast clips, music drops, and audio quotes into visual content."
 slug: "musicvisualizer"
+navgroup: "Lifestyle"
 camel: "MusicVisualizer"
 icon: "music"
 color: "yellow"

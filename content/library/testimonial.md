@@ -2,6 +2,7 @@
 title: "Testimonial"
 description: "Animate client quotes with smooth entrance reveals, social proof reels, and editorial-style review layouts. Turn text testimonials into video content."
 slug: "testimonial"
+navgroup: "Creator & Content"
 camel: "Testimonial"
 icon: "message-square"
 color: "amber"

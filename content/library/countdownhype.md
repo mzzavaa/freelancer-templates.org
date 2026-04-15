@@ -2,6 +2,7 @@
 title: "Countdown Hype"
 description: "Build anticipation with animated countdown timers, launch teasers, and urgency sequences. Essential for product launches, limited offers, and event buildups."
 slug: "countdownhype"
+navgroup: "Marketing & Sales"
 camel: "CountdownHype"
 icon: "clock"
 color: "green"

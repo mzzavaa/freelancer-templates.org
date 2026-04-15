@@ -2,6 +2,7 @@
 title: "Release Notes"
 description: "Announce software releases with changelog animations, feature highlight cards, and version comparison views. Makes release notes something people actually watch."
 slug: "releasenotes"
+navgroup: "Tech & Analytics"
 icon: "tag"
 camel: "ReleaseNotes"
 variantCount: 16

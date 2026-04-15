@@ -2,6 +2,7 @@
 title: "Event Venue"
 description: "Showcase event venues and schedules with animated schedule maps, venue card reveals, and event overview presentations. Perfect for event planners and venue marketing."
 slug: "eventvenue"
+navgroup: "Community & Events"
 icon: "map-pin"
 camel: "EventVenue"
 variantCount: 16

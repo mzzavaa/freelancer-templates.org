@@ -2,6 +2,7 @@
 title: "Nature Escape"
 description: "Cinematic nature portrait with Ken Burns pan, animated leaves or drifting clouds, sparkles, and a full-bleed landscape photo — two variants: ForestMorning and OceanSunset."
 slug: "natureescape"
+navgroup: "Portrait Reels"
 camel: "NatureEscape"
 icon: "leaf"
 color: "green"

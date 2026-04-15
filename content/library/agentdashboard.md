@@ -2,6 +2,7 @@
 title: "Agent Dashboard"
 description: "Visualize AI agent systems with control panel dashboards, flow diagrams, and status matrix views. Built for AI teams who need to explain automation to stakeholders."
 slug: "agentdashboard"
+navgroup: "AI & Explainers"
 icon: "cpu"
 camel: "AgentDashboard"
 variantCount: 16

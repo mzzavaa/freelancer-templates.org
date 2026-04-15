@@ -2,6 +2,7 @@
 title: "Tip of the Day"
 description: "Daily tip videos for social media - productivity tips, design advice, and quick tutorials with numbered tip format."
 slug: "tipoftheday"
+navgroup: "Animated Elements"
 camel: "TipOfTheDay"
 icon: "lightbulb"
 color: "yellow"

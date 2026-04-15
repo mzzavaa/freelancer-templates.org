@@ -2,6 +2,7 @@
 title: "Festival Lineup"
 description: "Animated festival lineup poster with WavyText headliner, 2-column artist grid with stagger entrance, and a bold color gradient overlay. Neon purple or sunset orange variants."
 slug: "festivallineup"
+navgroup: "Portrait Reels"
 camel: "FestivalLineup"
 icon: "music"
 color: "purple"

@@ -2,6 +2,7 @@
 title: "Behind The Scenes"
 description: "Document creative process, team workflow, and production stories with timeline reveals and scene-by-scene cards. Great for building audience trust and showing the work."
 slug: "behindthescenes"
+navgroup: "Creator & Content"
 camel: "BehindTheScenes"
 icon: "camera"
 color: "orange"

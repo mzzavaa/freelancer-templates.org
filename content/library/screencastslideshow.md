@@ -2,6 +2,7 @@
 title: "Screencast Slideshow"
 description: "Animated tutorial slideshow with screenshots, cursor animations, click indicators, zoom effects, and step annotations. Perfect for software tutorials and product demos."
 slug: "screencastslideshow"
+navgroup: "Animated Elements"
 camel: "ScreencastSlideshow"
 icon: "film"
 color: "blue"

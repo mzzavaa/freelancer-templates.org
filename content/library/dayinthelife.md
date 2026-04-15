@@ -2,6 +2,7 @@
 title: "Day In The Life"
 description: "6-scene vlog-style auto-cut portrait reel: morning coffee → work → lunch → gym → dinner → sunset. Timestamp sticker badges, sparkles, and platform-safe captions per scene."
 slug: "dayinthelife"
+navgroup: "Portrait Reels"
 camel: "DayInTheLife"
 icon: "sun"
 color: "yellow"

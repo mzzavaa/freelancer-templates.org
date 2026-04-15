@@ -2,6 +2,7 @@
 title: "Travel Itinerary"
 description: "Present travel plans with animated day-by-day reveals, route overview maps, and highlight sequences. For travel creators, trip planners, and destination marketing."
 slug: "travelitinerary"
+navgroup: "Lifestyle"
 icon: "compass"
 camel: "TravelItinerary"
 variantCount: 16

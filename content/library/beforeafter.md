@@ -2,6 +2,7 @@
 title: "Before / After"
 description: "Show transformations with split-screen reveals, metric comparisons, and animated before/after wipes. Perfect for case studies, redesigns, and results-driven content."
 slug: "beforeafter"
+navgroup: "Creator & Content"
 camel: "BeforeAfter"
 icon: "columns"
 color: "indigo"

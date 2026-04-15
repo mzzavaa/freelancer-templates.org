@@ -2,6 +2,7 @@
 title: "Weekly Client Report"
 description: "Professional weekly and monthly client reports with KPI cards, progress bars, status indicators, and executive summaries. Show project health at a glance."
 slug: "clientreport"
+navgroup: "Animated Elements"
 icon: "clipboard-list"
 camel: "ClientReport"
 primaryVariant: "DarkDashboard"

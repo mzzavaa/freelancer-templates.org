@@ -2,6 +2,7 @@
 title: "Creator Projects"
 description: "Standalone showcase compositions - platform reveals, logo animations, and branded title screens"
 slug: "creatorprojects"
+navgroup: "Portfolio & Brand"
 icon: "sparkles"
 camel: ""
 primaryVariant: ""

@@ -2,6 +2,7 @@
 title: "Glitch Text"
 description: "RGB-split glitch effect with chromatic aberration on text. High-impact for tech intros, error screens, and cyberpunk aesthetics."
 slug: "glitchtext"
+navgroup: "Animated Elements"
 camel: "GlitchText"
 icon: "zap"
 color: "red"

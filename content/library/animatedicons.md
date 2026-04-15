@@ -2,6 +2,7 @@
 title: "Animated Icons"
 description: "Pure SVG portrait with a pulsing center icon and 6 orbiting icons — no photos needed. Two variants: NeonOrbit and MinimalFlow."
 slug: "animatedicons"
+navgroup: "Portrait Reels"
 camel: "AnimatedIcons"
 icon: "cpu"
 color: "purple"

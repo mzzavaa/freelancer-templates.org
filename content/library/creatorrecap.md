@@ -2,6 +2,7 @@
 title: "Creator Recap"
 description: "Week-in-review portrait montage: 5 quick scenes (36 frames each) with sticker badges 'DAY 1–5', ending on a BlobShape creator handle card. TikTok and Reels variants."
 slug: "creatorrecap"
+navgroup: "Portrait Reels"
 camel: "CreatorRecap"
 icon: "calendar"
 color: "blue"

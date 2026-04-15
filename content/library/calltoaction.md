@@ -2,6 +2,7 @@
 title: "Call to Action"
 description: "Compelling CTA videos for social media - subscribe prompts, follow requests, and engagement drivers with animated buttons and text."
 slug: "calltoaction"
+navgroup: "Animated Elements"
 camel: "CallToAction"
 icon: "mouse-pointer-click"
 color: "orange"

@@ -2,6 +2,7 @@
 title: "Fitness Routine"
 description: "Present workouts with animated exercise lists, circuit timer displays, and full-routine breakdowns. Designed for fitness creators, coaches, and wellness brands."
 slug: "fitnessroutine"
+navgroup: "Lifestyle"
 camel: "FitnessRoutine"
 icon: "activity"
 color: "amber"

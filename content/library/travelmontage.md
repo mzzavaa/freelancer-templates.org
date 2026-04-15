@@ -2,6 +2,7 @@
 title: "Travel Montage"
 description: "8 location flashes (1s each) with country emoji sticker badges, film-grade colour overlays, and an end card tallying cities and days. 11-second portrait travel recap."
 slug: "travelmontage"
+navgroup: "Portrait Reels"
 camel: "TravelMontage"
 icon: "globe"
 color: "teal"

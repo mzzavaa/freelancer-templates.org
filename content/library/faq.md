@@ -2,6 +2,7 @@
 title: "FAQ"
 description: "Address objections and questions with animated Q&A cards, accordion reveals, and interview-style question/answer sequences. Reduces support volume."
 slug: "faq"
+navgroup: "AI & Explainers"
 camel: "Faq"
 icon: "help-circle"
 color: "orange"

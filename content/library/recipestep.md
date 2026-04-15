@@ -2,6 +2,7 @@
 title: "Recipe Step"
 description: "Present recipes and cooking processes with animated ingredient lists, step-by-step sequences, and summary cards. Built for food creators and culinary content."
 slug: "recipestep"
+navgroup: "Lifestyle"
 camel: "RecipeStep"
 icon: "utensils"
 color: "rose"

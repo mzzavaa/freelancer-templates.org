@@ -2,6 +2,7 @@
 title: "Pulsing Text"
 description: "Characters pulse with a rhythmic glow effect. Hypnotic animation for music content, meditation apps, and ambient loops."
 slug: "pulsingtext"
+navgroup: "Animated Elements"
 camel: "PulsingText"
 icon: "activity"
 color: "violet"

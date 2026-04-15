@@ -2,6 +2,7 @@
 title: "Floating Bubble"
 description: "Text floats inside a glowing bubble with a gentle bobbing motion. Ideal for callouts, featured quotes, and attention-grabbing labels."
 slug: "floatingbubble"
+navgroup: "Animated Elements"
 camel: "FloatingBubble"
 icon: "cloud"
 color: "teal"

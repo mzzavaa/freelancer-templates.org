@@ -2,6 +2,7 @@
 title: "Animated Text"
 description: "Per-character text animation with spring physics - each letter drops in with rotation. Ideal for titles, brand names, and impact statements."
 slug: "animatedtext"
+navgroup: "Animated Elements"
 camel: "AnimatedText"
 icon: "type"
 color: "indigo"

@@ -2,6 +2,7 @@
 title: "Sims 4 Theme"
 description: "Gaming-style compositions using the Sims 4 visual design - character select, main menu, and stage screens"
 slug: "sims4"
+navgroup: "Portfolio & Brand"
 icon: "gamepad-2"
 camel: ""
 primaryVariant: ""

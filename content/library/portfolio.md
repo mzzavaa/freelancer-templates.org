@@ -2,6 +2,7 @@
 title: "Portfolio"
 description: "Showcase your work with animated project galleries, case study narratives, and showreel sequences. Essential for freelancers, agencies, and creative professionals."
 slug: "portfolio"
+navgroup: "Portfolio & Brand"
 camel: "Portfolio"
 icon: "briefcase"
 color: "rose"

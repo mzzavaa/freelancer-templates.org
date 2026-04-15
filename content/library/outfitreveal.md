@@ -2,6 +2,7 @@
 title: "Outfit Reveal"
 description: "Single hero shot with WavyText 'FIT CHECK', animated sparkles, and a brand/price sticker badge. Two visual variants: bold neon energy or soft pastel dream."
 slug: "outfitreveal"
+navgroup: "Portrait Reels"
 camel: "OutfitReveal"
 icon: "shirt"
 color: "purple"

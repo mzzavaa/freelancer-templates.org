@@ -21,28 +21,41 @@
                 <input type="text" class="mega__search" placeholder="Search templates..." autocomplete="off" id="megaSearch">
               </div>
 
+              {{/* Group all library pages by navgroup frontmatter param (Hugo-native, no hand-lists) */}}
+              {{- $libraryPages := where .Site.RegularPages "Section" "library" -}}
+              {{- $grouped := $libraryPages.GroupByParam "navgroup" -}}
+
               <div class="mega__groups" id="megaGroups">
+                {{/* Outer loop: navgroups.yaml provides order + icons only */}}
                 {{ range .Site.Data.navgroups.groups }}
-                <div class="mega__group" data-group="{{ lower .name }}">
-                  <div class="mega__group-hd">
-                    <i data-lucide="{{ .icon }}"></i>
-                    {{ .name }}
+                {{- $groupName := .name -}}
+                {{- $icon := .icon -}}
+                {{/* Find the matching content-derived group */}}
+                {{- range $grouped -}}
+                  {{- if eq .Key $groupName }}
+                  <div class="mega__group" data-group="{{ lower $groupName }}">
+                    <div class="mega__group-hd">
+                      <i data-lucide="{{ $icon }}"></i>
+                      {{ $groupName }}
+                    </div>
+                    <ul class="mega__list" role="list">
+                      {{ range .Pages.ByTitle }}
+                      <li class="mega__item" data-label="{{ lower .Title }}">
+                        <a href="{{ .Permalink }}" class="mega__link">{{ .Title }}</a>
+                      </li>
+                      {{ end }}
+                    </ul>
                   </div>
-                  <ul class="mega__list" role="list">
-                    {{ range .templates }}
-                    <li class="mega__item" data-label="{{ lower .label }}">
-                      <a href="{{ (printf "library/%s/" .slug) | relURL }}" class="mega__link">{{ .label }}</a>
-                    </li>
-                    {{ end }}
-                  </ul>
-                </div>
+                  {{- end }}
+                {{- end }}
                 {{ end }}
               </div>
 
               <div class="mega__footer">
                 <a href="{{ "library/" | relURL }}" class="mega__footer-link">
+                  {{- $libCount := len (where .Site.RegularPages "Section" "library") -}}
                   {{- $navTotal := 0 }}{{ range .Site.Data.templates }}{{ $navTotal = add $navTotal .variantCount }}{{ end -}}
-                  View full library ({{ len .Site.Data.templates }} types · {{ $navTotal }} compositions)
+                  View full library ({{ $libCount }} types · {{ $navTotal }} compositions)
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </a>
               </div>

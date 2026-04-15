@@ -2,6 +2,7 @@
 title: "Collaboration"
 description: "Announce partnerships, dual-brand launches, and team mergers with split-screen intros, stat merge animations, and co-branded reveals."
 slug: "collaboration"
+navgroup: "Community & Events"
 camel: "Collaboration"
 icon: "users"
 color: "purple"

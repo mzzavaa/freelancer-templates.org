@@ -2,6 +2,7 @@
 title: "Neighborhood Guide"
 description: "Explore neighborhoods with animated area maps, highlight reels, and location overview sequences. Built for real estate, relocation, and local content creators."
 slug: "neighborhoodguide"
+navgroup: "Lifestyle"
 icon: "navigation"
 camel: "NeighborhoodGuide"
 variantCount: 16

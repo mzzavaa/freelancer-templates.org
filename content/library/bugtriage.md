@@ -2,6 +2,7 @@
 title: "Bug Triage"
 description: "Present bug priority queues with animated priority columns, triage lists, and sprint summary dashboards. Designed for engineering and QA teams."
 slug: "bugtriage"
+navgroup: "Tech & Analytics"
 icon: "alert-triangle"
 camel: "BugTriage"
 variantCount: 16

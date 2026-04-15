@@ -2,6 +2,7 @@
 title: "Course Promo"
 description: "Promote online courses with curriculum previews, instructor credibility slides, and module overview animations. Optimized for education creators and coaches."
 slug: "coursepromo"
+navgroup: "Marketing & Sales"
 camel: "CoursePromo"
 icon: "graduation-cap"
 color: "orange"

@@ -2,6 +2,7 @@
 title: "Quote Card"
 description: "Animated quote graphics for social media - inspirational quotes, testimonials, and thought leadership content with elegant typography."
 slug: "quotecard"
+navgroup: "Animated Elements"
 camel: "QuoteCard"
 icon: "quote"
 color: "amber"

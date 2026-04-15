@@ -2,6 +2,7 @@
 title: "Bounce Text"
 description: "Headline with bounce-in animation and gradient card background. Perfect for announcements, CTAs, and section openers."
 slug: "bouncetext"
+navgroup: "Animated Elements"
 camel: "BounceText"
 icon: "arrow-up-from-line"
 color: "cyan"

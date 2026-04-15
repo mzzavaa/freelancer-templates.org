@@ -2,6 +2,7 @@
 title: "Particle Explosion"
 description: "Particle burst that radiates outward from center with rotating motion. Perfect for celebration moments, reveals, and impact screens."
 slug: "particleexplosion"
+navgroup: "Animated Elements"
 camel: "ParticleExplosion"
 icon: "sparkles"
 color: "amber"

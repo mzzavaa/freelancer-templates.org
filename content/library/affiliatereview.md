@@ -2,6 +2,7 @@
 title: "Affiliate Review"
 description: "Animate product reviews with star ratings, pros/cons columns, and verdict badges. Built for affiliate creators who need polished review content fast."
 slug: "affiliatereview"
+navgroup: "Creator & Content"
 camel: "AffiliateReview"
 icon: "star"
 color: "blue"

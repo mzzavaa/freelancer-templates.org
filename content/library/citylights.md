@@ -2,6 +2,7 @@
 title: "City Lights"
 description: "Night city portrait with procedural SVG skyline, pulsing building windows, twinkling stars, drifting fireflies, and WavyText headline — two variants: NeonPurple and GoldenHour."
 slug: "citylights"
+navgroup: "Portrait Reels"
 camel: "CityLights"
 icon: "building"
 color: "indigo"

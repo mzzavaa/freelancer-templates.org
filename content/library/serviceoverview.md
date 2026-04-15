@@ -2,6 +2,7 @@
 title: "Service Overview"
 description: "One-pager style service descriptions with capability lists, tech stack icons, process diagrams, and call-to-action sections. Perfect for LinkedIn or proposals."
 slug: "serviceoverview"
+navgroup: "Animated Elements"
 icon: "briefcase"
 camel: "ServiceOverview"
 primaryVariant: "DarkDashboard"

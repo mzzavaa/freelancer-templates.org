@@ -2,6 +2,7 @@
 title: "Platform Overview"
 description: "Present technology platforms with command center dashboards, module grid layouts, and tech stack animations. Built for CTOs, DevRel teams, and platform product managers."
 slug: "platformoverview"
+navgroup: "Marketing & Sales"
 icon: "monitor"
 camel: "PlatformOverview"
 variantCount: 16

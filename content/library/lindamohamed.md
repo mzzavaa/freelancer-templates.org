@@ -2,6 +2,7 @@
 title: "Linda Mohamed Deck"
 description: "Personal presentation deck for Linda Mohamed - AI systems, cloud architecture, collaboration workshops, and consulting packages."
 slug: "lindamohamed"
+navgroup: "Portfolio & Brand"
 icon: "user"
 camel: "LindaMohamed"
 primaryVariant: "Cover"

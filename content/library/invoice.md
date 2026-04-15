@@ -2,6 +2,7 @@
 title: "Invoice"
 description: "Visualize payment requests with animated invoice summaries, billing overviews, and payment reminder sequences. Useful for freelancer finance content and client comms."
 slug: "invoice"
+navgroup: "Business & Client"
 camel: "Invoice"
 icon: "receipt"
 color: "blue"

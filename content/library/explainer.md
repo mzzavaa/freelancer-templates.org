@@ -2,6 +2,7 @@
 title: "Explainer"
 description: "Break down complex products, services, and concepts with demo flows, step-by-step guides, and feature breakdown animations. Converts website visitors into buyers."
 slug: "explainer"
+navgroup: "AI & Explainers"
 camel: "Explainer"
 icon: "lightbulb"
 color: "purple"

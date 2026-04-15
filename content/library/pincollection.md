@@ -2,6 +2,7 @@
 title: "Pin Collection"
 description: "Showcase curated collections with card gallery reveals, map-pin lists, and category grid layouts. Works for travel, culture, and discovery content."
 slug: "pincollection"
+navgroup: "Lifestyle"
 icon: "bookmark"
 camel: "PinCollection"
 variantCount: 16

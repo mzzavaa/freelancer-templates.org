@@ -2,6 +2,7 @@
 title: "Case Study"
 description: "Tell client success stories with before/after reveals, animated results metrics, and impact callouts. Converts better than any written case study."
 slug: "casestudy"
+navgroup: "Business & Client"
 camel: "CaseStudy"
 icon: "trending-up"
 color: "orange"

@@ -2,6 +2,7 @@
 title: "Card Flip"
 description: "3D card flip animation with front and back faces. Great for reveal moments, before/after, and two-sided information."
 slug: "cardflip"
+navgroup: "Animated Elements"
 camel: "CardFlip"
 icon: "rotate-3d"
 color: "purple"

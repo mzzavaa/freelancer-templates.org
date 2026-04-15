@@ -2,6 +2,7 @@
 title: "BTS Creator"
 description: "Split-screen before/after creator portrait. Two stock images side-by-side separated by an animated centre line, with a large BTS sticker badge rotating in on entry."
 slug: "btscreator"
+navgroup: "Portrait Reels"
 camel: "BTSCreator"
 icon: "camera"
 color: "purple"

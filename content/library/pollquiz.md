@@ -2,6 +2,7 @@
 title: "Poll / Quiz"
 description: "Present polls, quizzes, and survey results with animated question cards, result bar reveals, and answer displays. Great for audience engagement content."
 slug: "pollquiz"
+navgroup: "AI & Explainers"
 camel: "PollQuiz"
 icon: "bar-chart-2"
 color: "purple"

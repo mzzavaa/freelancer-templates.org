@@ -2,6 +2,7 @@
 title: "Project Timeline"
 description: "Visual project timelines with milestones, phase markers, dependency arrows, and progress tracking. Gantt-style layouts for client presentations."
 slug: "projecttimeline"
+navgroup: "Animated Elements"
 icon: "gantt-chart"
 camel: "ProjectTimeline"
 primaryVariant: "DarkDashboard"

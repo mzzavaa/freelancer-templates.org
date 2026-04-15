@@ -2,6 +2,7 @@
 title: "Sprint Dashboard"
 description: "Visualize sprint progress with Kanban board animations, velocity charts, and burndown views. Show your team's pace and progress in engineering reviews."
 slug: "sprintdashboard"
+navgroup: "Tech & Analytics"
 icon: "trello"
 camel: "SprintDashboard"
 variantCount: 16

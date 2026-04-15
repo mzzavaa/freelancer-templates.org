@@ -2,6 +2,7 @@
 title: "Velocity Chart"
 description: "Animate engineering velocity with bar chart sequences, trend line animations, and sprint velocity summary cards. Makes delivery metrics visual and shareable."
 slug: "velocitychart"
+navgroup: "Tech & Analytics"
 icon: "trending-up"
 camel: "VelocityChart"
 variantCount: 16

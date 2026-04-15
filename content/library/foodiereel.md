@@ -2,6 +2,7 @@
 title: "Foodie Reel"
 description: "Food photography portrait with steam animation, blob shape, confetti burst, WavyText dish name, and price StickerBadge — two variants: WarmBistro and FreshVibes."
 slug: "foodiereel"
+navgroup: "Portrait Reels"
 camel: "FoodieReel"
 icon: "utensils"
 color: "orange"

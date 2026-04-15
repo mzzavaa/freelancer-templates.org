@@ -2,6 +2,7 @@
 title: "Comic Strip"
 description: "4-panel pop-art comic with halftone background, speech bubbles, an action-word burst, and StickerBadge CTA — two variants: ColorPop and NoirClassic."
 slug: "comicstrip"
+navgroup: "Portrait Reels"
 camel: "ComicStrip"
 icon: "zap"
 color: "yellow"

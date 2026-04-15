@@ -2,6 +2,7 @@
 title: "Client Welcome Deck"
 description: "Onboarding presentations for new clients with team intros, process overview, communication guidelines, and project kickoff agenda slides."
 slug: "clientwelcome"
+navgroup: "Animated Elements"
 icon: "hand-shake"
 camel: "ClientWelcome"
 primaryVariant: "DarkDashboard"

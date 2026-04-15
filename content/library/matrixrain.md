@@ -2,6 +2,7 @@
 title: "Matrix Rain"
 description: "Falling character rain effect inspired by the Matrix. Great for tech intros, code-themed content, and developer branding."
 slug: "matrixrain"
+navgroup: "Animated Elements"
 camel: "MatrixRain"
 icon: "binary"
 color: "green"

@@ -2,6 +2,7 @@
 title: "Listing"
 description: "Showcase features, products, or services in clean grid and list formats with animated card reveals and comparison layouts. Versatile for any catalog or inventory content."
 slug: "listing"
+navgroup: "Marketing & Sales"
 camel: "Listing"
 icon: "list"
 color: "yellow"

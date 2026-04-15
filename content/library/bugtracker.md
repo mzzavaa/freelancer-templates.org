@@ -2,6 +2,7 @@
 title: "Bug Tracker"
 description: "Visualize software defects with severity matrix grids, triage board animations, and bug overview dashboards. Make your dev team's work visible to stakeholders."
 slug: "bugtracker"
+navgroup: "Tech & Analytics"
 icon: "bug"
 camel: "BugTracker"
 variantCount: 16
