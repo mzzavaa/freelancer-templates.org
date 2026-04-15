@@ -16,7 +16,15 @@
     "tutorial:render:all": "npx tsx scripts/tutorials/batch-render.ts",
     "tutorial:render:demo": "npx tsx scripts/tutorials/batch-render.ts --id=open-props-panel",
     "tutorial:scaffold": "npx tsx scripts/tutorials/scaffold-tutorial.ts",
-    "tutorial:validate": "npx tsx scripts/tutorials/validate-configs.ts"
+    "tutorial:validate": "npx tsx scripts/tutorials/validate-configs.ts",
+    "previews": "node scripts/generate-missing-previews.mjs",
+    "previews:force": "node scripts/generate-missing-previews.mjs --force",
+    "previews:dry-run": "node scripts/generate-missing-previews.mjs --dry-run",
+    "verify-links": "node scripts/verify-links.mjs",
+    "predev": "node scripts/generate-missing-previews.mjs",
+    "dev": "hugo server -D",
+    "prebuild": "node scripts/generate-missing-previews.mjs",
+    "build": "hugo --gc --minify"
   },
   "dependencies": {
     "@remotion/cli": "4.0.427",
