@@ -137,8 +137,7 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}
-        run: hugo --gc --minify --baseURL "${HUGO_BASEURL}/"
+        run: hugo --gc --minify --baseURL "https://freelancer-templates.org/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
